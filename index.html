@@ -31,6 +31,29 @@
 	font-size: 18px;
 	background-color:powderblue;
       }
+      /* Define the styles for the table */
+      table {
+  	border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 8px;
+  width: auto; /* set the width to auto */
+  height: auto; /* set the height to auto */
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.column1, .column2, .column3 {
+  width: 33.33%;
+}
+ 
       </style>
   </head>
   <body>
@@ -39,6 +62,40 @@
     <p>Permanent Pictorial Cancellation (PPC) is a postmark, which shows replica/photo/design or a picture highlighting a tourist, religious, historical or an important
     place or thing. Thus PPCs give wide publicity mainly to places of historical, cultural, and tourist interest. They are provided at the post offices which are located
     near such significant places which are of national importance and tourist attraction.</p>
+	  
+	  <table>
+      <tr>
+        <th class="column1">Column 1</th>
+        <th class="column2">Column 2</th>
+        <th class="column3">Column 3</th>
+      </tr>
+      <tr>
+        <td class="column1">Row 1, Column 1</td>
+        <td class="column2">Row 1, Column 2</td>
+        <td class="column3">Row 1, Column 3</td>
+      </tr>
+      <tr>
+        <td class="column1">Row 2, Column 1</td>
+        <td class="column2">Row 2, Column 2</td>
+        <td class="column3">Row 2, Column 3</td>
+      </tr>
+      <tr>
+        <td class="column1">Row 3, Column 1</td>
+        <td class="column2">Row 3, Column 2</td>
+        <td class="column3">Row 3, Column 3</td>
+      </tr>
+      <tr>
+        <td class="column1">Row 4, Column 1</td>
+        <td class="column2">Row 4, Column 2</td>
+        <td class="column3">Row 4, Column 3</td>
+      </tr>
+      <tr>
+        <td class="column1">Row 5, Column 1</td>
+        <td class="column2">Row 5, Column 2</td>
+        <td class="column3">Row 5, Column 3</td>
+      </tr>
+    </table>
+	  
     <a href="list.html">Click here to open the list</a>
         
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
