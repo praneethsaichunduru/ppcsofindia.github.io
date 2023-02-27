@@ -478,6 +478,10 @@ function myFunction() {
 	for (i = 0; i < tr.length; i++) {
 		match = false;
 		td = tr[i].getElementsByTagName("td");
+		if (i === 0) { // Always display the first row of the table
+			tr[i].style.display = "";
+			continue;
+		}
 		if (td.length) { // Exclude the first row if it only contains headings
 			for (j = 0; j < td.length; j++) {
 				txtValue = td[j].textContent || td[j].innerText;
