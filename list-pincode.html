@@ -478,11 +478,11 @@ function myFunction() {
 	for (i = 0; i < tr.length; i++) {
 		match = false;
 		td = tr[i].getElementsByTagName("td");
-		if (i === 0) { // Always display the first row of the table
+		if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
 			tr[i].style.display = "";
 			continue;
 		}
-		if (td.length) { // Exclude the first row if it only contains headings
+		if (td.length) { // Exclude rows that don't have any data cells
 			for (j = 0; j < td.length; j++) {
 				txtValue = td[j].textContent || td[j].innerText;
 				if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -501,7 +501,6 @@ function myFunction() {
 	document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
 }
 </script>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
