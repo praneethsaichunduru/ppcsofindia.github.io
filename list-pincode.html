@@ -154,9 +154,8 @@
 	
 	<div class="search-container">
 		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-		<button id="clear-input-btn">&times;</button>
+		<button id="clear-input-btn" onclick="clearInput()">Cancel</button>
 	</div>
-
 
 	<table id="myTable">
 		<tr><th>S. NO.</th><th>PERMANENT PICTORIAL CACNELLATION</th><th>POST OFFICE</th><th>DATE OF INTRODUCTION</th><th>RANK</th><th>STATE/UT</th><th>PINCODE</th></tr>
@@ -500,7 +499,7 @@ clearInputBtn.addEventListener('click', function() {
 
 function myFunction() {
 	var input, filter, table, tr, td, i, txtValue, match, count = 0;
-	input = myInput;
+	input = document.getElementById("myInput");
 	filter = input.value.toUpperCase();
 	table = document.getElementById("myTable");
 	tr = table.getElementsByTagName("tr");
@@ -522,14 +521,19 @@ function myFunction() {
 			if (match) {
 				tr[i].style.display = "";
 				count++;
-			} 
-			else {
+			} else {
 				tr[i].style.display = "none";
 			}
 		}
 	}
-	resultCount.innerHTML = "Number of matching rows: " + count;
+	document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
 }
+
+function clearInput() {
+	document.getElementById("myInput").value = "";
+	myFunction();
+}
+
 </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
