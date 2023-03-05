@@ -137,6 +137,7 @@
 	<h2>LIST OF PPCs SORTED BY PINCODE AND STATE/UT</h2>
 	
 	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+	<button id="clear-input-btn">&times;</button>
 
 	<table id="myTable">
 		<tr><th>S. NO.</th><th>PERMANENT PICTORIAL CACNELLATION</th><th>POST OFFICE</th><th>DATE OF INTRODUCTION</th><th>RANK</th><th>STATE/UT</th><th>PINCODE</th></tr>
@@ -469,9 +470,18 @@
 <tr class="working"><td>327</td><td>Queen of Chhotanagpur</td><td>Netarhat</td><td>01.11.2016</td><td>SO</td><td>JHARKHAND</td><td>835218</td></tr>
 	</table>
 <script>
+const clearInputBtn = document.getElementById('clear-input-btn');
+const myInput = document.getElementById('myInput');
+const resultCount = document.getElementById('resultCount');
+
+clearInputBtn.addEventListener('click', function() {
+	myInput.value = '';
+	myFunction();
+});
+
 function myFunction() {
 	var input, filter, table, tr, td, i, txtValue, match, count = 0;
-	input = document.getElementById("myInput");
+	input = myInput;
 	filter = input.value.toUpperCase();
 	table = document.getElementById("myTable");
 	tr = table.getElementsByTagName("tr");
@@ -493,12 +503,13 @@ function myFunction() {
 			if (match) {
 				tr[i].style.display = "";
 				count++;
-			} else {
+			} 
+			else {
 				tr[i].style.display = "none";
 			}
 		}
 	}
-	document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
+	resultCount.innerHTML = "Number of matching rows: " + count;
 }
 </script>
 
@@ -513,7 +524,7 @@ function myFunction() {
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
-	</script>
+</script>
 
 <p id="resultCount"></p>
 
