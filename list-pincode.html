@@ -121,6 +121,22 @@
 		.doubtful td {
 			color: blue;
 		}
+		.search-container {
+			position: relative;
+		}
+
+		#clear-input-btn {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			background-color: transparent;
+			border: none;
+			outline: none;
+			font-size: 18px;
+			color: #aaa;
+			cursor: pointer;
+		}
 	</style>
 </head>
 <body>
@@ -136,8 +152,11 @@
 	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 	<h2>LIST OF PPCs SORTED BY PINCODE AND STATE/UT</h2>
 	
-	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-	<button id="clear-input-btn">&times;</button>
+	<div class="search-container">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+		<button id="clear-input-btn">&times;</button>
+	</div>
+
 
 	<table id="myTable">
 		<tr><th>S. NO.</th><th>PERMANENT PICTORIAL CACNELLATION</th><th>POST OFFICE</th><th>DATE OF INTRODUCTION</th><th>RANK</th><th>STATE/UT</th><th>PINCODE</th></tr>
