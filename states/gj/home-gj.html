@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		GUJARAT
+	</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style>
+		body {
+		font-family: bookman old style;
+		}
+		/* width */
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		}
+		
+		marquee {
+			color:red;
+			font-size: 25px;
+			background-color:powderblue;
+		}
+ 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #888; 
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #555; 
+		}* {
+		box-sizing: border-box;
+		}
+		
+		/* Style the search container */
+		.search-container {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+
+		#myInput {
+			padding-right: 30px;
+			width: 250px;
+			height: 50px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f2f2f2;
+			font-size: 16px;
+			vertical-align: middle;
+			float: right;
+		}
+		
+		#clear-input-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: none;
+			background-color: #ccc;
+			font-size: 24px;
+			cursor: pointer;
+			outline: none;
+		}
+		
+		/* Style the cancel button */
+		.cancel-btn {
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			color: #999;
+			font-size: 20px;
+		}
+
+		/* Style the cancel button on hover */
+		.cancel-btn:hover {
+			color: #ccc;
+		}
+		
+		#myTable {
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #ddd;
+			font-size: 18px;
+			font-family: bookman old style;
+		}
+
+		#myTable th, #myTable td {
+			text-align: center;
+			padding: 12px;
+		}
+
+		#myTable tr {
+			border-bottom: 1px solid #ddd;
+		}
+
+		#myTable tr.header, #myTable tr:hover {
+			background-color: #D6EEEE;
+		}
+
+		h2 {
+			font-family: bookman old style;
+			text-align: center;
+		}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.3s;
+			padding-top: 60px;
+		}
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 13px;}
+		}
+		.removed td {
+			color: red;
+		}
+		.working td {
+			color: green;
+		}
+		.doubtful td {
+			color: blue;
+		}
+		.search-container {
+			position: relative;
+		}
+
+	</style>
+</head>
+<body>
+	<marquee>Site is still under development. Keep checking for frequent updates.</marquee>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">HOME</a>
+		<a href="list-pincode.html">PPC LIST</a>
+		<a href="sase.html">SASE</a>
+		<a href="address.html">ADDRESSING</a>
+		<a href="states-buttons.html">STATES & UTs</a>
+		<a href="#"></a>
+	</div>	
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<h2>HOME - GUJARAT</h2>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Green - <b><span style="color: green;">AVAILABLE</span></b>, Blue - <b><span style="color: blue;">DOUBTFUL</span></b>, and Red - <b><span style="color: red;">UNAVAILABLE</span></b>.</p>
+	
+	<div class="search-container">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+		<button id="clear-input-btn" onclick="clearInput()">X</button>
+	</div>
+
+	<table id="myTable">
+		<th>S. NO.</th><th>PERMANENT PICTORIAL CANCELLATION</th><th>POST OFFICE</th><th>DATE OF INTRODUCTION</th><th>RANK</th><th>PINCODE</th></tr>
+		<tr class="working"><td>1</td><td>Mahatma Gandhi Museum</td><td>Rajkot</td><td>02.10.1991</td><td>HO-PB</td><td>360001</td></tr>
+		<tr class="working"><td>2</td><td>Kirti Mandir-The Birth Place of Mahatma Gandhi</td><td>Porbandar</td><td>18.04.1992</td><td>HO</td><td>360575</td></tr>
+		<tr class="working"><td>3</td><td>Arabian Sea Octopus</td><td>Jamnagar</td><td>02.01.2011</td><td>SO</td><td>361001</td></tr>
+		<tr class="working"><td>4</td><td>Arabian Sea, Bet of Dwarka</td><td>Bet</td><td>08.04.2011</td><td>SO</td><td>361330</td></tr>
+		<tr class="working"><td>5</td><td>Dwarkadhish Temple, Land of Sri Krishna</td><td>Dwarka</td><td>16.07.1984</td><td>SO</td><td>361335</td></tr>
+		<tr class="working"><td>6</td><td>Asiatic Lions & Visit Sasan Gir Wildlife Sanctuary</td><td>Sasan Gir</td><td>01.11.1975</td><td>SO</td><td>362135</td></tr>
+		<tr class="working"><td>7</td><td>Sri Somnath Temple</td><td>Prabhas Patan</td><td>16.02.1977</td><td>SO</td><td>362268</td></tr>
+		<tr class="working"><td>8</td><td>Indian Wild Ass</td><td>Dhrangadhra</td><td>14.10.2010</td><td>MDG-SO</td><td>363310</td></tr>
+		<tr class="working"><td>9</td><td>Siddha Chakra</td><td>Palitana SR</td><td>03.07.1992</td><td>SO</td><td>364270</td></tr>
+		<tr class="working"><td>10</td><td>Visit Flamingo City, Bird Sanctuary</td><td>Bhuj</td><td>16.07.1984</td><td>HO</td><td>370001</td></tr>
+		<tr class="working"><td>11</td><td>Harappan Culture</td><td>Dholavira</td><td>02.02.2021</td><td>BO</td><td>370165</td></tr>
+		<tr class="working"><td>12</td><td>Kachchhi Mudwork</td><td>Khavda</td><td>02.02.2021</td><td>SO</td><td>370510</td></tr>
+		<tr class="working"><td>13</td><td>Lakhpat Fort, Kachchhh</td><td>Lakhpat</td><td>02.02.2021</td><td>BO</td><td>370627</td></tr>
+		<tr class="working"><td>14</td><td>Architectural Delights Sidi Saiyad’s Window</td><td>Ahmedabad</td><td>16.07.1984</td><td>GPO</td><td>380001</td></tr>
+		<tr class="working"><td>15</td><td>Sardar Vallabhbhai Patel National Memorial</td><td>Shahibaug</td><td>14.08.2006</td><td>SO</td><td>380004</td></tr>
+		<tr class="working"><td>16</td><td>Kocharab Satyagraha Ashram Smarak</td><td>Ellis Bridge</td><td>30.01.1998</td><td>SO</td><td>380006</td></tr>
+		<tr class="removed"><td>17</td><td>Adalaj Stepwell *</td><td>Navrangpura</td><td>27.03.1986</td><td>HO</td><td>380009</td></tr>
+		<tr class="working"><td>18</td><td>Sidi Saiyad’s Mosque Window</td><td>IIM, Ahmedabad</td><td>31.03.2007</td><td>SO</td><td>380015</td></tr>
+		<tr class="working"><td>19</td><td>Spinning Wheel (Charakha)</td><td>Gandhi Ashram</td><td>30.01.1995</td><td>SO</td><td>380027</td></tr>
+		<tr class="working"><td>20</td><td>Lothal Seal</td><td>Lothal Bhurkhi Railway Station</td><td>17.12.1997</td><td>SO</td><td>382230</td></tr>
+		<tr class="working"><td>21</td><td>Surya Temple</td><td>Modhera</td><td>02.04.1977</td><td>SO</td><td>384212</td></tr>
+		<tr class="working"><td>22</td><td>Rani Ki Vav (Stepwell)</td><td>Patan (NG)</td><td>09.10.2002</td><td>SO</td><td>384265</td></tr>
+		<tr class="working"><td>23</td><td>Birth Place of Sardar Vallabhbhai Patel</td><td>Nadiad</td><td>31.10.2020</td><td>HO</td><td>387001</td></tr>
+		<tr class="working"><td>24</td><td>Shri Ranchhordraiji Maharaj Temple</td><td>Dakor</td><td>13.11.2022</td><td>SO</td><td>388225</td></tr>
+		<tr class="working"><td>25</td><td>Sardar Vallabhbhai Patel</td><td>Karamsad</td><td>31.10.2002</td><td>SO</td><td>388235</td></tr>
+		<tr class="working"><td>26</td><td>Chamar Dharini</td><td>Vadodara</td><td>16.01.1989</td><td>HO</td><td>390001</td></tr>
+		<tr class="working"><td>27</td><td>Maharaja Sayajirao Gaekwad</td><td>Vadodara Fateganj</td><td>16.01.1989</td><td>HO</td><td>390002</td></tr>
+		<tr class="working"><td>28</td><td>Sardar Sarovar Project and Statue of Unity</td><td>Kevadia Colony</td><td>09.10.1990</td><td>SO</td><td>393151</td></tr>
+		<tr class="working"><td>29</td><td>Hajira Lighthouse</td><td>Hajira</td><td>21.09.2021</td><td>SO</td><td>394270</td></tr>
+		<tr class="working"><td>30</td><td>Musical Instruments of Local Tribes</td><td>Saputara</td><td>27.03.1984</td><td>SO</td><td>397420</td></tr>
+	</table>
+	<script>
+		var myInput = document.getElementById("myInput");
+		var clearInputBtn = document.getElementById("clearInputBtn");
+	
+		// Clear the input field when the cancel button is clicked
+		clearInputBtn.addEventListener("click", function() {
+			myInput.value = "";
+			myFunction();
+		});
+
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue, match, count = 0;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				match = false;
+				td = tr[i].getElementsByTagName("td");
+				if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
+					tr[i].style.display = "";
+					continue;
+				}
+				if (td.length) { // Exclude rows that don't have any data cells
+					for (j = 0; j < td.length; j++) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							match = true;
+							break;
+						}
+					}
+					if (match) {
+						tr[i].style.display = "";
+						count++;
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+			document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
+		}
+	
+		function clearInput() {
+			document.getElementById("myInput").value = "";
+			myFunction();
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+	
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+
+<p id="resultCount"></p>
+
+</body>
+</html>

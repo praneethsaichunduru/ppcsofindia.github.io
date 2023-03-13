@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		TAMIL NADU
+	</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style>
+		body {
+		font-family: bookman old style;
+		}
+		/* width */
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		}
+		
+		marquee {
+			color:red;
+			font-size: 25px;
+			background-color:powderblue;
+		}
+ 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #888; 
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #555; 
+		}* {
+		box-sizing: border-box;
+		}
+		
+		/* Style the search container */
+		.search-container {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+
+		#myInput {
+			padding-right: 30px;
+			width: 250px;
+			height: 50px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f2f2f2;
+			font-size: 16px;
+			vertical-align: middle;
+			float: right;
+		}
+		
+		#clear-input-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: none;
+			background-color: #ccc;
+			font-size: 24px;
+			cursor: pointer;
+			outline: none;
+		}
+		
+		/* Style the cancel button */
+		.cancel-btn {
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			color: #999;
+			font-size: 20px;
+		}
+
+		/* Style the cancel button on hover */
+		.cancel-btn:hover {
+			color: #ccc;
+		}
+		
+		#myTable {
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #ddd;
+			font-size: 18px;
+			font-family: bookman old style;
+		}
+
+		#myTable th, #myTable td {
+			text-align: center;
+			padding: 12px;
+		}
+
+		#myTable tr {
+			border-bottom: 1px solid #ddd;
+		}
+
+		#myTable tr.header, #myTable tr:hover {
+			background-color: #D6EEEE;
+		}
+
+		h2 {
+			font-family: bookman old style;
+			text-align: center;
+		}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.3s;
+			padding-top: 60px;
+		}
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 13px;}
+		}
+		.removed td {
+			color: red;
+		}
+		.working td {
+			color: green;
+		}
+		.doubtful td {
+			color: blue;
+		}
+		.search-container {
+			position: relative;
+		}
+
+	</style>
+</head>
+<body>
+	<marquee>Site is still under development. Keep checking for frequent updates.</marquee>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">HOME</a>
+		<a href="list-pincode.html">PPC LIST</a>
+		<a href="sase.html">SASE</a>
+		<a href="address.html">ADDRESSING</a>
+		<a href="states-buttons.html">STATES & UTs</a>
+		<a href="#"></a>
+	</div>	
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<h2>HOME - TAMIL NADU</h2>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Green - <b><span style="color: green;">AVAILABLE</span></b>, Blue - <b><span style="color: blue;">DOUBTFUL</span></b>, and Red - <b><span style="color: red;">UNAVAILABLE</span></b>.</p>
+	
+	<div class="search-container">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+		<button id="clear-input-btn" onclick="clearInput()">X</button>
+	</div>
+
+	<table id="myTable">
+		<th>S. NO.</th><th>PERMANENT PICTORIAL CANCELLATION</th><th>POST OFFICE</th><th>DATE OF INTRODUCTION</th><th>RANK</th><th>PINCODE</th></tr>
+		<tr class="working"><td>1</td><td>Anna Road Post Office (Warwick Electric Theatre)</td><td>Anna Road</td><td>31.03.1998</td><td>HO</td><td>600002</td></tr>
+		<tr class="working"><td>2</td><td>Punnai Leaves and Peacock</td><td>Mylapore</td><td>14.11.1979</td><td>HO</td><td>600004</td></tr>
+		<tr class="working"><td>3</td><td>Pulicat Lighthouse</td><td>Pulicat</td><td>21.08.2021</td><td>SO</td><td>601205</td></tr>
+		<tr class="working"><td>4</td><td>Shore Temple</td><td>Mamallapuram</td><td>01.01.1965</td><td>SO</td><td>603104</td></tr>
+		<tr class="working"><td>5</td><td>Painted Stork</td><td>Vedanthangal</td><td>01.06.1996</td><td>BO</td><td>603314</td></tr>
+		<tr class="working"><td>6</td><td>Gingee Fort</td><td>Gingee</td><td>29.12.1979</td><td>SO</td><td>604202</td></tr>
+		<tr class="working"><td>7</td><td>Oil Lamp</td><td>Tiruvannamalai</td><td>12.12.1997</td><td>HO</td><td>606601</td></tr>
+		<tr class="working"><td>8</td><td>Logo of Sri Ramanasramam</td><td>Sri Ramanasramam</td><td>01.09.2014</td><td>SO</td><td>606603</td></tr>
+		<tr class="working"><td>9</td><td>Sathya Gnana Sabha</td><td>Vadalur</td><td>30.01.1999</td><td>SO</td><td>607303</td></tr>
+		<tr class="working"><td>10</td><td>Thyagarajaswamy Temple Chariot</td><td>Tiruvarur</td><td>14.10.1989</td><td>HO</td><td>610001</td></tr>
+		<tr class="working"><td>11</td><td>Dargah Sharif</td><td>Nagore</td><td>08.10.1976</td><td>SO</td><td>611002</td></tr>
+		<tr class="working"><td>12</td><td>Shrine Basilica of Mother Mary</td><td>Vailankanni</td><td>29.11.1976</td><td>SO</td><td>611111</td></tr>
+		<tr class="working"><td>13</td><td>Brihadeeswara Swamy Temple</td><td>Thanjavur</td><td>10.12.1974</td><td>HO</td><td>613001</td></tr>
+		<tr class="working"><td>14</td><td>Tambura and Kartal</td><td>Thiruvaiyaru</td><td>20.01.1976</td><td>SO</td><td>613204</td></tr>
+		<tr class="working"><td>15</td><td>Flamingo</td><td>Kodikkarai</td><td>02.12.1977</td><td>SO</td><td>614807</td></tr>
+		<tr class="working"><td>16</td><td>Rock Fort</td><td>Tiruchirappalli</td><td>17.12.1974</td><td>HO</td><td>620001</td></tr>
+		<tr class="working"><td>17</td><td>Adiseshan of Lord Ranganatha</td><td>Srirangam</td><td>17.01.1981</td><td>HO</td><td>620006</td></tr>
+		<tr class="working"><td>18</td><td>Sri Ramanathaswamy Temple Corridor</td><td>Rameswaram</td><td>07.03.1978</td><td>SO</td><td>623526</td></tr>
+		<tr class="working"><td>19</td><td>Kodaikanal Observatory</td><td>Kodaikanal</td><td>05.09.1979</td><td>SO</td><td>624101</td></tr>
+		<tr class="working"><td>20</td><td>Vel (Spear) and Peacock Feather of Lord Murugan</td><td>Palani</td><td>08.09.1978</td><td>HO</td><td>624601</td></tr>
+		<tr class="working"><td>21</td><td>Flag of Pandya Dynasty with Aquarius Emblem</td><td>Madurai</td><td>20.04.1978</td><td>HO</td><td>625001</td></tr>
+		<tr class="working"><td>22</td><td>Meenakshi Amman Temple</td><td>Madurai Bazaar</td><td>28.04.2017</td><td>SO</td><td>625001</td></tr>
+		<tr class="working"><td>23</td><td>Lion Tailed Macaque</td><td>Kalakkad</td><td>03.10.1978</td><td>SO</td><td>627501</td></tr>
+		<tr class="working"><td>24</td><td>Courtallam Waterfalls</td><td>Courtallam</td><td>01.08.1977</td><td>SO</td><td>627802</td></tr>
+		<tr class="working"><td>25</td><td>Manapad Light House</td><td>Manapad</td><td>05.01.1977</td><td>SO</td><td>628209</td></tr>
+		<tr class="working"><td>26</td><td>Mahakavi Subramanya Bharatiyar Face</td><td>Ettayapuram</td><td>11.12.1991</td><td>SO</td><td>628902</td></tr>
+		<tr class="removed"><td>27</td><td>Mahakavi Subramanya Bharatiyar Manimandapam *</td><td>Ettayapuram</td><td>11.12.1991</td><td>SO</td><td>628902</td></tr>
+		<tr class="working"><td>28</td><td>Muttom Light House</td><td>Muttom</td><td>05.01.2017</td><td>SO</td><td>629202</td></tr>
+		<tr class="working"><td>29</td><td>Vivekananda Rock Memorial</td><td>Kanyakumari</td><td>21.11.1975</td><td>SO</td><td>629702</td></tr>
+		<tr class="working"><td>30</td><td>Logo of CMC Hospital</td><td>CMC Hospital, Vellore</td><td>09.12.2014</td><td>SO</td><td>632004</td></tr>
+		<tr class="working"><td>31</td><td>Vellore Fort with Moat</td><td>Vellore</td><td>03.03.2017</td><td>SO</td><td>632004</td></tr>
+		<tr class="working"><td>32</td><td>Vainu Bappu Observatory</td><td>Kavalur</td><td>05.12.1986</td><td>BO</td><td>635701</td></tr>
+		<tr class="working"><td>33</td><td>Gandhi Chakra and Bapu</td><td>Hasthampatti</td><td>30.01.1997</td><td>SO</td><td>636007</td></tr>
+		<tr class="working"><td>34</td><td>Lord Ardhanareeswar</td><td>Tiruchengodu</td><td>05.01.2017</td><td>HO</td><td>637211</td></tr>
+		<tr class="working"><td>35</td><td>Bhavani Koodal and Rajagopuram</td><td>Bhavani</td><td>25.08.1977</td><td>HO</td><td>638301</td></tr>
+		<tr class="working"><td>36</td><td>Logo of Tamil Nadu Agricultural University</td><td>TNAU-Lawley Road</td><td>01.07.2019</td><td>SO</td><td>641003</td></tr>
+		<tr class="working"><td>37</td><td>Patteeswarar Temple</td><td>Perur, Coimbatore</td><td>03.02.1976</td><td>SO</td><td>641010</td></tr>
+		<tr class="working"><td>38</td><td>Salim Ali Centre fir Ornithology and Natural History (SACON)</td><td>Anaikatti</td><td>06.06.2019</td><td>BO</td><td>641108</td></tr>
+		<tr class="working"><td>39</td><td>Adi Yogi</td><td>Ishana Vihar</td><td>24.02.2017</td><td>BO</td><td>641114</td></tr>
+		<tr class="working"><td>40</td><td>Our Lady of Holy Rosary Shrine</td><td>Karumathampatti</td><td>29.09.2017</td><td>SO</td><td>641659</td></tr>
+		<tr class="working"><td>41</td><td>Nilgiri Tahr</td><td>Top Slip</td><td>14.10.1980</td><td>BO</td><td>642133</td></tr>
+		<tr class="working"><td>42</td><td>Toda Hut</td><td>Udagamandalam</td><td>15.07.1994</td><td>HO</td><td>643001</td></tr>
+		<tr class="working"><td>43</td><td>Nilgiri Mountain Train</td><td>Coonoor Railway Station</td><td>10.08.2019</td><td>SO</td><td>643102</td></tr>
+		<tr class="working"><td>44</td><td>Indian Bison (Gaur)</td><td>Mudumalai Sanctuary</td><td>05.04.1975</td><td>BO</td><td>643211</td></tr>
+<td colspan=6><b></b></td>						
+		<tr class="working"><td>1</td><td>Aayi Mandapam</td><td>Pondicherry</td><td>13.03.1998</td><td>HO-PB</td><td>605001</td></tr>
+		<tr class="working"><td>2</td><td>Logo of Sri Aurobindo Ashram and The Mother</td><td>Sri Aurobindo Ashram</td><td>15.08.2013</td><td>SO</td><td>605002</td></tr>
+	</table>
+	<script>
+		var myInput = document.getElementById("myInput");
+		var clearInputBtn = document.getElementById("clearInputBtn");
+	
+		// Clear the input field when the cancel button is clicked
+		clearInputBtn.addEventListener("click", function() {
+			myInput.value = "";
+			myFunction();
+		});
+
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue, match, count = 0;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				match = false;
+				td = tr[i].getElementsByTagName("td");
+				if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
+					tr[i].style.display = "";
+					continue;
+				}
+				if (td.length) { // Exclude rows that don't have any data cells
+					for (j = 0; j < td.length; j++) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							match = true;
+							break;
+						}
+					}
+					if (match) {
+						tr[i].style.display = "";
+						count++;
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+			document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
+		}
+	
+		function clearInput() {
+			document.getElementById("myInput").value = "";
+			myFunction();
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+	
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+
+<p id="resultCount"></p>
+
+</body>
+</html>
