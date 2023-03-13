@@ -176,6 +176,7 @@
 		<a href="#"></a>
 	</div>	
 	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<button onclick="goBack()">Go Back</button>
 	<h2>HOME - ANDAMAN AND NICOBAR ISLANDS</h2>
 	<p>&nbsp;&nbsp;&nbsp;&nbsp;Green - <b><span style="color: green;">AVAILABLE</span></b>, Blue - <b><span style="color: blue;">DOUBTFUL</span></b>, and Red - <b><span style="color: red;">UNAVAILABLE</span></b>.</p>
 	
@@ -248,7 +249,11 @@
 				document.getElementById("mySidenav").style.width = "0";
 			}
 	</script>
-
+	<script>
+		function goBack() {
+			window.location.href = "../states-buttons.html"; // replace "index.html" with the name of your main page
+		}
+	</script>
 <p id="resultCount"></p>
 
 </body>
