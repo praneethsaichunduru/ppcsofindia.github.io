@@ -52,11 +52,6 @@
 			float: right;
 		}
 		
-		td img {
-			max-width: 200px;
-			max-height: "150px;
-		}
-		
 		#clear-input-btn {
 			position: absolute;
 			right: 0;
@@ -169,12 +164,13 @@
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" .jpg" onclick=""closeNav()">&times;</a>
-		<a href="index.html">HOME</a>
-		<a href="list-pincode.html">PPC LIST</a>
-		<a href="sase.html">SASE</a>
-		<a href="address.html">ADDRESSING</a>
-		<a href="states/states-buttons.html">STATES & UTs</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">HOME</a>
+		<a href="../list-pincode.html">PPC LIST</a>
+		<a href="../special-cancellations.html">SPECIAL CANCELLATIONS</a>
+		<a href="../sase.html">SASE</a>
+		<a href="../address.html">ADDRESSING</a>
+		<a href="states-buttons.html">STATES & UTs</a>
 		<a href="#"></a>
 	</div>	
 	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -183,7 +179,7 @@
 	
 	<div class="search-container">
 		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-		<button id="clear-input-btn" .jpg" onclick=""clearInput()">X</button>
+		<button id="clear-input-btn" onclick="clearInput()">X</button>
 	</div>
 
 	<table id="myTable">
@@ -524,77 +520,71 @@
 		<tr class="doubtful"><td>334</td><td>Chhau Dance ^</td><td>01.11.2016</td><td>Saraikela SO</td><td>Purbi Singhbhum</td><td>JHARKHAND</td><td>833219</td><td><a href="pictures/ppcs/833219-ChhauDance-SaraikelaSO.jpg" onclick="showImagePopup('833219-ChhauDance-SaraikelaSO.jpg')"><img src="pictures/ppcs/833219-ChhauDance-SaraikelaSO.jpg" alt="Chhau Dance" width="150" height="100"></a></td></tr>
 		<tr class="working"><td>335</td><td>Queen of Chhotanagpur</td><td>01.11.2016</td><td>Netarhat SO</td><td>Ranchi</td><td>JHARKHAND</td><td>835218</td><td><a href="pictures/ppcs/835218-QueenofChhotanagpur-NetarhatSO.jpg" onclick="showImagePopup('835218-QueenofChhotanagpur-NetarhatSO.jpg')"><img src="pictures/ppcs/835218-QueenofChhotanagpur-NetarhatSO.jpg" alt="Queen of Chhotanagpur" width="150" height="100"></a></td></tr>
 	</table>
-<script>
-	var myInput = document.getElementById("myInput");
-	var clearInputBtn = document.getElementById("clearInputBtn");
+	<script>
+		var myInput = document.getElementById("myInput");
+		var clearInputBtn = document.getElementById("clearInputBtn");
+	
+		// Clear the input field when the cancel button is clicked
+		clearInputBtn.addEventListener("click", function() {
+			myInput.value = "";
+			myFunction();
+		});
 
-	// Clear the input field when the cancel button is clicked
-	clearInputBtn.addEventListener("click", function() {
-		myInput.value = "";
-		myFunction();
-	});
-
-	function myFunction() {
-		var input, filter, table, tr, td, i, txtValue, match, count = 0;
-		input = document.getElementById("myInput");
-		filter = input.value.toUpperCase();
-		table = document.getElementById("myTable");
-		tr = table.getElementsByTagName("tr");
-		for (i = 0; i < tr.length; i++) {
-			match = false;
-			td = tr[i].getElementsByTagName("td");
-			if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
-				tr[i].style.display = "";
-				continue;
-			}
-			if (td.length) { // Exclude rows that don't have any data cells
-				for (j = 0; j < td.length; j++) {
-					txtValue = td[j].textContent || td[j].innerText;
-					if (txtValue.toUpperCase().indexOf(filter) > -1) {
-						match = true;
-						break;
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue, match, count = 0;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				match = false;
+				td = tr[i].getElementsByTagName("td");
+				if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
+					tr[i].style.display = "";
+					continue;
+				}
+				if (td.length) { // Exclude rows that don't have any data cells
+					for (j = 0; j < td.length; j++) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							match = true;
+							break;
+						}
+					}
+					if (match) {
+						tr[i].style.display = "";
+						count++;
+					} else {
+						tr[i].style.display = "none";
 					}
 				}
-				if (match) {
-					tr[i].style.display = "";
-					count++;
-				} else {
-					tr[i].style.display = "none";
-				}
 			}
+			document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
 		}
-		document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
-	}
-
-	function clearInput() {
-		document.getElementById("myInput").value = "";
-		myFunction();
-	}
-
-</script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
+	
+		function clearInput() {
+			document.getElementById("myInput").value = "";
+			myFunction();
 		}
+	</script>
 
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+	
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+	<script>
+		function goBack() {
+			window.location.href = "states-buttons.html"; 
 		}
-</script>
-<script>
-	function showImagePopup(imageUrl) {
-	const popup = document.getElementById('imagePopup');
-	const popupImage = document.getElementById('popupImage');
- 
-	popupImage.src = imageUrl;
-	popup.style.display = 'block';
-	}
-</script>
-
+	</script>
 <p id="resultCount"></p>
 
 </body>
