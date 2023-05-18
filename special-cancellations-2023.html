@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Hugo 0.88.1">
+	<title>SPECIAL CANCELLATIONS '23</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		/* width */
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #888; 
+		}
+
+		/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			background: #555; 
+		}* {
+			box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		a {
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			font-family: bookman old style;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+
+		p {
+			margin: 10px;
+			padding: 10px;
+			text-align: justify;
+			font-size: 18px;
+		}
+
+		#myTable {
+			border-collapse: collapse;
+			width: 96%;
+			font-size: 18px;
+			font-family: bookman old style;
+			margin: 0 auto;
+			margin-top: 0;
+			margin-bottom: 0;
+			display: block;
+			position: relative;
+		}
+
+		#myTable th, #myTable td {
+			text-align: center;
+			padding: 12px;
+		}
+
+		#myTable tr.header, #myTable tr:not(.exclude-hover):hover {
+			background-color: #D6EEEE;
+		}
+		
+		th {
+			background-color: #000080;
+			color: silver;
+		}
+
+		h2 {
+			font-family: bookman old style;
+			text-align: center;
+			margin: 20px 0;
+			font-size: 35px;
+		}
+
+		.custom-search-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #ced4da;
+			border-radius: 5px;
+			overflow: hidden;	
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+
+		.custom-search-input {
+			flex: 1;
+			border: none;
+			padding: 5px 10px;
+		}
+
+		.custom-search-button {
+			border: none;
+			background-color: transparent;
+			padding: 5px;
+			cursor: pointer;
+		}
+		
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 13px;}
+		}
+
+		.bihar td {
+			color: indigo;
+		}
+		
+		.karnataka td {
+			color: red;
+		}
+		
+		.maharashtra td {
+			color: orange;
+		}
+		
+		.odisha td {
+			color: green;
+		}
+		
+		.assam td {
+			color: lime green;
+		}
+		
+		.rajasthan td {
+			color: magenta;
+		}
+		
+		.tamilnadu td {
+			color: blue;
+		}
+		
+		hr {
+			margin: 0;
+			padding: 0;
+			border: none;
+			border-top: 3px solid black; /* Adjust the width and color as needed */
+		}
+	</style>
+
+	<!-- Custom styles for this template -->
+	<link href="headers.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<nav class="py-2 bg-light border-bottom">
+			<div class="container d-flex flex-wrap">
+				<ul class="nav me-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link link-dark px-2">Home</a></li>
+					<li class="nav-item"><a href="list-pincode.html" class="nav-link link-dark px-2">PPC List</a></li>
+					<li class="nav-item"><a href="special-cancellations.html" class="nav-link link-dark px-2 active" aria-current="page">Special Cancellations</a></li>
+					<li class="nav-item"><a href="sase.html" class="nav-link link-dark px-2">SASE</a></li>
+					<li class="nav-item"><a href="address.html" class="nav-link link-dark px-2">Addressing</a></li>
+					<li class="nav-item"><a href="map-data/map.html" class="nav-link link-dark px-2">Map</a></li>
+					<li class="nav-item"><a href="why&how.html" class="nav-link link-dark px-2">Why & How</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link link-dark px-2">Contact Us</a></li>
+				</ul>
+				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+					<input type="search" id="myInput" oninput="myFunction()" class="form-control" placeholder="Search..." aria-label="Search">
+					<i class="bi bi-x-lg"></i>
+				</form>
+			</div>
+		</nav>
+
+		<header class="py-3 mb-4 border-bottom">
+			<div class="container d-flex flex-wrap justify-content-center">
+				<span class="fs-4"><b>SPECIAL CANCELLATIONS 2023</b></span>
+			</div>
+		</header>
+	</main>
+
+	<table id="myTable">
+		<tr><th>S. NO. </th><th>DATE OF ISSUE</th><th>SPECIAL CANCELLATION</th><th>POST OFFICE AND RANK</th><th>PINCODE</th><th>CIRCLE</th><th>IMAGE</th></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>1</td><td>13.01.2023</td><td>Makara Sankranti 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Bengaluru.jpg" onclick="showImagePopup('13.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Bengaluru.jpg" alt="Makara Sankranti 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>2</td><td>13.01.2023</td><td>Makara Sankranti 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Mysuru.jpg" onclick="showImagePopup('13.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Mysuru.jpg" alt="Makara Sankranti 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>3</td><td>13.01.2023</td><td>Makara Sankranti 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Mangaluru.jpg" onclick="showImagePopup('13.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Mangaluru.jpg" alt="Makara Sankranti 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>4</td><td>13.01.2023</td><td>Makara Sankranti 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Belagavi.jpg" onclick="showImagePopup('13.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-MakaraSankranti2023-Belagavi.jpg" alt="Makara Sankranti 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="odisha"><td>5</td><td>13.01.2023</td><td>FIH Odisha's Hockey Men's World Cup 2023</td><td>Bhubaneswar GPO-PB</td><td>751001</td><td>Odisha</td><td><a href="pictures/special-cancellations/13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-Bhubaneswar.jpg" onclick="showImagePopup('13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-Bhubaneswar.jpg" alt="FIH Odisha's Hockey Men's World Cup 2023 Bhubaneswar" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>6</td><td>13.01.2023</td><td>FIH Odisha's Hockey Men's World Cup 2023</td><td>Rourkela HO</td><td>769001</td><td>Odisha</td><td><a href="pictures/special-cancellations/13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-Rourkela.jpg" onclick="showImagePopup('13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-.jpg')"><img src="pictures/special-cancellations/13.01.2023-FIHOdisha'sHockeyMen'sWorldCup2023-Rourkela.jpg" alt="FIH Odisha's Hockey Men's World Cup 2023 Rourkela" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="odisha"><td>7</td><td>14.01.2023</td><td>Makara Sankranti 2023</td><td>Bhubaneswar GPO-PB</td><td>751001</td><td>Odisha</td><td><a href="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Bhubaneswar.jpg" onclick="showImagePopup('14.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Bhubaneswar.jpg" alt="Makara Sankranti 2023 Bhubaneswar" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>8</td><td>14.01.2023</td><td>Makara Sankranti 2023</td><td>Puri HO</td><td>752001</td><td>Odisha</td><td><a href="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Puri.jpg" onclick="showImagePopup('14.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Puri.jpg" alt="Makara Sankranti 2023 Puri" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>9</td><td>14.01.2023</td><td>Makara Sankranti 2023</td><td>Cuttack HO-PB</td><td>753001</td><td>Odisha</td><td><a href="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Cuttack.jpg" onclick="showImagePopup('14.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Cuttack.jpg" alt="Makara Sankranti 2023 Cuttack" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>10</td><td>14.01.2023</td><td>Makara Sankranti 2023</td><td>Sambalpur HO</td><td>768001</td><td>Odisha</td><td><a href="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Sambalpur.jpg" onclick="showImagePopup('14.01.2023-MakaraSankranti2023-.jpg')"><img src="pictures/special-cancellations/14.01.2023-MakaraSankranti2023-Sambalpur.jpg" alt="Makara Sankranti 2023 Sambalpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>11</td><td>16.01.2023</td><td>The Evening Post Office - TEPO</td><td>Museum Road SO</td><td>560025</td><td>Karnataka</td><td><a href="pictures/special-cancellations/16.01.2023-TheEveningPostOffice-TEPO-MuseumRoad.jpg" onclick="showImagePopup('16.01.2023-TheEveningPostOffice-TEPO-.jpg')"><img src="pictures/special-cancellations/16.01.2023-TheEveningPostOffice-TEPO-MuseumRoad.jpg" alt="The Evening Post Office - TEPO Museum Road" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>12</td><td>23.01.2023</td><td>Parakram Diwas 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Bengaluru.jpg" onclick="showImagePopup('23.01.2023-ParakramDiwas2023-.jpg')"><img src="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Bengaluru.jpg" alt="Parakram Diwas 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>13</td><td>23.01.2023</td><td>Parakram Diwas 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Mysuru.jpg" onclick="showImagePopup('23.01.2023-ParakramDiwas2023-.jpg')"><img src="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Mysuru.jpg" alt="Parakram Diwas 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>14</td><td>23.01.2023</td><td>Parakram Diwas 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Mangaluru.jpg" onclick="showImagePopup('23.01.2023-ParakramDiwas2023-.jpg')"><img src="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Mangaluru.jpg" alt="Parakram Diwas 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>15</td><td>23.01.2023</td><td>Parakram Diwas 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Belagavi.jpg" onclick="showImagePopup('23.01.2023-ParakramDiwas2023-.jpg')"><img src="pictures/special-cancellations/23.01.2023-ParakramDiwas2023-Belagavi.jpg" alt="Parakram Diwas 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>16</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Mumbai.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Mumbai.jpg" alt="Girl Child Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>17</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Panaji.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Panaji.jpg" alt="Girl Child Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>18</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Pune.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Pune.jpg" alt="Girl Child Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>19</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Nashik.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Nashik.jpg" alt="Girl Child Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>20</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Aurangabad.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Aurangabad.jpg" alt="Girl Child Day 2023 Aurangabad" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>21</td><td>24.01.2023</td><td>Girl Child Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Nagpur.jpg" onclick="showImagePopup('24.01.2023-GirlChildDay2023-.jpg')"><img src="pictures/special-cancellations/24.01.2023-GirlChildDay2023-Nagpur.jpg" alt="Girl Child Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>22</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Mumbai.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Mumbai.jpg" alt="Data Privacy Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>23</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Panaji.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Panaji.jpg" alt="Data Privacy Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>24</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Pune.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Pune.jpg" alt="Data Privacy Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>25</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Nashik.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Nashik.jpg" alt="Data Privacy Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>26</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Aurangabad.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Aurangabad.jpg" alt="Data Privacy Day 2023 Aurangabad" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>27</td><td>28.01.2023</td><td>Data Privacy Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Nagpur.jpg" onclick="showImagePopup('28.01.2023-DataPrivacyDay2023-.jpg')"><img src="pictures/special-cancellations/28.01.2023-DataPrivacyDay2023-Nagpur.jpg" alt="Data Privacy Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="bihar"><td>28</td><td>28.01.2023</td><td>125 Years of Sister Nivedita</td><td>Patna GPO-PB</td><td>800001</td><td>Bihar</td><td><a href="pictures/special-cancellations/28.01.2023-125YearsofSisterNivedita-Patna.jpg" onclick="showImagePopup('28.01.2023-125YearsofSisterNivedita-.jpg')"><img src="pictures/special-cancellations/28.01.2023-125YearsofSisterNivedita-Patna.jpg" alt="125 Years of Sister Nivedita Patna" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>29</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Bengaluru.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Bengaluru.jpg" alt="Martyrs' Day 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>30</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Mysuru.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Mysuru.jpg" alt="Martyrs' Day 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>31</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Mangaluru.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Mangaluru.jpg" alt="Martyrs' Day 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>32</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Belagavi.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Belagavi.jpg" alt="Martyrs' Day 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="odisha"><td>33</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Bhubaneswar GPO-PB</td><td>751001</td><td>Odisha</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Bhubaneswar.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Bhubaneswar.jpg" alt="Martyrs' Day 2023 Bhubaneswar" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>34</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Cuttack HO-PB</td><td>753001</td><td>Odisha</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Cuttack.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Cuttack.jpg" alt="Martyrs' Day 2023 Cuttack" width="150" height="100"></a></td></tr>
+		<tr class="odisha"><td>35</td><td>30.01.2023</td><td>Martyrs' Day 2023</td><td>Sambalpur HO</td><td>768001</td><td>Odisha</td><td><a href="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Sambalpur.jpg" onclick="showImagePopup('30.01.2023-Martyrs'Day2023-.jpg')"><img src="pictures/special-cancellations/30.01.2023-Martyrs'Day2023-Sambalpur.jpg" alt="Martyrs' Day 2023 Sambalpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="bihar"><td>36</td><td>30.01.2023</td><td>102 Years of Burning of Foreign Clothes</td><td>Patna GPO-PB</td><td>800001</td><td>Bihar</td><td><a href="pictures/special-cancellations/30.01.2023-102YearsofBurningofForeignClothes-Patna.jpg" onclick="showImagePopup('30.01.2023-102YearsofBurningofForeignClothes-.jpg')"><img src="pictures/special-cancellations/30.01.2023-102YearsofBurningofForeignClothes-Patna.jpg" alt="102 Years of Burning of Foreign Clothes Patna" width="150" height="100"></a></td></tr>
+		<tr class="bihar"><td>37</td><td>31.01.2023</td><td>Cleanliness Day 2023</td><td>Patna GPO-PB</td><td>800001</td><td>Bihar</td><td><a href="pictures/special-cancellations/31.01.2023-CleanlinessDay2023-Patna.jpg" onclick="showImagePopup('31.01.2023-CleanlinessDay2023-.jpg')"><img src="pictures/special-cancellations/31.01.2023-CleanlinessDay2023-Patna.jpg" alt="Cleanliness Day 2023 Patna" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>38</td><td>18.02.2023</td><td>Maha Shivratri 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Bengaluru.jpg" onclick="showImagePopup('18.02.2023-MahaShivratri2023-.jpg')"><img src="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Bengaluru.jpg" alt="Maha Shivratri 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>39</td><td>18.02.2023</td><td>Maha Shivratri 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Mysuru.jpg" onclick="showImagePopup('18.02.2023-MahaShivratri2023-.jpg')"><img src="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Mysuru.jpg" alt="Maha Shivratri 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>40</td><td>18.02.2023</td><td>Maha Shivratri 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Mangaluru.jpg" onclick="showImagePopup('18.02.2023-MahaShivratri2023-.jpg')"><img src="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Mangaluru.jpg" alt="Maha Shivratri 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>41</td><td>18.02.2023</td><td>Maha Shivratri 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Belagavi.jpg" onclick="showImagePopup('18.02.2023-MahaShivratri2023-.jpg')"><img src="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Belagavi.jpg" alt="Maha Shivratri 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="assam"><td>42</td><td>18.02.2023</td><td>Maha Shivratri 2023</td><td>Silchar HO</td><td>788001</td><td>Assam</td><td><a href="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Silchar.jpg" onclick="showImagePopup('18.02.2023-MahaShivratri2023-.jpg')"><img src="pictures/special-cancellations/18.02.2023-MahaShivratri2023-Silchar.jpg" alt="Maha Shivratri 2023 Silchar" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>43</td><td>28.02.2023</td><td>National Science Day 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Bengaluru.jpg" onclick="showImagePopup('28.02.2023-NationalScienceDay2023-.jpg')"><img src="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Bengaluru.jpg" alt="National Science Day 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>44</td><td>28.02.2023</td><td>National Science Day 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Mysuru.jpg" onclick="showImagePopup('28.02.2023-NationalScienceDay2023-.jpg')"><img src="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Mysuru.jpg" alt="National Science Day 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>45</td><td>28.02.2023</td><td>National Science Day 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Mangaluru.jpg" onclick="showImagePopup('28.02.2023-NationalScienceDay2023-.jpg')"><img src="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Mangaluru.jpg" alt="National Science Day 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>46</td><td>28.02.2023</td><td>National Science Day 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Belagavi.jpg" onclick="showImagePopup('28.02.2023-NationalScienceDay2023-.jpg')"><img src="pictures/special-cancellations/28.02.2023-NationalScienceDay2023-Belagavi.jpg" alt="National Science Day 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="rajasthan"><td>47</td><td>04.03.2023</td><td>75th Year of SMS Medical College</td><td>SMS Hospital</td><td>322004</td><td>Rajasthan</td><td><a href="pictures/special-cancellations/04.03.2023-75thYearofSMSMedicalCollege-SMSHospital.jpg" onclick="showImagePopup('04.03.2023-75thYearofSMSMedicalCollege-.jpg')"><img src="pictures/special-cancellations/04.03.2023-75thYearofSMSMedicalCollege-SMSHospital.jpg" alt="75th Year of SMS Medical College SMS Hospital" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>48</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Mumbai.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Mumbai.jpg" alt="International Women's Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>49</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Panaji.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Panaji.jpg" alt="International Women's Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>50</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Pune.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Pune.jpg" alt="International Women's Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>51</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Nashik.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Nashik.jpg" alt="International Women's Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>52</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Aurangabad.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Aurangabad.jpg" alt="International Women's Day 2023 Aurangabad" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>53</td><td>08.03.2023</td><td>International Women's Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Nagpur.jpg" onclick="showImagePopup('08.03.2023-InternationalWomen'sDay2023-.jpg')"><img src="pictures/special-cancellations/08.03.2023-InternationalWomen'sDay2023-Nagpur.jpg" alt="International Women's Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>54</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mumbai.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mumbai.jpg" alt="World Forestry Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>55</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Panaji.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Panaji.jpg" alt="World Forestry Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>56</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Pune.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Pune.jpg" alt="World Forestry Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>57</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Nashik.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Nashik.jpg" alt="World Forestry Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>58</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Aurangabad.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Aurangabad.jpg" alt="World Forestry Day 2023 Aurangabad" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>59</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Nagpur.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Nagpur.jpg" alt="World Forestry Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>60</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Bengaluru.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Bengaluru.jpg" alt="World Forestry Day 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>61</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mysuru.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mysuru.jpg" alt="World Forestry Day 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>62</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mangaluru.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Mangaluru.jpg" alt="World Forestry Day 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>63</td><td>21.03.2023</td><td>World Forestry Day 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Belagavi.jpg" onclick="showImagePopup('21.03.2023-WorldForestryDay2023-.jpg')"><img src="pictures/special-cancellations/21.03.2023-WorldForestryDay2023-Belagavi.jpg" alt="World Forestry Day 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>64</td><td>22.03.2023</td><td>World Water Day 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Bengaluru.jpg" onclick="showImagePopup('22.03.2023-WorldWaterDay2023-.jpg')"><img src="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Bengaluru.jpg" alt="World Water Day 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>65</td><td>22.03.2023</td><td>World Water Day 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Mysuru.jpg" onclick="showImagePopup('22.03.2023-WorldWaterDay2023-.jpg')"><img src="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Mysuru.jpg" alt="World Water Day 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>66</td><td>22.03.2023</td><td>World Water Day 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Mangaluru.jpg" onclick="showImagePopup('22.03.2023-WorldWaterDay2023-.jpg')"><img src="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Mangaluru.jpg" alt="World Water Day 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>67</td><td>22.03.2023</td><td>World Water Day 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Belagavi.jpg" onclick="showImagePopup('22.03.2023-WorldWaterDay2023-.jpg')"><img src="pictures/special-cancellations/22.03.2023-WorldWaterDay2023-Belagavi.jpg" alt="World Water Day 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>68</td><td>25.03.2023</td><td>Celebrate Nature</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.03.2023-CelebrateNature-Bengaluru.jpg" onclick="showImagePopup('25.03.2023-CelebrateNature-.jpg')"><img src="pictures/special-cancellations/25.03.2023-CelebrateNature-Bengaluru.jpg" alt="Celebrate Nature Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>69</td><td>09.04.2023</td><td>Tirthankar Mahaveer Jayanti 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Nashik.jpg" onclick="showImagePopup('09.04.2023-TirthankarMahaveerJayanti2023-.jpg')"><img src="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Nashik.jpg" alt="Tirthankar Mahaveer Jayanti 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>70</td><td>09.04.2023</td><td>Tirthankar Mahaveer Jayanti 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Bengaluru.jpg" onclick="showImagePopup('09.04.2023-TirthankarMahaveerJayanti2023-.jpg')"><img src="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Bengaluru.jpg" alt="Tirthankar Mahaveer Jayanti 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>71</td><td>09.04.2023</td><td>Tirthankar Mahaveer Jayanti 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Mysuru.jpg" onclick="showImagePopup('09.04.2023-TirthankarMahaveerJayanti2023-.jpg')"><img src="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Mysuru.jpg" alt="Tirthankar Mahaveer Jayanti 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>72</td><td>09.04.2023</td><td>Tirthankar Mahaveer Jayanti 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Mangaluru.jpg" onclick="showImagePopup('09.04.2023-TirthankarMahaveerJayanti2023-.jpg')"><img src="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Mangaluru.jpg" alt="Tirthankar Mahaveer Jayanti 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>73</td><td>09.04.2023</td><td>Tirthankar Mahaveer Jayanti 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Belagavi.jpg" onclick="showImagePopup('09.04.2023-TirthankarMahaveerJayanti2023-.jpg')"><img src="pictures/special-cancellations/09.04.2023-TirthankarMahaveerJayanti2023-Belagavi.jpg" alt="Tirthankar Mahaveer Jayanti 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>74</td><td>18.04.2023</td><td>World Heritage Day 2023 - Mumbai Veterniary College</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-MumbaiVeterniaryCollege-Mumbai.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-MumbaiVeterniaryCollege-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-MumbaiVeterniaryCollege-Mumbai.jpg" alt="World Heritage Day 2023 - Mumbai Veterniary College Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>75</td><td>18.04.2023</td><td>World Heritage Day 2023 - Petroglyphs</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-Petroglyphs-Panaji.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-Petroglyphs-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-Petroglyphs-Panaji.jpg" alt="World Heritage Day 2023 - Petroglyphs Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>76</td><td>18.04.2023</td><td>World Heritage Day 2023 - Hatti Barav</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-HattiBarav-Pune.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-HattiBarav-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-HattiBarav-Pune.jpg" alt="World Heritage Day 2023 - Hatti Barav Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>77</td><td>18.04.2023</td><td>World Heritage Day 2023 - Trimbakeshwar Temple</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-TrimbakeshwarTemple-Nashik.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-TrimbakeshwarTemple-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-TrimbakeshwarTemple-Nashik.jpg" alt="World Heritage Day 2023 - Trimbakeshwar Temple Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>78</td><td>18.04.2023</td><td>World Heritage Day 2023 - Walur Helical Stepwell</td><td>Chhatrapati Sambhajinagar HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-WalurHelicalStepwell-ChhatrapatiSambhajinagar.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-WalurHelicalStepwell-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-WalurHelicalStepwell-ChhatrapatiSambhajinagar.jpg" alt="World Heritage Day 2023 -  Chhatrapati Sambhajinagar" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>79</td><td>18.04.2023</td><td>World Heritage Day 2023 - Bamboo Products of Chandrapur</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-BambooProductsofChandrapur-Nagpur.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-BambooProductsofChandrapur-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-BambooProductsofChandrapur-Nagpur.jpg" alt="World Heritage Day 2023 - Bamboo Products of Chandrapur Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>80</td><td>18.04.2023</td><td>World Heritage Day 2023 - Sandesh Communication Museum</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Bengaluru.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Bengaluru.jpg" alt="World Heritage Day 2023 - Sandesh Communication Museum Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>81</td><td>18.04.2023</td><td>World Heritage Day 2023 - Sandesh Communication Museum</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Mysuru.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Mysuru.jpg" alt="World Heritage Day 2023 - Sandesh Communication Museum Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>82</td><td>18.04.2023</td><td>World Heritage Day 2023 - Sandesh Communication Museum</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Mangaluru.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Mangaluru.jpg" alt="World Heritage Day 2023 - Sandesh Communication Museum Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>83</td><td>18.04.2023</td><td>World Heritage Day 2023 - Sandesh Communication Museum</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Belagavi.jpg" onclick="showImagePopup('18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-.jpg')"><img src="pictures/special-cancellations/18.04.2023-WorldHeritageDay2023-SandeshCommunicationMuseum-Belagavi.jpg" alt="World Heritage Day 2023 - Sandesh Communication Museum Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>84</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Mumbai.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Mumbai.jpg" alt="World Malaria Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>85</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Panaji.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Panaji.jpg" alt="World Malaria Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>86</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Pune.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Pune.jpg" alt="World Malaria Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>87</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Nashik.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Nashik.jpg" alt="World Malaria Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>88</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Chhatrapati Sambhajinagar HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Chhatrapati Sambhajinagar.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Chhatrapati Sambhajinagar.jpg" alt="World Malaria Day 2023 Chhatrapati Sambhajinagar" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>89</td><td>25.04.2023</td><td>World Malaria Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Nagpur.jpg" onclick="showImagePopup('25.04.2023-WorldMalariaDay2023-.jpg')"><img src="pictures/special-cancellations/25.04.2023-WorldMalariaDay2023-Nagpur.jpg" alt="World Malaria Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="karnataka"><td>90</td><td>26.04.2023</td><td>World Intellectual Property Day 2023</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Bengaluru.jpg" onclick="showImagePopup('26.04.2023-WorldIntellectualPropertyDay2023-.jpg')"><img src="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Bengaluru.jpg" alt="World Intellectual Property Day 2023 Bengaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>91</td><td>26.04.2023</td><td>World Intellectual Property Day 2023</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Mysuru.jpg" onclick="showImagePopup('26.04.2023-WorldIntellectualPropertyDay2023-.jpg')"><img src="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Mysuru.jpg" alt="World Intellectual Property Day 2023 Mysuru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>92</td><td>26.04.2023</td><td>World Intellectual Property Day 2023</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Mangaluru.jpg" onclick="showImagePopup('26.04.2023-WorldIntellectualPropertyDay2023-.jpg')"><img src="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Mangaluru.jpg" alt="World Intellectual Property Day 2023 Mangaluru" width="150" height="100"></a></td></tr>
+		<tr class="karnataka"><td>93</td><td>26.04.2023</td><td>World Intellectual Property Day 2023</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Belagavi.jpg" onclick="showImagePopup('26.04.2023-WorldIntellectualPropertyDay2023-.jpg')"><img src="pictures/special-cancellations/26.04.2023-WorldIntellectualPropertyDay2023-Belagavi.jpg" alt="World Intellectual Property Day 2023 Belagavi" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="tamilnadu"><td>94</td><td>26.04.2023</td><td>Centenary Celebration of Sri Kaliswari Group of Industries</td><td>Tiruttangal SO</td><td>626130</td><td>Tamil Nadu</td><td><a href="pictures/special-cancellations/26.04.2023-CentenaryCelebrationofSriKaliswariGroupofIndustries-Tiruttangal.jpg" onclick="showImagePopup('26.04.2023-CentenaryCelebrationofSriKaliswariGroupofIndustries-.jpg')"><img src="pictures/special-cancellations/26.04.2023-CentenaryCelebrationofSriKaliswariGroupofIndustries-Tiruttangal.jpg" alt="Centenary Celebration of Sri Kaliswari Group of Industries Tiruttangal" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+		<tr class="maharashtra"><td>95</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Mumbai.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Mumbai.jpg" alt="World Migratory Bird Day 2023 Mumbai" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>96</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Panaji.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Panaji.jpg" alt="World Migratory Bird Day 2023 Panaji" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>97</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Pune.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Pune.jpg" alt="World Migratory Bird Day 2023 Pune" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>98</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Nashik.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Nashik.jpg" alt="World Migratory Bird Day 2023 Nashik" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>99</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Chhatrapati Sambhajinagar HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-ChhatrapatiSambhajinagar.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-ChhatrapatiSambhajinagar.jpg" alt="World Migratory Bird Day 2023 Chatrapati Sambhajinagar" width="150" height="100"></a></td></tr>
+		<tr class="maharashtra"><td>100</td><td>13.02.2023</td><td>World Migratory Bird Day 2023</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Nagpur.jpg" onclick="showImagePopup('13.02.2023-WorldMigratoryBirdDay2023-.jpg')"><img src="pictures/special-cancellations/13.02.2023-WorldMigratoryBirdDay2023-Nagpur.jpg" alt="World Migratory Bird Day 2023 Nagpur" width="150" height="100"></a></td></tr>
+		<tr class="exclude-hover"><td colspan="7"><hr></td></tr>
+	</table>
+	
+	<script>
+		var myInput = document.getElementById("myInput");
+		var clearInputBtn = document.getElementById("clearInputBtn");
+	
+		// Clear the input field when the cancel button is clicked
+		clearInputBtn.addEventListener("click", function() {
+			myInput.value = "";
+			myFunction();
+		});
+
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue, match, count = 0;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				match = false;
+				td = tr[i].getElementsByTagName("td");
+				if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
+					tr[i].style.display = "";
+					continue;
+				}
+				if (td.length) { // Exclude rows that don't have any data cells
+					for (j = 0; j < td.length; j++) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							match = true;
+							break;
+						}
+					}
+					if (match) {
+						tr[i].style.display = "";
+						count++;
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+			document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
+		}
+	
+		function clearInput() {
+			document.getElementById("myInput").value = "";
+			myFunction();
+		}
+	</script>
+	<p id="resultCount"></p>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+	<script>
+		$(document).ready(function() {
+			$('input[type=checkbox][name=sort_option]').change(function() {
+				var selectedOptions = $('input[type=checkbox][name=sort_option]:checked').map(function() {
+					return $(this).val();
+				}).get();
+				if (selectedOptions.length === 0) {
+					$('table tr.data-row').show();
+				} else {
+					$('table tr.data-row').each(function() {
+						var shouldShow = false;
+						for (var i = 0; i < selectedOptions.length; i++) {
+							if ($(this).hasClass(selectedOptions[i])) {
+								shouldShow = true;
+								break;
+							}
+						}
+						$(this).toggle(shouldShow);
+					});
+				}
+				var count = $('table tr.data-row:visible').length;
+				if (selectedOptions.length === 0) {
+					count = 0;
+				}
+				$('#count').text(count);
+			});
+			$('#clear-selection').click(function() {
+				$('input[type=checkbox][name=options]').prop('checked', false);
+				$('table tr.data-row').show();
+				$('#count').text($('table tr.data-row').length);
+			});
+		});
+    </script>
+		
+	<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+	
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

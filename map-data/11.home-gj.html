@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Hugo 0.88.1">
+	<title>GUJARAT</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		/* width */
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #888; 
+		}
+
+		/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			background: #555; 
+		}* {
+			box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		a {
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			font-family: bookman old style;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+
+		p {
+			margin: 10px;
+			padding: 10px;
+			text-align: justify;
+			font-size: 18px;
+		}
+
+		.removed td {
+			color: red;
+		}
+			
+		.working td {
+			color: green;
+		}
+		
+		.doubtful td {
+			color: blue;
+		}
+				
+		.replaced td {
+			color: orange;
+		}
+
+		#myTable {
+			border-collapse: collapse;
+			width: 96%;
+			font-size: 18px;
+			font-family: bookman old style;
+			margin: 0 auto;
+			margin-top: 0;
+			margin-bottom: 0;
+			display: block;
+			position: relative;
+		}
+
+		#myTable th, #myTable td {
+			text-align: center;
+			padding: 12px;
+		}
+
+		#myTable tr.header, #myTable tr:hover {
+			background-color: #D6EEEE;
+		}
+
+		h2 {
+			font-family: bookman old style;
+			text-align: center;
+			margin: 20px 0;
+			font-size: 35px;
+		}
+
+		.custom-search-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #ced4da;
+			border-radius: 5px;
+			overflow: hidden;	
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+
+		.custom-search-input {
+			flex: 1;
+			border: none;
+			padding: 5px 10px;
+		}
+
+		.custom-search-button {
+			border: none;
+			background-color: transparent;
+			padding: 5px;
+			cursor: pointer;
+		}
+		
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 13px;}
+		}
+	</style>
+
+	<!-- Custom styles for this template -->
+	<link href="headers.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<nav class="py-2 bg-light border-bottom">
+			<div class="container d-flex flex-wrap">
+				<ul class="nav me-auto">
+					<li class="nav-item"><a href="../index.html" class="nav-link link-dark px-2">Home</a></li>
+					<li class="nav-item"><a href="../list-pincode.html" class="nav-link link-dark px-2 active" aria-current="page">PPC List</a></li>
+					<li class="nav-item"><a href="../special-cancellations.html" class="nav-link link-dark px-2">Special Cancellations</a></li>
+					<li class="nav-item"><a href="../sase.html" class="nav-link link-dark px-2">SASE</a></li>
+					<li class="nav-item"><a href="../address.html" class="nav-link link-dark px-2">Addressing</a></li>
+					<li class="nav-item"><a href="map.html" class="nav-link link-dark px-2">Map</a></li>
+					<li class="nav-item"><a href="../why&how.html" class="nav-link link-dark px-2">Why & How</a></li>
+					<li class="nav-item"><a href="../contact.html" class="nav-link link-dark px-2">Contact Us</a></li>
+				</ul>
+				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+					<input type="search" id="myInput" oninput="myFunction()" class="form-control" placeholder="Search..." aria-label="Search">
+					<i class="bi bi-x-lg"></i>
+				</form>
+			</div>
+		</nav>
+
+		<header class="py-3 mb-4 border-bottom">
+			<div class="container d-flex flex-wrap justify-content-center">
+				<span class="fs-4"><b>GUJARAT</b></span>
+			</div>
+		</header>
+		<form>
+		<div class="checkbox-group" align="center">
+			<label>
+				<input type="checkbox" name="sort_option" value="working">
+				<span style="color: green;"><b>Available</b></span>
+			</label>
+			<label>
+			<input type="checkbox" name="sort_option" value="removed">
+				<span style="color: red;"><b>Unavailable</b></span>
+			</label>
+			<label>
+				<input type="checkbox" name="sort_option" value="doubtful">
+				<span style="color: blue;"><b>Doubtful</b></span>
+			</label>
+			<label>
+				<input type="checkbox" name="sort_option" value="replaced">
+				<span style="color: orange;"><b>Replaced</b></span>
+			</label>
+			<button id="clear-selection" class="btn btn-warning">Clear Selection</button>
+			<button id="close-tab-btn" class="btn btn-warning">Close Tab</button>
+			<p><b>Selected rows: <span id="count">0</span></b></p>
+		</div>
+	</form>
+	</main>
+
+	<table id="myTable">
+		<tr><th>S. NO.</th><th>PERMANENT PICTORIAL CANCELLATION</th><th>DATE OF INTRODUCTION</th><th>POST OFFICE AND RANK</th><th>DISTRICT</th><th>STATE/UT</th><th>PINCODE</th><th>IMAGE</th></tr>
+		<tr class="replaced data-row"><td>1</td><td>Alfred High School</td><td>02.10.1991</td><td>Rajkot HO-PB</td><td>Rajkot</td><td>GUJARAT</td><td>360001</td><td><a href="../pictures/ppcs/360001-AlfredHighSchool-RajkotHO.jpg" onclick="showImagePopup('360001-AlfredHighSchool-RajkotHO.jpg')"><img src="../pictures/ppcs/360001-AlfredHighSchool-RajkotHO.jpg" alt="Alfred High School" width="150" height="100"></a></td></tr>
+		<tr class="replaced data-row"><td>2</td><td>Mohandas Gandhi Vidyalaya</td><td>NA</td><td>Rajkot HO-PB</td><td>Rajkot</td><td>GUJARAT</td><td>360001</td><td><a href="../pictures/ppcs/360001-MohandasGandhiVidyalaya-RajkotHO.jpg" onclick="showImagePopup('360001-MohandasGandhiVidyalaya-RajkotHO.jpg')"><img src="../pictures/ppcs/360001-MohandasGandhiVidyalaya-RajkotHO.jpg" alt="Mohandas Gandhi Vidyalaya" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>3</td><td>Mahatma Gandhi Museum</td><td>02.10.2020</td><td>Rajkot HO-PB</td><td>Rajkot</td><td>GUJARAT</td><td>360001</td><td><a href="../pictures/ppcs/360001-MahatmaGandhiMuseum-RajkotHOPB.jpg" onclick="showImagePopup('360001-MahatmaGandhiMuseum-RajkotHOPB.jpg')"><img src="../pictures/ppcs/360001-MahatmaGandhiMuseum-RajkotHOPB.jpg" alt="Mahatma Gandhi Museum" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>4</td><td>Kirti Mandir-The Birth Place of Mahatma Gandhi</td><td>18.04.1992</td><td>Porbandar HO</td><td>Porbandar</td><td>GUJARAT</td><td>360575</td><td><a href="../pictures/ppcs/360575-KirtiMandir-TheBirthPlaceofMahatmaGandhi-PorbandarHO.jpg" onclick="showImagePopup('360575-KirtiMandir-TheBirthPlaceofMahatmaGandhi-PorbandarHO.jpg')"><img src="../pictures/ppcs/360575-KirtiMandir-TheBirthPlaceofMahatmaGandhi-PorbandarHO.jpg" alt="Kirti Mandir-The Birth Place of Mahatma Gandhi" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>5</td><td>Arabian Sea Octopus</td><td>02.01.2011</td><td>Jamnagar SO</td><td>Jamnagar</td><td>GUJARAT</td><td>361001</td><td><a href="../pictures/ppcs/361001-ArabianSeaOctopus-JamnagarSO.jpg" onclick="showImagePopup('361001-ArabianSeaOctopus-JamnagarSO.jpg')"><img src="../pictures/ppcs/361001-ArabianSeaOctopus-JamnagarSO.jpg" alt="Arabian Sea Octopus" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>6</td><td>Arabian Sea, Bet of Dwarka</td><td>08.04.2011</td><td>Bet SO</td><td>Jamnagar</td><td>GUJARAT</td><td>361330</td><td><a href="../pictures/ppcs/361330-ArabianSeaBetofDwarka-BetSO.jpg" onclick="showImagePopup('361330-ArabianSeaBetofDwarka-BetSO.jpg')"><img src="../pictures/ppcs/361330-ArabianSeaBetofDwarka-BetSO.jpg" alt="Arabian Sea, Bet of Dwarka" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>7</td><td>Dwarkadhish Temple, Land of Sri Krishna</td><td>16.07.1984</td><td>Dwarka SO</td><td>Devbhoomi Dwarka</td><td>GUJARAT</td><td>361335</td><td><a href="../pictures/ppcs/361335-DwarkadhishTempleLandofSriKrishna-DwarkaSO.jpg" onclick="showImagePopup('361335-DwarkadhishTempleLandofSriKrishna-DwarkaSO.jpg')"><img src="../pictures/ppcs/361335-DwarkadhishTempleLandofSriKrishna-DwarkaSO.jpg" alt="Dwarkadhish Temple, Land of Sri Krishna" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>8</td><td>Asiatic Lions & Visit Sasan Gir Wildlife Sanctuary</td><td>01.11.1975</td><td>Sasan Gir SO</td><td>Junagadh</td><td>GUJARAT</td><td>362135</td><td><a href="../pictures/ppcs/362135-AsiaticLions&VisitSasanGirWildlifeSanctuary-SasanGirSO.jpg" onclick="showImagePopup('362135-AsiaticLions&VisitSasanGirWildlifeSanctuary-SasanGirSO.jpg')"><img src="../pictures/ppcs/362135-AsiaticLions&VisitSasanGirWildlifeSanctuary-SasanGirSO.jpg" alt="Asiatic Lions & Visit Sasan Gir Wildlife Sanctuary" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>9</td><td>Sri Somnath Temple</td><td>16.02.1977</td><td>Prabhas Patan SO</td><td>Junagadh</td><td>GUJARAT</td><td>362268</td><td><a href="../pictures/ppcs/362268-SriSomnathTemple-PrabhasPatanSO.jpg" onclick="showImagePopup('362268-SriSomnathTemple-PrabhasPatanSO.jpg')"><img src="../pictures/ppcs/362268-SriSomnathTemple-PrabhasPatanSO.jpg" alt="Sri Somnath Temple" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>10</td><td>Indian Wild Ass</td><td>14.10.2010</td><td>Dhrangadhra MDG-SO</td><td>Surendranagar</td><td>GUJARAT</td><td>363310</td><td><a href="../pictures/ppcs/363310-IndianWildAss-DhrangadhraMDGSO.jpg" onclick="showImagePopup('363310-IndianWildAss-DhrangadhraMDGSO.jpg')"><img src="../pictures/ppcs/363310-IndianWildAss-DhrangadhraMDGSO.jpg" alt="Indian Wild Ass" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>11</td><td>Siddha Chakra</td><td>03.07.1992</td><td>Palitana SR SO</td><td>Bhavnagar</td><td>GUJARAT</td><td>364270</td><td><a href="../pictures/ppcs/364270-SiddhaChakra-PalitanaSRSO.jpg" onclick="showImagePopup('364270-SiddhaChakra-PalitanaSRSO.jpg')"><img src="../pictures/ppcs/364270-SiddhaChakra-PalitanaSRSO.jpg" alt="Siddha Chakra" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>12</td><td>Visit Flamingo City, Bird Sanctuary</td><td>16.07.1984</td><td>Bhuj HO</td><td>Kachchh</td><td>GUJARAT</td><td>370001</td><td><a href="../pictures/ppcs/370001-VisitFlamingoCityBirdSanctuary-BhujHO.jpg" onclick="showImagePopup('370001-VisitFlamingoCityBirdSanctuary-BhujHO.jpg')"><img src="../pictures/ppcs/370001-VisitFlamingoCityBirdSanctuary-BhujHO.jpg" alt="Visit Flamingo City, Bird Sanctuary" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>13</td><td>Harappan Culture</td><td>02.02.2021</td><td>Dholavira BO</td><td>Kachchh</td><td>GUJARAT</td><td>370165</td><td><a href="../pictures/ppcs/370165-HarappanCulture-DholaviraBO.jpg" onclick="showImagePopup('370165-HarappanCulture-DholaviraBO.jpg')"><img src="../pictures/ppcs/370165-HarappanCulture-DholaviraBO.jpg" alt="Harappan Culture" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>14</td><td>Kachchhi Mudwork</td><td>02.02.2021</td><td>Khavda SO</td><td>Kachchh</td><td>GUJARAT</td><td>370510</td><td><a href="../pictures/ppcs/370510-KachchhiMudwork-KhavdaSO.jpg" onclick="showImagePopup('370510-KachchhiMudwork-KhavdaSO.jpg')"><img src="../pictures/ppcs/370510-KachchhiMudwork-KhavdaSO.jpg" alt="Kachchhi Mudwork" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>15</td><td>Lakhpat Fort, Kachchhh</td><td>02.02.2021</td><td>Lakhpat BO</td><td>Kachchh</td><td>GUJARAT</td><td>370627</td><td><a href="../pictures/ppcs/370627-LakhpatFortKachchhh-LakhpatBO.jpg" onclick="showImagePopup('370627-LakhpatFortKachchhh-LakhpatBO.jpg')"><img src="../pictures/ppcs/370627-LakhpatFortKachchhh-LakhpatBO.jpg" alt="Lakhpat Fort, Kachchhh" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>16</td><td>Architectural Delights Sidi Saiyad’s Window</td><td>16.07.1984</td><td>Ahmedabad GPO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380001</td><td><a href="../pictures/ppcs/380001-ArchitecturalDelightsSidiSaiyad’sWindow-AhmedabadGPO.jpg" onclick="showImagePopup('380001-ArchitecturalDelightsSidiSaiyad’sWindow-AhmedabadGPO.jpg')"><img src="../pictures/ppcs/380001-ArchitecturalDelightsSidiSaiyad’sWindow-AhmedabadGPO.jpg" alt="Architectural Delights Sidi Saiyad’s Window" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>17</td><td>Sardar Vallabhbhai Patel National Memorial</td><td>14.08.2006</td><td>Shahibaug SO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380004</td><td><a href="../pictures/ppcs/380004-SardarVallabhbhaiPatelNationalMemorial-ShahibaugSO.jpg" onclick="showImagePopup('380004-SardarVallabhbhaiPatelNationalMemorial-ShahibaugSO.jpg')"><img src="../pictures/ppcs/380004-SardarVallabhbhaiPatelNationalMemorial-ShahibaugSO.jpg" alt="Sardar Vallabhbhai Patel National Memorial" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>18</td><td>Kocharab Satyagraha Ashram Smarak</td><td>30.01.1998</td><td>Ellis Bridge SO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380006</td><td><a href="../pictures/ppcs/380006-KocharabSatyagrahaAshramSmarak-EllisBridgeSO.jpg" onclick="showImagePopup('380006-KocharabSatyagrahaAshramSmarak-EllisBridgeSO.jpg')"><img src="../pictures/ppcs/380006-KocharabSatyagrahaAshramSmarak-EllisBridgeSO.jpg" alt="Kocharab Satyagraha Ashram Smarak" width="150" height="100"></a></td></tr>
+		<tr class="removed data-row"><td>19</td><td>Adalaj Stepwell</td><td>27.03.1986</td><td>Navrangpura HO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380009</td><td><a href="../pictures/ppcs/380009-AdalajStepwell-NavrangpuraHO.jpg" onclick="showImagePopup('380009-AdalajStepwell-NavrangpuraHO.jpg')"><img src="../pictures/ppcs/380009-AdalajStepwell-NavrangpuraHO.jpg" alt="Adalaj Stepwell" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>20</td><td>Sidi Saiyad’s Mosque Window</td><td>31.03.2007</td><td>IIM, Ahmedabad SO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380015</td><td><a href="../pictures/ppcs/380015-SidiSaiyad’sMosqueWindow-IIMAhmedabadSO.jpg" onclick="showImagePopup('380015-SidiSaiyad’sMosqueWindow-IIMAhmedabadSO.jpg')"><img src="../pictures/ppcs/380015-SidiSaiyad’sMosqueWindow-IIMAhmedabadSO.jpg" alt="Sidi Saiyad’s Mosque Window" width="150" height="100"></a></td></tr>
+		<tr class="removed data-row"><td>21</td><td>Spinning Wheel (Charakha)</td><td>30.01.1995</td><td>Gandhi Ashram SO</td><td>Ahmedabad</td><td>GUJARAT</td><td>380027</td><td><a href="../pictures/ppcs/380027-SpinningWheelCharakha-GandhiAshramSO.jpg" onclick="showImagePopup('380027-SpinningWheelCharakha-GandhiAshramSO.jpg')"><img src="../pictures/ppcs/380027-SpinningWheelCharakha-GandhiAshramSO.jpg" alt="Spinning Wheel (Charakha)" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>22</td><td>Lothal Seal</td><td>17.12.1997</td><td>Lothal Bhurkhi Railway Station SO</td><td>Ahmedabad</td><td>GUJARAT</td><td>382230</td><td><a href="../pictures/ppcs/382230-LothalSeal-LothalBhurkhiRailwayStationSO.jpg" onclick="showImagePopup('382230-LothalSeal-LothalBhurkhiRailwayStationSO.jpg')"><img src="../pictures/ppcs/382230-LothalSeal-LothalBhurkhiRailwayStationSO.jpg" alt="Lothal Seal" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>23</td><td>Surya Temple</td><td>02.04.1977</td><td>Modhera SO</td><td>Mehsana</td><td>GUJARAT</td><td>384212</td><td><a href="../pictures/ppcs/384212-SuryaTemple-ModheraSO.jpg" onclick="showImagePopup('384212-SuryaTemple-ModheraSO.jpg')"><img src="../pictures/ppcs/384212-SuryaTemple-ModheraSO.jpg" alt="Surya Temple" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>24</td><td>Rani Ki Vav (Stepwell)</td><td>09.10.2002</td><td>Patan (NG) SO</td><td>Patan</td><td>GUJARAT</td><td>384265</td><td><a href="../pictures/ppcs/384265-RaniKiVavStepwell-PatanNGSO.jpg" onclick="showImagePopup('384265-RaniKiVavStepwell-PatanNGSO.jpg')"><img src="../pictures/ppcs/384265-RaniKiVavStepwell-PatanNGSO.jpg" alt="Rani Ki Vav (Stepwell)" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>25</td><td>Birth Place of Sardar Vallabhbhai Patel</td><td>31.10.2020</td><td>Nadiad HO</td><td>Kheda</td><td>GUJARAT</td><td>387001</td><td><a href="../pictures/ppcs/387001-BirthPlaceofSardarVallabhbhaiPatel-NadiadHO.jpg" onclick="showImagePopup('387001-BirthPlaceofSardarVallabhbhaiPatel-NadiadHO.jpg')"><img src="../pictures/ppcs/387001-BirthPlaceofSardarVallabhbhaiPatel-NadiadHO.jpg" alt="Birth Place of Sardar Vallabhbhai Patel" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>26</td><td>Shri Ranchhordraiji Maharaj Temple</td><td>13.11.2022</td><td>Dakor SO</td><td>Kheda</td><td>GUJARAT</td><td>388225</td><td><a href="../pictures/ppcs/388225-ShriRanchhordraijiMaharajTemple-DakorSO.jpg" onclick="showImagePopup('388225-ShriRanchhordraijiMaharajTemple-DakorSO.jpg')"><img src="../pictures/ppcs/388225-ShriRanchhordraijiMaharajTemple-DakorSO.jpg" alt="Shri Ranchhordraiji Maharaj Temple" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>27</td><td>Sardar Vallabhbhai Patel</td><td>31.10.2002</td><td>Karamsad SO</td><td>Anand</td><td>GUJARAT</td><td>388235</td><td><a href="../pictures/ppcs/388235-SardarVallabhbhaiPatel-KaramsadSO.jpg" onclick="showImagePopup('388235-SardarVallabhbhaiPatel-KaramsadSO.jpg')"><img src="../pictures/ppcs/388235-SardarVallabhbhaiPatel-KaramsadSO.jpg" alt="Sardar Vallabhbhai Patel" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>28</td><td>Chamar Dharini</td><td>16.01.1989</td><td>Vadodara HO</td><td>Vadodara</td><td>GUJARAT</td><td>390001</td><td><a href="../pictures/ppcs/390001-ChamarDharini-VadodaraHO.jpg" onclick="showImagePopup('390001-ChamarDharini-VadodaraHO.jpg')"><img src="../pictures/ppcs/390001-ChamarDharini-VadodaraHO.jpg" alt="Chamar Dharini" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>29</td><td>Maharaja Sayajirao Gaekwad</td><td>16.01.1989</td><td>Vadodara Fateganj HO</td><td>Vadodara</td><td>GUJARAT</td><td>390002</td><td><a href="../pictures/ppcs/390002-MaharajaSayajiraoGaekwad-VadodaraFateganjHO.jpg" onclick="showImagePopup('390002-MaharajaSayajiraoGaekwad-VadodaraFateganjHO.jpg')"><img src="../pictures/ppcs/390002-MaharajaSayajiraoGaekwad-VadodaraFateganjHO.jpg" alt="Maharaja Sayajirao Gaekwad" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>30</td><td>Sardar Sarovar Project and Statue of Unity</td><td>09.10.1990</td><td>Kevadia Colony SO</td><td>Narmada</td><td>GUJARAT</td><td>393151</td><td><a href="../pictures/ppcs/393151-SardarSarovarProjectandStatueofUnity-KevadiaColonySO.jpg" onclick="showImagePopup('393151-SardarSarovarProjectandStatueofUnity-KevadiaColonySO.jpg')"><img src="../pictures/ppcs/393151-SardarSarovarProjectandStatueofUnity-KevadiaColonySO.jpg" alt="Sardar Sarovar Project and Statue of Unity" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>31</td><td>Hajira Lighthouse</td><td>21.09.2021</td><td>Hajira SO</td><td>Surat</td><td>GUJARAT</td><td>394270</td><td><a href="../pictures/ppcs/394270-HajiraLighthouse-HajiraSO.jpg" onclick="showImagePopup('394270-HajiraLighthouse-HajiraSO.jpg')"><img src="../pictures/ppcs/394270-HajiraLighthouse-HajiraSO.jpg" alt="Hajira Lighthouse" width="150" height="100"></a></td></tr>
+		<tr class="working data-row"><td>32</td><td>Musical Instruments of Local Tribes</td><td>27.03.1984</td><td>Saputara SO</td><td>Dang</td><td>GUJARAT</td><td>397420</td><td><a href="../pictures/ppcs/397420-MusicalInstrumentsofLocalTribes-SaputaraSO.jpg" onclick="showImagePopup('397420-MusicalInstrumentsofLocalTribes-SaputaraSO.jpg')"><img src="../pictures/ppcs/397420-MusicalInstrumentsofLocalTribes-SaputaraSO.jpg" alt="Musical Instruments of Local Tribes" width="150" height="100"></a></td></tr>
+		
+	</table>
+	
+	<script>
+		var myInput = document.getElementById("myInput");
+		var clearInputBtn = document.getElementById("clearInputBtn");
+	
+		// Clear the input field when the cancel button is clicked
+		clearInputBtn.addEventListener("click", function() {
+			myInput.value = "";
+			myFunction();
+		});
+
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue, match, count = 0;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				match = false;
+				td = tr[i].getElementsByTagName("td");
+				if (i === 0 && td.length) { // Always display the first row of the table if it contains data cells
+					tr[i].style.display = "";
+					continue;
+				}
+				if (td.length) { // Exclude rows that don't have any data cells
+					for (j = 0; j < td.length; j++) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							match = true;
+							break;
+						}
+					}
+					if (match) {
+						tr[i].style.display = "";
+						count++;
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+			document.getElementById("resultCount").innerHTML = "Number of matching rows: " + count;
+		}
+	
+		function clearInput() {
+			document.getElementById("myInput").value = "";
+			myFunction();
+		}
+	</script>
+	<p id="resultCount"></p>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+	<script>
+		$(document).ready(function() {
+			$('input[type=checkbox][name=sort_option]').change(function() {
+				var selectedOptions = $('input[type=checkbox][name=sort_option]:checked').map(function() {
+					return $(this).val();
+				}).get();
+				if (selectedOptions.length === 0) {
+					$('table tr.data-row').show();
+				} else {
+					$('table tr.data-row').each(function() {
+						var shouldShow = false;
+						for (var i = 0; i < selectedOptions.length; i++) {
+							if ($(this).hasClass(selectedOptions[i])) {
+								shouldShow = true;
+								break;
+							}
+						}
+						$(this).toggle(shouldShow);
+					});
+				}
+				var count = $('table tr.data-row:visible').length;
+				if (selectedOptions.length === 0) {
+					count = 0;
+				}
+				$('#count').text(count);
+			});
+			$('#clear-selection').click(function() {
+				$('input[type=checkbox][name=sort_option]').prop('checked', false);
+				$('table tr.data-row').show();
+				$('#count').text($('table tr.data-row').length);
+			});
+			$('#close-tab-btn').click(function () {
+				window.close(); // Close the currently opened tab
+			});
+		});
+    </script>
+		
+	<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+	
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
