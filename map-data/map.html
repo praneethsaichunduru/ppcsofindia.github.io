@@ -87,6 +87,10 @@
 			font-family: bookman old style;
 			margin: 0;
 			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 		}
 
 		p {
@@ -95,8 +99,17 @@
 			text-align: justify;
 			font-size: 18px;
 		}
-		
 
+		#map-container {
+			width: 640px; /* Set the width of your map container */
+			height: 480px; /* Set the height of your map container */
+		}
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
 	</style>
 
     
@@ -131,7 +144,10 @@
 
 	<div class="container">
 		<object type="image/svg+xml" data="IndiaMap.svg"></object>
-		<iframe src="https://www.google.com/maps/d/embed?mid=18dwirAXZoTZofmHRV5NgEN3NkyS6R94&hl=en&ehbc=2E312F" width="640" height="480" align="center"></iframe>
+	</div>
+
+	<div id="map-container">
+		<iframe src="https://www.google.com/maps/d/embed?mid=18dwirAXZoTZofmHRV5NgEN3NkyS6R94&hl=en&ehbc=2E312F" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
