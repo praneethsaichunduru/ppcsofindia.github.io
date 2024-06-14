@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZB7NNS4QNG');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Special Cancellations - 2024</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="data/styles.css" rel="stylesheet">
+		<style>
+			h1 {
+				text-align: center;
+				font-family: segoe ui;
+				margin: 20px 0;
+				font-size: 30px;
+			}
+			
+			header {
+				background-color: #ffd700;
+				color: #333;
+				padding: 1rem;
+				text-align: center;
+			}
+			
+			a {
+				margin: 10px;
+				padding: 10px;
+				text-align: center;
+				font-size: 14px;
+			}
+			
+			body {
+				font-family: segoe ui;
+				margin: 0;
+				padding: 0;
+			}
+			
+			p {
+				margin: 10px;
+				padding: 10px;
+				text-align: justify;
+				font-size: 14px;
+			}
+			
+			main {
+				padding: 2rem;
+			}
+			
+			.hero, .features, .contact {
+				margin-bottom: 2rem;
+			}
+			
+			.search-container, .filter-container, .count-container {
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			
+			.clear-button {
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 1rem;
+			}
+			
+			.filter-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+			}
+			
+			.filter-container label {
+				display: flex;
+				align-items: center;
+				background-color: #fff;
+				padding: 0.5rem;
+				border-radius: 5px;
+				border: 1px solid #ddd;
+				cursor: pointer;
+			}
+			
+			.filter-container label input[type="checkbox"] {
+				margin-right: 0.5rem;
+			}
+			
+			.filter-container .bihar input[type="checkbox"] + span {
+				color: indigo;
+			}
+			
+			.filter-container .gujarat input[type="checkbox"] + span {
+				color: #9cfd01;
+			}
+			
+			.filter-container .chhattisgarh input[type="checkbox"] + span {
+				color: brown;
+			}
+			
+			.filter-container .karnataka input[type="checkbox"] + span {
+				color: red;
+			}
+			
+			.filter-container .maharashtra input[type="checkbox"] + span {
+				color: orange;
+			}
+			
+			.filter-container .kerala input[type="checkbox"] + span {
+				color: crimson;
+			}
+			
+			.filter-container .odisha input[type="checkbox"] + span {
+				color: green;
+			}
+			
+			.filter-container .tamilnadu input[type="checkbox"] + span {
+				color: blue;
+			}
+			
+			.filter-container .telangana input[type="checkbox"] + span {
+				color: olive;
+			}
+			
+			.table-container {
+				overflow-x: auto;
+			}
+			
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				text-align: justify;
+				font-size: 14px;
+			}
+			
+			th, td {
+				padding: 0.5rem;
+				border: 1px solid #ddd;
+				text-align: center;
+			}
+			
+			th {
+				background-color: #f4a460;
+				color: #fff;
+			}
+			
+			.bihar td {
+				color: indigo;
+			}
+			
+			.gujarat td {
+				color: #9cfd01;
+			}
+			
+			.chhattisgarh td {
+				color: brown;
+			}
+			
+			.karnataka td {
+				color: red;
+			}
+			
+			.maharashtra td {
+				color: orange;
+			}
+			
+			.kerala td {
+				color: crimson;
+			}
+			
+			.odisha td {
+				color: green;
+			}
+			
+			.tamilnadu td {
+				color: blue;
+			}
+			
+			.telangana td {
+				color: olive;
+			}
+			
+			@media (max-width: 600px) {
+				table, thead, tbody, th, td, tr {
+					display: block;
+				}
+				
+				th {
+					display: none;
+				}
+				
+				tr {
+					margin-bottom: 1rem;
+					border: 1px solid #ddd;
+				}
+				
+				td {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0.5rem;
+					border: none;
+					border-bottom: 1px solid #ddd;
+					position: relative;
+				}
+				
+				td:before {
+					content: attr(data-label);
+					flex: 1;
+					font-weight: bold;
+					text-align: left;
+				}
+				
+				.bihar td {
+					color: indigo;
+				}
+				
+				.gujarat td {
+					color: #9cfd01;
+				}
+				
+				.chhattisgarh td {
+					color: brown;
+				}
+				
+				.karnataka td {
+					color: red;
+				}
+				
+				.maharashtra td {
+					color: orange;
+				}
+				
+				.kerala td {
+					color: crimson;
+				}
+				
+				.odisha td {
+					color: green;
+				}
+				
+				.tamilnadu td {
+					color: blue;
+				}
+				
+				.telangana td {
+					color: olive;
+				}
+			}
+			
+			@media (max-width: 600px) {
+				table, thead, tbody, th, td, tr {
+					display: block;
+				}
+				
+				th {
+					display: none;
+				}
+				
+				tr {
+					margin-bottom: 1rem;
+					border: 1px solid #ddd;
+				}
+				
+				td {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0.5rem;
+					border: none;
+					border-bottom: 1px solid #ddd;
+					position: relative;
+				}
+				
+				td:before {
+					content: attr(data-label);
+					flex: 1;
+					font-weight: bold;
+					text-align: left;
+				}
+				
+				/* Exclude the .line-partition class from the responsive rules */
+				.line-partition td:before {
+					content: none;
+				}
+			}
+			
+			/* Ensure no alternate row highlighting */
+			table tbody tr {
+				background-color: transparent !important; /* Remove any existing alternate row styles */
+			}
+
+			/* Uniform hover effect for all rows */
+			table tbody tr:hover {
+				background-color: #f5f5f5 !important; /* Choose your desired highlight color */
+			}
+
+			/* Ensure the separator line does not get highlighted */
+			table tbody tr.exclude-hover:hover {
+				background-color: transparent !important;
+			}
+		</style>
+		<script>
+			function filterTable() {
+				const checkboxes = document.querySelectorAll(".filter-container input[type='checkbox']");
+				const table = document.getElementById("ppcTable");
+				const rows = table.getElementsByClassName("data-row");
+				const partitions = table.getElementsByClassName("line-partition");
+				let activeFilters = [];
+				let selectedCount = 0;
+
+				checkboxes.forEach(checkbox => {
+					if (checkbox.checked) {
+						activeFilters.push(checkbox.value);
+					}
+				});
+
+				for (let i = 0; i < rows.length; i++) {
+					if (activeFilters.length === 0 || activeFilters.some(filter => rows[i].classList.contains(filter))) {
+						rows[i].style.display = "";
+						selectedCount++;
+					} else {
+						rows[i].style.display = "none";
+					}
+				}
+
+				for (let i = 0; i < partitions.length; i++) {
+					partitions[i].style.display = activeFilters.length === 0 ? "" : "none";
+				}
+
+				const countContainer = document.getElementById("countContainer");
+				if (activeFilters.length > 0) {
+					countContainer.textContent = "Selected Rows: " + selectedCount;
+				} else {
+					countContainer.textContent = "";
+				}
+			}
+
+			function searchTable() {
+				const input = document.getElementById("searchInput").value.toLowerCase();
+				const table = document.getElementById("ppcTable");
+				const rows = table.getElementsByTagName("tr");
+				let matchCount = 0;
+
+				for (let i = 1; i < rows.length; i++) {
+					let showRow = false;
+					const cells = rows[i].getElementsByTagName("td");
+
+					for (let j = 1; j < cells.length - 1; j++) {
+						if (cells[j].textContent.toLowerCase().includes(input)) {
+							showRow = true;
+							break;
+						}
+					}
+
+					if (showRow) {
+						rows[i].style.display = "";
+						matchCount++;
+					} else {
+						rows[i].style.display = "none";
+					}
+				}
+
+				const countContainer = document.getElementById("countContainer");
+				if (input) {
+					countContainer.textContent = "Matching Rows: " + matchCount;
+				} else {
+					countContainer.textContent = "";
+				}
+
+				// Reapply filter when search is cleared
+				if (!input) {
+					filterTable();
+				}
+			}
+
+			function clearSearch() {
+				const searchInput = document.getElementById("searchInput");
+				searchInput.value = "";
+				searchTable();
+			}
+
+			function addDataLabels() {
+				const table = document.getElementById("ppcTable");
+				const headers = table.querySelectorAll("th");
+				const rows = table.querySelectorAll("tbody tr");
+
+				rows.forEach(row => {
+					const cells = row.querySelectorAll("td");
+					cells.forEach((cell, index) => {
+						cell.setAttribute("data-label", headers[index].textContent.trim());
+					});
+				});
+			}
+
+			function deselectAll() {
+				const checkboxes = document.querySelectorAll(".filter-container input[type='checkbox']");
+				checkboxes.forEach(checkbox => {
+					checkbox.checked = false;
+				});
+				filterTable();
+			}
+
+			window.onload = function() {
+				addDataLabels();
+			};
+		</script>
+	</head>
+	<body>
+		<!-- Placeholder for the navigation bar -->
+		<div id="navbar-placeholder"></div>
+		<header>
+			<h1>Special Cancellations - 2024</h1>
+		</header>
+		<!-- Your page content goes here -->
+		<main>
+			<section class="search-container">
+				<div class="input-group mb-3">
+					<input type="text" id="searchInput" class="form-control" placeholder="Search here..." onkeyup="searchTable()">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button" onclick="clearSearch()">x</button>
+					</div>
+				</div>
+			</section>
+			<section class="filter-container">
+				<label class="bihar"><input type="checkbox" value="bihar" onchange="filterTable()"> <span>Bihar</span></label>
+				<label class="gujarat"><input type="checkbox" value="gujarat" onchange="filterTable()"> <span>Gujarat</span></label>
+				<label class="karnataka"><input type="checkbox" value="karnataka" onchange="filterTable()"> <span>Karnataka</span></label>
+				<label class="maharashtra"><input type="checkbox" value="maharashtra" onchange="filterTable()"> <span>Maharashtra</span></label>
+				<label class="kerala"><input type="checkbox" value="kerala" onchange="filterTable()"> <span>Kerala</span></label>
+				<label class="odisha"><input type="checkbox" value="odisha" onchange="filterTable()"> <span>Odisha</span></label>
+				<label class="tamilnadu"><input type="checkbox" value="tamilnadu" onchange="filterTable()"> <span>Tamil Nadu</span></label>
+				<label class="telangana"><input type="checkbox" value="telangana" onchange="filterTable()"> <span>Telangana</span></label>
+				<button class="btn btn-outline-secondary ml-2" onclick="deselectAll()">Deselect All</button>
+			</section>
+			<section class="count-container" id="countContainer"></section>
+			<section class="table-container">
+				<table id="ppcTable" class="table table-striped">
+					<thead>
+						<tr><th>S. NO. </th><th>DATE OF ISSUE</th><th>SPECIAL CANCELLATION</th><th>POST OFFICE AND RANK</th><th>PINCODE</th><th>CIRCLE</th><th>IMAGE</th></tr>
+					</thead>
+					<tbody>
+						<tr class="maharashtra data-row"><td>1</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Mumbai.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Mumbai.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Mumbai.jpg" alt="2024 Happy New Year Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>2</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Panaji.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Panaji.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Panaji.jpg" alt="2024 Happy New Year Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>3</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Pune.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Pune.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Pune.jpg" alt="2024 Happy New Year Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>4</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Nashik.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Nashik.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Nashik.jpg" alt="2024 Happy New Year Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>5</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Aurangabad.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Aurangabad.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Aurangabad.jpg" alt="2024 Happy New Year Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>6</td><td>01.01.2024</td><td>2024 Happy New Year</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Nagpur.jpg" onclick="showImagePopup('01.01.2024-2024HappyNewYear-Nagpur.jpg')"><img src="pictures/special-cancellations/01.01.2024-2024HappyNewYear-Nagpur.jpg" alt="2024 Happy New Year Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>7</td><td>06.01.2024</td><td>Aditya-L1 Reaches Lagrange Point 1</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/06.01.2024-Aditya-L1ReachesLagrangePoint1-Mumbai.jpg" onclick="showImagePopup('06.01.2024-Aditya-L1ReachesLagrangePoint1-Mumbai.jpg')"><img src="pictures/special-cancellations/06.01.2024-Aditya-L1ReachesLagrangePoint1-Mumbai.jpg" alt="Aditya-L1 Reaches Lagrange Point 1 Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="telangana data-row"><td>8</td><td>19.01.2024</td><td>NALPEX - 2024</td><td>Nalgonda HO</td><td>508001</td><td>Telangana</td><td><a href="pictures/special-cancellations/19.01.2024-NALPEX2024-Nalgonda.jpg" onclick="showImagePopup('19.01.2024-NALPEX2024-Nalgonda.jpg')"><img src="pictures/special-cancellations/19.01.2024-NALPEX2024-Nalgonda.jpg" alt="NALPEX - 2024 Nalgonda" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>9</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Mumbai.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Mumbai.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Mumbai.jpg" alt="International Decade of Sciences for Sustainable Development Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>10</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Panaji.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Panaji.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Panaji.jpg" alt="International Decade of Sciences for Sustainable Development Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>11</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Pune.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Pune.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Pune.jpg" alt="International Decade of Sciences for Sustainable Development Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>12</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nashik.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nashik.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nashik.jpg" alt="International Decade of Sciences for Sustainable Development Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>13</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Aurangabad.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Aurangabad.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Aurangabad.jpg" alt="International Decade of Sciences for Sustainable Development Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>14</td><td>20.01.2024</td><td>International Decade of Sciences for Sustainable Development</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nagpur.jpg" onclick="showImagePopup('20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nagpur.jpg')"><img src="pictures/special-cancellations/20.01.2024-InternationalDecadeofSciencesforSustainableDevelopment-Nagpur.jpg" alt="International Decade of Sciences for Sustainable Development Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>15</td><td>22.01.2024</td><td>Shri Ram Janmabhoomi Temple</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.01.2024-ShriRamJanmabhoomiTemple-Mumbai.jpg" onclick="showImagePopup('22.01.2024-ShriRamJanmabhoomiTemple-Mumbai.jpg')"><img src="pictures/special-cancellations/22.01.2024-ShriRamJanmabhoomiTemple-Mumbai.jpg" alt="Shri Ram Janmabhoomi Temple Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="tamilnadu data-row"><td>16</td><td>24.01.2024</td><td>National Girl Child Day</td><td>Tiruchirappalli HO</td><td>620001</td><td>Tamil Nadu</td><td><a href="pictures/special-cancellations/24.01.2024-NationalGirlChildDay-Tiruchirappalli.jpg" onclick="showImagePopup('24.01.2024-NationalGirlChildDay-Tiruchirappalli.jpg')"><img src="pictures/special-cancellations/24.01.2024-NationalGirlChildDay-Tiruchirappalli.jpg" alt="National Girl Child Day Tiruchirappalli" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="tamilnadu data-row"><td>17</td><td>31.01.2024</td><td>KHELO INDIA Youth Games 2024</td><td>Anna Road HO-PB</td><td>600002</td><td>Tamil Nadu</td><td><a href="pictures/special-cancellations/31.01.2024-KHELOINDIAYouthGames2024-AnnaRoad.jpg" onclick="showImagePopup('31.01.2024-KHELOINDIAYouthGames2024-AnnaRoad.jpg')"><img src="pictures/special-cancellations/31.01.2024-KHELOINDIAYouthGames2024-AnnaRoad.jpg" alt="KHELO INDIA Youth Games 2024 Anna Road" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>18</td><td>02.02.2024</td><td>World Wetlands Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Bengaluru.jpg" onclick="showImagePopup('02.02.2024-WorldWetlandsDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Bengaluru.jpg" alt="World Wetlands Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>19</td><td>02.02.2024</td><td>World Wetlands Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Mysuru.jpg" onclick="showImagePopup('02.02.2024-WorldWetlandsDay-Mysuru.jpg')"><img src="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Mysuru.jpg" alt="World Wetlands Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>20</td><td>02.02.2024</td><td>World Wetlands Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Mangaluru.jpg" onclick="showImagePopup('02.02.2024-WorldWetlandsDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Mangaluru.jpg" alt="World Wetlands Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>21</td><td>02.02.2024</td><td>World Wetlands Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Belagavi.jpg" onclick="showImagePopup('02.02.2024-WorldWetlandsDay-Belagavi.jpg')"><img src="pictures/special-cancellations/02.02.2024-WorldWetlandsDay-Belagavi.jpg" alt="World Wetlands Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>22</td><td>12.02.2024</td><td>National Productivity Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Bengaluru.jpg" onclick="showImagePopup('12.02.2024-NationalProductivityDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Bengaluru.jpg" alt="National Productivity Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>23</td><td>12.02.2024</td><td>National Productivity Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Mysuru.jpg" onclick="showImagePopup('12.02.2024-NationalProductivityDay-Mysuru.jpg')"><img src="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Mysuru.jpg" alt="National Productivity Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>24</td><td>12.02.2024</td><td>National Productivity Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Mangaluru.jpg" onclick="showImagePopup('12.02.2024-NationalProductivityDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Mangaluru.jpg" alt="National Productivity Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>25</td><td>12.02.2024</td><td>National Productivity Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Belagavi.jpg" onclick="showImagePopup('12.02.2024-NationalProductivityDay-Belagavi.jpg')"><img src="pictures/special-cancellations/12.02.2024-NationalProductivityDay-Belagavi.jpg" alt="National Productivity Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="odisha data-row"><td>26</td><td>16.02.2024</td><td>EIPA Celebrating 25 Years: State Symbols of Odisha</td><td>Bhubaneswar GPO-PB</td><td>751001</td><td>Odisha</td><td><a href="pictures/special-cancellations/16.02.2024-EIPACelebrating25YearsStateSymbolsofOdisha-Bhubaneswar.jpg" onclick="showImagePopup('16.02.2024-EIPACelebrating25YearsStateSymbolsofOdisha-Bhubaneswar.jpg')"><img src="pictures/special-cancellations/16.02.2024-EIPACelebrating25YearsStateSymbolsofOdisha-Bhubaneswar.jpg" alt="EIPA Celebrating 25 Years: State Symbols of Odisha Bhubaneswar" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="odisha data-row"><td>27</td><td>17.02.2024</td><td>EIPA Celebrating Silver Jubilee: Pride of the Nation</td><td>Bhubaneswar GPO-PB</td><td>751001</td><td>Odisha</td><td><a href="pictures/special-cancellations/17.02.2024-EIPACelebratingSilverJubileePrideoftheNation-Bhubaneswar.jpg" onclick="showImagePopup('17.02.2024-EIPACelebratingSilverJubileePrideoftheNation-Bhubaneswar.jpg')"><img src="pictures/special-cancellations/17.02.2024-EIPACelebratingSilverJubileePrideoftheNation-Bhubaneswar.jpg" alt="EIPA Celebrating Silver Jubilee: Pride of the Nation Bhubaneswar" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>28</td><td>21.02.2024</td><td>International Mother Language Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Bengaluru.jpg" onclick="showImagePopup('21.02.2024-InternationalMotherLanguageDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Bengaluru.jpg" alt="International Mother Language Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>29</td><td>21.02.2024</td><td>International Mother Language Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Mysuru.jpg" onclick="showImagePopup('21.02.2024-InternationalMotherLanguageDay-Mysuru.jpg')"><img src="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Mysuru.jpg" alt="International Mother Language Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>30</td><td>21.02.2024</td><td>International Mother Language Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Mangaluru.jpg" onclick="showImagePopup('21.02.2024-InternationalMotherLanguageDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Mangaluru.jpg" alt="International Mother Language Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>31</td><td>21.02.2024</td><td>International Mother Language Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Belagavi.jpg" onclick="showImagePopup('21.02.2024-InternationalMotherLanguageDay-Belagavi.jpg')"><img src="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-Belagavi.jpg" alt="International Mother Language Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="tamilnadu data-row"><td>32</td><td>21.02.2024</td><td>International Mother Language Day</td><td>Anna Road HO-PB, Chennai</td><td>600002</td><td>Tamil Nadu</td><td><a href="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-AnnaRoadChennai.jpg" onclick="showImagePopup('21.02.2024-InternationalMotherLanguageDay-AnnaRoadChennai.jpg')"><img src="pictures/special-cancellations/21.02.2024-InternationalMotherLanguageDay-AnnaRoadChennai.jpg" alt="International Mother Language Day Anna Road, Chennai" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>33</td><td>24.02.2024</td><td>Constitution and National Unity Convention: Dr. B. R. Ambedkar</td><td>DoP Stall, Palace Grounds, Bengaluru</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/24.02.2024-ConstitutionandNationalUnityConventionDrBRAmbedkar-DoPStallPalaceGroundsBengaluru.jpg" onclick="showImagePopup('24.02.2024-ConstitutionandNationalUnityConventionDrBRAmbedkar-DoPStallPalaceGroundsBengaluru.jpg')"><img src="pictures/special-cancellations/24.02.2024-ConstitutionandNationalUnityConventionDrBRAmbedkar-DoPStallPalaceGroundsBengaluru.jpg" alt="Constitution and National Unity Convention: Dr. B. R. Ambedkar DoP Stall, Palace Grounds, Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>34</td><td>25.02.2024</td><td>Constitution and National Unity Convention: Constitution of India</td><td>DoP Stall, Palace Grounds, Bengaluru</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.02.2024-ConstitutionandNationalUnityConventionConstitutionofIndia-DoPStallPalaceGroundsBengaluru.jpg" onclick="showImagePopup('25.02.2024-ConstitutionandNationalUnityConventionConstitutionofIndia-DoPStallPalaceGroundsBengaluru.jpg')"><img src="pictures/special-cancellations/25.02.2024-ConstitutionandNationalUnityConventionConstitutionofIndia-DoPStallPalaceGroundsBengaluru.jpg" alt="Constitution and National Unity Convention: Constitution of India DoP Stall, Palace Grounds, Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>35</td><td>27.02.2024</td><td>India Post Tech Logistics Conclave 2024</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/27.02.2024-IndiaPostTechLogisticsConclave2024-Mumbai.jpg" onclick="showImagePopup('27.02.2024-IndiaPostTechLogisticsConclave2024-Mumbai.jpg')"><img src="pictures/special-cancellations/27.02.2024-IndiaPostTechLogisticsConclave2024-Mumbai.jpg" alt="India Post Tech Logistics Conclave 2024 Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>36</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Mumbai.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Mumbai.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Mumbai.jpg" alt="Rare Disease Day Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>37</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Panaji.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Panaji.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Panaji.jpg" alt="Rare Disease Day Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>38</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Pune.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Pune.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Pune.jpg" alt="Rare Disease Day Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>39</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Nashik.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Nashik.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Nashik.jpg" alt="Rare Disease Day Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>40</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Aurangabad.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Aurangabad.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Aurangabad.jpg" alt="Rare Disease Day Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>41</td><td>29.02.2024</td><td>Rare Disease Day</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Nagpur.jpg" onclick="showImagePopup('29.02.2024-RareDiseaseDay-Nagpur.jpg')"><img src="pictures/special-cancellations/29.02.2024-RareDiseaseDay-Nagpur.jpg" alt="Rare Disease Day Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>42</td><td>29.02.2024</td><td>Happy Leap Day: One Extra Day, An Extra Smile</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Bengaluru.jpg" onclick="showImagePopup('29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Bengaluru.jpg')"><img src="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Bengaluru.jpg" alt="Happy Leap Day: One Extra Day, An Extra Smile Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>43</td><td>29.02.2024</td><td>Happy Leap Day: One Extra Day, An Extra Smile</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mysuru.jpg" onclick="showImagePopup('29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mysuru.jpg')"><img src="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mysuru.jpg" alt="Happy Leap Day: One Extra Day, An Extra Smile Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>44</td><td>29.02.2024</td><td>Happy Leap Day: One Extra Day, An Extra Smile</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mangaluru.jpg" onclick="showImagePopup('29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mangaluru.jpg')"><img src="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Mangaluru.jpg" alt="Happy Leap Day: One Extra Day, An Extra Smile Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>45</td><td>29.02.2024</td><td>Happy Leap Day: One Extra Day, An Extra Smile</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Belagavi.jpg" onclick="showImagePopup('29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Belagavi.jpg')"><img src="pictures/special-cancellations/29.02.2024-HappyLeapDayOneExtraDayAnExtraSmile-Belagavi.jpg" alt="Happy Leap Day: One Extra Day, An Extra Smile Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="tamilnadu data-row"><td>46</td><td>29.02.2024</td><td>February 29 2024: Leap Day</td><td>Tiruchirappalli HO</td><td>620001</td><td>Tamil Nadu</td><td><a href="pictures/special-cancellations/29.02.2024-February292024LeapDay-Tiruchirappalli.jpg" onclick="showImagePopup('29.02.2024-February292024LeapDay-Tiruchirappalli.jpg')"><img src="pictures/special-cancellations/29.02.2024-February292024LeapDay-Tiruchirappalli.jpg" alt="February 29 2024: Leap Day Tiruchirappalli" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>47</td><td>04.03.2024</td><td>National Safety Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Bengaluru.jpg" onclick="showImagePopup('04.03.2024-NationalSafetyDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Bengaluru.jpg" alt="National Safety Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>48</td><td>04.03.2024</td><td>National Safety Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Mysuru.jpg" onclick="showImagePopup('04.03.2024-NationalSafetyDay-Mysuru.jpg')"><img src="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Mysuru.jpg" alt="National Safety Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>49</td><td>04.03.2024</td><td>National Safety Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Mangaluru.jpg" onclick="showImagePopup('04.03.2024-NationalSafetyDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Mangaluru.jpg" alt="National Safety Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>50</td><td>04.03.2024</td><td>National Safety Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Belagavi.jpg" onclick="showImagePopup('04.03.2024-NationalSafetyDay-Belagavi.jpg')"><img src="pictures/special-cancellations/04.03.2024-NationalSafetyDay-Belagavi.jpg" alt="National Safety Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="gujarat data-row"><td>51</td><td>08.03.2024</td><td>Maha Shivratri</td><td>Bhavnath SO</td><td>362002</td><td>Gujarat</td><td><a href="pictures/special-cancellations/08.03.2024-MahaShivratri-Bhavnath.jpg" onclick="showImagePopup('08.03.2024-MahaShivratri-Bhavnath.jpg')"><img src="pictures/special-cancellations/08.03.2024-MahaShivratri-Bhavnath.jpg" alt="Maha Shivratri Bhavnath" width="150" height="100"></a></td></tr>
+						<tr class="gujarat data-row"><td>52</td><td>08.03.2024</td><td>Maha Shivratri</td><td>Prabhas Patan SO</td><td>362268</td><td>Gujarat</td><td><a href="pictures/special-cancellations/08.03.2024-MahaShivratri-PrabhasPatan.jpg" onclick="showImagePopup('08.03.2024-MahaShivratri-PrabhasPatan.jpg')"><img src="pictures/special-cancellations/08.03.2024-MahaShivratri-PrabhasPatan.jpg" alt="Maha Shivratri Prabhas Patan" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>53</td><td>08.03.2024</td><td>International Women's Day</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mumbai.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Mumbai.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mumbai.jpg" alt="International Women's Day Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>54</td><td>08.03.2024</td><td>International Women's Day</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Panaji.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Panaji.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Panaji.jpg" alt="International Women's Day Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>55</td><td>08.03.2024</td><td>International Women's Day</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Pune.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Pune.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Pune.jpg" alt="International Women's Day Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>56</td><td>08.03.2024</td><td>International Women's Day</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Nashik.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Nashik.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Nashik.jpg" alt="International Women's Day Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>57</td><td>08.03.2024</td><td>International Women's Day</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Aurangabad.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Aurangabad.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Aurangabad.jpg" alt="International Women's Day Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>58</td><td>08.03.2024</td><td>International Women's Day</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Nagpur.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Nagpur.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Nagpur.jpg" alt="International Women's Day Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>59</td><td>08.03.2024</td><td>International Women's Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Bengaluru.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Bengaluru.jpg" alt="International Women's Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>60</td><td>08.03.2024</td><td>International Women's Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mysuru.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Mysuru.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mysuru.jpg" alt="International Women's Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>61</td><td>08.03.2024</td><td>International Women's Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mangaluru.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Mangaluru.jpg" alt="International Women's Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>62</td><td>08.03.2024</td><td>International Women's Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Belagavi.jpg" onclick="showImagePopup('08.03.2024-InternationalWomensDay-Belagavi.jpg')"><img src="pictures/special-cancellations/08.03.2024-InternationalWomensDay-Belagavi.jpg" alt="International Women's Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>63</td><td>14.03.2024</td><td>International Day of Action for Rivers</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Bengaluru.jpg" onclick="showImagePopup('14.03.2024-InternationalDayofActionforRivers-Bengaluru.jpg')"><img src="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Bengaluru.jpg" alt="International Day of Action for Rivers Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>64</td><td>14.03.2024</td><td>International Day of Action for Rivers</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Mysuru.jpg" onclick="showImagePopup('14.03.2024-InternationalDayofActionforRivers-Mysuru.jpg')"><img src="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Mysuru.jpg" alt="International Day of Action for Rivers Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>65</td><td>14.03.2024</td><td>International Day of Action for Rivers</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Mangaluru.jpg" onclick="showImagePopup('14.03.2024-InternationalDayofActionforRivers-Mangaluru.jpg')"><img src="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Mangaluru.jpg" alt="International Day of Action for Rivers Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>66</td><td>14.03.2024</td><td>International Day of Action for Rivers</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Belagavi.jpg" onclick="showImagePopup('14.03.2024-InternationalDayofActionforRivers-Belagavi.jpg')"><img src="pictures/special-cancellations/14.03.2024-InternationalDayofActionforRivers-Belagavi.jpg" alt="International Day of Action for Rivers Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>67</td><td>20.03.2024</td><td>World Sparrow Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Bengaluru.jpg" onclick="showImagePopup('20.03.2024-WorldSparrowDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Bengaluru.jpg" alt="World Sparrow Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>68</td><td>20.03.2024</td><td>World Sparrow Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Mysuru.jpg" onclick="showImagePopup('20.03.2024-WorldSparrowDay-Mysuru.jpg')"><img src="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Mysuru.jpg" alt="World Sparrow Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>69</td><td>20.03.2024</td><td>World Sparrow Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Mangaluru.jpg" onclick="showImagePopup('20.03.2024-WorldSparrowDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Mangaluru.jpg" alt="World Sparrow Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>70</td><td>20.03.2024</td><td>World Sparrow Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Belagavi.jpg" onclick="showImagePopup('20.03.2024-WorldSparrowDay-Belagavi.jpg')"><img src="pictures/special-cancellations/20.03.2024-WorldSparrowDay-Belagavi.jpg" alt="World Sparrow Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>71</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Mumbai.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Mumbai.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Mumbai.jpg" alt="World Water Day: Water For Peace Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>72</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Panaji.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Panaji.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Panaji.jpg" alt="World Water Day: Water For Peace Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>73</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Pune.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Pune.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Pune.jpg" alt="World Water Day: Water For Peace Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>74</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Nashik.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Nashik.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Nashik.jpg" alt="World Water Day: Water For Peace Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>75</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Aurangabad.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Aurangabad.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Aurangabad.jpg" alt="World Water Day: Water For Peace Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>76</td><td>22.03.2024</td><td>World Water Day: Water For Peace</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Nagpur.jpg" onclick="showImagePopup('22.03.2024-WorldWaterDayWaterForPeace-Nagpur.jpg')"><img src="pictures/special-cancellations/22.03.2024-WorldWaterDayWaterForPeace-Nagpur.jpg" alt="World Water Day: Water For Peace Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>77</td><td>25.03.2024</td><td>Holi - Festival of Natural Colours</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Bengaluru.jpg" onclick="showImagePopup('25.03.2024-HoliFestivalofNaturalColours-Bengaluru.jpg')"><img src="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Bengaluru.jpg" alt="Holi - Festival of Natural Colours Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>78</td><td>25.03.2024</td><td>Holi - Festival of Natural Colours</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Mysuru.jpg" onclick="showImagePopup('25.03.2024-HoliFestivalofNaturalColours-Mysuru.jpg')"><img src="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Mysuru.jpg" alt="Holi - Festival of Natural Colours Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>79</td><td>25.03.2024</td><td>Holi - Festival of Natural Colours</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Mangaluru.jpg" onclick="showImagePopup('25.03.2024-HoliFestivalofNaturalColours-Mangaluru.jpg')"><img src="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Mangaluru.jpg" alt="Holi - Festival of Natural Colours Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>80</td><td>25.03.2024</td><td>Holi - Festival of Natural Colours</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Belagavi.jpg" onclick="showImagePopup('25.03.2024-HoliFestivalofNaturalColours-Belagavi.jpg')"><img src="pictures/special-cancellations/25.03.2024-HoliFestivalofNaturalColours-Belagavi.jpg" alt="Holi - Festival of Natural Colours Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>81</td><td>02.04.2024</td><td>World Autism Awareness Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Bengaluru.jpg" onclick="showImagePopup('02.04.2024-WorldAutismAwarenessDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Bengaluru.jpg" alt="World Autism Awareness Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>82</td><td>02.04.2024</td><td>World Autism Awareness Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Mysuru.jpg" onclick="showImagePopup('02.04.2024-WorldAutismAwarenessDay-Mysuru.jpg')"><img src="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Mysuru.jpg" alt="World Autism Awareness Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>83</td><td>02.04.2024</td><td>World Autism Awareness Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Mangaluru.jpg" onclick="showImagePopup('02.04.2024-WorldAutismAwarenessDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Mangaluru.jpg" alt="World Autism Awareness Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>84</td><td>02.04.2024</td><td>World Autism Awareness Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Belagavi.jpg" onclick="showImagePopup('02.04.2024-WorldAutismAwarenessDay-Belagavi.jpg')"><img src="pictures/special-cancellations/02.04.2024-WorldAutismAwarenessDay-Belagavi.jpg" alt="World Autism Awareness Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="kerala data-row"><td>85</td><td>05.04.2024</td><td>National Maritime Day 2024</td><td>Kozhikode HO</td><td>673001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Kozhikode.jpg" onclick="showImagePopup('05.04.2024-NationalMaritimeDay2024-Kozhikode.jpg')"><img src="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Kozhikode.jpg" alt="National Maritime Day 2024 Kozhikode" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>86</td><td>05.04.2024</td><td>National Maritime Day 2024</td><td>Thrissur HO</td><td>680001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Thrissur.jpg" onclick="showImagePopup('05.04.2024-NationalMaritimeDay2024-Thrissur.jpg')"><img src="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Thrissur.jpg" alt="National Maritime Day 2024 Thrissur" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>87</td><td>05.04.2024</td><td>National Maritime Day 2024</td><td>Ernakulam HO</td><td>682001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Ernakulam.jpg" onclick="showImagePopup('05.04.2024-NationalMaritimeDay2024-Ernakulam.jpg')"><img src="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Ernakulam.jpg" alt="National Maritime Day 2024 Ernakulam" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>88</td><td>05.04.2024</td><td>National Maritime Day 2024</td><td>Thiruvananthapuram GPO</td><td>695001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Thiruvananthapuram.jpg" onclick="showImagePopup('05.04.2024-NationalMaritimeDay2024-Thiruvananthapuram.jpg')"><img src="pictures/special-cancellations/05.04.2024-NationalMaritimeDay2024-Thiruvananthapuram.jpg" alt="National Maritime Day 2024 Thiruvananthapuram" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="kerala data-row"><td>89</td><td>14.04.2024</td><td>Dr. B. R. Ambedkar Jayanti</td><td>Kozhikode HO</td><td>673001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Kozhikode.jpg" onclick="showImagePopup('14.04.2024-DrBRAmbedkarJayanti-Kozhikode.jpg')"><img src="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Kozhikode.jpg" alt="Dr. B. R. Ambedkar Jayanti Kozhikode" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>90</td><td>14.04.2024</td><td>Dr. B. R. Ambedkar Jayanti</td><td>Thrissur HO</td><td>680001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Thrissur.jpg" onclick="showImagePopup('14.04.2024-DrBRAmbedkarJayanti-Thrissur.jpg')"><img src="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Thrissur.jpg" alt="Dr. B. R. Ambedkar Jayanti Thrissur" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>91</td><td>14.04.2024</td><td>Dr. B. R. Ambedkar Jayanti</td><td>Ernakulam HO</td><td>682001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Ernakulam.jpg" onclick="showImagePopup('14.04.2024-DrBRAmbedkarJayanti-Ernakulam.jpg')"><img src="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Ernakulam.jpg" alt="Dr. B. R. Ambedkar Jayanti Ernakulam" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>92</td><td>14.04.2024</td><td>Dr. B. R. Ambedkar Jayanti</td><td>Thiruvananthapuram GPO</td><td>695001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Thiruvananthapuram.jpg" onclick="showImagePopup('14.04.2024-DrBRAmbedkarJayanti-Thiruvananthapuram.jpg')"><img src="pictures/special-cancellations/14.04.2024-DrBRAmbedkarJayanti-Thiruvananthapuram.jpg" alt="Dr. B. R. Ambedkar Jayanti Thiruvananthapuram" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="kerala data-row"><td>93</td><td>14.04.2024</td><td>Happy Vishu</td><td>Kozhikode HO</td><td>673001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-HappyVishu-Kozhikode.jpg" onclick="showImagePopup('14.04.2024-HappyVishu-Kozhikode.jpg')"><img src="pictures/special-cancellations/14.04.2024-HappyVishu-Kozhikode.jpg" alt="Happy Vishu Kozhikode" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>94</td><td>14.04.2024</td><td>Happy Vishu</td><td>Thrissur HO</td><td>680001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-HappyVishu-Thrissur.jpg" onclick="showImagePopup('14.04.2024-HappyVishu-Thrissur.jpg')"><img src="pictures/special-cancellations/14.04.2024-HappyVishu-Thrissur.jpg" alt="Happy Vishu Thrissur" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>95</td><td>14.04.2024</td><td>Happy Vishu</td><td>Ernakulam HO</td><td>682001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-HappyVishu-Ernakulam.jpg" onclick="showImagePopup('14.04.2024-HappyVishu-Ernakulam.jpg')"><img src="pictures/special-cancellations/14.04.2024-HappyVishu-Ernakulam.jpg" alt="Happy Vishu Ernakulam" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>96</td><td>14.04.2024</td><td>Happy Vishu</td><td>Thiruvananthapuram GPO</td><td>695001</td><td>Kerala</td><td><a href="pictures/special-cancellations/14.04.2024-HappyVishu-Thiruvananthapuram.jpg" onclick="showImagePopup('14.04.2024-HappyVishu-Thiruvananthapuram.jpg')"><img src="pictures/special-cancellations/14.04.2024-HappyVishu-Thiruvananthapuram.jpg" alt="Happy Vishu Thiruvananthapuram" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>97</td><td>18.04.2024</td><td>World Heritage Day: Dandppatta - State Weapon of Maharashtra</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Mumbai.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Mumbai.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Mumbai.jpg" alt="World Heritage Day: Dandppatta - State Weapon of Maharashtra Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>98</td><td>18.04.2024</td><td>World Heritage Day: Dandppatta - State Weapon of Maharashtra</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Pune.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Pune.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Pune.jpg" alt="World Heritage Day: Dandppatta - State Weapon of Maharashtra Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>99</td><td>18.04.2024</td><td>World Heritage Day: Dandppatta - State Weapon of Maharashtra</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nashik.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nashik.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nashik.jpg" alt="World Heritage Day: Dandppatta - State Weapon of Maharashtra Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>100</td><td>18.04.2024</td><td>World Heritage Day: Dandppatta - State Weapon of Maharashtra</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Aurangabad.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Aurangabad.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Aurangabad.jpg" alt="World Heritage Day: Dandppatta - State Weapon of Maharashtra Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>101</td><td>18.04.2024</td><td>World Heritage Day: Dandppatta - State Weapon of Maharashtra</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nagpur.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nagpur.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDayDandppatta-StateWeaponofMaharashtra-Nagpur.jpg" alt="World Heritage Day: Dandppatta - State Weapon of Maharashtra Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>102</td><td>18.04.2024</td><td>World Heritage Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Bengaluru.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Bengaluru.jpg" alt="World Heritage Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>103</td><td>18.04.2024</td><td>World Heritage Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Mysuru.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDay-Mysuru.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Mysuru.jpg" alt="World Heritage Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>104</td><td>18.04.2024</td><td>World Heritage Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Mangaluru.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Mangaluru.jpg" alt="World Heritage Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>105</td><td>18.04.2024</td><td>World Heritage Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Belagavi.jpg" onclick="showImagePopup('18.04.2024-WorldHeritageDay-Belagavi.jpg')"><img src="pictures/special-cancellations/18.04.2024-WorldHeritageDay-Belagavi.jpg" alt="World Heritage Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>106</td><td>22.04.2024</td><td>World Earth Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.04.2024-WorldEarthDay-Bengaluru.jpg" onclick="showImagePopup('22.04.2024-WorldEarthDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/22.04.2024-WorldEarthDay-Bengaluru.jpg" alt="World Earth Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>107</td><td>22.04.2024</td><td>World Earth Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.04.2024-WorldEarthDay-Mysuru.jpg" onclick="showImagePopup('22.04.2024-WorldEarthDay-Mysuru.jpg')"><img src="pictures/special-cancellations/22.04.2024-WorldEarthDay-Mysuru.jpg" alt="World Earth Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>108</td><td>22.04.2024</td><td>World Earth Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.04.2024-WorldEarthDay-Mangaluru.jpg" onclick="showImagePopup('22.04.2024-WorldEarthDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/22.04.2024-WorldEarthDay-Mangaluru.jpg" alt="World Earth Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>109</td><td>22.04.2024</td><td>World Earth Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/22.04.2024-WorldEarthDay-Belagavi.jpg" onclick="showImagePopup('22.04.2024-WorldEarthDay-Belagavi.jpg')"><img src="pictures/special-cancellations/22.04.2024-WorldEarthDay-Belagavi.jpg" alt="World Earth Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>110</td><td>25.04.2024</td><td>World Malaria Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Bengaluru.jpg" onclick="showImagePopup('25.04.2024-WorldMalariaDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Bengaluru.jpg" alt="World Malaria Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>111</td><td>25.04.2024</td><td>World Malaria Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Mysuru.jpg" onclick="showImagePopup('25.04.2024-WorldMalariaDay-Mysuru.jpg')"><img src="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Mysuru.jpg" alt="World Malaria Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>112</td><td>25.04.2024</td><td>World Malaria Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Mangaluru.jpg" onclick="showImagePopup('25.04.2024-WorldMalariaDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Mangaluru.jpg" alt="World Malaria Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>113</td><td>25.04.2024</td><td>World Malaria Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Belagavi.jpg" onclick="showImagePopup('25.04.2024-WorldMalariaDay-Belagavi.jpg')"><img src="pictures/special-cancellations/25.04.2024-WorldMalariaDay-Belagavi.jpg" alt="World Malaria Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>114</td><td>01.05.2024</td><td>Maharashtra Day</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.05.2024-MaharashtraDay-Mumbai.jpg" onclick="showImagePopup('01.05.2024-MaharashtraDay-Mumbai.jpg')"><img src="pictures/special-cancellations/01.05.2024-MaharashtraDay-Mumbai.jpg" alt="Maharashtra Day Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>115</td><td>01.05.2024</td><td>Maharashtra Day</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.05.2024-MaharashtraDay-Pune.jpg" onclick="showImagePopup('01.05.2024-MaharashtraDay-Pune.jpg')"><img src="pictures/special-cancellations/01.05.2024-MaharashtraDay-Pune.jpg" alt="Maharashtra Day Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>116</td><td>01.05.2024</td><td>Maharashtra Day</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.05.2024-MaharashtraDay-Nashik.jpg" onclick="showImagePopup('01.05.2024-MaharashtraDay-Nashik.jpg')"><img src="pictures/special-cancellations/01.05.2024-MaharashtraDay-Nashik.jpg" alt="Maharashtra Day Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>117</td><td>01.05.2024</td><td>Maharashtra Day</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.05.2024-MaharashtraDay-Aurangabad.jpg" onclick="showImagePopup('01.05.2024-MaharashtraDay-Aurangabad.jpg')"><img src="pictures/special-cancellations/01.05.2024-MaharashtraDay-Aurangabad.jpg" alt="Maharashtra Day Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>118</td><td>01.05.2024</td><td>Maharashtra Day</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/01.05.2024-MaharashtraDay-Nagpur.jpg" onclick="showImagePopup('01.05.2024-MaharashtraDay-Nagpur.jpg')"><img src="pictures/special-cancellations/01.05.2024-MaharashtraDay-Nagpur.jpg" alt="Maharashtra Day Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>119</td><td>08.05.2024</td><td>World Red Cross Day </td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Bengaluru.jpg" onclick="showImagePopup('08.05.2024-WorldRedCrossDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Bengaluru.jpg" alt="World Red Cross Day  Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>120</td><td>08.05.2024</td><td>World Red Cross Day </td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Mysuru.jpg" onclick="showImagePopup('08.05.2024-WorldRedCrossDay-Mysuru.jpg')"><img src="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Mysuru.jpg" alt="World Red Cross Day  Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>121</td><td>08.05.2024</td><td>World Red Cross Day </td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Mangaluru.jpg" onclick="showImagePopup('08.05.2024-WorldRedCrossDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Mangaluru.jpg" alt="World Red Cross Day  Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>122</td><td>08.05.2024</td><td>World Red Cross Day </td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Belagavi.jpg" onclick="showImagePopup('08.05.2024-WorldRedCrossDay-Belagavi.jpg')"><img src="pictures/special-cancellations/08.05.2024-WorldRedCrossDay-Belagavi.jpg" alt="World Red Cross Day  Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>123</td><td>15.05.2024</td><td>International Day of Families</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Bengaluru.jpg" onclick="showImagePopup('15.05.2024-InternationalDayofFamilies-Bengaluru.jpg')"><img src="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Bengaluru.jpg" alt="International Day of Families Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>124</td><td>15.05.2024</td><td>International Day of Families</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Mysuru.jpg" onclick="showImagePopup('15.05.2024-InternationalDayofFamilies-Mysuru.jpg')"><img src="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Mysuru.jpg" alt="International Day of Families Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>125</td><td>15.05.2024</td><td>International Day of Families</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Mangaluru.jpg" onclick="showImagePopup('15.05.2024-InternationalDayofFamilies-Mangaluru.jpg')"><img src="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Mangaluru.jpg" alt="International Day of Families Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>126</td><td>15.05.2024</td><td>International Day of Families</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Belagavi.jpg" onclick="showImagePopup('15.05.2024-InternationalDayofFamilies-Belagavi.jpg')"><img src="pictures/special-cancellations/15.05.2024-InternationalDayofFamilies-Belagavi.jpg" alt="International Day of Families Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="kerala data-row"><td>127</td><td>15.05.2024</td><td>36th International Day of Families</td><td>Kozhikode HO</td><td>673001</td><td>Kerala</td><td><a href="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Kozhikode.jpg" onclick="showImagePopup('15.05.2024-36thInternationalDayofFamilies-Kozhikode.jpg')"><img src="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Kozhikode.jpg" alt="36th International Day of Families Kozhikode" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>128</td><td>15.05.2024</td><td>37th International Day of Families</td><td>Thrissur HO</td><td>680001</td><td>Kerala</td><td><a href="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Thrissur.jpg" onclick="showImagePopup('15.05.2024-36thInternationalDayofFamilies-Thrissur.jpg')"><img src="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Thrissur.jpg" alt="37th International Day of Families Thrissur" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>129</td><td>15.05.2024</td><td>38th International Day of Families</td><td>Ernakulam HO</td><td>682001</td><td>Kerala</td><td><a href="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Ernakulam.jpg" onclick="showImagePopup('15.05.2024-36thInternationalDayofFamilies-Ernakulam.jpg')"><img src="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Ernakulam.jpg" alt="38th International Day of Families Ernakulam" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>130</td><td>15.05.2024</td><td>39th International Day of Families</td><td>Thiruvananthapuram GPO</td><td>695001</td><td>Kerala</td><td><a href="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Thiruvananthapuram.jpg" onclick="showImagePopup('15.05.2024-36thInternationalDayofFamilies-Thiruvananthapuram.jpg')"><img src="pictures/special-cancellations/15.05.2024-36thInternationalDayofFamilies-Thiruvananthapuram.jpg" alt="39th International Day of Families Thiruvananthapuram" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="karnataka data-row"><td>131</td><td>17.05.2024</td><td>World Telecommunications Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Bengaluru.jpg" onclick="showImagePopup('17.05.2024-WorldTelecommunicationsDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Bengaluru.jpg" alt="World Telecommunications Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>132</td><td>17.05.2024</td><td>World Telecommunications Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Mysuru.jpg" onclick="showImagePopup('17.05.2024-WorldTelecommunicationsDay-Mysuru.jpg')"><img src="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Mysuru.jpg" alt="World Telecommunications Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>133</td><td>17.05.2024</td><td>World Telecommunications Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Mangaluru.jpg" onclick="showImagePopup('17.05.2024-WorldTelecommunicationsDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Mangaluru.jpg" alt="World Telecommunications Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>134</td><td>17.05.2024</td><td>World Telecommunications Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Belagavi.jpg" onclick="showImagePopup('17.05.2024-WorldTelecommunicationsDay-Belagavi.jpg')"><img src="pictures/special-cancellations/17.05.2024-WorldTelecommunicationsDay-Belagavi.jpg" alt="World Telecommunications Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>135</td><td>20.05.2024</td><td>World Bee Day</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Mumbai.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Mumbai.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Mumbai.jpg" alt="World Bee Day Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>136</td><td>20.05.2024</td><td>World Bee Day</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Panaji.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Panaji.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Panaji.jpg" alt="World Bee Day Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>137</td><td>20.05.2024</td><td>World Bee Day</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Pune.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Pune.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Pune.jpg" alt="World Bee Day Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>138</td><td>20.05.2024</td><td>World Bee Day</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Nashik.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Nashik.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Nashik.jpg" alt="World Bee Day Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>139</td><td>20.05.2024</td><td>World Bee Day</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Aurangabad.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Aurangabad.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Aurangabad.jpg" alt="World Bee Day Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>140</td><td>20.05.2024</td><td>World Bee Day</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/20.05.2024-WorldBeeDay-Nagpur.jpg" onclick="showImagePopup('20.05.2024-WorldBeeDay-Nagpur.jpg')"><img src="pictures/special-cancellations/20.05.2024-WorldBeeDay-Nagpur.jpg" alt="World Bee Day Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="maharashtra data-row"><td>141</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Mumbai GPO-PB</td><td>400001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Mumbai.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Mumbai.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Mumbai.jpg" alt="International Day For Biodiversity Mumbai" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>142</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Panaji HO-PB</td><td>403001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Panaji.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Panaji.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Panaji.jpg" alt="International Day For Biodiversity Panaji" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>143</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Pune HO-PB</td><td>411001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Pune.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Pune.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Pune.jpg" alt="International Day For Biodiversity Pune" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>144</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Nashik HO</td><td>422001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Nashik.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Nashik.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Nashik.jpg" alt="International Day For Biodiversity Nashik" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>145</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Aurangabad HO-PB</td><td>430001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Aurangabad.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Aurangabad.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Aurangabad.jpg" alt="International Day For Biodiversity Aurangabad" width="150" height="100"></a></td></tr>
+						<tr class="maharashtra data-row"><td>146</td><td>22.05.2024</td><td>International Day For Biodiversity</td><td>Nagpur GPO-PB</td><td>440001</td><td>Maharashtra</td><td><a href="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Nagpur.jpg" onclick="showImagePopup('22.05.2024-InternationalDayForBiodiversity-Nagpur.jpg')"><img src="pictures/special-cancellations/22.05.2024-InternationalDayForBiodiversity-Nagpur.jpg" alt="International Day For Biodiversity Nagpur" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="bihar data-row"><td>147</td><td>31.05.2024</td><td>No - Tobacco Day</td><td>Patna GPO-PB</td><td>800001</td><td>Bihar</td><td><a href="pictures/special-cancellations/31.05.2024-NoTobaccoDay-Bihar.jpg" onclick="showImagePopup('31.05.2024-NoTobaccoDay-Bihar.jpg')"><img src="pictures/special-cancellations/31.05.2024-NoTobaccoDay-Bihar.jpg" alt="No - Tobacco Day Patna" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>148</td><td>05.06.2024</td><td>World Environment Day</td><td>Bengaluru GPO-PB</td><td>560001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Bengaluru.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Bengaluru.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Bengaluru.jpg" alt="World Environment Day Bengaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>149</td><td>05.06.2024</td><td>World Environment Day</td><td>Mysuru HO-PB</td><td>570001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Mysuru.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Mysuru.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Mysuru.jpg" alt="World Environment Day Mysuru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>150</td><td>05.06.2024</td><td>World Environment Day</td><td>Mangaluru HO-PB</td><td>575001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Mangaluru.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Mangaluru.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Mangaluru.jpg" alt="World Environment Day Mangaluru" width="150" height="100"></a></td></tr>
+						<tr class="karnataka data-row"><td>151</td><td>05.06.2024</td><td>World Environment Day</td><td>Belagavi HO-PB</td><td>590001</td><td>Karnataka</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Belagavi.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Belagavi.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Belagavi.jpg" alt="World Environment Day Belagavi" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+						<tr class="kerala data-row"><td>152</td><td>05.06.2024</td><td>World Environment Day</td><td>Kozhikode HO</td><td>673001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Kozhikode.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Kozhikode.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Kozhikode.jpg" alt="World Environment Day Kozhikode" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>153</td><td>05.06.2024</td><td>World Environment Day</td><td>Thrissur HO</td><td>680001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Thrissur.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Thrissur.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Thrissur.jpg" alt="World Environment Day Thrissur" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>154</td><td>05.06.2024</td><td>World Environment Day</td><td>Ernakulam HO</td><td>682001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Ernakulam.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Ernakulam.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Ernakulam.jpg" alt="World Environment Day Ernakulam" width="150" height="100"></a></td></tr>
+						<tr class="kerala data-row"><td>155</td><td>05.06.2024</td><td>World Environment Day</td><td>Thiruvananthapuram GPO</td><td>695001</td><td>Kerala</td><td><a href="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Thiruvananthapuram.jpg" onclick="showImagePopup('05.06.2024-WorldEnvironmentDay-Thiruvananthapuram.jpg')"><img src="pictures/special-cancellations/05.06.2024-WorldEnvironmentDay-Thiruvananthapuram.jpg" alt="World Environment Day Thiruvananthapuram" width="150" height="100"></a></td></tr>
+						<tr class="exclude-hover line-partition"><td colspan="7"><hr></td></tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Placeholder for the footer -->
+			<div id="footer-placeholder"></div>
+		</main>
+		<!-- Bootstrap JS and dependencies -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<!-- Include the custom JS to load navbar and footer -->
+		<script src="loadNavbarFooter.js"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const table = document.querySelector("table");
+				const headers = table.querySelectorAll("th");
+				const rows = table.querySelectorAll("tbody tr");
+
+				rows.forEach(row => {
+					const cells = row.querySelectorAll("td");
+					cells.forEach((cell, index) => {
+						if (!row.classList.contains("line-partition")) {
+							cell.setAttribute("data-label", headers[index].textContent.trim());
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

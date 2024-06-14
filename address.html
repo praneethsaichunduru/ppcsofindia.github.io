@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZB7NNS4QNG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Address an Article?</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="data/styles.css" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 20px 0;
+            font-size: 30px;
+        }
+
+        a {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+            font-size: 14px;
+        }
+
+        .table-responsive {
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                display: block;
+                border-radius: 5px;
+            }
+
+            td {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                text-align: left;
+            }
+
+            td:before {
+                content: attr(data-label);
+                flex: 1;
+                font-weight: bold;
+                text-align: left;
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Placeholder for the navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Your page content goes here -->
+    <div class="container">
+        <h1>Addressing an Article</h1>
+        <p>The primary purpose of a properly written address is to ensure that the mail reaches its intended recipient without delays. A clear and complete address allows postal workers to quickly and accurately sort and deliver the mail.</p>
+        <p>When sending an article to a post office with</p>
+    
+        <h2>Levels of Postmaster</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>POST OFFICE ACRONYM/RANK</th>
+                        <th>POST OFFICE FULL FORM</th>
+                        <th>POSTMASTER LEVEL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="POST OFFICE ACRONYM/RANK">GPO</td>
+                        <td data-label="POST OFFICE FULL FORM">GENERAL POST OFFICE</td>
+                        <td data-label="POSTMASTER LEVEL" rowspan="2">SENIOR POSTMASTER</td>
+                    </tr>
+                    <tr>
+                        <td data-label="POST OFFICE ACRONYM/RANK">HO</td>
+                        <td data-label="POST OFFICE FULL FORM">HEAD OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td data-label="POST OFFICE ACRONYM/RANK">PB</td>
+                        <td data-label="POST OFFICE FULL FORM">PHILATELIC BUREAU</td>
+                        <td data-label="POSTMASTER LEVEL">DIRECTOR or INCHARGE</td>
+                    </tr>
+                    <tr>
+                        <td data-label="POST OFFICE ACRONYM/RANK">SO</td>
+                        <td data-label="POST OFFICE FULL FORM">SUB OFFICE</td>
+                        <td data-label="POSTMASTER LEVEL">SUB POSTMASTER</td>
+                    </tr>
+                    <tr>
+                        <td data-label="POST OFFICE ACRONYM/RANK">BO</td>
+                        <td data-label="POST OFFICE FULL FORM">BRANCH OFFICE</td>
+                        <td data-label="POSTMASTER LEVEL">BRANCH POSTMASTER</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p>The below format is the proper way to write an address on the envelope when writing to a post office to collect a cancellation.</p>
+        <h2>Sample Address</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>FORMAT</th>
+                        <th>EXAMPLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="FORMAT" class="leftalign">
+                            ______ Postmaster,<br>
+                            {Post Office and Rank},<br>
+                            {Name of the town/city},<br>
+                            {District (dist.)},<br>
+                            {State} - {Pincode}.
+                        </td>
+                        <td data-label="EXAMPLE" class="leftalign">
+                            Sub Postmaster,<br>
+                            Shaniwar Wada SO,<br>
+                            Pune,<br>
+                            Pune (dist.),<br>
+                            Maharashtra - 411030.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Placeholder for the footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include the custom JS to load navbar and footer -->
+    <script src="loadNavbarFooter.js"></script>
+</body>
+</html>
