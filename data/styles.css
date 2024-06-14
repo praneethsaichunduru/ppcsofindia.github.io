@@ -1,0 +1,80 @@
+/* Styles for the navigation bar */
+.navbar-custom {
+    background-color: #343a40; /* Dark background color */
+    color: white; /* White text color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white; /* White text color */
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #ffdd57;  /* Light yellow color on hover */
+}
+
+/* Custom style for the navbar-toggler */
+.navbar-custom .navbar-toggler {
+    color: white;
+    border-color: white; /* White border color */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Styles for the footer */
+.footer-custom {
+    background-color: #343a40; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+.footer-custom p {
+    margin: 0; /* Remove default margins */
+}
+
+/* Styles for the dropdown menu */
+.navbar-custom .dropdown-menu {
+    background-color: #343a40; /* Dark background color */
+    border-color: #343a40; /* Dark border color */
+}
+
+.navbar-custom .dropdown-item {
+    color: white; /* White text color */
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    background-color: #ffdd57; /* Light yellow background on hover */
+    color: #343a40; /* Dark text color */
+}
+
+/* Center table content */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    text-align: center;
+    horizontal-align: middle; /* Horizontally center content */
+    vertical-align: middle; /* Vertically center content */
+    padding: 8px; /* Add some padding for better spacing */
+    justify-content: center;
+}
+
+.table-container th {
+    background-color: #343a40; /* Dark background color for header */
+    color: white; /* White text color for header */
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+.table-container tr:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}
