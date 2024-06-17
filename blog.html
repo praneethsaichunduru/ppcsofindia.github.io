@@ -10,7 +10,7 @@
 		</script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Index</title>
+		<title>Know About PPCs</title>
 	
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +18,12 @@
 		<link href="data/styles.css" rel="stylesheet">
 		<style>
 			h1 {
-			text-align: center;
-			font-family: segoe ui;
-			margin: 20px 0;
-			font-size: 30px;
+				text-align: center;
+				font-family: segoe ui;
+				margin: 20px 0;
+				font-size: 30px;
 			}
-	
+		
 			a {
 				display: block;
 				margin: 10px;
@@ -31,35 +31,35 @@
 				text-align: center;
 				font-size: 14px;
 				color: black;
-			}	
-
+			}   
+		
 			a:hover {
 				text-decoration: none;
 			}
-
+		
 			body {
 				font-family: segoe ui;
 				margin: 0;
 				padding: 0;
 			}
-
+		
 			p {
 				margin: 10px;
 				padding: 10px;
 				text-align: justify;
 				font-size: 14px;
 			}
-
+		
 			.section {
 				margin: 20px 0;
 			}
-	
+		
 			.overview-images {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
 			}
-
+		
 			.overview-images img {
 				width: 100%;
 				max-width: 225px;
@@ -67,11 +67,15 @@
 				cursor: pointer;
 				margin: 5px;
 			}
-
+		
 			.highlight {
 				background-color: yellow;
 			}
-	
+		
+			.current-highlight {
+				background-color: orange;
+			}
+		
 			.section-divider {
 				border-bottom: 2px solid black;
 				margin: 20px 0;
@@ -88,7 +92,7 @@
 				padding: 8px;
 				text-align: left;
 			}
-
+		
 			.search-container {
 				position: sticky;
 				top: 0;
@@ -97,33 +101,40 @@
 				padding: 10px 0;
 				text-align: center;
 			}
-
+		
 			.search-wrapper {
 				display: inline-block;
 				width: 80%;
 				max-width: 600px;
 			}
-
+		
 			.search-container .input-group .form-control {
 				display: inline-block;
 				width: calc(100% - 40px); /* space for the clear button */
 			}
-
+		
 			.search-navigation {
-				display: none;
-				justify-content: space-between;
+				display: flex;
+				justify-content: center;
 				margin-top: 10px;
+				display: none; /* Hide initially */
 			}
-
+		
 			.search-navigation button {
 				padding: 5px 10px;
+				margin: 0 5px; /* Ensure buttons are side by side */
 			}
-
+		
 			.go-to-top {
 				position: fixed;
 				bottom: 20px;
 				right: 20px;
 				z-index: 1000;
+			}
+		
+			.search-count {
+				display: inline-block;
+				margin-left: 10px;
 			}
 		</style>
 	</head>
@@ -143,6 +154,7 @@
 					</div>
 					<div class="search-navigation">
 						<button id="prevBtn" class="btn btn-secondary">Previous</button>
+						<div class="search-count" id="searchCount">0 of 0</div>
 						<button id="nextBtn" class="btn btn-secondary">Next</button>
 					</div>
 				</div>
@@ -158,8 +170,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="rashtrapatibhawanso" class="section">
-				<h2>Rashtrapati Bhawan</h2>
+			<div id="delhi-rashtrapatibhawanso" class="section">
+				<h2>Delhi: Rashtrapati Bhawan</h2>
 				<div class="overview-images">
 					<div class="col-12 col-md-6">
 						<a href="pictures/blog-related-pictures/rashtrapati-bhawan.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhawan.jpg" alt="Actual Representation"></a>
@@ -169,26 +181,29 @@
 					</div>
 				</div>
 				<p>Rashtrapati Bhawan, the grand presidential residence of India, stands as an iconic symbol of the country's rich history and architectural marvel. Constructed during the British Raj, the foundation stone of this majestic structure was laid on 12th February 1912 by the then Viceroy of India, Lord Hardinge. The inspiration behind its creation was to shift the capital from Calcutta to Delhi and design an imposing residence that befits the dignity of the British monarch's representative.</p>
-				<p>The construction of Rashtrapati Bhawan is a remarkable blend of diverse architectural styles. The mastermind behind its design was the British architect Sir Edwin Lutyens, along with Herbert Baker, who infused elements of Indian and Western architecture. The building boasts a fusion of classical and Mughal styles, incorporating domes, arches, and intricate carvings. The usage of sandstone quarried from Rajasthan and marble from Makrana, as well as other indigenous materials, showcases the craftsmanship of skilled Indian artisans.</p>
-				<p>Beyond its architectural splendor, Rashtrapati Bhawan is steeped in symbolism, reflecting India's cultural heritage and democratic values. The sprawling Amrit Udyan, open to the public during spring, serve as a harmonious connection between the President and the citizens, fostering a sense of inclusivity and accessibility. The grand Durbar Hall, adorned with royal insignia, evokes a sense of regality, while the Ashoka Hall, with its iconic Ashoka Chakra, pays homage to India's ancient emblem of righteousness and virtue. </p>
-				<p>Rashtrapati Bhawan stands as a testament to India's past, present, and future. With its blend of architectural splendor, historical significance, and symbolic representation, it serves as a visual ode to the nation's journey towards independence and its transformation into a vibrant democracy. This iconic edifice continues to inspire awe and reverence, leaving an indelible mark on the hearts of visitors from all corners of the globe.</p>
 				<table class="info-table">
 					<tr>
 						<th>Date of Introduction</th>
 						<td>March 17, 2005</td>
 					</tr>
-					<tr>	
-						<th>Address</th>
-						<td>Sub Postmaster,<br>Rashtrapati Bhawan SO,<br>New Delhi (dt.), New Delhi - 110004.</td>
+					<tr>
+						<th rowspan="3">Address</th>
+						<td>Sub Postmaster,</td>
+					</tr>
+					<tr>
+						<td>Rashtrapati Bhawan SO,</td>
+					</tr>
+					<tr>
+						<td>New Delhi (dt.), New Delhi - 110004.</td>
 					</tr>
 				</table>
 				<div class="section-divider"></div>
 			</div>
 		</div>
-			 
-		 <!-- Placeholder for the footer -->
+		 
+		<!-- Placeholder for the footer -->
 		<div id="footer-placeholder"></div>
-
+	
 		<!-- Go to Top Button -->
 		<button class="btn btn-primary go-to-top" onclick="scrollToTop()">Go to Top</button>
 
@@ -203,7 +218,7 @@
 		<!-- Custom JS for Dropdown and Global Search -->
 		<script>
 			$(document).ready(function(){
-			// Populate dropdown with section headings
+				// Populate dropdown with section headings
 				$('.section h2').each(function() {
 					var sectionID = $(this).closest('.section').attr('id');
 					var sectionTitle = $(this).text();
@@ -236,23 +251,34 @@
 				// Global search and navigation
 				$("#searchInput").on("keyup", function() {
 					var value = $(this).val().toLowerCase();
-					$("body").unmark().mark(value);
-
+					$("body").unmark().mark(value, {
+						exclude: [".dropdown-menu", "#sectionSearch", "#dropdownMenuButton"]
+					});
+	
+					highlightedElements = $('span.highlight').not('.dropdown-menu *');
 					if (value) {
-						$('.clear-btn').show();
-						$('.search-navigation').show();
-						highlightedElements = $('span.highlight');
 						currentIndex = 0;
+						$('.search-navigation').show();
+						$('.clear-btn').show();
+						updateSearchCount();
+						if (highlightedElements.length > 0) {
+							scrollToHighlight(currentIndex);
+						}
 					} else {
-						$('.clear-btn').hide();
 						$('.search-navigation').hide();
+						$('.clear-btn').hide();
+						$('#searchCount').text('0 of 0');
 					}
 				});
-
+	
 				// Clear search
-				$(".clear-btn").on("click", function() {
+				window.clearSearch = function() {
 					$("#searchInput").val('').trigger('keyup');
-				});
+					$("body").unmark();
+					$('.search-navigation').hide();
+					$('.clear-btn').hide();
+					$('#searchCount').text('0 of 0');
+				}
 
 				// Navigate through highlights
 				$("#nextBtn").on("click", function() {
@@ -261,7 +287,7 @@
 						scrollToHighlight(currentIndex);
 					}
 				});
-
+	
 				$("#prevBtn").on("click", function() {
 					if (highlightedElements.length) {
 						currentIndex = (currentIndex - 1 + highlightedElements.length) % highlightedElements.length;
@@ -270,9 +296,20 @@
 				});
 
 				function scrollToHighlight(index) {
+					highlightedElements.removeClass('current-highlight');
+					$(highlightedElements[index]).addClass('current-highlight');
 					$('html, body').animate({
 						scrollTop: $(highlightedElements[index]).offset().top - 20
 					}, 500);
+					updateSearchCount();
+				}
+	
+				function updateSearchCount() {
+					if (highlightedElements.length > 0) {
+						$('#searchCount').text((currentIndex + 1) + ' of ' + highlightedElements.length);
+					} else {
+						$('#searchCount').text('0 of 0');
+					}
 				}
 			});
 
@@ -283,10 +320,10 @@
 
 			// jQuery mark.js for highlighting
 			(function($) {
-				$.fn.mark = function(term) {
+				$.fn.mark = function(term, options) {
 					var termRegExp = new RegExp(term, 'gi');
 					return this.each(function() {
-						$(this).find("*").each(function() {
+						$(this).find("*").not(options.exclude.join(", ")).each(function() {
 							var element = $(this);
 							if (element.children().length === 0 && element.text().search(termRegExp) !== -1) {
 								element.html(element.text().replace(termRegExp, '<span class="highlight">$&</span>'));
