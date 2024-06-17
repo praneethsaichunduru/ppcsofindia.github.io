@@ -199,6 +199,12 @@
     <!-- Custom JS for Dropdown and Global Search -->
     <script>
         $(document).ready(function(){
+            // Load navbar
+            $("#navbar-placeholder").load("navbar.html", function() {
+                // Initialize Bootstrap dropdown within the loaded navbar
+                $('.dropdown-toggle').dropdown();
+            });
+
             // Populate dropdown with section headings
             $('.section h2').each(function() {
                 var sectionID = $(this).closest('.section').attr('id');
