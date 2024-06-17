@@ -203,26 +203,26 @@
             $('.section h2').each(function() {
                 var sectionID = $(this).closest('.section').attr('id');
                 var sectionTitle = $(this).text();
-                $('.dropdown-menu').append('<a class="dropdown-item" href="#' + sectionID + '">' + sectionTitle + '</a>');
+                $('#sections-dropdown + .dropdown-menu').append('<a class="dropdown-item" href="#' + sectionID + '">' + sectionTitle + '</a>');
             });
 
             // Dropdown search
             $("#sections-dropdown").on("click", function() {
-                $(".dropdown-menu").toggle();
+                $(this).next(".dropdown-menu").toggle();
             });
 
             $("#sectionSearch").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
-                $(".dropdown-menu a").filter(function() {
+                $("#sections-dropdown + .dropdown-menu a").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
                 });
             });
 
             // Close the dropdown when clicking outside
             $(document).on("click", function(event){
-                var $trigger = $(".dropdown");
+                var $trigger = $("#sections-dropdown");
                 if($trigger !== event.target && !$trigger.has(event.target).length){
-                    $(".dropdown-menu").hide();
+                    $trigger.next(".dropdown-menu").hide();
                 }
             });
 
