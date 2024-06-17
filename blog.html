@@ -201,8 +201,8 @@
         $(document).ready(function(){
             // Load navbar
             $("#navbar-placeholder").load("navbar.html", function() {
-                // Initialize Bootstrap dropdown within the loaded navbar
-                $('.dropdown-toggle').dropdown();
+                // Re-initialize Bootstrap dropdown within the loaded navbar
+                $('[data-toggle="dropdown"]').dropdown();
             });
 
             // Populate dropdown with section headings
