@@ -17,137 +17,134 @@
 		<!-- Custom CSS -->
 		<link href="data/styles.css" rel="stylesheet">
 		<style>
-			
-			h1 {
-				text-align: center;
-				font-family: segoe ui;
-				margin: 20px 0;
-				font-size: 30px;
-			}
-			
-			a {
-				display: block;
-				margin: 10px;
-				padding: 10px;
-				text-align: center;
-				font-size: 14px;
-				color: black;
-			} 
-			
-			a:hover {
-				text-decoration: none;
-			}
-		
-			body {
-				font-family: segoe ui;
-				margin: 0;
-				padding: 0;
-			}
-		
-			p {
-				margin: 10px;
-				padding: 10px;
-				text-align: justify;
-				font-size: 14px;
-			}
-		
-			.section {
-				margin: 20px 0;
-			}
-		
-			.overview-images {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-		
-			.overview-images img {
-				width: 100%;
-				max-width: 300px;
-				height: 200px;
-				cursor: pointer;
-				margin: 5px;
-			}
-		
-			.highlight {
-				background-color: yellow;
-			}
-		
-			.current-highlight {
-				background-color: orange;
-			}
-		
-			.section-divider {
-				border-bottom: 2px solid black;
-				margin: 20px 0;
-			}
-		
-			.info-table {
-				width: 60%;
-				margin: 20px auto;
-				border-collapse: collapse;
-			}
-		
-			.info-table th, .info-table td {
-				border: 1px solid black;
-				padding: 8px;
-				text-align: left;
-			}
-		
-			.search-container {
-				position: sticky;
-				top: 0;
-				background-color: white;
-				z-index: 1000;
-				padding: 10px 0;
-				text-align: center;
-			}
-		
-			.search-wrapper {
-				display: inline-block;
-				width: 80%;
-				max-width: 600px;
-			}
-		
-			.search-container .input-group .form-control {
-				display: inline-block;
-				width: calc(100% - 40px); /* space for the clear button */
-			}
-		
-			.search-navigation {
-				display: flex;
-				justify-content: center;
-				margin-top: 10px;
-				display: none; /* Hide initially */
-			}
-		
-			.search-navigation button {
-				padding: 5px 10px;
-				margin: 0 5px; /* Ensure buttons are side by side */
-			}
-		
-			.go-to-top {
-				position: fixed;
-				bottom: 20px;
-				right: 20px;
-				z-index: 1000;
-			}
-		
-			.search-count {
-				display: inline-block;
-				margin-left: 10px;
-			}
-		
-			.navbar-nav .dropdown-menu {
-				display: none;
-			}
+		h1 {
+			text-align: center;
+			font-family: segoe ui;
+			margin: 20px 0;
+			font-size: 30px;
+		}
 
-			.navbar-nav .show .dropdown-menu {
-				display: block;
-				position: absolute;
-			}
+		a {
+			display: block;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+			color: black;
+		} 
 
-		</style>
+		a:hover {
+			text-decoration: none;
+		}
+
+		body {
+			font-family: segoe ui;
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			margin: 10px;
+			padding: 10px;
+			text-align: justify;
+			font-size: 14px;
+		}
+
+		.section {
+			margin: 20px 0;
+		}
+
+		.overview-images {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.overview-images img {
+			width: 180px;
+			height: 150px;
+			cursor: pointer;
+			margin: 5px;
+		}
+
+		.highlight {
+			background-color: yellow;
+		}
+
+		.current-highlight {
+			background-color: orange;
+		}
+
+		.section-divider {
+			border-bottom: 2px solid black;
+			margin: 20px 0;
+		}
+
+		.info-table {
+			width: 60%;
+			margin: 20px auto;
+			border-collapse: collapse;
+		}
+
+		.info-table th, .info-table td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+
+		.search-container {
+			position: sticky;
+			top: 0;
+			background-color: white;
+			z-index: 1000;
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.search-wrapper {
+			display: inline-block;
+			width: 80%;
+			max-width: 600px;
+		}
+
+		.search-container .input-group .form-control {
+			display: inline-block;
+			width: calc(100% - 40px); /* space for the clear button */
+		}
+
+		.search-navigation {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			display: none; /* Hide initially */
+		}
+
+		.search-navigation button {
+			padding: 5px 10px;
+			margin: 0 5px; /* Ensure buttons are side by side */
+		}
+
+		.go-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 1000;
+		}
+
+		.search-count {
+			display: inline-block;
+			margin-left: 10px;
+		}
+
+		.navbar-nav .dropdown-menu {
+			display: none;
+		}
+
+		.navbar-nav .show .dropdown-menu {
+			display: block;
+			position: absolute;
+		}
+	</style>
 	</head>
 	<body>
 		<!-- Placeholder for the navigation bar -->
@@ -433,136 +430,136 @@
 
 		<!-- Custom JS for Dropdown and Global Search -->
 		<script>
-			$(document).ready(function(){
-				// Load navbar
-				$("#navbar-placeholder").load("navbar.html", function() {
-					// Re-initialize Bootstrap dropdown within the loaded navbar
-					$('[data-toggle="dropdown"]').dropdown();
+		$(document).ready(function(){
+			// Load navbar
+			$("#navbar-placeholder").load("navbar.html", function() {
+				// Re-initialize Bootstrap dropdown within the loaded navbar
+				$('[data-toggle="dropdown"]').dropdown();
+			});
+
+			// Populate dropdown with section headings
+			$('.section h2').each(function() {
+				var sectionID = $(this).closest('.section').attr('id');
+				var sectionTitle = $(this).text();
+				$('#sections-dropdown + .dropdown-menu').append('<a class="dropdown-item" href="#' + sectionID + '">' + sectionTitle + '</a>');
+			});
+
+			// Dropdown search
+			$("#sections-dropdown").on("click", function() {
+				$(this).next(".dropdown-menu").toggle();
+			});
+
+			$("#sectionSearch").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$("#sections-dropdown + .dropdown-menu a").filter(function() {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				});
+			});
+
+			// Close the dropdown when clicking outside
+			$(document).on("click", function(event){
+				var $trigger = $("#sections-dropdown");
+				if($trigger !== event.target && !$trigger.has(event.target).length){
+					$("#sections-dropdown + .dropdown-menu").hide();
+				}
+			});
+
+			var currentIndex = 0;
+			var highlightedElements = [];
+
+			// Global search and navigation
+			$("#searchInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$("body").unmark().mark(value, {
+					exclude: [".dropdown-menu", "#sectionSearch", "#sections-dropdown"]
 				});
 
-				// Populate dropdown with section headings
-				$('.section h2').each(function() {
-					var sectionID = $(this).closest('.section').attr('id');
-					var sectionTitle = $(this).text();
-					$('#sections-dropdown + .dropdown-menu').append('<a class="dropdown-item" href="#' + sectionID + '">' + sectionTitle + '</a>');
-				});
-
-				// Dropdown search
-				$("#sections-dropdown").on("click", function() {
-					$(this).next(".dropdown-menu").toggle();
-				});
-
-				$("#sectionSearch").on("keyup", function() {
-					var value = $(this).val().toLowerCase();
-					$("#sections-dropdown + .dropdown-menu a").filter(function() {
-						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-					});
-				});
-
-				// Close the dropdown when clicking outside
-				$(document).on("click", function(event){
-					var $trigger = $("#navbar");
-					if($trigger !== event.target && !$trigger.has(event.target).length){
-						$(".navbar-collapse").collapse('hide');
+				highlightedElements = $('span.highlight').not('.dropdown-menu *');
+				if (value) {
+					currentIndex = 0;
+					$('.search-navigation').show();
+					$('.clear-btn').show();
+					updateSearchCount();
+					if (highlightedElements.length > 0) {
+						scrollToHighlight(currentIndex);
 					}
-				});
-	
-				var currentIndex = 0;
-				var highlightedElements = [];
-	
-				// Global search and navigation
-				$("#searchInput").on("keyup", function() {
-					var value = $(this).val().toLowerCase();
-					$("body").unmark().mark(value, {
-						exclude: [".dropdown-menu", "#sectionSearch", "#sections-dropdown"]
-					});
-
-					highlightedElements = $('span.highlight').not('.dropdown-menu *');
-					if (value) {
-						currentIndex = 0;
-						$('.search-navigation').show();
-						$('.clear-btn').show();
-						updateSearchCount();
-						if (highlightedElements.length > 0) {
-							scrollToHighlight(currentIndex);
-						}
-					} else {
-						$('.search-navigation').hide();
-						$('.clear-btn').hide();
-						$('#searchCount').text('0 of 0');
-					}
-				});
-
-				// Clear search
-				window.clearSearch = function() {
-					$("#searchInput").val('').trigger('keyup');
-					$("body").unmark();
+				} else {
 					$('.search-navigation').hide();
 					$('.clear-btn').hide();
 					$('#searchCount').text('0 of 0');
 				}
-	
-				// Navigate through highlights
-				$("#nextBtn").on("click", function() {
-					if (highlightedElements.length) {
-						currentIndex = (currentIndex + 1) % highlightedElements.length;
-						scrollToHighlight(currentIndex);
-					}
-				});
+			});
 
-				$("#prevBtn").on("click", function() {
-					if (highlightedElements.length) {
-						currentIndex = (currentIndex - 1 + highlightedElements.length) % highlightedElements.length;
-						scrollToHighlight(currentIndex);
-					}
-				});
+			// Clear search
+			window.clearSearch = function() {
+				$("#searchInput").val('').trigger('keyup');
+				$("body").unmark();
+				$('.search-navigation').hide();
+				$('.clear-btn').hide();
+				$('#searchCount').text('0 of 0');
+			}
 
-				function scrollToHighlight(index) {
-					highlightedElements.removeClass('current-highlight');
-					$(highlightedElements[index]).addClass('current-highlight');
-					$('html, body').animate({
-						scrollTop: $(highlightedElements[index]).offset().top - 20
-					}, 500);
-					updateSearchCount();
-				}
-
-				function updateSearchCount() {
-					if (highlightedElements.length > 0) {
-						$('#searchCount').text((currentIndex + 1) + ' of ' + highlightedElements.length);
-					} else {
-						$('#searchCount').text('0 of 0');
-					}
+			// Navigate through highlights
+			$("#nextBtn").on("click", function() {
+				if (highlightedElements.length) {
+					currentIndex = (currentIndex + 1) % highlightedElements.length;
+					scrollToHighlight(currentIndex);
 				}
 			});
 
-			// Scroll to top function
-			function scrollToTop() {
-				$('html, body').animate({scrollTop: 0}, 'slow');
+			$("#prevBtn").on("click", function() {
+				if (highlightedElements.length) {
+					currentIndex = (currentIndex - 1 + highlightedElements.length) % highlightedElements.length;
+					scrollToHighlight(currentIndex);
+				}
+			});
+
+			function scrollToHighlight(index) {
+				highlightedElements.removeClass('current-highlight');
+				$(highlightedElements[index]).addClass('current-highlight');
+				$('html, body').animate({
+					scrollTop: $(highlightedElements[index]).offset().top - 20
+				}, 500);
+				updateSearchCount();
 			}
 
-			// jQuery mark.js for highlighting
-			(function($) {
-				$.fn.mark = function(term, options) {
-					var termRegExp = new RegExp(term, 'gi');
-					return this.each(function() {
-						$(this).find("*").not(options.exclude.join(", ")).each(function() {
-							var element = $(this);
-							if (element.children().length === 0 && element.text().search(termRegExp) !== -1) {
-								element.html(element.text().replace(termRegExp, '<span class="highlight">$&</span>'));
-							}
-						});
+			function updateSearchCount() {
+				if (highlightedElements.length > 0) {
+					$('#searchCount').text((currentIndex + 1) + ' of ' + highlightedElements.length);
+				} else {
+					$('#searchCount').text('0 of 0');
+				}
+			}
+		});
+
+		// Scroll to top function
+		function scrollToTop() {
+			$('html, body').animate({scrollTop: 0}, 'slow');
+		}
+
+		// jQuery mark.js for highlighting
+		(function($) {
+			$.fn.mark = function(term, options) {
+				var termRegExp = new RegExp(term, 'gi');
+				return this.each(function() {
+					$(this).find("*").not(options.exclude.join(", ")).each(function() {
+						var element = $(this);
+						if (element.children().length === 0 && element.text().search(termRegExp) !== -1) {
+							element.html(element.text().replace(termRegExp, '<span class="highlight">$&</span>'));
+						}
 					});
-				};
-				$.fn.unmark = function() {
-					return this.each(function() {
-						$(this).find(".highlight").each(function() {
-							var parent = $(this).parent();
-							$(this).replaceWith($(this).text());
-							parent[0].normalize();
-						});
+				});
+			};
+			$.fn.unmark = function() {
+				return this.each(function() {
+					$(this).find(".highlight").each(function() {
+						var parent = $(this).parent();
+						$(this).replaceWith($(this).text());
+						parent[0].normalize();
 					});
-				};
-			})(jQuery);
-		</script>
+				});
+			};
+		})(jQuery);
+	</script>
 	</body>
 </html>
