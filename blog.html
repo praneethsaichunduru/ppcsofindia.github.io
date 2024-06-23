@@ -67,6 +67,28 @@
 			margin: 5px;
 		}
 
+		.tooltip-message {
+			visibility: hidden;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%; /* Position above the image */
+			left: 50%;
+			transform: translateX(-50%);
+			white-space: nowrap;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		.hover-image:hover .tooltip-message {
+			visibility: visible;
+			opacity: 1;
+		}
+
 		.highlight {
 			background-color: yellow;
 		}
@@ -185,10 +207,12 @@
 				<h2>Delhi: Rashtrapati Bhavan</h2>
 				<div class="overview-images">
 					<div class="col-12 col-md-6">
-						<a href="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" alt="Rashtrapati Bhavan"></a>
+						<a href="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" alt="Rashtrapati Bhavan" class="hover-image">
+						<span class="tooltip-message">Credits: Wikimedia Commons</span></a>
 					</div>
 					<div class="col-12 col-md-6">
-						<a href="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" target="_self"><img src="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="PPC"></a>
+						<a href="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" target="_self"><img src="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="PPC">
+						<span class="tooltip-message">Credits: Ch. Praneeth Sai</span></a>
 					</div>
 				</div>
 				
