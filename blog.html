@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-ZB7NNS4QNG');
-		</script>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Know About PPCs</title>
-	
-		<!-- Bootstrap CSS -->
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="data/styles.css" rel="stylesheet">
-		<style>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZB7NNS4QNG');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Know About PPCs</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="data/styles.css" rel="stylesheet">
+	<style>
 		h1 {
 			text-align: center;
 			font-family: segoe ui;
@@ -31,7 +31,7 @@
 			text-align: center;
 			font-size: 14px;
 			color: black;
-		} 
+		}
 
 		a:hover {
 			text-decoration: none;
@@ -57,6 +57,7 @@
 			font-weight: bold;
 			text-align: center;
 		}
+
 		.section {
 			margin: 20px 0;
 		}
@@ -65,6 +66,7 @@
 			display: flex;
 			justify-content: center;
 			gap: 20px;
+			flex-wrap: wrap;
 		}
 
 		.overview-images img {
@@ -151,6 +153,21 @@
 			display: block;
 			position: absolute;
 		}
+
+		/* Custom styles for responsive images */
+		@media (max-width: 767px) {
+			.overview-images {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.overview-images {
+				flex-direction: row;
+				align-items: center;
+			}
+		}
 	</style>
 	</head>
 	<body>
@@ -187,26 +204,27 @@
 					</div>
 				</div>
 			</div>
+			
 			<!-- Start of Rashtrapati Bhavan -->
 			<div id="delhi-rashtrapatibhavan" class="section">
 				<h2>Delhi: Rashtrapati Bhavan</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div>
 						<a href="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" alt="Rashtrapati Bhavan"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div>
 						<a href="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" target="_self"><img src="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
-				
+
 				<p>Rashtrapati Bhavan, the grand presidential residence of India, stands as an iconic symbol of the country's rich history and architectural marvel. Constructed during the British Raj, the foundation stone of this majestic structure was laid on 12th February 1912 by the then Viceroy of India, Lord Hardinge. The inspiration behind its creation was to shift the capital from Calcutta to Delhi and design an imposing residence that befits the dignity of the British monarch's representative.</p>
-				
+
 				<p>The construction of Rashtrapati Bhavan is a remarkable blend of diverse architectural styles. The mastermind behind its design was the British architect Sir Edwin Lutyens, along with Herbert Baker, who infused elements of Indian and Western architecture. The building boasts a fusion of classical and Mughal styles, incorporating domes, arches, and intricate carvings. The usage of sandstone quarried from Rajasthan and marble from Makrana, as well as other indigenous materials, showcases the craftsmanship of skilled Indian artisans.</p>
-				
+
 				<p>Beyond its architectural splendor, Rashtrapati Bhavan is steeped in symbolism, reflecting India's cultural heritage and democratic values. The sprawling Amrit Udyan, open to the public during spring, serve as a harmonious connection between the President and the citizens, fostering a sense of inclusivity and accessibility. The grand Durbar Hall, adorned with royal insignia, evokes a sense of regality, while the Ashoka Hall, with its iconic Ashoka Chakra, pays homage to India's ancient emblem of righteousness and virtue. </p>
-				
+
 				<p>Rashtrapati Bhavan stands as a testament to India's past, present, and future. With its blend of architectural splendor, historical significance, and symbolic representation, it serves as a visual ode to the nation's journey towards independence and its transformation into a vibrant democracy. This iconic edifice continues to inspire awe and reverence, leaving an indelible mark on the hearts of visitors from all corners of the globe.</p>
 
 				<table class="info-table">
@@ -228,16 +246,16 @@
 				<div class="section-divider"></div>
 			</div>
 			<!-- End of Rashtrapati Bhavan -->
-
+			
 			<!-- Start of Deekshabhoomi -->
 			<div id="maharashtra-shankarnagar" class="section">
 				<h2>Maharashtra: Deekshabhoomi</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/deekshabhoomi-stupa.jpg" target="_self"><img src="pictures/blog-related-pictures/deekshabhoomi-stupa.jpg" alt="Shankarnagar Deekshabhoomi Stupa"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" target="_self"><img src="pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -275,11 +293,11 @@
 			<div id="karnataka-bengaluru" class="section">
 				<h2>Karnataka: Vidhana Soudha</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/vidhana-soudha.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha.jpg" alt="Vidhana Soudha"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560001-VidhanaSoudha-BengaluruGPOPB.jpg" target="_self"><img src="pictures/ppcs/560001-VidhanaSoudha-BengaluruGPOPB.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -298,7 +316,7 @@
 				<h4>Cachet</h4>
 				
 				<div class="overview-images">
-					<div class="col-12">
+					<div>
 						<a href="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-oldcachet-1.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-oldcachet-1.jpg" alt="Vidhana Soudha PPC Cachet in 2022"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -307,7 +325,7 @@
 				<h4>Previous Versions</h4>
 				
 				<div class="overview-images">
-					<div class="col-12">
+					<div>
 						<a href="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-24.06.2022.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-24.06.2022.jpg" alt="Vidhana Soudha PPC 24.06.2022"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -337,11 +355,11 @@
 			<div id="karnataka-highcourt" class="section">
 				<h2>Karnataka: Karnataka High Court Building</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/karnataka-high-court-building.jpg" target="_self"><img src="pictures/blog-related-pictures/karnataka-high-court-building.jpg" alt="Karnataka High Court Building"></a>
 						<p class="credits">Credits: getty images</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg" target="_self"><img src="pictures/ppcs/560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -383,11 +401,11 @@
 			<div id="karnataka-basavanagudi" class="section">
 				<h2>Karnataka: Kempegowda Tower</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/kempegowda-tower.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower.jpg" alt="Kempegowda Tower"></a>
 						<p class="credits">Credits: Lakshmi Sharath</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560004-KempegowdaTower-BasavanagudiHO.jpg" target="_self"><img src="pictures/ppcs/560004-KempegowdaTower-BasavanagudiHO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -404,6 +422,7 @@
 				<p>The significance of the Kempegowda Tower extends beyond its historical role as a boundary marker. It stands as a tribute to the foresight and administrative acumen of Kempegowda II and his contributions to the development of Bengaluru. The tower is a popular tourist attraction, drawing visitors who are keen to explore the city’s heritage and enjoy the breathtaking views it offers. It also serves as a reminder of the city’s origins and the visionary leadership that has shaped its growth.</p>
 
 				<p>Today, the Kempegowda Tower in Lalbagh is a cherished landmark, symbolizing Bengaluru’s rich cultural and historical legacy. It stands as a testament to the city’s enduring spirit and the vision of its early leaders, continuing to inspire both residents and visitors alike. The tower, with its historical significance and panoramic views, remains an integral part of Bengaluru’s identity, reflecting the city’s journey through time.</p>
+				
 				<table class="info-table">
 					<tr>
 						<th>Date of Introduction</th>
@@ -428,15 +447,16 @@
 			<div id="karnataka-jayanagar3rdblock" class="section">
 				<h2>Karnataka: Ashoka Pillar</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/ashoka-pillar.jpg" target="_self"><img src="pictures/blog-related-pictures/ashoka-pillar.jpg" alt="Ashoka Pillar"></a>
 						<p class="credits">Credits: Vasanth Kumar's Postcard Set</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560011-AshokaPillar-Jayanagar3rdBlockSO.jpg" target="_self"><img src="pictures/ppcs/560011-AshokaPillar-Jayanagar3rdBlockSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
+				
 				<p>The Ashoka Pillar in Jayanagar, Bengaluru, stands as a monumental symbol of post-independence India's spirit of nation-building and urban planning. This iconic structure, located in South Bengaluru (formerly Bangalore), marks the inauguration of Jayanagar, the country’s first and largest planned neighborhood. The project was spearheaded by the City Improvement Trust Board (CITB), an organization formed in 1945 to develop new residential extensions in old Bengaluru. On August 20, 1948, C. Rajagopalachari, popularly known as Rajaji and the first and last Indian Governor-General of India, inaugurated the Ashoka Pillar to mark the beginning of Jayanagar’s civil works.</p>
 
 				<p>The construction of the Pillar was entrusted to P.S. Ranganathachar (PSR Char), a versatile engineer known for his dedication and efficiency. PSR Char was appointed by R. Madhavan, the Municipal Engineer of Bangalore City Corporation and later the Chief Engineer of CITB. The task had to be completed within a record time of ten days to align with Rajaji’s scheduled inauguration. Despite adverse weather conditions and the sudden disappearance of the main sculptor, PSR Char managed to complete the task with remarkable efficiency. A skilled mason named Arunachalam was brought in to finish the intricate work on the four-faced lion sculpture atop the pillar, working tirelessly through the night before the inauguration. The project, costing a total of Rs. 3000, was a testament to the commitment and resourcefulness of PSR Char and his team.</p>
@@ -448,6 +468,7 @@
 				<p>At the time of its construction, the Ashoka Pillar was surrounded by open fields and lacked the iron railings that are seen today. It marked the southern end of the city and was a prominent landmark of the emerging Jayanagar constituency. Over the decades, despite constant changes in traffic and urban development, the Ashoka Pillar has remained a steadfast symbol of Jayanagar's historical and cultural legacy. PSR Char’s son, PR Ramaswamy, recounts how his father continued photographing the construction process, capturing moments of this historic project.</p>
 
 				<p>Today, the Ashoka Pillar endures as one of the few circles in Bengaluru that retains its original significance amidst the city’s rapid modernization. In conclusion, the Ashoka Pillar in Jayanagar is not just a physical structure but a symbol of the aspirations and achievements of post-independence India. It stands as a testament to the collaborative efforts of visionary leaders and dedicated professionals who transformed a part of Bengaluru into a model neighborhood, reflecting the spirit of a newly independent nation.</p>
+				
 				<table class="info-table">
 					<tr>
 						<th>Date of Introduction</th>
@@ -472,15 +493,16 @@
 			<div id="karnataka-scienceinstitute" class="section">
 				<h2>Karnataka: Indian Institute of Science Building</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/iisc-bengaluru.jpg" target="_self"><img src="pictures/blog-related-pictures/iisc-bengaluru.jpg" alt="Indian Institute of Science, Bengaluru"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg" target="_self"><img src="pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
+				
 				<p>The Indian Institute of Science (IISc) in Bengaluru is a premier institution renowned for its advanced research and education in science, engineering, and technology. Established in 1909, IISc has played a pivotal role in shaping India's scientific landscape and continues to be a beacon of excellence in higher education and research. The institute was founded through the collaborative efforts of Jamsetji Tata, a visionary industrialist, and the Maharaja of Mysore, Krishnaraja Wadiyar IV, along with the support of the British government.</p>
 
 				<p>The idea for the Indian Institute of Science was conceived by Jamsetji Tata, who envisioned an institution that would drive India's scientific progress and industrial development. His vision was brought to life with the generous donation of land and funds by the Maharaja of Mysore, Krishnaraja Wadiyar IV. The establishment of IISc marked a significant milestone in India's journey towards scientific and technological self-reliance.</p>
@@ -494,6 +516,7 @@
 				<p>Beyond its academic and research endeavors, IISc plays a vital role in contributing to the local and national community. The institute engages in various outreach activities, including public lectures, workshops, and collaborations with industry and government organizations. These initiatives aim to bridge the gap between academia and society, ensuring that scientific advancements contribute to societal well-being and progress.</p>
 
 				<p>In conclusion, the Indian Institute of Science in Bengaluru stands as a testament to the vision and foresight of its founders. Over the past century, IISc has grown into a world-class institution that continues to drive scientific innovation and education in India. Its legacy of excellence, combined with its ongoing commitment to research and learning, ensures that IISc remains at the forefront of scientific and technological advancements, making significant contributions to the nation's development and the global scientific community.</p>
+				
 				<table class="info-table">
 					<tr>
 						<th>Date of Introduction</th>
@@ -518,15 +541,16 @@
 			<div id="karnataka-bannerghatta" class="section">
 				<h2>Karnataka: Butterfly-Malabar Banded Peacock</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/butterfly-malabar-banded-peacock.jpg" target="_self"><img src="pictures/blog-related-pictures/butterfly-malabar-banded-peacock.jpg" alt="Butterfly-Malabar Banded Peacock"></a>
 						<p class="credits">Credits: Vinay Raj (Wikimedia Commons)</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg" target="_self"><img src="pictures/ppcs/560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
+				
 				<p>The Malabar Banded Peacock, scientifically known as Papilio buddha, is a strikingly beautiful butterfly native to the Western Ghats of India. This species is renowned for its vibrant coloration and distinct banded patterns on its wings, which display shades of iridescent blue and green. The Malabar Banded Peacock is an integral part of the rich biodiversity of the region and plays a crucial role in the ecosystem as a pollinator.</p>
 
 				<p>Bannerghatta National Park, located on the outskirts of Bengaluru, serves as a vital habitat for the Malabar Banded Peacock. Established in 1971, the park spans over 104.27 square kilometers and encompasses a diverse range of flora and fauna, including various butterfly species. The park's butterfly park, in particular, is a key attraction and a sanctuary for many native butterfly species, including the Malabar Banded Peacock.</p>
@@ -538,6 +562,7 @@
 				<p>Moreover, the Malabar Banded Peacock's striking appearance and ecological significance make it a symbol of the rich natural heritage of the Western Ghats. By showcasing this butterfly, Bannerghatta National Park emphasizes the importance of conservation and the need to protect the unique biodiversity of the region. Visitors to the park are not only treated to the visual delight of these butterflies but also gain an understanding of the intricate relationships within ecosystems and the importance of each species.</p>
 
 				<p>In conclusion, the Malabar Banded Peacock and Bannerghatta National Park share a symbiotic relationship, with the park providing a sanctuary for the butterfly and in turn, the butterfly adding to the ecological and educational value of the park. This relationship underscores the broader importance of conservation efforts in preserving the delicate balance of nature and ensuring the survival of diverse species for future generations.</p>
+				
 				<table class="info-table">
 					<tr>
 						<th>Date of Introduction</th>
@@ -562,15 +587,16 @@
 			<div id="karnataka-moodbidri" class="section">
 				<h2>Karnataka: Saavira Kambada Basadi (1000 Pillared Jain Temple)</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidri.jpg" target="_self"><img src="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidri.jpg" alt="Saavira Kambada Basadi"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/574227-SaaviraKambadaBasadi-MoodbidriSO.jpg" target="_self"><img src="pictures/ppcs/574227-SaaviraKambadaBasadi-MoodbidriSO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
+				
 				<p>Saavira Kambada Basadi, also known as the Thousand Pillar Temple, stands tall as an architectural marvel and a revered place of worship. This temple, with its intricate craftsmanship and historical significance, holds a special place in the hearts of both devotees and admirers of art and architecture. It is renowned for its exquisite architecture that seamlessly blends elements of Jain, Hoysala, and Vijayanagara styles. </p>
 				
 				<p>One of the most striking features of the temple is its impressive granite structure, which is built on a raised platform, capturing the attention of all who visit. As you approach the temple, you are greeted by a captivating sight of intricate carvings and detailed sculptures that adorn the pillars, walls, and ceilings. Every inch of the temple is adorned with beautiful motifs, depicting scenes from Jain mythology, celestial beings, animals, and geometric patterns, showcasing the immense talent and dedication of the craftsmen of yore. This shrine is considered as “Varanasi of the Jains.”</p>
@@ -582,8 +608,9 @@
 				<p>Apart from its religious and architectural significance, Saavira Kambada Basadi holds cultural and historical importance for the region. It serves as a repository of the rich Jain heritage and offers a glimpse into the artistic traditions of the past. The temple also hosts various festivals and religious ceremonies throughout the year, attracting a large number of devotees and tourists.</p>
 
 				<h4>Previous Versions</h4>
+				
 				<div class="overview-images">
-					<div class="col-12">
+					<div>
 						<a href="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidriso-23.01.2021.jpg" target="_self"><img src="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidriso-23.01.2021.jpg" alt="Saavira Kambada Basadi"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -613,15 +640,16 @@
 			<div id="kerala-mattancherryjetty" class="section">
 				<h2>Kerala: Magen David of Cochin Synagogue</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/paradesi-synagogue.jpg" target="_self"><img src="pictures/blog-related-pictures/paradesi-synagogue.jpg" alt="Paradesi Synagogue"></a>
 						<p class="credits">Credits: getty images</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg" target="_self"><img src="pictures/ppcs/682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
 				</div>
+				
 				<p>The Magen David Synagogue, also known as the Cochin Jewish Synagogue, is a historical and cultural landmark in Kochi, Kerala, India. Established in 1568 by the Jewish community, it is located in Jew Town, Mattancherry, an area historically rich with trade and cultural exchanges.</p>
 				
 				<p>Entering the Magen David Synagogue, visitors are greeted by its serene beauty and historical significance. The architecture showcases a blend of Kerala and colonial styles, with a notable clock tower and Hebrew inscriptions on the exterior. Inside, the synagogue features ornate Belgian chandeliers, Chinese hand-painted tiles, and an intricate brass pulpit. The floor is an exquisite mosaic of over 1,000 unique blue and white tiles from Canton, reflecting the synagogue’s global connections.</p>
@@ -656,21 +684,21 @@
 			<div id="odisha-bhubaneswar" class="section">
 				<h2>Odisha: Udayagiri & Khandagiri Caves, Dhauligiri Stupa & Lingraj Temple</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/udayagiri-and-khandagiri-caves.jpg" target="_self"><img src="pictures/blog-related-pictures/udayagiri-and-khandagiri-caves.jpg" alt="Udayagiri and Khandagiri Caves"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/dhauligiri-stupa.jpg" target="_self"><img src="pictures/blog-related-pictures/dhauligiri-stupa.jpg" alt="Dhauligiri Stupa"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
 				</div>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/lingraj-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/lingraj-temple.jpg" alt="Lingraj Temple"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg" target="_self"><img src="pictures/ppcs/751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -709,11 +737,11 @@
 			<div id="assam-guwahati" class="section">
 				<h2>Assam: Sri Kamakhya Devi Temple</h2>
 				<div class="overview-images">
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/blog-related-pictures/sri_kamakhya_devi_temple-guwahati.jpg" target="_self"><img src="pictures/blog-related-pictures/sri_kamakhya_devi_temple-guwahati.jpg" alt="Sri Kamakhya Devi Temple"></a>
 						<p class="credits">Credits: Wikimedia Commons</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<div
 						<a href="pictures/ppcs/781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg" target="_self"><img src="pictures/ppcs/781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg" alt="PPC"></a>
 						<p class="credits">Credits: Ch. Praneeth Sai</p>
 					</div>
@@ -749,24 +777,25 @@
 				<div class="section-divider"></div>
 			</div>
 			<!-- End of Sri Kamakhya Devi Temple -->
-		</div>
-		 
-		<!-- Go to Top Button -->
-		<button class="btn btn-primary go-to-top" onclick="scrollToTop()">Go to Top</button>
 
-		<!-- Placeholder for the footer -->
-		<div id="footer-placeholder"></div>
+	</div>
 
-		<!-- Bootstrap JS and dependencies -->
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Go to Top Button -->
+	<button class="btn btn-primary go-to-top" onclick="scrollToTop()">Go to Top</button>
 
-		<!-- Include the custom JS to load navbar and footer -->
-		<script src="loadNavbarFooter.js"></script>
+	<!-- Placeholder for the footer -->
+	<div id="footer-placeholder"></div>
 
-		<!-- Custom JS for Dropdown and Global Search -->
-		<script>
+	<!-- Bootstrap JS and dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Include the custom JS to load navbar and footer -->
+	<script src="loadNavbarFooter.js"></script>
+
+	<!-- Custom JS for Dropdown and Global Search -->
+	<script>
 		$(document).ready(function(){
 			// Load navbar
 			$("#navbar-placeholder").load("navbar.html", function() {
@@ -898,5 +927,5 @@
 			};
 		})(jQuery);
 	</script>
-	</body>
+</body>
 </html>
