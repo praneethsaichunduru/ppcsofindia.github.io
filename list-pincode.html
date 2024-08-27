@@ -1,3 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZB7NNS4QNG');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>List of PPCs</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="data/styles.css" rel="stylesheet">
+		<style>
+			h1 {
+				text-align: center;
+				font-family: segoe ui;
+				margin: 20px 0;
+				font-size: 27px;
+			}
+			
+			header {
+				background-color: #ffd700;
+				color: #333;
+				padding: 1rem;
+				text-align: center;
+			}
+			
+			a {
+				margin: 10px;
+				padding: 10px;
+				text-align: center;
+				font-size: 14px;
+			}
+			
+			body {
+				font-family: segoe ui;
+				margin: 0;
+				padding: 0;
+			}
+			
+			p {
+				margin: 10px;
+				padding: 10px;
+				text-align: justify;
+				font-size: 14px;
+			}
+			
+			main {
+				padding: 2rem;
+			}
+			
+			
+			.hero, .features, .contact {
+				margin-bottom: 2rem;
+			}
+			
+			.search-container, .filter-container, .count-container {
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			
+			.clear-button {
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 1rem;
+			}
+			
+			.filter-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+			}
+			
+			.filter-container label {
+				display: flex;
+				align-items: center;
+				background-color: #fff;
+				padding: 0.5rem;
+				border-radius: 5px;
+				border: 1px solid #ddd;
+				cursor: pointer;
+			}
+			
+			.filter-container label input[type="checkbox"] {
+				margin-right: 0.5rem;
+			}
+			
+			.filter-container .working input[type="checkbox"] + span {
+				color: green;
+			}
+			
+			.filter-container .doubtful input[type="checkbox"] + span {
+				color: blue;
+			}
+			
+			.filter-container .removed input[type="checkbox"] + span {
+				color: red;
+			}
+			
+			.filter-container .replaced input[type="checkbox"] + span {
+				color: orange;
+			}
+			
+			.table-container {
+				overflow-x: auto;
+			}
+			
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				text-align: justify;
+				font-size: 14px;
+			}
+			
+			th, td {
+				padding: 0.5rem;
+				border: 1px solid #ddd;
+				text-align: center;
+			}
+			
+			th {
+				background-color: #f4a460;
+				color: #fff;
+			}
+			
+			.working td{
+				color: green;
+			}
+			
+			.removed td{
+				color: red;
+			}
+			
+			.replaced td{
+				color: orange;
+			}
+			
+			.doubtful td{
+				color: blue;
+			}
+			
+			@media (max-width: 600px) {
+				table, thead, tbody, th, td, tr {
+					display: block;
+				}
+				
+				th {
+					display: none;
+				}
+				
+				tr {
+					margin-bottom: 1rem;
+					border: 1px solid #ddd;
+				}
+				
+				td {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0.5rem;
+					border: none;
+					border-bottom: 1px solid #ddd;
+					position: relative;
+				}
+				
+				td:before {
+					content: attr(data-label);
+					flex: 1;
+					font-weight: bold;
+					text-align: left;
+				}
+				
+				.removed td {
+					color: red;
+				}
+				
+				.working td {
+					color: green;
+				}
+				
+				.doubtful td {
+					color: blue;
+				}
+				
+				.replaced td {
+					color: orange;
+				}
+			}
+			
+			/* Ensure no alternate row highlighting */
+			table tbody tr {
+				background-color: transparent !important; /* Remove any existing alternate row styles */
+			}
+
+			/* Uniform hover effect for all rows */
+			table tbody tr:hover {
+				background-color: #f5f5f5 !important; /* Choose your desired highlight color */
+			}
+
+			/* Ensure the separator line does not get highlighted */
+			table tbody tr.exclude-hover:hover {
+				background-color: transparent !important;
+			}
+		</style>
+		<script>
+			function addDataLabels() {
+				const table = document.getElementById("ppcTable");
+				const headers = table.querySelectorAll("th");
+				const rows = table.querySelectorAll("tbody tr");
+
+				rows.forEach(row => {
+					const cells = row.querySelectorAll("td");
+					cells.forEach((cell, index) => {
+						cell.setAttribute("data-label", headers[index].textContent);
+					});
+				});
+			}
+
+			function searchTable() {
+				const input = document.getElementById("searchInput").value.toLowerCase();
+				const table = document.getElementById("ppcTable");
+				const rows = table.getElementsByTagName("tr");
+				let matchCount = 0;
+
+				for (let i = 1; i < rows.length; i++) {
+					let showRow = false;
+					const cells = rows[i].getElementsByTagName("td");
+		
+					for (let j = 1; j < cells.length - 1; j++) {
+						if (cells[j].textContent.toLowerCase().includes(input)) {
+							showRow = true;
+							break;
+						}
+					}
+
+					if (showRow) {
+						rows[i].style.display = "";
+						matchCount++;
+					} else {
+						rows[i].style.display = "none";
+					}
+				}
+
+				const countContainer = document.getElementById("countContainer");
+				if (input) {
+					countContainer.textContent = "Matching Rows: " + matchCount;
+				} else {
+					countContainer.textContent = "";
+				}
+
+				// Reapply filter when search is cleared
+				if (!input) {
+					filterTable();
+				}
+			}
+
+			function filterTable() {
+				const checkboxes = document.querySelectorAll(".filter-container input[type='checkbox']");
+				const stateSelect = document.getElementById("stateSelect").value;
+				const table = document.getElementById("ppcTable");
+				const rows = table.getElementsByClassName("data-row");
+				let activeFilters = [];
+				let selectedCount = 0;
+
+				checkboxes.forEach(checkbox => {
+					if (checkbox.checked) {
+						activeFilters.push(checkbox.value);
+					}
+				});
+
+				for (let i = 0; i < rows.length; i++) {
+					const rowState = rows[i].getElementsByTagName("td")[5].textContent.trim();
+
+					if (
+						(activeFilters.length === 0 || activeFilters.some(filter => rows[i].classList.contains(filter))) &&
+						(stateSelect === "" || rowState === stateSelect)
+					) {
+						rows[i].style.display = "";
+						selectedCount++;
+					} else {
+						rows[i].style.display = "none";
+					}
+				}
+
+				const countContainer = document.getElementById("countContainer");
+				if (activeFilters.length > 0 || stateSelect !== "") {
+					countContainer.textContent = "No. of PPCs: " + selectedCount;
+				} else {
+					countContainer.textContent = "";
+				}
+			}
+
+			function clearSearch() {
+				const searchInput = document.getElementById("searchInput");
+				searchInput.value = "";
+				searchTable();
+			}
+
+			function deselectAll() {
+				const checkboxes = document.querySelectorAll(".filter-container input[type='checkbox']");
+				checkboxes.forEach(checkbox => {
+					checkbox.checked = false;
+				});
+				document.getElementById("stateSelect").value = "";
+				filterTable();
+			}
+
+			window.onload = function() {
+				addDataLabels();
+			};
+		</script>
+	</head>
+	<body>
+		<!-- Placeholder for the navigation bar -->
+		<div id="navbar-placeholder"></div>
+		<header>
+			<h1>List of Permanent Pictorial Cancellations Sorted by State/UT & Pincode</h1>
+		</header>
+		<!-- Your page content goes here -->
+		<main>
+			<section class="search-container">
+				<div class="input-group mb-3">
+					<input type="text" id="searchInput" class="form-control" placeholder="Search for PPC details..." onkeyup="searchTable()">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button" onclick="clearSearch()">x</button>
+					</div>
+				</div>
+			</section>
+			<section class="filter-container">
+				<label class="working"><input type="checkbox" value="working" onchange="filterTable()"> <span>Working</span></label>
+				<label class="doubtful"><input type="checkbox" value="doubtful" onchange="filterTable()"> <span>Doubtful</span></label>
+				<label class="removed"><input type="checkbox" value="removed" onchange="filterTable()"> <span>Removed</span></label>
+				<label class="replaced"><input type="checkbox" value="replaced" onchange="filterTable()"> <span>Replaced</span></label>
+				<select id="stateSelect" class="form-control" onchange="filterTable()">
+					<option value="">All States</option>
+					<option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+					<option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+					<option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+					<option value="ASSAM">ASSAM</option>
+					<option value="BIHAR">BIHAR</option>
+					<option value="CHANDIGARH">CHANDIGARH</option>
+					<option value="CHHATTISGARH">CHHATTISGARH</option>
+					<option value="DADRA AND NAGAR HAVELI AND DAMAN AND DIU">DADRA AND NAGAR HAVELI AND DAMAN AND DIU</option>
+					<option value="DELHI">DELHI</option>
+					<option value="GOA">GOA</option>
+					<option value="GUJARAT">GUJARAT</option>
+					<option value="HARYANA">HARYANA</option>
+					<option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+					<option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+					<option value="JHARKHAND">JHARKHAND</option>
+					<option value="KARNATAKA">KARNATAKA</option>
+					<option value="KERALA">KERALA</option>
+					<option value="LADAKH">LADAKH</option>
+					<option value="LAKSHADWEEP">LAKSHADWEEP</option>
+					<option value="MADHYA PRADESH">MADHYA PRADESH</option>
+					<option value="MAHARASHTRA">MAHARASHTRA</option>
+					<option value="MANIPUR">MANIPUR</option>
+					<option value="MEGHALAYA">MEGHALAYA</option>
+					<option value="MIZORAM">MIZORAM</option>
+					<option value="NAGALAND">NAGALAND</option>
+					<option value="ODISHA">ODISHA</option>
+					<option value="PUDUCHERRY">PUDUCHERRY</option>
+					<option value="PUNJAB">PUNJAB</option>
+					<option value="RAJASTHAN">RAJASTHAN</option>
+					<option value="SIKKIM">SIKKIM</option>
+					<option value="TAMIL NADU">TAMIL NADU</option>
+					<option value="TELANGANA">TELANGANA</option>
+					<option value="TRIPURA">TRIPURA</option>
+					<option value="UTTAR PRADESH">UTTAR PRADESH</option>
+					<option value="UTTARAKHAND">UTTARAKHAND</option>
+					<option value="WEST BENGAL">WEST BENGAL</option>
+				</select>
+				<button class="btn btn-outline-secondary ml-2" onclick="deselectAll()">Deselect All</button>
+			</section>
+			<section class="count-container" id="countContainer"></section>
+			<section class="table-container">
+				<table id="ppcTable" class="table table-striped">
+					<thead>
+						<tr>
+							<th>S. No.</th>
+							<th>Name of PPC</th>
+							<th>Date of Introduction</th>
+							<th>Post Office and Rank</th>
+							<th>District</th>
+							<th>State</th>
+							<th>Pincode</th>
+							<th>Image</th>
+						</tr>
+					</thead>
+					<tbody>
 						<tr  class="removed data-row"><td>1</td><td>Parliament of India</td><td>13.02.1995</td><td>Sansad Marg NA</td><td>Central Delhi</td><td>DELHI</td><td>110001</td><td><a href="pictures/ppcs/110001-ParliamentofIndia-SansadMargNA.jpg" onclick="showImagePopup('110001-ParliamentofIndia-SansadMargNA.jpg')"><img src="pictures/ppcs/110001-ParliamentofIndia-SansadMargNA.jpg" alt="Parliament of India" width="150" height="100"></a></td></tr>
 						<tr  class="working data-row"><td>2</td><td>Rashtrapati Bhavan</td><td>17.03.2005</td><td>Rashtrapati Bhavan SO</td><td>Central Delhi</td><td>DELHI</td><td>110004</td><td><a href="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" onclick="showImagePopup('110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg')"><img src="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="Rashtrapati Bhavan" width="150" height="100"></a></td></tr>
 						<tr  class="removed data-row"><td>3</td><td>Red Fort</td><td>01.12.1975</td><td>Red Fort NA</td><td>North Delhi</td><td>DELHI</td><td>110006</td><td><a href="pictures/ppcs/110006-RedFort-RedFortNA.jpg" onclick="showImagePopup('110006-RedFort-RedFortNA.jpg')"><img src="pictures/ppcs/110006-RedFort-RedFortNA.jpg" alt="Red Fort" width="150" height="100"></a></td></tr>
@@ -373,3 +775,19 @@
 						<tr  class="working data-row"><td>373</td><td>Jamshedji Nusserwanji Tata & Steel City</td><td>29.12.2016</td><td>Jamshedpur HO</td><td>Purbi Singhbhum</td><td>JHARKHAND</td><td>831001</td><td><a href="pictures/ppcs/831001-JamshedjiNusserwanjiTata&SteelCity-JamshedpurHO.jpg" onclick="showImagePopup('831001-JamshedjiNusserwanjiTata&SteelCity-JamshedpurHO.jpg')"><img src="pictures/ppcs/831001-JamshedjiNusserwanjiTata&SteelCity-JamshedpurHO.jpg" alt="Jamshedji Nusserwanji Tata & Steel City" width="150" height="100"></a></td></tr>
 						<tr  class="doubtful data-row"><td>374</td><td>Chhau Dance</td><td>01.11.2016</td><td>Saraikela SO</td><td>Seraikela-Kharsawan</td><td>JHARKHAND</td><td>833219</td><td><a href="pictures/ppcs/833219-ChhauDance-SaraikelaSO.jpg" onclick="showImagePopup('833219-ChhauDance-SaraikelaSO.jpg')"><img src="pictures/ppcs/833219-ChhauDance-SaraikelaSO.jpg" alt="Chhau Dance" width="150" height="100"></a></td></tr>
 						<tr  class="doubtful data-row"><td>375</td><td>Queen of Chhotanagpur</td><td>01.11.2016</td><td>Netarhat SO</td><td>Latehar</td><td>JHARKHAND</td><td>835218</td><td><a href="pictures/ppcs/835218-QueenofChhotanagpur-NetarhatSO.jpg" onclick="showImagePopup('835218-QueenofChhotanagpur-NetarhatSO.jpg')"><img src="pictures/ppcs/835218-QueenofChhotanagpur-NetarhatSO.jpg" alt="Queen of Chhotanagpur" width="150" height="100"></a></td></tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Placeholder for the footer -->
+			<div id="footer-placeholder"></div>
+		</main>
+		<!-- Bootstrap JS and dependencies -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<!-- Include the custom JS to load navbar and footer -->
+		<script src="loadNavbarFooter.js"></script>
+	</body>
+</html>
