@@ -80,7 +80,10 @@
 			width: 400px;
 			height: 200px;
 			cursor: pointer;
-			margin: 5px;
+			margin: 5px auto; /* Centers the image */
+			display: block; /* Ensures it's treated like a block element */
+			max-width: 100%; /* Ensures it scales down in responsive mode */
+			height: auto; /* Adjusts height automatically based on width */
 		}
 		
 		.overview-images img.vertical {
@@ -149,43 +152,17 @@
 
 		.go-to-top {
 			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			z-index: 1000;
-		}
-
-		.search-count {
-			display: inline-block;
-			margin-left: 10px;
-		}
-
-		.navbar-nav .dropdown-menu {
-			display: none;
-		}
-
-		.navbar-nav .show .dropdown-menu {
-			display: block;
-			position: absolute;
-		}
-
-		/* Custom styles for responsive images */
-		@media (max-width: 767px) {
-			.overview-images {
-				flex-direction: column;
-				align-items: center;
-			}
-		}
-
-		@media (min-width: 768px) {
-			.overview-images {
-				flex-direction: row;
-				align-items: center;
-			}
+			bottom: 10px;
+			right: 10px;
+			background-color: black;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
 		}
 	</style>
-	</head>
-	<body>
-		<!-- Placeholder for the navigation bar -->
+</head>
+<body>
+	<!-- Placeholder for the navigation bar -->
 		<a href="index.html" class="home-icon">
 			<img src="data/home-page-icon.svg" alt="Go to Home" width="30" height="30">
 		</a>
@@ -218,7 +195,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Start of Rashtrapati Bhavan -->
 			<div id="delhi-rashtrapatibhavan" class="section">
 				<h2>Delhi: Rashtrapati Bhavan</h2>
@@ -276,8 +253,8 @@
 				<div class="section-divider"></div>
 			</div>
 			<!-- End of Rashtrapati Bhavan -->
-			
-			<!-- Start of Deekshabhoomi -->
+
+		<!-- Start of Deekshabhoomi -->
 			<div id="maharashtra-shankarnagar" class="section">
 				<h2>Maharashtra: Deekshabhoomi</h2>
 				<div class="overview-images">
