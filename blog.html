@@ -159,6 +159,10 @@
 			padding: 10px;
 			cursor: pointer;
 		}
+		.dropdown-menu {
+			max-height: 200px; /* Adjust height as needed */
+			overflow-y: auto;
+		}
 	</style>
 </head>
 <body>
@@ -912,11 +916,12 @@
 				$('#sections-dropdown + .dropdown-menu').append('<a class="dropdown-item" href="#' + sectionID + '">' + sectionTitle + '</a>');
 			});
 
-			// Dropdown search
+			// Dropdown search functionality
 			$("#sections-dropdown").on("click", function() {
 				$(this).next(".dropdown-menu").toggle();
 			});
 
+			// Filter sections in the dropdown based on search input
 			$("#sectionSearch").on("keyup", function() {
 				var value = $(this).val().toLowerCase();
 				$("#sections-dropdown + .dropdown-menu a").filter(function() {
@@ -924,18 +929,18 @@
 				});
 			});
 
-			// Close the dropdown when clicking outside
+			// Prevent dropdown from closing when interacting with the search bar
 			$(document).on("click", function(event){
 				var $trigger = $("#sections-dropdown");
-				if($trigger !== event.target && !$trigger.has(event.target).length){
-					$("#sections-dropdown + .dropdown-menu").hide();
+				if($trigger !== event.target && !$trigger.has(event.target).length && !$(event.target).is("#sectionSearch")) {
+						$("#sections-dropdown + .dropdown-menu").hide();
 				}
 			});
 
 			var currentIndex = 0;
 			var highlightedElements = [];
 
-			// Global search and navigation
+			// Global search and navigation for PPCs
 			$("#searchInput").on("keyup", function() {
 				var value = $(this).val().toLowerCase();
 				$("body").unmark().mark(value, {
@@ -958,16 +963,16 @@
 				}
 			});
 
-			// Clear search
+			// Clear search functionality
 			window.clearSearch = function() {
 				$("#searchInput").val('').trigger('keyup');
 				$("body").unmark();
 				$('.search-navigation').hide();
 				$('.clear-btn').hide();
 				$('#searchCount').text('0 of 0');
-			}
+			};
 
-			// Navigate through highlights
+			// Navigate through highlighted search results
 			$("#nextBtn").on("click", function() {
 				if (highlightedElements.length) {
 					currentIndex = (currentIndex + 1) % highlightedElements.length;
@@ -982,6 +987,7 @@
 				}
 			});
 
+			// Scroll to the specific highlight in search results
 			function scrollToHighlight(index) {
 				highlightedElements.removeClass('current-highlight');
 				$(highlightedElements[index]).addClass('current-highlight');
@@ -991,6 +997,7 @@
 				updateSearchCount();
 			}
 
+			// Update the count of search results
 			function updateSearchCount() {
 				if (highlightedElements.length > 0) {
 					$('#searchCount').text((currentIndex + 1) + ' of ' + highlightedElements.length);
@@ -998,36 +1005,36 @@
 					$('#searchCount').text('0 of 0');
 				}
 			}
+
+			// Scroll to top functionality
+			window.scrollToTop = function() {
+				$('html, body').animate({scrollTop: 0}, 'slow');
+			};
+
+			// jQuery mark.js for highlighting search terms
+			(function($) {
+				$.fn.mark = function(term, options) {
+					var termRegExp = new RegExp(term, 'gi');
+						return this.each(function() {
+							$(this).find("*").not(options.exclude.join(", ")).each(function() {
+								var element = $(this);
+								if (element.children().length === 0 && element.text().search(termRegExp) !== -1) {
+									element.html(element.text().replace(termRegExp, '<span class="highlight">$&</span>'));
+								}
+							});
+						});
+					};
+					$.fn.unmark = function() {
+						return this.each(function() {
+							$(this).find(".highlight").each(function() {
+								var parent = $(this).parent();
+								$(this).replaceWith($(this).text());
+								parent[0].normalize();
+							});
+						});
+					};
+			})(jQuery);
 		});
-
-		// Scroll to top function
-		function scrollToTop() {
-			$('html, body').animate({scrollTop: 0}, 'slow');
-		}
-
-		// jQuery mark.js for highlighting
-		(function($) {
-			$.fn.mark = function(term, options) {
-				var termRegExp = new RegExp(term, 'gi');
-				return this.each(function() {
-					$(this).find("*").not(options.exclude.join(", ")).each(function() {
-						var element = $(this);
-						if (element.children().length === 0 && element.text().search(termRegExp) !== -1) {
-							element.html(element.text().replace(termRegExp, '<span class="highlight">$&</span>'));
-						}
-					});
-				});
-			};
-			$.fn.unmark = function() {
-				return this.each(function() {
-					$(this).find(".highlight").each(function() {
-						var parent = $(this).parent();
-						$(this).replaceWith($(this).text());
-						parent[0].normalize();
-					});
-				});
-			};
-		})(jQuery);
 	</script>
 </body>
 </html>
