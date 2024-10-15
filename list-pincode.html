@@ -105,7 +105,7 @@
 				color: blue;
 			}
 			
-			.filter-container .Rremoved input[type="checkbox"] + span {
+			.filter-container .Removed input[type="checkbox"] + span {
 				color: red;
 			}
 			
@@ -182,19 +182,19 @@
 					text-align: left;
 				}
 				
-				.removed td {
+				.Removed td {
 					color: red;
 				}
 				
-				.working td {
+				.Working td {
 					color: green;
 				}
 				
-				.doubtful td {
+				.Doubtful td {
 					color: blue;
 				}
 				
-				.replaced td {
+				.Replaced td {
 					color: orange;
 				}
 			}
@@ -339,10 +339,10 @@
 				</div>
 			</section>
 			<section class="filter-container">
-				<label class="working"><input type="checkbox" value="working" onchange="filterTable()"> <span>Working</span></label>
-				<label class="doubtful"><input type="checkbox" value="doubtful" onchange="filterTable()"> <span>Doubtful</span></label>
-				<label class="removed"><input type="checkbox" value="removed" onchange="filterTable()"> <span>Removed</span></label>
-				<label class="replaced"><input type="checkbox" value="replaced" onchange="filterTable()"> <span>Replaced</span></label>
+				<label class="Working"><input type="checkbox" value="Working" onchange="filterTable()"> <span>Working</span></label>
+				<label class="Doubtful"><input type="checkbox" value="Doubtful" onchange="filterTable()"> <span>Doubtful</span></label>
+				<label class="Removed"><input type="checkbox" value="Removed" onchange="filterTable()"> <span>Removed</span></label>
+				<label class="Replaced"><input type="checkbox" value="Replaced" onchange="filterTable()"> <span>Replaced</span></label>
 				<select id="stateSelect" class="form-control" onchange="filterTable()">
 					<option value="">All States</option>
 					<option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
