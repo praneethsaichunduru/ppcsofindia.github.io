@@ -33,10 +33,6 @@
 			color: black;
 		}
 
-		a:hover {
-			text-decoration: none;
-		}
-
 		body {
 			font-family: segoe ui;
 			margin: 0;
@@ -52,14 +48,10 @@
 
 		.credits {
 			font-family: lucida calligraphy;
-			font-size: 8px;
+			font-size: 14px;
 			font-style: italic;
 			font-weight: bold;
 			text-align: center;
-		}
-
-		.section {
-			margin: 20px 0;
 		}
 
 		.overview-images {
@@ -70,50 +62,10 @@
 		}
 
 		.overview-images img.horizontal {
-			width: 300px;
-			height: 200px;
+			width: 210px;
+			height: 140px;
 			cursor: pointer;
 			margin: 5px;
-		}
-
-		.overview-images img.horizontalbig {
-			width: 400px;
-			height: 200px;
-			cursor: pointer;
-			margin: 5px auto; /* Centers the image */
-			display: block; /* Ensures it's treated like a block element */
-			max-width: 100%; /* Ensures it scales down in responsive mode */
-			height: auto; /* Adjusts height automatically based on width */
-		}
-
-		.overview-images img.landscape {
-			width: 1000px;
-			height: 750px;
-			cursor: pointer;
-			margin: 5px auto; /* Centers the image */
-			display: block; /* Ensures it's treated like a block element */
-			max-width: 100%; /* Ensures it scales down in responsive mode */
-			height: auto; /* Adjusts height automatically based on width */
-		}
-		
-		.overview-images img.vertical {
-			width: 200px;
-			height: 300px;
-			cursor: pointer;
-			margin: 5px;
-		}
-		
-		.highlight {
-			background-color: yellow;
-		}
-
-		.current-highlight {
-			background-color: orange;
-		}
-
-		.section-divider {
-			border-bottom: 2px solid black;
-			margin: 20px 0;
 		}
 
 		.info-table {
@@ -127,39 +79,16 @@
 			padding: 8px;
 			text-align: left;
 		}
-
-		.search-container {
-			position: sticky;
-			top: 0;
-			background-color: white;
-			z-index: 1000;
-			padding: 10px 0;
-			text-align: center;
+		
+		.section {
+			margin: 20px 0;
 		}
-
-		.search-wrapper {
-			display: inline-block;
-			width: 80%;
-			max-width: 600px;
+		
+		.section-divider {
+			border-bottom: 2px solid black;
+			margin: 20px 0;
 		}
-
-		.search-container .input-group .form-control {
-			display: inline-block;
-			width: calc(100% - 40px); /* space for the clear button */
-		}
-
-		.search-navigation {
-			display: flex;
-			justify-content: center;
-			margin-top: 10px;
-			display: none; /* Hide initially */
-		}
-
-		.search-navigation button {
-			padding: 5px 10px;
-			margin: 0 5px; /* Ensure buttons are side by side */
-		}
-
+		
 		.go-to-top {
 			position: fixed;
 			bottom: 10px;
@@ -169,6 +98,7 @@
 			padding: 10px;
 			cursor: pointer;
 		}
+		
 		.dropdown-menu {
 			max-height: 200px; /* Adjust height as needed */
 			overflow-y: auto;
@@ -178,1124 +108,425 @@
 <body>
 	<!-- Placeholder for the navigation bar -->
 		<a href="index.html" class="home-icon">
-			<img src="data/home-page-icon.svg" alt="Go to Home" width="30" height="30">
+			<img src="../data/home-page-icon.svg" alt="Go to Home" width="30" height="30">
 		</a>
 		<div class="container">
 			<h1>Know About Permanent Pictorial Cancellations</h1>
-			<!-- Search Bar -->
-			<section class="search-container">
-				<div class="search-wrapper">
-					<div class="input-group mb-3">
-						<input type="text" id="searchInput" class="form-control" placeholder="Search for PPC details..." onkeyup="searchTable()">
-						<div class="input-group-append">
-							<button class="btn btn-outline-secondary" type="button" onclick="clearSearch()">x</button>
-						</div>
-					</div>
-					<div class="search-navigation">
-						<button id="prevBtn" class="btn btn-secondary">Previous</button>
-						<div class="search-count" id="searchCount">0 of 0</div>
-						<button id="nextBtn" class="btn btn-secondary">Next</button>
-					</div>
-				</div>
-			</section>
-
+			
 			<!-- Dropdown Menu with Search -->
 			<div class="container mt-3">
 				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" id="sections-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sections</button>
+					<button class="btn btn-primary dropdown-toggle" type="button" id="sections-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose State/UT</button>
 					<div class="dropdown-menu" aria-labelledby="sections-dropdown">
 						<input type="text" placeholder="Search..." id="sectionSearch" class="form-control mb-2">
 						<!-- Dynamic content will be added here -->
 					</div>
 				</div>
 			</div>
-
-			<!-- Start of Rashtrapati Bhavan -->
-			<div id="delhi-rashtrapatibhavan" class="section">
-				<h2>Delhi: Rashtrapati Bhavan</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhavan.jpg" alt="Rashtrapati Bhavan" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" target="_self"><img src="pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/inauguration-of-delhi-09.02.1931.jpg" target="_self"><img src="pictures/blog-related-pictures/inauguration-of-delhi-09.02.1931.jpg" alt="Inauguration of Delhi" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/new-delhi-diamond-jubilee-25.06.1991.jpg" target="_self"><img src="pictures/blog-related-pictures/new-delhi-diamond-jubilee-25.06.1991.jpg" alt="New Delhi Diamond Jubilee" class="horizontalbig"></a>
-						<p class="credits">Credits: India Post</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/rashtrapati-bhavan-05.08.2011.jpg" target="_self"><img src="pictures/blog-related-pictures/rashtrapati-bhavan-05.08.2011.jpg" alt="Rashtrapati Bhavan Miniature" class="horizontal"></a>
-						<p class="credits">Credits: stampsofindia.com</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/india-singapore-joint-issue-24.11.2015.jpg" target="_self"><img src="pictures/blog-related-pictures/india-singapore-joint-issue-24.11.2015.jpg" alt="India - Singapore Joint Issue" class="horizontal"></a>
-						<p class="credits">Credits: stampsofindia.com</p>
-					</div>
-				</div>
-
-				<p>Rashtrapati Bhavan, the grand presidential residence of India, stands as an iconic symbol of the country's rich history and architectural marvel. Constructed during the British Raj, the foundation stone of this majestic structure was laid on 12th February 1912 by the then Viceroy of India, Lord Hardinge. The inspiration behind its creation was to shift the capital from Calcutta to Delhi and design an imposing residence that befits the dignity of the British monarch's representative.</p>
-				<p>The construction of Rashtrapati Bhavan is a remarkable blend of diverse architectural styles. The mastermind behind its design was the British architect Sir Edwin Lutyens, along with Herbert Baker, who infused elements of Indian and Western architecture. The building boasts a fusion of classical and Mughal styles, incorporating domes, arches, and intricate carvings. The usage of sandstone quarried from Rajasthan and marble from Makrana, as well as other indigenous materials, showcases the craftsmanship of skilled Indian artisans.</p>
-				<p>Beyond its architectural splendor, Rashtrapati Bhavan is steeped in symbolism, reflecting India's cultural heritage and democratic values. The sprawling Amrit Udyan, open to the public during spring, serve as a harmonious connection between the President and the citizens, fostering a sense of inclusivity and accessibility. The grand Durbar Hall, adorned with royal insignia, evokes a sense of regality, while the Ashoka Hall, with its iconic Ashoka Chakra, pays homage to India's ancient emblem of righteousness and virtue. </p>
-				<p>Rashtrapati Bhavan stands as a testament to India's past, present, and future. With its blend of architectural splendor, historical significance, and symbolic representation, it serves as a visual ode to the nation's journey towards independence and its transformation into a vibrant democracy. This iconic edifice continues to inspire awe and reverence, leaving an indelible mark on the hearts of visitors from all corners of the globe.</p>
-				<p>Quite a number of Rashtrapati Bhavan-related stamps were issued as shown above. Some of them are:<br />1. <b><i>British-era Issue: Inauguration of Delhi, 2As (Date of Release: Feruary 2, 1931.)</b></i><br />2. <b><i>Se-tenant: New Delhi Diamond Jubilee, ₹11.50 (Date of Release: June 25, 1991.)</b></i><br />3. <b><i>Miniature Sheet: Rashtrapati Bhavan, ₹20 (Date of Release: August 5, 2011.)</b></i><br />4. <b><i>Joint Issue: India-Singapore, ₹25 (Date of Release: November 24, 2015.)</b></i></p>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>March 17, 2005</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Rashtrapati Bhavan SO,</td>
-					</tr>
-					<tr>
-						<td>Central Delhi (dt.), New Delhi - 110004.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Rashtrapati Bhavan -->
-
-			<!-- Start of Mount Mary Church -->
-			<div id="maharashtra-bandrawest" class="section">
-				<h2>Maharashtra: Mount Mary Church</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/mount-mary-church-bandra-west.jpg" target="_self"><img src="pictures/blog-related-pictures/mount-mary-church-bandra-west.jpg" alt="Mount Mary Church" class="horizontal"></a>
-						<p class="credits">Credits: Mumbai Tourism</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/400050-MountMaryChurch-BandraWestSO.jpg" target="_self"><img src="pictures/ppcs/400050-MountMaryChurch-BandraWestSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>Mount Mary Church, officially known as the Basilica of Our Lady of the Mount, is a renowned Roman Catholic basilica situated atop a hillock in Bandra, Mumbai. Overlooking the Arabian Sea, this iconic structure has been a beacon of faith and architectural beauty for over a century. The basilica is dedicated to the Virgin Mary and is a significant pilgrimage site, attracting devotees from various parts of the country.</p>
-				<p>The origins of Mount Mary Church trace back to the 16th century when Jesuit priests from Portugal brought a wooden statue of the Virgin Mary to the area. This statue was initially placed in a small oratory on the hill, and over time, the site gained prominence as a place of worship. The current edifice, constructed in 1904, showcases a blend of Gothic and Roman architectural styles, characterized by its semi-gothic structure and intricate detailing.</p>
-				<p>One of the most significant events associated with the basilica is the annual Bandra Fair, held every September to celebrate the Feast of the Nativity of the Blessed Virgin Mary. This week-long event attracts thousands of pilgrims and tourists who participate in religious services, processions, and various cultural activities. The fair is also known for its vibrant stalls selling religious artifacts, local delicacies, and handcrafted items, creating a festive atmosphere around the church premises.</p>
-				<p>The basilica's interior is as captivating as its exterior, featuring a beautifully adorned altar and stained-glass windows that depict various episodes from the life of Mary and Jesus. The serene ambiance inside offers a tranquil space for prayer and reflection. The church is open to people of all faiths, emphasizing its universal appeal and the inclusive nature of its community.</p>
-				<p>The area surrounding the church is known for its peaceful ambiance, offering a contrast to the city’s otherwise fast-paced life. Many visitors come here to admire the breathtaking views of the Arabian Sea and the beautifully maintained gardens around the basilica. The church is also a popular site for photographers and history enthusiasts who appreciate its architectural charm and historical significance.</p>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>January 24, 2025</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Bandra West SO,</td>
-					</tr>
-					<tr>
-						<td>Mumbai (dt.), Maharashtra - 400050.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Mount Mary Church -->
-
-			<!-- Start of Deekshabhoomi -->
-			<div id="maharashtra-shankarnagar" class="section">
-				<h2>Maharashtra: Deekshabhoomi</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/deekshabhoomi-stupa.jpg" target="_self"><img src="pictures/blog-related-pictures/deekshabhoomi-stupa.jpg" alt="Shankar Nagar Deekshabhoomi Stupa" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" target="_self"><img src="pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>Deekshabhoomi is the site Dr. B. R. Ambedkar, father of Indian Constitution, embraced Buddhism on 14 October, 1956. After his death on 6 December 1956, Param Pooja Dr. Ambedkar Smarak Samiti, the governing body of the site, decided to build a Buddhist stupa on the premises.</p>
-				<p>Construction of the stupa began in July 1978, designed by Nagpur-based architect Sheo Dan Mal. It is also the first Asian structure to implement the method of Central Block Locking System in constructing a hollow globe-like structure. The site covers 22 acres of land, and the stupa stands at a height of 120 feet. The main structure is supported by four expanding arrangements of 16 columns at the first, 16 columns at the second, 24 at the third, and the last layer of 24 columns again. The ground floor has a space of more than 20,000 sq. feet and is meant for offering prayer. It houses the mortal remains of Dr. Ambedkar.</p>
-				<p>The stupa has four gates, similar in structuring of Sanchi Stupa, Madhya Pradesh. They are mounted with images of Dhammachakra, horses, elephants, and lions carved in Rajasthani marble. The space in between is decorated with green plantation and palm trees.</p>			
-				<p>3 Bodhi trees are planted at eastern side of the stupa side by side. The saplings were brought from Anuradhapura, Sri Lanka, after placing an official request with the latter. They were taken from the same Bodhi Tree planted by Sanghamitra, daughter of the Great Emperor Ashoka, during her monkhood (253 B. C.). The Tree from which the saplings were collected was a sapling of the Bodhivriksha under which Lord Buddha became enlightened.</p>
-								
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>April 14, 2023</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Shankarnagar SO,</td>
-					</tr>
-					<tr>
-						<td>Nagpur (dt.), Maharashtra - 440010.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Deekshabhoomi -->
-
-			<!-- Start of Gopuram of Sri Mallikarjuna Swamy Temple -->
-			<div id="andhrapradesh-srisailam" class="section">
-				<h2>Andhra Pradesh: Gopuram of Sri Mallikarjuna Swamy Temple</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/sri-mallikarjuna-swamy-temple-gopuram.jpg" target="_self"><img src="pictures/blog-related-pictures/sri-mallikarjuna-swamy-temple-gopuram.jpg" alt="Gopuram of Sri Mallikarjuna Swamy Temple" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/518101-GopuramofSriMallikarjunaSwamyTemple-SrisailamSO.jpg" target="_self"><img src="pictures/ppcs/518101-GopuramofSriMallikarjunaSwamyTemple-SrisailamSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<p>The Mallikarjuna Swamy Temple in Srisailam is a deeply revered shrine in Indian spiritual history, intricately linked to legends of divine love and valor. According to mythology, it is the site where Lord Shiva appeared as Mallikarjuna, accompanied by Goddess Parvati as Bhramaramba, to bless their son Kartikeya. The temple also commemorates Parvati's battle against the demon Mahishasura, where she took the form of Bhramaramba to vanquish evil. These myths not only add to the temple's mystique but emphasize the themes of devotion and righteousness.</p>
-				<p>The temple holds a distinguished position in Hinduism, as it is both a Jyotirlinga and a Shakti Peetha. Jyotirlingas are the twelve most sacred shrines of Lord Shiva, while Shakti Peethas are places where parts of Goddess Sati are believed to have fallen, imbuing them with divine energy. Together, these honors make Mallikarjuna Swamy Temple one of the most significant pilgrimage sites, particularly in Shaivism. The temple is often compared to Varanasi (Kashi), another prominent Shaivite pilgrimage center. While Varanasi symbolizes liberation through immersion in the Ganges, Srisailam is believed to provide direct blessings from Shiva and Parvati for liberation from the cycle of rebirth.</p>
-				<p>The construction of the temple complex dates back to the early centuries of the Common Era, with significant contributions from the Ikshvaku dynasty in the 3rd century CE. Later, during the reigns of the Chalukyas, Kakatiyas, and Vijayanagara rulers, the temple underwent major architectural and artistic enhancements. The Vijayanagara period, in particular, saw the construction of grand gateways and intricate sculptures, which highlight the fusion of Dravidian and Nagara architectural styles.</p>
-				<p>The temple complex houses numerous associated shrines and sacred spots, such as the sanctum dedicated to Goddess Bhramaramba, the Sakshi Ganapathi shrine, and the Pathala Ganga, where devotees perform sacred rituals on the banks of the Krishna River. Together, these sites offer a comprehensive spiritual experience that complements the temple's central sanctum.</p>
-				<p>Over centuries, the Mallikarjuna Swamy Temple has benefited from the patronage of various royal dynasties. The Chalukyas and Kakatiyas contributed significantly to the temple’s expansion and maintenance, while the Vijayanagara rulers endowed it with resources and protective fortifications. These rulers not only safeguarded the temple but also enriched its religious traditions and architectural grandeur, ensuring its legacy as a center of faith and culture. Today, the temple stands as a testament to India's enduring spiritual heritage and continues to draw millions of devotees from across the country.</p>
-				
-				<h4>#extremephilately</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/srisailam-08.07.2022.jpg" target="_self"><img src="pictures/blog-related-pictures/srisailam-08.07.2022.jpg" alt="Srisailam 08.07.2022 (date pieces missing)" class="vertical"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>March 7, 1978</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Srisailam SO,</td>
-					</tr>
-					<tr>
-						<td>Nandyala (dt.), Andhra Pradesh - 518101.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Gopuram of Sri Mallikarjuna Swamy Temple -->
-
-			<!-- Start of Vidhana Soudha -->
-			<div id="karnataka-bengaluru" class="section">
-				<h2>Karnataka: Vidhana Soudha</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/vidhana-soudha.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha.jpg" alt="Vidhana Soudha" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560001-VidhanaSoudha-BengaluruGPOPB.jpg" target="_self"><img src="pictures/ppcs/560001-VidhanaSoudha-BengaluruGPOPB.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>Vidhana Soudha, an iconic symbol of Bengaluru and the seat of the Karnataka state legislature, stands as a monumental testament to the fusion of traditional Dravidian and modern architectural styles. Its construction, envisioned to be a representation of the legislative sovereignty of the people, began in 1951 and was completed in 1956. This grand structure, often referred to as the "Taj Mahal of South India," was the brainchild of Kengal Hanumanthaiah, the then Chief Minister of Mysore State, now Karnataka. Hanumanthaiah was driven by the desire to create a building that would reflect the state's rich heritage and emerging status post-independence.</p>
-				<p>The inception of Vidhana Soudha was marked by considerable debate and planning. The foundation stone was laid by Jawaharlal Nehru, the first Prime Minister of India, in 1951. The edifice was designed by a team of architects led by B.R. Manickam, who incorporated elements from various Dravidian temples of South India, blending them with modern sensibilities. This blend is evident in the building’s grand staircases, massive columns, and domes, which exhibit the intricacy of temple architecture while fulfilling the functional needs of a legislative building.</p>
-				<p>Constructed primarily using granite, the building covers an area of over 60 acres and boasts a floor area of about 5,50,505 square feet. The structure is crowned by four domes, one at each corner, with the central dome housing the legislative chamber. The entrance, marked by a grand staircase, leads to the central hall which is flanked by two legislative houses - the Legislative Assembly and the Legislative Council. Each detail of the Vidhana Soudha, from the intricate woodwork in the interiors to the decorative motifs on the exteriors, reflects the craftsmanship and dedication of the workers and artisans involved.</p>
-				<p>Kengal Hanumanthaiah faced numerous challenges during the construction of Vidhana Soudha, including financial constraints and political opposition. Yet, his unwavering vision and commitment saw the project to fruition, creating a building that not only serves its legislative purpose but also stands as a cultural landmark. The edifice, with its inscription "Government's Work is God's Work" in both English and Kannada, embodies the spirit of democracy and public service.</p>
-				<p>Today, Vidhana Soudha is more than just a legislative building; it is a symbol of Karnataka’s political ethos and architectural grandeur. It attracts tourists and dignitaries alike, serving as a proud reminder of the state's rich history and progressive future. The legacy of those who envisioned and constructed Vidhana Soudha continues to inspire, making it a revered monument in the heart of Bengaluru.</p>
-				
-				<h4>Cachet</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-oldcachet-1.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-oldcachet-1.jpg" alt="Vidhana Soudha PPC Cachet in 2022" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<h4>Thematic Collection</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/thematic-560001-vidhana-soudha-bengalurugpopb-03.12.2024.jpg" target="_self"><img src="pictures/blog-related-pictures/thematic-560001-vidhana-soudha-bengalurugpopb-03.12.2024.jpg" alt="Thematic - Vidhana Soudha" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<h4>Previous Versions</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-24.06.2022.jpg" target="_self"><img src="pictures/blog-related-pictures/vidhana-soudha-bengalurugpopb-24.06.2022.jpg" alt="Vidhana Soudha PPC 24.06.2022" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>January 5, 1979</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>In-charge,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru GPO-PB,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru (dt.), Karnataka - 560001.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Vidhana Soudha -->
 			
-			<!-- Start of Karnataka High Court Building -->
-			<div id="karnataka-highcourt" class="section">
-				<h2>Karnataka: Karnataka High Court Building</h2>
+			<!-- Start of Delhi -->
+			<div id="Delhi" class="section">
+				<h2>Delhi</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/karnataka-high-court-building.jpg" target="_self"><img src="pictures/blog-related-pictures/karnataka-high-court-building.jpg" alt="Karnataka High Court Building" class="horizontal"></a>
-						<p class="credits">Credits: Jayakumar Radhakrishnan (Getty Images)</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg" target="_self"><img src="pictures/ppcs/560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						<a href="dl/110004-rashtrapati-bhawan.html" target="_self"><img src="../pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="Rashtrapati Bhavan" class="horizontal"></a>
+						<p class="credits">Rashtrapati Bhawan</p>
 					</div>
 				</div>
-				
-				<p>The High Court building of Karnataka, known as Attara Kacheri, is a majestic colonial structure located opposite the Vidhana Soudha in Bengaluru. This striking edifice, painted in vibrant red, stands as a prominent example of neoclassical architecture, embodying the grandeur and historical significance of Karnataka’s judicial system. The name "Attara Kacheri," which translates to "eighteen offices," is derived from the original plan of the building, which housed the secretariat of the State of Mysore.</p>
-				<p>The construction of the High Court building began in 1864 and was completed in 1868, during the reign of Maharaja Chamarajendra Wadiyar X. The building was designed by Colonel Richard Hieram Sankey, an engineer with the British East India Company, who played a pivotal role in shaping Bengaluru’s colonial infrastructure. Sankey's vision for the High Court combined elements of Greco-Roman architecture with British colonial aesthetics, resulting in a building characterized by tall Corinthian columns, intricate cornices, and large, imposing windows.</p>
-				<p>Attara Kacheri was originally built to serve as the office space for various government departments, and it later became the High Court of Karnataka. The building's design includes a central block flanked by two wings, creating a balanced and symmetrical appearance. The central block features a portico supported by eight imposing pillars, leading to a grand entrance that welcomes visitors into the heart of the judicial complex.</p>
-				<p>The interiors of the High Court building are equally impressive, with high ceilings, spacious corridors, and intricately carved wooden furniture. The courtrooms are designed to provide an atmosphere of solemnity and authority, reflecting the building's role as the apex of justice in the state. The architecture not only serves its functional purpose but also conveys a sense of dignity and respect for the judicial process.</p>
-				<p>Throughout its history, the High Court building has witnessed numerous significant legal battles and landmark judgments that have shaped the legal landscape of Karnataka and India. The building itself has undergone several renovations and expansions to accommodate the growing needs of the judiciary, yet it has retained its historical charm and architectural integrity.</p>
-				<p>Today, the High Court of Karnataka stands as a symbol of justice and the rule of law. It continues to function as the central judicial authority in the state, with its premises bustling with legal professionals, litigants, and visitors. The building’s imposing presence, set against the backdrop of Bengaluru’s modern skyline, serves as a reminder of the state’s colonial past and its ongoing journey towards justice and governance.</p>
-				<p>The High Court building of Karnataka, with its rich history and architectural splendor, remains a revered landmark in Bengaluru. It reflects the enduring legacy of those who envisioned and constructed it, and it continues to inspire awe and respect among all who encounter its grand facade.</p>
-
-				<h4>Thematic Collection</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/thematic-560001-karnataka-high-court-building-highcourtso-03.12.2024.jpg" target="_self"><img src="pictures/blog-related-pictures/thematic-560001-karnataka-high-court-building-highcourtso-03.12.2024.jpg" alt="Thematic - Karnataka High Court Building" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>January 21, 2022</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>High Court SO,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru (dt.), Karnataka - 560001.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Karnataka High Court Building -->
+			<!-- End of Delhi -->
 			
-			<!-- Start of Kempegowda Tower -->
-			<div id="karnataka-basavanagudi" class="section">
-				<h2>Karnataka: Kempegowda Tower</h2>
+			<!-- Start of Haryana -->
+			<div id="Haryana" class="section">
+				<h2>Haryana</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/kempegowda-tower.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower.jpg" alt="Kempegowda Tower" class="horizontal"></a>
-						<p class="credits">Credits: Lakshmi Sharath</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560004-KempegowdaTower-BasavanagudiHO.jpg" target="_self"><img src="pictures/ppcs/560004-KempegowdaTower-BasavanagudiHO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-
-				<!--
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-picture-postcard-front.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-picture-postcard-front.jpg" alt="Basavanagudi PPC on Picture Postcard Front" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-
-					<div>
-						<a href="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-picture-postcard-back.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-picture-postcard-back.jpg" alt="Basavanagudi PPC on Picture Postcard Back" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				-->
-				
-				<p>The Kempegowda Tower in Lalbagh, Bengaluru, is an enduring symbol of the city’s rich heritage and historical significance. Located within the sprawling 240-acre Lalbagh Botanical Garden, the tower stands atop a rocky hillock known as Peninsular Gneiss, one of the oldest rock formations in the world, dating back approximately 3,000 million years. The tower is one of four watchtowers erected by Kempegowda II, the son of Bengaluru’s founder Kempegowda I, to mark the boundaries of the city.</p>
-				<p>Constructed in the 16th century, the Kempegowda Towers were part of an ambitious plan to delineate and protect the growing settlement of Bengaluru. Kempegowda II, a visionary leader, built these towers to provide a panoramic view of the city’s limits, ensuring that the city expanded within these boundaries. The Lalbagh tower, in particular, offers a stunning vista of Bengaluru’s urban expanse, juxtaposed against the natural beauty of Lalbagh’s lush greenery.</p>
-				<p>The architectural style of the Kempegowda Tower reflects the simplicity and utilitarian design typical of the era. Made from stone, the tower features a small, conical structure with an observation platform at the top. Despite its modest design, the tower’s strategic placement on the elevated ground highlights its importance as a historical marker and a vantage point. Over the centuries, the tower has witnessed the transformation of Bengaluru from a small settlement to a bustling metropolis, serving as a silent sentinel over the city’s evolution. The other three towers are located at Mekhri Circle, Ulsoor Lake, and Kempambudhi Lake.</p>
-				<p>Lalbagh itself, where the Kempegowda Tower is located, is a botanical garden established by Hyder Ali, the ruler of Mysore, in the 18th century and later expanded by his son, Tipu Sultan. The garden is renowned for its diverse plant species, both native and exotic, and its annual flower shows, which attract visitors from all over the world. The presence of the Kempegowda Tower within Lalbagh adds a historical dimension to the garden’s botanical splendor, bridging the past with the present.</p>
-				<p>The significance of the Kempegowda Tower extends beyond its historical role as a boundary marker. It stands as a tribute to the foresight and administrative acumen of Kempegowda II and his contributions to the development of Bengaluru. The tower is a popular tourist attraction, drawing visitors who are keen to explore the city’s heritage and enjoy the breathtaking views it offers. It also serves as a reminder of the city’s origins and the visionary leadership that has shaped its growth.</p>
-				<p>Today, the Kempegowda Tower in Lalbagh is a cherished landmark, symbolizing Bengaluru’s rich cultural and historical legacy. It stands as a testament to the city’s enduring spirit and the vision of its early leaders, continuing to inspire both residents and visitors alike. The tower, with its historical significance and panoramic views, remains an integral part of Bengaluru’s identity, reflecting the city’s journey through time.</p>
-
-				<h4>Previous Versions</h4>
-
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-21.06.2022.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-21.06.2022.jpg" alt="Basavanagudi PPC 21.06.2022" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-
-					<div>
-						<a href="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-23.12.2023.jpg" target="_self"><img src="pictures/blog-related-pictures/kempegowda-tower-basavanagudiho-23.12.2023.jpg" alt="Basavanagudi PPC 23.12.2023" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>July 23, 2013</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Senior Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Basavanagudi HO,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru (dt.), Karnataka - 560004.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Kempegowda Tower -->
+			<!-- End of Haryana -->
 			
-			<!-- Start of Ashoka Pillar -->
-			<div id="karnataka-jayanagar3rdblock" class="section">
-				<h2>Karnataka: Ashoka Pillar</h2>
+			<!-- Start of Punjab -->
+			<div id="Punjab" class="section">
+				<h2>Punjab</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/ashoka-pillar.jpg" target="_self"><img src="pictures/blog-related-pictures/ashoka-pillar.jpg" alt="Ashoka Pillar" class="horizontal"></a>
-						<p class="credits">Credits: Vasanth Kumar's Postcard Set</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560011-AshokaPillar-Jayanagar3rdBlockSO.jpg" target="_self"><img src="pictures/ppcs/560011-AshokaPillar-Jayanagar3rdBlockSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-								
-				<p>The Ashoka Pillar in Jayanagar, Bengaluru, stands as a monumental symbol of post-independence India's spirit of nation-building and urban planning. This iconic structure, located in South Bengaluru (formerly Bangalore), marks the inauguration of Jayanagar, the country’s first and largest planned neighborhood. The project was spearheaded by the City Improvement Trust Board (CITB), an organization formed in 1945 to develop new residential extensions in old Bengaluru. On August 20, 1948, C. Rajagopalachari, popularly known as Rajaji and the first and last Indian Governor-General of India, inaugurated the Ashoka Pillar to mark the beginning of Jayanagar’s civil works.</p>
-				<p>The construction of the Pillar was entrusted to P.S. Ranganathachar (PSR Char), a versatile engineer known for his dedication and efficiency. PSR Char was appointed by R. Madhavan, the Municipal Engineer of Bangalore City Corporation and later the Chief Engineer of CITB. The task had to be completed within a record time of ten days to align with Rajaji’s scheduled inauguration. Despite adverse weather conditions and the sudden disappearance of the main sculptor, PSR Char managed to complete the task with remarkable efficiency. A skilled mason named Arunachalam was brought in to finish the intricate work on the four-faced lion sculpture atop the pillar, working tirelessly through the night before the inauguration. The project, costing a total of Rs. 3000, was a testament to the commitment and resourcefulness of PSR Char and his team.</p>
-				<p>The inauguration of the Ashoka Pillar was a grand event, attended by an enthusiastic audience and graced by Rajaji’s presence. Bengaluru historian Vemagal Somashekhar recalls how Rajaji laid the foundation stone using a special silver trowel (karne) with a wooden handle, symbolizing the commencement of the modern and well-planned layout of Jayanagar. The Ashoka Pillar stands approximately twenty feet tall, crowned with a sculpture of four lions akin to the National Emblem of India. It also bears the royal emblem of Mysore, the two-headed mythological bird Gandabherunda, signifying the region's cultural heritage.</p>
-				<p>Spread over 1,500 acres, Jayanagar amalgamated Kanakanapalya and its surrounding villages, stretching from the Ashoka Pillar to Jayadeva Hospital. This planned neighborhood quickly became known for its well-structured layout and multicultural identity. The area from Ashoka Pillar to Madhavan Park was particularly notable for housing many VIPs of the time. While it is widely believed that Jayanagar was named after Jayachamarajendra Wadiyar, the last Maharaja of Mysore, there is no documented evidence to support this claim. Another theory suggests that the name Jayanagar, meaning "Victory Town" in Kannada, was chosen to commemorate India's victory as part of the British Empire in World War II. However, this too remains speculative.</p>
-				<p>At the time of its construction, the Ashoka Pillar was surrounded by open fields and lacked the iron railings that are seen today. It marked the southern end of the city and was a prominent landmark of the emerging Jayanagar constituency. Over the decades, despite constant changes in traffic and urban development, the Ashoka Pillar has remained a steadfast symbol of Jayanagar's historical and cultural legacy. PSR Char’s son, PR Ramaswamy, recounts how his father continued photographing the construction process, capturing moments of this historic project. Today, the Ashoka Pillar endures as one of the few circles in Bengaluru that retains its original significance amidst the city’s rapid modernization.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>April 18, 2024</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Jayanagar 3rd Block SO,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru (dt.), Karnataka - 560011.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Ashoka Pillar -->
+			<!-- End of Punjab -->
 			
-			<!-- Start of Indian Institute of Science Building -->
-			<div id="karnataka-scienceinstitute" class="section">
-				<h2>Karnataka: Indian Institute of Science Building</h2>
+			<!-- Start of Chandigarh -->
+			<div id="Chandigarh" class="section">
+				<h2>Chandigarh</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/iisc-bengaluru.jpg" target="_self"><img src="pictures/blog-related-pictures/iisc-bengaluru.jpg" alt="Indian Institute of Science Building" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg" target="_self"><img src="pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-				
-				<p>The Indian Institute of Science (IISc) in Bengaluru is a premier institution renowned for its advanced research and education in science, engineering, and technology. Established in 1909, IISc has played a pivotal role in shaping India's scientific landscape and continues to be a beacon of excellence in higher education and research. The institute was founded through the collaborative efforts of Jamsetji Tata, a visionary industrialist, and the Maharaja of Mysore, Krishnaraja Wadiyar IV, along with the support of the British government.</p>
-				<p>The idea for the Indian Institute of Science was conceived by Jamsetji Tata, who envisioned an institution that would drive India's scientific progress and industrial development. His vision was brought to life with the generous donation of land and funds by the Maharaja of Mysore, Krishnaraja Wadiyar IV. The establishment of IISc marked a significant milestone in India's journey towards scientific and technological self-reliance.</p>
-				<p>Located on a sprawling 400-acre campus in Bengaluru, IISc boasts state-of-the-art facilities and a serene environment conducive to research and learning. The campus is home to numerous departments and research centers specializing in a wide array of disciplines, including aerospace engineering, biological sciences, chemical engineering, electrical communication engineering, and materials research, among others. The interdisciplinary approach of IISc encourages innovation and collaboration, fostering groundbreaking research that addresses both national and global challenges.</p>
-				<p>IISc’s contributions to science and technology are vast and varied. The institute has been at the forefront of significant scientific advancements and innovations, many of which have had a profound impact on industries and society. Research at IISc spans fundamental science to applied technology, with numerous projects focused on addressing pressing issues such as renewable energy, healthcare, and sustainable development. The faculty and students at IISc are recognized for their scholarly excellence, with many receiving prestigious awards and accolades both nationally and internationally.</p>
-				<p>The Indian Institute of Science is also committed to nurturing the next generation of scientists and engineers. Its rigorous academic programs are designed to cultivate critical thinking, creativity, and a passion for discovery. The institute offers undergraduate, postgraduate, and doctoral programs, attracting some of the brightest minds from across the country and around the world. The vibrant academic community at IISc benefits from the guidance of distinguished faculty members who are leaders in their respective fields.</p>
-				<p>Beyond its academic and research endeavors, IISc plays a vital role in contributing to the local and national community. The institute engages in various outreach activities, including public lectures, workshops, and collaborations with industry and government organizations. These initiatives aim to bridge the gap between academia and society, ensuring that scientific advancements contribute to societal well-being and progress.</p>
-				<p>In conclusion, the Indian Institute of Science in Bengaluru stands as a testament to the vision and foresight of its founders. Over the past century, IISc has grown into a world-class institution that continues to drive scientific innovation and education in India. Its legacy of excellence, combined with its ongoing commitment to research and learning, ensures that IISc remains at the forefront of scientific and technological advancements, making significant contributions to the nation's development and the global scientific community.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>January 21, 2022</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Science Institute SO,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru (dt.), Karnataka - 560012.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Indian Institute of Science Building -->
+			<!-- End of Chandigarh -->
 			
-			<!-- Start of Butterfly-Malabar Banded Peacock -->
-			<div id="karnataka-bannerghatta" class="section">
-				<h2>Karnataka: Butterfly - Malabar Banded Peacock</h2>
+			<!-- Start of Himachal Pradesh -->
+			<div id="Himachal Pradesh" class="section">
+				<h2>Himachal Pradesh</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/butterfly-malabar-banded-peacock.jpg" target="_self"><img src="pictures/blog-related-pictures/butterfly-malabar-banded-peacock.jpg" alt="Butterfly - Malabar Banded Peacock" class="horizontal"></a>
-						<p class="credits">Credits: Vinay Raj (Wikimedia Commons)</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg" target="_self"><img src="pictures/ppcs/560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+					
 					</div>
 				</div>
-				
-				<p>The Malabar Banded Peacock, scientifically known as Papilio buddha, is a strikingly beautiful butterfly native to the Western Ghats of India. This species is renowned for its vibrant coloration and distinct banded patterns on its wings, which display shades of iridescent blue and green. The Malabar Banded Peacock is an integral part of the rich biodiversity of the region and plays a crucial role in the ecosystem as a pollinator.</p>
-				<p>Bannerghatta National Park, located on the outskirts of Bengaluru, serves as a vital habitat for the Malabar Banded Peacock. Established in 1971, the park spans over 104.27 square kilometers and encompasses a diverse range of flora and fauna, including various butterfly species. The park's butterfly park, in particular, is a key attraction and a sanctuary for many native butterfly species, including the Malabar Banded Peacock.</p>
-				<p>The butterfly park within Bannerghatta National Park provides a controlled and conducive environment for butterflies to thrive. It includes a conservatory, a museum, and an audiovisual room to educate visitors about butterflies and their ecological importance. The conservatory is designed to mimic natural habitats, featuring a variety of host and nectar plants that support the lifecycle of butterflies, from caterpillar to adult. This setup not only aids in the conservation of butterflies like the Malabar Banded Peacock but also offers an opportunity for research and education.</p>
-				<p>The presence of the Malabar Banded Peacock in Bannerghatta National Park highlights the park’s role in preserving the biodiversity of the region. The butterfly’s dependency on specific host plants found in the Western Ghats ties its survival to the conservation of these habitats. Bannerghatta's efforts in maintaining a healthy ecosystem contribute to the protection of these delicate species and their natural environments.</p>
-				<p>Moreover, the Malabar Banded Peacock's striking appearance and ecological significance make it a symbol of the rich natural heritage of the Western Ghats. By showcasing this butterfly, Bannerghatta National Park emphasizes the importance of conservation and the need to protect the unique biodiversity of the region. Visitors to the park are not only treated to the visual delight of these butterflies but also gain an understanding of the intricate relationships within ecosystems and the importance of each species.</p>
-				<p>In conclusion, the Malabar Banded Peacock and Bannerghatta National Park share a symbiotic relationship, with the park providing a sanctuary for the butterfly and in turn, the butterfly adding to the ecological and educational value of the park. This relationship underscores the broader importance of conservation efforts in preserving the delicate balance of nature and ensuring the survival of diverse species for future generations.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>May 23, 1979</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Bannerghatta SO,</td>
-					</tr>
-					<tr>
-						<td>Bengaluru Urban (dt.), Karnataka - 560083.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Butterfly-Malabar Banded Peacock -->
-
-			<!-- Start of Saavira Kambada Basadi -->
-			<div id="karnataka-moodbidri" class="section">
-				<h2>Karnataka: Saavira Kambada Basadi (1000 Pillared Jain Temple)</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidri.jpg" target="_self"><img src="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidri.jpg" alt="Saavira Kambada Basadi" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/574227-SaaviraKambadaBasadi-MoodbidriSO.jpg" target="_self"><img src="pictures/ppcs/574227-SaaviraKambadaBasadi-MoodbidriSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>Saavira Kambada Basadi, also known as the Thousand Pillar Temple, stands tall as an architectural marvel and a revered place of worship. This temple, with its intricate craftsmanship and historical significance, holds a special place in the hearts of both devotees and admirers of art and architecture. It is renowned for its exquisite architecture that seamlessly blends elements of Jain, Hoysala, and Vijayanagara styles. </p>
-				<p>One of the most striking features of the temple is its impressive granite structure, which is built on a raised platform, capturing the attention of all who visit. As you approach the temple, you are greeted by a captivating sight of intricate carvings and detailed sculptures that adorn the pillars, walls, and ceilings. Every inch of the temple is adorned with beautiful motifs, depicting scenes from Jain mythology, celestial beings, animals, and geometric patterns, showcasing the immense talent and dedication of the craftsmen of yore. This shrine is considered as “Varanasi of the Jains.”</p>
-				<p>The architectural splendor of Saavira Kambada Basadi is enhanced by its three entrances, each adorned with elaborately carved pillars and lintels. As you step inside, you are greeted by the main sanctum, which houses the idol of Lord Chandranatha, the primary deity worshipped in the temple. The idol is a sight to behold, exuding an aura of peace and serenity. The temple complex also encompasses several other smaller shrines dedicated to various Jain Tirthankaras (spiritual teachers), each featuring its unique architectural elements and sculptures.</p>
-				<p>The history of Saavira Kambada Basadi dates back to the 15th century when it was commissioned by the local Jain ruler, Devaraya Wodeyar. Over the centuries, the temple has undergone several renovations and additions, preserving its sanctity and architectural brilliance. Despite its age, the temple has withstood the test of time, thanks to the enduring craftsmanship and the devotion of generations of worshippers and caretakers. The sheer beauty and intricate craftsmanship of the temple's architecture, combined with the spiritual aura it exudes, create an atmosphere of tranquility and introspection. It serves as a reminder of the glorious past and the enduring legacy of art and devotion.</p>
-				<p>Apart from its religious and architectural significance, Saavira Kambada Basadi holds cultural and historical importance for the region. It serves as a repository of the rich Jain heritage and offers a glimpse into the artistic traditions of the past. The temple also hosts various festivals and religious ceremonies throughout the year, attracting a large number of devotees and tourists.</p>
-
-				<h4>Previous Versions</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidriso-23.01.2021.jpg" target="_self"><img src="pictures/blog-related-pictures/saavira_kambada_basadi-moodbidriso-23.01.2021.jpg" alt="Saavira Kambada Basadi PPC 23.01.2021" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
+			<!-- End of Himachal Pradesh -->
 			
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>November 18, 2016</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Moodbidri SO,</td>
-					</tr>
-					<tr>
-						<td>Dakshina Kannada (dt.), Karnataka - 574227.</td>
-					</tr>
-				</table>
+			<!-- Start of Jammu and Kashmir -->
+			<div id="Jammu and Kashmir" class="section">
+				<h2>Jammu and Kashmir</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Saavira Kambada Basadi -->
-
-			<!-- Start of Kumaravyasa -->
-			<div id="karnataka-sandur" class="section">
-				<h2>Karnataka: Kumaravyasa</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/kumaravyasa.jpg" target="_self"><img src="pictures/blog-related-pictures/kumaravyasa.jpg" alt="Kumaravyasa" class="horizontal"></a>
-						<p class="credits">Credits: avial7.wordpress.com (Rijutha)</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/582101-Kumaravyasa-GadagHO.jpg" target="_self"><img src="pictures/ppcs/582101-Kumaravyasa-GadagHO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>Kumaravyasa, a name synonymous with the Kannada literary world, and the majestic Veeranarayana Temple in Gadag are inextricably linked. The 15th-century poet, renowned for his monumental translation of the Mahabharata into Kannada, found inspiration within the sacred precincts of this temple.</p>
-				<p>Kumaravyasa's "Gadugina Bharata" is not merely a translation but a reimagining of the epic, imbued with the poet's unique style and deep understanding of Kannada literature. His poetic genius elevated the language, making it a vehicle for profound storytelling. Beyond his magnum opus, Kumaravyasa's literary contributions include "Karnata Bharata Kathamanjari," a shorter version of the Mahabharata, and "Prabhulingaleele," a work on the lives of the Vīraśaiva saints.</p>
-				<p>The Veeranarayana Temple, a masterpiece of Hoysala architecture, was commissioned by King Vishnuvardhana around 1117 CE. Its intricate carvings, ornate pillars, and towering gopurams are a testament to the architectural brilliance of the era. The main deity, Veeranarayana (<i>lit</i>. "Brave Narayana"), a form of Vishnu, is a magnificent black stone idol, exuding a serene and powerful aura.</p>
-				<p>The deity is depicted in a standing position, holding the attributes Conch (<i>shanka</i>), Wheel (<i>chakra</i>), Club (<i>gadha</i>) and Lotus (<i>padma</i>) in his four hands. The attire on deity (<i>dhoti</i>) is worn in a veera kaccha ("warrior style") giving the appearance of being "ready for battle". The deity is flanked by his consort Lakshmi and companion Garuda the eagle.. The temple complex, with its serene atmosphere and divine energy, provided the perfect backdrop for Kumaravyasa's creative genius. Legend has it that he composed his works while sitting beneath a specific pillar in the temple, receiving divine inspiration from the deity. The pillar is now called "Kumaravyasa Pillar."</p>
-				<p>The association between Kumaravyasa and the Veeranarayana Temple is a testament to the enduring power of art, culture, and spirituality. The temple, with its rich history and architectural splendor, continues to inspire and awe visitors, while Kumaravyasa's literary legacy lives on, enriching the cultural heritage of Karnataka.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>November 26, 2024</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Senior Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Gadag HO,</td>
-					</tr>
-					<tr>
-						<td>Gadag (dt.), Karnataka - 582101.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Kumaravyasa-->
-
-			<!-- Start of Galaganatha Temple -->
-			<div id="karnataka-pattadakal" class="section">
-				<h2>Karnataka: Galaganatha Temple</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/galaganatha-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/galaganatha-temple.jpg" alt="Galaganatha Temple" class="horizontal"></a>
-						<p class="credits">Credits: haveri.nic.in</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/587201-GalaganathaTemple-PattadakalBO.jpg" target="_self"><img src="pictures/ppcs/587201-GalaganathaTemple-PattadakalBO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>The Galaganatha Temple in Pattadakal, Karnataka, is an 8th-century Shiva temple and part of the UNESCO World Heritage Site of Pattadakal. It showcases the unique architectural style of the Chalukya dynasty, blending Dravidian and Nagara elements. Dedicated to Lord Shiva, the temple stands as a testament to the dynasty's artistic excellence and devotion.</p>
-				<p>The temple’s most striking feature is its rekha-nagara shikhara, a curvilinear superstructure that crowns the sanctum. Inside, a shivalinga represents Lord Shiva, while the walls display carvings from Hindu mythology. A prominent relief depicts Shiva slaying the demon Andhakasura, a highlight of the temple's intricate craftsmanship.</p>
-				<p>The Chalukya kings, especially Vijayaditya and Vikramaditya II, patronized the temple’s construction. Their reign saw the fusion of northern and southern architectural styles, resulting in the distinctive designs of the temples in Pattadakal. These temples served both religious and cultural purposes, reflecting the prosperity of their time.</p>
-				<p>Pattadakal was a ceremonial center for the Chalukyas, situated on the banks of the Malaprabha River. This sacred location made it an ideal site for temple construction and cultural events. The Galaganatha Temple is part of a cluster of temples that symbolize the zenith of Chalukyan architecture.</p>
-
-				<h4>Thematic Collection</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/thematic-587201-galaganatha-temple-pattadakal-bo-travelled-cover-01.01.2025-front.jpg" target="_self"><img src="pictures/blog-related-pictures/thematic-587201-galaganatha-temple-pattadakal-bo-travelled-cover-01.01.2025-front.jpg" alt="Pattadakal Travelled Cover Front" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/thematic-587201-galaganatha-temple-pattadakal-bo-travelled-cover-01.01.2025-back.jpg" target="_self"><img src="pictures/blog-related-pictures/thematic-587201-galaganatha-temple-pattadakal-bo-travelled-cover-01.01.2025-back.jpg" alt="Pattadakal Travelled Cover Back" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<h4>Previous Versions</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/galaganatha-temple-pattadakal-bo-no-date.jpg" target="_self"><img src="pictures/blog-related-pictures/galaganatha-temple-pattadakal-bo-no-date.jpg" alt="Galaganatha Temple PPC No Date" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>September 30, 1987</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Branch Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Pattadakal BO,</td>
-					</tr>
-					<tr>
-						<td>Bagalkote (dt.), Karnataka - 587201.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Galaganatha Temple -->
+			<!-- End of Jammu and Kashmir -->
 			
-			<!-- Start of Parvati - Kumaraswamy Temple -->
-			<div id="karnataka-sandur" class="section">
-				<h2>Karnataka: Parvati - Kumaraswamy Temple</h2>
+			<!-- Start of Ladakh -->
+			<div id="Ladakh" class="section">
+				<h2>Ladakh</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/parvati-kumaraswamy-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/parvati-kumaraswamy-temple.jpg" alt="Parvati - Kumaraswamy Temple" class="horizontal"></a>
-						<p class="credits">Credits: Wikipedia</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/583119-Parvati-KumaraswamyTemple-SandurSO.jpg" target="_self"><img src="pictures/ppcs/583119-Parvati-KumaraswamyTemple-SandurSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-				
-				<p>The Parvati-Kumaraswamy Temple complex in Sandur, Karnataka, is a captivating historical site, housing two distinct temples: the Parvati Temple and the Kumaraswamy Temple. These structures, built centuries apart, stand side by side, each with its unique architectural style and religious significance.</p>
-				<p>The Parvati Temple, constructed during the 7th or 8th century CE by the Badami Chalukyas, is an exquisite example of Dravidian architecture. Its simple yet elegant design features a sanctum, an antechamber, and a pillared hall. The temple's exterior is adorned with intricate carvings depicting various deities and mythological scenes. The interior houses a serene sanctum enshrining the deity Parvati.</p>
-				<p>The Kumaraswamy Temple, built by the Rashtrakutas between the 8th and 10th centuries CE, is a more elaborate structure. It showcases a blend of Dravidian and Nagara architectural styles, evident in its tall tower (vimana) and ornate pillars. The temple is dedicated to Kartikeya, the Hindu god of war, also known as Murugan or Subramanya. Legend has it that this temple is the first abode of Kartikeya in South India.</p>
-				<p>The juxtaposition of these two temples, built centuries apart, offers a fascinating glimpse into the evolution of Hindu temple architecture. The Parvati Temple, with its simpler design, represents the early phase of Dravidian architecture, while the Kumaraswamy Temple showcases the more elaborate and ornate style that developed later.</p>
-				<p>The presence of both temples within the same complex can be attributed to the deep-rooted belief in the divine couple, Parvati and Shiva. Parvati, as the consort of Shiva, is often depicted alongside her husband. The construction of the Parvati Temple, likely a later addition to the existing Kumaraswamy complex, may have been motivated by a desire to honor the divine couple together.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>November 26, 2024</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Sandur SO,</td>
-					</tr>
-					<tr>
-						<td>Ballari (dt.), Karnataka - 583119.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Parvati - Kumaraswamy Temple-->
+			<!-- End of Ladakh -->
 			
-			<!-- Start of Logo of Sri Ramanasramam -->
-			<div id="tamilnadu-logoofsriramanasramam" class="section">
-				<h2>Tamil Nadu: Logo of Sri Ramanasramam</h2>
+			<!-- Start of Uttar Pradesh -->
+			<div id="Uttar Pradesh" class="section">
+				<h2>Uttar Pradesh</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/logo-of-sri-ramanasramam.jpg" target="_self"><img src="pictures/blog-related-pictures/logo-of-sri-ramanasramam.jpg" alt="Logo of Sri Ramanasramam" class="horizontal"></a>
-						<p class="credits">Credits: Arunachala Archives</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/606603-LogoofSriRamanasramam-SriRamanasramamSO.jpg" target="_self"><img src="pictures/ppcs/606603-LogoofSriRamanasramam-SriRamanasramamSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-
-				<p>Sri Ramana Maharshi, born Venkataraman Iyer on December 30, 1879, in Tamil Nadu, India, is one of the most revered spiritual teachers of modern India. His teachings have had a profound influence on both Indian and Western seekers of truth. Ramana Maharshi's life was marked by simplicity, humility, and an unwavering pursuit of self-realization. He is best known for his teachings on self-inquiry, encapsulated in the question "Who am I?" which serves as a direct path to self-realization and the dissolution of the ego.</p>
-				<p>At the age of sixteen, Venkataraman experienced a profound spiritual awakening. Overwhelmed by an intense fear of death, he spontaneously engaged in a process of self-inquiry, which led him to the realization that his true self was not his body, but an immortal consciousness beyond physical form. This experience transformed him entirely, and he lost interest in worldly affairs. In 1896, he left his home and traveled to the sacred mountain of Arunachala in Tiruvannamalai, where he remained for the rest of his life.</p>
-				<p>Ramana Maharshi spent the early years of his time at Arunachala in silence, absorbed in deep meditation. His presence and silence attracted seekers from all over India, and gradually, a community of disciples formed around him. This led to the establishment of Ramanasramam, the ashram dedicated to his teachings and the spiritual practice of self-inquiry. The ashram, located at the foothills of Arunachala, has since become a significant spiritual center, drawing visitors from around the world.</p>
-				<p>Ramanasramam is not just a place of residence but a sanctuary for spiritual seekers who come to immerse themselves in the teachings of Ramana Maharshi. The ashram's serene environment, coupled with the palpable spiritual energy of Arunachala, creates an atmosphere conducive to meditation and self-inquiry. Devotees engage in various activities, such as chanting, meditation, and studying Ramana's teachings, all aimed at deepening their understanding and realization of the self.</p>
-				<p>The central teaching of Ramana Maharshi revolves around the practice of self-inquiry. He taught that by constantly asking the question "Who am I?" and turning attention inward, one could dissolve the ego and realize the true self, which is pure consciousness. This method bypasses intellectual reasoning and directly addresses the root of ignorance, leading to liberation. Ramana emphasized that self-realization is not a distant goal but the true nature of every individual, accessible here and now through persistent self-inquiry.</p>
-				<p>Ramana Maharshi's influence extended beyond his physical presence. His teachings, compiled in numerous books and recordings, continue to inspire spiritual seekers globally. Notable works include "Who Am I?", "Talks with Sri Ramana Maharshi," and "The Collected Works of Sri Ramana Maharshi." These texts capture the essence of his teachings and provide practical guidance for those on the spiritual path.</p>
-				<p>Ramanasramam remains a vibrant center of spiritual practice and study. The ashram hosts regular events, such as satsangs (spiritual gatherings), lectures, and meditation sessions, fostering a sense of community among seekers. The presence of Arunachala, believed to be a manifestation of Lord Shiva, further enhances the spiritual ambiance of the ashram.</p>
-				
-				<h4>#extremephilately</h4>
-				
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/sri-ramanasramam-11.10.2023.jpg" target="_self"><img src="pictures/blog-related-pictures/sri-ramanasramam-11.10.2023.jpg" alt="Sri Ramanasramam 11.10.2023 (Philately Day)" class="vertical"></a>
-						<p class="credits">Credits: D. Malavya Reddy</p>
-					</div>
-				</div>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>September 1, 2014</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Sri Ramanasramam SO,</td>
-					</tr>
-					<tr>
-						<td>Tiruvannamalai (dt.), Tamil Nadu - 606603.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Logo of Sri Ramanasramam -->
-
-			<!-- Start of Pathinettampadi (Holy Eighteen Steps) -->
-			<div id="kerala-sabarimalai" class="section">
-				<h2>Kerala: Pathinettampadi (Holy Eighteen Steps)</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/sabarimalai-18-steps.jpeg" target="_self"><img src="pictures/blog-related-pictures/sabarimalai-18-steps.jpeg" alt="Pathinettam Padi" class="horizontal"></a>
-						<p class="credits">Credits: Internet</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/689713-PathinettampadiHolyEighteenSteps-SabarimalaiSO.jpg" target="_self"><img src="pictures/ppcs/689713-PathinettampadiHolyEighteenSteps-SabarimalaiSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<p>The Sabarimala temple, nestled amidst the verdant hills of Pathanamthitta district in Kerala, is a revered pilgrimage site dedicated to Lord Ayyappa. This enigmatic deity draws millions of devotees from across the globe, particularly during the annual Mandalam-Makaravilakku season.</p>
-				<p>The temple's architecture, though simple, exudes a profound spiritual aura. The sanctum sanctorum houses the idol of Lord Ayyappa, a majestic figure adorned with ornaments and sacred threads during Makaravilakku season. The deity is believed to be a manifestation of divine energy, embodying the principles of truth, righteousness, and compassion. The temple complex also encompasses several shrines dedicated to other deities, including Malikappuram Devi and Vavar Swami, who are considered to be integral to the Ayyappa legend.</p>
-				<p>The legend surrounding Lord Ayyappa is as captivating as the temple itself. According to folklore, Ayyappa was the son of Lord Shiva and Mohini, the feminine form of Lord Vishnu. He was born to eradicate evil and restore dharma. After defeating the demoness Mahishi, Ayyappa embarked on a spiritual journey, eventually choosing Sabarimala as his abode. The temple is believed to be the site of his penance and enlightenment.</p>
-				<p>One of the most significant aspects of the Sabarimala pilgrimage is the ascent of the "18 Holy Steps," known as "Pathinettam Padi" in Malayalam. These steps, leading to the sanctum sanctorum, are considered sacred, and devotees climb them barefoot, carrying the "Irumudi," a traditional offering to the deity. The climb symbolizes the spiritual journey of the devotee, each step representing a stage of purification and self-realization. 18 steps denote: Panchendriyas (5 human senses), Ashtaragas (8 emotions), Trigunas (3 qualities), Knowledge and Ignorance. It is also told that the Steps represent the 18 hills surrounding the temple. </p>
-				
-				<table class="info-table">
-					<tr><th>Step</th><th>Symbolic Representation</th><th>Surrounding Hill</th></tr>
-					<tr><td>1</td><td>Netra (Eye)</td><td>Ponnambalamedu</td></tr>
-					<tr><td>2</td><td>Karna (Ear)</td><td>Gaudanmala</td></tr>
-					<tr><td>3</td><td>Nasa (Nose)</td><td>Nagamala</td></tr>
-					<tr><td>4</td><td>Tvacha (Skin)</td><td>Sundaramala</td></tr>
-					<tr><td>5</td><td>Mukha (Mouth)</td><td>Karimala</td></tr>
-					<tr><td>6</td><td>Kama (Desire)</td><td>Mathangamala</td></tr>
-					<tr><td>7</td><td>Krodha (Anger)</td><td>Mayiladummala</td></tr>
-					<tr><td>8</td><td>Lobha (Inordinate Desire)</td><td>Sreepadamala</td></tr>
-					<tr><td>9</td><td>Moha (Attachment)</td><td>Thevarmala</td></tr>
-					<tr><td>10</td><td>Madha (Pride)</td><td>Nilakkalmala</td></tr>
-					<tr><td>11</td><td>Matsarya (Unhealthy Competition)</td><td>Thalapparamala</td></tr>
-					<tr><td>12</td><td>Asuya (Jealousy)</td><td>Chittambaramala</td></tr>
-					<tr><td>13</td><td>Dhumb (Braggery)</td><td>Ghalkimala</td></tr>
-					<tr><td>14</td><td>Sathva (Enlightenment)</td><td>Puthusserymala</td></tr>
-					<tr><td>15</td><td>Rajas (Ego)</td><td>Kalakettymala</td></tr>
-					<tr><td>16</td><td>Thamas (Delusion)</td><td>Inchipparamala</td></tr>
-					<tr><td>17</td><td>Vidya (Knowledge)</td><td>Sabarimala</td></tr>
-					<tr><td>18</td><td>Avidya (Ignorance)</td><td>Nellimala</td></tr>
-				</table>
-				
-				<p>The Sabarimala temple is steeped in tradition and ritual. Devotees are expected to observe strict vows, including celibacy and abstinence from certain foods, for a period of 41 days before undertaking the pilgrimage. They also follow a specific code of conduct, emphasizing purity, humility, and respect for all beings. The temple's annual festival, Makaravilakku, is a grand spectacle that attracts millions of pilgrims. The highlight of the festival is the ceremonial lighting of the sacred lamp on a nearby hill, which is believed to bring blessings and prosperity to the devotees.</p>
-				<p>The Sabarimala temple is more than just a place of worship; it is a pilgrimage site that offers a profound spiritual experience. The journey to Sabarimala is not merely a physical trek but a spiritual quest that requires discipline, devotion, and surrender to the divine. The temple's unique blend of mythology, tradition, and natural beauty makes it a truly extraordinary place, captivating the hearts and minds of all who visit.</p>
-				
-				<h4>News Coverage</h4>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/sabarimalai-news-clipping.jpg" target="_self"><img src="pictures/blog-related-pictures/sabarimalai-news-clipping.jpg" alt="News Coverage on 24 December, 2022" class="landscape"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>December 25, 1980</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Sabarimalai Seasonal SO,</td>
-					</tr>
-					<tr>
-						<td>Pathanamthitta (dt.), Kerala - 689713.</td>
-					</tr>
-				</table>
-				
-				<h6>Note:</h6>
-				<p>1. This PPC is available only during <i><u>Makaravilakku</u></i> season (mid weeks of November to Makara Sankranti). </p>
-				<p>2. The provided pincode is not registered on India Post website (for registered/speed post), but is valid. If a problem encountered at post office, ask them to enter the pincode of nearby post offices (689711, 689712, etc...). Your articles will reach their destination.</p>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Pathinettampadi (Holy Eighteen Steps) -->
+			<!-- End of Uttar Pradesh -->
 			
-			<!-- Start of Magen David of Cochin Synagogue-->
-			<div id="kerala-mattancherryjetty" class="section">
-				<h2>Kerala: Magen David of Cochin Synagogue</h2>
+			<!-- Start of Uttarakhand -->
+			<div id="Uttarakhand" class="section">
+				<h2>Uttarakhand</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/paradesi-synagogue.jpg" target="_self"><img src="pictures/blog-related-pictures/paradesi-synagogue.jpg" alt="Paradesi Synagogue, Kochi" class="horizontal"></a>
-						<p class="credits">Credits: Wolfgang Kaehler (Getty Images)</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/cochin-synagogue.jpg" target="_self"><img src="pictures/blog-related-pictures/cochin-synagogue.jpg" alt="Cochin Synagogue (1968)" class="vertical"></a>
-						<p class="credits">Credits: India Post</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg" target="_self"><img src="pictures/ppcs/682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-				
-				<p>The Magen David Synagogue, also known as the Cochin Jewish Synagogue, is a historical and cultural landmark in Kochi, Kerala, India. Established in 1568 by the Jewish community, it is located in Jew Town, Mattancherry, an area historically rich with trade and cultural exchanges.</p>
-				<p>Entering the Magen David Synagogue, visitors are greeted by its serene beauty and historical significance. The architecture showcases a blend of Kerala and colonial styles, with a notable clock tower and Hebrew inscriptions on the exterior. Inside, the synagogue features ornate Belgian chandeliers, Chinese hand-painted tiles, and an intricate brass pulpit. The floor is an exquisite mosaic of over 1,000 unique blue and white tiles from Canton, reflecting the synagogue’s global connections.</p>
-				<p>The sanctuary houses sacred Torah scrolls and a teak ark adorned with carved motifs. The ceiling’s dark wood beams and oil lamps, along with the women’s gallery supported by wooden pillars, highlight the architectural ingenuity of the time. The synagogue's walls echo the history of Kochi’s Jewish community, which significantly contributed to the region’s prosperity through the spice trade.</p>
-				<p>Despite the dwindling Jewish population in Kochi today, the Magen David Synagogue remains a vibrant symbol of their enduring legacy. It stands as a poignant reminder of a once-thriving community that maintained its faith and traditions through centuries of change. As one of the oldest synagogues in the Commonwealth of Nations, it continues to draw visitors worldwide, offering a unique glimpse into the Jewish heritage in India and the multicultural fabric of Kochi.</p>
-				<p>The meticulous preservation of the Magen David Synagogue allows visitors to experience a rich historical and cultural tapestry, making it a beacon of significance in the region.</p>
-				<p>A postage stamp worth 20nP (new paise) was released on <b><i>Cochin Synagogue. (Date of Release: December 15, 1968)</i></b></p>
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>March 9, 1982</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Mattancherry Jetty SO,</td>
-					</tr>
-					<tr>
-						<td>Ernakulam (dt.), Kerala - 682002.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Magen David of Cochin Synagogue-->
-
-			<!-- Start of Bishnupur Shyamrai Temple -->
-			<div id="westbengal-bishnupurshyamraitemple" class="section">
-				<h2>West Bengal: Bishnupur Shyamrai Temple</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/bishnupur-shyamrai-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/bishnupur-shyamrai-temple.jpg" alt="Bishnupur Shyamrai Temple" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/bishnupur-shyamrai-temple-stamp-2020.jpg" target="_self"><img src="pictures/blog-related-pictures/bishnupur-shyamrai-temple-stamp-2020.jpg" alt="Bishnupur Shyamrai Temple (Terracota Temples of India, 2020)" class="horizontal"></a>
-						<p class="credits">Credits: India Post</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/722122-BishnupurShyamraiTemple-BishnupurSO.jpg" target="_self"><img src="pictures/ppcs/722122-BishnupurShyamraiTemple-BishnupurSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<p>The Shyamrai Temple in Bishnupur, West Bengal, stands as a splendid monument reflecting the rich heritage and artistic ingenuity of the Malla dynasty. Erected in 1643 AD by Malla king Raghunath Singha, the temple is dedicated to Lord Krishna, also revered as Shyamrai. Known as the Pancha Ratna Temple, it is celebrated for its distinctive architectural style and intricate terracotta carvings that vividly depict scenes from Hindu mythology and the lives of the people of that era.</p>
-				<p>The Shyamrai Temple is distinguished by its five pinnacles, or ratnas, characteristic of the Pancha Ratna style of temple architecture. These pinnacles, arranged symmetrically, lend a striking profile to the temple, enhancing its visual appeal and signifying its religious importance. The square base is surmounted by a central pinnacle, flanked by four smaller ones at each corner, creating a balanced and harmonious structure.</p>
-				<p>Constructed using laterite and bricks, the Shyamrai Temple exemplifies the use of terracotta in Bengal temple architecture. Laterite, a reddish clay-like material, was locally available and provided a sturdy foundation. Bricks, meticulously baked and intricately carved, were employed to craft the elaborate terracotta panels that adorn the temple walls. These terracotta tiles are the temple's most remarkable feature, showcasing the artisans' exceptional skill and creativity.</p>
-				<p>The terracotta panels serve as a visual narrative, depicting various scenes from the life of Krishna, episodes from the Mahabharata and the Ramayana, and everyday activities of the people during the Malla period. The precision and detail in these carvings are astonishing, capturing divine battles, pastoral scenes, and daily life with lifelike quality. For instance, panels show Krishna playing the flute amidst gopis, the epic battle of Kurukshetra from the Mahabharata, and scenes of social and domestic life, providing valuable insights into the social, cultural, and religious milieu of the time.</p>
-				<p>The construction of the Shyamrai Temple reflects an amalgamation of traditional Bengali architectural techniques with influences from other parts of India. The Pancha Ratna style signifies broader Indian architectural influence, while the extensive use of terracotta as a decorative medium is a distinctive feature of Bengali temple architecture. This blend of styles sets the Shyamrai Temple apart from its contemporaries in other regions.</p>
-				<p>The temple’s layout and structural elements demonstrate advanced engineering skills. The raised platform base protects it from flooding, a common issue in Bengal’s riverine landscape. Thick walls provide stability and support to the heavy superstructure, while the simpler interiors facilitate easy movement of devotees and accommodate large gatherings during festivals and religious ceremonies.</p>
-				<p>Beyond its architectural and historical significance, the Shyamrai Temple holds immense cultural and spiritual value. It continues to be a site of worship and pilgrimage, attracting visitors who come to admire its beauty and seek blessings. Despite facing natural and human-induced challenges over the centuries, the temple remains resilient, symbolizing the enduring legacy of the Malla dynasty and Bengal's rich heritage.</p>
-				<p>A postage stamp worth ₹12 related to the temple was issued along with similar monuments under the series <b><i>Terracota Temples of India. (Date of Release: August 8, 2020)</i></b></p>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>January 25, 2023</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Bishnupur SO,</td>
-					</tr>
-					<tr>
-						<td>Bankura (dt.), West Bengal - 722122.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Bishnupur Shyamrai Temple -->
+			<!-- End of Uttarakhand -->
 			
-			<!-- Start of Udayagiri & Khandagiri Caves, Dhauligiri Stupa & Lingraj Temple -->
-			<div id="odisha-bhubaneswar" class="section">
-				<h2>Odisha: Udayagiri & Khandagiri Caves, Dhauligiri Stupa & Lingraj Temple</h2>
+			<!-- Start of Rajasthan -->
+			<div id="Rajasthan" class="section">
+				<h2>Rajasthan</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/udayagiri-and-khandagiri-caves.jpg" target="_self"><img src="pictures/blog-related-pictures/udayagiri-and-khandagiri-caves.jpg" alt="Udayagiri and Khandagiri Caves" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/dhauligiri-stupa.jpg" target="_self"><img src="pictures/blog-related-pictures/dhauligiri-stupa.jpg" alt="Dhauligiri Stupa" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/blog-related-pictures/lingraj-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/lingraj-temple.jpg" alt="Lingraj Temple" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg" target="_self"><img src="pictures/ppcs/751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-				
-				<p>The Udayagiri and Khandagiri Caves, Dhauli Hill and Stupa, and Lingaraj Temple are significant historical and cultural landmarks located in and around Bhubaneswar, Odisha. Each of these sites offers a unique glimpse into the region's rich heritage and religious history.</p>
-				<p>The Udayagiri and Khandagiri Caves are ancient rock-cut shelters situated on two adjacent hills. These caves date back to the 2nd century BCE and were primarily carved out during the reign of King Kharavela of the Mahameghavahana dynasty. Udayagiri, meaning "Sunrise Hill," has 18 caves, the most notable being the Hathi Gumpha (Elephant Cave) with inscriptions detailing King Kharavela's achievements. The Rani Gumpha (Queen's Cave) is the largest and most intricately decorated, featuring beautiful carvings and two levels of cells and verandas. Khandagiri, or "Broken Hill," comprises 15 caves, including the Ananta Gumpha with its serpent carvings and the Tatowa Gumpha (Parrot Cave) adorned with parrot carvings. These caves were used by Jain monks for meditation and living, and their inscriptions and sculptures provide valuable insights into ancient Jainism and the period's cultural practices.</p>
-				<p>Dhauli Hill, located near Bhubaneswar, is historically significant due to its association with Emperor Ashoka and the Kalinga War fought in 261 BCE. The profound impact of this war led Ashoka to embrace Buddhism and advocate for non-violence. Atop Dhauli Hill stands the Shanti Stupa, or Peace Pagoda, constructed in 1972 by the Japan Buddha Sangha and the Kalinga Nippon Buddha Sangha in collaboration with the Odisha government. This white-domed structure symbolizes peace and features large statues of Buddha in various postures and intricate carvings depicting scenes from Buddha's life. The base of Dhauli Hill is home to Ashoka's rock edicts, inscribed in Brahmi script, which express his commitment to Dharma (moral law) and non-violence.</p>
-				<p>The Lingaraj Temple, an architectural marvel in Bhubaneswar, is one of the oldest and most revered Hindu temples in Odisha. Dedicated to Lord Shiva, the temple dates back to the 11th century and showcases the Kalinga style of architecture. The temple complex spans over 250,000 square feet and includes several smaller shrines and temples. The main sanctum houses the Swayambhu (self-manifested) Lingam, a sacred symbol of Lord Shiva. The towering spire of the Lingaraj Temple, standing at about 180 feet, is adorned with intricate carvings and sculptures depicting various deities, mythological scenes, and motifs.</p>
-				<p>The Udayagiri and Khandagiri Caves reflect the region's ancient Jain culture and the artistic achievements of the time. Dhauli Hill and its Shanti Stupa highlight the transformative journey of Emperor Ashoka and the spread of Buddhism. The Lingaraj Temple stands as a testament to the enduring devotion to Lord Shiva and the grandeur of Hindu temple architecture.</p>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>September 13, 2006</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>In-charge,</td>
-					</tr>
-					<tr>
-						<td>Bhubaneswar GPO-PB,</td>
-					</tr>
-					<tr>
-						<td>Khordha (dt.), Odisha - 751001.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Udayagiri & Khandagiri Caves, Dhauligiri Stupa & Lingraj Temple-->
-
-			<!-- Start of Lord Jagannath Temple and Sea Wave -->
-			<div id="odisha-puri" class="section">
-				<h2>Odisha: Lord Jagannath Temple and Sea Wave</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/lord-jagannath-temple.jpg" target="_self"><img src="pictures/blog-related-pictures/lord-jagannath-temple.jpg" alt="Lord Jagannath Temple" class="horizontal"></a>
-						<p class="credits">Credits: D. Malavya Reddy</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/752001-SriJagannathTempleandSeaWave-PuriHO.jpg" target="_self"><img src="pictures/ppcs/752001-SriJagannathTempleandSeaWave-PuriHO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<p>Puri Jagannath Temple, located in the eastern Indian state of Odisha, stands as one of the most revered Hindu temples dedicated to Lord Jagannath, believed to be an incarnation of Lord Vishnu. The temple's architecture is an exemplary showcase of Kalinga style, characterized by its towering spire (shikhara), intricately carved stone motifs, and a vast courtyard.</p>
-				<p>Constructed on a raised platform and surrounded by a high fortified wall, the temple complex includes several structures such as the main sanctum (Garbhagriha), assembly hall (Jagamohana), and a kitchen (Rosaghara) where daily offerings (Mahaprasad) are prepared for the deity. No matter what time of the day it is, no matter where the sun is shining through in the sky, the temple doesn't have a shadow. The Mahaprasad is prepared in the Rosaghara kitchen by thousands of priests and 7 earthen pots are placed one above the other and the food is cooked over firewood and the food in the topmost pot gets cooked first followed by the rest.</p>
-				<p>Beyond its architectural grandeur, Puri Jagannath Temple is shrouded in mysteries and legends. One of the most intriguing aspects is the Banajaga Yatra, a ritualistic journey undertaken to find sacred neem trees from which the idols of Lord Jagannath, Balabhadra, and Subhadra will be carved anew every 12 or 19 years, a process known as Nabakalebara. The exact location of these trees is believed to be divinely revealed to the priests through dreams.</p>
-				<p>Temple flag (dhwaja) consistently flutters in the opposite direction of the prevailing airflow. The flag at the top of the Jagannath Temple flutters in an opposite to the direction in which the wind blows. 1800 years old tradition, a priest climbs atop the Shikhara of the Jagannath Temple every day in order to change the flag. The temple is as tall as a 45 story building. No protective gears are used for the same and it is performed with bare hands. The temple's spire rises dramatically above the central shrine, topped with a unique wheel called <b>Nilachakra</b> made of an alloy of eight metals. The most amazing fact is that any viewer who views the chakra from a height at any point in Puri always sees that the chakra faces towards itself.</p>
-				<p>The temple is also famous for its Rath Yatra, or the Chariot Festival, where the idols of Lord Jagannath, Balabhadra, and Subhadra are taken out of the temple in massive chariots and pulled by thousands of devotees. This annual event draws millions of pilgrims from all corners of the country and beyond, showcasing the vibrant religious fervor and cultural heritage of Odisha.</p>
-				<p>Rituals at the temple are meticulously followed according to ancient traditions. Only Hindus are allowed entry into the temple, and specific rituals are performed daily by a select group of priests who belong to certain Brahmin families traditionally associated with the temple's administration. The Mahaprasad, offered to the deity first and then distributed to devotees, holds immense significance, with specific rules governing its preparation and distribution.</p>
-				<p>Puri Jagannath Temple's cultural significance extends beyond religious boundaries, encompassing art, literature, and music, making it a symbol of Odisha's rich cultural heritage. The temple's management is governed by elaborate rules and regulations laid down centuries ago, ensuring its sanctity and continuity.</p>
-				
-				<h4>#extremephilately</h4>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/lord-jagannath-temple-with-applique-stamp.jpg" target="_self"><img src="pictures/blog-related-pictures/lord-jagannath-temple-with-applique-stamp.jpg" alt="Lord Jagannath Temple with Applique stamp" class="landscape"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-				
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>July 13, 2021</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Senior Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Puri HO,</td>
-					</tr>
-					<tr>
-						<td>Puri (dt.), Odisha - 752001.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Lord Jagannath Temple and Sea Wave -->
-
-			<!-- Start of Stone Chariot Wheel of the Surya Temple -->
-			<div id="odisha-konark" class="section">
-				<h2>Odisha: Stone Chariot Wheel of the Surya Temple</h2>
-				<div class="overview-images">
-					<div>
-						<a href="pictures/blog-related-pictures/konark-sun-temple-stone-chariot-wheel.jpg" target="_self"><img src="pictures/blog-related-pictures/konark-sun-temple-stone-chariot-wheel.jpg" alt="Stone Chariot Wheel" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/752111-StoneChariotWheeloftheSuryaTemple-KonarkSO.jpg" target="_self"><img src="pictures/ppcs/752111-StoneChariotWheeloftheSuryaTemple-KonarkSO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
-					</div>
-				</div>
-
-				<p>The Konark Sun Temple, a masterpiece of Indian architecture, stands as a testament to the rich cultural and artistic heritage of the country. Located in Konark, Odisha, this magnificent temple is dedicated to the Sun God, Surya. Its unique design, intricate carvings, and astronomical significance make it a truly awe-inspiring sight.</p>
-				<p>Constructed during the reign of King Narasimhadeva I of the Eastern Ganga Dynasty in the 13th century, the Konark Sun Temple was a marvel of its time. The temple was designed to resemble a colossal chariot drawn by seven horses, symbolizing the Sun God's journey across the sky. The main structure, known as the vimana, was once believed to have reached a height of 229 feet, making it one of the tallest structures in India. However, due to natural calamities, neglect, and the destructive forces of time, the vimana collapsed over time, leaving behind the impressive ruins we see today.</p>
-				<p>The temple's architecture is a stunning blend of Kalinga architecture and Dravidian style. The walls are adorned with intricate carvings depicting various mythological scenes, celestial bodies, and everyday life. The most striking feature of the temple is its twelve pairs of intricately carved wheels, each representing the twelve months of the year. These wheels are not only aesthetically pleasing but also served as astronomical instruments, capable of indicating the time of day based on the position of the sun.</p>
-				<p>The Sun Temple at Konark was a victim of both natural and man-made destruction. Over centuries, the temple suffered from erosion, earthquakes, and the ravages of time. However, the most significant damage occurred during the Mughal era when invaders plundered the temple, stripping it of its valuable metals and precious stones. The iconic "Nata Mandir" (Dancing Hall), famous for its erotic sculptures, was also destroyed during this period.</p>
-				<p>The Sun Temple's most remarkable feature is its massive "Chakra" or Sun Dial Wheel. This 20-meter-wide wheel, with its intricate spokes and carvings, is not just a decorative element but a functional astronomical instrument. The wheel's spokes cast shadows that indicate the time of day, making it one of the earliest known examples of a large-scale sundial.</p>
-				<p>The Konark Sun Temple is a UNESCO World Heritage Site and attracts visitors from all over the world. The temple complex houses several other structures, including the Mayadevi Temple, which is believed to be dedicated to the Sun God's consort. Visitors can explore the ruins, admire the intricate carvings, and learn about the rich history and astronomical significance of this magnificent monument.</p>
-				<p>The Konark Sun Temple is a timeless masterpiece that continues to inspire awe and wonder. Its unique design, intricate carvings, and astronomical significance make it a must-visit destination for anyone interested in Indian history, art, and architecture. As we explore the ruins of this ancient temple, we are reminded of the brilliance and ingenuity of our ancestors, whose legacy continues to shine brightly.</p>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>October 5, 1979</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Sub Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Konark SO,</td>
-					</tr>
-					<tr>
-						<td>Puri (dt.), Odisha - 752111.</td>
-					</tr>
-				</table>
-				<div class="section-divider"></div>
-			</div>
-			<!-- End of Stone Chariot Wheel of the Surya Temple -->
+			<!-- End of Rajasthan -->
 			
-			<!-- Start of Sri Kamakhya Devi Temple -->
-			<div id="assam-guwahati" class="section">
-				<h2>Assam: Sri Kamakhya Devi Temple</h2>
+			<!-- Start of Gujarat -->
+			<div id="Gujarat" class="section">
+				<h2>Gujarat</h2>
 				<div class="overview-images">
 					<div>
-						<a href="pictures/blog-related-pictures/sri_kamakhya_devi_temple-guwahati.jpg" target="_self"><img src="pictures/blog-related-pictures/sri_kamakhya_devi_temple-guwahati.jpg" alt="Sri Kamakhya Devi Temple" class="horizontal"></a>
-						<p class="credits">Credits: Wikimedia Commons</p>
-					</div>
-					<div>
-						<a href="pictures/ppcs/781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg" target="_self"><img src="pictures/ppcs/781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg" alt="PPC" class="horizontal"></a>
-						<p class="credits">Credits: Ch. Praneeth Sai</p>
+						
 					</div>
 				</div>
-				
-				<p>The Kamakhya Temple, located in Guwahati, Assam, is one of the most revered and significant Hindu pilgrimage sites in India. It is dedicated to the goddess Kamakhya, who is considered a form of Shakti or Devi, the divine feminine power.</p>
-				<p>The main temple complex is situated atop the Nilachal Hill, overlooking the city of Guwahati and the Brahmaputra River. It is built with a mix of red bricks and stones, giving it a rugged yet majestic appearance. The entire temple is surrounded by lush greenery and offers breathtaking views of the surrounding natural landscape.</p>
-				<p>The Kamakhya Temple is a unique amalgamation of different styles and influences. The current structure of the temple dates back to the 17th century, although the site itself has a history that extends much further. The temple follows a distinctive hybrid style, incorporating elements of both Hindu and Islamic architectural traditions.</p>
-				<p>The most prominent architectural feature of the Kamakhya Temple is its dome-like structure, known as the shikhara. The shikhara is octagonal in shape and rises to a height of approximately 50 feet. It is adorned with intricate sculptures and carvings depicting various deities and mythological figures. The dome is topped with a golden amalaka (a circular ornament) and a kalasha (a pot-like structure), symbolizing prosperity and auspiciousness.</p>
-				<p>Inside the temple, there are several smaller shrines dedicated to different forms of the goddess Kamakhya, as well as other Hindu deities. The sanctum sanctorum houses the main deity, a natural rock formation representing the yoni (female genitalia), which is considered a symbol of the goddess' creative power. The temple is also known for its association with Tantric practices and rituals.</p>
-				<p>Apart from its architectural significance, the Kamakhya Temple is renowned for the Ambubachi Mela, a major festival held annually in the month of June. During this time, the temple attracts a large number of devotees who come to seek the blessings of the goddess.</p>
-
-				<table class="info-table">
-					<tr>
-						<th>Date of Introduction</th>
-						<td>September 27, 2007</td>
-					</tr>
-					<tr>
-						<th rowspan="3">Address</th>
-						<td>Senior Postmaster,</td>
-					</tr>
-					<tr>
-						<td>Guwahati GPO,</td>
-					</tr>
-					<tr>
-						<td>Kamrup Metropolitan (dt.), Assam - 781001.</td>
-					</tr>
-				</table>
 				<div class="section-divider"></div>
 			</div>
-			<!-- End of Sri Kamakhya Devi Temple -->
-
-	</div>
+			<!-- End of Gujarat -->
+			
+			<!-- Start of Dadra and Nagar Haveli and Daman and Diu -->
+			<div id="Dadra and Nagar Haveli and Daman and Diu" class="section">
+				<h2>Dadra and Nagar Haveli and Daman and Diu</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Dadra and Nagar Haveli and Daman and Diu -->
+			
+			<!-- Start of Maharashtra -->
+			<div id="Maharashtra" class="section">
+				<h2>Maharashtra</h2>
+				<div class="overview-images">
+					<div>
+						<a href="mh/400050-bandra-west-so.html" target="_self"><img src="../pictures/ppcs/400050-MountMaryChurch-BandraWestSO.jpg" alt="Mount Mary Church" class="horizontal"></a>
+						<p class="credits">Mount Mary Church</p>
+					</div>
+					<div>
+						<a href="mh/440010-shankarnagar-so.html" target="_self"><img src="../pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" alt="Deekshabhoomi" class="horizontal"></a>
+						<p class="credits">Deekshabhoomi</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Maharashtra -->
+			
+			<!-- Start of Goa -->
+			<div id="Goa" class="section">
+				<h2>Goa</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Goa -->
+			
+			<!-- Start of Madhya Pradesh -->
+			<div id="Madhya Pradesh" class="section">
+				<h2>Madhya Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Madhya Pradesh -->
+			
+			<!-- Start of Chhattisgarh -->
+			<div id="Chhattisgarh" class="section">
+				<h2>Chhattisgarh</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Chhattisgarh -->
+			
+			<!-- Start of Telangana -->
+			<div id="Telangana" class="section">
+				<h2>Telangana</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Telangana -->
+			
+			<!-- Start of Andhra Pradesh -->
+			<div id="Andhra Pradesh" class="section">
+				<h2>Andhra Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ap/518101-srisailam-so.html" target="_self"><img src="../pictures/ppcs/518101-GopuramofSriMallikarjunaSwamyTemple-SrisailamSO.jpg" alt="Gopuram of Sri Mallikarjuna Swamy Temple" class="horizontal"></a>
+						<p class="credits">Gopuram of Sri Mallikarjuna Swamy Temple</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Andhra Pradesh -->
+			
+			<!-- Start of Karnataka -->
+			<div id="Karnataka" class="section">
+				<h2>Karnataka</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Karnataka -->
+			
+			<!-- Start of Tamil Nadu -->
+			<div id="Tamil Nadu" class="section">
+				<h2>Tamil Nadu</h2>
+				<div class="overview-images">
+					<div>
+					
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Tamil Nadu -->
+			
+			<!-- Start of Puducherry -->
+			<div id="Puducherry" class="section">
+				<h2>Puducherry</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Puducherry -->
+			
+			<!-- Start of Kerala -->
+			<div id="Kerala" class="section">
+				<h2>Kerala</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Kerala -->
+			
+			<!-- Start of West Bengal -->
+			<div id="West Bengal" class="section">
+				<h2>West Bengal</h2>
+				<div class="overview-images">
+					<div>
+					
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of West Bengal -->
+			
+			<!-- Start of Sikkim -->
+			<div id="Sikkim" class="section">
+				<h2>Sikkim</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Sikkim -->
+			
+			<!-- Start of Andaman and Nicobar Islands -->
+			<div id="Andaman and Nicobar Islands" class="section">
+				<h2>Andaman and Nicobar Islands</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Andaman and Nicobar Islands -->
+			
+			<!-- Start of Odisha -->
+			<div id="Odisha" class="section">
+				<h2>Odisha</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Odisha -->
+			
+			<!-- Start of Assam -->
+			<div id="Assam" class="section">
+				<h2>Assam</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Assam -->
+			
+			<!-- Start of Meghalaya -->
+			<div id="Meghalaya" class="section">
+				<h2>Meghalaya</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Meghalaya -->
+			
+			<!-- Start of Manipur -->
+			<div id="Manipur" class="section">
+				<h2>Manipur</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Manipur -->
+			
+			<!-- Start of Mizoram -->
+			<div id="Mizoram" class="section">
+				<h2>Mizoram</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Mizoram -->
+			
+			<!-- Start of Tripura -->
+			<div id="Tripura" class="section">
+				<h2>Tripura</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Tripura -->
+			
+			<!-- Start of Bihar -->
+			<div id="Bihar" class="section">
+				<h2>Bihar</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Bihar -->
+			
+			<!-- Start of Jharkhand -->
+			<div id="Jharkhand" class="section">
+				<h2>Jharkhand</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Jharkhand -->
+		</div>
 
 	<!-- Go to Top Button -->
 	<button class="btn btn-primary go-to-top" onclick="scrollToTop()">Go to Top</button>
