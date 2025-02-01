@@ -23,7 +23,7 @@
 			margin: 20px 0;
 			font-size: 30px;
 		}
-
+		
 		a {
 			display: block;
 			margin: 10px;
@@ -42,14 +42,14 @@
 			margin: 0;
 			padding: 0;
 		}
-
+		
 		p {
 			margin: 10px;
 			padding: 10px;
 			text-align: justify;
 			font-size: 16px;
 		}
-
+		
 		.credits {
 			font-family: lucida calligraphy;
 			font-size: 8px;
@@ -64,7 +64,7 @@
 			gap: 20px;
 			flex-wrap: wrap;
 		}
-
+		
 		.overview-images img.horizontal {
 			width: 300px;
 			height: 200px;
@@ -118,7 +118,7 @@
 			max-width: 100%; /* Ensures it scales down in responsive mode */
 			height: auto; /* Adjusts height automatically based on width */
 		}
-		
+
 		.info-table {
 			width: 60%;
 			margin: 20px auto;
@@ -129,6 +129,26 @@
 			border: 1px solid black;
 			padding: 8px;
 			text-align: left;
+		}
+
+		/* Hovering Button Styles */
+		.back-button {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			padding: 12px 20px;
+			border-radius: 50px;
+			font-size: 16px;
+			cursor: pointer;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: background-color 0.3s ease;
+		}
+
+		.back-button:hover {
+			background-color: #0056b3;
 		}
 	</style>
 </head>
@@ -179,6 +199,9 @@
 			</tr>
 		</table>
 	</div>
+
+	<!-- Back Button -->
+	<button class="back-button" onclick="window.location.href='../blog-main.html';">&#8592; Back</button>
 
 	<!-- Placeholder for the footer -->
 	<div id="footer-placeholder"></div>
