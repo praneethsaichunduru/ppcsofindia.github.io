@@ -11,6 +11,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chennai General Post Office</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
 	<!-- Bootstrap CSS -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -231,9 +232,8 @@
 		</div>
 		
 		<div class="pdf-container">
-			<iframe class="pdf" id="pdfViewer" src="" frameborder="0"></iframe>
+			<canvas id="pdfViewer"></canvas>
 		</div>
-
 
 		<h4>Matching Stamp</h4>
 		<div class="overview-images">
@@ -262,24 +262,31 @@
 	</div>
 
 	<script>
-		// Detect mobile devices
-		function isMobileDevice() {
-			return /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
-		}
-
-		// Set the correct PDF viewer
-		window.onload = function() {
+		document.addEventListener("DOMContentLoaded", function () {
 			let pdfFile = "../blog-related-pictures/others/the-hindu-06.02.2025-chennai-gpo-ppc-release.pdf";
-			let viewer = document.getElementById("pdfViewer");
 
-			if (isMobileDevice()) {
-				// Use PDF.js for better mobile support
-				viewer.src = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodeURIComponent(pdfFile);
-			} else {
-				// Use direct embed for desktops
-				viewer.src = pdfFile;
-			}
-		};
+			let pdfjsLib = window['pdfjs-dist/build/pdf'];
+			pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+			let loadingTask = pdfjsLib.getDocument(pdfFile);
+			loadingTask.promise.then(function (pdf) {
+				pdf.getPage(1).then(function (page) {
+					let scale = 1.5;
+					let viewport = page.getViewport({ scale: scale });
+
+					let canvas = document.getElementById('pdfViewer');
+					let context = canvas.getContext('2d');
+					canvas.height = viewport.height;
+					canvas.width = viewport.width;
+
+					let renderContext = {
+						canvasContext: context,
+						viewport: viewport
+					};
+					page.render(renderContext);
+				});
+			});
+		});
 	</script>
 
 	<!-- Back Button -->
