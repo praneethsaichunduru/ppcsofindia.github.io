@@ -58,7 +58,7 @@
 			font-weight: bold;
 			text-align: center;
 		}
-		
+
 		img {
 			border: 2px solid black;
 		}
@@ -155,29 +155,6 @@
 		.back-button:hover {
 			background-color: #0056b3;
 		}
-
-		.pdf-container {
-			text-align: center;
-			width: 100%;
-			max-width: 100%;
-			height: 90vh;
-			margin: 20px auto;
-		}
-
-		.pdf {
-			width: 90%;
-			height: 90vh;
-			border: none;
-		}
-
-		/* Adjustments for small screens */
-		@media (max-width: 768px) {
-			.pdf {
-				width: 100%;
-				height: 80vh;
-			}
-		}
-	
 	</style>
 </head>
 <body>
@@ -255,42 +232,7 @@
 				<td>Chennai (dt.), Tamil Nadu - 600001.</td>
 			</tr>
 		</table>
-
-		<h4>News Report</h4>
-		<div class="pdf-container">
-			<canvas id="pdfViewer"></canvas>
-		</div>
 	</div>
-
-	
-
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			let pdfFile = "../blog-related-pictures/others/the-hindu-06.02.2025-chennai-gpo-ppc-release.pdf";
-
-			let pdfjsLib = window['pdfjs-dist/build/pdf'];
-			pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-
-			let loadingTask = pdfjsLib.getDocument(pdfFile);
-			loadingTask.promise.then(function (pdf) {
-				pdf.getPage(1).then(function (page) {
-					let scale = 1.5;
-					let viewport = page.getViewport({ scale: scale });
-
-					let canvas = document.getElementById('pdfViewer');
-					let context = canvas.getContext('2d');
-					canvas.height = viewport.height;
-					canvas.width = viewport.width;
-
-					let renderContext = {
-						canvasContext: context,
-						viewport: viewport
-					};
-					page.render(renderContext);
-				});
-			});
-		});
-	</script>
 
 	<!-- Back Button -->
 	<button class="back-button" onclick="window.location.href='../blog-main.html';">&#8592; Back</button>
