@@ -57,15 +57,7 @@
 			font-weight: bold;
 			text-align: center;
 		}
-
-		.pdf {
-			display: block;
-			margin: 20px auto;
-			width: 90%;
-			height: 90vh;
-			border: 2px solid black;
-		}
-
+		
 		img {
 			border: 2px solid black;
 		}
@@ -162,6 +154,29 @@
 		.back-button:hover {
 			background-color: #0056b3;
 		}
+
+		.pdf-container {
+			text-align: center;
+			width: 100%;
+			max-width: 100%;
+			height: 90vh;
+			margin: 20px auto;
+		}
+
+		.pdf {
+			width: 90%;
+			height: 90vh;
+			border: none;
+		}
+
+		/* Adjustments for small screens */
+		@media (max-width: 768px) {
+			.pdf {
+				width: 100%;
+				height: 80vh;
+			}
+		}
+	
 	</style>
 </head>
 <body>
@@ -214,16 +229,20 @@
 				<p class="credits">The Hindu Newspaper featuring PPC Release, along with PPC on Day-2</p>
 			</div>
 		</div>
-		<object class="pdf" data="../blog-related-pictures/others/the-hindu-06.02.2025-chennai-gpo-ppc-release.pdf" width="1000" height="750"></object>
+		
+		<div class="pdf-container">
+			<iframe class="pdf" id="pdfViewer" src="" frameborder="0"></iframe>
+		</div>
 
-    		<h4>Matching Stamp</h4>
+
+		<h4>Matching Stamp</h4>
 		<div class="overview-images">
 			<div>
 				<img src="../blog-related-pictures/related-stamps/1986-10-09-200-years-of-madras-gpo.jpg" alt="200 Years of Madras GPO" class="horizontal"></a>
 				<p class="credits">200 Years of Madras GPO</p>
 			</div>
 		</div>
-    
+	
 		<table class="info-table">
 			<tr>
 				<th>Date of Introduction</th>
@@ -241,6 +260,27 @@
 			</tr>
 		</table>
 	</div>
+
+	<script>
+		// Detect mobile devices
+		function isMobileDevice() {
+			return /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+		}
+
+		// Set the correct PDF viewer
+		window.onload = function() {
+			let pdfFile = "../blog-related-pictures/others/the-hindu-06.02.2025-chennai-gpo-ppc-release.pdf";
+			let viewer = document.getElementById("pdfViewer");
+
+			if (isMobileDevice()) {
+				// Use PDF.js for better mobile support
+				viewer.src = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodeURIComponent(pdfFile);
+			} else {
+				// Use direct embed for desktops
+				viewer.src = pdfFile;
+			}
+		};
+	</script>
 
 	<!-- Back Button -->
 	<button class="back-button" onclick="window.location.href='../blog-main.html';">&#8592; Back</button>
