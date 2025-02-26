@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZB7NNS4QNG');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Takhat Shri Harmandir Sahib Ji, Patna Sahib</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="data/styles.css" rel="stylesheet">
+	<link href="../try.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<h1>Takhat Shri Harmandir Sahib Ji, Patna Sahib</h1>
+		<h1>तखत श्री हरमंदिर साहब जी, पटना साहब</h1>
+		
+		<div class="overview-images">
+			<div>
+				<img src="../blog-related-pictures/monuments/TakhatShriHarmandirSahibJiPatnaSahib.jpg" alt="Takhat Shri Harmandir Sahib Ji, Patna Sahib" class="portrait"></a>
+			</div>
+		</div>
+		<div class="overview-images">
+			<div>
+				<img src="../../pictures/ppcs/800008-TakhatShriHarmandirSahibJiPatnaSahib-PatnaCitySO.jpg" alt="PPC" class="horizontal"></a>
+			</div>
+		</div>
+
+		<p>Takht Sri Harmandir Sahib Ji, commonly known as Patna Sahib, is one of the five Takhts (seats of authority) in Sikhism. Located in Patna City, Bihar, it is of immense religious and historical significance as it marks the birthplace of Guru Gobind Singh Ji, the tenth Sikh Guru. Guru Gobind Singh Ji, born on December 22, 1666, played a pivotal role in shaping Sikhism by establishing the Khalsa Panth in 1699. Apart from being his birthplace, Patna Sahib is also associated with the visits of Guru Nanak Dev Ji (the first Sikh Guru) and Guru Tegh Bahadur Ji (the ninth Sikh Guru). This sacred site has witnessed centuries of devotion and remains an important pilgrimage center for Sikhs worldwide.</p>
+		<p>The historical origins of Takht Sri Patna Sahib can be traced to Guru Nanak Dev Ji’s visit to Patliputra (modern-day Patna) during his first Udasi (spiritual journey) in the early 16th century. He stayed at a dharamsala (community center) run by Bhagat Jaitamal, an early Sikh follower. Later, Guru Tegh Bahadur Ji visited Patna in the 17th century and stayed at the house of Salis Rai Johri, a rich merchant who converted his mansion into a dharamsala for Sikh travelers. It was in this very house that Guru Gobind Singh Ji was born, and it eventually became a place of pilgrimage. As Guru Gobind Singh Ji grew up, he spent his early years in Patna before moving to Anandpur Sahib in Punjab. Recognizing the site's importance, Maharaja Ranjit Singh, the ruler of the Sikh Empire, commissioned the construction of a grand Gurdwara at the birthplace of Guru Gobind Singh Ji in the early 19th century.</p>
+		<p>Architecturally, Takht Sri Harmandir Sahib Ji is an impressive structure blending Mughal and Sikh architectural styles. The main sanctum is constructed with white marble and crowned with a golden dome, which adds to its grandeur. The interior walls are decorated with beautiful frescoes, floral motifs, and intricate stucco work that depict scenes from Guru Gobind Singh Ji’s life. The Guru Granth Sahib, the holy scripture of Sikhism, is placed in the sanctum under an ornate canopy. The complex also includes a spacious prayer hall, a museum housing relics of Guru Gobind Singh Ji, a community kitchen (Langar Hall), and accommodations for pilgrims. These elements make the Gurdwara not just a place of worship but also a center for learning and Sikh heritage preservation.</p>
+		<p>Over the centuries, Takht Sri Patna Sahib has been renovated multiple times to maintain its spiritual and architectural integrity. The original structure built by Maharaja Ranjit Singh was partially damaged in the 1934 Bihar earthquake. In response, extensive reconstruction efforts were undertaken between 1948 and 1957, leading to the magnificent shrine seen today. More recently, in 2017, on the occasion of Guru Gobind Singh Ji’s 350th birth anniversary, further restorations and modernizations were carried out to accommodate the increasing number of pilgrims. Despite these modifications, the Gurdwara has retained its historic charm and continues to be a beacon of Sikh faith.</p>
+		<p>Besides Takht Sri Patna Sahib, the area is home to several other historical Sikh sites. Gurdwara Guru Ka Bagh, located a few kilometers away, is where Guru Tegh Bahadur Ji was warmly received by the local Sikh community. Another important site, Gurdwara Bal Lila Maini Sangat, marks the residence of Raja Fateh Chand Maini, a nobleman whose wife deeply admired young Gobind Rai (Guru Gobind Singh Ji). These Gurdwaras, along with Patna Sahib, form a sacred spiritual circuit, offering devotees a profound connection to Guru Gobind Singh Ji’s early years.</p>
+		
+		<h4>Matching Stamp</h4>
+		<div class="overview-images">
+			<div>
+				<img src="../blog-related-pictures/related-stamps/2017-01-05-350th-prakash-utsav-guru-gobind-singh.jpg" alt="350th Prakash Utsav: Guru Gobind Singh" class="horizontal"></a>
+				<p class="credits">350th Prakash Utsav: Guru Gobind Singh</p>
+			</div>
+		</div>
+	
+		<table class="info-table">
+			<tr>
+				<th>Date of Introduction</th>
+				<td>October 8, 2024</td>
+			</tr>
+			<tr>
+				<th rowspan="3">Address</th>
+				<td>Sub Postmaster,</td>
+			</tr>
+			<tr>
+				<td>Patna City SO,</td>
+			</tr>
+			<tr>
+				<td>Patna (dt.), Bihar - 800008.</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- Back Button -->
+	<button class="back-button" onclick="window.location.href='../blog-main.html';">&#8592; Back</button>
+
+	<!-- Placeholder for the footer -->
+	<div id="footer-placeholder"></div>
+
+	<!-- Bootstrap JS and dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Include the custom JS to load navbar and footer -->
+	<script src="loadNavbarFooter.js"></script>
+</body>
+</html>
