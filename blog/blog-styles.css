@@ -72,8 +72,8 @@ img {
 }
 
 .overview-images img.squarebig {
-	width: 600px;
-	height: 600px;
+	width: 500px;
+	height: 500px;
 	cursor: pointer;
 	margin: 5px;
 }
