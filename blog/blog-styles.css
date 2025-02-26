@@ -64,6 +64,20 @@ img {
 	margin: 5px;
 }
 
+.overview-images img.squauresmall {
+	width: 300px;
+	height: 300px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.overview-images img.squarebig {
+	width: 600px;
+	height: 600px;
+	cursor: pointer;
+	margin: 5px;
+}
+
 .overview-images img.horizontalbig {
 	width: 400px;
 	height: 200px;
