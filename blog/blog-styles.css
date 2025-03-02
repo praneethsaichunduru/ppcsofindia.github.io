@@ -99,8 +99,8 @@ img {
 }
 
 .overview-images img.landscape {
-	width: 1000px;
-	height: 750px;
+	width: 750px;
+	height: 500px;
 	cursor: pointer;
 	margin: 5px auto; /* Centers the image */
 	display: block; /* Ensures it's treated like a block element */
@@ -109,8 +109,8 @@ img {
 }
 	
 .overview-images img.portrait {
-	width: 750px;
-	height: 1000px;
+	width: 500px;
+	height: 750px;
 	cursor: pointer;
 	margin: 5px auto; /* Centers the image */
 	display: block; /* Ensures it's treated like a block element */
