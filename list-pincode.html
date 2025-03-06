@@ -344,21 +344,13 @@
 		</script>
 		<script>
 			document.addEventListener("keydown", function(event) {
-				if (event.ctrlKey && event.key === "u") {
+				if ((event.ctrlKey || event.metaKey) && (event.key === "u" || event.key === "U" || event.key === "Shift" || event.key === "I")) {
 					event.preventDefault();
 					alert("Viewing source is disabled!");
 				}
-			});
-		</script>
-		<script>
-			document.addEventListener("keydown", function(event) {
-				if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "Shift" || event.key === "I")) {
+				if ((event.ctrlKey || event.metaKey) && event.key === "p") {
 					event.preventDefault();
-					alert("Viewing source is disabled!");
-				}
-				if (event.key === "F12") {
-					event.preventDefault();
-					alert("Developer tools are disabled!");
+					alert("Printing is disabled on this webpage.");
 				}
 			});
 		</script>
