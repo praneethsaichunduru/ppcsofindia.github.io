@@ -220,6 +220,13 @@
 				-moz-user-select: none;
 				-ms-user-select: none;
 			}
+
+			@media print {
+				body {
+					display: none;
+				}
+			}
+
 		</style>
 		<script>
 			function addDataLabels() {
@@ -356,6 +363,7 @@
 		</script>
 	</head>
 	<body>
+		<script src="popup.js"></script>
 		<!-- Placeholder for the navigation bar -->
 		<div id="navbar-placeholder"></div>
 		<header>
