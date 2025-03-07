@@ -29,5 +29,5 @@ function showPopup(message, duration = 5000) {
 
 // Automatically show the popup when the page loads
 window.onload = function() {
-	showPopup("To source, catalog, and consolidate the information provided, it took us philatelists a lot of time. Please consider that.");
+	showPopup("Knowledge shared should be knowledge credited. Taking someone's work for personal gain without acknowledgment is not just unfair — it undermines the very spirit of contribution.");
 };
