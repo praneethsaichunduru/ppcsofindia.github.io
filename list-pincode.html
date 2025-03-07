@@ -339,18 +339,14 @@
 				event.preventDefault();
 			});
 
-			document.addEventListener("keydown", function (event) {
-				if (event.ctrlKey && (event.key === "c" || event.key === "x" || event.key === "v" || event.key === "a")) {
-					event.preventDefault();
-				}
-			});
-
 			document.addEventListener("copy", function (event) {
 				event.preventDefault();
 			});
-		</script>
-		<script>
+
 			document.addEventListener("keydown", function(event) {
+				if (event.ctrlKey && (event.key === "c" || event.key === "x" || event.key === "v" || event.key === "a")) {
+					event.preventDefault();
+				}
 				if ((event.ctrlKey || event.metaKey) && (event.key === "u" || event.key === "U" || event.key === "Shift" || event.key === "I")) {
 					event.preventDefault();
 					alert("Viewing source is disabled!");
