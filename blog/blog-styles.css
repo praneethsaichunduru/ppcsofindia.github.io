@@ -109,8 +109,8 @@ img {
 }
 	
 .overview-images img.portrait {
-	width: 600px;
-	height: 900px;
+	width: 400px;
+	height: 600px;
 	cursor: pointer;
 	margin: 5px auto; /* Centers the image */
 	display: block; /* Ensures it's treated like a block element */
