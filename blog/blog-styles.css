@@ -149,3 +149,38 @@ img {
 .back-button:hover {
 	background-color: #0056b3;
 }
+
+
+/* Watermark for Screen */
+body::before {
+	content: "";
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 150px; /* Adjust as needed */
+	height: 150px; /* Adjust as needed */
+	background: url('../data/praneeth-plain-no-bg.png') no-repeat center center;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+	opacity: 0.15; /* Adjust transparency */
+	z-index: 9999;
+	pointer-events: none;
+	user-select: none;
+}
+
+/* Watermark for Print */
+@media print {
+	body {
+		background: url('../data/praneeth-plain-no-bg.png') no-repeat center center !important;
+		background-size: contain !important;
+		opacity: 0.15;
+		width: 200px; /* Adjust as needed */
+		height: 200px; /* Adjust as needed */
+	}
+
+	/* Ensure all content is visible */
+	* {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+}
