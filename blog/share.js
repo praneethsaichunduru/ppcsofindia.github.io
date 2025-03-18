@@ -15,6 +15,10 @@ function insertShareMenu() {
 			</div>
 		</div>
 	`;
+	
+	// Insert into the body (you can change the position as needed)
+	document.body.insertAdjacentHTML("beforeend", shareMenuHTML);
+}
 
 // Function to shorten URL using TinyURL
 async function shortenWithTinyURL(longUrl) {
