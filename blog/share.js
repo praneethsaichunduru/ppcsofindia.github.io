@@ -1,3 +1,21 @@
+// Function to insert the share menu dynamically
+function insertShareMenu() {
+	const shareMenuHTML = `
+		<div class="share-menu">
+			<button id="share-button" class="share-button">
+				<img src="https://commons.wikimedia.org/wiki/File:Feather-core-share-2.svg" alt="Share">
+			</button>
+			<div id="share-menu" class="dropdown-content">
+				<a id="whatsappShare" href="#" target="_blank">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
+				</a>
+				<a id="copyURL" href="#" onclick="copyShortURL(event)">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Copy_Icon.svg" alt="Copy"> Copy URL
+				</a>
+			</div>
+		</div>
+	`;
+
 // Function to shorten URL using TinyURL
 async function shortenWithTinyURL(longUrl) {
 	const response = await fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`);
