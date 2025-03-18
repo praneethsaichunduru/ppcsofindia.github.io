@@ -15,7 +15,7 @@ function insertShareMenu() {
 			</div>
 		</div>
 	`;
-	
+
 	// Insert into the body (you can change the position as needed)
 	document.body.insertAdjacentHTML("beforeend", shareMenuHTML);
 }
@@ -47,6 +47,9 @@ function copyShortURL(event) {
 
 // Event listener to handle share button toggle
 document.addEventListener("DOMContentLoaded", function () {
+	insertShareMenu(); // Insert the share menu dynamically
+	updateShareLinks(); // Update the share links
+
 	const shareButton = document.getElementById("share-button");
 	const shareMenu = document.getElementById("share-menu");
 
@@ -67,7 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	shareMenu.addEventListener("click", function (event) {
 		event.stopPropagation();
 	});
-
-	// Update share links
-	updateShareLinks();
 });
