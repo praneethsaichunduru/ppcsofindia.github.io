@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 h1 {
 	text-align: center;
 	font-family: segoe ui;
@@ -19,9 +21,10 @@ a {
 }
 
 body {
-	font-family: segoe ui;
+	font-family: "Merriweather", serif;
 	margin: 0;
 	padding: 0;
+	line-height: 1.6;
 }
 	
 p {
@@ -32,11 +35,12 @@ p {
 }
 	
 .credits {
-	font-family: lucida calligraphy;
-	font-size: 8px;
+	font-family: "Georgia", serif;
+	font-size: 10px;
 	font-style: italic;
 	font-weight: bold;
 	text-align: center;
+	white-space: nowrap; /* Prevents wrapping */
 }
 
 img {
@@ -46,6 +50,7 @@ img {
 .overview-images {
 	display: flex;
 	justify-content: center;
+	align-items: center; /* Ensures images align to their center */
 	gap: 20px;
 	flex-wrap: wrap;
 }
