@@ -47,12 +47,13 @@
 		}
 
 		.ppc-name {
+			margin-top: 5px; /* Adds spacing between image and text */
+			text-align: center; /* Centers the text */
 			font-family: "Georgia", serif;
 			font-size: 10px;
 			font-style: italic;
 			font-weight: bold;
-			text-align: center;
-			white-space: nowrap;
+			width: 100%;
 		}
 
 		img {
@@ -61,10 +62,20 @@
 
 		.overview-images {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 20px;
 			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.overview-images img {
+			display: block; /* Ensures images don’t float */
+			margin: 0 auto; /* Centers the image */
+		}
+
+		.overview-images > * {
+			display: flex;
+			flex-direction: column; /* Stacks image and text */
+			align-items: center; /* Ensures both are centered */
 		}
 
 		.overview-images img.horizontal {
@@ -455,6 +466,10 @@
 						<a href="ka/576101-udupi-ho.html" target="_self"><img src="../pictures/ppcs/576101-DeityofSriKrishna-UdupiHO.jpg" alt="Udupi Sri Krishna" class="horizontal"></a>
 						<p class="ppc-name">Udupi Sri Krishna</p>
 					</div>
+					<div>
+						<a href="ka/591115-kittur-so.html" target="_self"><img src="../pictures/ppcs/591115-KitturRaniChennamma-KitturSO.jpg" alt="Kittur Rani Chennamma" class="horizontal"></a>
+						<p class="ppc-name">Kittur Rani Chennamma</p>
+					</div>
 				</div>
 				<div class="section-divider"></div>
 			</div>
@@ -666,6 +681,10 @@
 					<div>
 						<a href="br/800008-patna-city-so.html" target="_self"><img src="../pictures/ppcs/800008-TakhatSriHarmandirSahibJiPatnaSahib-PatnaCitySO.jpg" alt="Takhat Sri Harmandir Sahib Ji, Patna Sahib" class="horizontal"></a>
 						<p class="ppc-name">Takhat Sri Harmandir Sahib Ji, Patna Sahib</p>
+					</div>
+					<div>
+						<a href="br/847122-bisfi-so.html" target="_self"><img src="../pictures/ppcs/847122-MahakaviVidyapati-BisfiSO.jpg" alt="Mahakavi Vidyapati" class="horizontal"></a>
+						<p class="ppc-name">Mahakavi Vidyapati</p>
 					</div>
 				</div>
 				<div class="section-divider"></div>

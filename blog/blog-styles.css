@@ -35,12 +35,13 @@ p {
 }
 	
 .credits {
+	margin-top: 5px; /* Adds spacing between image and text */
+	text-align: center; /* Centers the text */
 	font-family: "Georgia", serif;
 	font-size: 10px;
 	font-style: italic;
 	font-weight: bold;
-	text-align: center;
-	white-space: nowrap; /* Prevents wrapping */
+	width: 100%;
 }
 
 img {
@@ -49,10 +50,20 @@ img {
 
 .overview-images {
 	display: flex;
-	justify-content: center;
-	align-items: center; /* Ensures images align to their center */
-	gap: 20px;
 	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.overview-images img {
+	display: block; /* Ensures images don’t float */
+	margin: 0 auto; /* Centers the image */
+}
+
+.overview-images > * {
+	display: flex;
+	flex-direction: column; /* Stacks image and text */
+	align-items: center; /* Ensures both are centered */
 }
 	
 .overview-images img.horizontal {
