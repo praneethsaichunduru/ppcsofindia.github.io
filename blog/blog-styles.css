@@ -71,6 +71,9 @@ img {
 	height: 200px;
 	cursor: pointer;
 	margin: 5px;
+	display: block; /* Ensures it's treated like a block element */
+	max-width: 100%; /* Ensures it scales down in responsive mode */
+	height: auto; /* Adjusts height automatically based on width */
 }
 	
 .overview-images img.vertical {
