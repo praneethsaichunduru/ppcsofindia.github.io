@@ -80,7 +80,7 @@ img {
 	width: 300px;
 	height: 200px;
 	cursor: pointer;
-	margin: 5px;
+	margin: 5px auto; /* Centers the image */
 	display: block; /* Ensures it's treated like a block element */
 	max-width: 100%; /* Ensures it scales down in responsive mode */
 	height: auto; /* Adjusts height automatically based on width */
@@ -91,6 +91,10 @@ img {
 	height: 300px;
 	cursor: pointer;
 	margin: 5px;
+	margin: 5px auto; /* Centers the image */
+	display: block; /* Ensures it's treated like a block element */
+	max-width: 100%; /* Ensures it scales down in responsive mode */
+	height: auto; /* Adjusts height automatically based on width */
 }
 
 .overview-images img.squauresmall {
@@ -98,6 +102,10 @@ img {
 	height: 300px;
 	cursor: pointer;
 	margin: 5px;
+	margin: 5px auto; /* Centers the image */
+	display: block; /* Ensures it's treated like a block element */
+	max-width: 100%; /* Ensures it scales down in responsive mode */
+	height: auto; /* Adjusts height automatically based on width */
 }
 
 .overview-images img.squarebig {
@@ -105,6 +113,10 @@ img {
 	height: 500px;
 	cursor: pointer;
 	margin: 5px;
+	margin: 5px auto; /* Centers the image */
+	display: block; /* Ensures it's treated like a block element */
+	max-width: 100%; /* Ensures it scales down in responsive mode */
+	height: auto; /* Adjusts height automatically based on width */
 }
 
 .overview-images img.horizontalbig {
