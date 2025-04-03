@@ -97,7 +97,7 @@ img {
 	height: auto; /* Adjusts height automatically based on width */
 }
 
-.overview-images img.squauresmall {
+.overview-images img.squaresmall {
 	width: 300px;
 	height: 300px;
 	cursor: pointer;
