@@ -29,8 +29,9 @@ async function shortenWithTinyURL(longUrl) {
 // Function to update share links dynamically
 async function updateShareLinks() {
 	const pageTitle = document.title;
+	const addressLine = document.querySelector(".info-table tr:nth-child(3) td")?.innerText.trim() || ""; 
 	const shortUrl = await shortenWithTinyURL(window.location.href);
-	const message = `${pageTitle} - ${shortUrl}`;
+	const message = `${pageTitle}${addressLine ? ", " + addressLine : ""} - ${shortUrl}`;
 
 	document.getElementById('whatsappShare').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
 	document.getElementById('copyURL').setAttribute("data-url", message);
