@@ -171,6 +171,18 @@ img {
 	text-align: left;
 }
 
+.data-table {
+	width: 75%;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+}
+
 /* Hovering Button Styles */
 .back-button {
 	position: fixed;
