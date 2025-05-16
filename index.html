@@ -15,6 +15,7 @@
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<link href="data/styles.css" rel="stylesheet">
+		<link href="blog/blog-styles.css" rel="stylesheet">
 		<style>
 			h1 {
 				text-align: center;
@@ -43,8 +44,68 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-        		}
+        	}
+			
+			.overview-images {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 20px;
+			}
+			
+			.overview-images img {
+				display: block; /* Ensures images don’t float */
+				margin: 0 auto; /* Centers the image */
+			}
+
+			.overview-images > * {
+				display: flex;
+				flex-direction: column; /* Stacks image and text */
+				align-items: center; /* Ensures both are centered */
+			}
+
+			.overview-images img.landscape {
+				width: 900px;
+				height: 600px;
+				cursor: pointer;
+				margin: 5px auto; /* Centers the image */
+				display: block; /* Ensures it's treated like a block element */
+				max-width: 100%; /* Ensures it scales down in responsive mode */
+				height: auto; /* Adjusts height automatically based on width */
+			}
+			
+			.section-divider {
+				border-bottom: 2px solid black;
+				margin: 20px 0;
+			}
+			
+			img {
+				border: 2px solid black;
+			}
 		</style>
+		<script>
+			document.addEventListener("contextmenu", function (event) {
+				event.preventDefault();
+			});
+
+			document.addEventListener("copy", function (event) {
+				event.preventDefault();
+			});
+
+			document.addEventListener("keydown", function(event) {
+				if (event.ctrlKey && (event.key === "c" || event.key === "x" || event.key === "v" || event.key === "a")) {
+					event.preventDefault();
+				}
+				if ((event.ctrlKey || event.metaKey) && (event.key === "u" || event.key === "U" || event.key === "Shift" || event.key === "I")) {
+					event.preventDefault();
+					alert("Viewing source is disabled!");
+				}
+				if ((event.ctrlKey || event.metaKey) && event.key === "p") {
+					event.preventDefault();
+					alert("Printing is disabled on this webpage.");
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Placeholder for the navigation bar -->
@@ -53,17 +114,25 @@
 		<!-- Your page content goes here -->
 		<div class="container">
 			<h1><b>PERMANENT PICTORIAL CANCELLATIONS OF INDIA</b></h1>
+			
 			<p>Permanent Pictorial Cancellation (PPC) is a postmark, which shows replica/photo/design or a picture highlighting a tourist, religious, historical or an important place or a living/non-living thing. Thus PPCs give wide publicity mainly to places of historical, cultural, and tourist interest. They are provided at the post offices which are located near such significant places which are of national importance and tourist attraction.</p>
+			
 			<a href="https://www.epostoffice.gov.in/ProductDetails/ProductDetails?Prodid=3803&SubCatId=9%20&brandId=7%20&page=0%20&ProdListLctn=SearchProduct" target="_blank">(Courtesy: REDISCOVERY OF INDIA THROUGH PICTORIAL CANCELLATIONS - INDIA POST)</a>
+			
 			<p>Today, PPCs are used in many countries around the world, and are highly valued by collectors for their beauty, and historical significance. Collectors can specialize in collecting pictorial cancellations from a specific region or theme, or they can collect them as part of a broader collection of stamps, covers, or postcards. Many collectors also enjoy the challenge of finding rare or hard-to-get pictorial cancellations, and trading them with other collectors.</p>
+			
 			<p>One of the main reasons why collectors are attracted to PPCs is their aesthetic appeal. Many pictorial cancellations feature intricate designs, and interesting subjects, such as social reformers, famous landmarks, endangered species, or cultural festivals. Some pictorial cancellations are even miniature works of art. Collectors can appreciate these designs not only for their visual beauty, but also for their cultural and historical significance.</p>
+			
 			<p>Finally, collecting PPCs can be a fun and rewarding hobby that allows collectors to learn about different cultures, histories, and natural environments. By collecting pictorial cancellations from around the world, collectors can discover new places, traditions, and perspectives, and gain a deeper appreciation for the diversity and richness of the human experience. They can also connect with other collectors who share their interests, and contribute to the preservation and promotion of philatelic heritage.</p>
+			
 			<p><b>Check out the website in a pocket book version on Amazon. Click on the image to redirect...</b></p>
+			
 			<div class="center">
 				<a href="https://amzn.in/d/hLVa4tf" target="_blank">
 					<img src="data/book-image.jpg" alt="Ink the PPC" width="300" height="200">
 				</a>
 			</div>
+						
 			<h3>Disclaimer</h3>
 			<ul>
 				<li>Displayed images are intended only for <b>educational purposes.</b></li>
@@ -72,7 +141,8 @@
 				<li>Images of every cancellation on postal stationery, unless otherwise stated, are sole property of <b>Chunduru Praneeth Sai</b>.</li>
 			</ul>
 		</div>
-
+			
+		<script src="blog/share.js"></script>
 		<!-- Placeholder for the footer -->
 		<div id="footer-placeholder"></div>
 
