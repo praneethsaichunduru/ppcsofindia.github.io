@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ppc-root="">
 	<head>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
 		<script>
@@ -11,61 +11,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Special Cancellations - 2023</title>
-		<link rel="icon" type="image/png" href="data/logo.png">
-		
-		<!-- Bootstrap CSS -->
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="data/styles.css" rel="stylesheet">
-		<style>
-			h1 {
-				text-align: center;
-				font-family: "Merriweather", serif;
-				margin: 20px 0;
-				font-size: 30px;
-			}
-			
-			header {
-				background-color: #ffd700;
-				color: #333;
-				padding: 1rem;
-				text-align: center;
-			}
-			
-			a {
-				margin: 10px;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			}
-			
-			body {
-				font-family: "Merriweather", serif;
-				margin: 0;
-				padding: 0;
-			}
-			
-			p {
-				margin: 10px;
-				padding: 10px;
-				text-align: justify;
-				font-size: 16px;
-			}
-			
-			main {
-				padding: 2rem;
-			}
-			
-			.hero, .features, .contact {
+<style>
+.hero, .features, .contact {
 				margin-bottom: 2rem;
 			}
-			
-			.search-container, .filter-container, .count-container {
+.search-container, .filter-container, .count-container {
 				margin-bottom: 1rem;
 				text-align: center;
 			}
-			
-			.clear-button {
+.clear-button {
 				position: absolute;
 				right: 10px;
 				top: 50%;
@@ -75,16 +29,14 @@
 				cursor: pointer;
 				font-size: 1rem;
 			}
-			
-			.filter-container {
+.filter-container {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				flex-wrap: wrap;
 				gap: 0.5rem;
 			}
-			
-			.filter-container label {
+.filter-container label {
 				display: flex;
 				align-items: center;
 				background-color: #fff;
@@ -93,122 +45,76 @@
 				border: 1px solid #ddd;
 				cursor: pointer;
 			}
-			
-			.filter-container label input[type="checkbox"] {
+.filter-container label input[type="checkbox"] {
 				margin-right: 0.5rem;
 			}
-
-			.filter-container .assam input[type="checkbox"] + span {
+.filter-container .assam input[type="checkbox"] + span {
 				color: limegreen;
 			}
-			
-			.filter-container .bihar input[type="checkbox"] + span {
+.filter-container .bihar input[type="checkbox"] + span {
 				color: indigo;
 			}
-			
-			.filter-container .chhattisgarh input[type="checkbox"] + span {
+.filter-container .chhattisgarh input[type="checkbox"] + span {
 				color: brown;
 			}
-
-			.filter-container .himachalpradesh input[type="checkbox"] + span {
+.filter-container .himachalpradesh input[type="checkbox"] + span {
 				color: crimson;
 			}
-			
-			.filter-container .karnataka input[type="checkbox"] + span {
+.filter-container .karnataka input[type="checkbox"] + span {
 				color: red;
 			}
-			
-			.filter-container .maharashtra input[type="checkbox"] + span {
+.filter-container .maharashtra input[type="checkbox"] + span {
 				color: orange;
 			}
-			
-			.filter-container .odisha input[type="checkbox"] + span {
+.filter-container .odisha input[type="checkbox"] + span {
 				color: green;
 			}
-
-			.filter-container .rajasthan input[type="checkbox"] + span {
+.filter-container .rajasthan input[type="checkbox"] + span {
 				color: magenta;
 			}
-			
-			.filter-container .tamilnadu input[type="checkbox"] + span {
+.filter-container .tamilnadu input[type="checkbox"] + span {
 				color: blue;
 			}
-			
-			.filter-container .telangana input[type="checkbox"] + span {
+.filter-container .telangana input[type="checkbox"] + span {
 				color: olive;
 			}
-
-			.filter-container .westbengal input[type="checkbox"] + span {
+.filter-container .westbengal input[type="checkbox"] + span {
 				color: #de3163;
 			}
-			
-			.table-container {
-				overflow-x: auto;
-			}
-			
-			table {
-				width: 100%;
-				border-collapse: collapse;
-				text-align: justify;
-				font-size: 16px;
-			}
-			
-			th, td {
-				padding: 0.5rem;
-				border: 1px solid #ddd;
-				text-align: center;
-			}
-			
-			th {
-				background-color: #f4a460;
-				color: #fff;
-			}
-
-			.assam td {
+.assam td {
 				color: limegreen;
 			}
-			
-			.bihar td {
+.bihar td {
 				color: indigo;
 			}
-			
-			.chhattisgarh td {
+.chhattisgarh td {
 				color: brown;
 			}
-
-			.himachalpradesh td {
+.himachalpradesh td {
 				color: crimson;
 			}
-			
-			.karnataka td {
+.karnataka td {
 				color: red;
 			}
-			
-			.maharashtra td {
+.maharashtra td {
 				color: orange;
 			}
-						
-			.odisha td {
+.odisha td {
 				color: green;
 			}
-
-			.rajasthan td {
+.rajasthan td {
 				color: magenta;
 			}
-			
-			.tamilnadu td {
+.tamilnadu td {
 				color: blue;
 			}
-			
-			.telangana td {
+.telangana td {
 				color: olive;
 			}
-
-			.westbengal td {
+.westbengal td {
 				color: #de3163;
 			}
-			
-			@media (max-width: 600px) {
+@media (max-width: 600px) {
 				table, thead, tbody, th, td, tr {
 					display: block;
 				}
@@ -283,8 +189,7 @@
 					color: #de3163;
 				}
 			}
-			
-			@media (max-width: 600px) {
+@media (max-width: 600px) {
 				table, thead, tbody, th, td, tr {
 					display: block;
 				}
@@ -320,22 +225,19 @@
 					content: none;
 				}
 			}
-			
-			/* Ensure no alternate row highlighting */
+/* Ensure no alternate row highlighting */
 			table tbody tr {
 				background-color: transparent !important; /* Remove any existing alternate row styles */
 			}
-
-			/* Uniform hover effect for all rows */
+/* Uniform hover effect for all rows */
 			table tbody tr:hover {
 				background-color: #f5f5f5 !important; /* Choose your desired highlight color */
 			}
-
-			/* Ensure the separator line does not get highlighted */
+/* Ensure the separator line does not get highlighted */
 			table tbody tr.exclude-hover:hover {
 				background-color: transparent !important;
 			}
-		</style>
+	</style>
 		<script>
 			function filterTable() {
 				const checkboxes = document.querySelectorAll(".filter-container input[type='checkbox']");
@@ -442,10 +344,31 @@
 			};
 		</script>
 
+	<link rel="icon" type="image/png" href="data/logo.png">
+	<meta name="theme-color" content="#0a2540">
+	<meta name="color-scheme" content="light dark">
+
+	<!-- Design system -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="data/theme.css">
+
+	<!-- Apply the saved theme before first paint to avoid a flash -->
+	<script>
+		try {
+			var t = localStorage.getItem("ppc-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	</script>
+
+	<!-- Site chrome (header/footer) as Web Components: no fetch, so it
+	     renders identically from file:// and from a web server -->
+	<script src="data/ppc-chrome.js" defer></script>
+	<script src="data/ppc-protect.js" defer></script>
+	<script src="data/ppc-tables.js" defer></script>
 	</head>
 	<body>
-		<!-- Placeholder for the navigation bar -->
-		<div id="navbar-placeholder"></div>
+<ppc-header></ppc-header>
 		<header>
 			<h1>Special Cancellations - 2023</h1>
 		</header>
@@ -905,18 +828,9 @@
 				</table>
 			</section>
 
-			<!-- Placeholder for the footer -->
-			<div id="footer-placeholder"></div>
 		</main>
-		<!-- Bootstrap JS and dependencies -->
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-		<!-- Include the custom JS to load navbar and footer -->
-		<script src="loadNavbarFooter.js"></script>
-		
-		<script>
+	<ppc-footer></ppc-footer>
+<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				const table = document.querySelector("table");
 				const headers = table.querySelectorAll("th");

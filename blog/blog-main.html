@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ppc-root="../">
 <head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
 	<script>
@@ -12,41 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Know About PPCs</title>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link href="../data/styles.css" rel="stylesheet">
-	<style>
-		h1 {
-			text-align: center;
-			font-family: "Merriweather", serif;
-			margin: 20px 0;
-			font-size: 30px;
-		}
-
-		a {
-			display: block;
-			margin: 10px;
-			padding: 10px;
-			text-align: center;
-			font-size: 16px;
-			color: black;
-		}
-
-		body {
-			font-family: "Merriweather", serif;
-			margin: 0;
-			padding: 0;
-		}
-
-		p {
-			margin: 10px;
-			padding: 10px;
-			text-align: justify;
-			font-size: 16px;
-		}
-
-		.ppc-name {
+<style>
+.ppc-name {
 			margin-top: 5px; /* Adds spacing between image and text */
 			text-align: center; /* Centers the text */
 			font-family: "Georgia", serif;
@@ -55,76 +22,69 @@
 			font-weight: bold;
 			width: 100%;
 		}
-
-		img {
-			border: 2px solid black;
-		}
-
-		.overview-images {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 20px;
-		}
-
-		.overview-images img {
-			display: block; /* Ensures images don’t float */
-			margin: 0 auto; /* Centers the image */
-		}
-
-		.overview-images > * {
-			display: flex;
-			flex-direction: column; /* Stacks image and text */
-			align-items: center; /* Ensures both are centered */
-		}
-
-		.overview-images img.horizontal {
+/* Thumbnails occupy a 3:2 box. The source scans are not all exactly 3:2
+		   (they range ~1.48-1.60), so object-fit letterboxes each image inside
+		   the box instead of stretching it to fit. */
+.overview-images img.horizontal {
 			width: 210px;
-			height: 140px;
+			height: auto;
+			aspect-ratio: 3 / 2;
+			object-fit: contain;
 			cursor: pointer;
 			margin: 5px;
 		}
-
-		.info-table {
-			width: 60%;
-			margin: 20px auto;
-			border-collapse: collapse;
-		}
-
-		.info-table th, .info-table td {
-			border: 1px solid black;
-			padding: 8px;
-			text-align: left;
-		}
-		
-		.section {
+.section {
 			margin: 20px 0;
 		}
-		
-		.section-divider {
+.section-divider {
 			border-bottom: 2px solid black;
 			margin: 20px 0;
 		}
-		
-		.go-to-top {
+.go-to-top {
 			position: fixed;
-			bottom: 10px;
-			right: 10px;
-			background-color: black;
-			color: white;
-			padding: 10px;
+			bottom: var(--space-5);
+			right: calc(var(--space-5) + 56px);
+			z-index: 900;
+			padding: 0.6em 1.1em;
+			border-radius: var(--radius-pill);
+			background-color: var(--accent);
+			border-color: var(--accent);
+			color: var(--accent-contrast);
+			font-size: var(--step--1);
+			box-shadow: var(--shadow-md);
 			cursor: pointer;
 		}
-		
-		.dropdown-menu {
+.dropdown-menu {
 			max-height: 200px; /* Adjust height as needed */
 			overflow-y: auto;
 		}
 	</style>
+	<link rel="icon" type="image/png" href="../data/logo.png">
+	<meta name="theme-color" content="#0a2540">
+	<meta name="color-scheme" content="light dark">
+
+	<!-- Design system -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../data/theme.css">
+
+	<!-- Apply the saved theme before first paint to avoid a flash -->
+	<script>
+		try {
+			var t = localStorage.getItem("ppc-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	</script>
+
+	<!-- Site chrome (header/footer) as Web Components: no fetch, so it
+	     renders identically from file:// and from a web server -->
+	<script src="../data/ppc-chrome.js" defer></script>
+	<script src="../data/ppc-protect.js" defer></script>
+	<script src="../data/ppc-lightbox.js" defer></script>
 </head>
 <body>
-	<!-- Placeholder for the navigation bar -->
-		<a href="../index.html" class="home-icon">
+	<ppc-header></ppc-header>
+<a href="../index.html" class="home-icon" aria-label="Go to Home" title="Home">
 			<img src="../data/home-page-icon.svg" alt="Go to Home" width="30" height="30">
 		</a>
 		<div class="container">
@@ -931,26 +891,17 @@
 	<!-- Go to Top Button -->
 	<button class="btn btn-primary go-to-top" onclick="scrollToTop()">Go to Top</button>
 
-	<!-- Placeholder for the footer -->
-	<div id="footer-placeholder"></div>
+<ppc-footer></ppc-footer>
 
-	<!-- Bootstrap JS and dependencies -->
+	<!-- jQuery + Bootstrap JS: required by this page's section dropdown and
+	     global search feature below. Kept local to this page. -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<!-- Include the custom JS to load navbar and footer -->
-	<script src="loadNavbarFooter.js"></script>
-
 	<!-- Custom JS for Dropdown and Global Search -->
 	<script>
 		$(document).ready(function(){
-			// Load navbar
-			$("#navbar-placeholder").load("navbar.html", function() {
-				// Re-initialize Bootstrap dropdown within the loaded navbar
-				$('[data-toggle="dropdown"]').dropdown();
-			});
-
 			// Populate dropdown with section headings
 			$('.section h2').each(function() {
 				var sectionID = $(this).closest('.section').attr('id');

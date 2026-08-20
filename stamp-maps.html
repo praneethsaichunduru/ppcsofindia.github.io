@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ppc-root="">
 	<head>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
 		<script>
@@ -11,62 +11,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Stamp Maps</title>
-		<link rel="icon" type="image/png" href="data/logo.png">
-		
-		<!-- Bootstrap CSS -->
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="data/styles.css" rel="stylesheet">
-		<link href="blog/blog-styles.css" rel="stylesheet">
-		<style>
-			h1 {
-				text-align: center;
-				font-family: "Merriweather", serif;
-				margin: 20px 0;
-				font-size: 30px;
-			}
-			a {
-				margin: 10px;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			}
-			body {
-				font-family: "Merriweather", serif;
-				margin: 0;
-				padding: 0;
-			}
-			p {
-				margin: 10px;
-				padding: 10px;
-				text-align: justify;
-				font-size: 16px;
-			}
-			.center {
+<style>
+.center {
 				display: flex;
 				justify-content: center;
 				align-items: center;
         	}
-			
-			.overview-images {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 20px;
-			}
-			
-			.overview-images img {
-				display: block; /* Ensures images don’t float */
-				margin: 0 auto; /* Centers the image */
-			}
-
-			.overview-images > * {
-				display: flex;
-				flex-direction: column; /* Stacks image and text */
-				align-items: center; /* Ensures both are centered */
-			}
-
-			.overview-images img.landscape {
+.overview-images img.landscape {
 				width: 900px;
 				height: 600px;
 				cursor: pointer;
@@ -75,43 +26,36 @@
 				max-width: 100%; /* Ensures it scales down in responsive mode */
 				height: auto; /* Adjusts height automatically based on width */
 			}
-			
-			.section-divider {
+.section-divider {
 				border-bottom: 2px solid black;
 				margin: 20px 0;
 			}
-			
-			img {
-				border: 2px solid black;
-			}
-		</style>
-		<script>
-			document.addEventListener("contextmenu", function (event) {
-				event.preventDefault();
-			});
+	</style>
+<link rel="icon" type="image/png" href="data/logo.png">
+	<meta name="theme-color" content="#0a2540">
+	<meta name="color-scheme" content="light dark">
 
-			document.addEventListener("copy", function (event) {
-				event.preventDefault();
-			});
+	<!-- Design system -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="data/theme.css">
 
-			document.addEventListener("keydown", function(event) {
-				if (event.ctrlKey && (event.key === "c" || event.key === "x" || event.key === "v" || event.key === "a")) {
-					event.preventDefault();
-				}
-				if ((event.ctrlKey || event.metaKey) && (event.key === "u" || event.key === "U" || event.key === "Shift" || event.key === "I")) {
-					event.preventDefault();
-					alert("Viewing source is disabled!");
-				}
-				if ((event.ctrlKey || event.metaKey) && event.key === "p") {
-					event.preventDefault();
-					alert("Printing is disabled on this webpage.");
-				}
-			});
-		</script>
+	<!-- Apply the saved theme before first paint to avoid a flash -->
+	<script>
+		try {
+			var t = localStorage.getItem("ppc-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	</script>
+
+	<!-- Site chrome (header/footer) as Web Components: no fetch, so it
+	     renders identically from file:// and from a web server -->
+	<script src="data/ppc-chrome.js" defer></script>
+	<script src="data/ppc-protect.js" defer></script>
+	<script src="data/ppc-lightbox.js" defer></script>
 	</head>
 	<body>
-		<!-- Placeholder for the navigation bar -->
-		<div id="navbar-placeholder"></div>
+<ppc-header></ppc-header>
 
 		<!-- Your page content goes here -->
 		<div class="container">
@@ -155,15 +99,7 @@
 			</div>
 		</div>
 		<script src="blog/share.js"></script>
-		<!-- Placeholder for the footer -->
-		<div id="footer-placeholder"></div>
+<ppc-footer></ppc-footer>
 
-		<!-- Bootstrap JS and dependencies -->
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-		<!-- Include the custom JS to load navbar and footer -->
-		<script src="loadNavbarFooter.js"></script>
-	</body>
+</body>
 </html>
