@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZB7NNS4QNG');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Taj Mahal</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="theme-color" content="#0a2540">
+	<meta name="color-scheme" content="light dark">
+
+	<!-- Design system -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../../blog/blog-styles.css">
+
+	<!-- Apply the saved theme before first paint to avoid a flash -->
+	<script>
+		try {
+			var t = localStorage.getItem("ppc-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	</script>
+
+	<!-- Site chrome (header/footer) as Web Components: no fetch, so it
+	     renders identically from file:// and from a web server -->
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<script src="../../data/ppc-protect.js" defer></script>
+	<script src="../../data/ppc-tables.js" defer></script>
+	<script src="../../data/ppc-lightbox.js" defer></script>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="container">
+		<h1>Taj Mahal</h1>
+		<h1>ताज महल</h1>
+
+		<div class="overview-images">
+			<div>
+				<img src="../blog-related-pictures/monuments/TajMahal.jpg" alt="Taj Mahal" class="landscape"></a>
+			</div>
+			<div>
+				<img src="../../pictures/ppcs/282001-TajMahal-TajSO.jpg" alt="PPC" class="yellowcard"></a>
+			</div>
+		</div>
+
+		<p>The Taj Mahal, an ivory-white marble mausoleum on the banks of the Yamuna in Agra, was commissioned by Mughal emperor Shah Jahan in 1632 in memory of his beloved wife Mumtaz Mahal, who died during childbirth, and took roughly two decades and thousands of craftsmen to complete around 1653. Combining Persian, Islamic, and Indian architectural traditions, its perfectly symmetrical domes, minarets, and intricate pietra dura inlay work of semi-precious stones represent the pinnacle of Mughal architecture. Declared a UNESCO World Heritage Site in 1983 and named one of the New7Wonders of the World in 2007, it remains meticulously conserved by the Archaeological Survey of India, though it faces ongoing environmental challenges from air pollution and yellowing marble, prompting periodic mud-pack cleaning treatments. As India's most iconic monument, it draws millions of visitors annually and stands globally as an enduring symbol of love and Mughal artistic achievement.</p>
+
+		<table class="info-table">
+			<tr>
+				<th>Date of Introduction</th>
+				<td>Not Available</td>
+			</tr>
+			<tr>
+				<th rowspan="3">Address</th>
+				<td>Sub Postmaster,</td>
+			</tr>
+			<tr>
+				<td>Taj SO,</td>
+			</tr>
+			<tr>
+				<td>Agra (dt.), Uttar Pradesh - 282001.</td>
+			</tr>
+		</table>
+	</div>
+	<script src="../../blog/share.js"></script>
+
+	<!-- Back Button -->
+	<button class="back-button" onclick="window.location.href='../blog-main.html';">&#8592; Back</button>
+
+<ppc-footer></ppc-footer>
+
+</body>
+</html>
