@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="">
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZB7NNS4QNG');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PPC Dashboard</title>
+		<style>
+.dash {
+	--st-Working: #16a34a;
+	--st-Doubtful: #2563eb;
+	--st-Removed: #dc2626;
+	--st-Replaced: #f59e0b;
+	max-width: 1240px;
+	margin-inline: auto;
+	font-size: 0.9rem;
+}
+:root[data-theme='dark'] .dash {
+	--st-Working: #4ade80;
+	--st-Doubtful: #7dd3fc;
+	--st-Removed: #fca5a5;
+	--st-Replaced: #fcd34d;
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme='light']) .dash {
+		--st-Working: #4ade80;
+		--st-Doubtful: #7dd3fc;
+		--st-Removed: #fca5a5;
+		--st-Replaced: #fcd34d;
+	}
+}
+.dash-sub { text-align: center; color: var(--text-muted, #64748b); margin: -0.5rem 0 1.5rem; }
+
+/* Headline figures */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+.kpi {
+	padding: 0.8rem 1rem;
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border, #dfe4ea);
+	border-top: 4px solid var(--kpi, var(--accent, #0b5cab));
+	border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.06));
+}
+.kpi .k-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted, #64748b); }
+.kpi .k-value { font-size: 1.6rem; font-weight: 700; line-height: 1.2; color: var(--text-strong, #0d1b2a); }
+.kpi .k-sub { font-size: 0.75rem; color: var(--text-muted, #64748b); }
+
+.panel {
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border, #dfe4ea);
+	border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.06));
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.panel h2 { font-size: 1.05rem; margin: 0 0 0.15rem; }
+.panel .p-sub { color: var(--text-muted, #64748b); font-size: 0.8rem; margin: 0 0 0.75rem; }
+
+/* Controls */
+.controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.9rem 1.25rem; align-items: start; }
+.ctl > .c-label { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted, #64748b); margin-bottom: 0.3rem; }
+.seg { display: inline-flex; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; overflow: hidden; }
+.seg button {
+	padding: 0.35rem 0.8rem;
+	border: 0;
+	background: var(--surface-card, #fff);
+	color: var(--text-body, #33404f);
+	font: inherit;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--border-strong, #c4ccd6); }
+.seg button[aria-pressed="true"] { background: var(--accent, #0b5cab); color: #fff; font-weight: 600; }
+.seg button:disabled { opacity: 0.4; cursor: not-allowed; }
+.checks { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
+.checks label { display: inline-flex; align-items: center; gap: 0.3rem; cursor: pointer; font-weight: 600; }
+.checks label.Working { color: var(--st-Working); }
+.checks label.Doubtful { color: var(--st-Doubtful); }
+.checks label.Removed { color: var(--st-Removed); }
+.checks label.Replaced { color: var(--st-Replaced); }
+.years { display: flex; align-items: center; gap: 0.4rem; }
+.dash select, .dash .statepick summary {
+	padding: 0.35rem 0.6rem;
+	font: inherit;
+	font-size: 0.85rem;
+	color: var(--text-body, #33404f);
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border-strong, #c4ccd6);
+	border-radius: var(--radius-sm, 6px);
+	width: auto;
+}
+.statepick { position: relative; }
+.statepick summary { cursor: pointer; list-style: none; }
+.statepick summary::-webkit-details-marker { display: none; }
+.statepick summary::after { content: "\25BE"; float: right; margin-left: 0.6rem; }
+.state-list {
+	position: absolute;
+	z-index: 20;
+	top: calc(100% + 4px);
+	left: 0;
+	width: 260px;
+	max-width: calc(100vw - 2rem);
+	max-height: 280px;
+	overflow: auto;
+	padding: 0.5rem;
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border-strong, #c4ccd6);
+	border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-lg, 0 12px 32px rgba(0,0,0,.15));
+}
+.state-list label { display: flex; align-items: center; gap: 0.4rem; padding: 0.15rem 0.1rem; cursor: pointer; font-size: 0.8rem; }
+.state-list .sl-tools { display: flex; justify-content: space-between; margin-bottom: 0.4rem; }
+.link-btn { border: 0; background: none; color: var(--accent, #0b5cab); font: inherit; font-size: 0.8rem; font-weight: 600; cursor: pointer; padding: 0; }
+.link-btn:hover { text-decoration: underline; }
+
+/* Chart */
+.chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1rem; align-items: flex-end; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.8rem; }
+.legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend i, .tip i { display: inline-block; width: 0.65rem; height: 0.65rem; border-radius: 3px; }
+#chart { position: relative; min-height: 220px; touch-action: pan-y; }
+#chart svg { display: block; width: 100%; height: auto; }
+.g-grid { stroke: var(--border, #dfe4ea); stroke-width: 1; }
+.g-axis { stroke: var(--border-strong, #c4ccd6); stroke-width: 1; }
+.g-tick { fill: var(--text-muted, #64748b); font-size: 11px; }
+.g-hover { fill: var(--accent, #0b5cab); opacity: 0.1; pointer-events: none; }
+.chart-empty { padding: 3rem 1rem; text-align: center; color: var(--text-muted, #64748b); }
+.tip {
+	position: absolute;
+	z-index: 10;
+	min-width: 190px;
+	max-width: 290px;
+	padding: 0.6rem 0.75rem;
+	font-size: 0.78rem;
+	line-height: 1.4;
+	color: var(--text-body, #33404f);
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border-strong, #c4ccd6);
+	border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-lg, 0 12px 32px rgba(0,0,0,.18));
+	pointer-events: none;
+}
+.tip[hidden] { display: none; }
+.tip .t-h { display: flex; justify-content: space-between; gap: 0.75rem; align-items: baseline; font-size: 0.95rem; font-weight: 700; color: var(--text-strong, #0d1b2a); margin-bottom: 0.3rem; }
+.tip .t-h span { font-size: 0.75rem; font-weight: 500; color: var(--text-muted, #64748b); }
+.tip .t-sec { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px solid var(--border, #dfe4ea); }
+.tip .t-title { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted, #64748b); }
+.tip .t-row { display: flex; justify-content: space-between; gap: 0.75rem; }
+.tip .t-row b { font-variant-numeric: tabular-nums; }
+.tip .t-focus { font-weight: 700; color: var(--text-strong, #0d1b2a); }
+
+/* Lower cards */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1rem; }
+.cols .panel { margin-bottom: 0; }
+.rank { list-style: none; margin: 0; padding: 0; }
+.rank li { display: grid; grid-template-columns: minmax(90px, 1.3fr) 2fr 2.2rem; align-items: center; gap: 0.6rem; padding: 0.25rem 0.3rem; border-radius: 6px; cursor: pointer; }
+.rank li:hover { background: var(--surface-sunken, #eef1f5); }
+.rank li.on { background: var(--surface-sunken, #eef1f5); font-weight: 700; box-shadow: inset 3px 0 0 var(--accent, #0b5cab); }
+.rank .bar { display: flex; height: 0.65rem; border-radius: 99px; overflow: hidden; background: var(--surface-sunken, #eef1f5); }
+.rank .bar i { display: block; height: 100%; }
+.rank .num { text-align: right; font-variant-numeric: tabular-nums; }
+.recent { list-style: none; margin: 0; padding: 0; }
+.recent li { display: grid; grid-template-columns: 0.7rem 1fr auto; gap: 0.6rem; align-items: baseline; padding: 0.4rem 0; border-bottom: 1px solid var(--border, #dfe4ea); }
+.recent li:last-child { border-bottom: 0; }
+.recent .dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; }
+.recent .meta { color: var(--text-muted, #64748b); font-size: 0.75rem; }
+.recent time { font-variant-numeric: tabular-nums; color: var(--text-muted, #64748b); font-size: 0.8rem; white-space: nowrap; }
+.tip .t-hint { margin-top: 0.4rem; font-size: 0.7rem; font-style: italic; color: var(--accent, #0b5cab); }
+#chart svg .g-hover + rect { cursor: pointer; }
+
+/* Full-details pop-up */
+#detail {
+	width: min(720px, 92vw);
+	max-height: 85vh;
+	padding: 0;
+	overflow: hidden;
+	color: var(--text-body, #33404f);
+	background: var(--surface-card, #fff);
+	border: 1px solid var(--border-strong, #c4ccd6);
+	border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-lg, 0 12px 32px rgba(0,0,0,.3));
+}
+#detail[open] { display: flex; flex-direction: column; }
+#detail::backdrop { background: rgba(10, 20, 35, 0.55); }
+.dlg-head { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1rem; border-bottom: 1px solid var(--border, #dfe4ea); }
+.dlg-head h3 { margin: 0; font-size: 1.1rem; }
+.dlg-head button { border: 0; background: none; color: inherit; font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 0 0.4rem; }
+#dlgBody { padding: 0.8rem 1rem 1.2rem; overflow-y: auto; }
+#dlgBody h4 { margin: 1rem 0 0.4rem; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted, #64748b); }
+.dlg-chips { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 0.5rem; }
+.dlg-chips span, .dlg-focus { display: inline-flex; align-items: center; gap: 0.35rem; }
+.dlg-chips i, .dlg-focus i { display: inline-block; width: 0.65rem; height: 0.65rem; border-radius: 3px; }
+.dlg-focus { margin: 0.2rem 0; }
+.foot-note { text-align: center; color: var(--text-muted, #64748b); font-size: 0.75rem; margin-top: 1rem; }
+@media (max-width: 800px) {
+	.kpis { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+	.cols { grid-template-columns: 1fr; }
+	.rank li { grid-template-columns: minmax(80px, 1.2fr) 1.6fr 2rem; }
+}
+		</style>
+		<link rel="icon" type="image/png" href="data/logo.png">
+		<meta name="theme-color" content="#0a2540">
+		<meta name="color-scheme" content="light dark">
+
+		<!-- Design system -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="data/theme.css">
+
+		<!-- Apply the saved theme before first paint to avoid a flash -->
+		<script>
+			try {
+				var t = localStorage.getItem("ppc-theme");
+				if (t) document.documentElement.setAttribute("data-theme", t);
+			} catch (e) {}
+		</script>
+
+		<script src="data/ppc-chrome.js" defer></script>
+		<script src="data/ppc-protect.js" defer></script>
+		<!-- Snapshot of the PPC list, used when the live list can't be fetched (e.g. opened from disk) -->
+		<script src="data/ppc-data.js"></script>
+		<script src="data/ppc-dashboard.js" defer></script>
+	</head>
+	<body>
+<ppc-header></ppc-header>
+		<header>
+			<h1>PPC Dashboard</h1>
+		</header>
+		<main>
+			<p class="dash-sub" id="dashSub">Loading data&hellip;</p>
+			<div class="dash">
+				<section class="kpis" id="kpis" aria-label="Headline figures"></section>
+
+				<section class="panel" aria-label="Chart options">
+					<div class="controls">
+						<div class="ctl">
+							<span class="c-label">Chart</span>
+							<div class="seg" data-key="chart">
+								<button type="button" data-v="hist" aria-pressed="true">Histogram</button>
+								<button type="button" data-v="line" aria-pressed="false">Line</button>
+								<button type="button" data-v="scatter" aria-pressed="false">Scatter</button>
+							</div>
+						</div>
+						<div class="ctl">
+							<span class="c-label">Break down by</span>
+							<div class="seg" data-key="group">
+								<button type="button" data-v="overall" aria-pressed="true">Overall</button>
+								<button type="button" data-v="status" aria-pressed="false">Status</button>
+								<button type="button" data-v="state" aria-pressed="false">State/UT</button>
+							</div>
+						</div>
+						<div class="ctl">
+							<span class="c-label">Measure</span>
+							<div class="seg" data-key="measure">
+								<button type="button" data-v="year" aria-pressed="true">Per year</button>
+								<button type="button" data-v="cum" aria-pressed="false">Running total</button>
+							</div>
+						</div>
+						<div class="ctl">
+							<span class="c-label">Status</span>
+							<div class="checks" id="statusChecks"></div>
+						</div>
+						<div class="ctl">
+							<span class="c-label">States / UTs</span>
+							<details class="statepick" id="statePick">
+								<summary id="stateSummary">All states</summary>
+								<div class="state-list" id="stateList"></div>
+							</details>
+						</div>
+						<div class="ctl">
+							<span class="c-label">Years</span>
+							<div class="years">
+								<select id="yearFrom" aria-label="From year"></select>
+								<span>to</span>
+								<select id="yearTo" aria-label="To year"></select>
+								<button type="button" class="link-btn" id="resetAll">Reset</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="panel" aria-label="Release chart">
+					<div class="chart-head">
+						<div>
+							<h2 id="chartTitle">PPC releases</h2>
+							<p class="p-sub" id="chartSub"></p>
+						</div>
+						<div class="legend" id="legend"></div>
+					</div>
+					<div id="chart"><div class="tip" id="tip" hidden></div></div>
+				</section>
+
+				<div class="cols">
+					<section class="panel" aria-label="Top states">
+						<h2>Top states / UTs</h2>
+						<p class="p-sub">Releases within the filters above. Click a state to focus the chart on it.</p>
+						<ul class="rank" id="rank"></ul>
+						<button type="button" class="link-btn" id="rankMore" style="margin-top:0.5rem"></button>
+					</section>
+					<section class="panel" aria-label="Latest releases">
+						<h2>Latest releases</h2>
+						<p class="p-sub">Most recent introductions within the filters above.</p>
+						<ul class="recent" id="recent"></ul>
+					</section>
+				</div>
+				<p class="foot-note" id="footNote"></p>
+
+				<dialog id="detail" aria-labelledby="dlgTitle">
+					<div class="dlg-head">
+						<h3 id="dlgTitle"></h3>
+						<button type="button" id="dlgClose" aria-label="Close">&times;</button>
+					</div>
+					<div id="dlgBody"></div>
+				</dialog>
+			</div>
+		</main>
+	<ppc-footer></ppc-footer>
+</body>
+</html>

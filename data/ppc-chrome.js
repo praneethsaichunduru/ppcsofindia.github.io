@@ -61,6 +61,7 @@
 	var NAV = [
 		{ label: 'Index', href: 'index.html' },
 		{ label: 'PPC List', href: 'list-pincode.html' },
+		{ label: 'Dashboard', href: 'dashboard.html' },
 		{ label: 'Know About PPCs', href: 'blog/blog-main.html' },
 		{ label: 'Stamp Maps', href: 'stamp-maps.html' },
 		{
@@ -523,6 +524,7 @@
 			var explore = [
 				{ label: 'Index', href: 'index.html' },
 				{ label: 'PPC List', href: 'list-pincode.html' },
+				{ label: 'Dashboard', href: 'dashboard.html' },
 				{ label: 'Know About PPCs', href: 'blog/blog-main.html' },
 				{ label: 'Stamp Maps', href: 'stamp-maps.html' }
 			];
