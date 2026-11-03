@@ -6,6 +6,8 @@ opened straight from disk (file://), so the dashboard falls back to the
 snapshot this script writes. Re-run it after adding or editing PPCs:
 
     python data/build-ppc-data.py
+
+No Python? Use the PowerShell version instead (see build-ppc-data.ps1).
 """
 import json
 import os

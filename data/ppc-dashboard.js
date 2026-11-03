@@ -537,7 +537,7 @@
 		var latest = d.slice().sort(function (a, b) { return dateVal(b) - dateVal(a); })[0];
 		$('dashSub').textContent = plural(rows.length, 'PPC') + ' across ' + plural(stateNames.length, 'state/UT') + ' · latest release ' + latest.dateText;
 		$('footNote').textContent = (rows.length - d.length) + ' PPCs without a recorded date of introduction are not plotted. Data: ' +
-			(res.live ? 'read live from the PPC List.' : 'snapshot of the PPC List (regenerate with data/build-ppc-data.py).');
+				(res.live ? 'read live from the PPC List.' : 'snapshot of the PPC List (refresh it with data/build-ppc-data.ps1 or .py).');
 
 		renderKpis();
 		setupControls();
