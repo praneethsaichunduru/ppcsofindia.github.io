@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Know About PPCs: prototypes</title>
+	<meta name="robots" content="noindex">
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin: 1.2rem 0; }
+		.proto { display: flex; flex-direction: column; gap: 0.5rem; padding: 1rem 1.1rem; background: var(--surface-card, #fff); border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px); box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.06)); }
+		.proto h2 { margin: 0; font-size: 1.1rem; }
+		.proto .tag { align-self: flex-start; padding: 0.05rem 0.6rem; border-radius: 999px; background: var(--accent, #0b5cab); color: #fff; font-size: 0.7rem; font-weight: 700; }
+		.proto p { margin: 0; }
+		.proto ul { margin: 0; padding-left: 1.1rem; color: var(--text-muted, #64748b); }
+		.proto .go { margin-top: auto; align-self: flex-start; }
+		.proto .go a { display: inline-block; padding: 0.4rem 1rem; border-radius: 999px; background: var(--accent, #0b5cab); color: #fff; font-weight: 600; text-decoration: none; }
+		.proto .go a:hover { background: var(--ppc-saffron, #ef7f1a); }
+		.rec { padding: 0.9rem 1.1rem; border-left: 5px solid var(--ppc-saffron, #ef7f1a); background: var(--surface-sunken, #eef1f5); border-radius: 0 var(--radius-md, 10px) var(--radius-md, 10px) 0; }
+		.notes { color: var(--text-muted, #64748b); }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototypes only. The live page, <a href="../../blog/blog-main.html">blog/blog-main.html</a>, is untouched.</div>
+	<main class="kp">
+		<h1>Know About PPCs: prototypes</h1>
+		<p class="lead">Five ways to rebuild the page. Each one uses the real list of PPC pages, so open them and try them.</p>
+
+		<div class="cards">
+			<article class="proto">
+				<span class="tag">A</span>
+				<h2>Sticky state bar</h2>
+				<p>The page stays one long scroll, as now, but a bar of state chips follows you, and highlights the state you are reading.</p>
+				<ul><li>Smallest change from today</li><li>States with no article are hidden (or dashed)</li><li>Still a long page</li></ul>
+				<div class="go"><a href="a-jump-bar.html">Open prototype A</a></div>
+			</article>
+			<article class="proto">
+				<span class="tag">B</span>
+				<h2>Regions and collapsible states</h2>
+				<p>States are grouped into North, South, East and so on, each with a count and a small bar showing the mix of post-office types. Open only the states you want.</p>
+				<ul><li>Short page, easy to scan</li><li>Images load only when a state opens</li><li><code>#karnataka</code> opens a state directly</li></ul>
+				<div class="go"><a href="b-region-accordion.html">Open prototype B</a></div>
+			</article>
+			<article class="proto">
+				<span class="tag">C</span>
+				<h2>Search and filter cards</h2>
+				<p>One grid of every PPC. Search a place, post office or pincode, filter by state and by post-office type (the same four colours as the PO Map), and sort by date or name.</p>
+				<ul><li>Best for finding one PPC</li><li>Loads 48 cards at a time</li><li>Loses the state-by-state reading flow</li></ul>
+				<div class="go"><a href="c-card-explorer.html">Open prototype C</a></div>
+			</article>
+			<article class="proto">
+				<span class="tag">D</span>
+				<h2>Sidebar explorer with shareable links</h2>
+				<p>A state list (grouped by region, with counts) on the left; cards, post-office type filters and a search on the right. On phones the list becomes a drop-down.</p>
+				<ul><li>Combines A, B and C</li><li>The address bar holds the view, e.g. <code>#state=Karnataka&amp;rank=2</code></li><li>The PO Map and Dashboard can link straight into it</li></ul>
+				<div class="go"><a href="d-sidebar-explorer.html">Open prototype D</a></div>
+			</article>
+			<article class="proto">
+				<span class="tag">E</span>
+				<h2>Tile map</h2>
+				<p>Every state is a tile placed roughly where it sits on the map, shaded by how many articles it has. Tap a tile and its PPCs open below.</p>
+				<ul><li>Friendly entry point for visitors</li><li>Fun, but a cartogram, not a true map</li><li>Works well on top of D</li></ul>
+				<div class="go"><a href="e-tile-map.html">Open prototype E</a></div>
+			</article>
+		</div>
+
+		<div class="rec">
+			<b>Suggested direction:</b> D as the page, with E as the opening panel above it, and the empty states hidden. That keeps the state-by-state browsing of the current page, adds search, and gives other pages (PO Map, Dashboard, the PPC List) a way to link to one state or one post-office type.
+		</div>
+
+		<h2 style="margin-top:2rem">Notes</h2>
+		<ul class="notes">
+			<li>All five read <code>data.js</code>, a snapshot built from the current <code>blog-main.html</code> and the blog pages (state, name, image, post office, pincode, date). The real page would not need this file: it could keep its own entries, or build them from the same sources.</li>
+			<li>Scans that are not in <code>pictures/ppcs</code> yet show a "Scan coming soon" box instead of a broken image.</li>
+			<li>None of the prototypes use jQuery or Bootstrap; they are plain HTML, CSS and JavaScript with the site's theme, so dark mode works.</li>
+			<li>These files sit in <code>prototypes/know-about-ppcs/</code> and can be deleted without affecting the site.</li>
+		</ul>
+	</main>
+	<ppc-footer></ppc-footer>
+</body>
+</html>

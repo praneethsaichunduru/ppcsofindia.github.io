@@ -1250,7 +1250,7 @@ main.ppc-main > .ppc-container > section {
 /* ==========================================================================
    Status colour legibility in dark mode
    --------------------------------------------------------------------------
-   The PPC list and special-cancellation pages colour rows by status using the
+   The PPC list colours rows by status using the
    plain CSS keywords green/blue/red/orange. Those are too dark to read on a
    dark background, so they are lifted here. The status *meaning* (and the
    light-theme appearance) is unchanged.
@@ -1315,7 +1315,7 @@ main.ppc-main > .ppc-container > section {
 /* ==========================================================================
    Wide data tables
    --------------------------------------------------------------------------
-   The PPC list and special-cancellation tables carry 7-8 columns. They are
+   The PPC list and other data tables carry 7-8 columns. They are
    allowed to break out of the reading measure and use the window width, so the
    details fit without sliding back and forth.
    ========================================================================== */
@@ -1585,7 +1585,7 @@ table.ppc-cards td[data-media] img,
 }
 
 /* Decorative separator rows (a single cell holding an <hr>) are used to divide
-   states in the special-cancellation tables. As a card they would render as an
+   states in some data tables. As a card they would render as an
    empty tile with a stray heading, so hide them in card mode. */
 @media (max-width: 860px) {
 	table.ppc-cards tr.ppc-row-separator,

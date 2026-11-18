@@ -59,23 +59,15 @@
 	/* ------------------------------------------------------- navigation data */
 
 	var NAV = [
-		{ label: 'Index', href: 'index.html' },
-		{ label: 'PPC List', href: 'list-pincode.html' },
-		{ label: 'Dashboard', href: 'dashboard.html' },
-		{ label: 'Know About PPCs', href: 'blog/blog-main.html' },
-		{ label: 'Stamp Maps', href: 'stamp-maps.html' },
-		{
-			label: 'Special Cancellations',
-			children: [
-				{ label: 'Home', href: 'special-cancellations.html' },
-				{ label: '2023', href: 'special-cancellations-2023.html' },
-				{ label: '2024', href: 'special-cancellations-2024.html' },
-				{ label: '2025', href: 'special-cancellations-2025.html' }
-			]
-		},
-		{ label: 'How to Collect?', href: 'how-to-collect.html' },
-		{ label: 'Address', href: 'address.html' },
-		{ label: 'Contact', href: 'contact.html' }
+		{ label: 'Index', href: 'index.html', icon: 'home' },
+		{ label: 'PPC List', href: 'list-pincode.html', icon: 'list' },
+		{ label: 'Dashboard', href: 'dashboard.html', icon: 'chart' },
+		{ label: 'Know About PPCs', href: 'blog/blog-main.html', icon: 'book' },
+		{ label: 'Stamp Maps', href: 'stamp-maps.html', icon: 'map' },
+		{ label: 'PO Map', href: 'po-map.html', icon: 'pin' },
+		{ label: 'How to Collect?', href: 'how-to-collect.html', icon: 'help' },
+		{ label: 'Address', href: 'address.html', icon: 'inbox' },
+		{ label: 'Contact', href: 'contact.html', icon: 'phone' }
 	];
 
 	/** Current page filename, for marking the active nav item. */
@@ -146,7 +138,34 @@
 			'<path d="M12 19V5M5 12l7-7 7 7"/></svg>',
 		mail:
 			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-			'<rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6 9-6"/></svg>'
+			'<rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6 9-6"/></svg>',
+		home:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/></svg>',
+		list:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>',
+		chart:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M5 20v-7M12 20V5M19 20v-10"/></svg>',
+		book:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16"/></svg>',
+		map:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',
+		pin:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+		help:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>',
+		inbox:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M3 13h5l1.5 3h5L16 13h5"/><path d="M5 5h14l2 8v6H3v-6z"/></svg>',
+		phone:
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+			'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'
 	};
 
 	/* ------------------------------------------------------- shared stylesheet
@@ -189,6 +208,8 @@
 		'height:2px;border-radius:2px;background:var(--accent);}' +
 		'.ppc-nav__link svg{width:14px;height:14px;transition:transform .2s var(--ease);}' +
 		'.ppc-nav__item[data-open="true"] .ppc-nav__link svg{transform:rotate(180deg);}' +
+		/* menu icons: responsive layout only */
+		'.ppc-nav__icon{display:none;}' +
 		/* ---- dropdown ---- */
 		'.ppc-dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:190px;padding:var(--space-2);margin:0;' +
 		'list-style:none;background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-md);' +
@@ -238,6 +259,9 @@
 		'.ppc-header[data-menu="open"] .ppc-nav{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}' +
 		'.ppc-nav__link{width:100%;justify-content:space-between;padding:.8rem .4rem;font-size:.95rem;border-radius:var(--radius-sm);}' +
 		'.ppc-nav__link[aria-current="page"]::after{display:none;}' +
+		'.ppc-nav__main{display:inline-flex;align-items:center;gap:.75rem;}' +
+		'.ppc-nav__icon{display:inline-flex;color:var(--accent);}' +
+		'.ppc-nav__icon svg,.ppc-nav__item[data-open="true"] .ppc-nav__link .ppc-nav__icon svg{width:20px;height:20px;transform:none;}' +
 		'.ppc-nav__item+.ppc-nav__item{border-top:1px solid var(--border);}' +
 		'.ppc-dropdown{position:static;min-width:0;opacity:1;visibility:visible;transform:none;box-shadow:none;' +
 		'border:0;border-radius:0;padding:0 0 var(--space-2) var(--space-4);display:none;background:transparent;}' +
@@ -317,6 +341,12 @@
 
 	/* ------------------------------------------------------------ <ppc-header> */
 
+	/** Label with its icon; the icon is only displayed in the responsive menu (see CHROME_CSS). */
+	function navLabel(item) {
+		var icon = item.icon && ICONS[item.icon] ? '<span class="ppc-nav__icon">' + ICONS[item.icon] + '</span>' : '';
+		return '<span class="ppc-nav__main">' + icon + escapeHTML(item.label) + '</span>';
+	}
+
 	function buildNavItem(item) {
 		var li = document.createElement('li');
 		li.className = 'ppc-nav__item';
@@ -331,7 +361,7 @@
 			btn.className = 'ppc-nav__link';
 			btn.setAttribute('aria-expanded', 'false');
 			btn.setAttribute('aria-haspopup', 'true');
-			btn.innerHTML = escapeHTML(item.label) + ICONS.chevron;
+			btn.innerHTML = navLabel(item) + ICONS.chevron;
 			if (anyChildActive) btn.setAttribute('aria-current', 'page');
 
 			var menu = document.createElement('ul');
@@ -373,7 +403,7 @@
 			var link = document.createElement('a');
 			link.className = 'ppc-nav__link';
 			link.href = url(item.href);
-			link.textContent = item.label;
+			link.innerHTML = navLabel(item);
 			if (isActive(item.href)) link.setAttribute('aria-current', 'page');
 			li.appendChild(link);
 		}
@@ -526,10 +556,10 @@
 				{ label: 'PPC List', href: 'list-pincode.html' },
 				{ label: 'Dashboard', href: 'dashboard.html' },
 				{ label: 'Know About PPCs', href: 'blog/blog-main.html' },
-				{ label: 'Stamp Maps', href: 'stamp-maps.html' }
+				{ label: 'Stamp Maps', href: 'stamp-maps.html' },
+				{ label: 'PO Map', href: 'po-map.html' }
 			];
 			var collect = [
-				{ label: 'Special Cancellations', href: 'special-cancellations.html' },
 				{ label: 'How to Collect?', href: 'how-to-collect.html' },
 				{ label: 'Address', href: 'address.html' },
 				{ label: 'Copyright Notice', href: 'copyright-notice.html' }
@@ -560,7 +590,7 @@
 				LOGO +
 				'" alt="" width="52" height="52" decoding="async">' +
 				'<span>Permanent Pictorial<br>Cancellations of India</span></a>' +
-				'<p class="ppc-footer__blurb">A philatelic record of the permanent pictorial and special ' +
+				'<p class="ppc-footer__blurb">A philatelic record of the permanent pictorial ' +
 				'cancellations of India Post — documenting the monuments, wildlife and heritage stamped ' +
 				'across the country\'s post offices.</p>' +
 				'</div>' +

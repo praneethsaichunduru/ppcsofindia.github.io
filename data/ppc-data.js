@@ -236,7 +236,7 @@ window.PPC_DATA = [
 	["Inscription Stones of Bengaluru", "22.06.2026", "Kodigehalli BO", "Bengaluru Urban", "KARNATAKA", "560092", "Working"],
 	["Statue of Prosperity & Kempegowda International Airport", "26.05.2026", "Kempegowda International Airport SO", "Bengaluru Rural", "KARNATAKA", "560300", "Working"],
 	["Nandi Statue", "09.06.1989", "Nandi Hills BO", "Chikkaballapura", "KARNATAKA", "562101", "Working"],
-	["Grizzled Giant Squirrel", "21.01.2022", "Helagalli BO", "Ramanagara", "KARNATAKA", "562117", "Working"],
+	["Grizzled Giant Squirrel", "21.01.2022", "Helagalli BO", "Ramanagara", "KARNATAKA", "562168", "Working"],
 	["Gold Miner", "16.11.2018", "Championreefs SO", "Kolar", "KARNATAKA", "563117", "Working"],
 	["Masti Venkatesha Iyengar", "08.05.2025", "Masthi SO", "Kolar", "KARNATAKA", "563139", "Working"],
 	["Elephant Carrying Howdah", "11.10.2002", "Mysuru HO-PB", "Mysuru", "KARNATAKA", "570001", "Working"],

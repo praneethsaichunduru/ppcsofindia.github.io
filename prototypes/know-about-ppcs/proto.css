@@ -1,0 +1,41 @@
+/* Shared styles for the Know About PPCs prototypes. Uses the site's theme tokens (data/theme.css). */
+.kp { max-width: 1240px; margin-inline: auto; padding: 0 clamp(1rem, 3vw, 2rem) 3rem; font-size: 0.92rem; }
+.kp h1 { text-align: center; margin: 1.2rem 0 0.3rem; }
+.kp .lead { text-align: center; color: var(--text-muted, #64748b); margin: 0 0 1.2rem; }
+.proto-banner { background: #fff3cd; color: #5c4400; border-bottom: 1px solid #f0d78c; padding: 0.45rem 1rem; font-size: 0.8rem; text-align: center; }
+.proto-banner a { color: inherit; font-weight: 700; }
+:root[data-theme='dark'] .proto-banner { background: #3a2f0a; color: #f5dd9a; border-color: #5c4a14; }
+
+/* Pin colours: same four categories as the PO Map */
+.c1 { --pin: #d90429; } .c2 { --pin: #ff8c00; } .c3 { --pin: #12a150; } .c4 { --pin: #7b2cbf; }
+.badge { display: inline-block; padding: 0.08rem 0.5rem; border-radius: 999px; background: var(--pin); color: #fff; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em; }
+.dot { display: inline-block; width: 0.65rem; height: 0.65rem; border-radius: 50%; background: var(--pin); margin-right: 0.3rem; }
+
+/* PPC cards */
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 0.9rem; }
+.kcard {
+	display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: var(--text-body, #33404f);
+	background: var(--surface-card, #fff); border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px);
+	box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.06)); transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.kcard:hover { transform: translateY(-2px); box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,.12)); border-color: var(--pin, var(--accent, #0b5cab)); text-decoration: none; }
+.kcard .thumb { position: relative; aspect-ratio: 3 / 2; background: var(--surface-sunken, #eef1f5); display: block; }
+.kcard .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.kcard .thumb.noimg img { display: none; }
+.kcard .thumb.noimg::after { content: "Scan coming soon"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; color: var(--text-muted, #64748b); }
+.kcard .body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.6rem 0.75rem 0.7rem; border-top: 3px solid var(--pin, var(--border)); }
+.kcard b { color: var(--text-strong, #0d1b2a); line-height: 1.25; font-size: 0.9rem; }
+.kcard small { color: var(--text-muted, #64748b); }
+.kcard .meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-top: 0.2rem; font-size: 0.72rem; color: var(--text-muted, #64748b); }
+
+/* Controls */
+.chip-btn { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.75rem; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; background: var(--surface-card, #fff); color: var(--text-body, #33404f); font: inherit; font-size: 0.8rem; cursor: pointer; white-space: nowrap; }
+.chip-btn:hover { border-color: var(--accent, #0b5cab); }
+.chip-btn[aria-pressed="true"] { background: var(--accent, #0b5cab); border-color: var(--accent, #0b5cab); color: #fff; }
+.chip-btn small { opacity: 0.75; }
+.chip-btn.off { opacity: 0.45; }
+.kp input[type="search"], .kp select.kp-select { padding: 0.45rem 0.8rem; font: inherit; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; background: var(--surface-card, #fff); color: var(--text-body, #33404f); min-width: 0; }
+.empty-note { color: var(--text-muted, #64748b); padding: 1rem; text-align: center; border: 1px dashed var(--border-strong, #c4ccd6); border-radius: var(--radius-md, 10px); }
+.mix { display: flex; height: 6px; border-radius: 99px; overflow: hidden; background: var(--surface-sunken, #eef1f5); min-width: 60px; }
+.mix i { display: block; height: 100%; background: var(--pin); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

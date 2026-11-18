@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype E: Tile map</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		/* A tile map: every state is the same size, laid out roughly where it sits on the map */
+		.tiles { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); grid-auto-rows: minmax(64px, auto); gap: 6px; max-width: 880px; margin: 0 auto 1.2rem; }
+		.tile { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 0.35rem 0.45rem; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 8px; background: color-mix(in srgb, var(--accent, #0b5cab) calc(var(--heat, 0) * 100%), var(--surface-card, #fff)); color: var(--text-strong, #0d1b2a); font: inherit; font-size: 0.68rem; line-height: 1.15; text-align: left; cursor: pointer; overflow: hidden; }
+		.tile b { font-size: 1.05rem; font-weight: 700; }
+		.tile.hot { color: #fff; }
+		.tile:hover { outline: 2px solid var(--ppc-saffron, #ef7f1a); }
+		.tile[aria-pressed="true"] { outline: 3px solid var(--ppc-saffron, #ef7f1a); }
+		.tile.none { border-style: dashed; background: transparent; color: var(--text-muted, #64748b); cursor: default; }
+		.tile.none:hover { outline: 0; }
+		.legend { display: flex; justify-content: center; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--text-muted, #64748b); margin-bottom: 1.4rem; }
+		.legend i { width: 120px; height: 10px; border-radius: 5px; background: linear-gradient(90deg, var(--surface-card, #fff), var(--accent, #0b5cab)); border: 1px solid var(--border-strong, #c4ccd6); }
+		.result-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.7rem; padding-top: 0.6rem; border-top: 2px solid var(--border, #dfe4ea); scroll-margin-top: calc(var(--header-height, 68px) + 10px); }
+		.result-head h2 { margin: 0; }
+		@media (max-width: 640px) { .tile { font-size: 0.58rem; padding: 0.25rem; } .tile b { font-size: 0.9rem; } .tiles { gap: 4px; } }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototype E &middot; tile map &middot; <a href="index.html">all prototypes</a></div>
+	<main class="kp">
+		<h1>Know About Permanent Pictorial Cancellations</h1>
+		<p class="lead">Tap a state tile to see its PPCs. The darker the tile, the more articles it has.</p>
+		<div class="tiles" id="tiles" role="group" aria-label="States and UTs"></div>
+		<div class="legend"><span>Fewer articles</span><i></i><span>More</span></div>
+		<div id="result"></div>
+	</main>
+	<ppc-footer></ppc-footer>
+	<script src="data.js"></script>
+	<script src="common.js"></script>
+	<script>
+	(function () {
+		var K = window.KA, $ = K.$;
+		// [column, row] of each tile; an approximate geography, not a map
+		var POS = {
+			'Jammu and Kashmir': [2, 0], 'Ladakh': [3, 0],
+			'Chandigarh': [1, 1], 'Punjab': [2, 1], 'Himachal Pradesh': [3, 1], 'Uttarakhand': [4, 1], 'Arunachal Pradesh': [8, 1],
+			'Haryana': [2, 2], 'Delhi': [3, 2], 'Uttar Pradesh': [4, 2], 'Bihar': [5, 2], 'Sikkim': [6, 2], 'Assam': [7, 2], 'Nagaland': [8, 2],
+			'Rajasthan': [2, 3], 'Madhya Pradesh': [3, 3], 'Chhattisgarh': [4, 3], 'Jharkhand': [5, 3], 'West Bengal': [6, 3], 'Meghalaya': [7, 3], 'Manipur': [8, 3],
+			'Gujarat': [1, 4], 'Maharashtra': [2, 4], 'Telangana': [3, 4], 'Odisha': [4, 4], 'Tripura': [7, 4], 'Mizoram': [8, 4],
+			'Dadra and Nagar Haveli and Daman and Diu': [1, 5], 'Goa': [2, 5], 'Karnataka': [3, 5], 'Andhra Pradesh': [4, 5],
+			'Kerala': [3, 6], 'Tamil Nadu': [4, 6], 'Puducherry': [5, 6], 'Andaman and Nicobar Islands': [7, 6]
+		};
+		var SHORT = { 'Dadra and Nagar Haveli and Daman and Diu': 'Dadra & NH, Daman & Diu', 'Andaman and Nicobar Islands': 'Andaman & Nicobar', 'Jammu and Kashmir': 'Jammu & Kashmir' };
+		var max = Math.max.apply(null, K.STATES.map(function (s) { return s.items.length; }));
+		var sel = '';
+		$('tiles').innerHTML = K.STATES.map(function (s) {
+			var p = POS[s.name]; if (!p) return '';
+			var heat = s.items.length ? 0.12 + 0.88 * Math.sqrt(s.items.length / max) : 0;
+			return '<button type="button" class="tile' + (s.items.length ? '' : ' none') + (heat > 0.6 ? ' hot' : '') + '" data-s="' + K.esc(s.name) + '" style="grid-column:' + (p[0] + 1) + ';grid-row:' + (p[1] + 1) + ';--heat:' + heat.toFixed(2) + '" aria-pressed="false"' + (s.items.length ? '' : ' disabled title="No article yet"') + '>' +
+				'<span>' + K.esc(SHORT[s.name] || s.name) + '</span><b>' + s.items.length + '</b></button>';
+		}).join('');
+		function show(name) {
+			sel = sel === name ? '' : name;
+			Array.prototype.forEach.call($('tiles').children, function (t) { t.setAttribute('aria-pressed', String(t.dataset.s === sel)); });
+			var s = K.STATES.filter(function (x) { return x.name === sel; })[0];
+			$('result').innerHTML = s ? '<div class="result-head" id="rh"><h2>' + K.esc(s.name) + '</h2><span>' + s.items.length + ' PPC pages ' + K.mix(s.items) + '</span></div><div class="pgrid">' + s.items.map(K.card).join('') + '</div>' : '';
+			if (s) $('rh').scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+		$('tiles').addEventListener('click', function (e) { var b = e.target.closest('.tile'); if (b && !b.disabled) { show(b.dataset.s); history.replaceState(null, '', sel ? '#' + encodeURIComponent(sel) : location.pathname); } });
+		var h = decodeURIComponent(location.hash.slice(1));
+		if (h && POS[h]) show(h);
+	})();
+	</script>
+</body>
+</html>

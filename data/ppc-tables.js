@@ -1,7 +1,7 @@
 /* ==========================================================================
    PPCs of India — responsive data tables
    --------------------------------------------------------------------------
-   The PPC list and the special-cancellation pages are wide, many-column
+   The PPC list and other data pages are wide, many-column
    tables. On a narrow screen they previously forced constant left/right
    scrolling: a card layout existed in CSS but depended on each <td> carrying a
    data-label attribute, and almost none of the ~10,000 cells had one.

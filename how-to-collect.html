@@ -11,6 +11,68 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ways to Collect the Cancellations</title>
+	<style>
+/* Numbered steps, each followed by a diagram */
+ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 1rem 0 1.75rem; }
+ol.steps > li { counter-increment: step; position: relative; padding-left: 2.6rem; margin-bottom: 0.5rem; }
+ol.steps > li::before {
+	content: counter(step);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1.8rem;
+	height: 1.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: var(--accent, #0b5cab);
+	color: #fff;
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+ol.steps > li > p { margin: 0 0 0.4rem; }
+ol.steps ul { margin: 0.4rem 0 0.2rem; }
+
+/* Diagrams (inline SVG, drawn with the site's colours so they follow light and dark mode) */
+.diagram {
+	display: block;
+	width: 100%;
+	max-width: 520px;
+	height: auto;
+	margin: 0.6rem 0 1.5rem;
+	background: var(--surface-sunken, #eef1f5);
+	border: 1px solid var(--border, #dfe4ea);
+	border-radius: var(--radius-md, 10px);
+}
+.diagram .paper { fill: var(--surface-card, #fff); stroke: var(--text-strong, #0d1b2a); stroke-width: 1.5; }
+.diagram .desk { fill: var(--border-strong, #c4ccd6); stroke: var(--text-strong, #0d1b2a); stroke-width: 1.5; }
+.diagram .ln { fill: none; stroke: var(--text-strong, #0d1b2a); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.diagram .lines { stroke: var(--text-muted, #64748b); stroke-width: 1.5; stroke-linecap: round; }
+.diagram .lines.hl { stroke: var(--accent, #0b5cab); stroke-width: 2.4; }
+.diagram .stamp { fill: var(--surface-card, #fff); stroke: var(--ppc-saffron, #ef7f1a); stroke-width: 1.8; }
+.diagram .stamp.empty { fill: none; stroke-dasharray: 3 2; }
+.diagram .stamp.dashed { stroke: var(--accent, #0b5cab); stroke-dasharray: 3 2; }
+.diagram .acc { fill: var(--accent, #0b5cab); }
+.diagram .sa { fill: var(--ppc-saffron, #ef7f1a); }
+.diagram .gr { fill: var(--ppc-green, #1a7f4b); }
+.diagram .box { fill: #d62839; stroke: var(--text-strong, #0d1b2a); stroke-width: 1.5; }
+.diagram .slot { fill: #111; }
+.diagram .box-t { fill: #fff; font-size: 10px; }
+.diagram .coin { fill: #f6c343; stroke: var(--text-strong, #0d1b2a); stroke-width: 1.4; }
+.diagram .coin-t { fill: var(--text-strong, #0d1b2a); font-size: 13px; font-weight: 700; }
+.diagram .mark { fill: none; stroke: #3b5bdb; stroke-width: 1.5; }
+.diagram .arrow { fill: none; stroke: var(--accent, #0b5cab); stroke-width: 2.2; stroke-linecap: round; }
+.diagram .arrow.dash { stroke-dasharray: 6 5; }
+.diagram .chip { fill: var(--surface-card, #fff); stroke: var(--border-strong, #c4ccd6); stroke-width: 1.5; }
+.diagram .chip.on { fill: var(--accent, #0b5cab); stroke: var(--accent, #0b5cab); }
+.diagram .chip.on + .t { fill: #fff; }
+.diagram .field { fill: var(--surface-sunken, #eef1f5); stroke: var(--border-strong, #c4ccd6); }
+.diagram .bubble { fill: var(--surface-card, #fff); stroke: var(--text-strong, #0d1b2a); stroke-width: 1.5; }
+.diagram .t { font: 500 11px var(--font-body, system-ui, sans-serif); fill: var(--text-body, #33404f); }
+.diagram .t.b { font-weight: 700; fill: var(--text-strong, #0d1b2a); }
+.diagram .t.cap { fill: var(--text-muted, #64748b); font-size: 10px; }
+	</style>
 	<link rel="icon" type="image/png" href="data/logo.png">
 	<meta name="theme-color" content="#0a2540">
 	<meta name="color-scheme" content="light dark">
@@ -36,10 +98,19 @@
 	<body>
 <ppc-header></ppc-header>
 
+		<!-- Arrowhead shared by all the diagrams below -->
+		<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+			<defs>
+				<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+					<path d="M0 0 L10 5 L0 10 z" style="fill:var(--accent, #0b5cab)"/>
+				</marker>
+			</defs>
+		</svg>
+
 		<!-- Page content -->
 		<div class="container">
 			<h1><b>HOW TO COLLECT</b></h1>
-			<p>To collect a pictorial cancellation or a special cancellation, multiple ways are followed. Sending postal stationery to a post office which has a PPC, depending on an electronic money order (eMO), and collecting in person are the common practices.</p>
+			<p>To collect a pictorial cancellation, multiple ways are followed. Sending postal stationery to a post office which has a PPC, depending on an electronic money order (eMO), and collecting in person are the common practices.</p>
 
 			<h3><b>Self Addressed Stamped Envelope (SASE)</b></h3>
 			<p>Sending SASE is a common practice among philatelists who want to collect a PPC when they could not collect it in person. This method is most suitable for collecting PPCs. Various modes of postage (such as ordinary, registered, and speed post) are utilized for this purpose. </p>
@@ -47,29 +118,87 @@
 			<ul>
 				<li>2 envelopes (according to your requirement)</li>
 				<li>Postage stamps (all possible denominations)</li>
-				<li>Postal stationery (self-designed articles, postcards, envelopes, and inland letter cards</li>
+				<li>Postal stationery (self-designed articles, postcards, envelopes, and inland letter cards)</li>
 				<li>The usuals. (pen, glue, address stickers, etc...)</li>
 			</ul>
 			<p><b><u>Steps to Follow</u></b></p>
-			<ul>
-				<li>Write <b>your address</b> as <b>"To Address"</b> on one envelope.</li>
-				<li>Calculate the required postage at the post office based on the chosen mode of sending (e.g., Ordinary Post, Registered Post, Registered Parcel, or Speed Post).</li>
-				<li>On the second envelope, write:</li>
-				<ul>
-					<li><b>To Address</b>: The location where you plan to obtain the PPC.</li>
-					<li><b>From Address</b>: Your address.</li>
-				</ul>
-				<li>Place the postal stationery and the prepared envelope (which will be used to send back the PPC) inside the <b>second envelope</b>.</li>
-				<li>Seal the <b>second envelope</b> and post it to the <b>selected location</b>.</li>
-			</ul>
+			<ol class="steps">
+				<li>
+					<p>Write <b>your address</b> as <b>"To Address"</b> on one envelope.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Write your own address as the To address on the first envelope" xmlns="http://www.w3.org/2000/svg"><title>Write your own address as the To address on the first envelope</title><circle class="acc" cx="62" cy="52" r="10"/><path class="acc" d="M42 98 Q42 67 62 67 Q82 67 82 98 Z"/><text x="62" y="124" text-anchor="middle" class="t b">You</text><path class="arrow" d="M98 82 L150 82" marker-end="url(#ar)"/><rect class="paper" x="160" y="36" width="170" height="104" rx="4"/><rect class="stamp empty" x="304" y="43" width="18" height="22" rx="1"/><line class="lines hl" x1="224.6" y1="93.2" x2="309.6" y2="93.2"/><line class="lines hl" x1="224.6" y1="102.2" x2="309.6" y2="102.2"/><line class="lines hl" x1="224.6" y1="111.2" x2="275.6" y2="111.2"/><text x="184" y="100" text-anchor="start" class="t b">To:</text><text x="352" y="66" text-anchor="start" class="t ">Envelope 1</text><text x="352" y="80" text-anchor="start" class="t ">Your own name and</text><text x="352" y="94" text-anchor="start" class="t ">address go here</text></svg>
+				</li>
+				<li>
+					<p>Calculate the required postage at the post office based on the chosen mode of sending (e.g., Ordinary Post, Registered Post, Registered Parcel, or Speed Post).</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Weigh the envelope, choose the mode of post, and pay for stamps equal to the postage" xmlns="http://www.w3.org/2000/svg"><title>Weigh the envelope, choose the mode of post, and pay for stamps equal to the postage</title><rect class="desk" x="50" y="96" width="60" height="26" rx="4"/><path class="paper" d="M60 96 A20 20 0 0 1 100 96 Z"/><line class="ln" x1="80" y1="96" x2="88" y2="84"/><rect class="paper" x="56" y="90" width="48" height="6" rx="1"/><rect class="paper" x="60" y="62" width="40" height="27" rx="4"/><text x="80" y="142" text-anchor="middle" class="t b">1. Weigh it</text><text x="80" y="156" text-anchor="middle" class="t cap">at the counter</text><path class="arrow" d="M124 98 L164 98" marker-end="url(#ar)"/><rect class="chip" x="172" y="56" width="124" height="24" rx="12"/><text x="234" y="72" text-anchor="middle" class="t ">Ordinary</text><rect class="chip on" x="172" y="86" width="124" height="24" rx="12"/><text x="234" y="102" text-anchor="middle" class="t b">Registered</text><rect class="chip" x="172" y="116" width="124" height="24" rx="12"/><text x="234" y="132" text-anchor="middle" class="t ">Speed Post</text><text x="234" y="156" text-anchor="middle" class="t b">2. Pick the mode</text><path class="arrow" d="M312 98 L352 98" marker-end="url(#ar)"/><rect class="stamp dashed" x="360" y="60" width="28" height="34" rx="1"/><text x="374.0" y="81.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="392" y="60" width="28" height="34" rx="1"/><text x="406.0" y="81.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="424" y="60" width="28" height="34" rx="1"/><text x="438.0" y="81.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="376" y="100" width="28" height="34" rx="1"/><text x="390.0" y="121.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="408" y="100" width="28" height="34" rx="1"/><text x="422.0" y="121.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><text x="408" y="156" text-anchor="middle" class="t b">3. Stamps for the total</text></svg>
+				</li>
+				<li>
+					<p>On the second envelope, write:<ul><li><b>To Address</b>: The location where you plan to obtain the PPC.</li><li><b>From Address</b>: Your address.</li></ul></p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="On the second envelope write the post office with the PPC as To address and your address as From address" xmlns="http://www.w3.org/2000/svg"><title>On the second envelope write the post office with the PPC as To address and your address as From address</title><rect class="paper" x="150" y="26" width="190" height="112" rx="4"/><rect class="stamp" x="314" y="33" width="18" height="22" rx="1"/><line class="lines" x1="222.2" y1="87.60000000000001" x2="317.2" y2="87.60000000000001"/><line class="lines" x1="222.2" y1="96.60000000000001" x2="317.2" y2="96.60000000000001"/><line class="lines" x1="222.2" y1="105.60000000000001" x2="279.2" y2="105.60000000000001"/><line class="lines" x1="158" y1="37" x2="199.8" y2="37"/><line class="lines" x1="158" y1="45" x2="183.07999999999998" y2="45"/><text x="166" y="100" text-anchor="start" class="t b">To:</text><text x="14" y="44" text-anchor="start" class="t ">From:</text><text x="14" y="58" text-anchor="start" class="t ">your address</text><path class="arrow" d="M88 46 L150 46" marker-end="url(#ar)"/><text x="466" y="62" text-anchor="end" class="t ">To:</text><text x="466" y="76" text-anchor="end" class="t ">the post office</text><text x="466" y="90" text-anchor="end" class="t ">that has the PPC</text><path class="arrow" d="M352 82 L290 96" marker-end="url(#ar)"/><text x="245" y="158" text-anchor="middle" class="t b">Envelope 2</text></svg>
+				</li>
+				<li>
+					<p>Place the postal stationery and the prepared envelope (which will be used to send back the PPC) inside the <b>second envelope</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Put the postal stationery and the self addressed envelope inside the second envelope" xmlns="http://www.w3.org/2000/svg"><title>Put the postal stationery and the self addressed envelope inside the second envelope</title><rect class="paper" x="262" y="64" width="170" height="84" rx="4"/><path class="paper" d="M262 64 L347.0 17.799999999999997 L432 64 Z"/><path class="ln" d="M262 64 L347.0 97.6 L432 64"/><rect class="paper" x="40" y="22" width="100" height="62" rx="4"/><rect class="stamp" x="116" y="28" width="17" height="21" rx="1"/><line class="lines" x1="50" y1="57.96" x2="105.0" y2="57.96"/><line class="lines" x1="50" y1="65.96000000000001" x2="105.0" y2="65.96000000000001"/><line class="lines" x1="50" y1="73.96000000000001" x2="83.0" y2="73.96000000000001"/><text x="90" y="100" text-anchor="middle" class="t cap">Postal stationery</text><rect class="paper" x="40" y="104" width="84" height="44" rx="4"/><rect class="stamp empty" x="98" y="111" width="18" height="22" rx="1"/><line class="lines hl" x1="71.92" y1="128.2" x2="113.92" y2="128.2"/><line class="lines hl" x1="71.92" y1="137.2" x2="113.92" y2="137.2"/><line class="lines hl" x1="71.92" y1="146.2" x2="97.12" y2="146.2"/><text x="90" y="163" text-anchor="middle" class="t cap">Envelope 1</text><path class="arrow" d="M150 54 L258 92" marker-end="url(#ar)"/><path class="arrow" d="M136 128 L258 116" marker-end="url(#ar)"/><text x="470" y="40" text-anchor="end" class="t b">Both go inside</text><text x="347" y="164" text-anchor="middle" class="t b">Envelope 2</text></svg>
+				</li>
+				<li>
+					<p>Seal the <b>second envelope</b> and post it to the <b>selected location</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Seal the second envelope and post it to the selected post office" xmlns="http://www.w3.org/2000/svg"><title>Seal the second envelope and post it to the selected post office</title><rect class="paper" x="24" y="54" width="108" height="68" rx="4"/><path class="ln" d="M24 54 L78.0 93.44 L132 54"/><text x="78" y="142" text-anchor="middle" class="t b">Seal envelope 2</text><path class="arrow" d="M142 88 L186 88" marker-end="url(#ar)"/><rect class="box" x="196" y="52" width="46" height="62" rx="6"/><path class="box" d="M196 60 Q196 38 219 38 Q242 38 242 60 Z"/><rect class="slot" x="204" y="66" width="30" height="5" rx="2"/><text x="219" y="94" text-anchor="middle" class="t box-t">POST</text><rect class="paper" x="202" y="114" width="34" height="8" rx="1"/><text x="219" y="142" text-anchor="middle" class="t b">Post it</text><text x="219" y="156" text-anchor="middle" class="t cap">box or counter</text><path class="arrow dash" d="M252 88 L322 88" marker-end="url(#ar)"/><path class="paper" d="M328 62 L386.0 40 L444 62 Z"/><rect class="paper" x="336" y="62" width="100" height="56" rx="0"/><line class="ln" x1="350.0" y1="70" x2="350.0" y2="106"/><line class="ln" x1="374.0" y1="70" x2="374.0" y2="106"/><line class="ln" x1="398.0" y1="70" x2="398.0" y2="106"/><line class="ln" x1="422.0" y1="70" x2="422.0" y2="106"/><rect class="desk" x="330" y="106" width="112" height="10" rx="0"/><circle class="acc" cx="386.0" cy="54" r="4.5"/><path class="sa" d="M386 28 C381 19 376 15 376 9 A10 10 0 1 1 396 9 C396 15 391 19 386 28 Z" style="stroke:#fff;stroke-width:1.5"/><circle cx="386" cy="9" r="3.6" fill="#fff"/><text x="386" y="142" text-anchor="middle" class="t b">Post office with</text><text x="386" y="156" text-anchor="middle" class="t b">the PPC</text></svg>
+				</li>
+			</ol>
 
 			<h3><b>Electronic Money Order (eMO)</b></h3>
-			<p>Sending eMO is one of the economical ways to collect a PPC or a Special Cancellation. While PPCs are available throughout the year, Special Cancellations are available only for a day (if traveled post is preferred), and they may not be available past the date of issue.</p>
+			<p>Sending eMO is one of the economical ways to collect a PPC. PPCs are available throughout the year.</p>
 			<p>However, this method may not be entirely reliable, as the post office may not have the necessary postal stationery that you might require. It may lead to delay in getting your requirements.</p>
+			<p><b><u>Steps to Follow</u></b></p>
+			<ol class="steps">
+				<li>
+					<p>Pick the post office that has the PPC, and note its <b>name and pincode</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Pick the post office that has the PPC and note its name and pincode" xmlns="http://www.w3.org/2000/svg"><title>Pick the post office that has the PPC and note its name and pincode</title><path class="paper" d="M62 66 L130.0 44 L198 66 Z"/><rect class="paper" x="70" y="66" width="120" height="62" rx="0"/><line class="ln" x1="84.0" y1="74" x2="84.0" y2="116"/><line class="ln" x1="114.66666666666667" y1="74" x2="114.66666666666667" y2="116"/><line class="ln" x1="145.33333333333334" y1="74" x2="145.33333333333334" y2="116"/><line class="ln" x1="176.0" y1="74" x2="176.0" y2="116"/><rect class="desk" x="64" y="116" width="132" height="10" rx="0"/><circle class="acc" cx="130.0" cy="58" r="4.5"/><path class="sa" d="M130 36 C125 27 120 23 120 17 A10 10 0 1 1 140 17 C140 23 135 27 130 36 Z" style="stroke:#fff;stroke-width:1.5"/><circle cx="130" cy="17" r="3.6" fill="#fff"/><g class="mark"><circle cx="190" cy="58" r="15"/><circle cx="190" cy="58" r="9.3"/><path d="M184.75 60 l3.0 -6.0 l2.25 4.5 l2.6999999999999997 -7.5 l2.25 9.0"/></g><text x="130" y="152" text-anchor="middle" class="t b">Post office that has the PPC</text><rect class="paper" x="280" y="52" width="170" height="66" rx="6"/><text x="296" y="74" text-anchor="start" class="t b">Name:</text><line class="lines" x1="340" y1="71" x2="438" y2="71"/><text x="296" y="98" text-anchor="start" class="t b">Pincode:</text><line class="lines" x1="350" y1="95" x2="438" y2="95"/><path class="arrow" d="M214 86 L274 86" marker-end="url(#ar)"/><text x="365" y="142" text-anchor="middle" class="t cap">Note both down</text></svg>
+				</li>
+				<li>
+					<p>At your own post office, fill in an <b>eMO form</b>. Give the PPC post office as the receiver, your address as the sender, and write in the message what you would like (for example the stationery and how it should be sent back).</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Fill the eMO form at your post office with the receiver post office and your message" xmlns="http://www.w3.org/2000/svg"><title>Fill the eMO form at your post office with the receiver post office and your message</title><circle class="acc" cx="52" cy="50" r="10"/><path class="acc" d="M32 96 Q32 65 52 65 Q72 65 72 96 Z"/><text x="52" y="124" text-anchor="middle" class="t b">You</text><text x="52" y="138" text-anchor="middle" class="t cap">at your own</text><text x="52" y="150" text-anchor="middle" class="t cap">post office</text><rect class="paper" x="120" y="20" width="346" height="130" rx="6"/><text x="293" y="40" text-anchor="middle" class="t b">eMO form</text><text x="134" y="67" text-anchor="start" class="t b">Sender</text><rect class="field" x="204" y="52" width="250" height="22" rx="3"/><text x="212" y="67" text-anchor="start" class="t cap">Your name and address</text><text x="134" y="97" text-anchor="start" class="t b">Receiver</text><rect class="field" x="204" y="82" width="250" height="22" rx="3"/><text x="212" y="97" text-anchor="start" class="t cap">The PPC post office (name, pincode)</text><text x="134" y="127" text-anchor="start" class="t b">Message</text><rect class="field" x="204" y="112" width="250" height="22" rx="3"/><text x="212" y="127" text-anchor="start" class="t cap">What you want: stationery, PPC, how to post</text></svg>
+				</li>
+				<li>
+					<p>Pay the amount at the counter and <b>keep the receipt</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Pay the amount at the counter and keep the receipt" xmlns="http://www.w3.org/2000/svg"><title>Pay the amount at the counter and keep the receipt</title><circle class="acc" cx="60" cy="48" r="10"/><path class="acc" d="M40 94 Q40 63 60 63 Q80 63 80 94 Z"/><text x="60" y="122" text-anchor="middle" class="t b">You</text><circle class="coin" cx="138" cy="70" r="14"/><text x="138" y="75" text-anchor="middle" class="t coin-t">&#8377;</text><path class="arrow" d="M160 70 L214 70" marker-end="url(#ar)"/><rect class="desk" x="190" y="110" width="150" height="30" rx="3"/><line class="ln" x1="190" y1="117" x2="340" y2="117"/><circle class="sa" cx="300" cy="50" r="10"/><path class="sa" d="M280 96 Q280 65 300 65 Q320 65 320 96 Z"/><path class="sa" d="M289 45 Q300 33 311 45 L311 48 L289 48 Z" style="fill:var(--ppc-saffron);filter:brightness(.8)"/><rect class="paper" x="372" y="52" width="70" height="80" rx="3"/><line class="lines" x1="382" y1="70" x2="426" y2="70"/><line class="lines" x1="382" y1="79" x2="426" y2="79"/><line class="lines" x1="382" y1="88" x2="408.4" y2="88"/><circle class="gr" cx="407" cy="112" r="11"/><path d="M402 112 l4 4 l7 -8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="407" y="148" text-anchor="middle" class="t b">Keep the receipt</text><text x="250" y="156" text-anchor="middle" class="t b">Pay the amount</text><path class="arrow" d="M342 92 L366 92" marker-end="url(#ar)"/></svg>
+				</li>
+				<li>
+					<p>The eMO reaches the PPC post office electronically, and the staff there prepare your item with whatever stationery and stamps they have.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="The eMO reaches the PPC post office, which prepares your item" xmlns="http://www.w3.org/2000/svg"><title>The eMO reaches the PPC post office, which prepares your item</title><path class="paper" d="M16 68 L74.0 46 L132 68 Z"/><rect class="paper" x="24" y="68" width="100" height="56" rx="0"/><line class="ln" x1="38.0" y1="76" x2="38.0" y2="112"/><line class="ln" x1="62.0" y1="76" x2="62.0" y2="112"/><line class="ln" x1="86.0" y1="76" x2="86.0" y2="112"/><line class="ln" x1="110.0" y1="76" x2="110.0" y2="112"/><rect class="desk" x="18" y="112" width="112" height="10" rx="0"/><circle class="acc" cx="74.0" cy="60" r="4.5"/><text x="74" y="146" text-anchor="middle" class="t b">Your post office</text><path class="arrow dash" d="M140 86 L332 86" marker-end="url(#ar)"/><rect class="chip on" x="194" y="62" width="84" height="40" rx="8"/><text x="236" y="87" text-anchor="middle" class="t b">eMO sent</text><path class="paper" d="M338 68 L396.0 46 L454 68 Z"/><rect class="paper" x="346" y="68" width="100" height="56" rx="0"/><line class="ln" x1="360.0" y1="76" x2="360.0" y2="112"/><line class="ln" x1="384.0" y1="76" x2="384.0" y2="112"/><line class="ln" x1="408.0" y1="76" x2="408.0" y2="112"/><line class="ln" x1="432.0" y1="76" x2="432.0" y2="112"/><rect class="desk" x="340" y="112" width="112" height="10" rx="0"/><circle class="acc" cx="396.0" cy="60" r="4.5"/><g class="mark"><circle cx="432" cy="60" r="13"/><circle cx="432" cy="60" r="8.06"/><path d="M427.45 62 l2.6 -5.2 l1.95 3.9 l2.34 -6.5 l1.95 7.8"/></g><text x="396" y="146" text-anchor="middle" class="t b">PPC post office</text><text x="396" y="160" text-anchor="middle" class="t cap">prepares your item</text></svg>
+				</li>
+				<li>
+					<p>They put the PPC on your item and post it to <b>your address</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="The post office posts the item with the PPC to your address" xmlns="http://www.w3.org/2000/svg"><title>The post office posts the item with the PPC to your address</title><path class="paper" d="M16 68 L74.0 46 L132 68 Z"/><rect class="paper" x="24" y="68" width="100" height="56" rx="0"/><line class="ln" x1="38.0" y1="76" x2="38.0" y2="112"/><line class="ln" x1="62.0" y1="76" x2="62.0" y2="112"/><line class="ln" x1="86.0" y1="76" x2="86.0" y2="112"/><line class="ln" x1="110.0" y1="76" x2="110.0" y2="112"/><rect class="desk" x="18" y="112" width="112" height="10" rx="0"/><circle class="acc" cx="74.0" cy="60" r="4.5"/><g class="mark"><circle cx="110" cy="60" r="13"/><circle cx="110" cy="60" r="8.06"/><path d="M105.45 62 l2.6 -5.2 l1.95 3.9 l2.34 -6.5 l1.95 7.8"/></g><text x="74" y="146" text-anchor="middle" class="t b">PPC post office</text><path class="arrow dash" d="M138 86 L214 86" marker-end="url(#ar)"/><rect class="paper" x="224" y="56" width="104" height="64" rx="4"/><rect class="stamp" x="302" y="63" width="18" height="22" rx="1"/><line class="lines" x1="263.52" y1="91.2" x2="315.52" y2="91.2"/><line class="lines" x1="263.52" y1="100.2" x2="315.52" y2="100.2"/><line class="lines" x1="263.52" y1="109.2" x2="294.71999999999997" y2="109.2"/><line class="lines" x1="232" y1="67" x2="254.88" y2="67"/><line class="lines" x1="232" y1="75" x2="245.728" y2="75"/><g class="mark"><circle cx="250" cy="100" r="12"/><circle cx="250" cy="100" r="7.4399999999999995"/><path d="M245.8 102 l2.4000000000000004 -4.800000000000001 l1.7999999999999998 3.5999999999999996 l2.16 -6.0 l1.7999999999999998 7.199999999999999"/></g><text x="276" y="146" text-anchor="middle" class="t cap">PPC on your item,</text><text x="276" y="158" text-anchor="middle" class="t cap">posted to you</text><path class="arrow dash" d="M342 86 L378 86" marker-end="url(#ar)"/><path class="paper" d="M380 70 L423.0 44 L466 70 Z"/><rect class="paper" x="386" y="70" width="74" height="42" rx="0"/><rect class="desk" x="414.0" y="84" width="18" height="28" rx="1"/><rect class="paper" x="396" y="78" width="16" height="14" rx="1"/><text x="423" y="140" text-anchor="middle" class="t b">Your home</text></svg>
+				</li>
+			</ol>
 
 			<h3><b>Collecting in Person</b></h3>
 			<p>Collecting a PPC personally is always fun. If you are new to this hobby, the experience will be amazing. It will be a reminder of the journey you are having at that moment. On important days, there is a chance that you may get to meet people who collect these, which turns into friendships.</p>
 			<p>In this era of social media, writing to friends the old-fashioned way makes us feel special. Also, it helps us de-stress and keep ourselves sane.</p>
+			<p><b><u>Steps to Follow</u></b></p>
+			<ol class="steps">
+				<li>
+					<p>Find the post office that has the PPC (see the <b>PPC List</b>) and check when it is open.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Find the post office with the PPC and check when it is open" xmlns="http://www.w3.org/2000/svg"><title>Find the post office with the PPC and check when it is open</title><path class="paper" d="M40 66 L108.0 44 L176 66 Z"/><rect class="paper" x="48" y="66" width="120" height="62" rx="0"/><line class="ln" x1="62.0" y1="74" x2="62.0" y2="116"/><line class="ln" x1="92.66666666666667" y1="74" x2="92.66666666666667" y2="116"/><line class="ln" x1="123.33333333333334" y1="74" x2="123.33333333333334" y2="116"/><line class="ln" x1="154.0" y1="74" x2="154.0" y2="116"/><rect class="desk" x="42" y="116" width="132" height="10" rx="0"/><circle class="acc" cx="108.0" cy="58" r="4.5"/><path class="sa" d="M108 36 C103 27 98 23 98 17 A10 10 0 1 1 118 17 C118 23 113 27 108 36 Z" style="stroke:#fff;stroke-width:1.5"/><circle cx="108" cy="17" r="3.6" fill="#fff"/><circle class="paper" cx="232" cy="66" r="18"/><path class="ln" d="M232 55.2 L232 66 L241.0 71.4"/><text x="232" y="104" text-anchor="middle" class="t b">Opening hours</text><rect class="paper" x="296" y="44" width="160" height="62" rx="6"/><text x="376" y="66" text-anchor="middle" class="t b">Post office name</text><text x="376" y="84" text-anchor="middle" class="t b">and pincode</text><text x="376" y="98" text-anchor="middle" class="t cap">from the PPC list</text><path class="arrow" d="M268 70 L290 70" marker-end="url(#ar)"/><text x="108" y="152" text-anchor="middle" class="t b">Find the post office</text></svg>
+				</li>
+				<li>
+					<p>Carry the postal stationery, stamps and a pen you want to use.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Carry postal stationery, stamps and a pen with you" xmlns="http://www.w3.org/2000/svg"><title>Carry postal stationery, stamps and a pen with you</title><rect class="paper" x="30" y="30" width="110" height="68" rx="4"/><rect class="stamp" x="116" y="36" width="17" height="21" rx="1"/><line class="lines" x1="40" y1="69.44" x2="100.5" y2="69.44"/><line class="lines" x1="40" y1="77.44" x2="100.5" y2="77.44"/><line class="lines" x1="40" y1="85.44" x2="76.30000000000001" y2="85.44"/><text x="85" y="116" text-anchor="middle" class="t b">Postal stationery</text><rect class="paper" x="172" y="36" width="100" height="62" rx="4"/><rect class="stamp" x="246" y="43" width="18" height="22" rx="1"/><line class="lines" x1="210.0" y1="70.1" x2="260.0" y2="70.1"/><line class="lines" x1="210.0" y1="79.1" x2="260.0" y2="79.1"/><line class="lines" x1="210.0" y1="88.1" x2="240.0" y2="88.1"/><text x="222" y="116" text-anchor="middle" class="t b">Envelopes</text><rect class="stamp dashed" x="318" y="32" width="28" height="34" rx="1"/><text x="332.0" y="53.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="350" y="32" width="28" height="34" rx="1"/><text x="364.0" y="53.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><rect class="stamp dashed" x="334" y="70" width="28" height="34" rx="1"/><text x="348.0" y="91.0" text-anchor="middle" class="t coin-t" style="fill:var(--accent)">&#8377;</text><text x="342" y="124" text-anchor="middle" class="t b">Stamps</text><path class="ln" d="M410 112 l30 -64 l8 3 l-30 64 z"/><text x="430" y="132" text-anchor="middle" class="t b">Pen</text><text x="240" y="156" text-anchor="middle" class="t cap">Carry what you want the PPC on</text></svg>
+				</li>
+				<li>
+					<p>Go to the counter and ask for the <b>PPC cancellation</b>.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Ask the clerk at the counter for the PPC cancellation" xmlns="http://www.w3.org/2000/svg"><title>Ask the clerk at the counter for the PPC cancellation</title><circle class="acc" cx="52" cy="62" r="10"/><path class="acc" d="M32 108 Q32 77 52 77 Q72 77 72 108 Z"/><text x="52" y="134" text-anchor="middle" class="t b">You</text><rect class="bubble" x="96" y="18" width="150" height="44" rx="10"/><path class="bubble" d="M114 61 l-8 12 l20 -12 Z"/><text x="171.0" y="35" text-anchor="middle" class="t ">PPC cancellation,</text><text x="171.0" y="49" text-anchor="middle" class="t ">please</text><rect class="desk" x="210" y="116" width="190" height="30" rx="3"/><line class="ln" x1="210" y1="123" x2="400" y2="123"/><circle class="sa" cx="330" cy="62" r="10"/><path class="sa" d="M310 108 Q310 77 330 77 Q350 77 350 108 Z"/><path class="sa" d="M319 57 Q330 45 341 57 L341 60 L319 60 Z" style="fill:var(--ppc-saffron);filter:brightness(.8)"/><text x="330" y="164" text-anchor="middle" class="t b">Counter clerk</text><rect class="paper" x="236" y="66" width="64" height="44" rx="4"/><rect class="stamp" x="276" y="72" width="17" height="21" rx="1"/><line class="lines" x1="246" y1="91.52" x2="281.2" y2="91.52"/><line class="lines" x1="246" y1="99.52" x2="281.2" y2="99.52"/><line class="lines" x1="246" y1="107.52" x2="267.12" y2="107.52"/><path class="arrow" d="M150 100 L228 100" marker-end="url(#ar)"/></svg>
+				</li>
+				<li>
+					<p>The clerk presses the PPC stamp on your item.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="The clerk presses the PPC stamp on your item" xmlns="http://www.w3.org/2000/svg"><title>The clerk presses the PPC stamp on your item</title><rect class="paper" x="150" y="82" width="190" height="76" rx="4"/><rect class="stamp" x="316" y="88" width="17" height="21" rx="1"/><line class="lines" x1="160" y1="126.08" x2="264.5" y2="126.08"/><line class="lines" x1="160" y1="134.07999999999998" x2="264.5" y2="134.07999999999998"/><line class="lines" x1="160" y1="142.07999999999998" x2="222.7" y2="142.07999999999998"/><g class="mark"><circle cx="224" cy="118" r="24"/><circle cx="224" cy="118" r="14.879999999999999"/><path d="M215.6 120 l4.800000000000001 -9.600000000000001 l3.5999999999999996 7.199999999999999 l4.32 -12.0 l3.5999999999999996 14.399999999999999"/></g><rect class="box" x="209" y="4" width="30" height="34" rx="6"/><rect class="desk" x="197" y="38" width="54" height="12" rx="3"/><line class="ln" x1="224" y1="50" x2="224" y2="94"/><text x="80" y="100" text-anchor="middle" class="t ">Clerk presses the</text><text x="80" y="114" text-anchor="middle" class="t ">PPC stamp on</text><text x="80" y="128" text-anchor="middle" class="t ">your item</text></svg>
+				</li>
+				<li>
+					<p>Check that the <b>date</b> and the <b>impression</b> are clear before you leave.</p>
+					<svg class="diagram" viewBox="0 0 480 170" role="img" aria-label="Check that the date and the impression are clear before you leave" xmlns="http://www.w3.org/2000/svg"><title>Check that the date and the impression are clear before you leave</title><rect class="paper" x="60" y="28" width="190" height="98" rx="4"/><rect class="stamp" x="226" y="34" width="17" height="21" rx="1"/><line class="lines" x1="70" y1="84.84" x2="174.5" y2="84.84"/><line class="lines" x1="70" y1="92.84" x2="174.5" y2="92.84"/><line class="lines" x1="70" y1="100.84" x2="132.7" y2="100.84"/><g class="mark"><circle cx="130" cy="78" r="28"/><circle cx="130" cy="78" r="17.36"/><path d="M120.2 80 l5.6000000000000005 -11.200000000000001 l4.2 8.4 l5.04 -14.0 l4.2 16.8"/></g><circle class="gr" cx="262" cy="36" r="11"/><path d="M257 36 l4 4 l7 -8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle class="ln" cx="362" cy="82" r="30" style="fill:none"/><path class="ln" d="M384 104 L410 130"/><g class="mark"><circle cx="362" cy="82" r="18"/><circle cx="362" cy="82" r="11.16"/><path d="M355.7 84 l3.6 -7.2 l2.6999999999999997 5.3999999999999995 l3.2399999999999998 -9.0 l2.6999999999999997 10.799999999999999"/></g><text x="155" y="150" text-anchor="middle" class="t b">Check the date and that the</text><text x="155" y="164" text-anchor="middle" class="t b">impression is clear</text><path class="arrow" d="M250 80 L322 82" marker-end="url(#ar)"/></svg>
+				</li>
+			</ol>
+
 		</div>
 
 <ppc-footer></ppc-footer>

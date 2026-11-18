@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype C: Search and filter cards</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		.bar { position: sticky; top: var(--header-height, 68px); z-index: 900; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; padding: 0.7rem 0.2rem; margin-bottom: 1rem; background: var(--surface-page, #f6f7f9); border-bottom: 1px solid var(--border, #dfe4ea); }
+		.bar input[type="search"] { flex: 1 1 260px; max-width: 420px; }
+		.status { text-align: center; color: var(--text-muted, #64748b); margin: 0 0 0.8rem; }
+		.more { display: flex; justify-content: center; margin: 1.5rem 0; }
+		.stlabel { grid-column: 1 / -1; margin: 0.8rem 0 -0.2rem; font-family: var(--font-display, serif); font-size: 1.15rem; color: var(--text-strong, #0d1b2a); border-bottom: 2px solid var(--border, #dfe4ea); padding-bottom: 0.25rem; }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototype C &middot; search and filter cards &middot; <a href="index.html">all prototypes</a></div>
+	<main class="kp">
+		<h1>Know About Permanent Pictorial Cancellations</h1>
+		<p class="lead">Search by place, post office, pincode or PPC name. Filter by state and by post-office type.</p>
+		<div class="bar">
+			<input type="search" id="q" placeholder="Search PPCs, post offices or pincodes&hellip;" aria-label="Search">
+			<select id="state" class="kp-select" aria-label="State or UT"></select>
+			<select id="sort" class="kp-select" aria-label="Sort by">
+				<option value="state">Sort: state, then pincode</option>
+				<option value="pin">Sort: pincode</option>
+				<option value="new">Sort: newest first</option>
+				<option value="old">Sort: oldest first</option>
+				<option value="name">Sort: name A to Z</option>
+			</select>
+			<span id="cats"></span>
+		</div>
+		<p class="status" id="status"></p>
+		<div class="pgrid" id="grid"></div>
+		<div class="more"><button type="button" class="chip-btn" id="more">Show more</button></div>
+	</main>
+	<ppc-footer></ppc-footer>
+	<script src="data.js"></script>
+	<script src="common.js"></script>
+	<script>
+	(function () {
+		var K = window.KA, $ = K.$, PAGE = 48, shown = PAGE, on = { 1: true, 2: true, 3: true, 4: true };
+		var items = K.allItems();
+		items.forEach(function (x) { x.text = [x.e.n, x.e.o, x.e.p, x.s, x.e.d, x.e.k].join(' ').toLowerCase(); x.t = Date.parse(x.e.d) || null; x.c = K.catOf(x.e.k); });
+		$('state').innerHTML = '<option value="">All states and UTs (' + K.total + ')</option>' + K.STATES.filter(function (s) { return s.items.length; }).map(function (s) { return '<option value="' + K.esc(s.name) + '">' + K.esc(s.name) + ' (' + s.items.length + ')</option>'; }).join('');
+		$('cats').innerHTML = [1, 2, 3, 4].map(function (c) {
+			var n = items.filter(function (x) { return x.c === c; }).length;
+			return '<button type="button" class="chip-btn c' + c + '" data-c="' + c + '" aria-pressed="true" title="' + K.esc(K.CATS[c].note) + '"><span class="dot"></span>' + K.esc(K.CATS[c].label) + ' <small>' + n + '</small></button>';
+		}).join(' ');
+		$('cats').addEventListener('click', function (e) {
+			var b = e.target.closest('button'); if (!b) return;
+			var c = b.dataset.c; on[c] = !on[c]; b.setAttribute('aria-pressed', on[c]); shown = PAGE; render();
+		});
+		function sorter(mode) {
+			if (mode === 'pin') return function (a, b) { return a.e.p.localeCompare(b.e.p); };
+			if (mode === 'name') return function (a, b) { return a.e.n.localeCompare(b.e.n); };
+			if (mode === 'new' || mode === 'old') return function (a, b) {
+				if (a.t === b.t) return 0; if (a.t === null) return 1; if (b.t === null) return -1;
+				return mode === 'new' ? b.t - a.t : a.t - b.t;
+			};
+			return null; // original order: state by state, as in the blog
+		}
+		function render() {
+			var q = $('q').value.trim().toLowerCase(), st = $('state').value, mode = $('sort').value;
+			var list = items.filter(function (x) { return on[x.c] && (!st || x.s === st) && (!q || x.text.indexOf(q) >= 0); });
+			var f = sorter(mode); if (f) list = list.slice().sort(f);
+			$('status').textContent = list.length + ' of ' + K.total + ' PPC pages';
+			var out = '', last = null;
+			list.slice(0, shown).forEach(function (x) {
+				if (mode === 'state' && !st && x.s !== last) { out += '<h2 class="stlabel">' + K.esc(x.s) + '</h2>'; last = x.s; }
+				out += K.card(x.e);
+			});
+			$('grid').innerHTML = out || '<p class="empty-note" style="grid-column:1/-1">Nothing matches. Try a different word or switch some filters back on.</p>';
+			$('more').style.display = list.length > shown ? '' : 'none';
+		}
+		$('more').onclick = function () { shown += PAGE; render(); };
+		$('q').addEventListener('input', K.debounce(function () { shown = PAGE; render(); }, 150));
+		$('state').onchange = $('sort').onchange = function () { shown = PAGE; render(); };
+		render();
+	})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype B: Regions and collapsible states</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		.tools { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+		.region { margin-bottom: 1.6rem; }
+		.region > h2 { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; margin: 0 0 0.6rem; padding: 0.5rem 0.9rem; border-left: 5px solid var(--accent, #0b5cab); background: var(--surface-sunken, #eef1f5); border-radius: 0 var(--radius-md, 10px) var(--radius-md, 10px) 0; }
+		.region > h2 small { font-family: var(--font-body, sans-serif); font-size: 0.75rem; font-weight: 500; color: var(--text-muted, #64748b); }
+		details.stt { border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px); background: var(--surface-card, #fff); margin-bottom: 0.5rem; scroll-margin-top: calc(var(--header-height, 68px) + 12px); }
+		details.stt > summary { display: grid; grid-template-columns: 1fr 120px 2.6rem; gap: 0.8rem; align-items: center; padding: 0.65rem 0.9rem; cursor: pointer; list-style: none; font-weight: 600; color: var(--text-strong, #0d1b2a); }
+		details.stt > summary::-webkit-details-marker { display: none; }
+		details.stt > summary::before { content: "\25B8"; position: absolute; margin-left: -0.9rem; transition: transform .15s; }
+		details.stt[open] > summary::before { transform: rotate(90deg); }
+		details.stt > summary .ct { text-align: right; color: var(--text-muted, #64748b); font-weight: 500; }
+		details.stt.none > summary { opacity: 0.55; font-weight: 400; }
+		details.stt .in { padding: 0.2rem 0.9rem 1rem; }
+		@media (max-width: 560px) { details.stt > summary { grid-template-columns: 1fr 2.4rem; } details.stt > summary .mix { display: none; } }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototype B &middot; regions with collapsible states &middot; <a href="index.html">all prototypes</a></div>
+	<main class="kp">
+		<h1>Know About Permanent Pictorial Cancellations</h1>
+		<p class="lead">States are grouped by region. Open the ones you want; a link such as <code>#karnataka</code> opens that state directly.</p>
+		<div class="tools">
+			<button class="chip-btn" id="openAll" type="button">Expand all</button>
+			<button class="chip-btn" id="closeAll" type="button">Collapse all</button>
+		</div>
+		<div id="host"></div>
+	</main>
+	<ppc-footer></ppc-footer>
+	<script src="data.js"></script>
+	<script src="common.js"></script>
+	<script>
+	(function () {
+		var K = window.KA, $ = K.$, host = $('host');
+		function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-'); }
+		host.innerHTML = K.REGIONS.map(function (r) {
+			var sts = K.STATES.filter(function (s) { return s.region === r; });
+			if (!sts.length) return '';
+			var n = sts.reduce(function (a, s) { return a + s.items.length; }, 0);
+			return '<section class="region"><h2>' + K.esc(r) + ' <small>' + n + ' PPC pages &middot; ' + sts.length + ' state' + (sts.length > 1 ? 's' : '') + '/UT' + (sts.length > 1 ? 's' : '') + '</small></h2>' +
+				sts.map(function (s) {
+					return '<details class="stt' + (s.items.length ? '' : ' none') + '" id="' + slug(s.name) + '"><summary><span>' + K.esc(s.name) + '</span>' + (s.items.length ? K.mix(s.items) : '<span></span>') +
+						'<span class="ct">' + s.items.length + '</span></summary><div class="in"></div></details>';
+				}).join('') + '</section>';
+		}).join('');
+
+		// The cards are only built when a state is first opened, so the page stays light.
+		function fill(d) {
+			var box = d.querySelector('.in');
+			if (box.dataset.done) return;
+			box.dataset.done = '1';
+			var s = K.STATES.filter(function (x) { return slug(x.name) === d.id; })[0];
+			box.innerHTML = s.items.length ? '<div class="pgrid">' + s.items.map(K.card).join('') + '</div>' : '<p class="empty-note">No article for this state or UT yet.</p>';
+		}
+		host.addEventListener('toggle', function (e) { if (e.target.open) fill(e.target); }, true);
+		function fromHash() {
+			var d = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+			if (d && d.tagName === 'DETAILS') { d.open = true; fill(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+		}
+		window.addEventListener('hashchange', fromHash);
+		$('openAll').onclick = function () { Array.prototype.forEach.call(host.querySelectorAll('details'), function (d) { d.open = true; }); };
+		$('closeAll').onclick = function () { Array.prototype.forEach.call(host.querySelectorAll('details'), function (d) { d.open = false; }); };
+		fromHash();
+		if (!location.hash) { var first = host.querySelector('details:not(.none)'); if (first) first.open = true; }
+	})();
+	</script>
+</body>
+</html>

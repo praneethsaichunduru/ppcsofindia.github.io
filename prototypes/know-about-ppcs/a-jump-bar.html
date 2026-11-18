@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype A: Sticky state bar</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		/* The bar sticks just under the site header and follows the reader down the page */
+		.jump { position: sticky; top: var(--header-height, 68px); z-index: 900; display: flex; gap: 0.4rem; overflow-x: auto; padding: 0.6rem 0.2rem; margin: 0 0 1rem; background: var(--surface-page, #f6f7f9); border-bottom: 1px solid var(--border, #dfe4ea); scrollbar-width: thin; }
+		.jchip { flex: none; padding: 0.3rem 0.75rem; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; background: var(--surface-card, #fff); color: var(--text-body, #33404f); text-decoration: none; font-size: 0.8rem; white-space: nowrap; }
+		.jchip small { opacity: 0.7; margin-left: 0.2rem; }
+		.jchip:hover { border-color: var(--accent, #0b5cab); text-decoration: none; }
+		.jchip.active { background: var(--accent, #0b5cab); border-color: var(--accent, #0b5cab); color: #fff; }
+		.jchip.off { opacity: 0.5; border-style: dashed; }
+		.opts { display: flex; justify-content: center; margin-bottom: 0.4rem; font-size: 0.8rem; color: var(--text-muted, #64748b); }
+		.opts label { cursor: pointer; display: inline-flex; gap: 0.4rem; align-items: center; }
+		section.st { scroll-margin-top: calc(var(--header-height, 68px) + 70px); margin: 0 0 2rem; }
+		section.st h2 { display: flex; align-items: center; flex-wrap: wrap; gap: 0.6rem 1rem; margin: 0 0 0.7rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--border, #dfe4ea); }
+		section.st h2 .cnt { font-family: var(--font-body, sans-serif); font-size: 0.75rem; font-weight: 500; color: var(--text-muted, #64748b); }
+		section.st h2 .mix { width: 120px; }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototype A &middot; sticky state bar &middot; <a href="index.html">all prototypes</a></div>
+	<main class="kp">
+		<h1>Know About Permanent Pictorial Cancellations</h1>
+		<p class="lead">Pick a state from the bar. It stays with you while you scroll, and highlights the state you are reading.</p>
+		<div class="opts"><label><input type="checkbox" id="showEmpty"> Also show states with no article yet</label></div>
+		<nav class="jump" id="bar" aria-label="Jump to a state or UT"></nav>
+		<div id="sections"></div>
+	</main>
+	<ppc-footer></ppc-footer>
+	<script src="data.js"></script>
+	<script src="common.js"></script>
+	<script>
+	(function () {
+		var K = window.KA, $ = K.$, bar = $('bar'), host = $('sections'), toggle = $('showEmpty'), io;
+		function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-'); }
+		function build() {
+			var list = K.STATES.filter(function (s) { return toggle.checked || s.items.length; });
+			bar.innerHTML = list.map(function (s) {
+				return '<a class="jchip' + (s.items.length ? '' : ' off') + '" href="#' + slug(s.name) + '" data-id="' + slug(s.name) + '">' + K.esc(s.name) + ' <small>' + s.items.length + '</small></a>';
+			}).join('');
+			host.innerHTML = list.map(function (s) {
+				return '<section class="st" id="' + slug(s.name) + '"><h2>' + K.esc(s.name) + ' <span class="cnt">' + s.items.length + ' PPC page' + (s.items.length === 1 ? '' : 's') + '</span>' + (s.items.length ? K.mix(s.items) : '') + '</h2>' +
+					(s.items.length ? '<div class="pgrid">' + s.items.map(K.card).join('') + '</div>' : '<p class="empty-note">No article for this state or UT yet.</p>') + '</section>';
+			}).join('');
+			spy();
+		}
+		function spy() {
+			if (io) io.disconnect();
+			var chips = {};
+			Array.prototype.forEach.call(bar.children, function (c) { chips[c.dataset.id] = c; });
+			io = new IntersectionObserver(function (entries) {
+				entries.forEach(function (en) {
+					if (!en.isIntersecting) return;
+					Array.prototype.forEach.call(bar.children, function (c) { c.classList.remove('active'); });
+					var c = chips[en.target.id];
+					if (c) { c.classList.add('active'); bar.scrollTo({ left: c.offsetLeft - bar.clientWidth / 2 + c.clientWidth / 2, behavior: 'smooth' }); }
+				});
+			}, { rootMargin: '-140px 0px -70% 0px' });
+			Array.prototype.forEach.call(host.children, function (sec) { io.observe(sec); });
+		}
+		toggle.addEventListener('change', build);
+		build();
+	})();
+	</script>
+</body>
+</html>

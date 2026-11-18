@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../../">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype D: Sidebar explorer</title>
+	<link rel="icon" type="image/png" href="../../data/logo.png">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="../../data/theme.css">
+	<link rel="stylesheet" href="proto.css">
+	<script>try { var t = localStorage.getItem("ppc-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+	<script src="../../data/ppc-chrome.js" defer></script>
+	<style>
+		.layout { display: grid; grid-template-columns: 250px 1fr; gap: 1.5rem; align-items: start; }
+		.side { position: sticky; top: calc(var(--header-height, 68px) + 12px); max-height: calc(100vh - var(--header-height, 68px) - 30px); overflow-y: auto; padding: 0.6rem; background: var(--surface-card, #fff); border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px); }
+		.side h3 { margin: 0.7rem 0.4rem 0.2rem; font-family: var(--font-body, sans-serif); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted, #64748b); }
+		.side button.st { display: flex; justify-content: space-between; width: 100%; padding: 0.35rem 0.5rem; border: 0; border-radius: 6px; background: none; color: var(--text-body, #33404f); font: inherit; font-size: 0.85rem; text-align: left; cursor: pointer; }
+		.side button.st:hover { background: var(--surface-sunken, #eef1f5); }
+		.side button.st[aria-current="true"] { background: var(--accent, #0b5cab); color: #fff; font-weight: 600; }
+		.side button.st.off { opacity: 0.45; }
+		.side button.st small { opacity: 0.75; }
+		.phone-pick { display: none; width: 100%; margin-bottom: 0.8rem; }
+		.head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.6rem 1rem; margin-bottom: 0.8rem; }
+		.head h2 { margin: 0; }
+		.head .sum { color: var(--text-muted, #64748b); font-size: 0.8rem; }
+		.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 1rem; }
+		.filters input[type="search"] { flex: 1 1 220px; max-width: 360px; }
+		.more { display: flex; justify-content: center; margin: 1.5rem 0; }
+		.share { font-size: 0.75rem; color: var(--text-muted, #64748b); margin-top: 1.2rem; }
+		.share code { word-break: break-all; }
+		@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } .side { display: none; } .phone-pick { display: block; } }
+	</style>
+</head>
+<body>
+	<ppc-header></ppc-header>
+	<div class="proto-banner">Prototype D &middot; sidebar explorer with shareable links &middot; <a href="index.html">all prototypes</a></div>
+	<main class="kp">
+		<h1>Know About Permanent Pictorial Cancellations</h1>
+		<p class="lead">Choose a state on the left, narrow it by post-office type or a word, and share the link.</p>
+		<select id="pick" class="kp-select phone-pick" aria-label="State or UT"></select>
+		<div class="layout">
+			<nav class="side" id="side" aria-label="States and UTs"></nav>
+			<section>
+				<div class="head"><h2 id="title"></h2><span class="sum" id="sum"></span></div>
+				<div class="filters">
+					<input type="search" id="q" placeholder="Search within this selection&hellip;" aria-label="Search">
+					<span id="cats"></span>
+				</div>
+				<div class="pgrid" id="grid"></div>
+				<div class="more"><button type="button" class="chip-btn" id="more">Show more</button></div>
+				<p class="share">Link to this view: <code id="link"></code></p>
+			</section>
+		</div>
+	</main>
+	<ppc-footer></ppc-footer>
+	<script src="data.js"></script>
+	<script src="common.js"></script>
+	<script>
+	(function () {
+		var K = window.KA, $ = K.$, PAGE = 48;
+		var view = { state: '', q: '', cats: [1, 2, 3, 4], shown: PAGE };
+
+		// ---- the address bar carries the view: #state=Karnataka&rank=1,2&q=temple
+		function readHash() {
+			var p = new URLSearchParams(location.hash.slice(1));
+			view.state = p.get('state') || '';
+			if (view.state && !K.STATES.some(function (s) { return s.name === view.state; })) view.state = '';
+			view.q = p.get('q') || '';
+			var r = (p.get('rank') || '1,2,3,4').split(',').map(Number).filter(function (n) { return n >= 1 && n <= 4; });
+			view.cats = r.length ? r : [1, 2, 3, 4];
+			view.shown = PAGE;
+		}
+		function writeHash() {
+			var p = new URLSearchParams();
+			if (view.state) p.set('state', view.state);
+			if (view.q) p.set('q', view.q);
+			if (view.cats.length < 4) p.set('rank', view.cats.join(','));
+			var h = p.toString();
+			history.replaceState(null, '', h ? '#' + h : location.pathname + location.search);
+			$('link').textContent = location.href;
+		}
+
+		// ---- sidebar
+		var side = '<button class="st" data-s="" type="button"><span>All states and UTs</span><small>' + K.total + '</small></button>';
+		K.REGIONS.forEach(function (r) {
+			var sts = K.STATES.filter(function (s) { return s.region === r; });
+			if (!sts.length) return;
+			side += '<h3>' + K.esc(r) + '</h3>' + sts.map(function (s) {
+				return '<button class="st' + (s.items.length ? '' : ' off') + '" data-s="' + K.esc(s.name) + '" type="button"><span>' + K.esc(s.name) + '</span><small>' + s.items.length + '</small></button>';
+			}).join('');
+		});
+		$('side').innerHTML = side;
+		$('pick').innerHTML = '<option value="">All states and UTs (' + K.total + ')</option>' + K.STATES.map(function (s) { return '<option value="' + K.esc(s.name) + '">' + K.esc(s.name) + ' (' + s.items.length + ')</option>'; }).join('');
+		$('side').addEventListener('click', function (e) { var b = e.target.closest('button.st'); if (!b) return; view.state = b.dataset.s; view.shown = PAGE; render(); });
+		$('pick').onchange = function () { view.state = this.value; view.shown = PAGE; render(); };
+		$('q').addEventListener('input', K.debounce(function () { view.q = this.value.trim(); view.shown = PAGE; render(); }.bind($('q')), 150));
+		$('more').onclick = function () { view.shown += PAGE; render(true); };
+
+		var all = K.allItems();
+		all.forEach(function (x) { x.text = [x.e.n, x.e.o, x.e.p, x.s, x.e.d].join(' ').toLowerCase(); x.c = K.catOf(x.e.k); });
+
+		function render(keepHash) {
+			var pool = all.filter(function (x) { return !view.state || x.s === view.state; });
+			// rank buttons show counts for the current state
+			$('cats').innerHTML = [1, 2, 3, 4].map(function (c) {
+				var n = pool.filter(function (x) { return x.c === c; }).length;
+				return '<button type="button" class="chip-btn c' + c + (n ? '' : ' off') + '" data-c="' + c + '" aria-pressed="' + (view.cats.indexOf(c) >= 0) + '" title="' + K.esc(K.CATS[c].note) + '"><span class="dot"></span>' + K.esc(K.CATS[c].label) + ' <small>' + n + '</small></button>';
+			}).join(' ');
+			var q = view.q.toLowerCase();
+			var list = pool.filter(function (x) { return view.cats.indexOf(x.c) >= 0 && (!q || x.text.indexOf(q) >= 0); });
+			$('title').textContent = view.state || 'All states and UTs';
+			$('sum').textContent = list.length + ' of ' + pool.length + ' PPC pages';
+			$('grid').innerHTML = list.slice(0, view.shown).map(function (x) { return K.card(x.e); }).join('') || '<p class="empty-note" style="grid-column:1/-1">' + (pool.length ? 'Nothing matches these filters.' : 'No article for this state or UT yet.') + '</p>';
+			$('more').style.display = list.length > view.shown ? '' : 'none';
+			Array.prototype.forEach.call($('side').querySelectorAll('button.st'), function (b) { b.setAttribute('aria-current', String(b.dataset.s === view.state)); });
+			$('pick').value = view.state;
+			if ($('q').value !== view.q) $('q').value = view.q;
+			if (!keepHash) writeHash(); else $('link').textContent = location.href;
+		}
+		$('cats').addEventListener('click', function (e) {
+			var b = e.target.closest('button'); if (!b) return;
+			var c = Number(b.dataset.c), i = view.cats.indexOf(c);
+			if (i >= 0) view.cats.splice(i, 1); else view.cats.push(c);
+			if (!view.cats.length) view.cats = [1, 2, 3, 4];
+			view.shown = PAGE; render();
+		});
+		window.addEventListener('hashchange', function () { readHash(); render(true); });
+		readHash(); render();
+	})();
+	</script>
+</body>
+</html>
