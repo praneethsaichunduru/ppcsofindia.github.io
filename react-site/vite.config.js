@@ -81,9 +81,9 @@ function renameHtmlHtml(dir) {
   walk(dir);
 }
 
-// The pictures and a few files sit in this same folder; they are served (and copied into the
-// build) at exactly the same addresses as before, so nothing has to be duplicated.
-const repo = import.meta.dirname;
+// The repository keeps the pictures and a few files at its top level; they are served (and copied into the
+// build) at exactly the same addresses as before, so nothing has to be duplicated in this folder.
+const repo = path.resolve(import.meta.dirname, '..');
 const copy = (src, dest) => ({ src: path.posix.join(repo.replace(/\\/g, '/'), src), dest });
 
 export default defineConfig({
