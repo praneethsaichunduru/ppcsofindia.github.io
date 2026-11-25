@@ -1,0 +1,239 @@
+.hero,
+.features,
+.contact {
+  margin-bottom: 2rem;
+}
+.search-container,
+.filter-container,
+.count-container {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.clear-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filter-container label {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.filter-container label input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+.filter-container .assam input[type='checkbox'] + span {
+  color: limegreen;
+}
+.filter-container .bihar input[type='checkbox'] + span {
+  color: indigo;
+}
+.filter-container .chhattisgarh input[type='checkbox'] + span {
+  color: brown;
+}
+.filter-container .himachalpradesh input[type='checkbox'] + span {
+  color: crimson;
+}
+.filter-container .karnataka input[type='checkbox'] + span {
+  color: red;
+}
+.filter-container .maharashtra input[type='checkbox'] + span {
+  color: orange;
+}
+.filter-container .odisha input[type='checkbox'] + span {
+  color: green;
+}
+.filter-container .rajasthan input[type='checkbox'] + span {
+  color: magenta;
+}
+.filter-container .tamilnadu input[type='checkbox'] + span {
+  color: blue;
+}
+.filter-container .telangana input[type='checkbox'] + span {
+  color: olive;
+}
+.filter-container .westbengal input[type='checkbox'] + span {
+  color: #de3163;
+}
+.assam td {
+  color: limegreen;
+}
+.bihar td {
+  color: indigo;
+}
+.chhattisgarh td {
+  color: brown;
+}
+.himachalpradesh td {
+  color: crimson;
+}
+.karnataka td {
+  color: red;
+}
+.maharashtra td {
+  color: orange;
+}
+.odisha td {
+  color: green;
+}
+.rajasthan td {
+  color: magenta;
+}
+.tamilnadu td {
+  color: blue;
+}
+.telangana td {
+  color: olive;
+}
+.westbengal td {
+  color: #de3163;
+}
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  td:before {
+    content: attr(data-label);
+    flex: 1;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .assam td {
+    color: limegreen;
+  }
+
+  .bihar td {
+    color: indigo;
+  }
+
+  .chhattisgarh td {
+    color: brown;
+  }
+
+  .himachalpradesh td {
+    color: crimson;
+  }
+
+  .karnataka td {
+    color: red;
+  }
+
+  .maharashtra td {
+    color: orange;
+  }
+
+  .odisha td {
+    color: green;
+  }
+
+  .rajasthan td {
+    color: magenta;
+  }
+
+  .tamilnadu td {
+    color: blue;
+  }
+
+  .telangana td {
+    color: olive;
+  }
+
+  .westbengal td {
+    color: #de3163;
+  }
+}
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  td:before {
+    content: attr(data-label);
+    flex: 1;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* Exclude the .line-partition class from the responsive rules */
+  .line-partition td:before {
+    content: none;
+  }
+}
+/* Ensure no alternate row highlighting */
+table tbody tr {
+  background-color: transparent !important; /* Remove any existing alternate row styles */
+}
+/* Uniform hover effect for all rows */
+table tbody tr:hover {
+  background-color: #f5f5f5 !important; /* Choose your desired highlight color */
+}
+/* Ensure the separator line does not get highlighted */
+table tbody tr.exclude-hover:hover {
+  background-color: transparent !important;
+}

@@ -1,0 +1,130 @@
+{
+  "docTitle": "Mata Kaushalya Mandir",
+  "title": "Mata Kaushalya Mandir",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/MataKaushalyaMandir.jpg",
+          "alt": "Mata Kaushalya Mandir",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/492101-MataKaushalyaMandir-ChandBhuriBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Kaushalya Temple, located in Chandkhuri village near Raipur, Chhattisgarh, holds the unique distinction of being the only temple in the world dedicated to Mata Kaushalya, the mother of Lord Rama. Situated approximately 27 kilometers from Raipur, the temple is nestled at the center of a serene lake, accessible via a bridge known as Hanuman Pul, adorned with a statue of Lord Hanuman."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Believed to have been originally constructed in the 8th century, the temple has undergone several renovations over the centuries. A significant restoration took place in 1973, and more recently, in October 2021, the temple was rejuvenated as part of the 'Ram Van Gaman Path' project initiated by the Chhattisgarh government. This project aims to develop and connect sites associated with Lord Rama's exile journey."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple's architecture reflects its mythological significance, with plans for beautification including the construction of ghats and a circumambulation path around the pond, enhancing the spiritual ambiance for devotees. The idol within the temple portrays Mata Kaushalya holding young Lord Rama in her lap, symbolizing maternal devotion."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Local traditions further enrich the temple's significance. It is believed that after Lord Rama's return from exile and subsequent coronation, his mothers—Kaushalya, Sumitra, and Kaikeyi—retreated to Chandkhuri for penance. Additionally, the area is associated with Sushen Vaidya, the physician who revived Lakshmana during the Lanka war, and who is said to have spent his final days in Chandkhuri."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Chandkhuri is traditionally recognized as the birthplace of Mata Kaushalya, thereby establishing Chhattisgarh as the maternal home of Lord Rama. This connection is further emphasized by the 'Ram Van Gaman Path' project, which traces the path of Lord Rama's exile through various sites in the state, highlighting Chhattisgarh's deep-rooted association with the Ramayana."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple complex has been developed to accommodate pilgrims and tourists, with facilities such as parking and decorative lighting enhancing the visitor experience. The tranquil setting, combined with its unique religious significance, makes the Kaushalya Temple a prominent spiritual destination in Chhattisgarh."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/chand-bhuri-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 22, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chand Bhuri BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Raipur (dt.), Chhattisgarh - 492101."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "माता कौशल्या मंदिर"
+}

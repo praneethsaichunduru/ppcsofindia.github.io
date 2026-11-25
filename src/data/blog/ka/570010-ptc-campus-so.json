@@ -1,0 +1,103 @@
+{
+  "docTitle": "Postal Training Centre Mysuru",
+  "title": "Postal Training Centre Mysuru",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/PostalTrainingCentreMysuru.jpg",
+          "alt": "Postal Training Centre Mysuru",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/570010-PostalTrainingCentreMysuru-PTCCampusSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Postal Training Centre at Mysuru occupies Karanji Mansion, a building constructed between 1902 and 1914 that originally belonged to the royal family of Mysore. The Department of Posts acquired the property on 20 August 1964, and the centre began functioning there as a dedicated training institution on 20 April 1965. This royal provenance distinguishes the Mysuru centre from many of its counterparts elsewhere in the country, since few of India's postal training establishments are housed in former palace buildings, giving the institution a physical setting that is itself of local heritage interest alongside its administrative function."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As one of the Department of Posts' network of regional training institutions, the Mysuru centre belongs to a small group of six Postal Training Centres nationally, the others being located at Saharanpur, Vadodara, Guwahati, Madurai and Darbhanga. Together these centres train roughly 2,000 postal personnel each year in operational, technical and administrative disciplines, ranging from mail sorting and delivery procedures to postal savings schemes, philately, financial services and, increasingly, digital and e-commerce logistics as India Post modernises. The Mysuru centre's particular significance lies in serving Karnataka and the surrounding region while also carrying a distinct international training mandate."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The campus spans approximately 31.5 acres and includes hostel accommodation, playgrounds and other facilities to support resident trainees drawn from across the region. Beyond its domestic teaching role, the centre has for some years conducted training programmes for postal employees from several African countries and from Thailand, reflecting a capacity-building relationship that extends past India's own postal workforce. In a related technical contribution, software developed at the Mysuru PTC has been adopted by the postal administrations of Nepal, the Maldives and Bhutan to help modernise their own operations, a notable instance of a regional training centre's output being put to direct use by neighbouring national postal systems."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A significant milestone in the centre's history came on 20 April 2015, when it marked its Golden Jubilee, fifty years after it first began operating from Karanji Mansion in 1965. The anniversary was treated as an occasion to review the centre's role within the wider Department of Posts training apparatus and its contribution to maintaining consistent service standards across one of the world's largest postal networks. The Karanji Mansion campus continues to function as a working training institution rather than a preserved monument, with its historic structure adapted to classrooms, administrative offices and residential blocks for trainees passing through its programmes."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Postal Training Centre, Mysuru, remains administered as part of the Department of Posts' training wing, continuing to run courses for recruits and serving staff alongside its periodic international batches. Its dual identity, a former Mysore royal residence repurposed for civil service instruction, and a functioning node in a six-centre national training system, sets it apart from post offices defined chiefly by a single monument or figure. The PTC Campus SO post office that serves the premises operates as the administrative postal link for a campus that trains a meaningful share of the personnel who keep Karnataka's postal network running."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 25, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "PTC Campus SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mysuru (dt.), Karnataka - 570010."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಅಂಚೆ ತರಬೇತಿ ಕೇಂದ್ರ ಮೈಸೂರು"
+}

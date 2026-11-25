@@ -1,0 +1,140 @@
+{
+  "docTitle": "Golconda Fort",
+  "title": "Golconda Fort",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/GolcondaFort.jpg",
+          "alt": "Golconda Fort",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/500008-GolcondaFort-GolcondaSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Golconda Fort, located approximately 11 kilometers west of Hyderabad, India, stands as a monumental testament to the region's rich history and architectural prowess. Originally constructed in 1143 by the Kakatiya dynasty as a modest mud fort known as \"Golla Konda\" or \"Shepherd's Hill,\" it was strategically positioned on a 120-meter-high granite hill to serve as a defensive stronghold. Over the centuries, the fort underwent significant expansions and fortifications under various dynasties, evolving into the sprawling complex seen today."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The transformation of Golconda Fort began earnestly under the Qutb Shahi dynasty, which ruled from 1518 to 1687. Sultan Quli Qutb-ul-Mulk, the founder of the dynasty, declared independence from the Bahmani Sultanate and established Golconda as his capital. Over the next 62 years, the first three Qutb Shahi sultans expanded the original mud fort into a massive granite fortification encompassing approximately 5 kilometers in circumference. The fort's prominence continued until 1590 when the capital was shifted to Hyderabad. In 1687, after a prolonged nine-month siege, Mughal emperor Aurangzeb successfully breached the fort, marking the end of the Qutb Shahi dynasty's rule."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, Golconda Fort is a marvel that seamlessly integrates Persian, Islamic, and Hindu styles. The fort comprises four distinct forts with a 10-kilometer outer wall featuring 87 semicircular bastions, some still mounted with cannons. It houses eight gateways, the most notable being the Fateh Darwaza (Victory Gate), adorned with giant iron spikes to deter elephants. An acoustic wonder, a clap at a specific point near the Fateh Darwaza can be heard clearly at the Bala Hisar pavilion, the highest point of the fort nearly a kilometer away, serving as an early warning system during attacks."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Within its expansive confines, the fort encompasses royal apartments, parade grounds, temples, mosques, and halls. The Bala Hissar Gate, the main entrance on the eastern side, showcases intricate carvings of peacocks and lions, indicative of the fort's Hindu origins. The Jagadamba temple, dating back to the early Kakatiya period, stands adjacent to the Ibrahim mosque and the king's palace, attracting numerous devotees during the Bonalu festival. Additionally, the fort's advanced water supply system, featuring aqueducts and clay pipes, ensured a consistent water flow from distant reservoirs, highlighting the engineering ingenuity of its time."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Golconda Fort is also renowned for its association with some of the world's most famous diamonds, including the Koh-i-Noor, the Hope Diamond, and the Darya-i-Noor, believed to have been stored within its vaults. Today, the fort stands as a significant historical site, offering visitors a glimpse into its storied past through its impressive ruins and the captivating sound and light show that narrates its history. The fusion of architectural brilliance, historical significance, and legendary tales makes Golconda Fort an enduring symbol of Hyderabad's rich cultural heritage."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2002-12-31-forts-of-andhra-pradesh-golconda-fort.jpg",
+          "alt": "Forts of Andhra Pradesh: Golconda Fort",
+          "cls": "horizontal",
+          "credit": "Forts of Andhra Pradesh: Golconda Fort, 31.12.2002"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1990-12-24-cities-of-india-hyderabad.jpg",
+          "alt": "Cities of India: Hyderabad",
+          "cls": "horizontal",
+          "credit": "Cities of India: Hyderabad, 24.12.1990"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "September 27, 2021"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Golconda SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Hyderabad (dt.), Telangana - 500008."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "గోల్కొండ కోట"
+}

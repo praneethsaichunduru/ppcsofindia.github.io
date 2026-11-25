@@ -1,0 +1,70 @@
+/* ==========================================================================
+   blog/blog-styles.css — blog-specific layer.
+   --------------------------------------------------------------------------
+   The shared design system lives in data/theme.css and is imported here so a
+   blog page linking only this file still gets the full interface. Typography,
+   tables, galleries, share button and watermark are all defined there; what
+   remains below is genuinely blog-only.
+   ========================================================================== */
+
+/* ---- Blog article shell -------------------------------------------------- */
+
+/* Blog entries lead with one or two headings (English + regional script).
+   Tighten the pair so they read as a single title block. */
+.container > h1 + h1 {
+  margin-top: calc(-1 * var(--space-4));
+  font-size: var(--step-2);
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0;
+}
+
+/* Body copy on article pages gets a comfortable measure. */
+.container > p {
+  max-width: var(--prose-max);
+  margin-inline: auto;
+}
+
+/* Section headings inside an article */
+.container > h4 {
+  max-width: var(--prose-max);
+  margin-inline: auto;
+  padding-top: var(--space-4);
+  font-size: var(--step-1);
+  text-align: left;
+}
+
+/* ---- Blog index (blog-main.html) ---------------------------------------- */
+
+/* The index lists states as blocks of links; give them card treatment. */
+.blog-index-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  margin-block: var(--space-6);
+}
+
+.blog-index-grid a {
+  display: block;
+  padding: var(--space-4);
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  color: var(--text-body);
+  font-size: var(--step--1);
+  text-align: left;
+  transition:
+    transform 0.18s var(--ease),
+    box-shadow 0.18s var(--ease),
+    border-color 0.18s var(--ease),
+    color 0.18s var(--ease);
+}
+
+.blog-index-grid a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+  color: var(--text-strong);
+  text-decoration: none;
+}

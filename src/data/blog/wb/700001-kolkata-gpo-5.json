@@ -1,0 +1,103 @@
+{
+  "docTitle": "Durga Puja",
+  "title": "Durga Puja",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/DurgaPuja.jpg",
+          "alt": "Durga Puja",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/700001-DurgaPuja-KolkataGPO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Durga Puja marks the goddess Durga's mythological triumph over the shape-shifting buffalo demon Mahishasura, a victory of righteous power (shakti) over tyranny that is narrated in the Devi Mahatmya and re-enacted symbolically each year through the invocation, or bodhan, of the goddess into a clay image. The festival is timed to Sharadiya Navaratri, the autumn nine-nights of the goddess, culminating in the ten-day Durgotsav; in Bengal this period also absorbs the agrarian welcome of the harvest and the homecoming of a married daughter, since Durga is envisioned returning to her parental home with her four children, Lakshmi, Saraswati, Ganesha and Kartikeya, before departing again on Dashami."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As Bengal's principal socio-religious festival, Durga Puja functions simultaneously as devotional ritual, civic spectacle and identity marker for the Bengali community both in India and abroad. It is organised today chiefly as 'sarbojanin' or community puja, a model historians trace to the Sanatan Dharmotsahini Sabha's 1910 puja at Balaram Basu Ghat Road, which broke from the earlier practice of worship confined to the courtyards of zamindar households such as the Sabarna Roy Choudhury and Shobhabazar Raj families. In December 2021, UNESCO inscribed 'Durga Puja in Kolkata' on the Representative List of the Intangible Cultural Heritage of Humanity, citing it as a public performance of art, religion and community that transforms the city into an immersive gallery each autumn."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The idols themselves are the product of a specialised craft tradition centred in Kumartuli, a potters' quarter on the banks of the Hooghly in north Kolkata settled by clay-modellers originally from Nadia district and, after Partition, from East Bengal. Artisan families there shape straw-and-bamboo armatures layered with river clay (ektara mati) to build Durga's image flanked by her children and the slain Mahishasura, a process that begins months in advance and traditionally includes a ritual portion of soil collected from a threshold considered sacred. Across the city, more than four thousand pandals are erected each year as temporary bamboo-and-fabric structures, with organising committees competing to stage elaborate theme-based installations, drawing on contemporary art, architecture and social commentary rather than conventional temple imagery alone."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Among individual pujas, the Baghbazar Sarbojanin Durgotsav is widely regarded as the oldest surviving community celebration of its kind in Kolkata, having grown directly out of the shift away from private zamindari worship in the early twentieth century, while pujas associated with historic houses such as Shobhabazar Rajbari continue to preserve older ritual forms alongside the newer community format. The ten-day observance climaxes in Vijaya Dashami, when idols are carried in immersion processions to the Hooghly and other water bodies, accompanied by sindoor khela, the ritual exchange of vermillion among married women, marking both the goddess's symbolic departure and the formal close of the festival."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Kolkata's puja season now draws an estimated crore-plus visits across the city over the festival fortnight and has been studied by industry bodies for its economic footprint, with pandal construction, idol-making, lighting, textiles and tourism together generating substantial seasonal employment and revenue for the state. The West Bengal government has in recent years extended support to puja committees through grants and infrastructure assistance, formalising the festival's role as both cultural event and economic driver. Kumartuli's artisan families, though central to the spectacle, continue to work on comparatively thin margins even as the pandals around their creations grow more elaborate each year, a contrast that remains part of the festival's ongoing story in the city."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 11, 2023"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kolkata GPO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kolkata (dt.), West Bengal - 700001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "দুর্গা পূজা"
+}

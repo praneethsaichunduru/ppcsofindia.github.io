@@ -1,0 +1,136 @@
+{
+  "docTitle": "Greater Flamingo",
+  "title": "Greater Flamingo",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/GreaterFlamingo.jpg",
+          "alt": "Greater Flamingo",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/400708-GreaterFlamingo-AiroliNodeSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Greater Flamingo (*Phoenicopterus roseus*) is the largest and most widespread species of the flamingo family, inhabiting regions across Africa, southern Asia, the Middle East, and southern Europe. These elegant birds are renowned for their striking pink plumage, elongated necks, and stilt-like legs, making them a captivating sight for bird enthusiasts and casual observers alike. One of the notable locations where these flamingos congregate is the Thane Creek area near Airoli, Mumbai, which has become a significant habitat for these migratory birds."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Since 1994, Thane Creek has been attracting flamingos in large numbers. By November each year, over 30,000 flamingos, along with their chicks, descend upon the mudflats and bordering mangroves of the creek. They stay until May, after which most migrate to the Bhuj area of Gujarat for breeding, leaving behind a small resident population. The primary reason for this migration is the availability of abundant food sources in the form of algae and plankton, which thrive in the nutrient-rich mudflats of Thane Creek. The shallow waters and extensive intertidal zones provide an ideal foraging ground for these birds during the winter months."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Recognizing the ecological importance of Thane Creek as a habitat for flamingos and other avian species, the Maharashtra government declared a 1,690-hectare area along the creek as the \"Thane Creek Flamingo Sanctuary\" in August 2015. This sanctuary encompasses 896 hectares of mangroves and 794 hectares of adjacent water bodies, located on the western bank of Thane Creek between the Airoli and Vashi bridges connecting Mumbai and Navi Mumbai. The establishment of this sanctuary marked Maharashtra's second marine sanctuary, underscoring the state's commitment to preserving its unique coastal ecosystems."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The creation of the Thane Creek Flamingo Sanctuary serves multiple conservation purposes. It provides legal protection to the habitat, ensuring that activities detrimental to the ecosystem, such as hunting, discharge of effluents, and dumping of sewage, are strictly prohibited. The sanctuary is managed by the Mumbai Mangrove Conservation Unit under the Mangrove Cell, which is responsible for monitoring the ecosystem and implementing conservation measures. Additionally, the sanctuary supports a diverse array of avian species, with over 200 species reported, including globally threatened species like the Greater Spotted Eagle."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In recent years, the Thane Creek Flamingo Sanctuary has also become a focal point for eco-tourism and environmental education. The Bombay Natural History Society (BNHS) organizes an annual Flamingo Festival at Sewri, attracting thousands of visitors who come to witness the spectacular congregation of flamingos and other waders. Such initiatives not only raise awareness about the importance of wetland conservation but also foster a sense of community involvement in preserving these vital ecosystems. The sanctuary's proximity to urban areas like Airoli and Vashi makes it accessible for educational tours, bird-watching activities, and research opportunities, thereby promoting a harmonious coexistence between urban development and wildlife conservation."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/thematics/thematic-400708-airoli-node-inaugural-ppc-official-card-front.jpg",
+          "alt": "First Day PPC on official card. Front side.",
+          "cls": "horizontal",
+          "credit": "First Day PPC on official card. Front side."
+        },
+        {
+          "src": "/blog/blog-related-pictures/thematics/thematic-400708-airoli-node-inaugural-ppc-official-card-back.jpg",
+          "alt": "First Day PPC on official card. Back side.",
+          "cls": "horizontal",
+          "credit": "First Day PPC on official card. Back side."
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/exphil/400708-airoli-node-so-30.08.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 8, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Airoli Node SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Thane (dt.), Maharashtra - 400708."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "रोहित"
+}

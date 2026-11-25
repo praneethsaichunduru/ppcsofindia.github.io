@@ -1,0 +1,130 @@
+{
+  "docTitle": "Shore Temple",
+  "title": "Shore Temple",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ShoreTemple.jpg",
+          "alt": "Shore Temple",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/603104-ShoreTemple-MamallapuramSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Shore Temple, located in Mamallapuram (also known as Mahabalipuram), Tamil Nadu, India, is a testament to the architectural prowess of the Pallava dynasty during the 8th century CE. Constructed under the patronage of King Narasimhavarman II, also known as Rajasimha, who reigned from 700 to 728 CE, the temple complex showcases the transition from rock-cut to structural temple architecture in South India."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple complex comprises three shrines: two dedicated to the Hindu god Shiva and one to Vishnu. The two Shiva shrines face east and west respectively, while the Vishnu shrine faces west and houses a reclining form of the deity. This arrangement is unique, as it incorporates both major deities of Hinduism within a single complex."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Shore Temple is often referred to as one of the \"Seven Pagodas,\" a term popularized by European merchants and sailors who used the temple's towering structure as a navigational landmark. The name \"Seven Pagodas\" suggests the existence of seven such temples along the coast, six of which are believed to have been submerged over time. This theory gained traction when the 2004 Indian Ocean tsunami temporarily revealed submerged structures that appeared to be remnants of ancient temples, supporting the legend of the Seven Pagodas."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the centuries, the Shore Temple has faced significant erosion and damage due to its proximity to the sea. The granite stones have been weathered by salt-laden winds and constant exposure to moisture, leading to the deterioration of intricate carvings and structural elements. The 2004 tsunami further impacted the site, damaging the foundation of the bali pitham (sacrificial altar), the steps leading to the boat jetty, and a small shrine with a Varaha (boar) sculpture at the temple's base. However, the temple's foundation, built on hard granite rock, prevented more extensive destruction."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In response to these challenges, restoration and conservation efforts have been undertaken by the Archaeological Survey of India (ASI) and other organizations. Post-tsunami restoration focused on stabilizing the damaged structures, reinforcing the foundations, and implementing protective measures to shield the temple from future natural disasters. Additionally, the construction of groynes (protective stone walls) has helped mitigate the impact of strong waves and prevent further erosion of the shoreline."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Shore Temple stands as a UNESCO World Heritage site, attracting visitors from around the globe who come to admire its historical significance, architectural beauty, and the enduring legacy of the Pallava dynasty."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1983-03-14-commonwealth-day-mahabalipuram.jpg",
+          "alt": "",
+          "cls": "horizontal",
+          "credit": "Commonwealth Day: Mahabalipuram, 14.03.1983"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 1, 1965"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mamallapuram SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chengalpattu (dt.), Tamil Nadu - 603104."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "கடற்கரைக் கோவில்"
+}

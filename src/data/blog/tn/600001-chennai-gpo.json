@@ -1,0 +1,168 @@
+{
+  "docTitle": "Chennai General Post Office",
+  "title": "Chennai General Post Office",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ChennaiGeneralPostOffice.jpg",
+          "alt": "Chennai General Post Office",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/600001-ChennaiGeneralPostOffice-ChennaiGPO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Chennai General Post Office (GPO), located on Rajaji Salai at Parry's Corner, stands as a testament to the city's rich colonial heritage. Designed by the British architect Robert Chisholm, the building was inaugurated on April 26, 1884, after a decade of construction that commenced in 1874. The project was completed at a cost of ₹6.8 lakh. The GPO was established to centralize and enhance postal services in the region, reflecting the administrative advancements of that era."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, the Chennai GPO is a magnificent example of the Indo-Saracenic style, a fusion of Indian and Gothic elements. The three-storied structure spans 352 feet in length and 162 feet in width, encompassing a floor area of approximately 55,000 square feet. Its most striking features are the 125-foot-tall twin towers that once boasted Kerala-style caps, which were unfortunately lost to a mid-20th-century storm. The building's design includes a high-ceilinged central hall, with the ground floor originally housing stores and service areas, the first floor designated for offices, and the second floor providing accommodation for officers."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the years, the building has faced challenges, including a significant fire in October 2000 that caused extensive damage to about 15,000 square feet of its area. Following this, a major restoration project was undertaken, culminating in the reopening of the first two floors in November 2005. In 2011, a portion of the roof collapsed due to heavy monsoon rains, highlighting the ongoing need for maintenance of this historic structure."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Recognizing its historical and architectural significance, the Department of Posts has initiated further restoration efforts. In November 2023, a Memorandum of Understanding was signed with the Indian National Trust for Art and Cultural Heritage (INTACH) to restore the 150-year-old building. INTACH's expertise in renovating heritage structures is expected to play a crucial role in preserving the GPO's legacy for future generations."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1986-10-09-200-years-of-madras-gpo.jpg",
+          "alt": "200 Years of Madras GPO",
+          "cls": "horizontal",
+          "credit": "200 Years of Madras GPO, 09.10.1986"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/chennai-anthony-o-j.jpg",
+          "alt": "Travelled Inaugural Day private cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day private cover"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/chennai-gpo-ppc-invite-tamil.jpg",
+          "alt": "Invite in Tamil",
+          "cls": "verticalbig",
+          "credit": "Invite in Tamil"
+        },
+        {
+          "src": "/blog/blog-related-pictures/others/chennai-gpo-ppc-invite-english.jpg",
+          "alt": "Invite in English",
+          "cls": "verticalbig",
+          "credit": "Invite in English"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/the-hindu-06.02.25-page-1.jpg",
+          "alt": "The Hindu Page 1, 07.02.2025",
+          "cls": "horizontalbig",
+          "credit": "The Hindu Newspaper on February 7, 2025"
+        },
+        {
+          "src": "/blog/blog-related-pictures/others/the-hindu-06.02.25-page-2.jpg",
+          "alt": "The Hindu Page 2, 07.02.2025",
+          "cls": "horizontalbig",
+          "credit": "The Hindu Newspaper featuring PPC Release, along with PPC on Day-2"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "February 6, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chennai GPO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chennai (dt.), Tamil Nadu - 600001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "சென்னை பொது அஞ்சல் அலுவலகம்"
+}

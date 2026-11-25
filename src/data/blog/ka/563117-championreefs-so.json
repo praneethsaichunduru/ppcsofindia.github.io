@@ -1,0 +1,126 @@
+{
+  "docTitle": "Gold Miner",
+  "title": "Gold Miner",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/GoldMiner.jpg",
+          "alt": "Gold Miner",
+          "cls": "portrait"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/563117-GoldMiner-ChampionreefsSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Kolar Gold Fields (KGF), located in Karnataka, was one of India’s most significant gold mining operations, with a history dating back to the British colonial era. Large-scale mining began in the late 19th century when John Taylor ",
+        "&",
+        " Sons, a British mining firm, was granted mining rights. Under British administration, KGF developed into a major gold-producing center, contributing significantly to the colonial economy. The mines were equipped with cutting-edge technology of the time, including deep-shaft mining and electric power, making KGF one of the earliest towns in India to receive electricity. The wealth extracted from KGF was largely exported to Britain, while local workers faced harsh conditions in the deep underground mines."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "With the expansion of mining, Kolar town saw the arrival of a diverse workforce, including Tamil, Telugu, and Kannada-speaking laborers, Anglo-Indian technicians, and British officials. The British and Anglo-Indian communities resided in well-planned colonies with schools, churches, and clubs, while Indian laborers lived in more modest settlements. KGF became a melting pot of cultures, with European architectural influences seen in some of the older structures. The township was well-developed compared to other towns in the region, boasting amenities such as hospitals, recreational clubs, and even a golf course. The unique mix of Indian and colonial lifestyles made KGF a distinct place during its peak mining years."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "During its heyday, KGF outshone many nearby towns in terms of infrastructure and economic prosperity. While neighboring towns like Bangarapet and Malur remained primarily agrarian, KGF thrived due to its industrial activity and influx of skilled workers. The mines provided employment to thousands, fueling local businesses and boosting the economy. The electrification of KGF in the early 1900s placed it ahead of even some major cities in India. However, its growth remained largely tied to the fortunes of the gold mines, with little diversification in industry. As a result, while cities like Bengaluru expanded into commercial and technological hubs, KGF remained a mining-dependent settlement."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "By the late 20th century, declining gold yields and increasing operational costs made mining unsustainable. In 2001, the mines were officially closed by Bharat Gold Mines Limited (BGML), bringing an end to over a century of mining. The closure resulted in mass unemployment, forcing many families to migrate in search of work. With no alternative industries to support the local economy, the town saw a rapid decline. Once-thriving residential colonies were abandoned, and many historic buildings fell into neglect. The railway station and other public spaces that once bustled with activity became eerily quiet, marking the end of KGF’s golden era."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, KGF is a shadow of its former self, struggling with economic stagnation and infrastructure decay. While some efforts have been made to revive the town through tourism and heritage projects, progress has been slow. The deep mine shafts remain closed, and many workers' families still face economic hardships. KGF has become known more for its historical legacy than as a center of activity. Despite its decline, the town remains a place of nostalgic significance for former residents and history enthusiasts who recognize its pivotal role in India's mining history."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1980-12-20-gold-mining.jpg",
+          "alt": "Gold Mining",
+          "cls": "vertical",
+          "credit": "Gold Mining, 20.12.1980"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 16, 2018"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Championreefs SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kolar (dt.), Karnataka - 563117."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಚಿನ್ನದ ಗಣಿಗಾರ"
+}

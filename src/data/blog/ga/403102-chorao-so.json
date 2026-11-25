@@ -1,0 +1,158 @@
+{
+  "docTitle": "Dr. Salim Ali Bird Sanctuary",
+  "title": "Dr. Salim Ali Bird Sanctuary",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/DrSalimAliBirdSanctuary.jpg",
+          "alt": "Dr. Salim Ali Bird Sanctuary",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403102-DrSalimAliBirdSanctuary-ChoraoSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Dr. Salim Ali Bird Sanctuary, located on Chorao Island in Goa, is one of India’s most significant bird sanctuaries. Named after the renowned ornithologist Dr. Salim Ali, the sanctuary was established in 1988 to protect the diverse avian species and the unique mangrove ecosystem of the region. Spanning approximately 1.8 square kilometers, it is situated along the Mandovi River and provides a critical habitat for resident and migratory birds, making it a paradise for birdwatchers and nature enthusiasts."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The sanctuary is home to a rich variety of bird species, including egrets, herons, kingfishers, sandpipers, and cormorants. During the winter months, migratory birds such as pintails and coots arrive, adding to the sanctuary's biodiversity. Apart from birds, the region also shelters various wildlife species like flying foxes, jackals, crocodiles, and mudskippers. The mangrove ecosystem plays a crucial role in supporting these species by maintaining water quality and preventing coastal erosion."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Conservation efforts at Dr. Salim Ali Bird Sanctuary focus on preserving the fragile mangrove ecosystem and protecting wildlife from habitat destruction. The Goa Forest Department actively monitors the sanctuary, restricting human encroachments and promoting eco-tourism. Awareness programs and guided boat tours educate visitors about the importance of mangroves in sustaining biodiversity. Additionally, conservation initiatives include afforestation drives and research projects to monitor bird populations and environmental changes."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "To explore the sanctuary, visitors must take a ferry from Ribandar to Chorao Island, followed by a short walk or a guided boat ride through the mangroves. The best time to visit is during the early morning or late evening when bird activity is at its peak. The sanctuary’s watchtower provides an excellent vantage point for observing birds and enjoying the tranquility of the surrounding natural environment."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Dr. Salim Ali Bird Sanctuary remains a vital ecological zone in Goa, contributing significantly to wildlife conservation and environmental education. Its protected status helps maintain the delicate balance of the mangrove ecosystem while offering a refuge for numerous bird and animal species. Ongoing conservation efforts ensure that future generations can continue to appreciate and study the diverse flora and fauna of this remarkable wetland habitat."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1996-11-12-dr-salim-ali-centenary.jpg",
+          "alt": "Dr. Salim Ali Centenary",
+          "cls": "horizontalbig",
+          "credit": "Dr. Salim Ali Centenary, 12.11.1996"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/chorao-self.jpg",
+          "alt": "Travelled Inaugural Day cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/chorao-anthony-o-j.jpg",
+          "alt": "Private Inaugural Day cover",
+          "cls": "landscape",
+          "credit": "Private Inaugural Day cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/chorao-so.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403102-chorao-so-10.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 23, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chorao SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "North Goa (dt.), Goa - 403102."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "डॉ सलीम अली पक्षी अभयारण्य"
+}

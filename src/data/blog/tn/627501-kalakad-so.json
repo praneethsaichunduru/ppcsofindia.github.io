@@ -1,0 +1,124 @@
+{
+  "docTitle": "Lion Tailed Macaque",
+  "title": "Lion Tailed Macaque",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/LionTailedMacaque.jpg",
+          "alt": "Lion Tailed Macaque",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/627501-LionTailedMacaque-KalakadSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Lion-Tailed Macaque (Macaca silenus) is an Old World monkey species endemic to the Western Ghats of India. It is classified as Endangered by the International Union for Conservation of Nature (IUCN) due to habitat destruction and a declining population. The species follows a typical primate life cycle, including infancy, juvenile, sub-adult, and adult stages, with a lifespan of around 20-30 years in the wild and up to 40 years in captivity. Sexual maturity is reached at about four to six years for females and six to eight years for males. Reproduction occurs throughout the year, with a gestation period of approximately six months, after which a single offspring is born. The slow reproductive rate further exacerbates the population decline, as it limits their ability to recover from habitat loss and other threats."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Lion-Tailed Macaque is known for its distinctive appearance, with a black coat, a mane of silvery-white hair surrounding its face, and a long, tufted tail that resembles a lion’s tail. It is a medium-sized primate, with males weighing between 10-15 kg and females around 5-10 kg. The species is primarily arboreal, spending most of its life in the upper canopy of dense, evergreen forests. They are highly social and live in troops of 10 to 20 individuals, led by a dominant male. Their communication includes vocal calls, facial expressions, and body gestures. Despite their arboreal nature, they are known to descend to the ground occasionally to forage for food, though this exposes them to predators such as leopards, large birds of prey, and pythons."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Lion-Tailed Macaque is predominantly frugivorous, meaning fruits make up a significant portion of its diet. However, it also consumes leaves, flowers, seeds, and small animals such as insects, bird eggs, and small vertebrates. It plays a crucial ecological role as a seed disperser, aiding in forest regeneration. The macaque exhibits a specialized foraging behavior, often searching for food in the dense canopy and using its dexterous fingers to extract insects from tree bark. Its diet diversity allows it to adapt to seasonal variations in food availability, ensuring survival even when preferred food sources are scarce. However, habitat fragmentation due to deforestation forces them into smaller, isolated populations, reducing their foraging range and increasing competition for resources."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The species is native to the tropical rainforests of the Western Ghats, particularly in the states of Karnataka, Kerala, and Tamil Nadu. They thrive in undisturbed, dense evergreen forests at elevations ranging from 600 to 1,500 meters above sea level. One of their key habitats in Tamil Nadu is the Kalakad-Mundanthurai Tiger Reserve, which provides a protected environment crucial for their survival. However, even in such reserves, human activities such as illegal logging, agricultural expansion, and infrastructure development threaten their existence. Conservation efforts, including habitat preservation, anti-poaching measures, and reforestation projects, are essential to maintaining stable populations in these areas."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The survival strategy of the Lion-Tailed Macaque is highly dependent on forest integrity. Unlike other macaque species that can adapt to human-dominated landscapes, the Lion-Tailed Macaque is strictly dependent on undisturbed rainforest habitats. Their reluctance to leave tree canopies and venture into open areas limits their ability to coexist with human settlements, making them particularly vulnerable to habitat destruction. Several conservation programs, including captive breeding efforts and community awareness initiatives, aim to protect these primates. However, sustained governmental policies, strict enforcement of conservation laws, and habitat restoration remain critical in ensuring their long-term survival in the wild."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1983-10-01-indian-wild-life-lion-tailed-macaque.jpg",
+          "alt": "",
+          "cls": "horizontal",
+          "credit": "Indian Wild Life: Lion Tailed Macaque, 01.10.1983"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 3, 1978"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kalakad SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Tirunelveli (dt.), Tamil Nadu - 627501."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "சோலைமந்தி"
+}

@@ -1,0 +1,103 @@
+{
+  "docTitle": "Nilgiri Tahr",
+  "title": "Nilgiri Tahr",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/NilgiriTahr.jpg",
+          "alt": "Nilgiri Tahr",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/685612-NilgiriTahr-MunnarSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Nilgiri tahr (Nilgiritragus hylocrius) takes its scientific name from the Nilgiri hills further north along the Western Ghats, though its principal stronghold today lies well to the south, in the high plateau around Munnar known locally as Eravikulam, or Hamilton's Plateau, after a British planter associated with the area. The animal is colloquially called the 'ibex' by Munnar's older tea-planting community, a carryover from colonial usage, though it is properly classified as a goat-antelope and not a true ibex. Its close association with this particular stretch of Idukki district has made it, in effect, the namesake identity of the Munnar highlands, lending its image to signage, tourism branding, and the local sense of place long before formal conservation science took an interest in it."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Taxonomically the Nilgiri tahr is the only species in its genus, Nilgiritragus, having been reclassified out of the Himalayan tahr genus Hemitragus on genetic grounds, underscoring its status as a distinct Western Ghats endemic found nowhere else on earth. It is listed as Endangered by the IUCN and is designated the state animal of Tamil Nadu, reflecting its conservation significance across both Tamil Nadu and Kerala, where it survives in fragmented populations along the high-altitude grassland belt of the Ghats. The Eravikulam population, numbering in the low thousands and surveyed most recently at over eight hundred individuals in Kerala's portion of a joint 2025 census, constitutes the single largest contiguous group of the species anywhere, making the Munnar landscape disproportionately important to the animal's long-term survival relative to its limited geographic range."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Eravikulam functioned as a private game reserve of the Kannan Devan Hills Produce Company before the High Range Game Preservation Association, formed by local planters, took over its management and began active protection of the declining tahr population in the mid-twentieth century; planter Clifford Rice is particularly credited with sustaining this effort. The area was declared a wildlife sanctuary in 1975 and upgraded to Eravikulam National Park in 1978, making it Kerala's first national park, with a core area of roughly ninety-seven square kilometres. The terrain is a rolling high-altitude plateau of rolling grasslands dotted with stunted shola forest patches sheltered in moist valley folds, rising to Anamudi, at 2,695 metres the highest peak in peninsular India, which lies within the park's boundaries and anchors its montane ecosystem."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A distinguishing feature of Eravikulam is its so-called 'tourism zone', a roughly four-kilometre stretch near the park entrance where a semi-habituated herd of tahr can be observed and photographed at close range, a degree of visitor access rare for an endangered large mammal in an Indian protected area and one that has made the park a signature wildlife-viewing stop for visitors to Munnar. Male tahr, known as saddlebacks for the pale grey patch that develops on their back with age, are frequently sighted grazing unconcerned near the viewing path, a habituation that conservationists attribute to decades of continuous, low-disturbance protection by plantation managers predating the park's formal designation, rather than any recent artificial feeding or taming programme."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Conservation of the species beyond Eravikulam has intensified in recent years, with the Tamil Nadu Forest Department launching Project Nilgiri Tahr in October 2023, a dedicated five-year initiative with an outlay of over twenty-five crore rupees aimed at reintroducing and monitoring tahr populations across the Western Ghats, while Kerala's Forest Department has coordinated synchronised cross-state census exercises with Tamil Nadu since 2024 to generate reliable population estimates for the first time. Eravikulam National Park itself remains under the administration of the Kerala Forest and Wildlife Department, which regulates visitor numbers and seasonally closes the park during the tahr calving period each year to minimise disturbance. The park's dual identity as both a functioning conservation reserve and one of Kerala's most visited wildlife sites keeps the Nilgiri tahr at the centre of Munnar's public image, even as researchers from both states continue tracking its numbers to guide future protection efforts."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "September 11, 1998"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Munnar SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Idukki (dt.), Kerala - 685612."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "നീലഗിരി താർ"
+}

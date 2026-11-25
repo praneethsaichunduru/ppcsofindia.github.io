@@ -1,0 +1,124 @@
+{
+  "docTitle": "University of Madras",
+  "title": "University of Madras",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/UniversityofMadras.jpg",
+          "alt": "University of Madras",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/600005-UniversityofMadras-MadrasUniversitySO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The University of Madras, established on September 5, 1857, is one of India's oldest and most prestigious institutions of higher learning. Its inception was part of a broader educational reform by the British colonial administration, aiming to promote structured higher education in India. The university's foundation followed a systematic educational policy formulated by the Government of India in 1854, leading to the establishment of three affiliating universities in 1857: in Calcutta, Bombay, and Madras."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Throughout its history, the University of Madras has been associated with numerous notable figures who played significant roles in India's freedom struggle and post-independence development. Sarojini Naidu, an alumna, was a prominent political activist and poet who served as the first female president of the Indian National Congress and was deeply involved in the civil disobedience movement against British rule. C. Rajagopalachari, another distinguished alumnus, was an independence activist who became the first Indian Governor-General of India after independence. Additionally, six former Presidents of India, including Dr. S. Radhakrishnan and Dr. A.P.J. Abdul Kalam, were associated with the university, underscoring its significant role in shaping the nation's leadership."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The university's architectural heritage is exemplified by the Senate House, designed by Robert Chisholm between 1874 and 1879. This building is a prime example of Indo-Saracenic architecture, blending Indian, Islamic, and European architectural elements. Located opposite the Marina Beach, the Senate House has served as the administrative center of the university and stands as a testament to the rich cultural fusion of the colonial era."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In terms of academic offerings, the University of Madras has evolved into a comprehensive institution with a wide array of programs. By the mid-1970s, it comprised 11 postgraduate faculties and 22 constituent colleges and served as the examining and degree-granting authority for 149 affiliated colleges throughout Tamil Nadu. The university has been recognized as a national center for advanced research in fields such as plant pathology, mathematical physics, biophysics, and Indian philosophy. Instruction is offered in both English and Tamil, catering to a diverse student body."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the years, the University of Madras has been instrumental in shaping the educational and cultural landscape of southern India. Its alumni have made significant contributions across various fields, including science, politics, literature, and the arts, reflecting the university's commitment to excellence and its pivotal role in the nation's development."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1957-12-31-centenary-of-universities-madras.jpg",
+          "alt": "Centenary of Universities: Madras",
+          "cls": "horizontal",
+          "credit": "Centenary of Universities: Madras, 31.12.1957"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 11, 2023"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Madras University SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chennai (dt.), Tamil Nadu - 600005."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "மெட்ராஸ் பல்கலைக்கழகம்"
+}

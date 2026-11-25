@@ -1,0 +1,146 @@
+{
+  "docTitle": "Singha Sadan",
+  "title": "Singha Sadan",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/SinghaSadan.jpg",
+          "alt": "Singha Sadan",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/731235-SinghaSadan-SantiniketanSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Shantiniketan, a serene town in West Bengal, India, embodies Rabindranath Tagore's vision of a place where education and nature coexist harmoniously. Within this culturally rich environment, structures like Singha Sadan hold significant historical and architectural importance. Shantiniketan's overall architectural style and the specific construction of Singha Sadan reflect a departure from traditional, rigid building designs, favoring instead a blend of indigenous and modern influences."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The essence of Shantiniketan lies in its open-air learning spaces and buildings that seamlessly integrate with the natural surroundings. Tagore's philosophy emphasized freedom and creativity, which is reflected in the architectural style. Buildings here often feature natural materials, exposed brickwork, and spacious verandas, fostering a sense of connection with nature. This architectural style is a manifestation of Tagore's desire to move away from the formal, colonial architectural styles prevalent during that time."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Singha Sadan, in particular, is a notable structure within the Shantiniketan campus. It is well known for housing the Nobel Prize that Rabindranath Tagore recieved. This building stands as a monument to scientific pursuit within the Shantiniketan environment. It was constructed with the monetary donation of the Singha family. The importance of the Singha Sadan is that it has housed important scientific instruments, and has been a place for scientific study."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The architectural style of Singha Sadan, like many buildings in Shantiniketan, prioritizes functionality and simplicity. There is a use of local materials, and a design that blends into the local enviroment. The building is a reflection of the overall values that Rabindranath Tagore placed on simplicity, and a connection to the natural world."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Shantiniketan's importance extends beyond its architectural significance. It represents a unique educational philosophy that emphasizes holistic development and artistic expression. The buildings, including Singha Sadan, serve as tangible reminders of Tagore's vision and the enduring legacy of his educational and cultural contributions. These structures are not merely buildings; they are integral to the experience of Shantiniketan, reinforcing the connection between education, art, and nature."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1971-12-24-visva-bharati-golden-jubilee.jpg",
+          "alt": "Visva Bharati Golden Jubilee",
+          "cls": "horizontalbig",
+          "credit": "Visva Bharati Golden Jubilee, 24.12.1971"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Stamps"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1961-05-07-rabindranath-tagore-1861-1941.jpg",
+          "alt": "Rabindranath Tagore",
+          "cls": "vertical",
+          "credit": "Rabindranath Tagore 1861-1941, 07.05.1961"
+        },
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2011-05-07-rabindranath-tagore.jpg",
+          "alt": "Rabindranath Tagore",
+          "cls": "horizontalbig",
+          "credit": "Rabindranath Tagore, 07.05.2011"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "August 19, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Santiniketan SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Birbhum (dt.), West Bengal - 731235."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "সিংহ সদন"
+}

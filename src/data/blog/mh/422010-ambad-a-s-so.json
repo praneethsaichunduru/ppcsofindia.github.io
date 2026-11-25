@@ -1,0 +1,124 @@
+{
+  "docTitle": "Pandav Leni",
+  "title": "Pandav Leni",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/PandavLeni.jpeg",
+          "alt": "Pandav Leni",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/422010-PandavLeni-AmbadASSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Pandav Leni Caves, also known as the Nashik Caves, are a group of 24 rock-cut caves located near Nashik in Maharashtra, India. These ancient Buddhist caves date back to between the 2nd century BCE and the 6th century CE, showcasing the rich history and architectural brilliance of early Buddhist monastic settlements. The caves are situated on Trirashmi Hill, offering a panoramic view of the surrounding landscape and serving as an important spiritual and historical site."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite their name, the Pandav Leni Caves have no connection to the Pandavas from the Mahabharata. The name \"Leni\" translates to caves in Marathi, and these structures were primarily built as viharas (monasteries) and chaityas (prayer halls) for Buddhist monks. Several inscriptions in the caves indicate that they were patronized by various rulers, merchants, and local elites over centuries, reflecting their significance as centers of Buddhist learning and meditation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The caves feature intricate carvings, pillars, and sculptures that depict Buddhist deities, stupas, and scenes from Buddhist mythology. Notable among them is Cave 10, a chaitya (prayer hall) with a large stupa and beautifully carved pillars, showcasing the architectural style of early rock-cut Buddhist caves in India. Cave 3, one of the largest viharas, contains an elaborate veranda, stone benches for monks, and detailed inscriptions dating back to the Satavahana dynasty."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In addition to their architectural significance, the Pandav Leni Caves are an important pilgrimage site for Buddhists and attract historians and tourists alike. The peaceful environment and scenic beauty of Trirashmi Hill make the caves a popular trekking and exploration destination. Over time, conservation efforts have been undertaken to preserve the carvings and structural integrity of the caves, ensuring that they remain a testament to India's rich cultural and religious history."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Pandav Leni Caves continue to be a site of historical and archaeological importance. They are maintained by the Archaeological Survey of India (ASI), which has implemented protective measures to safeguard these ancient monuments from environmental and human-induced damage. Visitors can explore the caves and gain insights into the life and traditions of Buddhist monks who once inhabited this serene retreat. The site stands as a remarkable example of India's early rock-cut architecture and its deep-rooted Buddhist heritage."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/ambad-a-s-self.jpg",
+          "alt": "Travelled Inaugural Day cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 22, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Ambad A S SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nashik (dt.), Maharashtra - 422010."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "पांडव लेनी"
+}

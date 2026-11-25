@@ -1,0 +1,124 @@
+{
+  "docTitle": "Osmania University",
+  "title": "Osmania University",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/OsmaniaUniversity.jpg",
+          "alt": "Osmania University",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/500007-OsmaniaUniversity-JamaIOsmaniaSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Osmania Arts College, a distinguished institution located in Hyderabad, Telangana, is one of the oldest and most iconic educational establishments in South India. It is part of Osmania University, which was founded in 1918 by the seventh Nizam of Hyderabad, Mir Osman Ali Khan. The university was the first in India to adopt a regional language—Urdu—as the medium of instruction, reflecting the Nizam’s vision to make higher education accessible to a broader section of society, especially the locals who were well-versed in Urdu. The college was formally established in 1919 and continues to be a vital part of Osmania University's academic structure."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The foundation of Osmania Arts College was driven by the Nizam’s desire to modernize the education system in the princely state of Hyderabad while maintaining its cultural and linguistic identity. Prior to its establishment, higher education in the region was primarily offered in English or Persian. The Nizam, recognizing the growing importance of modern sciences and liberal arts, sought to develop a robust institution that combined Western academic disciplines with local sensibilities. This vision led to the creation of the Osmania University and its cornerstone college—Osmania Arts College—which initially served as the university's main academic and administrative center."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The architectural style of Osmania Arts College is one of its most striking features. Designed by British architect Vincent Esch, who also designed parts of the Victoria Memorial in Kolkata, the college building reflects Indo-Saracenic architecture—a synthesis of Islamic, Hindu, and Gothic architectural elements. Construction began in the 1930s and was completed in 1939. The structure is known for its grand domes, pointed arches, intricate jali work, and sprawling layout. The entire project was funded by the Nizam’s government, which allocated a significant budget for the construction of the university and its affiliated institutions, considering education a key pillar of progress."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the decades, Osmania Arts College has produced several distinguished alumni who have gone on to achieve prominence in politics, literature, arts, science, and public service. Notable figures include former Prime Minister P.V. Narasimha Rao, poet and Jnanpith awardee C. Narayana Reddy, and revolutionary Urdu poet Makhdoom Mohiuddin. The college has long been known for its vibrant intellectual culture and active student movements, particularly during the Telangana agitation and other major sociopolitical events in the region. It has also hosted several academic conferences and cultural festivals that have added to its reputation as a hub of liberal education."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Key events in the college's history include its centenary celebrations in 2019, which brought together alumni and scholars from across the globe to commemorate its legacy. In recent years, the college has been the subject of discussions concerning conservation and heritage status, given the historical and architectural significance of its building. Despite facing infrastructural challenges, it continues to function as a leading institution under Osmania University, offering undergraduate and postgraduate courses in humanities, social sciences, and languages, and remaining a symbol of Hyderabad's rich educational heritage."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1969-03-15-osmania-university.jpg",
+          "alt": "Cities of India: Hyderabad",
+          "cls": "horizontal",
+          "credit": "Osmania University, 15.03.1969"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 11, 1976"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Jama-i-Osmania SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Hyderabad (dt.), Telangana - 500007."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ఉస్మానియా విశ్వవిద్యాలయం"
+}

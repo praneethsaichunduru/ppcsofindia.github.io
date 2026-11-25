@@ -1,0 +1,124 @@
+{
+  "docTitle": "Chitrakote Waterfall",
+  "title": "Chitrakote Waterfall",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ChitrakoteWaterfall.jpg",
+          "alt": "Chitrakote Waterfall",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/494010-ChitrakoteWaterfall-ChitrakoteBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Chitrakote Waterfall, often referred to as the \"Niagara Falls of India,\" is a breathtaking natural marvel located in the Bastar district of Chhattisgarh. Situated approximately 38 kilometers west of Jagdalpur, this majestic waterfall is formed by the Indravati River as it cascades down a height of about 29 to 30 meters. During the monsoon season, the waterfall expands to a width of nearly 300 meters, making it the widest waterfall in India. Its horseshoe shape during peak flow resembles that of the famed Niagara Falls, earning it its popular moniker."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Geologically, the Chitrakote Falls are situated where the Indravati River transitions from quartzitic sandstone to Archaean granite and gneisses. This unique geological setting contributes to the waterfall's impressive structure and has led to its classification as a \"geomorphosite,\" a term used for landforms of significant geological heritage. Such sites are recognized for their scientific, educational, and aesthetic value, and Chitrakote's inclusion underscores its importance in India's natural heritage."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The area surrounding the waterfall is rich in cultural and religious significance. On the banks below the falls, numerous small Shiva Lingas and rusted iron tridents (trishuls) can be found, indicating the site's spiritual importance to local communities. Additionally, a naturally formed niche houses stone slabs carved with deities, further emphasizing the area's sacredness. These elements reflect the deep intertwining of natural beauty and spiritual reverence that characterizes Chitrakote."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Tourism at Chitrakote has been steadily growing, with the Chhattisgarh Tourism Board developing facilities to accommodate visitors. A government-run hotel and log huts offer lodging options, while viewing platforms provide panoramic vistas of the falls. During the monsoon, the waterfall is at its most spectacular, with misty clouds and rainbows often forming in the spray. Boat rides are available in the calmer seasons, allowing tourists to experience the falls up close."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite its allure, Chitrakote faces environmental challenges. Water diversion projects and the construction of check dams have affected the flow of the Indravati River, leading to reduced water levels during the dry season. Conservation efforts are essential to preserve the waterfall's natural splendor and ecological balance. Sustainable tourism practices and environmental awareness among visitors and locals alike are crucial for the continued vitality of this natural wonder."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/chitrakote-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "September 27, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chitrakote BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bastar (dt.), Chhattisgarh - 494010."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "चित्रकोट झरना"
+}

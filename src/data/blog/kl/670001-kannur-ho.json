@@ -1,0 +1,122 @@
+{
+  "docTitle": "Face of Theyyam",
+  "title": "Face of Theyyam",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/TheyyamFacePainting.jpg",
+          "alt": "Face of Theyyam",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/670001-FaceofTheyyam-KannurHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Theyyam, a vibrant ritualistic art form from Kerala's northern Malabar region, is renowned for its elaborate face painting, which transforms performers into deities and ancestral spirits. This sacred performance combines dance, music, and mime, deeply rooted in local folklore and mythology. The intricate facial artistry, known as Mukhamezhuthu, is central to embodying the divine presence during the ritual."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The ",
+        {
+          "t": "i",
+          "c": [
+            "Mukhamezhuthu"
+          ]
+        },
+        " process employs natural pigments to create vivid designs. White is derived from rice paste, yellow from turmeric, and red from a mixture of turmeric and lime. These colors are meticulously applied using brushes crafted from crushed coconut rind, resulting in symbolic patterns that represent specific deities or mythological characters. The application of these designs is a skilled art, requiring patience and precision to achieve the desired spiritual embodiment."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The duration of the face painting varies depending on the complexity of the design and the character portrayed. Some Theyyam performances involve additional body painting, known as ",
+        {
+          "t": "i",
+          "c": [
+            "Meyyezhuthu"
+          ]
+        },
+        ", which further enhances the visual impact and can extend the preparation time. Each Theyyam has its unique makeup style, with some incorporating pre-prepared face masks instead of face painting."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In recent times, the Theyyam tradition faces challenges due to declining financial support and a decrease in performers. Historically, there were around 400 distinct Theyyam forms, each with unique facial designs; however, many have disappeared over time. Performers often receive modest compensation, making it difficult to sustain livelihoods solely through this art. Consequently, younger generations are pursuing more stable professions, leading to concerns about the preservation of this cultural heritage."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite these challenges, dedicated artists continue to uphold the Theyyam tradition. Performances are typically held from mid-October to mid-June, with artists receiving numerous requests from households and temples during this period. Some practitioners have gained international recognition, showcasing Theyyam in countries like the US, France, and Korea. Efforts are underway to revitalize interest and support for this art form, including workshops and educational programs aimed at preserving its intricate practices for future generations."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 10, 2016"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kannur HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kannur (dt.), Kerala - 670001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "തെയ്യത്തിൻ്റെ മുഖം"
+}

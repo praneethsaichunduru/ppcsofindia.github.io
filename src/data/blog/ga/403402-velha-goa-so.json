@@ -1,0 +1,152 @@
+{
+  "docTitle": "Basilica of Bom Jesus",
+  "title": "Basilica of Bom Jesus",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/BasilicaofBomJesus.jpg",
+          "alt": "Basilica of Bom Jesus",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403402-BasilicaofBomJesus-VelhaGoaSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Basilica of Bom Jesus is one of the most iconic and revered churches in India, located in Old Goa, approximately 10 kilometers from the state capital Panaji. The name “Bom Jesus” translates to “Good Jesus” or “Infant Jesus” in Portuguese, reflecting the Portuguese influence on Goan culture and religion. The basilica is a UNESCO World Heritage Site and stands as a major center of Christian pilgrimage, especially for Roman Catholics in India. It draws thousands of visitors annually, not only for its spiritual importance but also for its architectural grandeur and historical legacy."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The foundation stone of the Basilica of Bom Jesus was laid on 24 November 1594, and the church was consecrated in 1605. It was established by the Jesuits during the Portuguese rule and remains the first minor basilica in India. The church is built in the Baroque style of architecture, which was prominent in Europe during the late 16th and 17th centuries. Constructed using laterite stone, the façade remains unplastered, giving it a distinct reddish-brown color. The structure features Corinthian, Doric, and Composite elements, with intricate carvings on pillars, an ornamental entrance, and a prominent triangular pediment."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Inside the basilica, the main altar is dedicated to the Infant Jesus and features elaborate gilded work with detailed carvings of biblical figures. The most significant attraction is the mausoleum of St. Francis Xavier, whose remains are preserved in a silver casket and kept in a glass case. Brought to Goa in 1624, the body has remained remarkably well-preserved, adding to the church’s sanctity and fame. Every ten years, the Exposition of the relics of St. Francis Xavier is held, drawing lakhs of pilgrims and tourists from across the globe. The basilica also houses a richly decorated pulpit, wooden carvings, and a gallery with paintings depicting the life of the saint."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In addition to its spiritual significance, the basilica functions as a repository of colonial Christian art and sculpture. The floor is made of marble inlaid with precious stones, and the altars display fine examples of Jesuit artistic expression. The interior's subdued lighting and architectural symmetry create an atmosphere of solemn reverence. The chapel of St. Francis Xavier within the church was designed by Italian Jesuit Giovanni Battista Foggini and was later completed by local craftsmen. The upper gallery also features an art exhibition that highlights various Christian themes and historical episodes."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Basilica of Bom Jesus is maintained under the care of the Archaeological Survey of India (ASI), which oversees its preservation as a national heritage monument. Regular restoration work ensures the integrity of both the structure and the relics within. The church is still active, hosting daily masses and religious ceremonies, especially during the feast of St. Francis Xavier in early December. The basilica remains open to visitors of all faiths, serving as a testament to Goa’s colonial history and its enduring legacy as a melting pot of Indian and European cultural influences."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Stamps"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1974-12-24-st-francis-xavier-1506-1552.jpg",
+          "alt": "St. Francis Xavier 1506-1552",
+          "cls": "horizontal",
+          "credit": "St. Francis Xavier 1506-1552, 24.12.1974"
+        },
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2020-08-15-unesco-world-heritage-sites-in-india-iii-churches-and-convents-of-goa-church-of-bom-jesus.jpg",
+          "alt": "UNESCO World Heritage Sites in India - III: Churches and Convents of Goa - Church of Bom Jesus",
+          "cls": "horizontal",
+          "credit": "UNESCO World Heritage Sites in India - III: Churches and Convents of Goa - Church of Bom Jesus, 15.08.2020"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/velha-goa-so.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403402-velha-goa-so-09.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 9, 2020"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Velha Goa SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "North Goa (dt.), Goa - 403402."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "बॉम जेजुचं बॅसिलिका"
+}

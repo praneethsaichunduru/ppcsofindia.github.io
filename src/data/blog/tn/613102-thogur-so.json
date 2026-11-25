@@ -1,0 +1,136 @@
+{
+  "docTitle": "Kallanai - The Grand Anicut",
+  "title": "Kallanai - The Grand Anicut",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Kallanai-TheGrandAnicut.jpg",
+          "alt": "Kallanai - The Grand Anicut",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/613102-Kallanai-TheGrandAnicut-ThogurSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Kallanai—better known as the Grand Anicut—is an ancient stone barrage across the Kaveri River in today’s Thanjavur/Tiruchirappalli region of Tamil Nadu. Traditionally credited to the early Chola ruler Karikala, it dates to the 2nd century CE and remains among the world’s oldest functioning water-regulator structures. Built of unhewn stone blocks laid across a live river, the work measures about 329 m in length, ~20 m in width, and ~5.4 m in height. Its primary purpose from inception has been irrigation for the fertile Cauvery delta."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The design intent was not to store water like a high dam but to raise the river level gently and divert flow into an intricate canal network feeding the delta. Hydraulically, the anicut sits near the bifurcation where Kaveri splits toward the Kollidam (Coleroon) branch; the structure regulates how much water goes into each course and into distributary canals such as the later Grand Anicut Canal. Early records suggest roughly 69,000 acres were irrigated by the ancient system, expanding to about one million acres by the early 20th century as networks grew—an enduring proof of Chola water management."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "From the 19th century, British engineers modified the anicut to improve control and reduce siltation. In 1804, Captain Caldwell examined the site and recommended raising the crest; Major Sim later proposed undersluices to manage sediment and flows toward Kollidam. Sir Arthur Cotton drew inspiration from Kallanai when building the Lower Anicut on the Kollidam, and the region’s canalization accelerated in the early 20th century. A key addition was the Grand Anicut Canal System (constructed 1925–1934), a 148 km main canal with 1,232 km of branches, designed by Col. W. M. Ellis to move regulated water to fields across Thanjavur and Pudukkottai."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Major modern upgrades have focused on renovating and expanding the canal network rather than altering the historic stone barrage. The state Water Resources Department (WRD) prepared an “Extension, Renovation, and Modernization” program for the Grand Anicut Canal System, documented in an Environmental and Social Due Diligence Report for the Asian Infrastructure Investment Bank: the main canal (148.65 km) and extensive branches (≈1,232 km) need rehabilitation to ensure equitable distribution and hydraulic performance. Recent reporting places the upgrade envelope at roughly ₹2,640–₹3,000 crore, undertaken in multiple packages to increase carrying capacity while addressing concerns like groundwater percolation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Operationally, Kallanai remains a working regulator managed by Tamil Nadu’s WRD, central to seasonal releases tied to upstream storages like Mettur. Current debates revolve around how and when water is sent to tail-end areas: in July 2025, farmer groups in the delta urged releases “without rotation” at Kallanai so Kuruvai paddy would get timely irrigation, reflecting the barrage’s ongoing role in day-to-day water governance. As these modernization works advance, the historic stone anicut continues to do what Karikala intended—lift and divide the Kaveri’s flow to sustain agriculture across the delta."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/thogur-praneeth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/thogur-1-anthony-o-j.jpg",
+          "alt": "Travelled Inaugural Day private cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day private cover 1"
+        },
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/thogur-2-anthony-o-j.jpg",
+          "alt": "Travelled Inaugural Day private cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day private cover 2"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "August 15, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Thogur SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Thanjavur (dt.), Tamil Nadu - 613102."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "கல்லணை - பெரிய அணைக்கட்டு"
+}

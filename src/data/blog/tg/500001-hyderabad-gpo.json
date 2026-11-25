@@ -1,0 +1,124 @@
+{
+  "docTitle": "Charminar",
+  "title": "Charminar",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Charminar.jpg",
+          "alt": "Charminar",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/500001-Charminar-HyderabadGPO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Charminar, an iconic monument located in the heart of Hyderabad, Telangana, India, stands as a testament to the city's rich history and architectural grandeur. Constructed in 1591 by Sultan Mohammed Quli Qutb Shah, the fifth ruler of the Qutb Shahi dynasty, the monument's origins are enveloped in various legends. One prevalent belief is that the Sultan erected Charminar to commemorate the end of a devastating plague that afflicted the city, dedicating the structure as a tribute to Allah for delivering his people from the calamity. Another narrative suggests that it was built in honor of his wife, Bhagmati, marking the spot where he first met her. Additionally, some accounts propose that the monument was constructed to celebrate the beginning of the second Islamic millennium, symbolizing a new era for the city."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The construction of Charminar commenced in 1589 and concluded in 1591, with an expenditure of approximately 9 lakh rupees, equivalent to around 2 lakh gold coins of that period. The structure is estimated to weigh about 14,000 tons and features a foundation extending at least 30 feet deep. Over the centuries, Charminar has undergone several renovations to preserve its integrity. In 1670, one of the minarets was struck by lightning and subsequently repaired at a cost of about 58,000 rupees. Later, in 1820, Sikandar Jah undertook further restoration work, investing approximately 2 lakh rupees to maintain the monument's grandeur."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, Charminar is a masterpiece that exemplifies Indo-Islamic design with Persian influences. The monument is a square structure, each side measuring 20 meters, featuring four grand arches that open onto the city's bustling thoroughfares. At each corner stands a towering minaret, rising to a height of 48.7 meters, adorned with intricate carvings and crowned with bulbous domes exhibiting petal-like designs at their bases. These minarets are seamlessly integrated into the main structure, distinguishing them from the detached minarets seen in other monuments like the Taj Mahal. The use of granite, limestone, mortar, and pulverized marble in its construction not only adds to its aesthetic appeal but also contributes to its enduring stability."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The interior of Charminar is equally captivating. A total of 149 winding steps lead visitors to the upper floors, culminating in a mosque situated on the western end of the open roof, considered one of the oldest mosques in Hyderabad. The main gallery houses 45 covered prayer spaces, with an adjacent open area to accommodate larger congregations during significant religious events. In the center of the courtyard lies a vazu, a water cistern with a small fountain, traditionally used for ablutions before prayers. In 1889, clocks were added to each of the four cardinal directions, enhancing both the functionality and symmetry of the monument."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Beyond its architectural splendor, Charminar holds profound cultural significance. It is often regarded as the epicenter of Hyderabad, around which the city was planned and developed. The surrounding area, known as Laad Bazaar, is a vibrant market renowned for its bangles, pearls, and other traditional wares, reflecting the enduring legacy of commerce and culture that has thrived around the monument for centuries. Today, Charminar stands not only as a symbol of Hyderabad's historical and architectural heritage but also as a living monument, continually drawing visitors and devotees alike to its storied halls and bustling environs."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1990-12-24-cities-of-india-hyderabad.jpg",
+          "alt": "Cities of India: Hyderabad",
+          "cls": "horizontal",
+          "credit": "Cities of India: Hyderabad, 24.12.1990"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "April 21, 1975"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Hyderabad GPO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Hyderabad (dt.), Telangana - 500001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "చార్మినార్"
+}

@@ -1,0 +1,103 @@
+{
+  "docTitle": "Bhimbetka",
+  "title": "Bhimbetka",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Bhimbetka.jpg",
+          "alt": "Bhimbetka",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/464993-Bhimbetka-AnkalpurBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The name Bhimbetka is a compound of \"Bhima\" and \"baithaka,\" meaning roughly \"Bhima's resting place\" or \"Bhima's seat,\" referring to a local legend that Bhima, the mighty second brother among the five Pandavas of the Mahabharata, paused here during the period of exile to rest and interact with the forest-dwelling communities of the region. The name has endured in local memory long before the site's scientific importance was recognised, lending the sandstone outcrops of the Vindhya range a mythic association that predates their archaeological fame by many centuries and still shapes how villagers in the surrounding Raisen forests refer to the hills today."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Administered by the Archaeological Survey of India and inscribed on the UNESCO World Heritage list in 2003, Bhimbetka is recognised as the largest and among the most complete assemblages of prehistoric rock art in the Indian subcontinent. The protected area spans roughly 1,892 hectares across seven hills and more than 750 identified rock shelters spread over about ten kilometres, of which some 400 to 500 bear painted or engraved surfaces. Its significance lies not only in the sheer density of art but in the unbroken sequence it preserves, recording human occupation from the Upper Palaeolithic through the Mesolithic and Chalcolithic ages into early historic times, a continuity rarely matched at any single site worldwide."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Archaeological excavation, much of it led by V. S. Wakankar and subsequent teams from the 1970s onward, has revealed stone tools, hearths, and habitation deposits indicating that some shelters were used by hunter-gatherer groups tens of thousands of years ago, with certain strata suggesting activity extending back over 100,000 years. The paintings themselves were executed in layers over millennia using mineral pigments, chiefly red derived from haematite and white from limestone, with green appearing in later Mesolithic and historical phases; superimposition of newer images over older ones at many shelters allows researchers to build a relative chronology of stylistic change across the site's long occupation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Among the shelters, the one named Auditorium Cave stands out as the largest at Bhimbetka, a massive natural chamber ringed by distinctive quartzite rock towers visible from a considerable distance and believed by some scholars to have served a communal or ceremonial function for the groups who used it. The surrounding shelters, including others Wakankar informally named Zoo Rock and Boar Rock for their dominant imagery, depict herds of bison, elephants, tigers, and antelope alongside scenes of communal hunting, dancing, and ritual, with later panels showing horse riders, swords, and shields reflecting the arrival of historical-period communities into the same painted landscape."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today the core painted shelters remain under active conservation by the Archaeological Survey of India, which has installed walkways, signage, and periodic condition surveys to limit weathering and human contact with the exposed rock faces, while the broader Ratapani forest tract surrounding the site functions as a wildlife sanctuary that buffers the shelters from encroachment. Researchers from institutions such as the Indira Gandhi Rashtriya Manav Sangrahalaya in nearby Bhopal have continued documentation and comparative study of the paintings alongside the site's custodians. The rock shelters remain open to visitors on a regulated circuit, and the postal pictorial cancellation issued from the nearby Ankalpur Branch Office in Raisen district now carries this prehistoric gallery's imagery into everyday correspondence passing through the area."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "June 1, 2022"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Ankalpur BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Raisen (dt.), Madhya Pradesh - 464993."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "भीमबेटका"
+}

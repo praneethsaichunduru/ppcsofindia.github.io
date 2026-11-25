@@ -1,0 +1,79 @@
+{
+  "docTitle": "Taj Mahal",
+  "title": "Taj Mahal",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/TajMahal.jpg",
+          "alt": "Taj Mahal",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/282001-TajMahal-TajSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Taj Mahal, an ivory-white marble mausoleum on the banks of the Yamuna in Agra, was commissioned by Mughal emperor Shah Jahan in 1632 in memory of his beloved wife Mumtaz Mahal, who died during childbirth, and took roughly two decades and thousands of craftsmen to complete around 1653. Combining Persian, Islamic, and Indian architectural traditions, its perfectly symmetrical domes, minarets, and intricate pietra dura inlay work of semi-precious stones represent the pinnacle of Mughal architecture. Declared a UNESCO World Heritage Site in 1983 and named one of the New7Wonders of the World in 2007, it remains meticulously conserved by the Archaeological Survey of India, though it faces ongoing environmental challenges from air pollution and yellowing marble, prompting periodic mud-pack cleaning treatments. As India's most iconic monument, it draws millions of visitors annually and stands globally as an enduring symbol of love and Mughal artistic achievement."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Not Available"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Taj SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Agra (dt.), Uttar Pradesh - 282001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ताज महल"
+}

@@ -1,0 +1,98 @@
+{
+  "docTitle": "Nagardhan Fort",
+  "title": "Nagardhan Fort",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/441106-NagardhanFort-NagardhanBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Nagardhan is a village in Nagpur district, about five kilometres from the temple town of Ramtek. Its fort is built of red brick and stands on the remains of an older medieval fort of the Gond kings. The fort was repaired and used again by the Bhonsle rulers of Nagpur in the late eighteenth and nineteenth centuries, when it served as a stronghold close to Ramtek."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The village has a much older history than the fort suggests. Nagardhan is identified with Nandivardhana, a capital of the Vakataka dynasty, which ruled much of the Deccan from the third to the sixth century. The Vakatakas are best known for their links with the Gupta empire: Prabhavati Gupta, the daughter of the Gupta emperor Chandragupta II, married the Vakataka king Rudrasena II and ruled as regent for her sons after his death. The identification of Nagardhan as a Vakataka capital had long been a matter of inference."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Excavations carried out between 2015 and 2018 by the Maharashtra State Department of Archaeology, with specialists from Deccan College in Pune, gave the identification a firm footing. Among the finds was a clay sealing in Brahmi script bearing the name of Prabhavati Gupta, with a conch motif that reflects the Vaishnava faith of the Guptas. It was the first time that clay sealings had been found at the site, and the discovery drew national attention to a village that had been known mainly for its fort."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Nearby Ramtek adds to the picture. A group of temples on Ramtek hill, including the Kevala Narasimha temple, has been connected with the Vakataka period, and tradition holds that the poet Kalidasa wrote his Meghaduta on this hill, a link that rests on literary tradition rather than on firm evidence. Together, the two sites have made this corner of Nagpur district a place of interest for students of early Indian history."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The pictorial cancellation at Nagardhan Branch Post Office shows the fort that gives the village its name. Collectors who take the cancellation also take home a reminder that the quiet countryside around Nagpur once held the court of a dynasty."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 21, 2026"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nagardhan BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nagpur (dt.), Maharashtra - 441106."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "नगरधन किल्ला"
+}

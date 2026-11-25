@@ -1,0 +1,22 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p.copyright {
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  color: #6c757d; /* Gray copyright text */
+}
+.home-icon {
+  position: fixed; /* Fixed position on the screen */
+  top: 10px; /* Distance from the top of the screen */
+  left: 10px; /* Distance from the left of the screen */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+.home-icon svg {
+  display: block;
+  width: 30px; /* Width of the icon */
+  height: 30px; /* Height of the icon */
+}

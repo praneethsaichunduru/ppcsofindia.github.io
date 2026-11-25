@@ -1,0 +1,124 @@
+{
+  "docTitle": "Shringi Rishi",
+  "title": "Shringi Rishi",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ShringiRishi.jpg",
+          "alt": "Shringi Rishi",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/493778-ShringiRishi-SihawaBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Shringi Rishi Ashram, located atop the Sihawa Hills in Dhamtari district, Chhattisgarh, is a revered site steeped in spiritual significance. Dedicated to Sage Shringi, one of the esteemed Saptarishis, the ashram is associated with the epic Ramayana. According to legend, it was Sage Shringi who conducted the Putrakameshti Yajna for King Dasharatha, leading to the birth of Lord Rama and his brothers. This connection underscores the ashram's importance in Hindu mythology and its enduring spiritual relevance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The ashram is situated in the Sihawa Hills, also known as Mahendra Giri, approximately 75 kilometers from Dhamtari and 7 kilometers from Nagri Block. The site is accessible by road, with the nearest airport located in Raipur. Visitors must ascend a series of steps to reach the ashram, which is perched atop a hill offering panoramic views of the surrounding landscape. The serene environment, coupled with the spiritual ambiance, makes it a favored destination for pilgrims and tourists alike."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "One of the unique features of the Shringi Rishi Ashram is its proximity to the origin of the Mahanadi River. A small pond near the ashram is believed to be connected to the river's source, with offerings made in the pond reportedly appearing in the river below. This phenomenon adds a mystical dimension to the site, attracting devotees who seek blessings and wish to experience the sacredness of the location."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The ashram complex includes several other significant sites, such as the Yagyashala and the Shanta Cave. The Yagyashala is a space where rituals and ceremonies are performed, maintaining the ancient traditions associated with the ashram. The Shanta Cave, named after Lord Rama's sister who was married to Sage Shringi, adds to the site's historical and mythological richness. These features collectively contribute to the ashram's status as a center for spiritual learning and practice"
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In recent years, the Chhattisgarh government has recognized the ashram's cultural and religious significance, incorporating it into the 'Ram Van Gaman Path' project. This initiative aims to develop and promote sites associated with Lord Rama's exile journey, enhancing their accessibility and infrastructure. As part of this project, efforts are underway to improve facilities at the Shringi Rishi Ashram, ensuring that it continues to serve as a beacon of spiritual heritage for future generations."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/sihawa-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "September 27, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Sihawa BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Dhamtari (dt.), Chhattisgarh - 493778."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "श्रृंगी ऋषि"
+}

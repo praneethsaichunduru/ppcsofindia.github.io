@@ -1,0 +1,130 @@
+{
+  "docTitle": "Humpback Dolphin",
+  "title": "Humpback Dolphin",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/HumpbackDolphin.jpg",
+          "alt": "Humpback Dolphin",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403702-HumpbackDolphin-PalolemBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Indian Ocean humpback dolphin (*Sousa plumbea*) is a coastal species of cetacean found predominantly along the warm, shallow waters of the Indian Ocean and parts of the western Pacific. Recognized for its distinctive hump beneath the dorsal fin and its stocky build, the species exhibits a range of grey tones across its body, which may vary with age and region. Adult dolphins can grow up to 2.6 meters in length and weigh around 200 kg. The dorsal fin is notably short and curved, rising from a fleshy ridge or hump, which gives the species its common name. Their beak is less pronounced than other dolphin species, and their behavior is generally less acrobatic, with infrequent leaps and slower swimming patterns."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Humpback dolphins are typically found in shallow, nearshore waters no deeper than 25 meters, often close to estuaries, mangroves, sandbars, and coral reefs. These dolphins are known for their strong site fidelity, often remaining in the same coastal area for years. In India, they are observed along both the east and west coasts, including the waters off Odisha, Tamil Nadu, Andhra Pradesh, Kerala, Karnataka, Goa, Maharashtra, and Gujarat. Their distribution is patchy and depends on the availability of prey, calm water conditions, and minimal boat traffic. Although they can be seen near larger coastal cities, their preferred habitats are less disturbed, quieter zones where they can feed on fish, crustaceans, and cephalopods."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite being widely distributed, Indian Ocean humpback dolphins are classified as “Endangered” on the IUCN Red List. Their populations are threatened by habitat degradation, increasing coastal development, pollution, and accidental entanglement in fishing nets. Vessel strikes and unregulated tourism, particularly boat-based dolphin watching, pose additional threats. The dolphins’ close proximity to the coast makes them especially vulnerable to human activity. Conservation measures have included protective legislation under India’s Wildlife Protection Act, 1972, where they are listed under Schedule I, offering them the highest level of legal protection. However, enforcement remains inconsistent, and awareness among local communities and tourists is limited in many regions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Palolem Beach in South Goa has become synonymous with sightings of the Indian Ocean humpback dolphin. The tranquil bay and relatively undisturbed waters make it an attractive habitat for these marine mammals. Local boat operators offer dolphin-watching tours, where these dolphins are often sighted just a short distance from the shore. While this has increased awareness and tourism revenue, it has also raised concerns about the impact of frequent boat traffic and noise on dolphin behavior. Researchers and conservationists have advocated for responsible tourism guidelines in Palolem, including limiting the number of boats, maintaining safe distances, and avoiding direct pursuit of dolphins."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Efforts are underway across India to better monitor and conserve humpback dolphin populations. Institutions such as the Central Marine Fisheries Research Institute (CMFRI) and various NGOs conduct surveys and educational programs to involve coastal communities in conservation. In some areas, community-based initiatives promote dolphin-friendly practices among fishers, including the use of safer nets and reporting of accidental catches. Continued research, habitat protection, stricter regulation of marine tourism, and local engagement are crucial to ensuring the long-term survival of this coastal dolphin species in Indian waters."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/palolem-bo.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403702-palolem-bo-06.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "February 22, 2022"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Palolem BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "South Goa (dt.), Goa - 403702."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "कुबडो डॉल्फिन"
+}

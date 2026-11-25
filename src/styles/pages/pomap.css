@@ -1,0 +1,321 @@
+.pomap {
+  max-width: 1100px;
+  margin-inline: auto;
+  font-size: 0.9rem;
+}
+.pomap-sub {
+  text-align: center;
+  color: var(--text-muted, #64748b);
+  margin: -0.5rem 0 1.25rem;
+}
+.notice {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #f59e0b;
+  border-left-width: 5px;
+  border-radius: var(--radius-sm, 6px);
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--text-body, #33404f);
+}
+.panel {
+  background: var(--surface-card, #fff);
+  border: 1px solid var(--border, #dfe4ea);
+  border-radius: var(--radius-md, 10px);
+  box-shadow: var(--shadow-xs, 0 1px 2px rgba(0, 0, 0, 0.06));
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.map-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.map-tools input[type='search'] {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+.zoom {
+  display: inline-flex;
+  border: 1px solid var(--border-strong, #c4ccd6);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.zoom button {
+  width: 2.4rem;
+  height: 2.2rem;
+  border: 0;
+  background: var(--accent, #0b5cab);
+  color: #fff;
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.zoom button + button {
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+.zoom button:hover {
+  background: var(--ppc-saffron, #ef7f1a);
+}
+.zoom button.txt {
+  width: auto;
+  padding: 0 0.8rem;
+  font-size: 0.8rem;
+}
+#mapWrap {
+  --sea: #dbe6f0;
+  --land: #8da6bf;
+  --land-hover: #6f8aa6;
+  --edge: #f3f7fb;
+  position: relative;
+  background: var(--sea);
+  border-radius: var(--radius-sm, 6px);
+  overflow: hidden;
+}
+:root[data-theme='dark'] #mapWrap {
+  --sea: #0c1724;
+  --land: #33506d;
+  --land-hover: #456a8f;
+  --edge: #0b131d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) #mapWrap {
+    --sea: #0c1724;
+    --land: #33506d;
+    --land-hover: #456a8f;
+    --edge: #0b131d;
+  }
+}
+#map.moving {
+  cursor: grabbing;
+}
+#map.moving .pin {
+  filter: none;
+} /* shadows are costly to redraw while dragging */
+#map {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  cursor: grab;
+  user-select: none;
+}
+.state {
+  fill: var(--land);
+  stroke: var(--edge);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+}
+.state:hover {
+  fill: var(--land-hover);
+}
+
+/* Pin colours by post-office category */
+.c1 {
+  --pin: #d90429;
+}
+.c2 {
+  --pin: #ff8c00;
+}
+.c3 {
+  --pin: #12a150;
+}
+.c4 {
+  --pin: #7b2cbf;
+}
+.pin {
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55));
+}
+.pin path {
+  fill: var(--pin);
+  stroke: #fff;
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+}
+.pin .pin-dot {
+  fill: #fff;
+}
+.pin:hover path,
+.pin:focus path {
+  stroke: #111;
+  stroke-width: 2.4;
+}
+.pin:focus {
+  outline: none;
+}
+.pin.dim {
+  opacity: 0.1;
+  pointer-events: none;
+}
+.pin.flash {
+  animation: flash 0.4s ease-in-out 4 alternate;
+}
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.chip {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.4rem;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: var(--pin);
+  vertical-align: -0.05rem;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--border-strong, #c4ccd6);
+  border-radius: 999px;
+  background: var(--surface-card, #fff);
+  color: var(--text-body, #33404f);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.legend-item small {
+  margin-left: 0.3rem;
+  color: var(--text-muted, #64748b);
+}
+.legend-item[aria-pressed='false'] {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+.map-hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--text-muted, #64748b);
+}
+.tip {
+  position: absolute;
+  z-index: 10;
+  min-width: 170px;
+  max-width: 260px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-body, #33404f);
+  background: var(--surface-card, #fff);
+  border: 1px solid var(--border-strong, #c4ccd6);
+  border-radius: var(--radius-md, 10px);
+  box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.18));
+  pointer-events: none;
+}
+.tip[hidden] {
+  display: none;
+}
+.tip b {
+  color: var(--text-strong, #0d1b2a);
+  font-size: 0.9rem;
+}
+.tip .hint {
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--accent, #0b5cab);
+}
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+}
+.list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.list-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.list-head span {
+  color: var(--text-muted, #64748b);
+  font-size: 0.8rem;
+}
+.po-table-wrap {
+  overflow-x: auto;
+}
+.po-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.po-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted, #64748b);
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border-strong, #c4ccd6);
+}
+.po-table td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border, #dfe4ea);
+  vertical-align: top;
+}
+.po-table tr[hidden] {
+  display: none;
+}
+.po-table .acts {
+  white-space: nowrap;
+}
+.link-btn {
+  border: 0;
+  background: none;
+  color: var(--accent, #0b5cab);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.6rem;
+}
+.link-btn:hover {
+  text-decoration: underline;
+}
+.foot-note {
+  text-align: center;
+  color: var(--text-muted, #64748b);
+  font-size: 0.75rem;
+}
+@media (max-width: 640px) {
+  .po-table thead {
+    display: none;
+  }
+  .po-table,
+  .po-table tbody,
+  .po-table tr,
+  .po-table td {
+    display: block;
+  }
+  .po-table tr {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border, #dfe4ea);
+  }
+  .po-table td {
+    border: 0;
+    padding: 0.1rem 0;
+  }
+  .po-table td:first-child {
+    font-weight: 700;
+  }
+}

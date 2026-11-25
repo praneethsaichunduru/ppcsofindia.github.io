@@ -1,0 +1,103 @@
+{
+  "docTitle": "Neermahal Palace",
+  "title": "Neermahal Palace",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/NeermahalPalace.jpg",
+          "alt": "Neermahal Palace",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/799115-NeermahalPalace-MelagharSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The name Neermahal, meaning 'water palace' in Bengali, is traditionally said to have been suggested by Rabindranath Tagore, who visited the Tripura royal court and was struck by the idea of a palace rising from the middle of a lake rather than standing on solid ground. The structure sits on an artificial island within Rudrasagar Lake, near Melaghar in what is now Sepahijala district, and can be reached only by boat, a detail that has shaped both its original function as a secluded summer retreat and its present identity as a tourist destination reachable solely by water transport operated from the lake's edge."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Neermahal belongs to the category of lake palaces, a architectural form rare in eastern India, and is frequently described as the largest such palace in the Indian subcontinent after the Lake Palace of Udaipur. Commissioned by Maharaja Bir Bikram Kishore Manikya Bahadur of the Manikya dynasty, who ruled Tripura from 1923 to 1947, it was conceived as a seasonal royal residence and a venue for state functions, and it stands today as the principal surviving example of the kingdom's twentieth-century palace architecture, now held and maintained by the Tripura state government rather than by any private or royal trust."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Construction was carried out by the British engineering firm Martin and Burn under the Maharaja's close personal direction, beginning around 1930 and continuing for roughly nine years before completion in 1938. The palace was built predominantly of red sandstone and white marble in a style that deliberately fused Hindu temple elements with Mughal palace forms, producing a complex of domed pavilions, chhatris, arched corridors, and bridges connecting its two main courts, commonly referred to as the Andar Mahal, the private residential wing, and the Pur Mahal, the outer wing used for durbars and public ceremonial occasions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A defining feature of the site is the open-air stage and performance space built into the Pur Mahal section, which the royal family used for theatrical productions, musical performances, and functions held against the backdrop of the lake, and which later lent itself naturally to the open-air cultural events still staged there today. The palace and lake together have also drawn sustained environmental attention, since progressive siltation and shrinkage of Rudrasagar over recent decades have at times left stretches of the lakebed exposed near the palace, prompting dredging and conservation efforts aimed at preserving both the water body and the fishing communities around it who depend on it for their livelihood."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Neermahal Water Festival, held annually in August and accompanied by a second winter event in December, is organised jointly by local authorities and the Tripura Tourism Department, drawing crowds for multi-day boat races involving six-to-nine seater craft, women's boat teams, and traditional long snake boats, alongside swimming competitions and evening cultural programmes. Tripura Tourism currently operates the palace and its boating services for visitors, positioning Neermahal as the centrepiece of Melaghar's tourism economy alongside the adjoining Sepahijala Wildlife Sanctuary, and the palace continues to function primarily as a heritage monument open to day visitors rather than as an active royal residence."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 31, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Melaghar SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Sepahijila (dt.), Tripura - 799115."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "নীরমহল প্রাসাদ"
+}

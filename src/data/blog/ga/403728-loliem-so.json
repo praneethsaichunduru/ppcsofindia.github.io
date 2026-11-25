@@ -1,0 +1,153 @@
+{
+  "docTitle": "Olive Ridley Turtle",
+  "title": "Olive Ridley Turtle",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/OliveRidleyTurtle.jpg",
+          "alt": "Olive Ridley Turtle",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403728-OliveRidleyTurtle-LoliemSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Olive Ridley turtle (",
+        {
+          "t": "i",
+          "c": [
+            "Lepidochelys olivacea"
+          ]
+        },
+        ") is one of the smallest and most abundant sea turtles in the world, named for the olive-green hue of its heart-shaped shell. Measuring about 60 to 70 cm in length and weighing between 35 to 45 kg, these turtles inhabit warm and tropical waters primarily in the Pacific and Indian Oceans, as well as parts of the Atlantic. Despite being the most numerous of all sea turtles, the Olive Ridley is listed as \"Vulnerable\" by the International Union for Conservation of Nature (IUCN) due to steep declines in nesting populations over the past few decades, especially along certain coasts. It is estimated that the global adult female population is around 800,000, but survival rates from hatchling to adulthood remain alarmingly low—less than one in a thousand reach maturity."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Olive Ridleys are known for their unique mass nesting behavior called *arribada*, where thousands of females come ashore simultaneously to lay eggs, usually at specific nesting beaches. These events take place mainly in India, Costa Rica, and Mexico, with the eastern coast of India—particularly Odisha's Gahirmatha and Rushikulya beaches—hosting some of the largest gatherings globally. The turtles prefer soft sandy beaches with gentle slopes and minimal light pollution for successful nesting. They primarily feed on jellyfish, shrimp, crabs, mollusks, and occasionally algae, maintaining the balance of marine ecosystems through their selective diet."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In Goa, particularly in the coastal village of Loliem in the Canacona taluka, Olive Ridley turtles have gained attention in recent years due to increasing nesting activity. Although Goa is not traditionally a major arribada site like Odisha, sporadic nesting in secluded beaches such as Galgibaga and Loliem indicates that these areas serve as secondary nesting grounds. The relative seclusion, clean sands, and lower human interference at Loliem make it a suitable environment for turtle nesting. However, increased developmental pressure, artificial lighting, and unregulated tourism pose potential threats to this fragile habitat."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The ecological role of the Olive Ridley turtle is multifaceted. By preying on jellyfish, they help prevent jellyfish blooms, which can disrupt fish populations and human fishing activities. Their eggs and hatchlings also serve as food for a variety of predators, including birds, crabs, and mammals, thereby contributing to coastal food webs. Moreover, unhatched eggs provide nutrients to beach ecosystems, supporting dune vegetation. Their continued existence is thus intertwined with the health of marine and coastal ecosystems."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "To combat declining populations, numerous conservation strategies have been implemented both globally and locally. These include beach patrolling, nest relocation to hatcheries, reduction of bycatch through Turtle Excluder Devices (TEDs) in trawl nets, community awareness programs, and the enforcement of no-lighting zones during nesting seasons. In Goa, the Forest Department, in collaboration with local NGOs and fishing communities, has initiated protective measures in nesting zones, including monitoring of beaches and ensuring that hatchlings safely reach the sea. Additionally, environmental education efforts in coastal schools and villages have enhanced community participation, a key factor in the long-term survival of the Olive Ridley in regions like Loliem."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2000-01-29-millepex-2000-endangered-species-turtles-olive-ridley-turtle.jpg",
+          "alt": "MILLEPEX-2000: Endangered Species - Turtles: Olive Ridley Turtle",
+          "cls": "horizontal",
+          "credit": "MILLEPEX-2000: Endangered Species - Turtles: Olive Ridley Turtle, 29.01.2000"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/loliem-so.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403728-loliem-so-06.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "March 21, 2022"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Loliem SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "South Goa (dt.), Goa - 403728."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ऑलिव्ह रिडली कासव"
+}

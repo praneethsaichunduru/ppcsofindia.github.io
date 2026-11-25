@@ -1,0 +1,98 @@
+{
+  "docTitle": "Silver Filigree",
+  "title": "Silver Filigree",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/753001-SilverFiligree-CuttackGPOPB.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Cuttack is known as the Silver City because of its filigree work, a craft called tarakasi in Odia, from tara, meaning wire, and kasi, meaning design. Artisans draw silver into very fine wires and shape them into delicate lacework, and the craft is thought to be several centuries old. The Ministry of Textiles describes it as being over 500 years old, while some writers trace it back to the twelfth or thirteenth century, and the exact origin is not clear."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The process is slow and calls for steady hands. Silver is melted and cast into bars, which are drawn through a series of holes of decreasing size until they become wires as thin as thread. The wires are twisted, flattened and curled into patterns, soldered into frames, and finished into the final piece. The work is often divided between members of a family or a workshop, with each person responsible for one stage."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The craftsmen make jewellery, trays, boxes, and small models of temples, boats and the chariot wheel of Konark. Many pieces carry motifs from the nature and the traditions of Odisha, such as flowers, peacocks and the image of Lord Jagannath. The craft is also tied to the life of the city, since the lanes in the old part of Cuttack are full of small workshops where it is practised, and the work has long been given as a gift to important visitors."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In March 2024 the silver filigree of Cuttack received a Geographical Indication tag, which recognises the craft as a product of the city and helps protect it from imitation. The artisans face rising silver prices and competition from machine-made jewellery, and the tag was seen as a step towards giving the craft a firmer future."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The pictorial cancellation at Cuttack GPO-PB honours the craft that gives the city its name as the Silver City, and it adds a handicraft to the monuments and festivals that make up the PPCs of Odisha."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 12, 2026"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Incharge,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Cuttack GPO-PB,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Cuttack (dt.), Odisha - 753001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ରୂପା ତାରକସି"
+}

@@ -1,0 +1,125 @@
+{
+  "docTitle": "Indian Institute of Science Building",
+  "title": "Indian Institute of Science Building",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/IISc.jpg",
+          "alt": "Indian Institute of Science Building",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Indian Institute of Science (IISc) in Bengaluru is a premier institution renowned for its advanced research and education in science, engineering, and technology. Established in 1909, IISc has played a pivotal role in shaping India's scientific landscape and continues to be a beacon of excellence in higher education and research. The institute was founded through the collaborative efforts of Jamsetji Tata, a visionary industrialist, and the Maharaja of Mysore, Krishnaraja Wadiyar IV, along with the support of the British government."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The idea for the Indian Institute of Science was conceived by Jamsetji Tata, who envisioned an institution that would drive India's scientific progress and industrial development. His vision was brought to life with the generous donation of land and funds by the Maharaja of Mysore, Krishnaraja Wadiyar IV. The establishment of IISc marked a significant milestone in India's journey towards scientific and technological self-reliance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Located on a sprawling 400-acre campus in Bengaluru, IISc boasts state-of-the-art facilities and a serene environment conducive to research and learning. The campus is home to numerous departments and research centers specializing in a wide array of disciplines, including aerospace engineering, biological sciences, chemical engineering, electrical communication engineering, and materials research, among others. The interdisciplinary approach of IISc encourages innovation and collaboration, fostering groundbreaking research that addresses both national and global challenges."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "IISc’s contributions to science and technology are vast and varied. The institute has been at the forefront of significant scientific advancements and innovations, many of which have had a profound impact on industries and society. Research at IISc spans fundamental science to applied technology, with numerous projects focused on addressing pressing issues such as renewable energy, healthcare, and sustainable development. The faculty and students at IISc are recognized for their scholarly excellence, with many receiving prestigious awards and accolades both nationally and internationally."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Indian Institute of Science is also committed to nurturing the next generation of scientists and engineers. Its rigorous academic programs are designed to cultivate critical thinking, creativity, and a passion for discovery. The institute offers undergraduate, postgraduate, and doctoral programs, attracting some of the brightest minds from across the country and around the world. The vibrant academic community at IISc benefits from the guidance of distinguished faculty members who are leaders in their respective fields."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Beyond its academic and research endeavors, IISc plays a vital role in contributing to the local and national community. The institute engages in various outreach activities, including public lectures, workshops, and collaborations with industry and government organizations. These initiatives aim to bridge the gap between academia and society, ensuring that scientific advancements contribute to societal well-being and progress."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/old-cards/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO-21.01.2022.jpg",
+          "alt": "Science Institute Inaugural Day PPC",
+          "cls": "horizontal",
+          "credit": "Card with Inaugurdal Date PPC"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 21, 2022"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Science Institute SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bengaluru Urban (dt.), Karnataka - 560012."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ"
+}

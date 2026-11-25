@@ -1,0 +1,462 @@
+.hero,
+.features,
+.contact {
+  margin-bottom: 2rem;
+}
+.search-container,
+.filter-container,
+.count-container {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.clear-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filter-container label {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.filter-container label input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+.filter-container .Working input[type='checkbox'] + span {
+  color: green;
+}
+.filter-container .Doubtful input[type='checkbox'] + span {
+  color: blue;
+}
+.filter-container .Removed input[type='checkbox'] + span {
+  color: red;
+}
+.filter-container .Replaced input[type='checkbox'] + span {
+  color: orange;
+}
+.Working td {
+  color: green;
+}
+.Removed td {
+  color: red;
+}
+.Replaced td {
+  color: orange;
+}
+.Doubtful td {
+  color: blue;
+}
+tr.Working {
+  --row-st: #16a34a;
+}
+tr.Doubtful {
+  --row-st: #2563eb;
+}
+tr.Removed {
+  --row-st: #dc2626;
+}
+tr.Replaced {
+  --row-st: #f59e0b;
+}
+/* Ensure no alternate row highlighting */
+table tbody tr {
+  background-color: transparent !important; /* Remove any existing alternate row styles */
+}
+/* Uniform hover effect for all rows */
+table tbody tr:hover {
+  background-color: #f5f5f5 !important; /* Choose your desired highlight color */
+}
+/* Ensure the separator line does not get highlighted */
+table tbody tr.exclude-hover:hover {
+  background-color: transparent !important;
+}
+
+/* Search bar + state dropdown, side by side (search is the wider one) */
+.query-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.query-row .search-container {
+  flex: 3 1 0;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.query-row .search-container .input-group {
+  margin-bottom: 0 !important;
+}
+.query-row #stateSelect {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+}
+
+/* Buttons on this page */
+main .btn-outline-secondary {
+  background-color: var(--accent, #0b5cab);
+  border: 1px solid var(--accent, #0b5cab);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.15));
+}
+main .btn-outline-secondary:hover {
+  background-color: var(--ppc-saffron, #ef7f1a);
+  border-color: var(--ppc-saffron, #ef7f1a);
+  color: #fff;
+}
+.filter-container .btn {
+  border-radius: 999px;
+}
+.icon-btn {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 999px;
+}
+.icon-btn svg {
+  stroke: #fff;
+  flex: none;
+}
+main .icon-btn[aria-expanded='true'] {
+  background-color: var(--ppc-saffron, #ef7f1a);
+  border-color: var(--ppc-saffron, #ef7f1a);
+}
+.icon-btn .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  padding: 0 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #d62839;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.icon-btn .badge:empty {
+  display: none;
+}
+
+/* Sort + date-picker toolbar */
+.tools-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tools-container label.sort-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+.tools-container #sortSelect {
+  width: auto;
+  min-width: 0;
+}
+
+/* Calendar: a compact rectangle with the release count as a bright pill */
+.cal-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: 360px;
+  max-width: calc(100vw - 2rem);
+  padding: 0.6rem;
+  text-align: left;
+  font-size: 0.8rem;
+  background: var(--surface-card, #fff);
+  color: var(--text-body, #33404f);
+  border: 1px solid var(--border-strong, #c4ccd6);
+  border-radius: var(--radius-md, 10px);
+  box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.15));
+}
+.cal-head {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.cal-head select {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.8rem;
+}
+.cal-head #calMonth {
+  flex: 1.5 1 0;
+}
+.cal-head button,
+.cal-foot button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm, 6px);
+}
+.cal-head button {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.cal-head button:hover,
+.cal-foot button:hover {
+  background: var(--surface-sunken, #eef1f5);
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+.cal-dow {
+  text-align: center;
+  font-size: 0.65rem;
+  color: var(--text-muted, #64748b);
+  padding: 0.15rem 0;
+}
+.cal-day {
+  position: relative;
+  display: block;
+  height: 2.6rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm, 6px);
+  background: none;
+  color: var(--text-muted, #64748b);
+  opacity: 0.4;
+  font: inherit;
+  font-size: 0.7rem;
+  text-align: left;
+}
+.cal-day .n {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+.cal-day .c {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  min-width: 1.15rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: #e11d48;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 1.15rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(225, 29, 72, 0.45);
+}
+.cal-day.has-ppc {
+  opacity: 1;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--text-strong, #0d1b2a);
+  background: rgba(245, 158, 11, 0.16);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+.cal-day.has-ppc:hover {
+  border-color: var(--accent, #0b5cab);
+}
+.cal-day.selected {
+  background: var(--accent, #0b5cab);
+  color: #fff;
+  border-color: var(--accent, #0b5cab);
+}
+.cal-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+#dateChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+#dateChips:empty {
+  display: none;
+}
+.date-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.2rem 0.15rem 0.6rem;
+  border: 1px solid var(--border-strong, #c4ccd6);
+  border-radius: var(--radius-pill, 999px);
+  background: var(--surface-card, #fff);
+  font-size: 0.85rem;
+}
+.date-chip button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.35rem;
+  color: inherit;
+}
+
+/* Sortable column headings (arrows are drawn in CSS so the heading text,
+   which the mobile card labels are built from, stays clean) */
+#ppcTable th.sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+#ppcTable th.sortable::after {
+  content: '\2195';
+  margin-left: 0.4rem;
+  opacity: 0.35;
+}
+#ppcTable th.sortable:hover::after {
+  opacity: 0.8;
+}
+#ppcTable th.sortable[aria-sort='ascending']::after {
+  content: '\25B2';
+  opacity: 1;
+  font-size: 0.7em;
+}
+#ppcTable th.sortable[aria-sort='descending']::after {
+  content: '\25BC';
+  opacity: 1;
+  font-size: 0.7em;
+}
+#ppcTable th.sortable:focus-visible {
+  outline: 2px solid var(--accent, #0b5cab);
+  outline-offset: -2px;
+}
+
+/* Phones and small tablets: every PPC becomes a compact card */
+@media (max-width: 860px) {
+  .ppc-table-wide,
+  .table-container {
+    overflow: visible;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  #ppcTable,
+  #ppcTable tbody {
+    display: block;
+    width: 100%;
+  }
+  #ppcTable thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  #ppcTable tbody tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1rem;
+    margin: 0 0 1rem;
+    padding: 0.9rem 1rem;
+    background: var(--surface-card, #fff) !important;
+    border: 1px solid var(--border, #dfe4ea);
+    border-left: 5px solid var(--row-st, #94a3b8);
+    border-radius: var(--radius-md, 10px);
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.08));
+    overflow: hidden;
+  }
+  #ppcTable tbody tr:hover {
+    background: var(--surface-card, #fff) !important;
+  }
+  #ppcTable tbody td {
+    display: block;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+    text-align: left;
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+  }
+  #ppcTable tbody td::before {
+    content: attr(data-label);
+    display: block;
+    flex: none;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted, #64748b);
+    -webkit-text-fill-color: var(--text-muted, #64748b);
+  }
+  /* S. No. as a small tag, picture first, then the name across the full width */
+  #ppcTable tbody td:nth-child(1) {
+    order: -3;
+    grid-column: 1 / -1;
+    font-size: 0.75rem;
+  }
+  #ppcTable tbody td:nth-child(1)::before {
+    display: inline;
+    margin-right: 0.4rem;
+  }
+  #ppcTable tbody td:nth-child(8) {
+    order: -2;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  #ppcTable tbody td:nth-child(8)::before {
+    display: none;
+  }
+  #ppcTable tbody td:nth-child(8) img {
+    width: auto;
+    max-width: 100%;
+    max-height: 220px;
+    height: auto;
+  }
+  #ppcTable tbody td:nth-child(2) {
+    order: -1;
+    grid-column: 1 / -1;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  #ppcTable tbody td:nth-child(2)::before {
+    display: none;
+  }
+  #ppcTable tbody td:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 480px) {
+  .query-row #stateSelect {
+    flex-grow: 1.2;
+  }
+}

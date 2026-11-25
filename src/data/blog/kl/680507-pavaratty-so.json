@@ -1,0 +1,103 @@
+{
+  "docTitle": "Shrine of St. Joseph Church",
+  "title": "Shrine of St. Joseph Church",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ShrineOfStJosephChurch.jpg",
+          "alt": "Shrine of St. Joseph Church",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/680507-ShrineofStJosephChurch-PavarattySO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The parish at Pavaratty, in the Chavakkad area of Thrissur district, grew out of the inconvenience felt by local Catholic families who were until the nineteenth century attached to the neighbouring Chittattukara parish. Dissatisfied with the scheduling of services there, residents of Pavaratty petitioned for a church of their own, and the first structure on the present site was blessed on 13 April 1876. Dedicated from the outset to St. Joseph, the foster father of Jesus and patron of the universal Church, the new parish quickly developed an identity distinct from its parent congregation, setting the stage for its later growth into one of the region's most visited pilgrimage centres."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today the shrine is widely described as the largest church dedicated to St. Joseph in Asia and functions as the principal pilgrimage centre devoted to the saint in Kerala. It operates as a parish of the Syro-Malabar Catholic tradition under the Archeparchy of Thrissur, placing it within the broader fabric of Kerala's St. Thomas Christian heritage, whose origins are traditionally linked to the first-century mission of the Apostle Thomas and whose institutional growth owes much to Portuguese and other European missionary activity from the sixteenth century onward. The shrine's standing rests chiefly on a statue of St. Joseph enshrined on its main altar, which is venerated by pilgrims as miraculous and is credited locally with a long record of healings."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A permanent church building was completed in 1880, the year the statue of St. Joseph was formally installed on the main altar with due ceremony. As the number of pilgrims grew, the parish added a hall facing the altar from the southern side in 1934 and a corresponding hall on the northern side in 1961, before the foundation stone for a larger church was blessed on 15 August 1975 to accommodate the expanding congregation. The present sanctuary is noted for its Portuguese-styled main altar and for an unusually large pillar-free area of roughly 12,500 square feet surrounding it, an engineering feature that allows unobstructed sightlines for the large crowds who gather during major liturgical observances."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Among the shrine's distinguishing features are two venerated relics: a fragment traditionally held to be from the Holy Cross, and a relic of St. Joseph himself, obtained by the church in 1950 and understood to be a thread from his garment, which is brought out for public veneration every Wednesday. The shrine's Annual Grand Feast, observed on the third Sunday after Easter rather than on the Roman Catholic calendar date of 19 March, begins with a novena inaugurated at St. Antony's Chapel opposite the shrine, culminating in the ceremonial hoisting of a flag bearing the image of St. Joseph on the church's kodimaram, or flag pillar, which opens nine days of special masses, processions, and community observances drawing pilgrims from across the state."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The shrine today operates under the pastoral care of the Syro-Malabar Archeparchy of Thrissur, which oversees its daily liturgical schedule, the weekly exposition of the St. Joseph relic, and the logistics of hosting the large pilgrim gatherings that mark its annual feast. Thrissur district's dense concentration of historic churches, reflecting one of the oldest continuous Christian populations outside the Middle East, situates Pavaratty within a wider network of Kerala pilgrimage sites, yet it has retained a distinct identity as the state's foremost centre of devotion to St. Joseph. The parish continues to function as an active place of worship for its local congregation even as it draws a steady stream of visitors from outside the district seeking the intercession associated with its venerated statue."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "May 13, 1996"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Pavaratty SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Thrissur (dt.), Kerala - 680507."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "സെന്റ് ജോസഫ് പള്ളിയുടെ ദേവാലയം"
+}

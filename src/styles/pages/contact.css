@@ -1,0 +1,27 @@
+.site {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.profile-tile {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.profile-tile:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.profile-role {
+  font-size: 16px;
+  color: #666;
+}

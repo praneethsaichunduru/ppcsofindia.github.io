@@ -1,0 +1,130 @@
+{
+  "docTitle": "Vellore Fort with Moat",
+  "title": "Vellore Fort with Moat",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/VelloreFortwithMoat.jpg",
+          "alt": "Vellore Fort with Moat",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/632004-VelloreFortwithMoat-VelloreFortSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Vellore Fort, located in the heart of Vellore, Tamil Nadu, stands as a monumental testament to India's rich historical tapestry and architectural brilliance. Constructed in the 16th century by the Vijayanagara Empire, this fort has witnessed numerous dynastic changes, each leaving an indelible mark on its legacy."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The fort's origins trace back to 1566 AD when it was built under the reign of Chinna Bommi Nayak and later expanded by the Nayaks of Vellore. Serving as a strategic military outpost, Vellore Fort played a pivotal role during various historical events, including the conflicts between the British and the Marathas, as well as the Indian Rebellion of 1857."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, Vellore Fort is a marvel, showcasing a blend of Indian and Islamic styles. Constructed primarily from granite, its imposing walls, approximately 30 feet high, are surrounded by a moat sourced from the Suryagunta tank, enhancing its defensive capabilities. The fort's design features massive walls, bastions, and a wide moat, reflecting the military engineering prowess of its time."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Within its expansive 133-acre complex, the fort houses several notable structures. The Jalakandeswarar Temple, dedicated to Lord Shiva, is renowned for its intricate carvings and towering gopurams, exemplifying the Vijayanagara architectural style. The temple's Kalyana Mandapam (marriage hall) is adorned with sculptures of dragons, horses, and lion-like creatures, highlighting the artisans' craftsmanship. Additionally, the fort encompasses a church constructed during early British rule and a mosque built in 1750 in the Indo-Saracenic style, reflecting the fort's diverse religious history."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The fort's historical significance is further underscored by events such as the Vellore Mutiny of 1806, one of the earliest uprisings against British rule. This rebellion was sparked by changes imposed on Indian soldiers regarding dress codes and religious practices, leading to a violent confrontation within the fort's walls. The fort also served as a detention center for notable figures, including the family of Tipu Sultan and Sri Vikrama Rajasinha, the last king of Sri Lanka, marking it as a site of considerable political importance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, Vellore Fort stands as a well-preserved historical site, attracting visitors with its architectural grandeur and rich past. Maintained by the Archaeological Survey of India, the fort offers insights into the region's history through its structures and the museum housed within. The fort's continued prominence in Vellore underscores its enduring legacy as a symbol of the area's historical and cultural heritage."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1984-08-03-forts-of-india-vellore.jpg",
+          "alt": "",
+          "cls": "vertical",
+          "credit": "Forts of India: Vellore Fort, 03.08.1984"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "March 3, 2017"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Vellore Fort SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Vellore (dt.), Tamil Nadu - 632004."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "வேலூர் கோட்டை, அகழியுடன்"
+}

@@ -1,0 +1,103 @@
+{
+  "docTitle": "Saraighat Bridge",
+  "title": "Saraighat Bridge",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/SaraighatBridge.jpg",
+          "alt": "Saraighat Bridge",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/781001-SaraighatBridge-GuwahatiGPO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The crossing takes its name from Saraighat, the stretch of the Brahmaputra near Guwahati where, in 1671, Ahom general Lachit Borphukan commanded a decisive naval victory over a much larger Mughal force under Ram Singh I, halting the Mughal advance into Assam for good. The battle is remembered as the last major attempt by the Mughal empire to subjugate the Ahom kingdom and has since become a defining episode in Assamese historical memory, commemorated annually and taught widely in the state's schools. When engineers finally bridged the same stretch of river nearly three centuries later, naming the structure after the battle anchored a modern feat of engineering to a moment already central to regional identity, rather than leaving it as a purely utilitarian river crossing."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Proposals to bridge the Brahmaputra at Guwahati date back to 1910, but the idea gained real momentum only after World War II and, more urgently, after the 1962 Sino-Indian War exposed how poorly connected India's northeastern frontier was to the rest of the country. Until then, the river could only be crossed by ferry or via a circuitous rail route through what was then East Pakistan, a constraint that left Assam and the frontier regions beyond it dependent on slow and vulnerable supply lines. The Saraighat Bridge, built as a combined rail and road structure, was the first permanent bridge ever constructed across the Brahmaputra in Assam, making it a landmark not just for Guwahati but for the strategic and economic integration of the entire northeast with the Indian mainland."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Construction was carried out by the Hindustan Construction Company between 1959 and 1962 at a reported cost of around Rs 10.6 crore, a considerable outlay for Indian infrastructure of that era. The bridge runs 1,298 metres long across twelve spans, carrying a single railway line beneath a road deck roughly 7.3 metres wide, and consumed about 14,000 tonnes of steel and 40,000 tonnes of cement in its construction. The first train crossed on 23 September 1962, the road deck opened to traffic in March 1963, and Prime Minister Jawaharlal Nehru formally dedicated the completed bridge, giving it the Saraighat name, on 7 June 1963, connecting Guwahati on the southern bank to North Guwahati and the route toward Rangiya and onward into the Northeast."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As rail and road traffic across the Brahmaputra grew far beyond what the single structure could comfortably handle, a second crossing, the New Saraighat Bridge, was built immediately alongside the original and opened to road traffic in January 2017, easing the load on the older bridge and giving Guwahati an additional link between its two banks. The original bridge, meanwhile, aged under decades of continuous use and has periodically needed structural repair and strengthening work, including the replacement and reinforcement of its girders, to keep both the rail line and road deck serviceable."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In recognition of continuing traffic pressure, the Railway Board has approved a further rail-cum-road bridge project at Saraighat, planned as part of a broader doubling of the Agthori-Kamakhya railway section, which will eventually give the crossing a third dedicated structure. The original Saraighat Bridge itself remains in active use today under Northeast Frontier Railway and state public works maintenance, still carrying both trains and road traffic as the historic anchor of a crossing that has grown, six decades on, into a small cluster of bridges serving the same strategic purpose it was first built for."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 8, 2026"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Guwahati GPO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kamrup Metropolitan (dt.), Assam - 781001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "শৰাইঘাট সেতু"
+}

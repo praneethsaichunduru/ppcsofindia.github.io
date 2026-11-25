@@ -1,0 +1,3104 @@
+[
+  {
+    "name": "Delhi",
+    "items": [
+      {
+        "code": "dl",
+        "slug": "110001-national-philatelic-museum",
+        "img": "110001-PeacockPhilatelyLogo-NationalPhilatelicMuseum.jpg",
+        "name": "Peacock (Philately Logo)"
+      },
+      {
+        "code": "dl",
+        "slug": "110004-rashtrapati-bhawan-so",
+        "img": "110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg",
+        "name": "Rashtrapati Bhawan"
+      },
+      {
+        "code": "dl",
+        "slug": "110006-philatelic-gallery-red-fort",
+        "img": "110006-RedFort-PhilatelicGalleryRedFort.jpg",
+        "name": "Red Fort"
+      }
+    ]
+  },
+  {
+    "name": "Haryana",
+    "items": [
+      {
+        "code": "hr",
+        "slug": "126101-kila-zaffargarh-bo",
+        "img": "126101-ZaffargarhFort-KilaZaffargarhBO.jpg",
+        "name": "Zaffargarh Fort"
+      }
+    ]
+  },
+  {
+    "name": "Punjab",
+    "items": [
+      {
+        "code": "pb",
+        "slug": "143001-amritsar-gpo-pb",
+        "img": "143001-SriHarmandirSahibGoldenTemple-AmritsarGPOPB.jpg",
+        "name": "Sri Harmandir Sahib (Golden Temple)"
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh",
+    "items": [
+      {
+        "code": "ch",
+        "slug": "160017-chandigarh-gpo-pb",
+        "img": "160017-RoseFlowerOpenHandMonumentSukhnaLakeYachtandShivalikHills-ChandigarhGPOPB.jpg",
+        "name": "Rose Flower, The Open Hand Monument, Sukhna Lake, Yacht, and Shivalik Hills"
+      }
+    ]
+  },
+  {
+    "name": "Himachal Pradesh",
+    "items": [
+      {
+        "code": "hp",
+        "slug": "171001-shimla-gpo-pb",
+        "img": "171001-HimalayanMonal-ShimlaGPOPB.jpg",
+        "name": "Himalayan Monal"
+      },
+      {
+        "code": "hp",
+        "slug": "171004-ambedkar-chowk-so",
+        "img": "171004-BhadramukhaShiva-AmbedkarChowkSO.jpg",
+        "name": "Bhadramukha Shiva"
+      },
+      {
+        "code": "hp",
+        "slug": "171005-summerhill-so",
+        "img": "171005-WesternTragopan-SummerhillSO.jpg",
+        "name": "Western Tragopan"
+      },
+      {
+        "code": "hp",
+        "slug": "172113-tabo-so",
+        "img": "172113-TaboMonastery-TaboSO.jpg",
+        "name": "Tabo Monastery"
+      },
+      {
+        "code": "hp",
+        "slug": "172114-hikkim-bo",
+        "img": "172114-HikkimPostOffice-HikkimBO.jpg",
+        "name": "Hikkim Post Office"
+      },
+      {
+        "code": "hp",
+        "slug": "172114-kee-gompa-bo",
+        "img": "172114-KeyMonastery-KeeGompaBO.jpg",
+        "name": "Key Monastery"
+      },
+      {
+        "code": "hp",
+        "slug": "172114-kibber-bo",
+        "img": "172114-ChichamBridge-KibberBO.jpg",
+        "name": "Chicham Bridge"
+      },
+      {
+        "code": "hp",
+        "slug": "175131-manali-so",
+        "img": "175131-HidimbaDeviTemple-ManaliSO.jpg",
+        "name": "Hidimba Devi Temple"
+      },
+      {
+        "code": "hp",
+        "slug": "176031-jawalamukhi-so",
+        "img": "176031-JawalamukhiTemple-JawalamukhiSO.jpg",
+        "name": "Jawalamukhi Temple"
+      },
+      {
+        "code": "hp",
+        "slug": "176077-bir-so",
+        "img": "176077-HimalayasandParagliding-BirSO.jpg",
+        "name": "Himalayas and Paragliding"
+      },
+      {
+        "code": "hp",
+        "slug": "176215-dharamsala-ho",
+        "img": "176215-DhauladharMountainsKangraTea&Temple-DharamsalaHO.jpg",
+        "name": "Dhauladhar Mountains, Kangra Tea & Temple"
+      },
+      {
+        "code": "hp",
+        "slug": "176215-mcleodganj-so",
+        "img": "176215-HimalayasandManePrayerWheel-McleodganjSO.jpg",
+        "name": "Himalayas and Mane Prayer Wheel"
+      }
+    ]
+  },
+  {
+    "name": "Jammu and Kashmir",
+    "items": [
+      {
+        "code": "jk",
+        "slug": "180001-raghunath-bazaar-so",
+        "img": "180001-RaghunathMandir-RaghunathBazaarSO.jpg",
+        "name": "Raghunath Mandir"
+      },
+      {
+        "code": "jk",
+        "slug": "182301-katra-so",
+        "img": "182301-VaishnoDeviTemple-KatraSO.jpg",
+        "name": "Vaishno Devi Temple"
+      },
+      {
+        "code": "jk",
+        "slug": "190001-lal-chowk-so",
+        "img": "190001-GhantaGhar-LalChowkSO.jpg",
+        "name": "Ghanta Ghar"
+      },
+      {
+        "code": "jk",
+        "slug": "190001-nehru-park-so",
+        "img": "190001-ShikarainDalLake-NehruParkSO.jpg",
+        "name": "Shikara in Dal Lake"
+      },
+      {
+        "code": "jk",
+        "slug": "190001-srinagar-gpo",
+        "img": "190001-DalLakeandShikara-SrinagarGPO.jpg",
+        "name": "Dal Lake and Shikara"
+      },
+      {
+        "code": "jk",
+        "slug": "192121-pampore-so",
+        "img": "192121-KongposhSaffron-PamporeSO.jpg",
+        "name": "Kongposh (Saffron)"
+      },
+      {
+        "code": "jk",
+        "slug": "192126-pahalgam-so",
+        "img": "192126-ShriAmarnathJi-PahalgamSO.jpg",
+        "name": "Shri Amarnath Ji"
+      },
+      {
+        "code": "jk",
+        "slug": "193403-gulmarg-so",
+        "img": "193403-GondolaRopeway-GulmargSO.jpg",
+        "name": "Gondola Ropeway"
+      }
+    ]
+  },
+  {
+    "name": "Ladakh",
+    "items": [
+      {
+        "code": "la",
+        "slug": "194101-leh-ho",
+        "img": "194101-ShantiStupa-LehHO.jpg",
+        "name": "Shanti Stupa"
+      }
+    ]
+  },
+  {
+    "name": "Uttar Pradesh",
+    "items": [
+      {
+        "code": "up",
+        "slug": "202001-aligarh-ho",
+        "img": "202001-AligarhLock-AligarhHO.jpg",
+        "name": "Aligarh Lock"
+      },
+      {
+        "code": "up",
+        "slug": "211001-prayagraj-ho-1",
+        "img": "211001-PrayagrajSangam-PrayagrajHO.jpg",
+        "name": "Prayagraj Sangam"
+      },
+      {
+        "code": "up",
+        "slug": "211001-prayagraj-ho-2",
+        "img": "211001-AllahabadSurkhaGuava-PrayagrajHO.jpg",
+        "name": "Allahabad Surkha Guava"
+      },
+      {
+        "code": "up",
+        "slug": "211001-prayagraj-ho-3",
+        "img": "211001-FirstAirmail-PrayagrajHO.jpg",
+        "name": "First Airmail"
+      },
+      {
+        "code": "up",
+        "slug": "221001-varanasi-ho-pb",
+        "img": "221001-ShriKashiVishwanathMandirVaranasi-VaranasiHOPB.jpg",
+        "name": "Shri Kashi Vishwananth Mandir"
+      },
+      {
+        "code": "up",
+        "slug": "224001-ayodhya-ho-1",
+        "img": "224001-HanumanGarhiAyodhya-AyodhyaHO.jpg",
+        "name": "Hanuman Garhi, Ayodhya"
+      },
+      {
+        "code": "up",
+        "slug": "224001-ayodhya-ho-2",
+        "img": "224001-ShriRamJanmbhoomiTempple-AyodhyaHO.jpg",
+        "name": "Shri Ram Janmbhoomi Temple"
+      },
+      {
+        "code": "up",
+        "slug": "226001-gokhale-marg-so",
+        "img": "226001-RoseFlower-GokhaleMargSO.jpg",
+        "name": "Rose Flower"
+      },
+      {
+        "code": "up",
+        "slug": "226001-lucknow-gpo-pb",
+        "img": "226001-LucknowGPOClockTower-LucknowGPOPB.jpg",
+        "name": "Lucknow GPO Clock Tower"
+      },
+      {
+        "code": "up",
+        "slug": "226027-up-governor-camp-so",
+        "img": "226027-RajBhawanLucknow-UPGovernorCampSO.jpg",
+        "name": "Raj Bhawan, Lucknow"
+      },
+      {
+        "code": "up",
+        "slug": "243001-bareilly-ho",
+        "img": "243001-BareillyHeadPostOfficeBuilding-BareillyHO.jpg",
+        "name": "Bareilly Head Post Office Building"
+      },
+      {
+        "code": "up",
+        "slug": "244001-ptc-moradabad-so",
+        "img": "244001-DrBRAmbedkarUttarPradeshPoliceAcademy-PTCMoradabadSO.jpg",
+        "name": "Dr. B. R. Ambedkar Uttar Pradesh Police Academy"
+      },
+      {
+        "code": "up",
+        "slug": "282001-agra-ho-pb",
+        "img": "282001-TajMahal-AgraHOPB.jpg",
+        "name": "Taj Mahal"
+      },
+      {
+        "code": "up",
+        "slug": "282001-taj-so",
+        "img": "282001-TajMahal-TajSO.jpg",
+        "name": "Taj Mahal"
+      },
+      {
+        "code": "up",
+        "slug": "282001-taj-so-1",
+        "img": "282001-TajMahal-TajSO.jpg",
+        "name": "Taj Mahal"
+      },
+      {
+        "code": "up",
+        "slug": "282001-taj-so-2",
+        "img": "282001-TajMahal-TajSO.jpg",
+        "name": "Taj Mahal"
+      }
+    ]
+  },
+  {
+    "name": "Uttarakhand",
+    "items": [
+      {
+        "code": "uk",
+        "slug": "244715-corbett-national-park-dhikala-bo",
+        "img": "244715-SpottedDeer-SaveOurHeritagePreserveWildlife-CorbettNationalParkDhikalaBO.jpg",
+        "name": "Spotted Deer-Save Our Heritage, Preserve Wildlife",
+        "seasonal": true
+      },
+      {
+        "code": "uk",
+        "slug": "246422-badrinath-seasonal-so",
+        "img": "246422-ShreeBadarinathTemple-BadrinathSeasonalSO.jpg",
+        "name": "Shree Badarinath Temple",
+        "seasonal": true
+      },
+      {
+        "code": "uk",
+        "slug": "248001-dehradun-pb",
+        "img": "248001-HimalayasandBadrinathTemple-DehradunPB.jpg",
+        "name": "Himalayas and Badrinath Temple"
+      },
+      {
+        "code": "uk",
+        "slug": "248179-naa-mussoorie-so",
+        "img": "248179-LalBahadurShastriNationalAcademyofAdministration-NAAMussoorieSO.jpg",
+        "name": "Lal Bahadur Shastri National Academy of Administration, Mussoorie"
+      },
+      {
+        "code": "uk",
+        "slug": "249136-gangotri-seasonal-so",
+        "img": "249136-GangotriTempleandGomukh-GangotriSeasonalSO.jpg",
+        "name": "Gangotri Temple & Gomukh",
+        "seasonal": true
+      },
+      {
+        "code": "uk",
+        "slug": "249192-kaudiyala-bo",
+        "img": "249192-WhitewaterRafting-KaudiyalaBO.jpg",
+        "name": "Whitewater Rafting"
+      },
+      {
+        "code": "uk",
+        "slug": "249302-laxmanjhula-b-so",
+        "img": "249302-LakshmanJhula-LaxmanjhulaBSO.jpg",
+        "name": "Lakshman Jhula"
+      },
+      {
+        "code": "uk",
+        "slug": "249411-shantikunj-so",
+        "img": "249411-PrakharPragya-SajalShraddha-ShantikunjSO.jpg",
+        "name": "Prakhar Pragya - Sajal Shraddha"
+      },
+      {
+        "code": "uk",
+        "slug": "263001-nainital-ho",
+        "img": "263001-NainaDeviTemple-NainitalHO.jpg",
+        "name": "Naina Devi Temple"
+      },
+      {
+        "code": "uk",
+        "slug": "263001-nainital-pb",
+        "img": "263001-Mountains-NainitalPB.jpg",
+        "name": "Mountains"
+      },
+      {
+        "code": "uk",
+        "slug": "263623-jageshwar-bo",
+        "img": "263623-JageshwarGroupofTemples-JageshwarBO.jpg",
+        "name": "Jageshwar Group of Temples"
+      }
+    ]
+  },
+  {
+    "name": "Rajasthan",
+    "items": [
+      {
+        "code": "rj",
+        "slug": "302002-tripolia-bazaar-so",
+        "img": "302002-HawaMahal-TripoliaBazaarSO.jpg",
+        "name": "Hawa Mahal"
+      },
+      {
+        "code": "rj",
+        "slug": "302028-amer-so",
+        "img": "302028-AmerFort-AmerSO.jpg",
+        "name": "Amer Fort"
+      },
+      {
+        "code": "rj",
+        "slug": "303604-sambhar-lake-ho",
+        "img": "303604-Flamingo-SambharLakeHO.jpg",
+        "name": "Flamingo"
+      },
+      {
+        "code": "rj",
+        "slug": "305001-ajmer-ho-pb",
+        "img": "305001-PrithvirajChauhan-AjmerHOPB.jpg",
+        "name": "Prithviraj Chauhan"
+      },
+      {
+        "code": "rj",
+        "slug": "306702-ranakpur-bo",
+        "img": "306702-RanakpurJainTemple-RanakpurBO.jpg",
+        "name": "Ranakpur Jain Temple"
+      },
+      {
+        "code": "rj",
+        "slug": "307501-delwara-bo",
+        "img": "307501-DelwaraJainTemple-DelwaraBO.jpg",
+        "name": "Delwara Jain Temple"
+      },
+      {
+        "code": "rj",
+        "slug": "307501-mount-abu-so",
+        "img": "307501-DelwaraJainTemple-MountAbuSO.jpg",
+        "name": "Delwara Jain Temple"
+      },
+      {
+        "code": "rj",
+        "slug": "313001-panchwati-udaipur-so",
+        "img": "313001-MaharanaPratap-PanchwatiUdaipurSO.jpg",
+        "name": "Maharana Pratap"
+      },
+      {
+        "code": "rj",
+        "slug": "313001-shastri-circle-udaipur-so",
+        "img": "313001-MaharanaPratap-ShastriCircleUdaipurSO.jpg",
+        "name": "Maharana Pratap"
+      },
+      {
+        "code": "rj",
+        "slug": "321001-forest-lodge-bharatpur-bo",
+        "img": "321001-SiberianCrane-ForestLodgeBharatpurBO.jpg",
+        "name": "Siberian Crane"
+      },
+      {
+        "code": "rj",
+        "slug": "322220-shrimahaveerji-so",
+        "img": "322220-ShriMahaveerMandir-ShrimahaveerjiSO.jpg",
+        "name": "Shri Mahaveer Mandir"
+      },
+      {
+        "code": "rj",
+        "slug": "334401-gangashahar-so",
+        "img": "334401-AcharyaTulsiShaktiPeeth-GangashaharSO.jpg",
+        "name": "Acharya Tulsi Shakti Peeth"
+      },
+      {
+        "code": "rj",
+        "slug": "334801-deshnoke-so",
+        "img": "334801-ShriKarniMata-DeshnokeSO.jpg",
+        "name": "Shri Karni Mata"
+      },
+      {
+        "code": "rj",
+        "slug": "342001-jodhpur-ho",
+        "img": "342001-MehrangarhFort-JodhpurHO.jpg",
+        "name": "Mehrangarh Fort"
+      }
+    ]
+  },
+  {
+    "name": "Gujarat",
+    "items": [
+      {
+        "code": "gj",
+        "slug": "360001-rajkot-ho-pb-1",
+        "img": "360001-AlfredHighSchool-RajkotHO.jpg",
+        "name": "Alfred High School"
+      },
+      {
+        "code": "gj",
+        "slug": "360001-rajkot-ho-pb-2",
+        "img": "360001-MohandasGandhiVidyalaya-RajkotHO.jpg",
+        "name": "Mohandas Gandhi Vidyalaya"
+      },
+      {
+        "code": "gj",
+        "slug": "360001-rajkot-ho-pb-3",
+        "img": "360001-MahatmaGandhiMuseum-RajkotHOPB.jpg",
+        "name": "Mahatma Gandhi Museum"
+      },
+      {
+        "code": "gj",
+        "slug": "360575-porbandar-ho",
+        "img": "360575-KirtiMandir-TheBirthPlaceofMahatmaGandhi-PorbandarHO.jpg",
+        "name": "Kirti Mandir-The Birth Place of Mahatma Gandhi"
+      },
+      {
+        "code": "gj",
+        "slug": "361001-jamnagar-ho",
+        "img": "361001-ArabianSeaOctopus-JamnagarHO.jpg",
+        "name": "Arabian Sea Octopus"
+      },
+      {
+        "code": "gj",
+        "slug": "361330-bet-so",
+        "img": "361330-ArabianSea&BetDwarka-BetSO.jpg",
+        "name": "Arabian Sea & Bet Dwarka"
+      },
+      {
+        "code": "gj",
+        "slug": "361335-dwarka-so",
+        "img": "361335-DwarkadhishTempleLandofSriKrishna-DwarkaSO.jpg",
+        "name": "Dwarkadhish Temple - Land of Sri Krishna"
+      },
+      {
+        "code": "gj",
+        "slug": "362135-sasan-gir-so",
+        "img": "362135-AsiaticLions&VisitSasanGirWildlifeSanctuary-SasanGirSO.jpg",
+        "name": "Asiatic Lions & Visit Sasan Gir Wildlife Sanctuary"
+      },
+      {
+        "code": "gj",
+        "slug": "362268-prabhas-patan-so",
+        "img": "362268-SriSomnathTemple-PrabhasPatanSO.jpg",
+        "name": "Sri Somnath Temple"
+      },
+      {
+        "code": "gj",
+        "slug": "363310-dhrangadhra-mdg-so",
+        "img": "363310-IndianWildAss-DhrangadhraMDGSO.jpg",
+        "name": "Indian Wild Ass"
+      },
+      {
+        "code": "gj",
+        "slug": "364270-palitana-sr-so",
+        "img": "364270-SiddhaChakra-PalitanaSRSO.jpg",
+        "name": "Siddha Chakra"
+      },
+      {
+        "code": "gj",
+        "slug": "370001-bhuj-ho",
+        "img": "370001-VisitFlamingoCityBirdSanctuary-BhujHO.jpg",
+        "name": "Visit Flamingo City, Bird Sanctuary"
+      },
+      {
+        "code": "gj",
+        "slug": "370165-dholavira-bo",
+        "img": "370165-HarappanCulture-DholaviraBO.jpg",
+        "name": "Harappan Culture"
+      },
+      {
+        "code": "gj",
+        "slug": "370510-khavda-so",
+        "img": "370510-KachchhiMudwork-KhavdaSO.jpg",
+        "name": "Kachchhi Mudwork"
+      },
+      {
+        "code": "gj",
+        "slug": "370601-guvar-moti-bo",
+        "img": "370601-WesternMostPostOfficeofIndia-GuvarMotiBO.jpg",
+        "name": "Western Most Post Office of India"
+      },
+      {
+        "code": "gj",
+        "slug": "370627-lakhpat-bo",
+        "img": "370627-LakhpatFortKachchhh-LakhpatBO.jpg",
+        "name": "Lakhpat Fort, Kachchhh"
+      },
+      {
+        "code": "gj",
+        "slug": "380001-ahmedabad-gpo",
+        "img": "380001-ArchitecturalDelightsSidiSaiyad’sWindow-AhmedabadGPO.jpg",
+        "name": "Sidi Saiyad's Window"
+      },
+      {
+        "code": "gj",
+        "slug": "380004-shahibaug-so",
+        "img": "380004-SardarVallabhbhaiPatelNationalMemorial-ShahibaugSO.jpg",
+        "name": "Sardar Vallabhbhai Patel National Memorial"
+      },
+      {
+        "code": "gj",
+        "slug": "380006-ellisbridge-so",
+        "img": "380006-KocharabSatyagrahaAshramSmarak-EllisbridgeSO.jpg",
+        "name": "Kocharab Satyagraha Ashram Smarak"
+      },
+      {
+        "code": "gj",
+        "slug": "380015-iim-ahmedabad-so",
+        "img": "380015-SidiSaiyad’sMosqueWindow-IIMAhmedabadSO.jpg",
+        "name": "Sidi Saiyad’s Mosque Window"
+      },
+      {
+        "code": "gj",
+        "slug": "380027-gandhi-ashram-so-1",
+        "img": "380027-HridaykunjSabarmatiAshram-GandhiAshramSO.jpg",
+        "name": "Hridaykunj Sabarmati Ashram"
+      },
+      {
+        "code": "gj",
+        "slug": "380027-gandhi-ashram-so-2",
+        "img": "380027-SpinningWheelCharakha-GandhiAshramSO.jpg",
+        "name": "Spinning Wheel (Charakha)"
+      },
+      {
+        "code": "gj",
+        "slug": "380027-gandhi-ashram-so-3",
+        "img": "380027-SabarmatiAshram-GandhiAshramSO.jpg",
+        "name": "Sabarmati Ashram"
+      },
+      {
+        "code": "gj",
+        "slug": "382055-iit-gandhinagar-so",
+        "img": "382055-LogoofIITGandhinagarandLalMinar-IITGandhinagarSO.jpg",
+        "name": "Logo of IIT Gandhinagar and Lal Minar"
+      },
+      {
+        "code": "gj",
+        "slug": "382230-lothal-bhurkhi-railway-station-so",
+        "img": "382230-LothalSeal-LothalBhurkhiRailwayStationSO.jpg",
+        "name": "Lothal Seal"
+      },
+      {
+        "code": "gj",
+        "slug": "384265-patan-ng-so",
+        "img": "384265-RaniKiVavStepwell-PatanNGSO.jpg",
+        "name": "Rani Ki Vav (Stepwell)"
+      },
+      {
+        "code": "gj",
+        "slug": "384412-modhera-so",
+        "img": "384412-SuryaTemple-ModheraSO.jpg",
+        "name": "Surya Temple"
+      },
+      {
+        "code": "gj",
+        "slug": "387001-nadiad-ho",
+        "img": "387001-BirthPlaceofSardarVallabhbhaiPatel-NadiadHO.jpg",
+        "name": "Birth Place of Sardar Vallabhbhai Patel"
+      },
+      {
+        "code": "gj",
+        "slug": "388225-dakor-so",
+        "img": "388225-ShriRanchhodraijiMaharajTemple-DakorSO.jpg",
+        "name": "Shri Ranchhodraiji Maharaj Temple"
+      },
+      {
+        "code": "gj",
+        "slug": "388325-karamsad-so",
+        "img": "388325-SardarVallabhbhaiPatel-KaramsadSO.jpg",
+        "name": "Sardar Vallabhbhai Patel"
+      },
+      {
+        "code": "gj",
+        "slug": "390001-vadodara-ho",
+        "img": "390001-ChamarDharini-VadodaraHO.jpg",
+        "name": "Chamar Dharini"
+      },
+      {
+        "code": "gj",
+        "slug": "390002-vadodara-fateganj-ho",
+        "img": "390002-MaharajaSayajiraoGaekwad-VadodaraFateganjHO.jpg",
+        "name": "Maharaja Sayajirao Gaekwad"
+      },
+      {
+        "code": "gj",
+        "slug": "393151-kevadia-colony-so-1",
+        "img": "393151-SardarSarovarProject-KevadiaColonySO.jpg",
+        "name": "Sardar Sarovar Project"
+      },
+      {
+        "code": "gj",
+        "slug": "393151-kevadia-colony-so-2",
+        "img": "393151-SardarSarovarProjectandStatueofUnity-KevadiaColonySO.jpg",
+        "name": "Sardar Sarovar Project and Statue of Unity"
+      },
+      {
+        "code": "gj",
+        "slug": "394270-hajira-so",
+        "img": "394270-HajiraLighthouse-HajiraSO.jpg",
+        "name": "Hajira Lighthouse"
+      },
+      {
+        "code": "gj",
+        "slug": "394720-saputara-so",
+        "img": "394720-MusicalInstrumentsofLocalTribes-SaputaraSO.jpg",
+        "name": "Musical Instruments of Local Tribes"
+      }
+    ]
+  },
+  {
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "items": [
+      {
+        "code": "dd",
+        "slug": "362520-diu-so",
+        "img": "362520-DiuFort-DiuSO.jpg",
+        "name": "Diu Fort"
+      }
+    ]
+  },
+  {
+    "name": "Maharashtra",
+    "items": [
+      {
+        "code": "mh",
+        "slug": "400001-mumbai-gpo-pb",
+        "img": "400001-MumbaiGPOBuilding-MumbaiGPOPB.jpg",
+        "name": "Mumbai GPO Building"
+      },
+      {
+        "code": "mh",
+        "slug": "400001-taj-mahal-so",
+        "img": "400001-GatewayofIndia-TajMahalSO.jpg",
+        "name": "Gateway of India"
+      },
+      {
+        "code": "mh",
+        "slug": "400021-elephanta-caves-bo",
+        "img": "400021-Trimurthi-ElephantaCavesBO.jpg",
+        "name": "Trimurthi"
+      },
+      {
+        "code": "mh",
+        "slug": "400050-bandra-west-so",
+        "img": "400050-MountMaryChurch-BandraWestSO.jpg",
+        "name": "Mount Mary Church"
+      },
+      {
+        "code": "mh",
+        "slug": "400708-airoli-node-so",
+        "img": "400708-GreaterFlamingo-AiroliNodeSO.jpg",
+        "name": "Greater Flamingo"
+      },
+      {
+        "code": "mh",
+        "slug": "410102-matheran-so",
+        "img": "410102-MatheranLightRailwayLocomotive-MatheranSO.jpg",
+        "name": "Matheran Light Railway Locomotive"
+      },
+      {
+        "code": "mh",
+        "slug": "410517-khodad-so",
+        "img": "410517-GiantMeterWaveRadioTelescope-KhodadSO.jpg",
+        "name": "Giant Meter Wave Radio Telescope"
+      },
+      {
+        "code": "mh",
+        "slug": "411001-pune-ho",
+        "img": "411001-PuneHeadPostOfficeBuilding-PuneHOPB.jpg",
+        "name": "Pune Head Post Office Building"
+      },
+      {
+        "code": "mh",
+        "slug": "411030-shaniwar-peth-so",
+        "img": "411030-ShaniwarWada-ShaniwarPethSO.jpg",
+        "name": "Shaniwar Wada"
+      },
+      {
+        "code": "mh",
+        "slug": "412806-mahabaleshwar-so",
+        "img": "412806-Strawberry-MahabaleshwarSO.jpg",
+        "name": "Strawberry"
+      },
+      {
+        "code": "mh",
+        "slug": "412806-pratapgad-bo",
+        "img": "412806-PratapgadFort-PratapgadBO.jpg",
+        "name": "Pratapgad Fort"
+      },
+      {
+        "code": "mh",
+        "slug": "413222-nannaj-so",
+        "img": "413222-GreatIndianBustard-NannajSO.jpg",
+        "name": "Great Indian Bustard"
+      },
+      {
+        "code": "mh",
+        "slug": "413304-pandharpur-ho",
+        "img": "413304-VithobaTemple-PandharpurHO.jpg",
+        "name": "Vithoba Temple"
+      },
+      {
+        "code": "mh",
+        "slug": "416308-kirloskarvadi-so",
+        "img": "416308-KirloskarEngine-KirloskarvadiSO.jpg",
+        "name": "Kirloskar Engine"
+      },
+      {
+        "code": "mh",
+        "slug": "422010-ambad-a-s-so",
+        "img": "422010-PandavLeni-AmbadASSO.jpg",
+        "name": "Pandav Leni"
+      },
+      {
+        "code": "mh",
+        "slug": "431001-chhatrapati-sambhajinagar-ho",
+        "img": "431001-BibiKaMaqbara-ChhatrapatiSambhajinagarHO.jpg",
+        "name": "Bibi Ka Maqbara"
+      },
+      {
+        "code": "mh",
+        "slug": "431001-medical-college-so",
+        "img": "431001-Panchakki-MedicalCollegeSO.jpg",
+        "name": "Pan Chakki"
+      },
+      {
+        "code": "mh",
+        "slug": "431002-daulatabad-bo",
+        "img": "431002-ChandMinar-DaulatabadBO.jpg",
+        "name": "Chand Minar"
+      },
+      {
+        "code": "mh",
+        "slug": "431102-ellora-so",
+        "img": "431102-Indrasabha-JainCaves-ElloraSO.jpg",
+        "name": "Indrasabha - Jain Caves"
+      },
+      {
+        "code": "mh",
+        "slug": "431102-ellora-caves-bo-1",
+        "img": "431102-Elephants-ElloraCavesBO.jpg",
+        "name": "Elephants"
+      },
+      {
+        "code": "mh",
+        "slug": "431102-ellora-caves-bo-2",
+        "img": "431102-VictoryPillar-Ellora Caves BO.jpg",
+        "name": "Victory Pillar"
+      },
+      {
+        "code": "mh",
+        "slug": "431102-ellora-caves-bo-3",
+        "img": "431102-DeepStambh-ElloraCavesBO.jpg",
+        "name": "Deep Stambh"
+      },
+      {
+        "code": "mh",
+        "slug": "431117-ajanta-caves-bo-1",
+        "img": "431117-ElevationofCave19-AjantaCavesBO.jpg",
+        "name": "Elevation of Cave 19"
+      },
+      {
+        "code": "mh",
+        "slug": "431117-ajanta-caves-bo-2",
+        "img": "431117-EntranceofCave1-AjantaCavesBO.jpg",
+        "name": "Entrance of Cave 1"
+      },
+      {
+        "code": "mh",
+        "slug": "431117-ajanta-caves-bo-3",
+        "img": "431117-ChaddantaSixTuskedElephant-AjantaCavesBO.jpg",
+        "name": "Chaddanta (Six-Tusked Elephant)"
+      },
+      {
+        "code": "mh",
+        "slug": "440001-nagpur-gpo-1",
+        "img": "440001-NagpurGPOBuilding-NagpurGPO.jpg",
+        "name": "Nagpur GPO Building"
+      },
+      {
+        "code": "mh",
+        "slug": "440001-nagpur-gpo-2",
+        "img": "440001-ZeroMile-NagpurGPO.jpg",
+        "name": "Zero Mile"
+      },
+      {
+        "code": "mh",
+        "slug": "440010-shankarnagar-so",
+        "img": "440010-Deekshabhoomi-ShankarNagarSO.jpg",
+        "name": "Deekshabhoomi"
+      },
+      {
+        "code": "mh",
+        "slug": "440032-mahal-so",
+        "img": "440032-DrHegdewarNiwas-MahalSO.jpg",
+        "name": "Dr. Hegdewar Niwas"
+      },
+      {
+        "code": "mh",
+        "slug": "441106-nagardhan-bo",
+        "img": "441106-NagardhanFort-NagardhanBO.jpg",
+        "name": "Nagardhan Fort"
+      },
+      {
+        "code": "mh",
+        "slug": "443302-lonar-so",
+        "img": "443302-LonarLake-LonarSO.jpg",
+        "name": "Lonar Lake"
+      }
+    ]
+  },
+  {
+    "name": "Goa",
+    "items": [
+      {
+        "code": "ga",
+        "slug": "403001-panaji-ho-pb",
+        "img": "403001-IndianBisonCashewFishandCoconutTree-PanajiHOPB.jpg",
+        "name": "Indian Bison, Cashew, Fish, and Coconut Tree"
+      },
+      {
+        "code": "ga",
+        "slug": "403102-chorao-so",
+        "img": "403102-DrSalimAliBirdSanctuary-ChoraoSO.jpg",
+        "name": "Dr. Salim Ali Bird Sanctuary"
+      },
+      {
+        "code": "ga",
+        "slug": "403114-reis-magos-so",
+        "img": "403114-ReisMagosFort-ReisMagosSO.jpg",
+        "name": "Reis Magos Fort"
+      },
+      {
+        "code": "ga",
+        "slug": "403402-velha-goa-so",
+        "img": "403402-BasilicaofBomJesus-VelhaGoaSO.jpg",
+        "name": "Basilica of Bom Jesus"
+      },
+      {
+        "code": "ga",
+        "slug": "403404-mardol-so",
+        "img": "403404-MangueshiTemple-MardolSO.jpg",
+        "name": "Mangueshi Temple"
+      },
+      {
+        "code": "ga",
+        "slug": "403406-sancordem-bo",
+        "img": "403406-TambdiSurla-SancordemBO.jpg",
+        "name": "Tambdi Surla"
+      },
+      {
+        "code": "ga",
+        "slug": "403406-usgaon-bo",
+        "img": "403406-BondlaWildlifeSanctuary-UsgaonBO.jpg",
+        "name": "Bondla Wildlife Sanctuary"
+      },
+      {
+        "code": "ga",
+        "slug": "403506-valpoi-so",
+        "img": "403506-MalabarTreeNymph-ValpoiSO.jpg",
+        "name": "Malabar Tree Nymph"
+      },
+      {
+        "code": "ga",
+        "slug": "403515-candolim-so",
+        "img": "403515-FortAguadaLighthouse-CandolimSO.jpg",
+        "name": "Fort Aguada Lighthouse"
+      },
+      {
+        "code": "ga",
+        "slug": "403601-margao-ho",
+        "img": "403601-MargaoHeadPostOfficeBuilding-MargaoHO.jpg",
+        "name": "Margao Head Post Office"
+      },
+      {
+        "code": "ga",
+        "slug": "403702-palolem-bo",
+        "img": "403702-HumpbackDolphin-PalolemBO.jpg",
+        "name": "Humpback Dolphin"
+      },
+      {
+        "code": "ga",
+        "slug": "403710-sancoale-bo",
+        "img": "403710-FacadeofChurchofOurLadyofHealth-SancoaleBO.jpg",
+        "name": "Facade of Church of Our Lady of Health"
+      },
+      {
+        "code": "ga",
+        "slug": "403714-chandor-so",
+        "img": "403714-MussolKhel-ChandorSO.jpg",
+        "name": "Mussol Khel"
+      },
+      {
+        "code": "ga",
+        "slug": "403718-loutulim-so",
+        "img": "403718-BigFootSculptureofMeerabai-LoutulimSO.jpg",
+        "name": "Big Foot Sculpture of Meerabai"
+      },
+      {
+        "code": "ga",
+        "slug": "403728-loliem-so",
+        "img": "403728-OliveRidleyTurtle-LoliemSO.jpg",
+        "name": "Olive Ridley Turtle"
+      },
+      {
+        "code": "ga",
+        "slug": "403803-mormugao-so",
+        "img": "403803-MormugaoPortAuthority-MormugaoSO.jpg",
+        "name": "Mormugao Port Authority"
+      }
+    ]
+  },
+  {
+    "name": "Madhya Pradesh",
+    "items": [
+      {
+        "code": "mp",
+        "slug": "452001-indore-gpo-pb-1",
+        "img": "452001-RajwadaPalaceandIndiaPostLogo-IndoreGPOPB.jpg",
+        "name": "Rajwada Palace and India Post Logo"
+      },
+      {
+        "code": "mp",
+        "slug": "452001-indore-gpo-pb-2",
+        "img": "452001-KrishnapuraChhatri-IndoreGPOPB.jpg",
+        "name": "Krishnapura Chhatri"
+      },
+      {
+        "code": "mp",
+        "slug": "462036-raja-bhoj-airport-so",
+        "img": "462036-RajaBhoj-RajaBhojAirportSO.jpg",
+        "name": "Raja Bhoj"
+      },
+      {
+        "code": "mp",
+        "slug": "464001-udaygiri-bo",
+        "img": "464001-UdaygiriCaves-VarahaBoarCarving-UdaygiriBO.jpg",
+        "name": "Udaygiri Caves-Varaha (Boar) Carving"
+      },
+      {
+        "code": "mp",
+        "slug": "464661-sanchi-so",
+        "img": "464661-SanchiStupa-SanchiSO.jpg",
+        "name": "Sanchi Stupa"
+      },
+      {
+        "code": "mp",
+        "slug": "464993-ankalpur-bo",
+        "img": "464993-Bhimbetka-AnkalpurBO.jpg",
+        "name": "Bhimbetka"
+      },
+      {
+        "code": "mp",
+        "slug": "471606-khajuraho-so",
+        "img": "471606-KhajurahoTemple-KhajurahoSO.jpg",
+        "name": "Khajuraho Temple"
+      },
+      {
+        "code": "mp",
+        "slug": "473446-chanderi-so",
+        "img": "473446-BadalMahal-ChanderiSO.jpg",
+        "name": "Badal Mahal"
+      }
+    ]
+  },
+  {
+    "name": "Chhattisgarh",
+    "items": [
+      {
+        "code": "cg",
+        "slug": "490006-civic-centre-bhilai-so",
+        "img": "490006-SteelLadle-CivicCentreBhilaiSO.jpg",
+        "name": "Steel Ladle"
+      },
+      {
+        "code": "cg",
+        "slug": "491002-iit-bhilai-so",
+        "img": "491002-LogoofIITBhilai-IITBhilaiSO.jpg",
+        "name": "Logo of IIT Bhilai"
+      },
+      {
+        "code": "cg",
+        "slug": "491995-chhapri-bo",
+        "img": "491995-BhoramdeoTemple-ChhapriBO.jpg",
+        "name": "Bhoramdeo Temple"
+      },
+      {
+        "code": "cg",
+        "slug": "492001-raipur-ho-pb-1",
+        "img": "492001-ThermalPowerPlant-RaipurHOPB.jpg",
+        "name": "Thermal Power Plant"
+      },
+      {
+        "code": "cg",
+        "slug": "492001-raipur-ho-pb-2",
+        "img": "492001-ChhattisgarhARiceBowl-RaipurHOPB.jpg",
+        "name": "Chhattisgarh - A \"Rice Bowl\""
+      },
+      {
+        "code": "cg",
+        "slug": "492101-chand-bhuri-bo",
+        "img": "492101-MataKaushalyaMandir-ChandBhuriBO.jpg",
+        "name": "Mata Kaushalya Mandir"
+      },
+      {
+        "code": "cg",
+        "slug": "493445-sirpur-bo",
+        "img": "493445-LaxmanMandir-SirpurBO.jpg",
+        "name": "Laxman Mandir"
+      },
+      {
+        "code": "cg",
+        "slug": "493551-barnawapara-bo",
+        "img": "493551-IndianBisonGaur-BarnawaparaBO.jpg",
+        "name": "Indian Bison (Gaur)"
+      },
+      {
+        "code": "cg",
+        "slug": "493778-sihawa-bo",
+        "img": "493778-ShringiRishi-SihawaBO.jpg",
+        "name": "Shringi Rishi"
+      },
+      {
+        "code": "cg",
+        "slug": "493885-champaran-bo",
+        "img": "493885-SaintVallabhacharyaandChampeshwarNathTemple-ChamparanBO.jpg",
+        "name": "Saint Vallabhacharya and Champeshwar Nath Temple"
+      },
+      {
+        "code": "cg",
+        "slug": "493889-gariaband-so",
+        "img": "493889-WildBuffalo-GariabandSO.jpg",
+        "name": "Wild Buffalo"
+      },
+      {
+        "code": "cg",
+        "slug": "494001-jagdalpur-ho",
+        "img": "494001-MariaTribe-JagdalpurHO.jpg",
+        "name": "Maria Tribe"
+      },
+      {
+        "code": "cg",
+        "slug": "494010-chitrakote-bo",
+        "img": "494010-ChitrakoteWaterfall-ChitrakoteBO.jpg",
+        "name": "Chitrakote Waterfall"
+      },
+      {
+        "code": "cg",
+        "slug": "494115-tongpal-so",
+        "img": "494115-HillMyna-TongpalSO.jpg",
+        "name": "Hill Myna"
+      },
+      {
+        "code": "cg",
+        "slug": "495001-bilaspur-ho",
+        "img": "495001-RudraShivSculpture-BilaspurHO.jpg",
+        "name": "Rudra Shiv Sculpture"
+      },
+      {
+        "code": "cg",
+        "slug": "495113-achanakmar-bo",
+        "img": "495113-TigerATR-AchanakmarBO.jpg",
+        "name": "Tiger ATR"
+      },
+      {
+        "code": "cg",
+        "slug": "495448-bango-dam-bo",
+        "img": "495448-LemruElephantReserve-BangoDamBO.jpg",
+        "name": "Lemru Elephant Reserve"
+      },
+      {
+        "code": "cg",
+        "slug": "495552-kotmi-sonar-bo",
+        "img": "495552-KotmiSonarCrocodilePark-KotmiSonarBO.jpg",
+        "name": "Kotmi Sonar Crocodile Park"
+      },
+      {
+        "code": "cg",
+        "slug": "496227-tapkara-so",
+        "img": "496227-Snake-TapkaraSO.jpg",
+        "name": "Snake"
+      },
+      {
+        "code": "cg",
+        "slug": "497111-kamleshwarpur-bo",
+        "img": "497111-OldTibetanBuddhistMonastery-KamleshwarpurBO.jpg",
+        "name": "Old Tibetan Buddhist Monastery"
+      },
+      {
+        "code": "cg",
+        "slug": "497118-rajpur-sij-so",
+        "img": "497118-SemarsotSanctuarySpottedDeerSemarsotRiver-RajpurSIJSO.jpg",
+        "name": "Semarsot Sanctuary: Spotted Deer, Semarsot River"
+      },
+      {
+        "code": "cg",
+        "slug": "497335-baikunthapur-so",
+        "img": "497335-AsiaticCheetah-BaikunthapurSO.jpg",
+        "name": "Asiatic Cheetah"
+      },
+      {
+        "code": "cg",
+        "slug": "497442-manendragarh-so",
+        "img": "497442-MarineFossil-ManendragarhSO.jpg",
+        "name": "Marine Fossil"
+      }
+    ]
+  },
+  {
+    "name": "Telangana",
+    "items": [
+      {
+        "code": "tg",
+        "slug": "500001-hyderabad-gpo",
+        "img": "500001-Charminar-HyderabadGPO.jpg",
+        "name": "Charminar"
+      },
+      {
+        "code": "tg",
+        "slug": "500003-rail-nilayam-so",
+        "img": "500003-RailwayEngine-RailNilayamSO.jpg",
+        "name": "Railway Engine"
+      },
+      {
+        "code": "tg",
+        "slug": "500007-jama-i-osmania-so",
+        "img": "500007-OsmaniaUniversity-JamaIOsmaniaSO.jpg",
+        "name": "Osmania University"
+      },
+      {
+        "code": "tg",
+        "slug": "500008-golconda-so",
+        "img": "500008-GolcondaFort-GolcondaSO.jpg",
+        "name": "Golconda Fort"
+      },
+      {
+        "code": "tg",
+        "slug": "500016-begumpet-so",
+        "img": "500016-RonaldRossBuilding-BegumpetSO.jpg",
+        "name": "Ronald Ross Building"
+      },
+      {
+        "code": "tg",
+        "slug": "500029-himayath-nagar-so",
+        "img": "500029-BuddhaStatue-HimayathNagarSO.jpg",
+        "name": "Buddha Statue"
+      },
+      {
+        "code": "tg",
+        "slug": "502110-medak-ho",
+        "img": "502110-MedakCathedral-MedakHO.jpg",
+        "name": "Medak Cathedral"
+      },
+      {
+        "code": "tg",
+        "slug": "506002-warangal-ho",
+        "img": "506002-WarangalGate-WarangalHO.jpg",
+        "name": "Warangal Gate"
+      },
+      {
+        "code": "tg",
+        "slug": "507111-bhadrachalam-ho",
+        "img": "507111-BhaktaRamadasu-BhadrachalamHO.jpg",
+        "name": "Bhakta Ramadasu"
+      }
+    ]
+  },
+  {
+    "name": "Andhra Pradesh",
+    "items": [
+      {
+        "code": "ap",
+        "slug": "515331-lepakshi-so",
+        "img": "515331-LepakshiNandi-LepakshiSO.jpg",
+        "name": "Lepakshi Nandi"
+      },
+      {
+        "code": "ap",
+        "slug": "517501-tirupati-ho",
+        "img": "517501-TirumalaGopuramSankhuandChakra-TirupatiHO.jpg",
+        "name": "Tirumala Gopuram, Sankhu, and Chakra"
+      },
+      {
+        "code": "ap",
+        "slug": "517504-tirumala-so",
+        "img": "517504-TallapakaAnnamacharya-TirumalaSO.jpg",
+        "name": "Tallapaka Annamacharya"
+      },
+      {
+        "code": "ap",
+        "slug": "517644-srikalahasti-ho",
+        "img": "517644-DeityofSriKalahasteeswaraSwamy-SrikalahastiHO.jpg",
+        "name": "Deity of Sri Kalahasteeswara Swamy"
+      },
+      {
+        "code": "ap",
+        "slug": "518101-srisailam-so",
+        "img": "518101-GopuramofSriMallikarjunaSwamyTemple-SrisailamSO.jpg",
+        "name": "Gopuram of Sri Mallikarjuna Swamy Temple"
+      },
+      {
+        "code": "ap",
+        "slug": "522020-amaravathi-so",
+        "img": "522020-AmaravathiStupa-AmaravathiSO.jpg",
+        "name": "Amaravathi Stupa"
+      },
+      {
+        "code": "ap",
+        "slug": "522501-undavalli-bo",
+        "img": "522501-UndavalliCaves-UndavalliBO.jpg",
+        "name": "Undavalli Caves"
+      },
+      {
+        "code": "ap",
+        "slug": "524124-sriharikota-range-so",
+        "img": "524124-ISRORadar-SriharikotaRangeSO.jpg",
+        "name": "ISRO Radar"
+      },
+      {
+        "code": "ap",
+        "slug": "530028-simhachalam-so",
+        "img": "530028-GopuramofSriVarahaLakshmiNarasimhaSwamyTemple-SimhachalamSO.jpg",
+        "name": "Gopuram of Sri Varaha Lakshmi Narasimha Swamy Temple"
+      },
+      {
+        "code": "ap",
+        "slug": "532401-arasavalli-so",
+        "img": "532401-GopuramofSriSuryanarayanaSwamyTemple-ArasavalliSO.jpg",
+        "name": "Gopuram of Sri Suryanarayana Swamy Temple"
+      },
+      {
+        "code": "ap",
+        "slug": "532404-srikurmam-so",
+        "img": "532404-GopuramofSriKurmanathaswamyTemple-SrikurmamSO.jpg",
+        "name": "Gopuram of Sri Kurmanathaswamy Temple"
+      }
+    ]
+  },
+  {
+    "name": "Karnataka",
+    "items": [
+      {
+        "code": "ka",
+        "slug": "560001-bengaluru-gpo-pb",
+        "img": "560001-VidhanaSoudha-BengaluruGPOPB.jpg",
+        "name": "Vidhana Soudha"
+      },
+      {
+        "code": "ka",
+        "slug": "560001-dr-ambedkar-veedhi-so",
+        "img": "560001-Beaulieu-DrAmbedkarVeedhiSO.jpg",
+        "name": "Beaulieu"
+      },
+      {
+        "code": "ka",
+        "slug": "560001-high-court-so",
+        "img": "560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg",
+        "name": "Karnataka High Court Building"
+      },
+      {
+        "code": "ka",
+        "slug": "560004-basavanagudi-ho",
+        "img": "560004-KempegowdaTower-BasavanagudiHO.jpg",
+        "name": "Kempegowda Tower"
+      },
+      {
+        "code": "ka",
+        "slug": "560010-rajajinagar-ho",
+        "img": "560010-RajajinagarFoundationPillar-RajajinagarHO.jpg",
+        "name": "Rajajinagar Foundation Pillar"
+      },
+      {
+        "code": "ka",
+        "slug": "560011-jayanagar-3rdblock-so",
+        "img": "560011-AshokaPillar-Jayanagar3rdBlockSO.jpg",
+        "name": "Ashoka Pillar"
+      },
+      {
+        "code": "ka",
+        "slug": "560012-science-institute-so",
+        "img": "560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg",
+        "name": "Indian Institute of Science Building"
+      },
+      {
+        "code": "ka",
+        "slug": "560017-nal-so",
+        "img": "560017-URRaoSatelliteCentre-NALSO.jpg",
+        "name": "U R Rao Satellite Centre"
+      },
+      {
+        "code": "ka",
+        "slug": "560025-museum-road-so",
+        "img": "560025-SandeshaMuseum-MuseumRoadSO.jpg",
+        "name": "Sandesha Museum"
+      },
+      {
+        "code": "ka",
+        "slug": "560083-bannerghatta-so",
+        "img": "560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg",
+        "name": "Butterfly - Malabar Banded Peacock"
+      },
+      {
+        "code": "ka",
+        "slug": "560092-kodigehalli-bo",
+        "img": "560092-InscriptionStonesofBengaluru-KodigehalliBO.jpg",
+        "name": "Inscription Stones of Bengaluru"
+      },
+      {
+        "code": "ka",
+        "slug": "560300-kempegowda-international-airport-so",
+        "img": "560300-StatueofProsperity&KempegowdaInternationalAirport-KempegowdaInternationalAirportSO.jpg",
+        "name": "Statue of Prosperity & Kempegowda International Airport"
+      },
+      {
+        "code": "ka",
+        "slug": "562101-nandi-hills-bo",
+        "img": "562101-NandiStatue-NandiHillsBO.jpg",
+        "name": "Nellikaayi Basavanna"
+      },
+      {
+        "code": "ka",
+        "slug": "562168-helagalli-bo",
+        "img": "562168-GrizzledGiantSquirrel-HelagalliBO.jpg",
+        "name": "Grizzled Giant Squirrel"
+      },
+      {
+        "code": "ka",
+        "slug": "563117-championreefs-so",
+        "img": "563117-GoldMiner-ChampionreefsSO.jpg",
+        "name": "Gold Miner"
+      },
+      {
+        "code": "ka",
+        "slug": "563139-masthi-so",
+        "img": "563139-MastiVenkateshaIyengar-MasthiSO.jpg",
+        "name": "Masti Venkatesha Iyengar"
+      },
+      {
+        "code": "ka",
+        "slug": "570001-mysuru-ho-pb",
+        "img": "570001-ElephantCarryingHowdah-MysuruHOPB.jpg",
+        "name": "Elephant Carrying Howdah"
+      },
+      {
+        "code": "ka",
+        "slug": "570004-lakshmipuram-so",
+        "img": "570004-SilverJubileeClockTower-LakshmipuramSO.jpg",
+        "name": "Silver Jubilee Clock Tower"
+      },
+      {
+        "code": "ka",
+        "slug": "570009-saraswathipuram-ho",
+        "img": "570009-MysuruOurHeritageYourDestination-SaraswathipuramHO.jpg",
+        "name": "Mysuru: Our Heritage - Your Destination"
+      },
+      {
+        "code": "ka",
+        "slug": "570010-chamundibetta-bo",
+        "img": "570010-Mahishasura-ChamundibettaBO.jpg",
+        "name": "Mahishasura"
+      },
+      {
+        "code": "ka",
+        "slug": "570010-ptc-campus-so",
+        "img": "570010-PostalTrainingCentreMysuru-PTCCampusSO.jpg",
+        "name": "Postal Training Centre Mysuru"
+      },
+      {
+        "code": "ka",
+        "slug": "570020-yadavagiri-so",
+        "img": "570020-SriRamakrishnaAshrama-YadavagiriSO.jpg",
+        "name": "Sri Ramakrishna Ashrama"
+      },
+      {
+        "code": "ka",
+        "slug": "570025-sgs-ashram-mysuru-so",
+        "img": "570025-NadaMantapa-SGSAshramMysuruSO.jpg",
+        "name": "Nada Mantapa"
+      },
+      {
+        "code": "ka",
+        "slug": "571120-somanathapura-bo",
+        "img": "571120-SriChennakesavaTemple-SomanathapuraBO.jpg",
+        "name": "Sri Chennakesava Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "571122-talakad-so",
+        "img": "571122-PanchalingaDarshan-TalakadSO.jpg",
+        "name": "Panchalinga Darshan"
+      },
+      {
+        "code": "ka",
+        "slug": "571126-bandipur-bo-1",
+        "img": "571126-TigerFace-BandipurBO.jpg",
+        "name": "Tiger Face"
+      },
+      {
+        "code": "ka",
+        "slug": "571126-bandipur-bo-2",
+        "img": "571126-TigerPaw-BandipurBO.jpg",
+        "name": "Tiger Paw"
+      },
+      {
+        "code": "ka",
+        "slug": "571201-madikeri-ho",
+        "img": "571201-OdiKathi&PeechiKathi-MadikeriHO.jpg",
+        "name": "Odi Kathi & Peechi Kathi"
+      },
+      {
+        "code": "ka",
+        "slug": "571250-nagarahole-bo",
+        "img": "571250-GloriosaSuperbaWildLily-NagaraholeBO.jpg",
+        "name": "Gloriosa Superba (Wild Lily)"
+      },
+      {
+        "code": "ka",
+        "slug": "571342-kyathadevaragudi-bo",
+        "img": "571342-Porcupine-KyathadevaragudiBO.jpg",
+        "name": "Porcupine"
+      },
+      {
+        "code": "ka",
+        "slug": "571433-kokkare-bellur-bo",
+        "img": "571433-SpotBilledPelican-KokkareBellurBO.jpg",
+        "name": "Spot-Billed Pelican"
+      },
+      {
+        "code": "ka",
+        "slug": "571438-srirangapatna-ho-1",
+        "img": "571438-Gumbaz-SrirangapatnaHO.jpg",
+        "name": "Gumbaz"
+      },
+      {
+        "code": "ka",
+        "slug": "571438-srirangapatna-ho-2",
+        "img": "571438-CrownandSwordofTipuSultan-SrirangapatnaHO.jpg",
+        "name": "Crown and Sword of Tipu Sultan"
+      },
+      {
+        "code": "ka",
+        "slug": "571490-mahadeshwara-malai-so",
+        "img": "571490-Elephant-MahadeshwaraMalaiSO.jpg",
+        "name": "Elephant"
+      },
+      {
+        "code": "ka",
+        "slug": "572104-siddaganga-mutt-so",
+        "img": "572104-HisHolinessSriSivakumaraMahaswamiji-SiddagangaMuttSO.jpg",
+        "name": "His Holiness Sri Sivakumara Mahaswamiji"
+      },
+      {
+        "code": "ka",
+        "slug": "572168-hirehalli-so",
+        "img": "572168-PinchiBasadiMandaragiri-HirehalliSO.jpg",
+        "name": "Pinchi Basadi, Mandaragiri"
+      },
+      {
+        "code": "ka",
+        "slug": "573115-belur-so",
+        "img": "573115-DarpanaSundari-BelurSO.jpg",
+        "name": "Darpana Sundari"
+      },
+      {
+        "code": "ka",
+        "slug": "573121-halebeedu-so",
+        "img": "573121-NatyaSaraswati-HalebeeduSO.jpg",
+        "name": "Natya Saraswati"
+      },
+      {
+        "code": "ka",
+        "slug": "573131-nuggihalli-so",
+        "img": "573131-SriHoysalaLakshmiNarasimhaSwamyTemple-NuggihalliSO.jpg",
+        "name": "Sri Hoysala Lakshmi Narasimha Swamy Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "573135-shravanabelagola-so",
+        "img": "573135-Gomateswara-ShravanabelagolaSO.jpg",
+        "name": "Gomateswara"
+      },
+      {
+        "code": "ka",
+        "slug": "574104-karkala-ho",
+        "img": "574104-SeatedTirthankara-KarkalaHO.jpg",
+        "name": "Seated Tirthankara"
+      },
+      {
+        "code": "ka",
+        "slug": "574105-katapadi-so",
+        "img": "574105-MattuGulla-ShankarpuraSO.jpg",
+        "name": "Mattu Gulla"
+      },
+      {
+        "code": "ka",
+        "slug": "574106-kaup-so",
+        "img": "574106-KaupLighthouse-KaupSO.jpg",
+        "name": "Kaup Lighthouse"
+      },
+      {
+        "code": "ka",
+        "slug": "574108-varanga-bo",
+        "img": "574108-KereBasadi-VarangaBO.jpg",
+        "name": "Kere Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "574115-shankarpura-so",
+        "img": "574115-ShankarpuraMallige-ShankarpuraSO.jpg",
+        "name": "Shankarpura Mallige"
+      },
+      {
+        "code": "ka",
+        "slug": "574148-kateel-so",
+        "img": "574148-SriDurgaParameshwariTemple-KateelSO.jpg",
+        "name": "Sri Durga Parameshwari Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "574216-dharmasthala-so",
+        "img": "574216-SriManjunatheswaraTemple-DharmasthalaSO.jpg",
+        "name": "Sri Manjunatheswara Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "574227-moodbidri-so",
+        "img": "574227-SaaviraKambadaBasadi-MoodbidriSO.jpg",
+        "name": "Saavira Kambada Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "574238-subramanya-so",
+        "img": "574238-Vasuki-SubramanyaSO.jpg",
+        "name": "Vasuki"
+      },
+      {
+        "code": "ka",
+        "slug": "574242-venur-so",
+        "img": "574242-BaahubaliLordGomateswaraStatue-VenurSO.jpg",
+        "name": "Baahubali (Lord Gomateswara Statue)"
+      },
+      {
+        "code": "ka",
+        "slug": "575001-mangaluru-ho-pb",
+        "img": "575001-MangaluruLighthouse-MangaluruHOPB.jpg",
+        "name": "Mangaluru Lighthouse"
+      },
+      {
+        "code": "ka",
+        "slug": "575020-ullal-so",
+        "img": "575020-RaniAbbakkaDevi-UllalSO.jpg",
+        "name": "Rani Abbakka Devi"
+      },
+      {
+        "code": "ka",
+        "slug": "576101-udupi-ho",
+        "img": "576101-DeityofSriKrishna-UdupiHO.jpg",
+        "name": "Udupi Sri Krishna"
+      },
+      {
+        "code": "ka",
+        "slug": "576104-manipal-ho",
+        "img": "576104-SriVenugopalaSwamyTemple-ManipalHO.jpg",
+        "name": "Sri Venugopala Swamy Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "576108-malpe-so",
+        "img": "576108-StMary’sIslands-MalpeSO.jpg",
+        "name": "St. Mary’s Islands"
+      },
+      {
+        "code": "ka",
+        "slug": "576111-nandalike-bo",
+        "img": "576111-KaviMuddana&Manorame-NandalikeBO.jpg",
+        "name": "Kavi Muddana & Manorame"
+      },
+      {
+        "code": "ka",
+        "slug": "576112-someshwara-bo",
+        "img": "576112-IndianSpottedChevrotainMouseDeer-SomeshwaraBO.jpg",
+        "name": "Indian Spotted Chevrotain (Mouse Deer)"
+      },
+      {
+        "code": "ka",
+        "slug": "576117-attur-bo",
+        "img": "576117-StLawrenceMinorBasilica-AtturBO.jpg",
+        "name": "St. Lawrence Minor Basilica"
+      },
+      {
+        "code": "ka",
+        "slug": "576201-kundapura-ho",
+        "img": "576201-Panchagangavali-KundapuraHO.jpg",
+        "name": "Panchagangavali"
+      },
+      {
+        "code": "ka",
+        "slug": "576210-barkur-so",
+        "img": "576210-KathaleBasadi-BarkurSO.jpg",
+        "name": "Kathale Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "576220-kollur-so",
+        "img": "576220-SriMookambikaTempleKollur-KollurSO.jpg",
+        "name": "Sri Mookambika Temple, Kollur"
+      },
+      {
+        "code": "ka",
+        "slug": "576221-kota-so",
+        "img": "576221-KotaShivaramaKaranth-KotaSO.jpg",
+        "name": "Kota Shivarama Karanth"
+      },
+      {
+        "code": "ka",
+        "slug": "576223-mandarthi-so",
+        "img": "576223-YakshaganaofMandarthi-MandarthiSO.jpg",
+        "name": "Yakshagana of Mandarthi"
+      },
+      {
+        "code": "ka",
+        "slug": "577001-davanagere-ho",
+        "img": "577001-SriChennagiriRengappaClockTower-DavanagereHO.jpg",
+        "name": "Sri Chennagiri Rengappa Clock Tower"
+      },
+      {
+        "code": "ka",
+        "slug": "577101-chikkamagaluru-ho",
+        "img": "577101-CoffeeEstatesofChikkamagaluru-ChikkamagaluruHO.jpg",
+        "name": "Coffee Estates of Chikkamagaluru"
+      },
+      {
+        "code": "ka",
+        "slug": "577139-sringeri-so",
+        "img": "577139-SriVidyasankaraTemple-SringeriSO.jpg",
+        "name": "Sri Vidyasankara Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "577411-agumbe-so",
+        "img": "577411-KalingaKingCobra-AgumbeSO.jpg",
+        "name": "Kalinga - King Cobra"
+      },
+      {
+        "code": "ka",
+        "slug": "577411-kendalbailu-bo",
+        "img": "577411-KundadriShriParshwanathaBasadi-KendalbailuBO.jpg",
+        "name": "Kundadri Shri Parshwanatha Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "577415-devangi-so",
+        "img": "577415-KaviShaila-DevangiSO.jpg",
+        "name": "Kavi Shaila"
+      },
+      {
+        "code": "ka",
+        "slug": "577435-jog-falls-so",
+        "img": "577435-JogFalls-JogFallsSO.jpg",
+        "name": "Jog Falls"
+      },
+      {
+        "code": "ka",
+        "slug": "577436-humcha-so",
+        "img": "577436-SriHombujaJainMath-HumchaSO.jpg",
+        "name": "Sri Hombuja Jain Math"
+      },
+      {
+        "code": "ka",
+        "slug": "577501-chitradurga-ho",
+        "img": "577501-OnakeObavva-ChitradurgaHO.jpg",
+        "name": "Onake Obavva"
+      },
+      {
+        "code": "ka",
+        "slug": "580008-narayanapura-so",
+        "img": "580008-BendreBhavan-NarayanapuraSO.jpg",
+        "name": "Bendre Bhavan"
+      },
+      {
+        "code": "ka",
+        "slug": "580020-hubballi-ho",
+        "img": "580020-UnkalLake-HubballiHO.jpg",
+        "name": "Unkal Lake"
+      },
+      {
+        "code": "ka",
+        "slug": "581115-ranebennur-so",
+        "img": "581115-BlackBuckSanctuary-RanebennurSO.jpg",
+        "name": "Black Buck Sanctuary"
+      },
+      {
+        "code": "ka",
+        "slug": "581126-shishuvinahal-bo",
+        "img": "581126-SriSharifaShivayogiandGuruGovindShivayogi-ShishuvinahalBO.jpg",
+        "name": "Sri Sharifa Shivayogi and Guru Govind Shivayogi"
+      },
+      {
+        "code": "ka",
+        "slug": "581315-manjuguni-bo",
+        "img": "581315-SymbolsofSriVenkataramanaTemple-ManjuguniBO.jpg",
+        "name": "Symbols of Sri Venkataramana Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "581350-murudeshwar-so",
+        "img": "581350-LordShiva-MurudeshwarSO.jpg",
+        "name": "Lord Shiva"
+      },
+      {
+        "code": "ka",
+        "slug": "581362-kodambale-bo",
+        "img": "581362-YanaCaves-KodambaleBO.jpg",
+        "name": "Yana Caves"
+      },
+      {
+        "code": "ka",
+        "slug": "581384-gersoppa-jyothinagar-so",
+        "img": "581384-ShriChaturmukhaDigambaraBasadi-GersoppaJyothinagarSO.jpg",
+        "name": "Shri Chaturmukha Digambara Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "581423-melina-idagunji-so",
+        "img": "581423-ShriIdagunjiMahaGanapathi-MelinaIdagunjiSO.jpg",
+        "name": "Shri Idagunji Maha Ganapathi"
+      },
+      {
+        "code": "ka",
+        "slug": "582101-gadag-ho",
+        "img": "582101-Kumaravyasa-GadagHO.jpg",
+        "name": "Kumaravyasa"
+      },
+      {
+        "code": "ka",
+        "slug": "582115-lakkundi-so",
+        "img": "582115-BrahmaJinalaya-LakkundiSO.jpg",
+        "name": "Brahma Jinalaya"
+      },
+      {
+        "code": "ka",
+        "slug": "582201-annigeri-so",
+        "img": "582201-AdikaviPampa-AnnigeriSO.jpg",
+        "name": "Adikavi Pampa"
+      },
+      {
+        "code": "ka",
+        "slug": "583102-ballari-fort-so",
+        "img": "583102-BallariFort-BallariFortSO.jpg",
+        "name": "Ballari Fort"
+      },
+      {
+        "code": "ka",
+        "slug": "583119-sandur-so",
+        "img": "583119-Parvati-KumaraswamyTemple-SandurSO.jpg",
+        "name": "Parvati - Kumaraswamy Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "583227-anegundi-bo",
+        "img": "583227-KishkindaAnjanadriHill-AnegundiBO.jpg",
+        "name": "Kishkinda: Anjanadri Hill"
+      },
+      {
+        "code": "ka",
+        "slug": "583231-koppal-ho",
+        "img": "583231-SriGaviSiddeshwarSamsthanaSriGavimath-KoppalHO.jpg",
+        "name": "Sri Gavi Siddeshwar Samsthana Sri Gavimath"
+      },
+      {
+        "code": "ka",
+        "slug": "583239-hampi-so",
+        "img": "583239-StoneChariot-HampiSO.jpg",
+        "name": "Stone Chariot"
+      },
+      {
+        "code": "ka",
+        "slug": "583276-kannada-university-campus-so",
+        "img": "583276-SlothBear-DarojiBearSanctuary-KannadaUniversityCampusSO.jpg",
+        "name": "Sloth Bear-Daroji Bear Sanctuary"
+      },
+      {
+        "code": "ka",
+        "slug": "584140-bichali-bo",
+        "img": "584140-SriAppannacharyaSwamijisHouse-AbodeofSriGuruRaghavendraSwami-BichaliBO.jpg",
+        "name": "Sri Appannacharya Swamiji's House - Abode of Sri Guru Raghavendra Swami"
+      },
+      {
+        "code": "ka",
+        "slug": "585101-kalaburagi-ho",
+        "img": "585101-BaraGaziToph-KalaburagiHO.jpg",
+        "name": "Bara Gazi Toph"
+      },
+      {
+        "code": "ka",
+        "slug": "585224-bonal-bo",
+        "img": "585224-BonalBirdSanctuary-BonalBO.jpg",
+        "name": "Bonal Bird Sanctuary"
+      },
+      {
+        "code": "ka",
+        "slug": "585226-kamthana-so",
+        "img": "585226-Shri1008ParshwanathBhagawan-KamthanaSO.jpg",
+        "name": "Shri 1008 Parshwanath Bhagawan"
+      },
+      {
+        "code": "ka",
+        "slug": "585327-basavakalyan-so",
+        "img": "585327-AnubhavaMantapa-BasavakalyanSO.jpg",
+        "name": "Anubhava Mantapa"
+      },
+      {
+        "code": "ka",
+        "slug": "585401-bidar-ho",
+        "img": "585401-MadrasaofMohammedGawan-BidarHO.jpg",
+        "name": "Madrasa of Mohammed Gawan"
+      },
+      {
+        "code": "ka",
+        "slug": "585402-guru-nanak-jhira-so",
+        "img": "585402-GuruNanakJhira-GuruNanakJhiraSO.jpg",
+        "name": "Guru Nanak Jhira"
+      },
+      {
+        "code": "ka",
+        "slug": "586101-vijayapura-ho",
+        "img": "586101-GolGumbaz-VijayapuraHO.jpg",
+        "name": "Gol Gumbaz"
+      },
+      {
+        "code": "ka",
+        "slug": "587124-aihole-bo",
+        "img": "587124-ChalukyanRoyalEmblem-AiholeBO.jpg",
+        "name": "Chalukyan Royal Emblem"
+      },
+      {
+        "code": "ka",
+        "slug": "587201-badami-so",
+        "img": "587201-LordNataraja-BadamiSO.jpg",
+        "name": "Lord Nataraja"
+      },
+      {
+        "code": "ka",
+        "slug": "587201-pattadakal-bo",
+        "img": "587201-GalaganathaTemple-PattadakalBO.jpg",
+        "name": "Galaganatha Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "590001-belagavi-ho-pb",
+        "img": "590001-ClockTowerofBelagavi-BelagaviHOPB.jpg",
+        "name": "Clock Tower of Belagavi"
+      },
+      {
+        "code": "ka",
+        "slug": "590016-belagavi-fort-so",
+        "img": "590016-KamalBasadi-BelagaviFortSO.jpg",
+        "name": "Kamal Basadi"
+      },
+      {
+        "code": "ka",
+        "slug": "591115-kittur-so",
+        "img": "591115-KitturRaniChennamma-KitturSO.jpg",
+        "name": "Kittur Rani Chennamma"
+      },
+      {
+        "code": "ka",
+        "slug": "591120-halashi-bo",
+        "img": "591120-RoyalLogoofKadamba-HalashiBO.jpg",
+        "name": "Royal Logo of Kadamba"
+      },
+      {
+        "code": "ka",
+        "slug": "591120-nandgad-so",
+        "img": "591120-KrantiveeraSangolliRayanna-NandgadSO.jpg",
+        "name": "Krantiveera Sangolli Rayanna"
+      },
+      {
+        "code": "ka",
+        "slug": "591126-hooli-bo",
+        "img": "591126-PanchalingeswaraTemple-HooliBO.jpg",
+        "name": "Panchalingeswara Temple"
+      },
+      {
+        "code": "ka",
+        "slug": "591173-yallamma-hill-so",
+        "img": "591173-SriRenukaYallammaDevasthan-YallammaHillSO.jpg",
+        "name": "Sri Renuka Yallamma Devasthan"
+      },
+      {
+        "code": "ka",
+        "slug": "591302-shiroli-bo",
+        "img": "591302-BhimgadWildlifeSanctuary-ShiroliBO.jpg",
+        "name": "Bhimgad Wildlife Sanctuary"
+      },
+      {
+        "code": "ka",
+        "slug": "591308-gokak-falls-so",
+        "img": "591308-GokakFalls-GokakFallsSO.jpg",
+        "name": "Gokak Falls"
+      }
+    ]
+  },
+  {
+    "name": "Tamil Nadu",
+    "items": [
+      {
+        "code": "tn",
+        "slug": "600001-chennai-gpo",
+        "img": "600001-ChennaiGeneralPostOffice-ChennaiGPO.jpg",
+        "name": "Chennai General Post Office"
+      },
+      {
+        "code": "tn",
+        "slug": "600002-anna-road-ho",
+        "img": "600002-AnnaRoadPostOfficeWarwickElectricTheatre-AnnaRoadHO.jpg",
+        "name": "Anna Road Post Office (Warwick Electric Theatre)"
+      },
+      {
+        "code": "tn",
+        "slug": "600004-mylapore-ho",
+        "img": "600004-PunnaiLeavesandPeacock-MylaporeHO.jpg",
+        "name": "Punnai Leaves and Peacock"
+      },
+      {
+        "code": "tn",
+        "slug": "600005-madras-university-so",
+        "img": "600005-UniversityofMadras-MadrasUniversitySO.jpg",
+        "name": "University of Madras"
+      },
+      {
+        "code": "tn",
+        "slug": "601205-pulicat-so",
+        "img": "601205-PulicatLighthouse-PulicatSO.jpg",
+        "name": "Pulicat Lighthouse"
+      },
+      {
+        "code": "tn",
+        "slug": "603104-mamallapuram-so",
+        "img": "603104-ShoreTemple-MamallapuramSO.jpg",
+        "name": "Shore Temple"
+      },
+      {
+        "code": "tn",
+        "slug": "603314-vedanthangal-bo",
+        "img": "603314-PaintedStork-VedanthangalBO.jpg",
+        "name": "Painted Stork"
+      },
+      {
+        "code": "tn",
+        "slug": "604202-gingee-so",
+        "img": "604202-GingeeFort-GingeeSO.jpg",
+        "name": "Gingee Fort"
+      },
+      {
+        "code": "tn",
+        "slug": "606601-tiruvannamalai-ho",
+        "img": "606601-OilLamp-TiruvannamalaiHO.jpg",
+        "name": "Oil Lamp"
+      },
+      {
+        "code": "tn",
+        "slug": "606603-sri-ramanasramam-so",
+        "img": "606603-LogoofSriRamanasramam-SriRamanasramamSO.jpg",
+        "name": "Logo of Sri Ramanasramam"
+      },
+      {
+        "code": "tn",
+        "slug": "607303-vadalur-so",
+        "img": "607303-SathyaGnanaSabha-VadalurSO.jpg",
+        "name": "Sathya Gnana Sabha"
+      },
+      {
+        "code": "tn",
+        "slug": "608001-chidambaram-ho",
+        "img": "608001-LordNataraja-ChidambaramHO.jpg",
+        "name": "Lord Nataraja"
+      },
+      {
+        "code": "tn",
+        "slug": "608102-killai-so",
+        "img": "608102-PichavaramMangroveForest-KillaiSO.jpg",
+        "name": "Pichavaram Mangrove Forest"
+      },
+      {
+        "code": "tn",
+        "slug": "610001-tiruvarur-ho",
+        "img": "610001-ThyagarajaswamyTempleChariot-TiruvarurHO.jpg",
+        "name": "Thyagarajaswamy Temple Chariot"
+      },
+      {
+        "code": "tn",
+        "slug": "611002-nagore-so",
+        "img": "611002-DargahSharif-NagoreSO.jpg",
+        "name": "Dargah Sharif"
+      },
+      {
+        "code": "tn",
+        "slug": "611111-vailankanni-so",
+        "img": "611111-ShrineBasilicaofMotherMary-VailankanniSO.jpg",
+        "name": "Shrine Basilica of Mother Mary"
+      },
+      {
+        "code": "tn",
+        "slug": "612302-swamimalai-so",
+        "img": "612302-PranavaMantra&VelofLordMurugan-SwamimalaiSO.jpg",
+        "name": "Pravana Mantra & Vel of Lord Murugan"
+      },
+      {
+        "code": "tn",
+        "slug": "612702-darasuram-so",
+        "img": "612702-BullandElephantSculpture-DarasuramSO.jpg",
+        "name": "Bull and Elephant Sculpture"
+      },
+      {
+        "code": "tn",
+        "slug": "612901-gangaikondacholapuram-so",
+        "img": "612901-GreatNandi-GangaikondacholapuramSO.jpg",
+        "name": "Great Nandi"
+      },
+      {
+        "code": "tn",
+        "slug": "613001-thanjavur-ho",
+        "img": "613001-BrihadeeswaraSwamyTemple-ThanjavurHO.jpg",
+        "name": "Brihadeeswara Swamy Temple"
+      },
+      {
+        "code": "tn",
+        "slug": "613102-thogur-so",
+        "img": "613102-Kallanai-TheGrandAnicut-ThogurSO.jpg",
+        "name": "Kallanai - The Grand Anicut"
+      },
+      {
+        "code": "tn",
+        "slug": "613204-thiruvaiyaru-so",
+        "img": "613204-SaintTyagaraja-ThiruvaiyaruSO.jpg",
+        "name": "Saint Tyagaraja"
+      },
+      {
+        "code": "tn",
+        "slug": "614807-kodikkarai-so",
+        "img": "614807-Flamingo-KodikkaraiSO.jpg",
+        "name": "Flamingo"
+      },
+      {
+        "code": "tn",
+        "slug": "620001-tiruchirappalli-pb",
+        "img": "620001-RockFort-TiruchirappalliPB.jpg",
+        "name": "Rock Fort"
+      },
+      {
+        "code": "tn",
+        "slug": "620006-srirangam-ho",
+        "img": "620006-AdiseshanofLordRanganatha-SrirangamHO.jpg",
+        "name": "Adiseshan of Lord Ranganatha"
+      },
+      {
+        "code": "tn",
+        "slug": "623526-rameswaram-so",
+        "img": "623526-SriRamanathaswamyTempleCorridor-RameswaramSO.jpg",
+        "name": "Sri Ramanathaswamy Temple Corridor"
+      },
+      {
+        "code": "tn",
+        "slug": "624101-kodaikanal-so",
+        "img": "624101-KodaikanalObservatory-KodaikanalSO.jpg",
+        "name": "Kodaikanal Observatory"
+      },
+      {
+        "code": "tn",
+        "slug": "624601-palani-ho",
+        "img": "624601-VelSpearandPeacockFeatherofLordMurugan-PalaniHO.jpg",
+        "name": "Vel (Spear) and Peacock Feather of Lord Murugan"
+      },
+      {
+        "code": "tn",
+        "slug": "625001-madurai-bazaar-so",
+        "img": "625001-MeenakshiAmmanTemple-MaduraiBazaarSO.jpg",
+        "name": "Meenakshi Sundareswarar Temple"
+      },
+      {
+        "code": "tn",
+        "slug": "625001-madurai-ho",
+        "img": "625001-FlagofPandyaDynastywithAquariusEmblem-MaduraiHO.jpg",
+        "name": "Flag of Pandya Dynasty with Aquarius Emblem"
+      },
+      {
+        "code": "tn",
+        "slug": "625005-thiruparankundram-so",
+        "img": "625005-RajagopuramofArulmiguSubramaniyaSwamyTemple-ThiruparankundramSO.jpg",
+        "name": "Rajagopuram of Arulmigu Subramaniya Swamy Temple"
+      },
+      {
+        "code": "tn",
+        "slug": "625301-alagarkovil-so",
+        "img": "625301-LordMuruganofPazhamudircholai&Avvaiyar-AlagarkovilSO.jpg",
+        "name": "Lord Murugan of Pazhamudircholai & Avvaiyar"
+      },
+      {
+        "code": "tn",
+        "slug": "627501-kalakad-so",
+        "img": "627501-LionTailedMacaque-KalakadSO.jpg",
+        "name": "Lion Tailed Macaque"
+      },
+      {
+        "code": "tn",
+        "slug": "627802-courtallam-so",
+        "img": "627802-CourtallamWaterfalls-CourtallamSO.jpg",
+        "name": "Courtallam Waterfalls"
+      },
+      {
+        "code": "tn",
+        "slug": "628209-manapad-so",
+        "img": "628209-ManapadLighthouse-ManapadSO.jpg",
+        "name": "Manapad Lighthouse"
+      },
+      {
+        "code": "tn",
+        "slug": "628215-tiruchendur-ho",
+        "img": "628215-ArulmiguSubramaniyaSwamyTemple&BayofBengal-TiruchendurHO.jpg",
+        "name": "Arulmigu Subramaniya Swamy Temple & Bay of Bengal"
+      },
+      {
+        "code": "tn",
+        "slug": "628902-ettayapuram-so",
+        "img": "628902-MahakaviSubramanyaBharatiyarFace-EttayapuramSO.jpg",
+        "name": "Mahakavi Subramania Bharati"
+      },
+      {
+        "code": "tn",
+        "slug": "628902-ettayapuram-so",
+        "img": "628902-MahakaviSubramanyaBharatiyarManimandapam-EttayapuramSO.jpg",
+        "name": "Mahakavi Subramania Bharati Manimandapam"
+      },
+      {
+        "code": "tn",
+        "slug": "629202-muttom-so",
+        "img": "629202-MuttomLighthouse-MuttomSO.jpg",
+        "name": "Muttom Lighthouse"
+      },
+      {
+        "code": "tn",
+        "slug": "629702-kanniyakumari-so",
+        "img": "629702-VivekanandaRockMemorial-KanniyakumariSO.jpg",
+        "name": "Vivekananda Rock Memorial"
+      },
+      {
+        "code": "tn",
+        "slug": "631209-tiruttani-so",
+        "img": "631209-DeitiesofDeivanai,Murugan&Valli-TiruttaniSO.jpg",
+        "name": "Deities of Deivanai, Murugan & Valli"
+      },
+      {
+        "code": "tn",
+        "slug": "631501-kanchipuram-ho",
+        "img": "631501-Chakravaha-KanchipuramHO.jpg",
+        "name": "Chakravaha"
+      },
+      {
+        "code": "tn",
+        "slug": "632004-cmc-hospital-vellore-so",
+        "img": "632004-LogoofCMCHospital-CMCHospitalVelloreSO.jpg",
+        "name": "Logo of CMC Hospital"
+      },
+      {
+        "code": "tn",
+        "slug": "632004-vellore-fort-so",
+        "img": "632004-VelloreFortwithMoat-VelloreFortSO.jpg",
+        "name": "Vellore Fort with Moat"
+      },
+      {
+        "code": "tn",
+        "slug": "635701-kavalur-bo",
+        "img": "635701-VainuBappuObservatory-KavalurBO.jpg",
+        "name": "Vainu Bappu Observatory"
+      },
+      {
+        "code": "tn",
+        "slug": "636007-hasthampatti-so",
+        "img": "636007-GandhiCharkhaandBapu-HasthampattiSO.jpg",
+        "name": "Gandhi Charkha and Bapu"
+      },
+      {
+        "code": "tn",
+        "slug": "637211-tiruchengodu-ho",
+        "img": "637211-LordArdhanareeswar-TiruchengoduHO.jpg",
+        "name": "Lord Ardhanareeswar"
+      },
+      {
+        "code": "tn",
+        "slug": "638301-bhavani-ho",
+        "img": "638301-BhavaniKoodalandRajagopuram-BhavaniHO.jpg",
+        "name": "Bhavani Koodal and Rajagopuram"
+      },
+      {
+        "code": "tn",
+        "slug": "641003-tnau-lawley-road-so",
+        "img": "641003-LogoofTamilNaduAgriculturalUniversity-TNAULawleyRoadSO.jpg",
+        "name": "Logo of Tamil Nadu Agricultural University"
+      },
+      {
+        "code": "tn",
+        "slug": "641010-perur-coimbatore-so",
+        "img": "641010-PatteeswararTemple-PerurCoimbatoreSO.jpg",
+        "name": "Patteeswarar Temple"
+      },
+      {
+        "code": "tn",
+        "slug": "641108-anaikatti-bo",
+        "img": "641108-SalimAliCentreforOrnithologyandNaturalHistorySACON-AnaikattiBO.jpg",
+        "name": "Salim Ali Centre for Ornithology and Natural History (SACON)"
+      },
+      {
+        "code": "tn",
+        "slug": "641114-ishana-vihar-bo",
+        "img": "641114-AdiYogi-IshanaViharBO.jpg",
+        "name": "Adi Yogi"
+      },
+      {
+        "code": "tn",
+        "slug": "641659-karumathampatti-so",
+        "img": "641659-OurLadyofHolyRosaryShrine-KarumathampattiSO.jpg",
+        "name": "Our Lady of Holy Rosary Shrine"
+      },
+      {
+        "code": "tn",
+        "slug": "642133-top-slip-bo",
+        "img": "642133-NilgiriTahr-TopSlipBO.jpg",
+        "name": "Nilgiri Tahr"
+      },
+      {
+        "code": "tn",
+        "slug": "643001-udagamandalam-ho",
+        "img": "643001-TodaHut-UdagamandalamHO.jpg",
+        "name": "Toda hut"
+      },
+      {
+        "code": "tn",
+        "slug": "643102-coonoor-railway-station-so",
+        "img": "643102-NilgiriMountainTrain-CoonoorRailwayStationSO.jpg",
+        "name": "Nilgiri Mountain Train"
+      },
+      {
+        "code": "tn",
+        "slug": "643211-mudumalai-sanctuary-bo",
+        "img": "643211-IndianBisonGaur-MudumalaiSanctuaryBO.jpg",
+        "name": "Indian Bison (Gaur)"
+      }
+    ]
+  },
+  {
+    "name": "Puducherry",
+    "items": [
+      {
+        "code": "py",
+        "slug": "605001-pondicherry-ho-pb",
+        "img": "605001-AayiMandapam-PondicherryHOPB.jpg",
+        "name": "Aayi Mandapam"
+      },
+      {
+        "code": "py",
+        "slug": "605002-sri-aurobindo-ashram-so",
+        "img": "605002-LogoofSriAurobindoAshramandTheMother-SriAurobindoAshramSO.jpg",
+        "name": "Logo of Sri Aurobindo Ashram and The Mother"
+      }
+    ]
+  },
+  {
+    "name": "Kerala",
+    "items": [
+      {
+        "code": "kl",
+        "slug": "670001-kannur-ho",
+        "img": "670001-FaceofTheyyam-KannurHO.jpg",
+        "name": "Face of Theyyam"
+      },
+      {
+        "code": "kl",
+        "slug": "670662-muzhappilangad-so",
+        "img": "670662-MuzhappilangadBeach-MuzhappilangadSO.jpg",
+        "name": "Muzhappilangad Beach"
+      },
+      {
+        "code": "kl",
+        "slug": "671124-madhur-bo",
+        "img": "671124-MadhurAnanteshwaraVinayakaTemple-MadhurBO.jpg",
+        "name": "Madhur Ananteshwara Vinayaka Temple"
+      },
+      {
+        "code": "kl",
+        "slug": "671316-bekal-fort-so",
+        "img": "671316-BekalFort-BekalFortSO.jpg",
+        "name": "Bekal Fort"
+      },
+      {
+        "code": "kl",
+        "slug": "673001-kozhikode-calicut-ho",
+        "img": "673001-MaskofTheyyam-KozhikodeCalicutHO.jpg",
+        "name": "Mask of Theyyam"
+      },
+      {
+        "code": "kl",
+        "slug": "673015-beypore-so",
+        "img": "673015-UruorFatBoat-BeyporeSO.jpg",
+        "name": "Uru or Fat Boat"
+      },
+      {
+        "code": "kl",
+        "slug": "673302-kadalundi-so",
+        "img": "673302-Heron-KadalundiSO.jpg",
+        "name": "Heron"
+      },
+      {
+        "code": "kl",
+        "slug": "676101-tirur-ho",
+        "img": "676101-ThunchathRamanujamEzhuthachan-TirurHO.jpg",
+        "name": "Thunchath Ramanujam Ezhuthachan"
+      },
+      {
+        "code": "kl",
+        "slug": "676301-tirunavaya-so",
+        "img": "676301-Mamankam-TirunavayaSO.jpg",
+        "name": "Mamankam"
+      },
+      {
+        "code": "kl",
+        "slug": "676503-kottakkal-so",
+        "img": "676503-VaidyaratnamPSWarrier-KottakkalSO.jpg",
+        "name": "Vaidyaratnam P. S. Warrier"
+      },
+      {
+        "code": "kl",
+        "slug": "678003-kalpathi-so",
+        "img": "678003-KalpathiRathotsavam-KalpathiSO.jpg",
+        "name": "Kalpathi Rathotsavam"
+      },
+      {
+        "code": "kl",
+        "slug": "678572-kottayi-so",
+        "img": "678572-ChembaiVaidyanathaBhagavathar-KottayiSO.jpg",
+        "name": "Chembai Vaidyanatha Bhagavathar"
+      },
+      {
+        "code": "kl",
+        "slug": "678581-agali-so",
+        "img": "678581-LionTailedMacaque-AgaliSO.jpg",
+        "name": "Lion Tailed Macaque"
+      },
+      {
+        "code": "kl",
+        "slug": "678651-malampuzha-dam-so",
+        "img": "678651-MalampuzhaDamandRopeCar-MalampuzhaDamSO.jpg",
+        "name": "Malampuzha Dam and Rope Car"
+      },
+      {
+        "code": "kl",
+        "slug": "678661-parambikulam-so",
+        "img": "678661-IndianBisonGaur-ParambikulamSO.jpg",
+        "name": "Indian Bison (Gaur)"
+      },
+      {
+        "code": "kl",
+        "slug": "679301-lakkidi-so",
+        "img": "679301-HeadGearofOttanthullal-LakkidiSO.jpg",
+        "name": "Head Gear of Ottanthullal"
+      },
+      {
+        "code": "kl",
+        "slug": "679531-cheruthuruthy-so",
+        "img": "679531-VeshaminKathakali-CheruthuruthySO.jpg",
+        "name": "Vesham in Kathakali"
+      },
+      {
+        "code": "kl",
+        "slug": "680001-thrissur-ho",
+        "img": "680001-ThrissurPooramFestivalElephant-ThrissurHO.jpg",
+        "name": "Thrissur Pooram Festival Elephant"
+      },
+      {
+        "code": "kl",
+        "slug": "680101-guruvayur-so",
+        "img": "680101-BellandFlagMastinGuruvayurSriKrishnaTemple-GuruvayurSO.jpg",
+        "name": "Bell and Flag Mast in Guruvayur Sri Krishna Temple"
+      },
+      {
+        "code": "kl",
+        "slug": "680507-pavaratty-so",
+        "img": "680507-ShrineofStJosephChurch-PavarattySO.jpg",
+        "name": "Shrine of St. Joseph Church"
+      },
+      {
+        "code": "kl",
+        "slug": "680602-mattom-so",
+        "img": "680602-ShrineofOurLadyofPerpetualHelp-MattomSO.jpg",
+        "name": "Shrine of Our Lady of Perpetual Help"
+      },
+      {
+        "code": "kl",
+        "slug": "680712-madayikonam-so",
+        "img": "680712-LightedCandlesinHolyCrossChurchMapranam-MadayikonamSO.jpg",
+        "name": "Lighted Candles in Holy Cross Church, Mapranam"
+      },
+      {
+        "code": "kl",
+        "slug": "682001-kochi-ho",
+        "img": "682001-ChineseFishingNet-KochiHO.jpg",
+        "name": "Chinese Fishing Net"
+      },
+      {
+        "code": "kl",
+        "slug": "682002-mattancherry-jetty-so",
+        "img": "682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg",
+        "name": "Magen David of Cochin Synagogue"
+      },
+      {
+        "code": "kl",
+        "slug": "682011-ernakulam-ho-pb",
+        "img": "682011-Thookkuvilakku-ErnakulamHOPB.jpg",
+        "name": "Thookkuvilakku"
+      },
+      {
+        "code": "kl",
+        "slug": "683574-kalady-so",
+        "img": "683574-AdiSankaracharya-KaladySO.jpg",
+        "name": "Adi Sankaracharya"
+      },
+      {
+        "code": "kl",
+        "slug": "683587-malayattoor-so",
+        "img": "683587-StThomasChurch-MalayattoorSO.jpg",
+        "name": "St. Thomas Church"
+      },
+      {
+        "code": "kl",
+        "slug": "685509-kumily-so",
+        "img": "685509-ThekkadyWildlife-AsianElephant-KumilySO.jpg",
+        "name": "Thekkady Wildlife-Asian Elephant"
+      },
+      {
+        "code": "kl",
+        "slug": "685602-idukki-colony-so",
+        "img": "685602-IdukkiDam-IdukkiColonySO.jpg",
+        "name": "Idukki Dam"
+      },
+      {
+        "code": "kl",
+        "slug": "685612-munnar-so",
+        "img": "685612-NilgiriTahr-MunnarSO.jpg",
+        "name": "Nilgiri Tahr"
+      },
+      {
+        "code": "kl",
+        "slug": "686009-rubber-board-so",
+        "img": "686009-RubberTrees-RubberBoardSO.jpg",
+        "name": "Rubber Trees"
+      },
+      {
+        "code": "kl",
+        "slug": "686563-kumarakom-so",
+        "img": "686563-BackwatersofKerala-KumarakomSO.jpg",
+        "name": "Backwaters of Kerala"
+      },
+      {
+        "code": "kl",
+        "slug": "686578-bharananganam-bo",
+        "img": "686578-SaintAlphonsa-BharananganamBO.jpg",
+        "name": "Saint Alphonsa"
+      },
+      {
+        "code": "kl",
+        "slug": "688001-alappuzha-ho",
+        "img": "688001-AlappuzhaBoatRace-AlappuzhaHO.jpg",
+        "name": "Alappuzha Boat Race"
+      },
+      {
+        "code": "kl",
+        "slug": "689533-aranmula-so",
+        "img": "689533-AranmulaBoatRace-AranmulaSO.jpg",
+        "name": "Aranmula Boat Race"
+      },
+      {
+        "code": "kl",
+        "slug": "689713-sabarimalai-so",
+        "img": "689713-PathinettampadiHolyEighteenSteps-SabarimalaiSO.jpg",
+        "name": "Pathinettampadi",
+        "seasonal": true
+      },
+      {
+        "code": "kl",
+        "slug": "690546-amrithapuri-so",
+        "img": "690546-LogoofMataAmritanandamayiMath-AmrithapuriBO.jpg",
+        "name": "Logo of Mata Amritanandamayi Math"
+      },
+      {
+        "code": "kl",
+        "slug": "695001-thiruvananthapuram-gpo-pb",
+        "img": "695001-FaceMaskofKathakali-ThiruvananthapuramGPOPB.jpg",
+        "name": "Face Mask of Kathakali"
+      },
+      {
+        "code": "kl",
+        "slug": "695016-thiruvananthapuram-engg-college-so",
+        "img": "695016-CollegeofEngineeringThiruvananthapuram-ThiruvananthapuramEnggCollegeSO.jpg",
+        "name": "College of Engineering Thiruvananthapuram"
+      },
+      {
+        "code": "kl",
+        "slug": "695022-thiruvananthapuram-isro-so",
+        "img": "695022-RocketandCoconutTree-ThiruvananthapuramISROSO.jpg",
+        "name": "Rocket and Coconut Tree"
+      },
+      {
+        "code": "kl",
+        "slug": "695023-thiruvananthapuram-fort-so",
+        "img": "695023-SreePadmanabhaswamyTemple-ThiruvananthapuramFortSO.jpg",
+        "name": "Sree Padmanabhaswamy Temple"
+      },
+      {
+        "code": "kl",
+        "slug": "695141-varkala-so",
+        "img": "695141-StatueofSriNarayanaGuru-VarkalaSO.jpg",
+        "name": "Statue of Sri Narayana Guru"
+      },
+      {
+        "code": "kl",
+        "slug": "695527-kovalam-bo",
+        "img": "695527-BeachCoconutTreesandWaves-KovalamBO.jpg",
+        "name": "Beach, Coconut Trees, and Waves"
+      },
+      {
+        "code": "kl",
+        "slug": "695551-ponmudi-bo",
+        "img": "695551-PonmudiHillResort-PonmudiBO.jpg",
+        "name": "Ponmudi Hill Resort"
+      }
+    ]
+  },
+  {
+    "name": "West Bengal",
+    "items": [
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-1",
+        "img": "700001-KolkataCityandFamousPlacesofKolkata-KolkataGPO.jpg",
+        "name": "Kolkata City and Famous Places of Kolkata"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-2",
+        "img": "700001-KolkataGPODome-KolkataGPO.jpg",
+        "name": "Kolkata GPO Dome"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-3",
+        "img": "700001-AliporeCentralJail-KolkataGPO.jpg",
+        "name": "Alipore Central Jail"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-4",
+        "img": "700001-DakshineswarKaliTemple-KolkataGPO.jpg",
+        "name": "Dakshineswar Kali Temple"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-5",
+        "img": "700001-DurgaPuja-KolkataGPO.jpg",
+        "name": "Durga Puja"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-6",
+        "img": "700001-IndianMuseum-KolkataGPO.jpg",
+        "name": "Indian Museum"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-7",
+        "img": "700001-JorasankoThakurbari-KolkataGPO.jpg",
+        "name": "Jorasanko Thakurbari"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-8",
+        "img": "700001-KalighatTemple-KolkataGPO.jpg",
+        "name": "Kalighat Temple"
+      },
+      {
+        "code": "wb",
+        "slug": "700001-kolkata-gpo-9",
+        "img": "700001-VictoriaMemorialHall-KolkataGPO.jpg",
+        "name": "Victoria Memorial Hall"
+      },
+      {
+        "code": "wb",
+        "slug": "711202-belur-math-so",
+        "img": "711202-BelurMath-BelurMathSO.jpg",
+        "name": "Belur Math"
+      },
+      {
+        "code": "wb",
+        "slug": "711316-jaduberia-bo",
+        "img": "711316-Shuttlecock-JaduberiaBO.jpg",
+        "name": "Shuttlecock"
+      },
+      {
+        "code": "wb",
+        "slug": "712202-mahesh-1-so",
+        "img": "712202-RathyatraMahesh-Mahesh1SO.jpg",
+        "name": "Rathyatra Mahesh"
+      },
+      {
+        "code": "wb",
+        "slug": "721431-khejuri-bo",
+        "img": "721431-KhejuriBranchPostOffice-KhejuriBO.jpg",
+        "name": "Khejuri Branch Post Office"
+      },
+      {
+        "code": "wb",
+        "slug": "721507-jhargram-ho",
+        "img": "721507-RajbariJhargramPalace-JhargramHO.jpg",
+        "name": "Rajbari Jhargram Palace"
+      },
+      {
+        "code": "wb",
+        "slug": "721636-tamluk-ho",
+        "img": "721636-TamraliptaRajbari-TamlukHO.jpg",
+        "name": "Tamralipta Rajbari"
+      },
+      {
+        "code": "wb",
+        "slug": "722122-bishnupur-so-1",
+        "img": "722122-BishnupurShyamraiTemple-BishnupurSO.jpg",
+        "name": "Bishnupur Shyamrai Temple"
+      },
+      {
+        "code": "wb",
+        "slug": "722122-bishnupur-so-2",
+        "img": "722122-BishnupurMukhyaDakghar-BishnupurSO.jpg",
+        "name": "Bishnupur Mukhya Dakghar"
+      },
+      {
+        "code": "wb",
+        "slug": "731235-santiniketan-so",
+        "img": "731235-SinghaSadan-SantiniketanSO.jpg",
+        "name": "Singha Sadan"
+      },
+      {
+        "code": "wb",
+        "slug": "734001-siliguri-ho",
+        "img": "734001-SevokeCoronationBridge-SiliguriHO.jpg",
+        "name": "Sevoke Bridge"
+      },
+      {
+        "code": "wb",
+        "slug": "734101-darjeeling-ho",
+        "img": "734101-Tea-ElixirofLife-DarjeelingHO.jpg",
+        "name": "Tea-Elixir of Life"
+      },
+      {
+        "code": "wb",
+        "slug": "735221-mal-ho",
+        "img": "735221-UnicornsofDooars-MalHO.jpg",
+        "name": "Unicorns of Dooars"
+      },
+      {
+        "code": "wb",
+        "slug": "736101-cooch-behar-ho",
+        "img": "736101-CoochBeharPalace-CoochBeharHO.jpg",
+        "name": "Cooch Behar Palace"
+      },
+      {
+        "code": "wb",
+        "slug": "736121-alipurduar-so",
+        "img": "736121-DooarsTusker-AlipurduarSO.jpg",
+        "name": "Dooars Tusker"
+      }
+    ]
+  },
+  {
+    "name": "Sikkim",
+    "items": [
+      {
+        "code": "sk",
+        "slug": "737101-gangtok-ho-1",
+        "img": "737101-RedPanda-StateAnimalofSikkim-GangtokHO.jpg",
+        "name": "Red Panda-State Animal of Sikkim"
+      },
+      {
+        "code": "sk",
+        "slug": "737101-gangtok-ho-2",
+        "img": "737101-KhangchendzongaNationalPark-GangtokHO.jpg",
+        "name": "Khangchendzonga National Park"
+      }
+    ]
+  },
+  {
+    "name": "Andaman and Nicobar Islands",
+    "items": [
+      {
+        "code": "an",
+        "slug": "744101-port-blair-ho",
+        "img": "744101-CellularJail-PortBlairHO.jpg",
+        "name": "Cellular Jail"
+      }
+    ]
+  },
+  {
+    "name": "Odisha",
+    "items": [
+      {
+        "code": "od",
+        "slug": "751001-bhubaneshwar-gpo-pb",
+        "img": "751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg",
+        "name": "Khandagiri Udayagiri Caves, Dhauligiri Stupa & Lingraj Temple"
+      },
+      {
+        "code": "od",
+        "slug": "751002-bhubaneswar-mdg",
+        "img": "751002-MukteswarTemple-BhubaneswarMDG.jpg",
+        "name": "Mukteswar Temple"
+      },
+      {
+        "code": "od",
+        "slug": "751002-gopinathpur-bo",
+        "img": "751002-ShantiStupa-GopinathpurBO.jpg",
+        "name": "Shanti Stupa"
+      },
+      {
+        "code": "od",
+        "slug": "751014-bjb-nagar-so",
+        "img": "751014-RajaraniTemple-BJBNagarSO.jpg",
+        "name": "Rajarani Temple"
+      },
+      {
+        "code": "od",
+        "slug": "751024-chandaka-bo",
+        "img": "751024-ChandakaElephantReserve-ChandakaBO.jpg",
+        "name": "Chandaka Elephant Reserve"
+      },
+      {
+        "code": "od",
+        "slug": "751030-khandagiri-so",
+        "img": "751030-KhandagiriCavesandElephantSculpture-KhandagiriSO.jpg",
+        "name": "Khandagiri Caves and Elephant Sculpture"
+      },
+      {
+        "code": "od",
+        "slug": "752001-puri-ho",
+        "img": "752001-SriJagannathTempleandSeaWave-PuriHO.jpg",
+        "name": "Sri Jagannath Temple and Sea Wave"
+      },
+      {
+        "code": "od",
+        "slug": "752111-konark-so",
+        "img": "752111-StoneChariotWheeloftheSuryaTemple-KonarkSO.jpg",
+        "name": "Stone Chariot Wheel of the Surya Temple"
+      },
+      {
+        "code": "od",
+        "slug": "753001-kazibazar-so",
+        "img": "753001-NetajiBirthPlace-KazibazarSO.jpg",
+        "name": "Netaji Birth Place"
+      },
+      {
+        "code": "od",
+        "slug": "753001-cuttack-gpo-pb-1",
+        "img": "753001-OdissiDanceandBarabatiFort-CuttackGPOPB.jpg",
+        "name": "Odissi Dance and Barabati Fort"
+      },
+      {
+        "code": "od",
+        "slug": "753001-cuttack-gpo-pb-2",
+        "img": "753001-BarabatiFort-CuttackGPOPB.jpg",
+        "name": "Barabati Fort"
+      },
+      {
+        "code": "od",
+        "slug": "753001-cuttack-gpo-pb-3",
+        "img": "753001-SilverFiligree-CuttackGPOPB.jpg",
+        "name": "Silver Filigree"
+      },
+      {
+        "code": "od",
+        "slug": "753002-swaraj-ashram-so",
+        "img": "753002-SwarajAshram-SwarajAshramSO.jpg",
+        "name": "Swaraj Ashram"
+      },
+      {
+        "code": "od",
+        "slug": "753008-kanika-rajbati-so",
+        "img": "753008-CuttackChandiTemple-KanikaRajbatiSO.jpg",
+        "name": "Cuttack Chandi Temple"
+      },
+      {
+        "code": "od",
+        "slug": "754005-barang-so",
+        "img": "754005-NandankananZoologicalPark-BarangSO.jpg",
+        "name": "Nandankanan Zoological Park"
+      },
+      {
+        "code": "od",
+        "slug": "768001-sambalpur-ho-pb",
+        "img": "768001-MaaSamaleswariTempleandMusicalInstruments-SambalpurHOPB.jpg",
+        "name": "Maa Samaleswari Temple and Musical Instruments"
+      }
+    ]
+  },
+  {
+    "name": "Assam",
+    "items": [
+      {
+        "code": "as",
+        "slug": "781001-guwahati-gpo-1",
+        "img": "781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg",
+        "name": "Sri Kamakhya Devi Temple"
+      },
+      {
+        "code": "as",
+        "slug": "781001-guwahati-gpo-2",
+        "img": "781001-SaraighatBridge-GuwahatiGPO.jpg",
+        "name": "Saraighat Bridge"
+      },
+      {
+        "code": "as",
+        "slug": "785609-kaziranga-national-park-so",
+        "img": "785609-OneHornedRhino-KazirangaNationalParkSO.jpg",
+        "name": "One Horned Rhino"
+      }
+    ]
+  },
+  {
+    "name": "Meghalaya",
+    "items": [
+      {
+        "code": "ml",
+        "slug": "793001-shillong-gpo",
+        "img": "793001-ShillongGolfCourse-ShillongGPO.jpg",
+        "name": "Shillong Golf Course"
+      },
+      {
+        "code": "ml",
+        "slug": "793150-jowai-so",
+        "img": "793150-KiangNangbahMonument-JowaiSO.jpg",
+        "name": "Kiang Nangbah Monument"
+      }
+    ]
+  },
+  {
+    "name": "Manipur",
+    "items": [
+      {
+        "code": "mn",
+        "slug": "795133-moirang-so",
+        "img": "795133-SangaiDeer-MoirangSO.jpg",
+        "name": "Sangai Deer"
+      }
+    ]
+  },
+  {
+    "name": "Mizoram",
+    "items": []
+  },
+  {
+    "name": "Tripura",
+    "items": [
+      {
+        "code": "tr",
+        "slug": "799001-agartala-ho",
+        "img": "799001-UjjayantaPalace-AgartalaHO.jpg",
+        "name": "Ujjayanta Palace"
+      },
+      {
+        "code": "tr",
+        "slug": "799115-melaghar-so",
+        "img": "799115-NeermahalPalace-MelagharSO.jpg",
+        "name": "Neermahal Palace"
+      },
+      {
+        "code": "tr",
+        "slug": "799279-gournagar-so",
+        "img": "799279-Unakoti-GournagarSO.jpg",
+        "name": "Unakoti"
+      },
+      {
+        "code": "tr",
+        "slug": "799282-bhagabannagar-bo",
+        "img": "799282-TrimurtiRockSculpture-BhagabannagarBO.jpg",
+        "name": "Trimurti Rock Sculpture"
+      }
+    ]
+  },
+  {
+    "name": "Bihar",
+    "items": [
+      {
+        "code": "br",
+        "slug": "800001-patna-gpo-1",
+        "img": "800001-DidarganjYakshi-PatnaGPO.jpg",
+        "name": "Didarganj Yakshi"
+      },
+      {
+        "code": "br",
+        "slug": "800001-patna-gpo-2",
+        "img": "800001-GolGhar-PatnaGPO.jpg",
+        "name": "Gol Ghar"
+      },
+      {
+        "code": "br",
+        "slug": "800001-patna-gpo-3",
+        "img": "800001-PatnaGPOBuilding-PatnaGPO.jpg",
+        "name": "Patna GPO Building"
+      },
+      {
+        "code": "br",
+        "slug": "800008-patna-city-so",
+        "img": "800008-TakhatSriHarmandirSahibJiPatnaSahib-PatnaCitySO.jpg",
+        "name": "Takhat Sri Harmandir Sahib Ji, Patna Sahib"
+      },
+      {
+        "code": "br",
+        "slug": "801303-nalanda-so",
+        "img": "801303-NalandaRuins-NalandaSO.jpg",
+        "name": "Nalanda Ruins"
+      },
+      {
+        "code": "br",
+        "slug": "811308-jhajha-so",
+        "img": "811308-NagiDamBirdSanctuary-JhajhaSO.jpg",
+        "name": "Nagi Dam Bird Sanctuary"
+      },
+      {
+        "code": "br",
+        "slug": "821115-sasaram-ho",
+        "img": "821115-SherShahSuriTomb-SasaramHO.jpg",
+        "name": "Sher Shah Suri Tomb"
+      },
+      {
+        "code": "br",
+        "slug": "824202-deo-so",
+        "img": "824202-DeoSunTemple-DeoSO.jpg",
+        "name": "Deo Sun Temple"
+      },
+      {
+        "code": "br",
+        "slug": "824231-bodhgaya-so",
+        "img": "824231-MahabodhiTemple-BodhgayaSO.jpg",
+        "name": "Mahabodhi Temple"
+      },
+      {
+        "code": "br",
+        "slug": "843101-bakhra-so",
+        "img": "843101-AshokanPillar-BakhraSO.jpg",
+        "name": "Ashokan Pillar"
+      },
+      {
+        "code": "br",
+        "slug": "845107-valmiki-nagar-so",
+        "img": "845107-ValmikiTigerReserve-ValmikiNagarSO.jpg",
+        "name": "Valmiki Tiger Reserve"
+      },
+      {
+        "code": "br",
+        "slug": "846005-postal-training-centre-so",
+        "img": "846005-PostalTrainingCentreDarbhanga-PostalTrainingCentreSO.jpg",
+        "name": "Postal Training Centre, Darbhanga"
+      },
+      {
+        "code": "br",
+        "slug": "847122-bisfi-so",
+        "img": "847122-MahakaviVidyapati-BisfiSO.jpg",
+        "name": "Mahakavi Vidyapati"
+      }
+    ]
+  },
+  {
+    "name": "Jharkhand",
+    "items": [
+      {
+        "code": "jh",
+        "slug": "814112-deoghar-ho",
+        "img": "814112-BaidyanathTemple-DeogharHO.jpg",
+        "name": "Baidyanath Temple"
+      },
+      {
+        "code": "jh",
+        "slug": "814118-basukinath-dham-so",
+        "img": "814118-BasukinathTemple-BasukinathDhamSO.jpg",
+        "name": "Basukinath Temple"
+      },
+      {
+        "code": "jh",
+        "slug": "822101-daltonganj-ho",
+        "img": "822101-TigerReserve-DaltonganjHO.jpg",
+        "name": "Tiger Reserve"
+      },
+      {
+        "code": "jh",
+        "slug": "825329-shikherjee-so",
+        "img": "825329-ParasnathTemple-ShikherjeeSO.jpg",
+        "name": "Parasnath Temple"
+      },
+      {
+        "code": "jh",
+        "slug": "829150-rajrappa-project-so",
+        "img": "829150-ChhinnamastikaTemple-RajrappaProjectSO.jpg",
+        "name": "Chhinnamastika Temple"
+      },
+      {
+        "code": "jh",
+        "slug": "831001-jamshedpur-ho",
+        "img": "831001-JamshedjiNusserwanjiTata&SteelCity-JamshedpurHO.jpg",
+        "name": "Jamshedji Nusserwanji Tata & Steel City"
+      },
+      {
+        "code": "jh",
+        "slug": "833219-saraikela-so",
+        "img": "833219-ChhauDance-SaraikelaSO.jpg",
+        "name": "Chhau Dance"
+      },
+      {
+        "code": "jh",
+        "slug": "835218-netarhat-so",
+        "img": "835218-QueenofChhotanagpur-NetarhatSO.jpg",
+        "name": "Queen of Chhotanagpur"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overview-images img.landscape {
+  width: 900px;
+  height: 600px;
+  cursor: pointer;
+  margin: 5px auto; /* Centers the image */
+  display: block; /* Ensures it's treated like a block element */
+  max-width: 100%; /* Ensures it scales down in responsive mode */
+  height: auto; /* Adjusts height automatically based on width */
+}
+.section-divider {
+  border-bottom: 2px solid black;
+  margin: 20px 0;
+}

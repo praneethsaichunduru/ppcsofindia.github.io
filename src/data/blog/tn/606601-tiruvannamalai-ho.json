@@ -1,0 +1,103 @@
+{
+  "docTitle": "Oil Lamp",
+  "title": "Oil Lamp",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/OilLamp.jpg",
+          "alt": "Oil Lamp",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/606601-OilLamp-TiruvannamalaiHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Tamil word vilakku, meaning lamp or light, derives from a root associated with dispelling or removing darkness, and the oil lamp occupies a place in Tamil culture that predates the written historical record, with references to lamp-lighting traditions appearing in Sangam-era poetry collections such as the Ahananuru, composed between roughly 200 BCE and 300 CE. At Tiruvannamalai specifically, lamp veneration is bound to a founding legend in which Shiva manifested as an infinite column of fire to settle a dispute between Brahma and Vishnu over supremacy, a myth that gave the town its Sanskrit-Tamil name, Arunachala, the \"red mountain,\" and established fire and light as the presiding symbols of the site and its principal deity, Annamalaiyar."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The oil lamp belongs to a broader category of ritual implements central to Agamic Hindu worship, used daily in temple sanctums and household shrines across Tamil Nadu as an offering and as the medium through which darshan, or sacred viewing, of a deity is traditionally performed. At Tiruvannamalai, the lamp's significance is magnified beyond the everyday, since the presiding deity is worshipped in the form of the jyoti lingam representing the element of fire, one of five such elemental shrines in South India, making the oil lamp not merely a devotional accessory but a direct symbolic stand-in for the god himself. This elevates simple acts of lamp-lighting at the temple into a localized reenactment of the theology that the site itself commemorates."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Traditional Tamil oil lamps are typically cast in bronze or brass through age-old lost-wax and sand-casting techniques practised by craftsman communities, with the standing kuthuvilakku built from distinct screwed-together parts, a base plate, a pillar, an oil reservoir holding five or seven wicks, and an ornamental crown, while simpler clay diyas serve everyday household needs. These lamps are traditionally fuelled with sesame oil, castor oil, or ghee, each associated with particular rites, and the production of larger temple lamps intensifies ahead of Tiruvannamalai's major festivals, when thousands of such lamps are arranged along temple corridors and streets. The most dramatic expression of this craft and custom converges each year on the Karthigai Deepam festival, held on the full moon of the Tamil month of Karthigai, usually in November or December."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The festival's centrepiece is the Maha Deepam, a single enormous lamp lit at dusk atop Arunachala hill in a massive cauldron filled with several tonnes of ghee and a thick cotton wick, its flame visible for many kilometres across the surrounding plains and drawing pilgrim crowds estimated in the hundreds of thousands to over a million. Devotees hold that this flame is Shiva's own manifestation witnessed afresh each year, and in the days preceding it the temple town is illuminated by countless smaller lamps lit in homes, streets, and the Annamalaiyar temple's own vast lamp-pillars, turning the entire settlement into a continuous field of light that mirrors the mountain-top blaze above it."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Present-day arrangements for the Maha Deepam are coordinated by the Tamil Nadu Hindu Religious and Charitable Endowments Department together with the Arulmigu Arunachaleswarar Temple administration, which manages the logistics of ghee procurement, wick preparation, and crowd control for the enormous pilgrim turnout, while district authorities mount parallel arrangements for traffic, sanitation, and emergency services during the multi-day celebration. Smaller bronze and clay lamps produced by local artisans remain everyday fixtures of worship at the temple and in surrounding households long after the festival lamps are extinguished, sustaining a craft economy and ritual practice that link ordinary domestic devotion directly to the mountain-top flame Tiruvannamalai is best known for."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 12, 1997"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Tiruvannamalai HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Tiruvannamalai (dt.), Tamil Nadu - 606601."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "எண்ணெய் விளக்கு"
+}

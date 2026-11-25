@@ -1,0 +1,124 @@
+{
+  "docTitle": "Amer Fort",
+  "title": "Amer Fort",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/AmerFort.jpg",
+          "alt": "Amer Fort",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/302028-AmerFort-AmerSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Amer Fort, also known as Amber Fort, stands majestically atop a hill in Amer, Rajasthan, approximately 11 kilometers from Jaipur. This expansive 4-square-kilometer town serves as a gateway to the fort, which overlooks the serene Maota Lake—the primary water source for the palace. Constructed primarily of red sandstone and white marble, the fort exemplifies Rajput architecture infused with Mughal influences. Its artistic elements include large ramparts, series of gates, and cobbled pathways leading to various sections such as the Diwan-e-Aam (Hall of Public Audience), Diwan-e-Khas (Hall of Private Audience), Sheesh Mahal (Mirror Palace), and Sukh Niwas, where an artificial cool climate is created by winds blowing over a water cascade. The fort's Ganesh Pol entrance is adorned with intricate frescoes, leading to the private palaces of the Maharajas. Within the fort lies the Sila Devi temple, dedicated to the goddess presented to Raja Man Singh after his victory over the Raja of Jessore in 1604."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Strategically perched on a hill, Amer Fort served as a formidable defense structure, providing a vantage point to monitor and control the surrounding region. Its elevated position allowed the ruling Kachwaha clan to oversee the approaches to their kingdom, ensuring dominance over the area and facilitating trade and military movements. The fort's design includes robust fortifications and a subterranean passage connecting it to the nearby Jaigarh Fort, serving as an escape route during sieges. This strategic architecture underscores the fort's significance in safeguarding the royal family and their realm."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Kachwaha rulers, notably Raja Man Singh I and his descendant Mirza Raja Jai Singh I, played pivotal roles in the fort's history. Raja Man Singh I initiated the construction of the current fort in 1592, replacing an earlier structure. His successor, Jai Singh I, expanded and enhanced the fort in the early 17th century, incorporating Mughal architectural elements. The fort remained the royal residence until 1727 when Sawai Jai Singh II relocated the capital to Jaipur."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Throughout its history, Amer Fort has witnessed significant events, including royal ceremonies, strategic military planning, and cultural developments. The fort's Diwan-i-Aam hosted public audiences where rulers addressed the populace, while the Diwan-i-Khas facilitated private discussions with courtiers and foreign dignitaries. The Sheesh Mahal, with its intricate mirror work, served as a venue for royal celebrations, reflecting the opulence of the era. The fort's strategic importance made it a focal point during regional conflicts, with its defenses tested in various battles."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, Amer Fort stands as a UNESCO World Heritage Site, recognized in 2013 along with five other forts in Rajasthan for its exemplary Rajput military hill architecture. It attracts thousands of tourists daily, drawn to its historical significance and architectural grandeur. Conservation efforts have been undertaken to preserve its structures, though debates continue regarding the methods employed. Additionally, concerns have been raised about the welfare of elephants used for tourist rides up to the fort, leading to calls for more humane practices. Despite these challenges, Amer Fort remains a testament to Rajasthan's rich heritage and continues to captivate visitors from around the world."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2018-12-29-forts-of-rajasthan-amer-fort.jpg",
+          "alt": "Hill Forts of Rajasthan: Amer Fort",
+          "cls": "horizontal",
+          "credit": "Hill Forts of Rajasthan: Amer Fort, 29.12.2018"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 2, 2023"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Amer SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Jaipur (dt.), Rajasthan - 302028."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "आमेर किला"
+}

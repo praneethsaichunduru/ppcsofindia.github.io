@@ -1,0 +1,103 @@
+{
+  "docTitle": "Tiger Reserve",
+  "title": "Tiger Reserve",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/TigerReserve.jpg",
+          "alt": "Tiger Reserve",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/822101-TigerReserve-DaltonganjHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Palamu Tiger Reserve takes its name from the Palamu (Palamau) district of Jharkhand in which it lies, a tract of the Chota Nagpur plateau long known for its dense sal and bamboo forests. Portions of this forest tract were first set aside for protection under the Indian Forests Act as early as 1947 and formally constituted as a wildlife sanctuary in 1960, well before the tiger-specific conservation apparatus existed. It also holds a distinction predating Project Tiger itself: Palamu was the site of the world's first systematic tiger census conducted by the pugmark method, carried out in 1932 under the supervision of J. W. Nicholson, then Divisional Forest Officer of Palamau, a methodological milestone that later influenced tiger-counting practice across India."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The reserve's core identity rests on its status as one of the original nine tiger reserves notified when India launched Project Tiger in 1973, placing it alongside Corbett, Kanha, Manas and other founding reserves in the national conservation network. It is the only tiger reserve in Jharkhand and today extends across roughly 1,129.93 square kilometres spanning Palamu, Latehar and Garhwa districts, divided into a core or critical tiger habitat of about 414.08 square kilometres and a buffer zone of around 715.85 square kilometres. The reserve fully encompasses Betla National Park, a 226.32 square kilometre area that functions as its principal wildlife-viewing and tourism zone, with a designated tourist area of about 53 square kilometres within the buffer. Its hilly, forested terrain forms part of the broader central Indian tiger landscape linking it ecologically to reserves further west and south."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Administratively the reserve is managed by the Jharkhand forest department through territorial divisions covering its north and south ranges, with protection infrastructure that has historically included watchtowers, forest rest houses and the ruins of Palamau Fort, the former seat of the Chero kings, standing within its bounds as both a cultural landmark and a patrol reference point. Despite its early recognition under Project Tiger, the reserve's tiger population collapsed over subsequent decades: sustained poaching, fragmentation from mining and agricultural encroachment, and more than a decade of Naxalite (Maoist) insurgent activity that restricted forest staff from patrolling large tracts left the population critically depleted. The 2018 All India Tiger Estimation recorded no confirmed resident tigers in Palamu, and in 2020 a tigress named Rani, one of the last known individuals, was found dead within the reserve."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A turning point followed in late 2023, when camera traps placed near the ruins of Palamu Fort photographed a male tiger that forest officials subsequently named Quila, the first confirmed tiger image from the reserve in years. By December 2023 a second male was also recorded, and the two were documented by camera trap coexisting and hunting together, preying on wild game and occasionally livestock, a development widely reported as the reserve 'roaring back to life' after its long decline. Alongside these sightings, the reserve continues to support substantial populations of elephants, leopards, sloth bears, four-horned antelope and several deer species, including the rare chausingha, maintaining ecological value even through the years when tigers themselves were absent or unconfirmed."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Management authorities have since intensified monitoring, deploying several hundred camera traps across the reserve for systematic wildlife census work and expanding anti-poaching patrols as security conditions in the district have gradually improved. Villages located within the core zone, such as Jagir, have been part of discussions around voluntary relocation intended to reduce human pressure on critical tiger habitat, a process that remains incremental and closely watched by conservationists. The Palamu Tiger Reserve today operates under the National Tiger Conservation Authority's oversight alongside the state forest department, with Betla National Park functioning as its public-facing gateway for safaris and research visits even as the core reserve's tiger recovery is tracked cautiously rather than declared complete."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 1, 2016"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Daltonganj HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Palamu (dt.), Jharkhand - 822101."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "टाइगर रिजर्व"
+}

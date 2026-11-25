@@ -1,0 +1,124 @@
+{
+  "docTitle": "Hill Myna",
+  "title": "Hill Myna",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/HillMyna.jpg",
+          "alt": "Hill Myna",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/494115-HillMyna-TongpalSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Bastar Hill Myna (Gracula religiosa peninsularis), Chhattisgarh's state bird since 2002, is a distinctive subspecies of the common hill myna. Renowned for its exceptional mimicry of human speech, this bird is predominantly found in the dense forests of the Bastar region, including areas like Tongpal in the Sukma district. Its presence in these locales underscores the rich biodiversity of the region. The Bastar Hill Myna is protected under Schedule I(b) of the Wildlife Protection Act, 1972, highlighting its conservation importance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The natural habitat of the Bastar Hill Myna comprises moist deciduous forests, particularly those dominated by sal trees. These birds prefer nesting in cavities created by woodpeckers in mature sal trees. However, deforestation, agricultural expansion, and infrastructure development have led to significant habitat loss, posing threats to their population. In recent years, sightings have increased in villages adjacent to the Kanger Valley National Park, including Tongpal, indicating a positive trend in their distribution."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "To counter the decline in their numbers, the Chhattisgarh Forest Department initiated the 'Myna Mitra' program. This initiative involves training local youth to monitor and protect the Bastar Hill Myna. Equipped with binoculars and trap cameras, these 'Myna Mitras' conduct regular surveys, safeguard nesting sites, and engage in community awareness campaigns. Their efforts have been instrumental in increasing the bird's population and fostering community involvement in conservation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Scientific studies have also been undertaken to understand the behavior and ecology of the Bastar Hill Myna. Researchers have documented their nesting preferences, breeding patterns, and feeding habits. Such studies are crucial for formulating effective conservation strategies. Moreover, proposals for satellite telemetry tagging are underway to track their movement and habitat utilization, providing deeper insights into their ecological requirements."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The combined efforts of governmental agencies, local communities, and researchers have led to a resurgence in the Bastar Hill Myna population. Flocks of 50-60 birds have been observed in regions like Tongpal, reflecting the success of conservation initiatives. Continued commitment to habitat preservation, community engagement, and scientific research is essential to ensure the long-term survival of this iconic species in Chhattisgarh's forests."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/tongpal-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "February 12, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Tongpal SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bastar (dt.), Chhattisgarh - 494115."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "पहाड़ी मैना"
+}

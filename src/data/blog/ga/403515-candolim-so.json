@@ -1,0 +1,146 @@
+{
+  "docTitle": "Fort Aguada Lighthouse",
+  "title": "Fort Aguada Lighthouse",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/FortAguadaLighthouse.jpg",
+          "alt": "Fort Aguada Lighthouse",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403515-FortAguadaLighthouse-CandolimSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Aguada Fort, located on the Sinquerim plateau overlooking the Arabian Sea in North Goa, is one of the most iconic and well-preserved Portuguese forts in India. Constructed in 1612 by the Portuguese colonial rulers, the fort was built as a strategic defensive structure against the rising threats of Dutch and Maratha invasions. Its name, *Aguada*, comes from the Portuguese word for “water,” referring to the fresh-water spring within the fort’s boundaries that served as a replenishment station for ships. The fort’s construction coincided with the height of Portuguese maritime supremacy in the Indian Ocean, and its robust design showcases a blend of European military architecture with adaptations to local geography and climate."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The architecture of Aguada Fort follows the bastion-style fortification commonly seen in European military constructions of the 17th century. Its massive ramparts, built with laterite stone, encircle an area of nearly 2,000 square meters. The fort is shaped in an irregular quadrilateral layout, featuring thick defensive walls, a moat, and underground water storage chambers capable of holding over 2 million gallons of fresh water — one of the largest such cisterns built in Asia at the time. This innovative water system was designed to support long stays by sailors and was a critical reason for the fort’s enduring utility during Portuguese rule. The fort also included bastions and gun turrets that provided excellent vantage points over the sea, allowing for monitoring of enemy ships and pirates."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "One of the unique features of Aguada Fort is its lighthouse, constructed in 1864, which is considered the oldest of its kind in Asia. Originally a four-storeyed structure, it served as a navigational aid to passing ships with its oil lamp system and rotating beacon. The lighthouse stood as a significant maritime signal until it was decommissioned in 1976 and replaced by a modern beacon nearby. While the original lighthouse is no longer functional, it remains a historical symbol and offers panoramic views of the Goan coastline. Visitors can still explore its base, and the surrounding viewing points provide stunning vistas of the Arabian Sea and nearby beaches."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Strategically, Aguada Fort was of paramount importance to the Portuguese as it guarded the mouth of the Mandovi River, ensuring protection for the port city of Old Goa and the anchorage below. The fort functioned both as a defensive outpost and a replenishment station, offering fresh water, supplies, and shelter to transiting ships. Over time, a part of the fort was also converted into a prison, which is still in use today, housing Goa’s Central Jail. This dual-use — military and penal — continued well into the 20th century, marking the fort as a continuously functioning colonial legacy."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, Aguada Fort stands as a protected monument under the Archaeological Survey of India. Much of the structure remains intact, and it is one of the most visited heritage sites in Goa. Conservation efforts have included stabilization of the walls, cleaning of the water storage facilities, and regulated tourism access to prevent degradation. Though not all areas of the fort are open to the public due to the operational jail, visitors can explore a large portion of the structure and learn about its historical significance through on-site plaques and guided tours. The fort remains a testament to Portuguese engineering, maritime strategy, and their centuries-long presence on the western coast of India."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2011-12-19-goa-liberation-golden-jubilee.jpg",
+          "alt": "Goa Liberation - Golden Jubilee",
+          "cls": "horizontal",
+          "credit": "Goa Liberation - Golden Jubilee, 19.12.2011"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/candolim-so.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403515-candolim-so-09.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 30, 2021"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Candolim SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "North Goa (dt.), Goa - 403515."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "फोर्ट आग्वादाचं दीपगृह"
+}

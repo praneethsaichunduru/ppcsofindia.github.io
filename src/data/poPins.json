@@ -1,0 +1,201 @@
+{
+  "sample": true,
+  "pins": [
+    {
+      "digipin": "39J-438-7L3T",
+      "po": "Sansad Marg MDG",
+      "rank": "MDG",
+      "pincode": "110001",
+      "ppc": "Parliament of India"
+    },
+    {
+      "digipin": "39J-439-P977",
+      "po": "Rashtrapati Bhavan SO",
+      "rank": "SO",
+      "pincode": "110004",
+      "ppc": "Rashtrapati Bhavan"
+    },
+    {
+      "digipin": "39J-498-C997",
+      "po": "Red Fort MDG",
+      "rank": "MDG",
+      "pincode": "110006",
+      "ppc": "Red Fort"
+    },
+    {
+      "digipin": "CM7-PC5-6TKP",
+      "po": "Chandigarh GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "160017",
+      "ppc": "Open Hand Monument"
+    },
+    {
+      "digipin": "CPJ-CK7-2659",
+      "po": "Shimla GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "171001",
+      "ppc": "Himalayan Monal"
+    },
+    {
+      "digipin": "CMF-FT5-M94K",
+      "po": "Amritsar GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "143001",
+      "ppc": "Sri Harmandir Sahib"
+    },
+    {
+      "digipin": "249-K84-K79L",
+      "po": "Bodhgaya SO",
+      "rank": "SO",
+      "pincode": "824231",
+      "ppc": "Mahabodhi Temple"
+    },
+    {
+      "digipin": "25L-M47-LC43",
+      "po": "Jamshedpur HO",
+      "rank": "HO",
+      "pincode": "831001",
+      "ppc": "Tata & Steel City"
+    },
+    {
+      "digipin": "4P3-JJM-LLKL",
+      "po": "Bengaluru GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "560001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "M37-725-PC9J",
+      "po": "Thiruvananthapuram GPO",
+      "rank": "GPO",
+      "pincode": "695001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "M2K-87C-CKMF",
+      "po": "Kanyakumari SO",
+      "rank": "SO",
+      "pincode": "629702",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "C2M-KL2-2J93",
+      "po": "Leh HO",
+      "rank": "HO",
+      "pincode": "194101",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "C3P-C8C-PMK5",
+      "po": "Kargil HO",
+      "rank": "HO",
+      "pincode": "194103",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "C5M-8K2-6P55",
+      "po": "Hikkim BO",
+      "rank": "BO",
+      "pincode": "172114",
+      "ppc": "Hikkim Post Office"
+    },
+    {
+      "digipin": "C3L-L34-3PK4",
+      "po": "Srinagar GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "190001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "C4K-J8F-L58K",
+      "po": "Jammu HO-PB",
+      "rank": "HO-PB",
+      "pincode": "180001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "735-M9P-M893",
+      "po": "Kohima HO",
+      "rank": "HO",
+      "pincode": "797001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "6LT-6T7-9C68",
+      "po": "Port Blair HO",
+      "rank": "HO",
+      "pincode": "744101",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "MFJ-K66-54JT",
+      "po": "Kavaratti SO",
+      "rank": "SO",
+      "pincode": "682555",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "JPC-P65-F36C",
+      "po": "Dwarka SO",
+      "rank": "SO",
+      "pincode": "361335",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "3C9-7J5-P9F3",
+      "po": "Kila Zaffargarh BO",
+      "rank": "BO",
+      "pincode": "126101",
+      "ppc": "Zaffargarh Fort"
+    },
+    {
+      "digipin": "C5P-36C-658K",
+      "po": "Tabo SO",
+      "rank": "SO",
+      "pincode": "172113",
+      "ppc": "Tabo Monastery"
+    },
+    {
+      "digipin": "C5M-8F2-75P9",
+      "po": "Kee Gompa BO",
+      "rank": "BO",
+      "pincode": "172114",
+      "ppc": "Key Monastery"
+    },
+    {
+      "digipin": "24J-5MJ-CP5K",
+      "po": "Daltonganj HO",
+      "rank": "HO",
+      "pincode": "822101",
+      "ppc": "Tiger Reserve"
+    },
+    {
+      "digipin": "4FP-492-CMTF",
+      "po": "Pune HO-PB",
+      "rank": "HO-PB",
+      "pincode": "411001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "4FK-PC2-K539",
+      "po": "Mumbai GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "400001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "2TF-J28-9KLT",
+      "po": "Kolkata GPO",
+      "rank": "GPO",
+      "pincode": "700001",
+      "ppc": "Sample PPC"
+    },
+    {
+      "digipin": "4T3-84L-L5L9",
+      "po": "Chennai GPO-PB",
+      "rank": "GPO-PB",
+      "pincode": "600001",
+      "ppc": "Sample PPC"
+    }
+  ]
+}

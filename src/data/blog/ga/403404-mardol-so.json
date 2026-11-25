@@ -1,0 +1,130 @@
+{
+  "docTitle": "Mangueshi Temple",
+  "title": "Mangueshi Temple",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/MangueshiTemple.jpg",
+          "alt": "Mangueshi Temple",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403404-MangueshiTemple-MardolSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Mangueshi Temple, located in the village of Mardol in Ponda Taluka, Goa, is one of the most prominent and revered Hindu temples in the state. Dedicated to Bhagavan Manguesh, an incarnation of Lord Shiva, the temple attracts devotees and tourists alike for its spiritual significance and striking architecture. The temple is situated around 21 kilometers from Panaji and 26 kilometers from Margao, nestled among lush surroundings and scenic countryside that enhances its tranquil atmosphere. It holds immense religious and cultural importance for the Goud Saraswat Brahmin community of Goa."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The deity worshipped in the temple, Lord Manguesh, is believed to be a form of Lord Shiva who revealed himself in a humble and benevolent avatar. The origin of the temple traces back to the 12th century when it was originally located in Kushasthali (modern-day Cortalim), a village on the banks of the Zuari River. According to legend, the name \"Manguesh\" comes from the phrase “Mam Girisha,” meaning “O Lord of the Mountains,” uttered by Goddess Parvati while searching for Shiva. Over time, the phrase evolved into “Manguesh.” When the Portuguese began their Christian missionary activities in the 16th century, the temple was relocated to Mardol in 1560 to escape destruction and forced conversions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple complex underwent several phases of renovation and expansion over the centuries. The current structure was largely built and renovated during the 18th century under the patronage of the Marathas and local Hindu rulers, particularly under the reign of the Peshwas. The architectural style of the temple combines traditional Hindu elements with regional Goan influences. It features a multi-tiered white façade, a prominent domed lamp tower (Deepastambha), and an elegant Sabha Griha (assembly hall). The sanctum sanctorum (Garbhagriha) houses the Shiva Linga of Bhagavan Manguesh, and daily rituals are performed as per ancient Vedic traditions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite having faced the threat of destruction during the Portuguese colonial period, especially between the 16th and 18th centuries, the Mangueshi Temple managed to survive through the strategic relocation and the strong resistance of the local Hindu community. Unlike many temples in Salcete and other areas under direct Portuguese control, those in Ponda—then ruled by the Muslim Sultanate of Bijapur—remained relatively safe. After the Marathas gained influence in the region, Hindu religious activity regained strength, allowing temples like Mangueshi to flourish and expand."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In the present day, the temple is a well-maintained religious and cultural site, managed by the Shri Manguesh Devasthan Committee. It continues to be an active center of worship, drawing thousands of devotees throughout the year, especially during festivals like Maha Shivaratri and Navaratri. Non-Hindus are permitted to visit the outer complex, though access to the inner sanctum is restricted. The temple's calm ambiance, spiritual resonance, and historical legacy make it one of Goa’s most cherished landmarks, reflecting the resilience and continuity of Hindu traditions in the region."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/mardol-so.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403404-mardol-so-08.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 2, 2021"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mardol SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "South Goa (dt.), Goa - 403404."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "म्हंगेशी देवळ"
+}

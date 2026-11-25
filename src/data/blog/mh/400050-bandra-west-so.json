@@ -1,0 +1,147 @@
+{
+  "docTitle": "Mount Mary Church",
+  "title": "Mount Mary Church",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/MountMaryChurch.jpg",
+          "alt": "Mount Mary Church",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/400050-MountMaryChurch-BandraWestSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Mount Mary Church, officially known as the Basilica of Our Lady of the Mount, is a renowned Roman Catholic basilica situated atop a hillock in Bandra, Mumbai. Overlooking the Arabian Sea, this iconic structure has been a beacon of faith and architectural beauty for over a century. The basilica is dedicated to the Virgin Mary and is a significant pilgrimage site, attracting devotees from various parts of the country."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The origins of Mount Mary Church trace back to the 16th century when Jesuit priests from Portugal brought a wooden statue of the Virgin Mary to the area. This statue was initially placed in a small oratory on the hill, and over time, the site gained prominence as a place of worship. The current edifice, constructed in 1904, showcases a blend of Gothic and Roman architectural styles, characterized by its semi-gothic structure and intricate detailing."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "One of the most significant events associated with the basilica is the annual Bandra Fair, held every September to celebrate the Feast of the Nativity of the Blessed Virgin Mary. This week-long event attracts thousands of pilgrims and tourists who participate in religious services, processions, and various cultural activities. The fair is also known for its vibrant stalls selling religious artifacts, local delicacies, and handcrafted items, creating a festive atmosphere around the church premises."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The basilica's interior is as captivating as its exterior, featuring a beautifully adorned altar and stained-glass windows that depict various episodes from the life of Mary and Jesus. The serene ambiance inside offers a tranquil space for prayer and reflection. The church is open to people of all faiths, emphasizing its universal appeal and the inclusive nature of its community."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The area surrounding the church is known for its peaceful ambiance, offering a contrast to the city’s otherwise fast-paced life. Many visitors come here to admire the breathtaking views of the Arabian Sea and the beautifully maintained gardens around the basilica. The church is also a popular site for photographers and history enthusiasts who appreciate its architectural charm and historical significance."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/thematics/thematic-400050-bandra-west-inaugural-ppc-official-card-front.jpg",
+          "alt": "Inaugural Card - Front",
+          "cls": "vertical",
+          "credit": "Inaugural Card - Front"
+        },
+        {
+          "src": "/blog/blog-related-pictures/thematics/thematic-400050-bandra-west-inaugural-ppc-official-card-back.jpg",
+          "alt": "Inaugural Card - Back",
+          "cls": "horizontal",
+          "credit": "Inaugural Card - Back"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/bandra-west-anthony-o-j.jpg",
+          "alt": "Travelled Inaugural Day private cover",
+          "cls": "landscape",
+          "credit": "Travelled Inaugural Day private cover"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/exphil/400050-bandra-west-so-01.09.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 24, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bandra West SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mumbai (dt.), Maharashtra - 400050."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "माउंट मैरी चर्च"
+}

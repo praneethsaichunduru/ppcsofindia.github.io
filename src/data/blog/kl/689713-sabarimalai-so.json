@@ -1,0 +1,581 @@
+{
+  "docTitle": "Pathinettampadi",
+  "title": "Pathinettampadi",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Pathinettampadi.jpg",
+          "alt": "Pathinettampadi",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/689713-PathinettampadiHolyEighteenSteps-SabarimalaiSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Sabarimala Ayyappa Temple, nestled in the dense forests of the Western Ghats in Kerala’s Pathanamthitta district, is one of the most revered pilgrimage sites in India. Situated at an altitude of about 4,133 feet (1,260 meters) on the Sabari Hills, the temple is dedicated to Lord Ayyappa, believed to be the son of Lord Shiva and Mohini, the female avatar of Lord Vishnu. The temple follows a unique tradition: it remains open to devotees only during the Mandala season (mid-November to mid-January), the first five days of every Malayalam month, and during certain special occasions like Vishu and Onam."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple's origins trace back over a thousand years, though its current structure was rebuilt after a fire in 1950. The legend behind the temple is rooted in Kerala's sacred lore. According to the traditional spiritual narrative, Lord Ayyappa was born to destroy the demoness Mahishi, and after fulfilling his divine mission, he chose to renounce worldly life and meditate in the forest. The temple marks the spot where he is believed to have attained enlightenment. Devotees often recount stories of Ayyappa’s miracles and his unwavering celibacy, which is central to the temple’s traditions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "One of the most interesting aspects of Sabarimala is the presence of Goddess Malikappurathamma, who is said to reside near the main temple. As per the local legend, she is a princess or a demoness (depending on the version) who fell in love with Ayyappa after he defeated Mahishi. Ayyappa promised to marry her, but only on the condition that no new devotee would visit Sabarimala. Since the pilgrimage has never ceased, she waits eternally at her shrine, located a short distance from the main sanctum, symbolizing his vow of celibacy. Her shrine becomes especially active during the Makara Vilakku festival when women devotees often offer bangles and silk to the goddess."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The 18 holy steps (Pathinettam Padi) that lead to the sanctum sanctorum of the temple hold deep spiritual significance. Only those who have observed the 41-day penance, including strict celibacy, vegetarianism, and abstinence from worldly pleasures, are permitted to climb them. Each step represents a spiritual obstacle, such as desire, anger, and ego, that a devotee must overcome. The topmost step is believed to symbolize the final liberation or ",
+        {
+          "t": "i",
+          "c": [
+            "moksha"
+          ]
+        },
+        ". Devotees wear black or blue garments and chant \"Swamiye Saranam Ayyappa\" throughout their journey."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple sees a massive influx of pilgrims annually, especially during the Mandala season and the Makara Sankranti festival in January. On this auspicious day, devotees witness the ",
+        {
+          "t": "i",
+          "c": [
+            "Makara Jyothi"
+          ]
+        },
+        "—a divine light that appears on the Ponnambalamedu hilltop, believed by millions to be a celestial sign of Ayyappa’s presence. Although the light is lit by the Kerala Forest Department as part of the ritual, devotees perceive it as a miraculous event. The ",
+        {
+          "t": "i",
+          "c": [
+            "Makara Vilakku"
+          ]
+        },
+        ", a related event held at the temple, involves lighting the sacred lamp, symbolizing the Lord’s celestial blessings and bringing the 41-day pilgrimage to a sacred culmination."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "data-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Step"
+            ]
+          },
+          {
+            "h": true,
+            "c": [
+              "Symbolic Representation"
+            ]
+          },
+          {
+            "h": true,
+            "c": [
+              "Surrounding Hill"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "1"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Netra (Eye)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Ponnambalamedu"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "2"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Karna (Ear)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Gaudanmala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "3"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Nasa (Nose)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Nagamala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "4"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Tvacha (Skin)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Sundaramala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "5"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Mukha (Mouth)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Karimala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "6"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Kama (Desire)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Mathangamala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "7"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Krodha (Anger)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Mayiladummala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "8"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Lobha (Inordinate Desire)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Sreepadamala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "9"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Moha (Attachment)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Thevarmala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "10"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Madha (Pride)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Nilakkalmala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "11"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Matsarya (Unhealthy Competition)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Thalapparamala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "12"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Asuya (Jealousy)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Chittambaramala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "13"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Dhumb (Braggery)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Ghalkimala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "14"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Sathva (Enlightenment)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Puthusserymala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "15"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Rajas (Ego)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Kalakettymala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "16"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Thamas (Delusion)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Inchipparamala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "17"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Vidya (Knowledge)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Sabarimala"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "18"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Avidya (Ignorance)"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "Nellimala"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/sabarimalai-so-front.jpg",
+          "alt": "Travelled Private Cover Front",
+          "cls": "landscape"
+        },
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/sabarimalai-so-back.jpg",
+          "alt": "Travelled Private Cover Back",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "News Coverage"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/sabarimalai-news-clipping.jpg",
+          "alt": "News Coverage on 24th December, 2022",
+          "cls": "landscape",
+          "credit": "News Coverage on 24th December, 2022"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 25, 1980"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Sabarimalai Seasonal SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Pathanamthitta (dt.), Kerala - 689713."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "t": "inline",
+      "c": [
+        {
+          "t": "b",
+          "c": [
+            "Note:"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "1. This PPC is available only during ",
+        {
+          "t": "i",
+          "c": [
+            {
+              "t": "u",
+              "c": [
+                "Makaravilakku"
+              ]
+            }
+          ]
+        },
+        " season (mid weeks of November till Makara Sankranti)."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "2. The provided pincode is not registered on India Post website (for registered/speed post), but is valid. If a problem encountered at post office, ask them to enter the pincode of nearby post offices (689711, 689712, etc...). Your articles will reach their destination."
+      ]
+    }
+  ],
+  "regional": "പതിനെട്ടാംപടി"
+}

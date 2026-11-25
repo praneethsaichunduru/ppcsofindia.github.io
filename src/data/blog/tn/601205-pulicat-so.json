@@ -1,0 +1,124 @@
+{
+  "docTitle": "Pulicat Lighthouse",
+  "title": "Pulicat Lighthouse",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/PulicatLighthouse.jpg",
+          "alt": "Pulicat Lighthouse",
+          "cls": "portrait"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/601205-PulicatLighthouse-PulicatSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Pulicat Lighthouse, located near the historic town of Pulicat on the Coromandel Coast of Tamil Nadu, India, serves as a critical maritime navigational aid in the Bay of Bengal. The first lighthouse at Pulicat was established in 1846 during the British colonial period, primarily to aid in guiding ships approaching the Coromandel coast and the Pulicat Lake lagoon, which was once a bustling Dutch trading post. The original structure, a modest brick-built beacon, served the strategic need of the East India Company, which sought to secure its shipping routes and support its growing maritime trade. It played a pivotal role in helping ships avoid the treacherous sandbars and coastal shoals in the region, thus reducing maritime accidents and increasing the safety of seafarers navigating toward Chennai and other nearby ports."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over time, the structure evolved to meet modern standards of lighthouse engineering. The current tower, constructed in 1985, replaced the older, less efficient structures and reflects the architectural style typical of 20th-century Indian lighthouses. This lighthouse is a cylindrical concrete tower, approximately 30 meters (about 98 feet) high, with distinctive horizontal black and white bands that ensure high visibility during daylight. It houses a metal lantern and gallery and is equipped with a modern optical apparatus. The light source, originally kerosene-based, has been upgraded to a powerful electric rotating beacon with solar power backup, emitting white light with a range of 27 nautical miles. The Pulicat lighthouse is maintained by the Directorate General of Lighthouses and Lightships (DGLL), under the Ministry of Ports, Shipping and Waterways."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The lighthouse's strategic importance lies not just in its navigational function but also in its role in environmental protection and coastal monitoring. Pulicat is located close to the northern tip of Pulicat Lake, India’s second-largest brackish water lagoon, which is an ecologically sensitive zone. The lighthouse offers a clear vantage point for monitoring illegal fishing, unauthorized coastal construction, and environmental changes due to erosion or sea-level rise. It indirectly supports the enforcement of marine and ecological regulations by facilitating aerial and coastal surveillance missions conducted by the Coast Guard and state authorities."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "For the local fishing community and residents of nearby villages, the Pulicat lighthouse is more than a navigational aid. It symbolizes safety and continuity, especially during cyclonic weather or the monsoon season. Fishermen use it as a reference point while venturing into the sea, and many consider its beam a guiding light during low visibility. Over the decades, it has become an unofficial landmark, often mentioned in local tales and coastal lore. Additionally, the presence of the lighthouse has brought occasional employment opportunities through maintenance contracts and tourism-related activities, although large-scale tourism remains limited due to ecological restrictions in the area."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The construction of the modern lighthouse made extensive use of reinforced concrete and corrosion-resistant materials to withstand the saline coastal climate. The lantern is protected with marine-grade aluminum and toughened glass to endure harsh weather. The site also includes a control room, battery backup, and solar panels, ensuring round-the-clock functionality. Unlike ornamental historical lighthouses, Pulicat's structure prioritizes functionality and durability over aesthetic design, embodying the principles of minimalism and resilience. Its robust design ensures that it continues to serve as a sentinel for the eastern coast of India, blending utility with coastal heritage."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/pulicat-vasanth.jpg",
+          "alt": "Private First Day PPC Cover",
+          "cls": "landscape",
+          "credit": "Private First Day PPC Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "August 21, 2021"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Pulicat SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Thiruvallur (dt.), Tamil Nadu - 601205."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "புலிகாட் கலங்கரை விளக்கம்"
+}

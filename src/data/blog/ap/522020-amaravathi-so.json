@@ -1,0 +1,103 @@
+{
+  "docTitle": "Amaravathi Stupa",
+  "title": "Amaravathi Stupa",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/AmaravathiStupa.jpg",
+          "alt": "Amaravathi Stupa",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/522020-AmaravathiStupa-AmaravathiSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Amaravathi Stupa, also known as the Mahachaitya, is one of the most significant and early Buddhist monuments in India. Located in the Palnadu district (formerly Guntur district) of Andhra Pradesh, the stupa dates back to the 3rd century BCE and is believed to have been initially commissioned during the reign of Emperor Ashoka of the Maurya dynasty. Ashoka, a devout follower of Buddhism after the Kalinga War, constructed numerous stupas across his empire to enshrine the relics of the Buddha, and Amaravathi was likely among the earliest. However, the structure saw substantial development in the 2nd and 3rd centuries CE under the patronage of the Satavahana kings, who were instrumental in expanding and embellishing the stupa complex."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, the Amaravathi Stupa was a massive structure, originally measuring about 27 meters in height and 50 meters in diameter. It was constructed using locally available white limestone and featured a hemispherical dome (anda), a circumambulatory path (pradakshina patha), and intricately carved railings (vedikas) and gateways (toranas). The decorative panels on the stupa depicted scenes from the life of the Buddha, Jataka tales, and symbolic representations of Buddhist philosophy. These carvings, belonging to the Amaravati School of Art, are noted for their dynamic compositions, graceful figures, and elaborate detailing. This style later influenced Buddhist art across Southeast Asia and contributed to the evolution of stupa designs in regions such as Sri Lanka, Myanmar, and Java."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Amaravathi Stupa was subjected to multiple phases of excavation and restoration, particularly during British rule. The earliest known documentation was by Colonel Colin Mackenzie in the late 18th century. Subsequent excavations in the 19th century, led by Sir Walter Elliot and later by James Fergusson and Alexander Rea, unearthed many sculptural panels and relics. Unfortunately, these colonial-era excavations also resulted in the displacement of numerous artifacts, many of which are now housed in museums abroad. The British Museum in London, the Government Museum in Chennai, and the Indian Museum in Kolkata each possess significant collections of Amaravathi sculptures. A relic casket containing bone fragments, believed to be associated with the Buddha, was discovered here and eventually transported to the British Museum."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Amaravathi site is protected under the Archaeological Survey of India (ASI), and a site museum has been established to display several recovered sculptures and artifacts. While much of the original stupa has not survived, the remaining structure and replicas provide insight into its former grandeur. The site continues to attract scholars, pilgrims, and tourists, particularly from Buddhist countries. In recent years, the Indian government has shown interest in revitalizing Amaravathi as a center for Buddhist heritage and tourism. The stupa's enduring legacy lies in its contribution to Buddhist architecture, sculpture, and the dissemination of the Buddha’s relics across the world, making it a vital link in the global Buddhist network of sacred sites."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Amaravathi sculptures also served as artistic templates for later Buddhist monuments like the Sanchi and Nagarjunakonda stupas. The narrative reliefs from Amaravathi, especially those illustrating the Bodhisattva’s life in aniconic form (symbolizing the Buddha through symbols like footprints, trees, and thrones), shaped early Indian visual storytelling traditions. The refined stone-carving techniques seen at Amaravathi elevated the prestige of southern Indian craftsmanship. Over time, even as Buddhism waned in the region, the Amaravathi Stupa remained a landmark of immense historical and religious importance, its relics scattered across the globe continuing to connect communities with the teachings of the Buddha."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "February 28, 1976"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Amaravathi SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Palnadu (dt.), Andhra Pradesh - 522020."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "అమరావతి స్తూపం"
+}

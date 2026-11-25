@@ -1,0 +1,124 @@
+{
+  "docTitle": "Flamingo",
+  "title": "Flamingo",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Flamingo.jpg",
+          "alt": "Flamingo",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/614807-Flamingo-KodikkaraiSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Kodikkarai Wildlife Sanctuary, also known as the Point Calimere Wildlife and Bird Sanctuary, is situated at the southeastern tip of Tamil Nadu in Nagapattinam district. It encompasses approximately 21.47 square kilometers and features diverse landscapes, including dry evergreen forests, mangrove forests, wetlands, salt pans, and beaches. Established in 1967, the sanctuary was initially created to protect the Indian blackbuck and has since become a haven for various migratory and resident species. Its location along the Palk Strait, where it meets the Bay of Bengal, makes it a critical stopover for migratory birds traveling along the East Asian–Australasian Flyway."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The sanctuary's unique ecological conditions attract a multitude of wildlife. The convergence of different habitats—such as wetlands, mangroves, and salt pans—provides ideal feeding and nesting grounds for various species. The arrival of the northeast monsoon in mid-October replenishes these wetlands, creating an optimal environment for migratory birds. Species such as little stints, painted storks, pelicans, crab plovers, Heuglin’s gulls, marsh sandpipers, curlew sandpipers, great knots, red knots, and little egrets are commonly observed during this period . The abundance of crustaceans in the salt pans further supports large populations of wintering birds ."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Among the sanctuary's avian visitors, flamingos stand out for their sheer numbers and striking appearance. In December 2022, over 50,000 flamingos were reported to have arrived in the Muthupettai mangrove area, part of the sanctuary's extended ecosystem . These birds are drawn to the region's shallow lagoons and salt pans, which provide ample food sources such as algae and small invertebrates. The sight of thousands of flamingos congregating in the wetlands is a significant attraction for birdwatchers and nature enthusiasts."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The sanctuary also supports a variety of other wildlife. Mammals such as spotted deer, blackbuck, wild boar, jackals, and hyenas inhabit the area . The mangrove forests and wetlands serve as breeding grounds for marine turtles, including the Olive Ridley, Green, Hawksbill, and Leatherback turtles . Additionally, the sanctuary is home to various bat species, such as the fruit bat, which plays a role in seed dispersal and pollination."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Visitors to the Kodikkarai Wildlife Sanctuary can also explore cultural landmarks within its vicinity. The Ramar Padam shrine, believed to bear the footprints of Lord Rama, is located on the highest point of land in the sanctuary . The sanctuary's lighthouse, originally built during the Chola period and later reconstructed by the British in 1890, offers panoramic views of the surrounding landscapes . These historical sites, combined with the sanctuary's rich biodiversity, make it a unique destination for both ecological and cultural tourism."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/614807-kodikkarai-old-cover-sushil-mehra.jpg",
+          "alt": "Old Cover with PPC",
+          "cls": "landscape",
+          "credit": "Old Cover with PPC"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 2, 1977"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kodikkarai SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nagapattinam (dt.), Tamil Nadu - 614807."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "பூநாரை"
+}

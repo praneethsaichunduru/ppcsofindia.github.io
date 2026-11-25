@@ -1,0 +1,92 @@
+{
+  "docTitle": "Zero Mile",
+  "title": "Zero Mile",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/440001-ZeroMile-NagpurGPO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Zero Mile Stone stands in the Civil Lines area of Nagpur and was built by the British in 1907 in connection with the Great Trigonometrical Survey of India. The survey, begun in 1802, set out to measure the whole subcontinent with great precision, and the stone was meant as a reference point, a standard bench mark from which positions and distances could be measured. A sandstone pillar rises from a small base, and the monument is accompanied by four sculpted horses."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The stone is popularly described as marking the geographical centre of India, and it is the reason Nagpur is often called the Zero Mile city. The claim is more a popular belief than a surveyed fact: the site was chosen as a survey reference, not as a measured centre, and a few villages in Madhya Pradesh make a competing claim to the centre of the country. Whatever its status, the central position of the city on the map has made the Zero Mile Stone one of Nagpur's best known landmarks."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The monument has been absorbed into the modern city. A park near the stone commemorates the freedom movement, and the nearest metro station of the Nagpur Metro takes its name from the stone and the park. Local people use the area as a meeting place, and visitors who come to see the stone usually combine it with other sites in the city."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "This is the second pictorial cancellation of the Nagpur General Post Office. The first, introduced in 2020, shows the post office building itself, and the cancellation of 2026 adds one of the city's best known landmarks."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 12, 2026"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nagpur GPO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nagpur (dt.), Maharashtra - 440001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "झिरो माईल"
+}

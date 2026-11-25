@@ -1,0 +1,125 @@
+{
+  "docTitle": "Rashtrapati Bhawan",
+  "title": "Rashtrapati Bhawan",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/RashtrapatiBhawan.jpg",
+          "alt": "Rashtrapati Bhavan",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Rashtrapati Bhavan, the grand presidential residence of India, stands as an iconic symbol of the country's rich history and architectural marvel. Constructed during the British Raj, the foundation stone of this majestic structure was laid on 12th February 1912 by the then Viceroy of India, Lord Hardinge. The inspiration behind its creation was to shift the capital from Calcutta to Delhi and design an imposing residence that befits the dignity of the British monarch's representative."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The construction of Rashtrapati Bhavan is a remarkable blend of diverse architectural styles. The mastermind behind its design was the British architect Sir Edwin Lutyens, along with Herbert Baker, who infused elements of Indian and Western architecture. The building boasts a fusion of classical and Mughal styles, incorporating domes, arches, and intricate carvings. The usage of sandstone quarried from Rajasthan and marble from Makrana, as well as other indigenous materials, showcases the craftsmanship of skilled Indian artisans."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Beyond its architectural splendor, Rashtrapati Bhavan is steeped in symbolism, reflecting India's cultural heritage and democratic values. The sprawling Amrit Udyan, open to the public during spring, serve as a harmonious connection between the President and the citizens, fostering a sense of inclusivity and accessibility. The grand Durbar Hall, adorned with royal insignia, evokes a sense of regality, while the Ashoka Hall, with its iconic Ashoka Chakra, pays homage to India's ancient emblem of righteousness and virtue."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Rashtrapati Bhavan stands as a testament to India's past, present, and future. With its blend of architectural splendor, historical significance, and symbolic representation, it serves as a visual ode to the nation's journey towards independence and its transformation into a vibrant democracy. This iconic edifice continues to inspire awe and reverence, leaving an indelible mark on the hearts of visitors from all corners of the globe."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamps"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1991-06-25-new-delhi-diamond-jubilee.jpg",
+          "alt": "New Delhi Diamond Jubilee",
+          "cls": "horizontalbig",
+          "credit": "New Delhi Diamond Jubilee, 25.06.1991"
+        },
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2011-08-05-rashtrapati-bhavan.jpg",
+          "alt": "Rashtrapati Bhavan",
+          "cls": "squarebig",
+          "credit": "Rashtrapati Bhavan, 05.08.2011"
+        },
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2015-11-24-india-singapore-joint-issue.jpg",
+          "alt": "India - Singapore: Joint Issue",
+          "cls": "horizontal",
+          "credit": "India - Singapore: Joint Issue, 24.11.2015"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "March 17, 2005"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Rashtrapati Bhavan SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Central Delhi (dt.), New Delhi - 110004."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "राष्ट्रपति भवन"
+}

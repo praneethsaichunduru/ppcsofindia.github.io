@@ -1,0 +1,133 @@
+{
+  "docTitle": "Shikara in Dal Lake",
+  "title": "Shikara in Dal Lake",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ShikarainDalLake.jpg",
+          "alt": "Shikara in Dal Lake",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/190001-ShikarainDalLake-NehruParkSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Dal Lake, situated in the heart of Srinagar, the summer capital of Jammu and Kashmir, is one of India's most iconic and picturesque water bodies. Often referred to as the \"Jewel in the crown of Kashmir,\" the lake is spread over approximately 22 square kilometers, with a shoreline of about 15.5 kilometers. It lies at an altitude of around 1,583 meters above sea level and is fed by the Jhelum River, springs, and mountain streams. The lake is not just a geographical feature but a cultural and historical symbol of Kashmir, deeply woven into the region’s socio-economic and artistic life."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Historically, Dal Lake has been associated with Persian and Mughal influences. The earliest known references to the lake date back to the Mughal period, particularly under Emperor Jahangir, who famously said, “If there is a paradise on earth, it is this, it is this, it is this,” referring to the Kashmir Valley. The Mughals built many gardens, such as Shalimar Bagh and Nishat Bagh, along the lake’s banks, showcasing the importance of Dal in landscape architecture. Over the centuries, Dal Lake became a central part of Kashmiri culture, with wooden houseboats introduced during British colonial rule when land ownership laws restricted the British from owning land, prompting them to live on the lake."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Dal Lake consists of four main basins: Gagribal, Lokut Dal, Bod Dal, and Nagin Lake, the last of which is sometimes treated as a separate lake. The lake's average depth ranges from 1.5 to 4 meters, with maximum depths reaching 6 meters in some parts. The lake is fed by natural springs and rainwater, and it drains into the Jhelum River. However, in recent decades, Dal Lake has faced challenges due to pollution, encroachment, and excessive weed growth, causing a reduction in its surface area and water holding capacity. The Jammu and Kashmir Lakes and Waterways Development Authority (LAWDA) has been working on several restoration projects to preserve its ecological balance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "One of the most recognizable features of Dal Lake is the traditional wooden boat known as the ",
+        {
+          "t": "i",
+          "c": [
+            "shikara"
+          ]
+        },
+        ". These vibrant, gondola-like boats are used for multiple purposes: transportation, fishing, and as floating markets selling handicrafts, flowers, and Kashmiri saffron. A typical shikara ride offers visitors a serene experience, gliding past Mughal gardens, floating vegetable gardens, and houseboats. The craftsmanship of the shikaras, often with intricately carved wooden canopies and cushioned seating, is a testament to local artisanship passed down through generations."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Tourism plays a vital role in the economy surrounding Dal Lake. Thousands of tourists—both domestic and international—visit Srinagar each year, with many opting to stay in the lake’s iconic houseboats, which range from modest to luxurious in comfort. During winter, when the lake occasionally freezes over, it attracts visitors eager to see snow-covered boats and frozen waterscapes. Additionally, the lake is a hub for cultural activities, including photography, film shooting, and water sports like kayaking and canoeing during the summer. The Dal Lake area is also central to Srinagar’s annual ",
+        {
+          "t": "i",
+          "c": [
+            "Tulip"
+          ]
+        },
+        " Festival, drawing crowds for its floral beauty and scenic backdrops."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Article"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/nehru-park-vasanth.jpg",
+          "alt": "Special Cover: Floating Post Office cum Museum",
+          "cls": "landscape",
+          "credit": "Special Cover: Floating Post Office cum Museum"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "September 13, 1978"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nehru Park SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Srinagar (dt.), Jammu and Kashmir - 190001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "डल झील में शिकारा"
+}

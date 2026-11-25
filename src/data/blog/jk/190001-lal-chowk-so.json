@@ -1,0 +1,103 @@
+{
+  "docTitle": "Ghanta Ghar",
+  "title": "Ghanta Ghar",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/GhantaGhar.jpg",
+          "alt": "Ghanta Ghar",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/190001-GhantaGhar-LalChowkSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Ghanta Ghar, Srinagar's well-known clock tower, takes its popular Hindi-Urdu name directly from its function, ghanta ghar meaning simply \"bell house\" or clock house, a term used for similar municipal timepieces across North India. The present tower at Lal Chowk was raised in 1980 as a gift from the Bajaj Group, with the clock mechanism and tower reportedly underwritten by the industrialist Rahul Bajaj's family firm, Bajaj Electricals, at a time when Kashmir valley had no public clock tower of its own. Some local accounts place its inauguration in 1979 under then Chief Minister Sheikh Muhammad Abdullah, with the structure completed and formally operational shortly after, so the tower's origin is tied as much to civic infrastructure-building as to any older founding legend."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Unlike many PPC subjects tied to religious or ecological significance, the Ghanta Ghar's importance is primarily civic and political. It sits at the dead centre of Lal Chowk, Srinagar's principal commercial square and the symbolic heart of the city since the Dogra era, making the tower the de facto zero-point of downtown Srinagar. Its significance was cemented less by architecture than by events staged beneath it: the square and tower have repeatedly served as the stage for rallies, strikes, and political statements, so that the structure is read locally less as a timepiece than as a marker of the city's contested public life, referenced constantly in news coverage of Kashmir as shorthand for Srinagar itself."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Structurally, the tower is a relatively modest multi-tiered masonry column rising over the market square, topped by a clock face on each of its four sides, styled loosely after colonial British clock towers found in cities such as Lucknow, Allahabad, and Mumbai rather than following any Kashmiri architectural tradition. Built and installed in 1980, it originally carried a single set of clock mechanisms that fell into disrepair over subsequent decades of civil unrest, leaving the tower without working clocks for an extended period. The Srinagar Municipal Corporation eventually replaced the non-functional mechanism in September 2017, fitting four new clock faces so the tower could resume its basic function as a public timepiece after years of standing as a landmark without telling time."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The most widely remembered single incident associated with the tower occurred on 26 January 1992, when BJP leader Murli Manohar Joshi, accompanied by a young Narendra Modi, unfurled the Indian tricolour atop the Ghanta Ghar at the culmination of the party's Ekta Yatra from Kanyakumari, amid heavy security and the sound of gunfire in a city then gripped by militancy. Following that episode, central paramilitary forces, including the Border Security Force and Central Reserve Police Force, continued an annual Republic Day flag-hoisting ritual at the site for years afterward, a practice the forces themselves eventually discontinued in 2009 on the grounds that the ceremony no longer carried the political weight it once did."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In more recent years the tower has been the subject of renewed municipal attention, including a 2023 renovation and illumination drive around Lal Chowk ahead of Independence Day, intended to refresh its appearance and lighting alongside the working clock faces installed in 2017. Today the Ghanta Ghar functions largely as Srinagar's most recognisable visual shorthand in media coverage and tourism imagery of the city, maintained by the Srinagar Municipal Corporation as an ordinary piece of urban infrastructure even as it continues to anchor the square where the city's commercial bustle and its periodic political moments both play out."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "November 26, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Lal Chowk SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Srinagar (dt.), Jammu and Kashmir - 190001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "گھنٹہ گھر"
+}

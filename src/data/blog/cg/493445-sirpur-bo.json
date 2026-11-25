@@ -1,0 +1,140 @@
+{
+  "docTitle": "Laxman Mandir",
+  "title": "Laxman Mandir",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/LaxmanMandir.jpg",
+          "alt": "Laxman Mandir",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/493445-LaxmanMandir-SirpurBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Laxman Mandir, located in Sirpur, Chhattisgarh, is a significant monument of ancient Indian architecture. Constructed in the 7th century CE by Queen Vasata in memory of her husband, King Harshagupta of the Somavanshi dynasty, the temple is dedicated to Lord Vishnu. It is renowned as one of the earliest brick temples in India, showcasing intricate carvings and detailed iconography."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Situated on the banks of the Mahanadi River, approximately 70 kilometers from Raipur and 30 kilometers from Mahasamund, Sirpur was once the capital of South Kosala. The temple's architecture follows the Panchrath style, comprising a sanctum (garbhagriha), antechamber (antarala), and a pillared hall (mandapa). The entrance features a beautifully carved torana (gateway), above which is a depiction of Lord Vishnu reclining on Sheshnag, with Brahma emerging from a lotus at his navel and Lakshmi at his feet."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple's construction primarily uses red bricks, with dimensions of approximately 18 inches by 8 inches. Despite being built with bricks, the temple exhibits elaborate carvings typically found in stone structures. These include depictions of various incarnations of Lord Vishnu, intricate floral patterns, and detailed human figures, reflecting the high level of craftsmanship of the period."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Excavations in the area have revealed that Sirpur was a significant cultural and religious center between the 5th and 12th centuries CE, housing numerous Hindu, Buddhist, and Jain monuments. The Laxman Temple stands as a testament to the region's rich heritage, surviving various natural calamities over the centuries. Its preservation offers valuable insights into early temple architecture and the syncretic religious practices of the time."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Laxman Temple is a protected monument under the Archaeological Survey of India and attracts scholars, tourists, and devotees alike. The site also hosts the annual Sirpur Mahotsav, celebrating the area's historical and cultural significance. Visitors can explore the temple's intricate designs and gain a deeper understanding of India's ancient architectural and religious traditions."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/sirpur-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2020-08-08-terracota-temples-of-india-lakshman-temple-sirpur.jpg",
+          "alt": "",
+          "cls": "vertical",
+          "credit": "Terracota Temples of India: Lakshman Temple, Sirpur, 08.08.2008"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 22, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Sirpur BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mahasamund (dt.), Chhattisgarh - 493445."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "लक्ष्मण मंदिर"
+}

@@ -1,0 +1,131 @@
+{
+  "docTitle": "Bareilly Head Post Office Building",
+  "title": "Bareilly Head Post Office Building",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/BareillyHeadPostOfficeBuilding.jpg",
+          "alt": "Bareilly Head Post Office Building",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/243001-BareillyHeadPostOfficeBuilding-BareillyHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": []
+    },
+    {
+      "t": "p",
+      "c": []
+    },
+    {
+      "t": "p",
+      "c": []
+    },
+    {
+      "t": "p",
+      "c": []
+    },
+    {
+      "t": "p",
+      "c": []
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/bareilly-anthony-o-j.jpg",
+          "alt": "First Day Travelled Cover",
+          "cls": "landscape",
+          "credit": "First Day Travelled Cover"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/others/bareilly-ppc-postcrossing-meetup-card-front.jpg",
+          "alt": "Postcrossing Meetup Card Front",
+          "cls": "vertical",
+          "credit": "Postcrossing Meetup Card Front"
+        },
+        {
+          "src": "/blog/blog-related-pictures/others/bareilly-ppc-postcrossing-meetup-card-back.jpg",
+          "alt": "Postcrossing Meetup Card Back",
+          "cls": "horizontal",
+          "credit": "Postcrossing Meetup Card Back"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 13, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bareilly HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bareilly (dt.), Uttar Pradesh - 243001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "बरेली प्रधान डाकघर भवन"
+}

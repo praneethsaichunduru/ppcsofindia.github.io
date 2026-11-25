@@ -1,0 +1,130 @@
+{
+  "docTitle": "Logo of CMC Hospital",
+  "title": "Logo of CMC Hospital",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/LogoofCMCHospital.jpg",
+          "alt": "Logo of CMC Hospital",
+          "cls": "portrait"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/632004-LogoofCMCHospital-CMCHospitalVelloreSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Christian Medical College (CMC) in Vellore, Tamil Nadu, stands as a testament to over a century of dedicated medical service, education, and research in India. Established in 1900 by Dr. Ida Sophia Scudder, the institution began as a modest one-bed clinic addressing the dire healthcare needs of women and children. Dr. Scudder, moved by the lack of medical services for women, especially after witnessing the deaths of three women in childbirth in a single night, was inspired to create a facility that would cater specifically to this underserved population."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the years, CMC has experienced significant growth and development. In 1902, it expanded to a 40-bed hospital named the Mary Taber Schell Memorial Hospital for women. Recognizing the importance of trained medical professionals, Dr. Scudder initiated a training program for nurses in 1909 and began training women physicians in 1918. The institution's commitment to medical education was further solidified in 1942 when it started offering the MBBS course, initially admitting 25 students. By 1947, the college became co-educational, opening its doors to male students as well."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, CMC Vellore is renowned for its comprehensive healthcare services, educational programs, and research initiatives. The institution operates a network of primary, secondary, tertiary, and quaternary care hospitals across six campuses in and around Vellore, collectively offering approximately 3,675 beds. Each day, CMC caters to over 8,000 outpatients and 2,000 inpatients, reflecting its pivotal role in the region's healthcare landscape. The hospital is equipped with 106 wards, including 11 intensive care units and six high dependency units, and boasts nearly 40 major operation theaters, with an average of 185 surgeries performed daily."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Education remains at the core of CMC's mission. The institution offers a wide array of undergraduate, postgraduate, and higher specialty courses in medicine, nursing, allied health sciences, and related disciplines. Notably, the medical school is ranked among the top medical colleges in India, reflecting its commitment to academic excellence. CMC's hands-on approach to learning ensures that students gain practical experience in both hospital and community settings, preparing them to become competent healthcare professionals."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Research is another cornerstone of CMC's contributions to the medical field. The institution actively engages in advanced medical research, collaborating with hospitals and universities worldwide. Several departments within CMC are recognized as centers of research excellence, and the institution has been instrumental in influencing major health policies, such as the national poliomyelitis immunization policy and strategies for the treatment and rehabilitation of leprosy patients."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As a not-for-profit institution, CMC Vellore utilizes its funds to subsidize student education, provide free or affordable treatment to deserving patients, and support charitable outreach activities. This financial model underscores the institution's commitment to social responsibility and its foundational motto: \"Not to be served, but to serve.\""
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2000-08-12-christian-medical-college-and-hospital-vellore.jpg",
+          "alt": "",
+          "cls": "horizontal",
+          "credit": "Christian Medical College and Hospital, Vellore, 12.08.2000"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 9, 2014"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "CMC Hospital, Vellore SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Vellore (dt.), Tamil Nadu - 632004."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "சி.எம்.சி மருத்துவமனை சின்னம்"
+}

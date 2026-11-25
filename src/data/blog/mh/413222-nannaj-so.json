@@ -1,0 +1,168 @@
+{
+  "docTitle": "Great Indian Bustard",
+  "title": "Great Indian Bustard",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/GreatIndianBustard.jpg",
+          "alt": "Great Indian Bustard",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/413222-GreatIndianBustard-NannajSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Great Indian Bustard (",
+        {
+          "t": "i",
+          "c": [
+            "Ardeotis nigriceps"
+          ]
+        },
+        ") is one of the heaviest flying birds in the world and is critically endangered, with fewer than 150 individuals estimated to remain in the wild as of 2024. Standing about one meter tall, the male bustard can weigh up to 15 kg and is known for its long legs, upright stance, and a striking black crown on its white head. The species is endemic to the Indian subcontinent and prefers dry grasslands and scrublands. Its diet is omnivorous, feeding on insects, small reptiles, and seeds. The bird's low reproductive rate—laying only one egg per year—and preference for open landscapes have made it especially vulnerable to threats such as habitat loss, hunting, and collisions with power lines."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Nannaj, a small village near Solapur in Maharashtra, holds a unique position in the conservation narrative of the Great Indian Bustard. This region, part of the ",
+        {
+          "t": "b",
+          "c": [
+            "Great Indian Bustard Sanctuary"
+          ]
+        },
+        " (also known as the ",
+        {
+          "t": "b",
+          "c": [
+            "Maldhok Bird Sanctuary"
+          ]
+        },
+        "), was established in 1979 specifically to protect the species after a steep population decline was noted. At the time, Nannaj was one of the last strongholds for the bustard in Maharashtra. The sanctuary encompasses over 8,400 hectares of semi-arid grassland habitat. It is a mosaic of private agricultural lands and protected zones, which creates challenges for habitat management but also encourages community participation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The population of the Great Indian Bustard in Nannaj has significantly declined over the decades. In the 1980s and 1990s, sightings were fairly common, and Nannaj was regarded as a reliable location for observing the bird. However, increasing land use for agriculture, infrastructure development, and grassland degradation led to a sharp drop in numbers. Today, sightings are rare and sporadic. According to recent forest department reports, only one or two individuals are occasionally seen in the area. Conservationists fear that without intervention, the species may disappear from Maharashtra altogether."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Efforts to conserve the bustard in Nannaj include habitat protection, awareness programs, and attempts to regulate land use practices. The ",
+        {
+          "t": "b",
+          "c": [
+            "Bombay Natural History Society (BNHS)"
+          ]
+        },
+        " and the ",
+        {
+          "t": "b",
+          "c": [
+            "Maharashtra Forest Department"
+          ]
+        },
+        " have played key roles in monitoring populations and educating local communities. The area has also been fenced in parts to minimize disturbance during the breeding season. Despite these efforts, long-term survival in Nannaj is uncertain due to the small population size and fragmented habitat. Nationally, the Indian government has launched the “",
+        {
+          "t": "b",
+          "c": [
+            "Great Indian Bustard Recovery Programme"
+          ]
+        },
+        "”, which includes a breeding center in Rajasthan and installation of diverters on power lines to reduce bird collisions."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The deep association between the Great Indian Bustard and Nannaj is both ecological and symbolic. Locals affectionately call the bird “",
+        {
+          "t": "b",
+          "c": [
+            "Maldhok"
+          ]
+        },
+        ",” and it was once a common sight during festival times and local gatherings. Over the years, as the bird’s presence dwindled, so did its visibility in the cultural identity of the region. However, Nannaj remains a pilgrimage site for birdwatchers and conservationists hoping to catch a glimpse of this vanishing icon. The bird’s plight has galvanized both national and regional discourse on grassland conservation, highlighting the urgent need to preserve not just the species, but the entire ecosystem that supports it."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1980-11-01-great-indian-bustard.jpg",
+          "alt": "Great Indian Bustard",
+          "cls": "vertical",
+          "credit": "Great Indian Bustard, 01.11.1980"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "April 22, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Nannaj SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Solapur (dt.), Maharashtra - 413222."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "गोडावण"
+}

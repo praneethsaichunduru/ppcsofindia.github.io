@@ -1,0 +1,124 @@
+{
+  "docTitle": "Clock Tower of Belagavi",
+  "title": "Clock Tower of Belagavi",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ClockTowerofBelagavi.jpg",
+          "alt": "Clock Tower of Belagavi",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/590001-ClockTowerofBelagavi-BelagaviHOPB.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Clock Tower of Belagavi, situated in the heart of the city at Ganpat Galli, is a significant colonial-era structure that embodies the city's rich cultural and educational heritage. This tower is integrally linked to the Belgaum Native General Library, now known as Sarvajanik Vachanalaya Belagavi, which was established in 1848 by the then collector M.J.D. Invararity. This library is recognized as the first of its kind in Karnataka, aimed at promoting literacy and providing access to knowledge during the British colonial period."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The library was founded with the objective of serving as a public reading room, offering newspapers and books in multiple languages, including English, Marathi, and Gujarati. It quickly became a hub for intellectual discourse and social reform, reflecting the aspirations of the local populace to engage with contemporary ideas and movements. Over the years, the library underwent several name changes, reflecting its evolving role in the community: from the Belgaum Native General Library in 1848 to the General Library Belgaum in 1907, and finally to Sarvajanik Vachanalaya Belagavi in 1921."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The addition of the Clock Tower to the library premises was part of a significant renovation project that began in 1925 and concluded in 1935. The construction of the new building, which included the clock tower, was funded entirely through public donations, with contributions ranging from ₹5 to ₹1,000. The Belgaum Nagar Palika (Town Panchayat) also allocated ₹1,500 for the tower. The architectural plans were initially prepared by Shri Shashital and later modified by Shri Dharwadkar. The clock tower, built in a blend of Indo-Saracenic and colonial styles, features pointed arches and chiseled stone masonry. It houses a mechanical clock that requires winding every 48 hours, a task traditionally performed by a dedicated individual."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Throughout its history, the Clock Tower and the adjoining library have witnessed various phases of political and social change. Post-independence, the site was renamed the Lokmanya Tilak Memorial, honoring Bal Gangadhar Tilak, a prominent freedom fighter and advocate for education and social reform. Despite its historical significance, the structure experienced periods of neglect, leading to calls from heritage activists and local citizens for its preservation. In the early 2000s, limited conservation efforts were undertaken by the Belagavi City Corporation, including minor restoration of the stonework and clock mechanism. However, comprehensive heritage conservation plans are still awaited."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Clock Tower of Belagavi stands as a revered historical monument, symbolizing the city's longstanding commitment to education and public service. The Sarvajanik Vachanalaya continues to function, albeit with limited resources, and efforts are being made to digitize its archives and improve its facilities, ensuring that the legacy of its founders endures. The tower remains a focal point in local civic events and public memory, reflecting the enduring spirit of community and the pursuit of knowledge that has characterized Belagavi's history."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/belagavi-ho-pb.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 23, 2020"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Incharge,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Belagavi HO-PB,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Belagavi (dt.), Karnataka - 590001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಬೆಳಗಾವಿಯ ಗಡಿಯಾರ ಗೋಪುರ"
+}

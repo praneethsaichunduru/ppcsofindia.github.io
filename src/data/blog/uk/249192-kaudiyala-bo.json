@@ -1,0 +1,98 @@
+{
+  "docTitle": "Whitewater Rafting",
+  "title": "Whitewater Rafting",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/249192-WhitewaterRafting-KaudiyalaBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Kaudiyala is a small village on the Ganga in the Tehri Garhwal district of Uttarakhand, on the Rishikesh-Badrinath highway. It is best known as the starting point for the longest rafting run on the river, a stretch of about 36 kilometres down to Rishikesh. Rafters put in at Kaudiyala and travel through a gorge of forested hillsides and sandy beaches, with the highway running high above the water for much of the way."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The run is usually described as having about thirteen rapids, graded from III to IV and sometimes higher when the river is full. Several have names that guides repeat with relish, including Three Blind Mice, The Wall, Crossfire and the Body Surfing Rapid, where rafters are sometimes allowed to leave the boat and float down the current in their life jackets. Beginners often start further down at Brahmpuri or Shivpuri, where the water is gentler and the run is shorter."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Ganga here is already a large river. It is formed at Devprayag, a few tens of kilometres upstream, where the Bhagirathi and the Alaknanda meet, and the cold, clear water comes straight from the Himalayan glaciers. Because the river rises sharply during the monsoon, rafting is normally closed in those months. The season begins once the water level drops in autumn and runs through the cooler months into early summer."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Rafting in this stretch is a regulated activity. Operators run seasonal camps along the riverbank, provide trained guides, helmets and life jackets, and are expected to follow rules set by the state tourism department. Visitors are also asked to keep the riverbank clean, since the same sandy beaches serve as campsites, and since the river is sacred to many of the people who live along it."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The pictorial cancellation at Kaudiyala Branch Post Office celebrates adventure tourism on the Ganga. For a village this small, it is a recognition of the role that the river's rapids have come to play in the local economy and in the image of Uttarakhand as a place for adventure as well as pilgrimage."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 10, 2026"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kaudiyala BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Tehri Garhwal (dt.), Uttarakhand - 249192."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "व्हाइटवाटर राफ्टिंग"
+}

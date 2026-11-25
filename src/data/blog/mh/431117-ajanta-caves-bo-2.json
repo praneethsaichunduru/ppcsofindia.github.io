@@ -1,0 +1,103 @@
+{
+  "docTitle": "Entrance of Cave 1",
+  "title": "Entrance of Cave 1",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/EntranceOfCave1.jpg",
+          "alt": "Entrance of Cave 1",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/431117-EntranceofCave1-AjantaCavesBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Cave 1 at Ellora, in Maharashtra's Chhatrapati Sambhajinagar district, is the first excavation encountered at the southern end of the Ellora complex and marks the entry point into the site's group of twelve Buddhist caves. Unlike many of Ellora's monuments, it carries no attached founding legend or dedicatory inscription identifying a specific patron, and its name derives simply from its position as the first numbered cave in the site's archaeological sequence, a convention adopted by nineteenth-century surveyors cataloguing the caves from south to north. Scholars generally place its excavation within the broader Buddhist phase at Ellora, which modern studies date to roughly the mid-to-late sixth through seventh centuries CE, making Cave 1 one of the earliest rock-cut efforts at a site that would later host Hindu and Jain excavations of far greater scale."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As a vihara, or monastic residence, Cave 1 belongs to the category of functional monastic architecture rather than devotional shrine architecture, and its significance lies chiefly in what it represents within the chronology of the site rather than in any singular artistic achievement. It forms part of the Ellora Caves UNESCO World Heritage Site, inscribed in 1983, which recognises the complex collectively as an outstanding example of rock-cut monastic and temple architecture spanning three religious traditions across several centuries. Cave 1's modest scale and plain treatment give it value as a baseline against which the increasing architectural ambition of later Buddhist viharas, and eventually the Hindu and Jain excavations, can be measured by art historians studying the site's development."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The cave consists of a large excavated hall with a relatively simple layout: smaller cell-like chambers are cut along its side and rear walls, intended as living quarters for resident monks, with roughly four cells set along the right wall and a further group along the back. The surfaces are evenly chiselled rather than finished to a polished sheen, and the ceiling shows an uneven, undulating surface rather than the flat, beamed treatment seen in more developed examples elsewhere at Ellora. The facade is largely unadorned, lacking the pillared porticoes, carved figures, and decorative mouldings that distinguish later viharas such as Caves 2 through 5, reinforcing its position as one of the plainest and structurally least ambitious caves in the Buddhist group."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A distinguishing feature noted by visitors and researchers is an unfinished chamber on the cave's facade, to the right as one faces the entrance, left incomplete partway through excavation. This unfinished element, together with the cave's generally unrefined wall and floor surfaces, has led some scholars to read Cave 1 less as a deliberately austere design and more as an early or possibly abandoned effort, executed before the rock-cutting techniques and resources available to later patrons at Ellora had fully matured. Its entrance nonetheless functions as the conventional starting point for the south-to-north tour of the Buddhist caves that most visitors and guides follow today."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Cave 1 falls under the protection and maintenance of the Archaeological Survey of India, which administers the Ellora complex as a whole alongside the Maharashtra state tourism department, and it is included on the standard ticketed circuit covering all thirty-four numbered caves at the site. The Ajanta Caves BO post office, serving the nearby town from which the wider Ajanta-Ellora tourist circuit draws its name, lies within the same administrative district and has issued a pictorial cancellation featuring the entrance of Cave 1 in recognition of its place at the head of the Buddhist group. For most visitors today, the cave serves less as a destination in its own right than as the deliberate first step of a longer walk through thirteen centuries of excavation, an orientation point from which the complex's full scale becomes apparent only cave by cave."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 26, 1977"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Ajanta Caves BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chhatrapati Sambhajinagar (dt.), Maharashtra - 431117."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "गुहा क्रमांक १ चे प्रवेशद्वार"
+}

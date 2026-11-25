@@ -1,0 +1,103 @@
+{
+  "docTitle": "Tiger Paw",
+  "title": "Tiger Paw",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/TigerPaw.jpg",
+          "alt": "Tiger Paw",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/571126-TigerPaw-BandipurBO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The pugmark motif chosen to represent Bandipur on this postal cancellation draws on the tiger's standing as the most recognisable emblem of Chamarajanagara district, a region whose identity has become inseparable from the forests that shelter South India's largest contiguous tiger population. Unlike monuments or shrines elsewhere on the circuit, the subject here is a conservation landscape rather than a built structure, and the paw print itself functions as the universal field sign by which forest staff and researchers track the animal's movement, making it an apt visual shorthand for a reserve defined as much by its invisible inhabitants as by its visible terrain."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Bandipur's protected history predates Project Tiger by decades: the Maharaja of Mysore, Krishnaraja Wadiyar IV, set aside roughly 90 square kilometres in 1931 as the Venugopala Wildlife Park, a hunting reserve that was later folded into a much larger protected area. When the Government of India launched Project Tiger on 1 April 1973, Bandipur was named one of the first nine reserves in the country, and around 800 square kilometres were added to the original sanctuary to create the reserve as it exists today, spanning roughly 1,456 square kilometres of dry deciduous, moist deciduous, and shola forest bordering Tamil Nadu's Mudumalai and Kerala's Wayanad sanctuaries."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The reserve's tiger numbers illustrate the conservation trajectory the cancellation commemorates: from an estimated 12 tigers recorded when the reserve was constituted in 1973, successive All India Tiger Estimation exercises have recorded populations exceeding 150 individuals in recent cycles, figures that place Bandipur among the highest-density tiger landscapes in the country. This recovery has been attributed to sustained anti-poaching patrolling, relocation of settlements from core habitat, and water-hole management across terrain that also supports large herds of chital, gaur, and one of India's biggest elephant populations, making the tiger the apex regulator of an unusually rich prey base."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A particular milestone fell on 1 April 2023, when Bandipur completed fifty years as a Project Tiger reserve, an anniversary marked by a visit from Prime Minister Narendra Modi, who released the results of the 2022 All India Tiger Estimation at Bandipur itself and used the occasion to highlight the reserve as a flagship case of India's species-recovery programme. The event drew national attention to Chamarajanagara district specifically, reinforcing the district's association with tiger conservation at a level distinct from the broader state or regional narrative."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Bandipur today forms part of the larger Mysore Elephant Reserve and sits within the Nilgiri Biosphere Reserve, India's first such designation, placing it in an interlinked conservation corridor alongside Nagarahole, Mudumalai, and the BRT reserves that together are administered under coordinated forest department protocols across three states. Day-to-day management rests with Karnataka's Forest Department through a dedicated field director's office at Bandipur, which oversees anti-poaching camps, habitat works, and visitor safaris along the Mysore-Ooty highway that cuts through the park. The paw-print cancellation thus marks not a single site but an active, continuously monitored landscape whose fortunes are reported annually through the same national tiger census that the 2023 anniversary event put in the public eye."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "April 1, 1992"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Branch Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bandipur BO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Chamarajanagara (dt.), Karnataka - 571126."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಹುಲಿಯ ಪಂಜ"
+}

@@ -1,0 +1,130 @@
+{
+  "docTitle": "Margao Head Post Office",
+  "title": "Margao Head Post Office",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/monument.jpg",
+          "alt": "Monument in English",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/403601-MargaoHeadPostOfficeBuilding-MargaoHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Margao Head Post Office, a stately colonial-era structure in South Goa, is one of the oldest operational post offices in the region. Situated on Abade Faria Road opposite the Margao Municipal Garden, the building dates back to the late 19th century during the Portuguese rule of Goa. It was constructed as part of a broader administrative infrastructure initiative by the Estado da Índia Portuguesa to streamline communication across the colony. Postal services in Goa were formally organized from 1841 onwards, and Margao, being a major commercial and cultural hub in the south, was selected for a key postal establishment. The exact construction date is estimated to be in the 1880s or 1890s, although some archival sources suggest administrative postal operations in the area may have existed even earlier."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Architecturally, the Margao Head Post Office reflects a neoclassical design aesthetic commonly adopted by Portuguese civil structures of the time. The symmetrical façade, tall arched windows, prominent cornices, and gently sloping tiled roof contribute to its distinct appearance. Built using laterite stone and lime mortar, the structure was designed to be functional in Goa’s humid tropical climate. The central hall, large verandas, and elevated platform ensured both airflow and protection from seasonal flooding. The building’s signature red-and-white exterior color scheme was consistent with Portuguese institutional designs, helping it stand out as a place of administrative importance."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "During the colonial period, the post office served as a vital communication hub linking Margao with other key towns such as Panaji, Mapusa, and Vasco da Gama. It handled letters, official dispatches, and telegraph messages, reinforcing the Portuguese state’s bureaucratic network. The structure not only facilitated civilian correspondence but also played a role in military and diplomatic messaging. After the annexation of Goa by India in 1961, the building was incorporated into the Indian postal system and designated as the Head Post Office for the South Goa region. It continued to serve as a regional headquarters for postal services and adapted to new roles such as speed post, philatelic services, and administrative coordination for smaller sub-post offices in the vicinity."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the decades, the building has remained functional but has suffered from neglect. Signs of structural wear include peeling plaster, weakened roofing, exposed wiring, and termite-infested woodwork. Despite its heritage status and continued use, the post office has not seen significant restoration or modernization. Proposals for renovation have been raised on multiple occasions, with cost estimates ranging around ₹25–30 lakh, but progress has been slow due to bureaucratic hurdles and lack of prioritization."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today, the Margao Head Post Office stands as a functioning yet vulnerable piece of Goa’s architectural and administrative legacy. It serves hundreds of residents daily, providing essential postal services while also symbolizing the region’s transition from Portuguese colonial rule to Indian democratic governance. Its location in the heart of Margao ensures that it remains accessible and visible, but its continued operation under deteriorating conditions highlights the urgent need for heritage-sensitive restoration. As a structure that has witnessed over a century of change, it calls for preservation efforts that respect both its functional role and its cultural significance."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/personal-designs/margao-ho.jpg",
+          "alt": "Private Cover",
+          "cls": "landscape",
+          "credit": "Private Cover"
+        },
+        {
+          "src": "/blog/blog-related-pictures/exphil/403601-margao-ho-06.12.2025.jpg",
+          "alt": "Extreme Philately",
+          "cls": "portrait",
+          "credit": "Credits: Mrs. Bhavani B R"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 17, 2021"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Margao HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "South Goa (dt.), Goa - 403601."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "मडगाव हेड पोस्ट ऑफिस"
+}

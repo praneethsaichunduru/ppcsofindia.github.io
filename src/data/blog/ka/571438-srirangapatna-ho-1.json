@@ -1,0 +1,103 @@
+{
+  "docTitle": "Gumbaz",
+  "title": "Gumbaz",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/Gumbaz.jpg",
+          "alt": "Gumbaz",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/571438-Gumbaz-SrirangapatnaHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The name \"Gumbaz\" derives from the Persian and Urdu term gumbad, meaning dome, a fitting designation for the structure's most striking architectural feature. Raised at the eastern edge of Srirangapatna, the island capital of the Mysore Sultanate on the Kaveri River, the mausoleum was conceived by Tipu Sultan as a filial tribute to his father, Hyder Ali, who had risen from military commander to founder of the dynasty that ruled Mysore through the latter half of the eighteenth century. The complex thus began as an act of dynastic memory before it later became Tipu's own resting place, binding father and son within a single commemorative enclosure."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As a mausoleum, the Gumbaz belongs to the broader tradition of Indo-Islamic funerary architecture found across the Deccan and South India, yet it carries particular historical weight as the burial site of Mysore's two most consequential rulers. Hyder Ali and Fakhr-un-Nissa lie here alongside Tipu Sultan, whose death on 4 May 1799 defending Srirangapatna against the combined forces of the British East India Company and its allies during the Fourth Anglo-Mysore War marked the end of Mysore's independent resistance to colonial expansion. The site is consequently valued less for scale than for its direct association with the ruler remembered as the Tiger of Mysore, making it one of South India's principal monuments to that episode of anti-colonial military history."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Construction began under Tipu Sultan's patronage around 1782 and was largely completed by 1784, executed in a Bijapur-influenced Indo-Islamic style with a domed superstructure rising above a cubical chamber set on a raised stone plinth. Polished black granite pillars line the corridor encircling the inner sanctum, while the interior walls carry painted tiger-stripe motifs, an emblem Tipu used throughout his reign as a personal and dynastic signature. The mausoleum stands within a cypress garden that, by historical accounts, once held flowering trees and plants Tipu had gathered from Persia, Ottoman territories, Kabul and French-held Mauritius, giving the funerary complex a horticultural dimension unusual among South Indian tombs of the period."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A distinguishing feature of the Gumbaz is its set of ebony doors inlaid with ivory, often cited as evidence of Tipu's ambition to rival the splendour of the Taj Mahal, which has led some visitors and writers to describe the building informally as a \"mini-Taj.\" The mausoleum's original carved doors were removed after the fall of Srirangapatna and are now preserved at the Victoria and Albert Museum in London, while the doors presently fitted at the tomb were donated in 1855 by Lord Dalhousie, then Governor-General of India, in what is frequently read as a colonial-era gesture of reconciliation toward the memory of a defeated adversary. This substitution of doors across more than seven decades reflects the monument's unusual afterlife under British administration following Tipu's death."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Gumbaz today is maintained as a protected monument under the Archaeological Survey of India, which oversees its upkeep alongside the adjoining mosque, the Masjid-e-Ala, and the surrounding garden within the larger Srirangapatna heritage precinct that also includes the fort and Tipu's summer palace, the Daria Daulat Bagh. It draws a steady stream of domestic and international visitors interested in eighteenth-century Mysorean history, and remains one of the more visited stops on the Srirangapatna circuit maintained for public viewing rather than active worship, functioning now primarily as a historical and architectural site rather than a living mausoleum in regular ritual use."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 20, 1978"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Srirangapatna HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Mandya (dt.), Karnataka - 571438."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "ಗುಂಬಜ್"
+}

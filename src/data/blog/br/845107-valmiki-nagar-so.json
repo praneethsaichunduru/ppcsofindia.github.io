@@ -1,0 +1,103 @@
+{
+  "docTitle": "Valmiki Tiger Reserve",
+  "title": "Valmiki Tiger Reserve",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ValmikiTigerReserve.jpg",
+          "alt": "Valmiki Tiger Reserve",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/845107-ValmikiTigerReserve-ValmikiNagarSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Valmiki Tiger Reserve takes its name from the sage Valmiki, traditionally credited as the author of the Ramayana, whose ashram is believed by local tradition to have stood in this forested tract along the Gandak river in West Champaran district. The region's dense sal and riverine forests, straddling Bihar's border with Nepal, were first brought under formal protection as a wildlife sanctuary in 1978, with the area upgraded to Valmiki National Park in 1990 as pressure on the Terai forests from logging and encroachment grew. The sage's name, already attached to the nearby town of Valmiki Nagar, carried over naturally to the protected landscape and later to the reserve itself."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The reserve is Bihar's only tiger habitat and its principal wildlife conservation landscape, forming a key link in the Terai Arc Landscape, a transboundary conservation corridor connecting protected forests across India and Nepal. It was constituted as the eighteenth tiger reserve under India's Project Tiger programme on 11 March 1994, giving it formal status within the national tiger conservation network decades before many comparable reserves elsewhere in the country. Beyond tigers, the reserve supports elephants, leopards, Gangetic dolphins in the Gandak, and a wide range of Himalayan foothill flora and fauna, and its ecological value is reinforced by active cross-border cooperation with Nepal's adjoining Chitwan National Park on habitat connectivity and species monitoring."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The reserve covers a total area of roughly 899 square kilometres, divided into a core or critical tiger habitat of about 598 square kilometres and a buffer zone of around 301 square kilometres, administered by the Bihar forest department under the overarching framework of the National Tiger Conservation Authority. Its tiger population has risen markedly over the past two decades, from an estimated 10 individuals in 2006 to 31 in 2018 and 54 in the 2022 all-India tiger estimation exercise, a recovery attributed partly to a ban on sand and stone mining within the reserve and its eco-sensitive zone, which has allowed grassland cover and prey populations to rebuild."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A particular challenge documented at Valmiki is the persistence of human-wildlife conflict and threats such as electrocution and poaching pressure along the reserve's forest edges, where villages, farmland, and the India-Nepal border abut core tiger habitat; forest officials have responded with expanded patrolling, fencing of vulnerable power lines, and compensation schemes for livestock loss. The reserve is also notable among Indian protected areas for its unusually high reptile diversity, having been documented as something of a biodiversity hotspot for snakes within the Terai belt, a feature increasingly highlighted in ecological surveys of the park."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Each winter the reserve's management conducts an annual tiger census using several hundred camera traps deployed across its forest blocks for about three months, generating movement and prey-availability data that feeds into the national tiger estimation reported by the NTCA, with early indications from the ongoing count suggesting the population may now approach 70 animals. The reserve remains under the joint oversight of the Bihar forest department and the National Tiger Conservation Authority, which together have made its camera-trap monitoring and anti-mining measures a reference case for Terai tiger recovery efforts in the state."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "October 8, 2024"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Valmiki Nagar SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "West Champaran (dt.), Bihar - 845107."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "वाल्मीकि टाइगर रिजर्व"
+}

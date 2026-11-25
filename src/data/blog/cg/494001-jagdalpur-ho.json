@@ -1,0 +1,140 @@
+{
+  "docTitle": "Maria Tribe",
+  "title": "Maria Tribe",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/MariaTribe.jpg",
+          "alt": "Maria Tribe",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/494001-MariaTribe-JagdalpurHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Maria tribe, a subgroup of the larger Gond community, is predominantly found in the Bastar region of Chhattisgarh. Among its subgroups, the Bison Horn Maria and Abuj Maria are notable. The Bison Horn Maria derive their name from the distinctive horn-shaped headgear worn by men during traditional dances and ceremonies. The Abuj Maria, often residing in more secluded forested areas, maintain a lifestyle closely tied to nature. Both groups have preserved their unique cultural identities over centuries."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Maria tribe speaks dialects of the Dravidian language family. The Bison Horn Maria primarily use the Dandami Maria dialect, while the Abuj Maria communicate in the Abuj Maria dialect. These languages are central to their cultural identity and daily communication. While many Maria individuals also speak regional languages like Hindi or Chhattisgarhi, their native dialects remain crucial to their heritage."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Traditional attire among the Maria is distinctive. Men often wear a 'Phutiya,' resembling a loincloth, and adorn themselves with the iconic bison horn headgear during ceremonies. Women typically wear colorful 'Lugdas' and accessorize with bead necklaces and brass ornaments. Tattooing is a prevalent practice, especially among women, serving as both a cultural identifier and a rite of passage."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Maria tribe's cultural expressions are rich and varied. Dance and music play a significant role in their community life. The Gaur Maria dance, performed during weddings and festivals, is a vibrant display that depicts hunting scenes, reflecting the tribe's close relationship with nature. Participants don elaborate costumes, with men wearing head-dresses adorned with cowries and peacock feathers, and women joining in with rhythmic movements."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Economically, the Maria tribe engages in agriculture, hunting, and gathering forest produce. Their settlements are often located in forested areas, allowing them to sustain their traditional livelihoods. The tribe's social structure includes the 'Ghotul' system, a youth dormitory that serves as a center for social and cultural activities, facilitating the transmission of customs and traditions to younger generations"
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Image"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-covers/jagdalpur-vasanth.jpg",
+          "alt": "Private First Day Cover",
+          "cls": "landscape",
+          "credit": "Private First Day Cover"
+        }
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/2017-02-10-headgears-of-india-bison-horn-maria-tribal-cap.jpg",
+          "alt": "",
+          "cls": "vertical",
+          "credit": "Headgears of India: Bison Horn Maria Tribal Cap, 10.02.2017"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "February 12, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Jagdalpur HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Bastar (dt.), Chhattisgarh - 494001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "मारिया जनजाति"
+}

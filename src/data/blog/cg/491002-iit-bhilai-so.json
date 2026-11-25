@@ -1,0 +1,103 @@
+{
+  "docTitle": "Logo of IIT Bhilai",
+  "title": "Logo of IIT Bhilai",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/LogoOfIITBhilai.jpg",
+          "alt": "Logo of IIT Bhilai",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/491002-LogoofIITBhilai-IITBhilaiSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Indian Institute of Technology Bhilai traces its origin to the Government of India's 2016 decision to extend the IIT network into states that had not previously hosted one of these premier technical institutions, with Chhattisgarh selected as a beneficiary of that expansion. Established formally on 7 August 2016 under the Ministry of Education, the institute took its name from Bhilai, the industrial township in Durg district already known nationally for its steel plant, lending the new institution an identity tied to a place associated with India's earlier phase of planned industrial development rather than to a university town in the conventional sense."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "As a member of the IIT system, the institute belongs to India's most selective tier of engineering and science education, admission to which is governed by the Joint Entrance Examination (Advanced) and which carries Institute of National Importance status under central legislation. Its significance lies less in any single distinction than in what its presence represents for the region: a hitherto underserved state gaining a foothold in a network otherwise concentrated in metropolitan and long-established centres, with implications for local access to technical education, research infrastructure, and the eventual retention of skilled graduates within the state."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "IIT Bhilai began academic operations in July 2016 with B.Tech programmes in Computer Science and Engineering, Electrical Engineering, and Mechanical Engineering, initially functioning from a temporary campus while a mentor institute provided academic guidance during its formative years. The foundation stone for its permanent campus at Kutelabhata, near Durg-Bhilai, was laid in June 2018, and the site has since grown into a campus spread across roughly 345 acres, with lecture halls, laboratories, and residential blocks named after the rivers and mountains of Chhattisgarh; its master plan has been recognised with a five-star GRIHA rating for sustainable design."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A notable marker in the institute's development came on 20 February 2024, when the Prime Minister formally dedicated the Phase-A campus to the nation, inaugurating academic and residential buildings that allowed the institute to consolidate its operations at the permanent site after years of functioning provisionally. The event brought national attention to the campus and to Chhattisgarh's broader ambitions in higher education, reinforcing the symbolic weight carried by the institute's logo whenever it appears, including on postal material such as this cancellation, as a marker of the state's arrival within India's technical education map."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Construction has continued beyond Phase-A, with a Phase-B expansion formally launched in September 2025 to add further academic and residential capacity as student intake grows. The institute today offers undergraduate, postgraduate, and doctoral programmes across engineering, sciences, and interdisciplinary areas, administered as an autonomous Institute of National Importance under the Ministry of Education. Its logo, carried on official correspondence and institutional material alike, now functions chiefly as a marker of this expanding campus and its growing academic community rather than as a symbol still awaiting the institution it represents."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 15, 2025"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "IIT Bhilai SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Durg (dt.), Chhattisgarh - 491002."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "आईआईटी भिलाई के लोगो"
+}

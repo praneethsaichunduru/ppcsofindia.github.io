@@ -1,0 +1,103 @@
+{
+  "docTitle": "Muttom Lighthouse",
+  "title": "Muttom Lighthouse",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/MuttomLighthouse.jpg",
+          "alt": "Muttom Lighthouse",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/629202-MuttomLighthouse-MuttomSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The lighthouse at Muttom owes its origins to a nineteenth-century push by the British colonial administration to make the shipping lanes rounding Cape Comorin safer for mariners. Traders and insurance underwriters had long complained of losses along this treacherous stretch where the Arabian Sea meets the Bay of Bengal, and it was Hugh Crawford, then Master Attendant of the princely state of Travancore, who identified the rocky hillock at Muttom as the most suitable site to mark the coast. The Travancore royal government, recognising the navigational need, granted the required land for the structure free of cost, setting in motion a project that would eventually place a permanent aid to navigation on this exposed southern shoreline."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Today Muttom Lighthouse is classified as a major coastal lighthouse under the Directorate General of Lighthouses and Lightships, forming part of the chain of aids to navigation administered from the Chennai region that guides vessels along peninsular India's southern tip. Its significance extends beyond pure utility: the site sits within a stretch of coast historically tied to trade routes linking India with Sri Lanka and beyond, and to the fishing economy of Kanniyakumari district, one of Tamil Nadu's most active maritime fishing belts. The lighthouse has also been developed as a heritage and tourism attraction, drawing several thousand visitors annually who come both for the panoramic coastal views and for its documented role in the region's navigational history."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The first lighthouse at Muttom was a white-painted, octagonal stone masonry tower roughly 20 metres in height, commissioned in September 1875 atop the Muttom hillock. Within less than a decade, authorities judged the light's range and visibility insufficient, and a replacement stone tower, about 14.6 metres high and distinguished by black-and-white horizontal bands, was built on the same site; its light became operational on 1 January 1883. This second tower, with its banded rather than the more commonly seen spiral-striped finish, remains the structure in service today, its masonry construction and modest but sufficient elevation reflecting the technical standards of late nineteenth-century Indian coastal lighthouse engineering."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A distinguishing feature of the site is the Heritage Lighthouse Maritime Museum established at Muttom Point by the Directorate of Lighthouses and Lightships, inaugurated on 19 November 2017 beside the working tower. The museum documents the evolution of navigational aids and maritime trade along the Indian coast, displaying replicas of sailing ships, steamers, and naval and coast guard vessels alongside a progression of the lighting technologies used historically, from wick lamps through to modern LED optics. This pairing of an active, functioning lighthouse with a dedicated museum on its own grounds is relatively uncommon among Indian lighthouses and has made Muttom a notable stop for visitors interested in the technical and administrative history of coastal navigation rather than the structure alone."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Administratively, the lighthouse continues to function under the Chennai regional office of the Directorate General of Lighthouses and Lightships, which maintains its light and the adjoining Navtex station used for broadcasting maritime safety information to shipping in the area. Located roughly 32 kilometres from Kanniyakumari town and about 17 kilometres from Nagercoil, the site draws an estimated four to five thousand visitors a year, a figure the department has cited in opening the tower and museum to public access on a regulated basis. The combination of a working navigational light, a maritime museum, and a steady stream of visitors has kept Muttom Lighthouse in active institutional use even as its original function of guiding mariners along this stretch of coast has endured for close to a century and a half."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 5, 2017"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Muttom SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Kanniyakumari (dt.), Tamil Nadu - 629202."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "முட்டம் கலங்கரை விளக்கம்"
+}

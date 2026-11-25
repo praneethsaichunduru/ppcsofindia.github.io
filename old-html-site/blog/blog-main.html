@@ -1,0 +1,2601 @@
+<!DOCTYPE html>
+<html lang="en" data-ppc-root="../">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7NNS4QNG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-ZB7NNS4QNG');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Know About PPCs</title>
+
+<style>
+.ppc-name {
+			margin-top: 5px; /* Adds spacing between image and text */
+			text-align: center; /* Centers the text */
+			font-family: "Georgia", serif;
+			font-size: 10px;
+			font-style: italic;
+			font-weight: bold;
+			width: 100%;
+		}
+/* Thumbnails occupy a 3:2 box. The source scans are not all exactly 3:2
+		   (they range ~1.48-1.60), so object-fit letterboxes each image inside
+		   the box instead of stretching it to fit. */
+.overview-images img.horizontal {
+			width: 210px;
+			height: auto;
+			aspect-ratio: 3 / 2;
+			object-fit: contain;
+			cursor: pointer;
+			margin: 5px;
+		}
+.section {
+			margin: 20px 0;
+		}
+.section-divider {
+			border-bottom: 2px solid black;
+			margin: 20px 0;
+		}
+.go-to-top {
+			position: fixed;
+			bottom: var(--space-5);
+			right: calc(var(--space-5) + 56px);
+			z-index: 900;
+			padding: 0.6em 1.1em;
+			border-radius: var(--radius-pill);
+			background-color: var(--accent);
+			border-color: var(--accent);
+			color: var(--accent-contrast);
+			font-size: var(--step--1);
+			box-shadow: var(--shadow-md);
+			cursor: pointer;
+		}
+.dropdown-menu {
+			max-height: 200px; /* Adjust height as needed */
+			overflow-y: auto;
+		}
+
+/* ---- Know About PPCs: sidebar explorer ---------------------------------------------------
+   The <template id="ppc-data"> further down this file holds the page's data: one entry per PPC.
+   A template is inert, so the browser does not download any of its pictures; the explorer reads it
+   and builds the cards that are actually shown. */
+.kap { max-width: 1240px; margin-inline: auto; padding: 0 clamp(1rem, 3vw, 2rem) 3rem; font-size: 0.92rem; }
+.kap h1 { text-align: center; margin: 1.2rem 0 0.3rem; }
+.kap .lead { text-align: center; color: var(--text-muted, #64748b); margin: 0 0 1.2rem; }
+.kap .layout { display: grid; grid-template-columns: 250px 1fr; gap: 1.5rem; align-items: start; }
+.kap .side { position: sticky; top: calc(var(--header-height, 68px) + 12px); max-height: calc(100vh - var(--header-height, 68px) - 30px); overflow-y: auto; padding: 0.6rem; background: var(--surface-card, #fff); border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px); }
+.kap .side h3 { margin: 0.7rem 0.4rem 0.2rem; font-family: var(--font-body, sans-serif); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted, #64748b); }
+.kap .side button.st { display: flex; justify-content: space-between; gap: 0.5rem; width: 100%; padding: 0.35rem 0.5rem; border: 0; border-radius: 6px; background: none; color: var(--text-body, #33404f); font: inherit; font-size: 0.85rem; text-align: left; cursor: pointer; }
+.kap .side button.st:hover { background: var(--surface-sunken, #eef1f5); }
+.kap .side button.st[aria-current="true"] { background: var(--accent, #0b5cab); color: #fff; font-weight: 600; }
+.kap .side button.st.off { opacity: 0.45; }
+.kap .side button.st small { opacity: 0.75; }
+.kap .phone-pick { display: none; width: 100%; margin-bottom: 0.8rem; }
+.kap .head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem 1rem; margin-bottom: 0.8rem; scroll-margin-top: calc(var(--header-height, 68px) + 12px); }
+.kap .head h2 { margin: 0; }
+.kap .head .sum { color: var(--text-muted, #64748b); font-size: 0.8rem; }
+.kap .filters { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 1rem; }
+.kap .filters input[type="search"] { flex: 1 1 220px; max-width: 360px; }
+.kap input[type="search"], .kap select.kp-select { padding: 0.45rem 0.8rem; font: inherit; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; background: var(--surface-card, #fff); color: var(--text-body, #33404f); min-width: 0; }
+.kap .more { display: flex; justify-content: center; margin: 1.5rem 0; }
+.kap .share { font-size: 0.75rem; color: var(--text-muted, #64748b); margin-top: 1.2rem; }
+.kap .share code { word-break: break-all; }
+.kap .empty-note { color: var(--text-muted, #64748b); padding: 1rem; text-align: center; border: 1px dashed var(--border-strong, #c4ccd6); border-radius: var(--radius-md, 10px); grid-column: 1 / -1; }
+.kap .c1 { --pin: #d90429; } .kap .c2 { --pin: #ff8c00; } .kap .c3 { --pin: #12a150; } .kap .c4 { --pin: #7b2cbf; }
+.kap .dot { display: inline-block; width: 0.65rem; height: 0.65rem; border-radius: 50%; background: var(--pin); margin-right: 0.3rem; }
+.kap .badge { display: inline-block; padding: 0.08rem 0.5rem; border-radius: 999px; background: var(--pin); color: #fff; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em; }
+.kap .chip-btn { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.75rem; border: 1px solid var(--border-strong, #c4ccd6); border-radius: 999px; background: var(--surface-card, #fff); color: var(--text-body, #33404f); font: inherit; font-size: 0.8rem; cursor: pointer; white-space: nowrap; }
+.kap .chip-btn:hover { border-color: var(--accent, #0b5cab); }
+.kap .chip-btn[aria-pressed="true"] { background: var(--accent, #0b5cab); border-color: var(--accent, #0b5cab); color: #fff; }
+.kap .chip-btn small { opacity: 0.75; }
+.kap .chip-btn.off { opacity: 0.45; }
+.kap .pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 0.9rem; }
+.kap .kcard { display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: var(--text-body, #33404f); background: var(--surface-card, #fff); border: 1px solid var(--border, #dfe4ea); border-radius: var(--radius-md, 10px); box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.06)); transition: transform .15s, box-shadow .15s, border-color .15s; }
+.kap .pgrid.single .st-name { display: none; }
+.kap .kcard { content-visibility: auto; contain-intrinsic-size: auto 290px; }
+.kap .kcard:hover { transform: translateY(-2px); box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,.12)); border-color: var(--pin, var(--accent, #0b5cab)); text-decoration: none; }
+.kap .kcard:focus-visible { outline: 3px solid var(--accent, #0b5cab); outline-offset: 2px; }
+.kap .kcard .thumb { position: relative; aspect-ratio: 3 / 2; background: var(--surface-sunken, #eef1f5); display: block; }
+.kap .kcard .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.kap .kcard .thumb.noimg img { display: none; }
+.kap .kcard .thumb.noimg::after { content: "Scan coming soon"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; color: var(--text-muted, #64748b); }
+.kap .kcard .body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.6rem 0.75rem 0.7rem; border-top: 3px solid var(--pin, var(--border)); }
+.kap .kcard b { color: var(--text-strong, #0d1b2a); line-height: 1.25; font-size: 0.9rem; }
+.kap .kcard small { color: var(--text-muted, #64748b); }
+.kap .kcard .meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-top: 0.2rem; font-size: 0.72rem; color: var(--text-muted, #64748b); }
+.kap .key { margin: 0 0 1rem; padding: 0.5rem 0.8rem; font-size: 0.8rem; color: var(--text-muted, #64748b); border-left: 4px solid #f5b301; background: var(--surface-sunken, #eef1f5); border-radius: 0 var(--radius-sm, 6px) var(--radius-sm, 6px) 0; }
+.kap .star-key, .kap .star { color: #b07d00; font-weight: 700; }
+:root[data-theme='dark'] .kap .star-key, :root[data-theme='dark'] .kap .star { color: #f5c542; }
+.kap .sea-sep { display: inline-block; width: 1px; height: 1.3rem; background: var(--border-strong, #c4ccd6); margin: 0 0.5rem; vertical-align: middle; }
+.kap .chip-btn.sea[aria-pressed="true"] { background: #b07d00; border-color: #b07d00; } .kap .chip-btn.sea[aria-pressed="true"] .star { color: #fff; }
+.kap .seasonal-note { margin: -0.4rem 0 1rem; padding: 0.5rem 0.8rem; font-size: 0.82rem; border-radius: var(--radius-sm, 6px); background: #fff3cd; color: #5c4400; }
+:root[data-theme='dark'] .kap .seasonal-note { background: #3a2f0a; color: #f5dd9a; }
+.kap .kcard .thumb .sea-flag { position: absolute; top: 6px; left: 6px; z-index: 1; display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.1rem 0.5rem; border-radius: 999px; background: #f5b301; color: #3b2a00; font-size: 0.68rem; font-weight: 800; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+@media (max-width: 560px) { .kap .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; } .kap .kcard b { font-size: 0.82rem; } }
+@media (max-width: 860px) { .kap .layout { grid-template-columns: 1fr; } .kap .side { display: none; } .kap .phone-pick { display: block; } }
+	</style>
+
+	<link rel="icon" type="image/png" href="../data/logo.png">
+	<meta name="theme-color" content="#0a2540">
+	<meta name="color-scheme" content="light dark">
+
+	<!-- Design system -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../data/theme.css">
+
+	<!-- Apply the saved theme before first paint to avoid a flash -->
+	<script>
+		try {
+			var t = localStorage.getItem("ppc-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	</script>
+
+	<!-- Site chrome (header/footer) as Web Components: no fetch, so it
+	     renders identically from file:// and from a web server -->
+	<script src="../data/ppc-chrome.js" defer></script>
+	<script src="../data/ppc-protect.js" defer></script>
+	<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+	<ppc-header></ppc-header>
+<a href="../index.html" class="home-icon" aria-label="Go to Home" title="Home">
+			<img src="../data/home-page-icon.svg" alt="Go to Home" width="30" height="30">
+		</a>
+		<main class="kap">
+			<h1>Know About Permanent Pictorial Cancellations</h1>
+			<p class="lead">Choose a state, narrow it by post-office type or a word, and share the link.</p>
+			<select id="pick" class="kp-select phone-pick" aria-label="State or UT"></select>
+			<div class="layout">
+				<nav class="side" id="side" aria-label="States and UTs"></nav>
+				<section>
+					<div class="head" id="head"><h2 id="title"></h2><span class="sum" id="sum" aria-live="polite"></span></div>
+					<div class="filters">
+						<input type="search" id="q" placeholder="Search within this selection&hellip;" aria-label="Search within this selection">
+						<span id="cats"></span>
+					</div>
+					<p class="key"><b>How to read this page:</b> the colour shows the type of post office. <span class="star-key">&#9733;</span> marks a <b>seasonal</b> post office, one that is open only for part of the year.</p>
+					<p class="seasonal-note" id="seaNote" hidden><b>&#9733; Seasonal post offices</b> work only for part of the year, usually during a pilgrimage or tourist season, so a cancellation from them can be collected only then. Check that the post office is open before you plan a visit or send an article.</p>
+					<div class="pgrid" id="grid"></div>
+					<div class="more"><button type="button" class="chip-btn" id="more">Show more</button></div>
+					<p class="share">Link to this view: <code id="link"></code></p>
+				</section>
+			</div>
+		</main>
+
+		<!-- The page's data (inside a <template>, so nothing in it is downloaded): one section per state or UT, one entry per PPC article.
+		     To add an article, add an entry in the right section (in pincode order); the explorer picks it up.
+		     The post office and its type are read from the file name, e.g. ka/560001-bengaluru-gpo-pb.html.
+		     A seasonal post office is marked by writing <div data-seasonal> for its entry (file names containing "seasonal" are marked automatically). -->
+		<noscript><p class="lead">This page needs JavaScript to list the PPC articles. You can browse every PPC on the <a href="../list-pincode.html">PPC List</a>.</p></noscript>
+		<template id="ppc-data">
+			<!-- Start of Delhi -->
+			<div id="Delhi" class="section">
+				<h2>Delhi</h2>
+				<div class="overview-images">
+					<div>
+						<a href="dl/110001-national-philatelic-museum.html" target="_self"><img src="../pictures/ppcs/110001-PeacockPhilatelyLogo-NationalPhilatelicMuseum.jpg" alt="Peacock (Philately Logo)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Peacock (Philately Logo)</p>
+					</div>
+					<div>
+						<a href="dl/110004-rashtrapati-bhawan-so.html" target="_self"><img src="../pictures/ppcs/110004-RashtrapatiBhavan-RashtrapatiBhavanSO.jpg" alt="Rashtrapati Bhawan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rashtrapati Bhawan</p>
+					</div>
+					<div>
+						<a href="dl/110006-philatelic-gallery-red-fort.html" target="_self"><img src="../pictures/ppcs/110006-RedFort-PhilatelicGalleryRedFort.jpg" alt="Red Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Red Fort</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Delhi -->
+			
+			<!-- Start of Haryana -->
+			<div id="Haryana" class="section">
+				<h2>Haryana</h2>
+				<div class="overview-images">
+					<div>
+						<a href="hr/126101-kila-zaffargarh-bo.html" target="_self"><img src="../pictures/ppcs/126101-ZaffargarhFort-KilaZaffargarhBO.jpg" alt="Zaffargarh Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Zaffargarh Fort</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Haryana -->
+			
+			<!-- Start of Punjab -->
+			<div id="Punjab" class="section">
+				<h2>Punjab</h2>
+				<div class="overview-images">
+					<div>
+						<a href="pb/143001-amritsar-gpo-pb.html" target="_self"><img src="../pictures/ppcs/143001-SriHarmandirSahibGoldenTemple-AmritsarGPOPB.jpg" alt="Sri Harmandir Sahib (Golden Temple)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Harmandir Sahib (Golden Temple)</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Punjab -->
+			
+			<!-- Start of Chandigarh -->
+			<div id="Chandigarh" class="section">
+				<h2>Chandigarh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ch/160017-chandigarh-gpo-pb.html" target="_self"><img src="../pictures/ppcs/160017-RoseFlowerOpenHandMonumentSukhnaLakeYachtandShivalikHills-ChandigarhGPOPB.jpg" alt="Rose Flower, The Open Hand Monument, Sukhna Lake, Yacht, and Shivalik Hills" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rose Flower, The Open Hand Monument, Sukhna Lake, Yacht, and Shivalik Hills</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Chandigarh -->
+			
+			<!-- Start of Himachal Pradesh -->
+			<div id="Himachal Pradesh" class="section">
+				<h2>Himachal Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="hp/171001-shimla-gpo-pb.html" target="_self"><img src="../pictures/ppcs/171001-HimalayanMonal-ShimlaGPOPB.jpg" alt="Himalayan Monal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Himalayan Monal</p>
+					</div>
+					<div>
+						<a href="hp/171004-ambedkar-chowk-so.html" target="_self"><img src="../pictures/ppcs/171004-BhadramukhaShiva-AmbedkarChowkSO.jpg" alt="Bhadramukha Shiva" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhadramukha Shiva</p>
+					</div>
+					<div>
+						<a href="hp/171005-summerhill-so.html" target="_self"><img src="../pictures/ppcs/171005-WesternTragopan-SummerhillSO.jpg" alt="Western Tragopan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Western Tragopan</p>
+					</div>
+					<div>
+						<a href="hp/172113-tabo-so.html" target="_self"><img src="../pictures/ppcs/172113-TaboMonastery-TaboSO.jpg" alt="Tabo Monastery" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tabo Monastery</p>
+					</div>
+					<div>
+						<a href="hp/172114-hikkim-bo.html" target="_self"><img src="../pictures/ppcs/172114-HikkimPostOffice-HikkimBO.jpg" alt="Hikkim Post Office" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hikkim Post Office</p>
+					</div>
+					<div>
+						<a href="hp/172114-kee-gompa-bo.html" target="_self"><img src="../pictures/ppcs/172114-KeyMonastery-KeeGompaBO.jpg" alt="Key Monastery" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Key Monastery</p>
+					</div>
+					<div>
+						<a href="hp/172114-kibber-bo.html" target="_self"><img src="../pictures/ppcs/172114-ChichamBridge-KibberBO.jpg" alt="Chicham Bridge" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chicham Bridge</p>
+					</div>
+					<div>
+						<a href="hp/175131-manali-so.html" target="_self"><img src="../pictures/ppcs/175131-HidimbaDeviTemple-ManaliSO.jpg" alt="Hidimba Devi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hidimba Devi Temple</p>
+					</div>
+					<div>
+						<a href="hp/176031-jawalamukhi-so.html" target="_self"><img src="../pictures/ppcs/176031-JawalamukhiTemple-JawalamukhiSO.jpg" alt="Jawalamukhi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Jawalamukhi Temple</p>
+					</div>
+					<div>
+						<a href="hp/176077-bir-so.html" target="_self"><img src="../pictures/ppcs/176077-HimalayasandParagliding-BirSO.jpg" alt="Himalayas and Paragliding" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Himalayas and Paragliding</p>
+					</div>
+					<div>
+						<a href="hp/176215-dharamsala-ho.html" target="_self"><img src="../pictures/ppcs/176215-DhauladharMountainsKangraTea&Temple-DharamsalaHO.jpg" alt="Dhauladhar Mountains, Kangra Tea &amp; Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dhauladhar Mountains, Kangra Tea &amp; Temple</p>
+					</div>
+					<div>
+						<a href="hp/176215-mcleodganj-so.html" target="_self"><img src="../pictures/ppcs/176215-HimalayasandManePrayerWheel-McleodganjSO.jpg" alt="Himalayas and Mane Prayer Wheel" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Himalayas and Mane Prayer Wheel</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Himachal Pradesh -->
+			
+			<!-- Start of Jammu and Kashmir -->
+			<div id="Jammu and Kashmir" class="section">
+				<h2>Jammu and Kashmir</h2>
+				<div class="overview-images">
+					<div>
+						<a href="jk/180001-raghunath-bazaar-so.html" target="_self"><img src="../pictures/ppcs/180001-RaghunathMandir-RaghunathBazaarSO.jpg" alt="Raghunath Mandir" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Raghunath Mandir</p>
+					</div>
+					<div>
+						<a href="jk/182301-katra-so.html" target="_self"><img src="../pictures/ppcs/182301-VaishnoDeviTemple-KatraSO.jpg" alt="Vaishno Devi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vaishno Devi Temple</p>
+					</div>
+					<div>
+						<a href="jk/190001-lal-chowk-so.html" target="_self"><img src="../pictures/ppcs/190001-GhantaGhar-LalChowkSO.jpg" alt="Ghanta Ghar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ghanta Ghar</p>
+					</div>
+					<div>
+						<a href="jk/190001-nehru-park-so.html" target="_self"><img src="../pictures/ppcs/190001-ShikarainDalLake-NehruParkSO.jpg" alt="Shikara in Dal Lake" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shikara in Dal Lake</p>
+					</div>
+					<div>
+						<a href="jk/190001-srinagar-gpo.html" target="_self"><img src="../pictures/ppcs/190001-DalLakeandShikara-SrinagarGPO.jpg" alt="Dal Lake and Shikara" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dal Lake and Shikara</p>
+					</div>
+					<div>
+						<a href="jk/192121-pampore-so.html" target="_self"><img src="../pictures/ppcs/192121-KongposhSaffron-PamporeSO.jpg" alt="Kongposh (Saffron)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kongposh (Saffron)</p>
+					</div>
+					<div>
+						<a href="jk/192126-pahalgam-so.html" target="_self"><img src="../pictures/ppcs/192126-ShriAmarnathJi-PahalgamSO.jpg" alt="Shri Amarnath Ji" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Amarnath Ji</p>
+					</div>
+					<div>
+						<a href="jk/193403-gulmarg-so.html" target="_self"><img src="../pictures/ppcs/193403-GondolaRopeway-GulmargSO.jpg" alt="Gondola Ropeway" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gondola Ropeway</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Jammu and Kashmir -->
+			
+			<!-- Start of Ladakh -->
+			<div id="Ladakh" class="section">
+				<h2>Ladakh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="la/194101-leh-ho.html" target="_self"><img src="../pictures/ppcs/194101-ShantiStupa-LehHO.jpg" alt="Shanti Stupa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shanti Stupa</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Ladakh -->
+			
+			<!-- Start of Uttar Pradesh -->
+			<div id="Uttar Pradesh" class="section">
+				<h2>Uttar Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="up/202001-aligarh-ho.html" target="_self"><img src="../pictures/ppcs/202001-AligarhLock-AligarhHO.jpg" alt="Aligarh Lock" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Aligarh Lock</p>
+					</div>
+					<div>
+						<a href="up/211001-prayagraj-ho-1.html" target="_self"><img src="../pictures/ppcs/211001-PrayagrajSangam-PrayagrajHO.jpg" alt="Prayagraj Sangam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Prayagraj Sangam</p>
+					</div>
+					<div>
+						<a href="up/211001-prayagraj-ho-2.html" target="_self"><img src="../pictures/ppcs/211001-AllahabadSurkhaGuava-PrayagrajHO.jpg" alt="Allahabad Surkha Guava" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Allahabad Surkha Guava</p>
+					</div>
+					<div>
+						<a href="up/211001-prayagraj-ho-3.html" target="_self"><img src="../pictures/ppcs/211001-FirstAirmail-PrayagrajHO.jpg" alt="First Airmail" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">First Airmail</p>
+					</div>
+					<div>
+						<a href="up/221001-varanasi-ho-pb.html" target="_self"><img src="../pictures/ppcs/221001-ShriKashiVishwanathMandirVaranasi-VaranasiHOPB.jpg" alt="Shri Kashi Vishwananth Mandir" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Kashi Vishwananth Mandir</p>
+					</div>
+					<div>
+						<a href="up/224001-ayodhya-ho-1.html" target="_self"><img src="../pictures/ppcs/224001-HanumanGarhiAyodhya-AyodhyaHO.jpg" alt="Hanuman Garhi, Ayodhya" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hanuman Garhi, Ayodhya</p>
+					</div>
+					<div>
+						<a href="up/224001-ayodhya-ho-2.html" target="_self"><img src="../pictures/ppcs/224001-ShriRamJanmbhoomiTempple-AyodhyaHO.jpg" alt="Shri Ram Janmbhoomi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Ram Janmbhoomi Temple</p>
+					</div>
+					<div>
+						<a href="up/226001-gokhale-marg-so.html" target="_self"><img src="../pictures/ppcs/226001-RoseFlower-GokhaleMargSO.jpg" alt="Rose Flower" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rose Flower</p>
+					</div>
+					<div>
+						<a href="up/226001-lucknow-gpo-pb.html" target="_self"><img src="../pictures/ppcs/226001-LucknowGPOClockTower-LucknowGPOPB.jpg" alt="Lucknow GPO Clock Tower" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lucknow GPO Clock Tower</p>
+					</div>
+					<div>
+						<a href="up/226027-up-governor-camp-so.html" target="_self"><img src="../pictures/ppcs/226027-RajBhawanLucknow-UPGovernorCampSO.jpg" alt="Raj Bhawan, Lucknow" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Raj Bhawan, Lucknow</p>
+					</div>
+					<div>
+						<a href="up/243001-bareilly-ho.html" target="_self"><img src="../pictures/ppcs/243001-BareillyHeadPostOfficeBuilding-BareillyHO.jpg" alt="Bareilly Head Post Office Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bareilly Head Post Office Building</p>
+					</div>
+					<div>
+						<a href="up/244001-ptc-moradabad-so.html" target="_self"><img src="../pictures/ppcs/244001-DrBRAmbedkarUttarPradeshPoliceAcademy-PTCMoradabadSO.jpg" alt="Dr. B. R. Ambedkar Uttar Pradesh Police Academy" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dr. B. R. Ambedkar Uttar Pradesh Police Academy</p>
+					</div>
+					<div>
+						<a href="up/282001-agra-ho-pb.html" target="_self"><img src="../pictures/ppcs/282001-TajMahal-AgraHOPB.jpg" alt="Taj Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Taj Mahal</p>
+					</div>
+					<div>
+						<a href="up/282001-taj-so.html" target="_self"><img src="../pictures/ppcs/282001-TajMahal-TajSO.jpg" alt="Taj Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Taj Mahal</p>
+					</div>
+					<div>
+						<a href="up/282001-taj-so-1.html" target="_self"><img src="../pictures/ppcs/282001-TajMahal-TajSO.jpg" alt="Taj Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Taj Mahal</p>
+					</div>
+					<div>
+						<a href="up/282001-taj-so-2.html" target="_self"><img src="../pictures/ppcs/282001-TajMahal-TajSO.jpg" alt="Taj Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Taj Mahal</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Uttar Pradesh -->
+			
+			<!-- Start of Uttarakhand -->
+			<div id="Uttarakhand" class="section">
+				<h2>Uttarakhand</h2>
+				<div class="overview-images">
+					<div data-seasonal>
+						<a href="uk/244715-corbett-national-park-dhikala-bo.html" target="_self"><img src="../pictures/ppcs/244715-SpottedDeer-SaveOurHeritagePreserveWildlife-CorbettNationalParkDhikalaBO.jpg" alt="Spotted Deer-Save Our Heritage, Preserve Wildlife" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Spotted Deer-Save Our Heritage, Preserve Wildlife</p>
+					</div>
+					<div data-seasonal>
+						<a href="uk/246422-badrinath-seasonal-so.html" target="_self"><img src="../pictures/ppcs/246422-ShreeBadarinathTemple-BadrinathSeasonalSO.jpg" alt="Shree Badarinath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shree Badarinath Temple</p>
+					</div>
+					<div>
+						<a href="uk/248001-dehradun-pb.html" target="_self"><img src="../pictures/ppcs/248001-HimalayasandBadrinathTemple-DehradunPB.jpg" alt="Himalayas and Badrinath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Himalayas and Badrinath Temple</p>
+					</div>
+					<div>
+						<a href="uk/248179-naa-mussoorie-so.html" target="_self"><img src="../pictures/ppcs/248179-LalBahadurShastriNationalAcademyofAdministration-NAAMussoorieSO.jpg" alt="Lal Bahadur Shastri National Academy of Administration, Mussoorie" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lal Bahadur Shastri National Academy of Administration, Mussoorie</p>
+					</div>
+					<div data-seasonal>
+						<a href="uk/249136-gangotri-seasonal-so.html" target="_self"><img src="../pictures/ppcs/249136-GangotriTempleandGomukh-GangotriSeasonalSO.jpg" alt="Gangotri Temple &amp; Gomukh" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gangotri Temple &amp; Gomukh</p>
+					</div>
+					<div>
+						<a href="uk/249192-kaudiyala-bo.html" target="_self"><img src="../pictures/ppcs/249192-WhitewaterRafting-KaudiyalaBO.jpg" alt="Whitewater Rafting" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Whitewater Rafting</p>
+					</div>
+					<div>
+						<a href="uk/249302-laxmanjhula-b-so.html" target="_self"><img src="../pictures/ppcs/249302-LakshmanJhula-LaxmanjhulaBSO.jpg" alt="Lakshman Jhula" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lakshman Jhula</p>
+					</div>
+					<div>
+						<a href="uk/249411-shantikunj-so.html" target="_self"><img src="../pictures/ppcs/249411-PrakharPragya-SajalShraddha-ShantikunjSO.jpg" alt="Prakhar Pragya - Sajal Shraddha" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Prakhar Pragya - Sajal Shraddha</p>
+					</div>
+					<div>
+						<a href="uk/263001-nainital-ho.html" target="_self"><img src="../pictures/ppcs/263001-NainaDeviTemple-NainitalHO.jpg" alt="Naina Devi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Naina Devi Temple</p>
+					</div>
+					<div>
+						<a href="uk/263001-nainital-pb.html" target="_self"><img src="../pictures/ppcs/263001-Mountains-NainitalPB.jpg" alt="Mountains" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mountains</p>
+					</div>
+					<div>
+						<a href="uk/263623-jageshwar-bo.html" target="_self"><img src="../pictures/ppcs/263623-JageshwarGroupofTemples-JageshwarBO.jpg" alt="Jageshwar Group of Temples" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Jageshwar Group of Temples</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Uttarakhand -->
+			
+			<!-- Start of Rajasthan -->
+			<div id="Rajasthan" class="section">
+				<h2>Rajasthan</h2>
+				<div class="overview-images">
+					<div>
+						<a href="rj/302002-tripolia-bazaar-so.html" target="_self"><img src="../pictures/ppcs/302002-HawaMahal-TripoliaBazaarSO.jpg" alt="Hawa Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hawa Mahal</p>
+					</div>
+					<div>
+						<a href="rj/302028-amer-so.html" target="_self"><img src="../pictures/ppcs/302028-AmerFort-AmerSO.jpg" alt="Amer Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Amer Fort</p>
+					</div>
+					<div>
+						<a href="rj/303604-sambhar-lake-ho.html" target="_self"><img src="../pictures/ppcs/303604-Flamingo-SambharLakeHO.jpg" alt="Flamingo" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Flamingo</p>
+					</div>
+					<div>
+						<a href="rj/305001-ajmer-ho-pb.html" target="_self"><img src="../pictures/ppcs/305001-PrithvirajChauhan-AjmerHOPB.jpg" alt="Prithviraj Chauhan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Prithviraj Chauhan</p>
+					</div>
+					<div>
+						<a href="rj/306702-ranakpur-bo.html" target="_self"><img src="../pictures/ppcs/306702-RanakpurJainTemple-RanakpurBO.jpg" alt="Ranakpur Jain Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ranakpur Jain Temple</p>
+					</div>
+					<div>
+						<a href="rj/307501-delwara-bo.html" target="_self"><img src="../pictures/ppcs/307501-DelwaraJainTemple-DelwaraBO.jpg" alt="Delwara Jain Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Delwara Jain Temple</p>
+					</div>
+					<div>
+						<a href="rj/307501-mount-abu-so.html" target="_self"><img src="../pictures/ppcs/307501-DelwaraJainTemple-MountAbuSO.jpg" alt="Delwara Jain Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Delwara Jain Temple</p>
+					</div>
+					<div>
+						<a href="rj/313001-panchwati-udaipur-so.html" target="_self"><img src="../pictures/ppcs/313001-MaharanaPratap-PanchwatiUdaipurSO.jpg" alt="Maharana Pratap" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Maharana Pratap</p>
+					</div>
+					<div>
+						<a href="rj/313001-shastri-circle-udaipur-so.html" target="_self"><img src="../pictures/ppcs/313001-MaharanaPratap-ShastriCircleUdaipurSO.jpg" alt="Maharana Pratap" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Maharana Pratap</p>
+					</div>
+					<div>
+						<a href="rj/321001-forest-lodge-bharatpur-bo.html" target="_self"><img src="../pictures/ppcs/321001-SiberianCrane-ForestLodgeBharatpurBO.jpg" alt="Siberian Crane" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Siberian Crane</p>
+					</div>
+					<div>
+						<a href="rj/322220-shrimahaveerji-so.html" target="_self"><img src="../pictures/ppcs/322220-ShriMahaveerMandir-ShrimahaveerjiSO.jpg" alt="Shri Mahaveer Mandir" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Mahaveer Mandir</p>
+					</div>
+					<div>
+						<a href="rj/334401-gangashahar-so.html" target="_self"><img src="../pictures/ppcs/334401-AcharyaTulsiShaktiPeeth-GangashaharSO.jpg" alt="Acharya Tulsi Shakti Peeth" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Acharya Tulsi Shakti Peeth</p>
+					</div>
+					<div>
+						<a href="rj/334801-deshnoke-so.html" target="_self"><img src="../pictures/ppcs/334801-ShriKarniMata-DeshnokeSO.jpg" alt="Shri Karni Mata" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Karni Mata</p>
+					</div>
+					<div>
+						<a href="rj/342001-jodhpur-ho.html" target="_self"><img src="../pictures/ppcs/342001-MehrangarhFort-JodhpurHO.jpg" alt="Mehrangarh Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mehrangarh Fort</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Rajasthan -->
+			
+			<!-- Start of Gujarat -->
+			<div id="Gujarat" class="section">
+				<h2>Gujarat</h2>
+				<div class="overview-images">
+					<div>
+						<a href="gj/360001-rajkot-ho-pb-1.html" target="_self"><img src="../pictures/ppcs/360001-AlfredHighSchool-RajkotHO.jpg" alt="Alfred High School" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Alfred High School</p>
+					</div>
+					<div>
+						<a href="gj/360001-rajkot-ho-pb-2.html" target="_self"><img src="../pictures/ppcs/360001-MohandasGandhiVidyalaya-RajkotHO.jpg" alt="Mohandas Gandhi Vidyalaya" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mohandas Gandhi Vidyalaya</p>
+					</div>
+					<div>
+						<a href="gj/360001-rajkot-ho-pb-3.html" target="_self"><img src="../pictures/ppcs/360001-MahatmaGandhiMuseum-RajkotHOPB.jpg" alt="Mahatma Gandhi Museum" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahatma Gandhi Museum</p>
+					</div>
+					<div>
+						<a href="gj/360575-porbandar-ho.html" target="_self"><img src="../pictures/ppcs/360575-KirtiMandir-TheBirthPlaceofMahatmaGandhi-PorbandarHO.jpg" alt="Kirti Mandir-The Birth Place of Mahatma Gandhi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kirti Mandir-The Birth Place of Mahatma Gandhi</p>
+					</div>
+					<div>
+						<a href="gj/361001-jamnagar-ho.html" target="_self"><img src="../pictures/ppcs/361001-ArabianSeaOctopus-JamnagarHO.jpg" alt="Arabian Sea Octopus" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Arabian Sea Octopus</p>
+					</div>
+					<div>
+						<a href="gj/361330-bet-so.html" target="_self"><img src="../pictures/ppcs/361330-ArabianSea&BetDwarka-BetSO.jpg" alt="Arabian Sea &amp; Bet Dwarka" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Arabian Sea &amp; Bet Dwarka</p>
+					</div>
+					<div>
+						<a href="gj/361335-dwarka-so.html" target="_self"><img src="../pictures/ppcs/361335-DwarkadhishTempleLandofSriKrishna-DwarkaSO.jpg" alt="Dwarkadhish Temple - Land of Sri Krishna" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dwarkadhish Temple - Land of Sri Krishna</p>
+					</div>
+					<div>
+						<a href="gj/362135-sasan-gir-so.html" target="_self"><img src="../pictures/ppcs/362135-AsiaticLions&VisitSasanGirWildlifeSanctuary-SasanGirSO.jpg" alt="Asiatic Lions &amp; Visit Sasan Gir Wildlife Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Asiatic Lions &amp; Visit Sasan Gir Wildlife Sanctuary</p>
+					</div>
+					<div>
+						<a href="gj/362268-prabhas-patan-so.html" target="_self"><img src="../pictures/ppcs/362268-SriSomnathTemple-PrabhasPatanSO.jpg" alt="Sri Somnath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Somnath Temple</p>
+					</div>
+					<div>
+						<a href="gj/363310-dhrangadhra-mdg-so.html" target="_self"><img src="../pictures/ppcs/363310-IndianWildAss-DhrangadhraMDGSO.jpg" alt="Indian Wild Ass" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Wild Ass</p>
+					</div>
+					<div>
+						<a href="gj/364270-palitana-sr-so.html" target="_self"><img src="../pictures/ppcs/364270-SiddhaChakra-PalitanaSRSO.jpg" alt="Siddha Chakra" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Siddha Chakra</p>
+					</div>
+					<div>
+						<a href="gj/370001-bhuj-ho.html" target="_self"><img src="../pictures/ppcs/370001-VisitFlamingoCityBirdSanctuary-BhujHO.jpg" alt="Visit Flamingo City, Bird Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Visit Flamingo City, Bird Sanctuary</p>
+					</div>
+					<div>
+						<a href="gj/370165-dholavira-bo.html" target="_self"><img src="../pictures/ppcs/370165-HarappanCulture-DholaviraBO.jpg" alt="Harappan Culture" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Harappan Culture</p>
+					</div>
+					<div>
+						<a href="gj/370510-khavda-so.html" target="_self"><img src="../pictures/ppcs/370510-KachchhiMudwork-KhavdaSO.jpg" alt="Kachchhi Mudwork" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kachchhi Mudwork</p>
+					</div>
+					<div>
+						<a href="gj/370601-guvar-moti-bo.html" target="_self"><img src="../pictures/ppcs/370601-WesternMostPostOfficeofIndia-GuvarMotiBO.jpg" alt="Western Most Post Office of India" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Western Most Post Office of India</p>
+					</div>
+					<div>
+						<a href="gj/370627-lakhpat-bo.html" target="_self"><img src="../pictures/ppcs/370627-LakhpatFortKachchhh-LakhpatBO.jpg" alt="Lakhpat Fort, Kachchhh" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lakhpat Fort, Kachchhh</p>
+					</div>
+					<div>
+						<a href="gj/380001-ahmedabad-gpo.html" target="_self"><img src="../pictures/ppcs/380001-ArchitecturalDelightsSidiSaiyad’sWindow-AhmedabadGPO.jpg" alt="Sidi Saiyad's Window" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sidi Saiyad's Window</p>
+					</div>
+					<div>
+						<a href="gj/380004-shahibaug-so.html" target="_self"><img src="../pictures/ppcs/380004-SardarVallabhbhaiPatelNationalMemorial-ShahibaugSO.jpg" alt="Sardar Vallabhbhai Patel National Memorial" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sardar Vallabhbhai Patel National Memorial</p>
+					</div>
+					<div>
+						<a href="gj/380006-ellisbridge-so.html" target="_self"><img src="../pictures/ppcs/380006-KocharabSatyagrahaAshramSmarak-EllisbridgeSO.jpg" alt="Kocharab Satyagraha Ashram Smarak" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kocharab Satyagraha Ashram Smarak</p>
+					</div>
+					<div>
+						<a href="gj/380015-iim-ahmedabad-so.html" target="_self"><img src="../pictures/ppcs/380015-SidiSaiyad’sMosqueWindow-IIMAhmedabadSO.jpg" alt="Sidi Saiyad’s Mosque Window" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sidi Saiyad’s Mosque Window</p>
+					</div>
+					<div>
+						<a href="gj/380027-gandhi-ashram-so-1.html" target="_self"><img src="../pictures/ppcs/380027-HridaykunjSabarmatiAshram-GandhiAshramSO.jpg" alt="Hridaykunj Sabarmati Ashram" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hridaykunj Sabarmati Ashram</p>
+					</div>
+					<div>
+						<a href="gj/380027-gandhi-ashram-so-2.html" target="_self"><img src="../pictures/ppcs/380027-SpinningWheelCharakha-GandhiAshramSO.jpg" alt="Spinning Wheel (Charakha)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Spinning Wheel (Charakha)</p>
+					</div>
+					<div>
+						<a href="gj/380027-gandhi-ashram-so-3.html" target="_self"><img src="../pictures/ppcs/380027-SabarmatiAshram-GandhiAshramSO.jpg" alt="Sabarmati Ashram" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sabarmati Ashram</p>
+					</div>
+					<div>
+						<a href="gj/382055-iit-gandhinagar-so.html" target="_self"><img src="../pictures/ppcs/382055-LogoofIITGandhinagarandLalMinar-IITGandhinagarSO.jpg" alt="Logo of IIT Gandhinagar and Lal Minar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of IIT Gandhinagar and Lal Minar</p>
+					</div>
+					<div>
+						<a href="gj/382230-lothal-bhurkhi-railway-station-so.html" target="_self"><img src="../pictures/ppcs/382230-LothalSeal-LothalBhurkhiRailwayStationSO.jpg" alt="Lothal Seal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lothal Seal</p>
+					</div>
+					<div>
+						<a href="gj/384265-patan-ng-so.html" target="_self"><img src="../pictures/ppcs/384265-RaniKiVavStepwell-PatanNGSO.jpg" alt="Rani Ki Vav (Stepwell)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rani Ki Vav (Stepwell)</p>
+					</div>
+					<div>
+						<a href="gj/384412-modhera-so.html" target="_self"><img src="../pictures/ppcs/384412-SuryaTemple-ModheraSO.jpg" alt="Surya Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Surya Temple</p>
+					</div>
+					<div>
+						<a href="gj/387001-nadiad-ho.html" target="_self"><img src="../pictures/ppcs/387001-BirthPlaceofSardarVallabhbhaiPatel-NadiadHO.jpg" alt="Birth Place of Sardar Vallabhbhai Patel" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Birth Place of Sardar Vallabhbhai Patel</p>
+					</div>
+					<div>
+						<a href="gj/388225-dakor-so.html" target="_self"><img src="../pictures/ppcs/388225-ShriRanchhodraijiMaharajTemple-DakorSO.jpg" alt="Shri Ranchhodraiji Maharaj Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Ranchhodraiji Maharaj Temple</p>
+					</div>
+					<div>
+						<a href="gj/388325-karamsad-so.html" target="_self"><img src="../pictures/ppcs/388325-SardarVallabhbhaiPatel-KaramsadSO.jpg" alt="Sardar Vallabhbhai Patel" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sardar Vallabhbhai Patel</p>
+					</div>
+					<div>
+						<a href="gj/390001-vadodara-ho.html" target="_self"><img src="../pictures/ppcs/390001-ChamarDharini-VadodaraHO.jpg" alt="Chamar Dharini" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chamar Dharini</p>
+					</div>
+					<div>
+						<a href="gj/390002-vadodara-fateganj-ho.html" target="_self"><img src="../pictures/ppcs/390002-MaharajaSayajiraoGaekwad-VadodaraFateganjHO.jpg" alt="Maharaja Sayajirao Gaekwad" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Maharaja Sayajirao Gaekwad</p>
+					</div>
+					<div>
+						<a href="gj/393151-kevadia-colony-so-1.html" target="_self"><img src="../pictures/ppcs/393151-SardarSarovarProject-KevadiaColonySO.jpg" alt="Sardar Sarovar Project" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sardar Sarovar Project</p>
+					</div>
+					<div>
+						<a href="gj/393151-kevadia-colony-so-2.html" target="_self"><img src="../pictures/ppcs/393151-SardarSarovarProjectandStatueofUnity-KevadiaColonySO.jpg" alt="Sardar Sarovar Project and Statue of Unity" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sardar Sarovar Project and Statue of Unity</p>
+					</div>
+					<div>
+						<a href="gj/394270-hajira-so.html" target="_self"><img src="../pictures/ppcs/394270-HajiraLighthouse-HajiraSO.jpg" alt="Hajira Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hajira Lighthouse</p>
+					</div>
+					<div>
+						<a href="gj/394720-saputara-so.html" target="_self"><img src="../pictures/ppcs/394720-MusicalInstrumentsofLocalTribes-SaputaraSO.jpg" alt="Musical Instruments of Local Tribes" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Musical Instruments of Local Tribes</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Gujarat -->
+			
+			<!-- Start of Dadra and Nagar Haveli and Daman and Diu -->
+			<div id="Dadra and Nagar Haveli and Daman and Diu" class="section">
+				<h2>Dadra and Nagar Haveli and Daman and Diu</h2>
+				<div class="overview-images">
+					<div>
+						<a href="dd/362520-diu-so.html" target="_self"><img src="../pictures/ppcs/362520-DiuFort-DiuSO.jpg" alt="Diu Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Diu Fort</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Dadra and Nagar Haveli and Daman and Diu -->
+			
+			<!-- Start of Maharashtra -->
+			<div id="Maharashtra" class="section">
+				<h2>Maharashtra</h2>
+				<div class="overview-images">
+					<div>
+						<a href="mh/400001-mumbai-gpo-pb.html" target="_self"><img src="../pictures/ppcs/400001-MumbaiGPOBuilding-MumbaiGPOPB.jpg" alt="Mumbai GPO Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mumbai GPO Building</p>
+					</div>
+					<div>
+						<a href="mh/400001-taj-mahal-so.html" target="_self"><img src="../pictures/ppcs/400001-GatewayofIndia-TajMahalSO.jpg" alt="Gateway of India" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gateway of India</p>
+					</div>
+					<div>
+						<a href="mh/400021-elephanta-caves-bo.html" target="_self"><img src="../pictures/ppcs/400021-Trimurthi-ElephantaCavesBO.jpg" alt="Trimurthi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Trimurthi</p>
+					</div>
+					<div>
+						<a href="mh/400050-bandra-west-so.html" target="_self"><img src="../pictures/ppcs/400050-MountMaryChurch-BandraWestSO.jpg" alt="Mount Mary Church" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mount Mary Church</p>
+					</div>
+					<div>
+						<a href="mh/400708-airoli-node-so.html" target="_self"><img src="../pictures/ppcs/400708-GreaterFlamingo-AiroliNodeSO.jpg" alt="Greater Flamingo" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Greater Flamingo</p>
+					</div>
+					<div>
+						<a href="mh/410102-matheran-so.html" target="_self"><img src="../pictures/ppcs/410102-MatheranLightRailwayLocomotive-MatheranSO.jpg" alt="Matheran Light Railway Locomotive" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Matheran Light Railway Locomotive</p>
+					</div>
+					<div>
+						<a href="mh/410517-khodad-so.html" target="_self"><img src="../pictures/ppcs/410517-GiantMeterWaveRadioTelescope-KhodadSO.jpg" alt="Giant Meter Wave Radio Telescope" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Giant Meter Wave Radio Telescope</p>
+					</div>
+					<div>
+						<a href="mh/411001-pune-ho.html" target="_self"><img src="../pictures/ppcs/411001-PuneHeadPostOfficeBuilding-PuneHOPB.jpg" alt="Pune Head Post Office Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pune Head Post Office Building</p>
+					</div>
+					<div>
+						<a href="mh/411030-shaniwar-peth-so.html" target="_self"><img src="../pictures/ppcs/411030-ShaniwarWada-ShaniwarPethSO.jpg" alt="Shaniwar Wada" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shaniwar Wada</p>
+					</div>
+					<div>
+						<a href="mh/412806-mahabaleshwar-so.html" target="_self"><img src="../pictures/ppcs/412806-Strawberry-MahabaleshwarSO.jpg" alt="Strawberry" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Strawberry</p>
+					</div>
+					<div>
+						<a href="mh/412806-pratapgad-bo.html" target="_self"><img src="../pictures/ppcs/412806-PratapgadFort-PratapgadBO.jpg" alt="Pratapgad Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pratapgad Fort</p>
+					</div>
+					<div>
+						<a href="mh/413222-nannaj-so.html" target="_self"><img src="../pictures/ppcs/413222-GreatIndianBustard-NannajSO.jpg" alt="Great Indian Bustard" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Great Indian Bustard</p>
+					</div>
+					<div>
+						<a href="mh/413304-pandharpur-ho.html" target="_self"><img src="../pictures/ppcs/413304-VithobaTemple-PandharpurHO.jpg" alt="Vithoba Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vithoba Temple</p>
+					</div>
+					<div>
+						<a href="mh/416308-kirloskarvadi-so.html" target="_self"><img src="../pictures/ppcs/416308-KirloskarEngine-KirloskarvadiSO.jpg" alt="Kirloskar Engine" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kirloskar Engine</p>
+					</div>
+					<div>
+						<a href="mh/422010-ambad-a-s-so.html" target="_self"><img src="../pictures/ppcs/422010-PandavLeni-AmbadASSO.jpg" alt="Pandav Leni" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pandav Leni</p>
+					</div>
+					<div>
+						<a href="mh/431001-chhatrapati-sambhajinagar-ho.html" target="_self"><img src="../pictures/ppcs/431001-BibiKaMaqbara-ChhatrapatiSambhajinagarHO.jpg" alt="Bibi Ka Maqbara" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bibi Ka Maqbara</p>
+					</div>
+					<div>
+						<a href="mh/431001-medical-college-so.html" target="_self"><img src="../pictures/ppcs/431001-Panchakki-MedicalCollegeSO.jpg" alt="Pan Chakki" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pan Chakki</p>
+					</div>
+					<div>
+						<a href="mh/431002-daulatabad-bo.html" target="_self"><img src="../pictures/ppcs/431002-ChandMinar-DaulatabadBO.jpg" alt="Chand Minar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chand Minar</p>
+					</div>
+					<div>
+						<a href="mh/431102-ellora-so.html" target="_self"><img src="../pictures/ppcs/431102-Indrasabha-JainCaves-ElloraSO.jpg" alt="Indrasabha - Jain Caves" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indrasabha - Jain Caves</p>
+					</div>
+					<div>
+						<a href="mh/431102-ellora-caves-bo-1.html" target="_self"><img src="../pictures/ppcs/431102-Elephants-ElloraCavesBO.jpg" alt="Elephants" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Elephants</p>
+					</div>
+					<div>
+						<a href="mh/431102-ellora-caves-bo-2.html" target="_self"><img src="../pictures/ppcs/431102-VictoryPillar-Ellora Caves BO.jpg" alt="Victory Pillar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Victory Pillar</p>
+					</div>
+					<div>
+						<a href="mh/431102-ellora-caves-bo-3.html" target="_self"><img src="../pictures/ppcs/431102-DeepStambh-ElloraCavesBO.jpg" alt="Deep Stambh" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Deep Stambh</p>
+					</div>
+					<div>
+						<a href="mh/431117-ajanta-caves-bo-1.html" target="_self"><img src="../pictures/ppcs/431117-ElevationofCave19-AjantaCavesBO.jpg" alt="Elevation of Cave 19" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Elevation of Cave 19</p>
+					</div>
+					<div>
+						<a href="mh/431117-ajanta-caves-bo-2.html" target="_self"><img src="../pictures/ppcs/431117-EntranceofCave1-AjantaCavesBO.jpg" alt="Entrance of Cave 1" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Entrance of Cave 1</p>
+					</div>
+					<div>
+						<a href="mh/431117-ajanta-caves-bo-3.html" target="_self"><img src="../pictures/ppcs/431117-ChaddantaSixTuskedElephant-AjantaCavesBO.jpg" alt="Chaddanta (Six-Tusked Elephant)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chaddanta (Six-Tusked Elephant)</p>
+					</div>
+					<div>
+						<a href="mh/440001-nagpur-gpo-1.html" target="_self"><img src="../pictures/ppcs/440001-NagpurGPOBuilding-NagpurGPO.jpg" alt="Nagpur GPO Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nagpur GPO Building</p>
+					</div>
+					<div>
+						<a href="mh/440001-nagpur-gpo-2.html" target="_self"><img src="../pictures/ppcs/440001-ZeroMile-NagpurGPO.jpg" alt="Zero Mile" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Zero Mile</p>
+					</div>
+					<div>
+						<a href="mh/440010-shankarnagar-so.html" target="_self"><img src="../pictures/ppcs/440010-Deekshabhoomi-ShankarNagarSO.jpg" alt="Deekshabhoomi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Deekshabhoomi</p>
+					</div>
+					<div>
+						<a href="mh/440032-mahal-so.html" target="_self"><img src="../pictures/ppcs/440032-DrHegdewarNiwas-MahalSO.jpg" alt="Dr. Hegdewar Niwas" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dr. Hegdewar Niwas</p>
+					</div>
+					<div>
+						<a href="mh/441106-nagardhan-bo.html" target="_self"><img src="../pictures/ppcs/441106-NagardhanFort-NagardhanBO.jpg" alt="Nagardhan Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nagardhan Fort</p>
+					</div>
+					<div>
+						<a href="mh/443302-lonar-so.html" target="_self"><img src="../pictures/ppcs/443302-LonarLake-LonarSO.jpg" alt="Lonar Lake" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lonar Lake</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Maharashtra -->
+			
+			<!-- Start of Goa -->
+			<div id="Goa" class="section">
+				<h2>Goa</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ga/403001-panaji-ho-pb.html" target="_self"><img src="../pictures/ppcs/403001-IndianBisonCashewFishandCoconutTree-PanajiHOPB.jpg" alt="Indian Bison, Cashew, Fish, and Coconut Tree" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Bison, Cashew, Fish, and Coconut Tree</p>
+					</div>
+					<div>
+						<a href="ga/403102-chorao-so.html" target="_self"><img src="../pictures/ppcs/403102-DrSalimAliBirdSanctuary-ChoraoSO.jpg" alt="Dr. Salim Ali Bird Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dr. Salim Ali Bird Sanctuary</p>
+					</div>
+					<div>
+						<a href="ga/403114-reis-magos-so.html" target="_self"><img src="../pictures/ppcs/403114-ReisMagosFort-ReisMagosSO.jpg" alt="Reis Magos Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Reis Magos Fort</p>
+					</div>
+					<div>
+						<a href="ga/403402-velha-goa-so.html" target="_self"><img src="../pictures/ppcs/403402-BasilicaofBomJesus-VelhaGoaSO.jpg" alt="Basilica of Bom Jesus" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Basilica of Bom Jesus</p>
+					</div>
+					<div>
+						<a href="ga/403404-mardol-so.html" target="_self"><img src="../pictures/ppcs/403404-MangueshiTemple-MardolSO.jpg" alt="Mangueshi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mangueshi Temple</p>
+					</div>
+					<div>
+						<a href="ga/403406-sancordem-bo.html" target="_self"><img src="../pictures/ppcs/403406-TambdiSurla-SancordemBO.jpg" alt="Tambdi Surla" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tambdi Surla</p>
+					</div>
+					<div>
+						<a href="ga/403406-usgaon-bo.html" target="_self"><img src="../pictures/ppcs/403406-BondlaWildlifeSanctuary-UsgaonBO.jpg" alt="Bondla Wildlife Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bondla Wildlife Sanctuary</p>
+					</div>
+					<div>
+						<a href="ga/403506-valpoi-so.html" target="_self"><img src="../pictures/ppcs/403506-MalabarTreeNymph-ValpoiSO.jpg" alt="Malabar Tree Nymph" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Malabar Tree Nymph</p>
+					</div>
+					<div>
+						<a href="ga/403515-candolim-so.html" target="_self"><img src="../pictures/ppcs/403515-FortAguadaLighthouse-CandolimSO.jpg" alt="Fort Aguada Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Fort Aguada Lighthouse</p>
+					</div>
+					<div>
+						<a href="ga/403601-margao-ho.html" target="_self"><img src="../pictures/ppcs/403601-MargaoHeadPostOfficeBuilding-MargaoHO.jpg" alt="Margao Head Post Office" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Margao Head Post Office</p>
+					</div>
+					<div>
+						<a href="ga/403702-palolem-bo.html" target="_self"><img src="../pictures/ppcs/403702-HumpbackDolphin-PalolemBO.jpg" alt="Humpback Dolphin" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Humpback Dolphin</p>
+					</div>
+					<div>
+						<a href="ga/403710-sancoale-bo.html" target="_self"><img src="../pictures/ppcs/403710-FacadeofChurchofOurLadyofHealth-SancoaleBO.jpg" alt="Facade of Church of Our Lady of Health" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Facade of Church of Our Lady of Health</p>
+					</div>
+					<div>
+						<a href="ga/403714-chandor-so.html" target="_self"><img src="../pictures/ppcs/403714-MussolKhel-ChandorSO.jpg" alt="Mussol Khel" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mussol Khel</p>
+					</div>
+					<div>
+						<a href="ga/403718-loutulim-so.html" target="_self"><img src="../pictures/ppcs/403718-BigFootSculptureofMeerabai-LoutulimSO.jpg" alt="Big Foot Sculpture of Meerabai" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Big Foot Sculpture of Meerabai</p>
+					</div>
+					<div>
+						<a href="ga/403728-loliem-so.html" target="_self"><img src="../pictures/ppcs/403728-OliveRidleyTurtle-LoliemSO.jpg" alt="Olive Ridley Turtle" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Olive Ridley Turtle</p>
+					</div>
+					<div>
+						<a href="ga/403803-mormugao-so.html" target="_self"><img src="../pictures/ppcs/403803-MormugaoPortAuthority-MormugaoSO.jpg" alt="Mormugao Port Authority" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mormugao Port Authority</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Goa -->
+			
+			<!-- Start of Madhya Pradesh -->
+			<div id="Madhya Pradesh" class="section">
+				<h2>Madhya Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="mp/452001-indore-gpo-pb-1.html" target="_self"><img src="../pictures/ppcs/452001-RajwadaPalaceandIndiaPostLogo-IndoreGPOPB.jpg" alt="Rajwada Palace and India Post Logo" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rajwada Palace and India Post Logo</p>
+					</div>
+					<div>
+						<a href="mp/452001-indore-gpo-pb-2.html" target="_self"><img src="../pictures/ppcs/452001-KrishnapuraChhatri-IndoreGPOPB.jpg" alt="Krishnapura Chhatri" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Krishnapura Chhatri</p>
+					</div>
+					<div>
+						<a href="mp/462036-raja-bhoj-airport-so.html" target="_self"><img src="../pictures/ppcs/462036-RajaBhoj-RajaBhojAirportSO.jpg" alt="Raja Bhoj" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Raja Bhoj</p>
+					</div>
+					<div>
+						<a href="mp/464001-udaygiri-bo.html" target="_self"><img src="../pictures/ppcs/464001-UdaygiriCaves-VarahaBoarCarving-UdaygiriBO.jpg" alt="Udaygiri Caves-Varaha (Boar) Carving" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Udaygiri Caves-Varaha (Boar) Carving</p>
+					</div>
+					<div>
+						<a href="mp/464661-sanchi-so.html" target="_self"><img src="../pictures/ppcs/464661-SanchiStupa-SanchiSO.jpg" alt="Sanchi Stupa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sanchi Stupa</p>
+					</div>
+					<div>
+						<a href="mp/464993-ankalpur-bo.html" target="_self"><img src="../pictures/ppcs/464993-Bhimbetka-AnkalpurBO.jpg" alt="Bhimbetka" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhimbetka</p>
+					</div>
+					<div>
+						<a href="mp/471606-khajuraho-so.html" target="_self"><img src="../pictures/ppcs/471606-KhajurahoTemple-KhajurahoSO.jpg" alt="Khajuraho Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Khajuraho Temple</p>
+					</div>
+					<div>
+						<a href="mp/473446-chanderi-so.html" target="_self"><img src="../pictures/ppcs/473446-BadalMahal-ChanderiSO.jpg" alt="Badal Mahal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Badal Mahal</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Madhya Pradesh -->
+			
+			<!-- Start of Chhattisgarh -->
+			<div id="Chhattisgarh" class="section">
+				<h2>Chhattisgarh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="cg/490006-civic-centre-bhilai-so.html" target="_self"><img src="../pictures/ppcs/490006-SteelLadle-CivicCentreBhilaiSO.jpg" alt="Steel Ladle" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Steel Ladle</p>
+					</div>
+					<div>
+						<a href="cg/491002-iit-bhilai-so.html" target="_self"><img src="../pictures/ppcs/491002-LogoofIITBhilai-IITBhilaiSO.jpg" alt="Logo of IIT Bhilai" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of IIT Bhilai</p>
+					</div>
+					<div>
+						<a href="cg/491995-chhapri-bo.html" target="_self"><img src="../pictures/ppcs/491995-BhoramdeoTemple-ChhapriBO.jpg" alt="Bhoramdeo Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhoramdeo Temple</p>
+					</div>
+					<div>
+						<a href="cg/492001-raipur-ho-pb-1.html" target="_self"><img src="../pictures/ppcs/492001-ThermalPowerPlant-RaipurHOPB.jpg" alt="Thermal Power Plant" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thermal Power Plant</p>
+					</div>
+					<div>
+						<a href="cg/492001-raipur-ho-pb-2.html" target="_self"><img src="../pictures/ppcs/492001-ChhattisgarhARiceBowl-RaipurHOPB.jpg" alt="Chhattisgarh - A &quot;Rice Bowl&quot;" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chhattisgarh - A "Rice Bowl"</p>
+					</div>
+					<div>
+						<a href="cg/492101-chand-bhuri-bo.html" target="_self"><img src="../pictures/ppcs/492101-MataKaushalyaMandir-ChandBhuriBO.jpg" alt="Mata Kaushalya Mandir" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mata Kaushalya Mandir</p>
+					</div>
+					<div>
+						<a href="cg/493445-sirpur-bo.html" target="_self"><img src="../pictures/ppcs/493445-LaxmanMandir-SirpurBO.jpg" alt="Laxman Mandir" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Laxman Mandir</p>
+					</div>
+					<div>
+						<a href="cg/493551-barnawapara-bo.html" target="_self"><img src="../pictures/ppcs/493551-IndianBisonGaur-BarnawaparaBO.jpg" alt="Indian Bison (Gaur)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Bison (Gaur)</p>
+					</div>
+					<div>
+						<a href="cg/493778-sihawa-bo.html" target="_self"><img src="../pictures/ppcs/493778-ShringiRishi-SihawaBO.jpg" alt="Shringi Rishi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shringi Rishi</p>
+					</div>
+					<div>
+						<a href="cg/493885-champaran-bo.html" target="_self"><img src="../pictures/ppcs/493885-SaintVallabhacharyaandChampeshwarNathTemple-ChamparanBO.jpg" alt="Saint Vallabhacharya and Champeshwar Nath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Saint Vallabhacharya and Champeshwar Nath Temple</p>
+					</div>
+					<div>
+						<a href="cg/493889-gariaband-so.html" target="_self"><img src="../pictures/ppcs/493889-WildBuffalo-GariabandSO.jpg" alt="Wild Buffalo" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Wild Buffalo</p>
+					</div>
+					<div>
+						<a href="cg/494001-jagdalpur-ho.html" target="_self"><img src="../pictures/ppcs/494001-MariaTribe-JagdalpurHO.jpg" alt="Maria Tribe" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Maria Tribe</p>
+					</div>
+					<div>
+						<a href="cg/494010-chitrakote-bo.html" target="_self"><img src="../pictures/ppcs/494010-ChitrakoteWaterfall-ChitrakoteBO.jpg" alt="Chitrakote Waterfall" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chitrakote Waterfall</p>
+					</div>
+					<div>
+						<a href="cg/494115-tongpal-so.html" target="_self"><img src="../pictures/ppcs/494115-HillMyna-TongpalSO.jpg" alt="Hill Myna" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Hill Myna</p>
+					</div>
+					<div>
+						<a href="cg/495001-bilaspur-ho.html" target="_self"><img src="../pictures/ppcs/495001-RudraShivSculpture-BilaspurHO.jpg" alt="Rudra Shiv Sculpture" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rudra Shiv Sculpture</p>
+					</div>
+					<div>
+						<a href="cg/495113-achanakmar-bo.html" target="_self"><img src="../pictures/ppcs/495113-TigerATR-AchanakmarBO.jpg" alt="Tiger ATR" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tiger ATR</p>
+					</div>
+					<div>
+						<a href="cg/495448-bango-dam-bo.html" target="_self"><img src="../pictures/ppcs/495448-LemruElephantReserve-BangoDamBO.jpg" alt="Lemru Elephant Reserve" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lemru Elephant Reserve</p>
+					</div>
+					<div>
+						<a href="cg/495552-kotmi-sonar-bo.html" target="_self"><img src="../pictures/ppcs/495552-KotmiSonarCrocodilePark-KotmiSonarBO.jpg" alt="Kotmi Sonar Crocodile Park" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kotmi Sonar Crocodile Park</p>
+					</div>
+					<div>
+						<a href="cg/496227-tapkara-so.html" target="_self"><img src="../pictures/ppcs/496227-Snake-TapkaraSO.jpg" alt="Snake" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Snake</p>
+					</div>
+					<div>
+						<a href="cg/497111-kamleshwarpur-bo.html" target="_self"><img src="../pictures/ppcs/497111-OldTibetanBuddhistMonastery-KamleshwarpurBO.jpg" alt="Old Tibetan Buddhist Monastery" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Old Tibetan Buddhist Monastery</p>
+					</div>
+					<div>
+						<a href="cg/497118-rajpur-sij-so.html" target="_self"><img src="../pictures/ppcs/497118-SemarsotSanctuarySpottedDeerSemarsotRiver-RajpurSIJSO.jpg" alt="Semarsot Sanctuary: Spotted Deer, Semarsot River" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Semarsot Sanctuary: Spotted Deer, Semarsot River</p>
+					</div>
+					<div>
+						<a href="cg/497335-baikunthapur-so.html" target="_self"><img src="../pictures/ppcs/497335-AsiaticCheetah-BaikunthapurSO.jpg" alt="Asiatic Cheetah" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Asiatic Cheetah</p>
+					</div>
+					<div>
+						<a href="cg/497442-manendragarh-so.html" target="_self"><img src="../pictures/ppcs/497442-MarineFossil-ManendragarhSO.jpg" alt="Marine Fossil" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Marine Fossil</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Chhattisgarh -->
+			
+			<!-- Start of Telangana -->
+			<div id="Telangana" class="section">
+				<h2>Telangana</h2>
+				<div class="overview-images">
+					<div>
+						<a href="tg/500001-hyderabad-gpo.html" target="_self"><img src="../pictures/ppcs/500001-Charminar-HyderabadGPO.jpg" alt="Charminar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Charminar</p>
+					</div>
+					<div>
+						<a href="tg/500003-rail-nilayam-so.html" target="_self"><img src="../pictures/ppcs/500003-RailwayEngine-RailNilayamSO.jpg" alt="Railway Engine" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Railway Engine</p>
+					</div>
+					<div>
+						<a href="tg/500007-jama-i-osmania-so.html" target="_self"><img src="../pictures/ppcs/500007-OsmaniaUniversity-JamaIOsmaniaSO.jpg" alt="Osmania University" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Osmania University</p>
+					</div>
+					<div>
+						<a href="tg/500008-golconda-so.html" target="_self"><img src="../pictures/ppcs/500008-GolcondaFort-GolcondaSO.jpg" alt="Golconda Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Golconda Fort</p>
+					</div>
+					<div>
+						<a href="tg/500016-begumpet-so.html" target="_self"><img src="../pictures/ppcs/500016-RonaldRossBuilding-BegumpetSO.jpg" alt="Ronald Ross Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ronald Ross Building</p>
+					</div>
+					<div>
+						<a href="tg/500029-himayath-nagar-so.html" target="_self"><img src="../pictures/ppcs/500029-BuddhaStatue-HimayathNagarSO.jpg" alt="Buddha Statue" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Buddha Statue</p>
+					</div>
+					<div>
+						<a href="tg/502110-medak-ho.html" target="_self"><img src="../pictures/ppcs/502110-MedakCathedral-MedakHO.jpg" alt="Medak Cathedral" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Medak Cathedral</p>
+					</div>
+					<div>
+						<a href="tg/506002-warangal-ho.html" target="_self"><img src="../pictures/ppcs/506002-WarangalGate-WarangalHO.jpg" alt="Warangal Gate" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Warangal Gate</p>
+					</div>
+					<div>
+						<a href="tg/507111-bhadrachalam-ho.html" target="_self"><img src="../pictures/ppcs/507111-BhaktaRamadasu-BhadrachalamHO.jpg" alt="Bhakta Ramadasu" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhakta Ramadasu</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Telangana -->
+			
+			<!-- Start of Andhra Pradesh -->
+			<div id="Andhra Pradesh" class="section">
+				<h2>Andhra Pradesh</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ap/515331-lepakshi-so.html" target="_self"><img src="../pictures/ppcs/515331-LepakshiNandi-LepakshiSO.jpg" alt="Lepakshi Nandi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lepakshi Nandi</p>
+					</div>
+					<div>
+						<a href="ap/517501-tirupati-ho.html" target="_self"><img src="../pictures/ppcs/517501-TirumalaGopuramSankhuandChakra-TirupatiHO.jpg" alt="Tirumala Gopuram, Sankhu, and Chakra" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tirumala Gopuram, Sankhu, and Chakra</p>
+					</div>
+					<div>
+						<a href="ap/517504-tirumala-so.html" target="_self"><img src="../pictures/ppcs/517504-TallapakaAnnamacharya-TirumalaSO.jpg" alt="Tallapaka Annamacharya" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tallapaka Annamacharya</p>
+					</div>
+					<div>
+						<a href="ap/517644-srikalahasti-ho.html" target="_self"><img src="../pictures/ppcs/517644-DeityofSriKalahasteeswaraSwamy-SrikalahastiHO.jpg" alt="Deity of Sri Kalahasteeswara Swamy" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Deity of Sri Kalahasteeswara Swamy</p>
+					</div>
+					<div>
+						<a href="ap/518101-srisailam-so.html" target="_self"><img src="../pictures/ppcs/518101-GopuramofSriMallikarjunaSwamyTemple-SrisailamSO.jpg" alt="Gopuram of Sri Mallikarjuna Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gopuram of Sri Mallikarjuna Swamy Temple</p>
+					</div>
+					<div>
+						<a href="ap/522020-amaravathi-so.html" target="_self"><img src="../pictures/ppcs/522020-AmaravathiStupa-AmaravathiSO.jpg" alt="Amaravathi Stupa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Amaravathi Stupa</p>
+					</div>
+					<div>
+						<a href="ap/522501-undavalli-bo.html" target="_self"><img src="../pictures/ppcs/522501-UndavalliCaves-UndavalliBO.jpg" alt="Undavalli Caves" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Undavalli Caves</p>
+					</div>
+					<div>
+						<a href="ap/524124-sriharikota-range-so.html" target="_self"><img src="../pictures/ppcs/524124-ISRORadar-SriharikotaRangeSO.jpg" alt="ISRO Radar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">ISRO Radar</p>
+					</div>
+					<div>
+						<a href="ap/530028-simhachalam-so.html" target="_self"><img src="../pictures/ppcs/530028-GopuramofSriVarahaLakshmiNarasimhaSwamyTemple-SimhachalamSO.jpg" alt="Gopuram of Sri Varaha Lakshmi Narasimha Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gopuram of Sri Varaha Lakshmi Narasimha Swamy Temple</p>
+					</div>
+					<div>
+						<a href="ap/532401-arasavalli-so.html" target="_self"><img src="../pictures/ppcs/532401-GopuramofSriSuryanarayanaSwamyTemple-ArasavalliSO.jpg" alt="Gopuram of Sri Suryanarayana Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gopuram of Sri Suryanarayana Swamy Temple</p>
+					</div>
+					<div>
+						<a href="ap/532404-srikurmam-so.html" target="_self"><img src="../pictures/ppcs/532404-GopuramofSriKurmanathaswamyTemple-SrikurmamSO.jpg" alt="Gopuram of Sri Kurmanathaswamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gopuram of Sri Kurmanathaswamy Temple</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Andhra Pradesh -->
+			
+			<!-- Start of Karnataka -->
+			<div id="Karnataka" class="section">
+				<h2>Karnataka</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ka/560001-bengaluru-gpo-pb.html" target="_self"><img src="../pictures/ppcs/560001-VidhanaSoudha-BengaluruGPOPB.jpg" alt="Vidhana Soudha" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vidhana Soudha</p>
+					</div>
+					<div>
+						<a href="ka/560001-dr-ambedkar-veedhi-so.html" target="_self"><img src="../pictures/ppcs/560001-Beaulieu-DrAmbedkarVeedhiSO.jpg" alt="Beaulieu" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Beaulieu</p>
+					</div>
+					<div>
+						<a href="ka/560001-high-court-so.html" target="_self"><img src="../pictures/ppcs/560001-KarnatakaHighCourtBuilding-HighCourtSO.jpg" alt="Karnataka High Court Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Karnataka High Court Building</p>
+					</div>
+					<div>
+						<a href="ka/560004-basavanagudi-ho.html" target="_self"><img src="../pictures/ppcs/560004-KempegowdaTower-BasavanagudiHO.jpg" alt="Kempegowda Tower" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kempegowda Tower</p>
+					</div>
+					<div>
+						<a href="ka/560010-rajajinagar-ho.html" target="_self"><img src="../pictures/ppcs/560010-RajajinagarFoundationPillar-RajajinagarHO.jpg" alt="Rajajinagar Foundation Pillar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rajajinagar Foundation Pillar</p>
+					</div>
+					<div>
+						<a href="ka/560011-jayanagar-3rdblock-so.html" target="_self"><img src="../pictures/ppcs/560011-AshokaPillar-Jayanagar3rdBlockSO.jpg" alt="Ashoka Pillar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ashoka Pillar</p>
+					</div>
+					<div>
+						<a href="ka/560012-science-institute-so.html" target="_self"><img src="../pictures/ppcs/560012-IndianInstituteofScienceBuilding-ScienceInstituteSO.jpg" alt="Indian Institute of Science Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Institute of Science Building</p>
+					</div>
+					<div>
+						<a href="ka/560017-nal-so.html" target="_self"><img src="../pictures/ppcs/560017-URRaoSatelliteCentre-NALSO.jpg" alt="U R Rao Satellite Centre" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">U R Rao Satellite Centre</p>
+					</div>
+					<div>
+						<a href="ka/560025-museum-road-so.html" target="_self"><img src="../pictures/ppcs/560025-SandeshaMuseum-MuseumRoadSO.jpg" alt="Sandesha Museum" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sandesha Museum</p>
+					</div>
+					<div>
+						<a href="ka/560083-bannerghatta-so.html" target="_self"><img src="../pictures/ppcs/560083-Butterfly-MalabarBandedPeacock-BannerghattaSO.jpg" alt="Butterfly - Malabar Banded Peacock" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Butterfly - Malabar Banded Peacock</p>
+					</div>
+					<div>
+						<a href="ka/560092-kodigehalli-bo.html" target="_self"><img src="../pictures/ppcs/560092-InscriptionStonesofBengaluru-KodigehalliBO.jpg" alt="Inscription Stones of Bengaluru" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Inscription Stones of Bengaluru</p>
+					</div>
+					<div>
+						<a href="ka/560300-kempegowda-international-airport-so.html" target="_self"><img src="../pictures/ppcs/560300-StatueofProsperity&KempegowdaInternationalAirport-KempegowdaInternationalAirportSO.jpg" alt="Statue of Prosperity &amp; Kempegowda International Airport" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Statue of Prosperity &amp; Kempegowda International Airport</p>
+					</div>
+					<div>
+						<a href="ka/562101-nandi-hills-bo.html" target="_self"><img src="../pictures/ppcs/562101-NandiStatue-NandiHillsBO.jpg" alt="Nellikaayi Basavanna" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nellikaayi Basavanna</p>
+					</div>
+					<div>
+						<a href="ka/562168-helagalli-bo.html" target="_self"><img src="../pictures/ppcs/562168-GrizzledGiantSquirrel-HelagalliBO.jpg" alt="Grizzled Giant Squirrel" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Grizzled Giant Squirrel</p>
+					</div>
+					<div>
+						<a href="ka/563117-championreefs-so.html" target="_self"><img src="../pictures/ppcs/563117-GoldMiner-ChampionreefsSO.jpg" alt="Gold Miner" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gold Miner</p>
+					</div>
+					<div>
+						<a href="ka/563139-masthi-so.html" target="_self"><img src="../pictures/ppcs/563139-MastiVenkateshaIyengar-MasthiSO.jpg" alt="Masti Venkatesha Iyengar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Masti Venkatesha Iyengar</p>
+					</div>
+					<div>
+						<a href="ka/570001-mysuru-ho-pb.html" target="_self"><img src="../pictures/ppcs/570001-ElephantCarryingHowdah-MysuruHOPB.jpg" alt="Elephant Carrying Howdah" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Elephant Carrying Howdah</p>
+					</div>
+					<div>
+						<a href="ka/570004-lakshmipuram-so.html" target="_self"><img src="../pictures/ppcs/570004-SilverJubileeClockTower-LakshmipuramSO.jpg" alt="Silver Jubilee Clock Tower" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Silver Jubilee Clock Tower</p>
+					</div>
+					<div>
+						<a href="ka/570009-saraswathipuram-ho.html" target="_self"><img src="../pictures/ppcs/570009-MysuruOurHeritageYourDestination-SaraswathipuramHO.jpg" alt="Mysuru: Our Heritage - Your Destination" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mysuru: Our Heritage - Your Destination</p>
+					</div>
+					<div>
+						<a href="ka/570010-chamundibetta-bo.html" target="_self"><img src="../pictures/ppcs/570010-Mahishasura-ChamundibettaBO.jpg" alt="Mahishasura" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahishasura</p>
+					</div>
+					<div>
+						<a href="ka/570010-ptc-campus-so.html" target="_self"><img src="../pictures/ppcs/570010-PostalTrainingCentreMysuru-PTCCampusSO.jpg" alt="Postal Training Centre Mysuru" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Postal Training Centre Mysuru</p>
+					</div>
+					<div>
+						<a href="ka/570020-yadavagiri-so.html" target="_self"><img src="../pictures/ppcs/570020-SriRamakrishnaAshrama-YadavagiriSO.jpg" alt="Sri Ramakrishna Ashrama" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Ramakrishna Ashrama</p>
+					</div>
+					<div>
+						<a href="ka/570025-sgs-ashram-mysuru-so.html" target="_self"><img src="../pictures/ppcs/570025-NadaMantapa-SGSAshramMysuruSO.jpg" alt="Nada Mantapa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nada Mantapa</p>
+					</div>
+					<div>
+						<a href="ka/571120-somanathapura-bo.html" target="_self"><img src="../pictures/ppcs/571120-SriChennakesavaTemple-SomanathapuraBO.jpg" alt="Sri Chennakesava Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Chennakesava Temple</p>
+					</div>
+					<div>
+						<a href="ka/571122-talakad-so.html" target="_self"><img src="../pictures/ppcs/571122-PanchalingaDarshan-TalakadSO.jpg" alt="Panchalinga Darshan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Panchalinga Darshan</p>
+					</div>
+					<div>
+						<a href="ka/571126-bandipur-bo-1.html" target="_self"><img src="../pictures/ppcs/571126-TigerFace-BandipurBO.jpg" alt="Tiger Face" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tiger Face</p>
+					</div>
+					<div>
+						<a href="ka/571126-bandipur-bo-2.html" target="_self"><img src="../pictures/ppcs/571126-TigerPaw-BandipurBO.jpg" alt="Tiger Paw" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tiger Paw</p>
+					</div>
+					<div>
+						<a href="ka/571201-madikeri-ho.html" target="_self"><img src="../pictures/ppcs/571201-OdiKathi&PeechiKathi-MadikeriHO.jpg" alt="Odi Kathi &amp; Peechi Kathi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Odi Kathi &amp; Peechi Kathi</p>
+					</div>
+					<div>
+						<a href="ka/571250-nagarahole-bo.html" target="_self"><img src="../pictures/ppcs/571250-GloriosaSuperbaWildLily-NagaraholeBO.jpg" alt="Gloriosa Superba (Wild Lily)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gloriosa Superba (Wild Lily)</p>
+					</div>
+					<div>
+						<a href="ka/571342-kyathadevaragudi-bo.html" target="_self"><img src="../pictures/ppcs/571342-Porcupine-KyathadevaragudiBO.jpg" alt="Porcupine" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Porcupine</p>
+					</div>
+					<div>
+						<a href="ka/571433-kokkare-bellur-bo.html" target="_self"><img src="../pictures/ppcs/571433-SpotBilledPelican-KokkareBellurBO.jpg" alt="Spot-Billed Pelican" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Spot-Billed Pelican</p>
+					</div>
+					<div>
+						<a href="ka/571438-srirangapatna-ho-1.html" target="_self"><img src="../pictures/ppcs/571438-Gumbaz-SrirangapatnaHO.jpg" alt="Gumbaz" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gumbaz</p>
+					</div>
+					<div>
+						<a href="ka/571438-srirangapatna-ho-2.html" target="_self"><img src="../pictures/ppcs/571438-CrownandSwordofTipuSultan-SrirangapatnaHO.jpg" alt="Crown and Sword of Tipu Sultan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Crown and Sword of Tipu Sultan</p>
+					</div>
+					<div>
+						<a href="ka/571490-mahadeshwara-malai-so.html" target="_self"><img src="../pictures/ppcs/571490-Elephant-MahadeshwaraMalaiSO.jpg" alt="Elephant" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Elephant</p>
+					</div>
+					<div>
+						<a href="ka/572104-siddaganga-mutt-so.html" target="_self"><img src="../pictures/ppcs/572104-HisHolinessSriSivakumaraMahaswamiji-SiddagangaMuttSO.jpg" alt="His Holiness Sri Sivakumara Mahaswamiji" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">His Holiness Sri Sivakumara Mahaswamiji</p>
+					</div>
+					<div>
+						<a href="ka/572168-hirehalli-so.html" target="_self"><img src="../pictures/ppcs/572168-PinchiBasadiMandaragiri-HirehalliSO.jpg" alt="Pinchi Basadi, Mandaragiri" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pinchi Basadi, Mandaragiri</p>
+					</div>
+					<div>
+						<a href="ka/573115-belur-so.html" target="_self"><img src="../pictures/ppcs/573115-DarpanaSundari-BelurSO.jpg" alt="Darpana Sundari" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Darpana Sundari</p>
+					</div>
+					<div>
+						<a href="ka/573121-halebeedu-so.html" target="_self"><img src="../pictures/ppcs/573121-NatyaSaraswati-HalebeeduSO.jpg" alt="Natya Saraswati" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Natya Saraswati</p>
+					</div>
+					<div>
+						<a href="ka/573131-nuggihalli-so.html" target="_self"><img src="../pictures/ppcs/573131-SriHoysalaLakshmiNarasimhaSwamyTemple-NuggihalliSO.jpg" alt="Sri Hoysala Lakshmi Narasimha Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Hoysala Lakshmi Narasimha Swamy Temple</p>
+					</div>
+					<div>
+						<a href="ka/573135-shravanabelagola-so.html" target="_self"><img src="../pictures/ppcs/573135-Gomateswara-ShravanabelagolaSO.jpg" alt="Gomateswara" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gomateswara</p>
+					</div>
+					<div>
+						<a href="ka/574104-karkala-ho.html" target="_self"><img src="../pictures/ppcs/574104-SeatedTirthankara-KarkalaHO.jpg" alt="Seated Tirthankara" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Seated Tirthankara</p>
+					</div>
+					<div>
+						<a href="ka/574105-katapadi-so.html" target="_self"><img src="../pictures/ppcs/574105-MattuGulla-ShankarpuraSO.jpg" alt="Mattu Gulla" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mattu Gulla</p>
+					</div>
+					<div>
+						<a href="ka/574106-kaup-so.html" target="_self"><img src="../pictures/ppcs/574106-KaupLighthouse-KaupSO.jpg" alt="Kaup Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kaup Lighthouse</p>
+					</div>
+					<div>
+						<a href="ka/574108-varanga-bo.html" target="_self"><img src="../pictures/ppcs/574108-KereBasadi-VarangaBO.jpg" alt="Kere Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kere Basadi</p>
+					</div>
+					<div>
+						<a href="ka/574115-shankarpura-so.html" target="_self"><img src="../pictures/ppcs/574115-ShankarpuraMallige-ShankarpuraSO.jpg" alt="Shankarpura Mallige" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shankarpura Mallige</p>
+					</div>
+					<div>
+						<a href="ka/574148-kateel-so.html" target="_self"><img src="../pictures/ppcs/574148-SriDurgaParameshwariTemple-KateelSO.jpg" alt="Sri Durga Parameshwari Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Durga Parameshwari Temple</p>
+					</div>
+					<div>
+						<a href="ka/574216-dharmasthala-so.html" target="_self"><img src="../pictures/ppcs/574216-SriManjunatheswaraTemple-DharmasthalaSO.jpg" alt="Sri Manjunatheswara Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Manjunatheswara Temple</p>
+					</div>
+					<div>
+						<a href="ka/574227-moodbidri-so.html" target="_self"><img src="../pictures/ppcs/574227-SaaviraKambadaBasadi-MoodbidriSO.jpg" alt="Saavira Kambada Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Saavira Kambada Basadi</p>
+					</div>
+					<div>
+						<a href="ka/574238-subramanya-so.html" target="_self"><img src="../pictures/ppcs/574238-Vasuki-SubramanyaSO.jpg" alt="Vasuki" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vasuki</p>
+					</div>
+					<div>
+						<a href="ka/574242-venur-so.html" target="_self"><img src="../pictures/ppcs/574242-BaahubaliLordGomateswaraStatue-VenurSO.jpg" alt="Baahubali (Lord Gomateswara Statue)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Baahubali (Lord Gomateswara Statue)</p>
+					</div>
+					<div>
+						<a href="ka/575001-mangaluru-ho-pb.html" target="_self"><img src="../pictures/ppcs/575001-MangaluruLighthouse-MangaluruHOPB.jpg" alt="Mangaluru Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mangaluru Lighthouse</p>
+					</div>
+					<div>
+						<a href="ka/575020-ullal-so.html" target="_self"><img src="../pictures/ppcs/575020-RaniAbbakkaDevi-UllalSO.jpg" alt="Rani Abbakka Devi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rani Abbakka Devi</p>
+					</div>
+					<div>
+						<a href="ka/576101-udupi-ho.html" target="_self"><img src="../pictures/ppcs/576101-DeityofSriKrishna-UdupiHO.jpg" alt="Udupi Sri Krishna" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Udupi Sri Krishna</p>
+					</div>
+					<div>
+						<a href="ka/576104-manipal-ho.html" target="_self"><img src="../pictures/ppcs/576104-SriVenugopalaSwamyTemple-ManipalHO.jpg" alt="Sri Venugopala Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Venugopala Swamy Temple</p>
+					</div>
+					<div>
+						<a href="ka/576108-malpe-so.html" target="_self"><img src="../pictures/ppcs/576108-StMary’sIslands-MalpeSO.jpg" alt="St. Mary’s Islands" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">St. Mary’s Islands</p>
+					</div>
+					<div>
+						<a href="ka/576111-nandalike-bo.html" target="_self"><img src="../pictures/ppcs/576111-KaviMuddana&Manorame-NandalikeBO.jpg" alt="Kavi Muddana &amp; Manorame" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kavi Muddana &amp; Manorame</p>
+					</div>
+					<div>
+						<a href="ka/576112-someshwara-bo.html" target="_self"><img src="../pictures/ppcs/576112-IndianSpottedChevrotainMouseDeer-SomeshwaraBO.jpg" alt="Indian Spotted Chevrotain (Mouse Deer)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Spotted Chevrotain (Mouse Deer)</p>
+					</div>
+					<div>
+						<a href="ka/576117-attur-bo.html" target="_self"><img src="../pictures/ppcs/576117-StLawrenceMinorBasilica-AtturBO.jpg" alt="St. Lawrence Minor Basilica" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">St. Lawrence Minor Basilica</p>
+					</div>
+					<div>
+						<a href="ka/576201-kundapura-ho.html" target="_self"><img src="../pictures/ppcs/576201-Panchagangavali-KundapuraHO.jpg" alt="Panchagangavali" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Panchagangavali</p>
+					</div>
+					<div>
+						<a href="ka/576210-barkur-so.html" target="_self"><img src="../pictures/ppcs/576210-KathaleBasadi-BarkurSO.jpg" alt="Kathale Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kathale Basadi</p>
+					</div>
+					<div>
+						<a href="ka/576220-kollur-so.html" target="_self"><img src="../pictures/ppcs/576220-SriMookambikaTempleKollur-KollurSO.jpg" alt="Sri Mookambika Temple, Kollur" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Mookambika Temple, Kollur</p>
+					</div>
+					<div>
+						<a href="ka/576221-kota-so.html" target="_self"><img src="../pictures/ppcs/576221-KotaShivaramaKaranth-KotaSO.jpg" alt="Kota Shivarama Karanth" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kota Shivarama Karanth</p>
+					</div>
+					<div>
+						<a href="ka/576223-mandarthi-so.html" target="_self"><img src="../pictures/ppcs/576223-YakshaganaofMandarthi-MandarthiSO.jpg" alt="Yakshagana of Mandarthi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Yakshagana of Mandarthi</p>
+					</div>
+					<div>
+						<a href="ka/577001-davanagere-ho.html" target="_self"><img src="../pictures/ppcs/577001-SriChennagiriRengappaClockTower-DavanagereHO.jpg" alt="Sri Chennagiri Rengappa Clock Tower" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Chennagiri Rengappa Clock Tower</p>
+					</div>
+					<div>
+						<a href="ka/577101-chikkamagaluru-ho.html" target="_self"><img src="../pictures/ppcs/577101-CoffeeEstatesofChikkamagaluru-ChikkamagaluruHO.jpg" alt="Coffee Estates of Chikkamagaluru" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Coffee Estates of Chikkamagaluru</p>
+					</div>
+					<div>
+						<a href="ka/577139-sringeri-so.html" target="_self"><img src="../pictures/ppcs/577139-SriVidyasankaraTemple-SringeriSO.jpg" alt="Sri Vidyasankara Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Vidyasankara Temple</p>
+					</div>
+					<div>
+						<a href="ka/577411-agumbe-so.html" target="_self"><img src="../pictures/ppcs/577411-KalingaKingCobra-AgumbeSO.jpg" alt="Kalinga - King Cobra" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kalinga - King Cobra</p>
+					</div>
+					<div>
+						<a href="ka/577411-kendalbailu-bo.html" target="_self"><img src="../pictures/ppcs/577411-KundadriShriParshwanathaBasadi-KendalbailuBO.jpg" alt="Kundadri Shri Parshwanatha Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kundadri Shri Parshwanatha Basadi</p>
+					</div>
+					<div>
+						<a href="ka/577415-devangi-so.html" target="_self"><img src="../pictures/ppcs/577415-KaviShaila-DevangiSO.jpg" alt="Kavi Shaila" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kavi Shaila</p>
+					</div>
+					<div>
+						<a href="ka/577435-jog-falls-so.html" target="_self"><img src="../pictures/ppcs/577435-JogFalls-JogFallsSO.jpg" alt="Jog Falls" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Jog Falls</p>
+					</div>
+					<div>
+						<a href="ka/577436-humcha-so.html" target="_self"><img src="../pictures/ppcs/577436-SriHombujaJainMath-HumchaSO.jpg" alt="Sri Hombuja Jain Math" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Hombuja Jain Math</p>
+					</div>
+					<div>
+						<a href="ka/577501-chitradurga-ho.html" target="_self"><img src="../pictures/ppcs/577501-OnakeObavva-ChitradurgaHO.jpg" alt="Onake Obavva" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Onake Obavva</p>
+					</div>
+					<div>
+						<a href="ka/580008-narayanapura-so.html" target="_self"><img src="../pictures/ppcs/580008-BendreBhavan-NarayanapuraSO.jpg" alt="Bendre Bhavan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bendre Bhavan</p>
+					</div>
+					<div>
+						<a href="ka/580020-hubballi-ho.html" target="_self"><img src="../pictures/ppcs/580020-UnkalLake-HubballiHO.jpg" alt="Unkal Lake" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Unkal Lake</p>
+					</div>
+					<div>
+						<a href="ka/581115-ranebennur-so.html" target="_self"><img src="../pictures/ppcs/581115-BlackBuckSanctuary-RanebennurSO.jpg" alt="Black Buck Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Black Buck Sanctuary</p>
+					</div>
+					<div>
+						<a href="ka/581126-shishuvinahal-bo.html" target="_self"><img src="../pictures/ppcs/581126-SriSharifaShivayogiandGuruGovindShivayogi-ShishuvinahalBO.jpg" alt="Sri Sharifa Shivayogi and Guru Govind Shivayogi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Sharifa Shivayogi and Guru Govind Shivayogi</p>
+					</div>
+					<div>
+						<a href="ka/581315-manjuguni-bo.html" target="_self"><img src="../pictures/ppcs/581315-SymbolsofSriVenkataramanaTemple-ManjuguniBO.jpg" alt="Symbols of Sri Venkataramana Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Symbols of Sri Venkataramana Temple</p>
+					</div>
+					<div>
+						<a href="ka/581350-murudeshwar-so.html" target="_self"><img src="../pictures/ppcs/581350-LordShiva-MurudeshwarSO.jpg" alt="Lord Shiva" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lord Shiva</p>
+					</div>
+					<div>
+						<a href="ka/581362-kodambale-bo.html" target="_self"><img src="../pictures/ppcs/581362-YanaCaves-KodambaleBO.jpg" alt="Yana Caves" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Yana Caves</p>
+					</div>
+					<div>
+						<a href="ka/581384-gersoppa-jyothinagar-so.html" target="_self"><img src="../pictures/ppcs/581384-ShriChaturmukhaDigambaraBasadi-GersoppaJyothinagarSO.jpg" alt="Shri Chaturmukha Digambara Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Chaturmukha Digambara Basadi</p>
+					</div>
+					<div>
+						<a href="ka/581423-melina-idagunji-so.html" target="_self"><img src="../pictures/ppcs/581423-ShriIdagunjiMahaGanapathi-MelinaIdagunjiSO.jpg" alt="Shri Idagunji Maha Ganapathi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri Idagunji Maha Ganapathi</p>
+					</div>
+					<div>
+						<a href="ka/582101-gadag-ho.html" target="_self"><img src="../pictures/ppcs/582101-Kumaravyasa-GadagHO.jpg" alt="Kumaravyasa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kumaravyasa</p>
+					</div>
+					<div>
+						<a href="ka/582115-lakkundi-so.html" target="_self"><img src="../pictures/ppcs/582115-BrahmaJinalaya-LakkundiSO.jpg" alt="Brahma Jinalaya" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Brahma Jinalaya</p>
+					</div>
+					<div>
+						<a href="ka/582201-annigeri-so.html" target="_self"><img src="../pictures/ppcs/582201-AdikaviPampa-AnnigeriSO.jpg" alt="Adikavi Pampa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Adikavi Pampa</p>
+					</div>
+					<div>
+						<a href="ka/583102-ballari-fort-so.html" target="_self"><img src="../pictures/ppcs/583102-BallariFort-BallariFortSO.jpg" alt="Ballari Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ballari Fort</p>
+					</div>
+					<div>
+						<a href="ka/583119-sandur-so.html" target="_self"><img src="../pictures/ppcs/583119-Parvati-KumaraswamyTemple-SandurSO.jpg" alt="Parvati - Kumaraswamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Parvati - Kumaraswamy Temple</p>
+					</div>
+					<div>
+						<a href="ka/583227-anegundi-bo.html" target="_self"><img src="../pictures/ppcs/583227-KishkindaAnjanadriHill-AnegundiBO.jpg" alt="Kishkinda: Anjanadri Hill" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kishkinda: Anjanadri Hill</p>
+					</div>
+					<div>
+						<a href="ka/583231-koppal-ho.html" target="_self"><img src="../pictures/ppcs/583231-SriGaviSiddeshwarSamsthanaSriGavimath-KoppalHO.jpg" alt="Sri Gavi Siddeshwar Samsthana Sri Gavimath" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Gavi Siddeshwar Samsthana Sri Gavimath</p>
+					</div>
+					<div>
+						<a href="ka/583239-hampi-so.html" target="_self"><img src="../pictures/ppcs/583239-StoneChariot-HampiSO.jpg" alt="Stone Chariot" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Stone Chariot</p>
+					</div>
+					<div>
+						<a href="ka/583276-kannada-university-campus-so.html" target="_self"><img src="../pictures/ppcs/583276-SlothBear-DarojiBearSanctuary-KannadaUniversityCampusSO.jpg" alt="Sloth Bear-Daroji Bear Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sloth Bear-Daroji Bear Sanctuary</p>
+					</div>
+					<div>
+						<a href="ka/584140-bichali-bo.html" target="_self"><img src="../pictures/ppcs/584140-SriAppannacharyaSwamijisHouse-AbodeofSriGuruRaghavendraSwami-BichaliBO.jpg" alt="Sri Appannacharya Swamiji's House - Abode of Sri Guru Raghavendra Swami" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Appannacharya Swamiji's House - Abode of Sri Guru Raghavendra Swami</p>
+					</div>
+					<div>
+						<a href="ka/585101-kalaburagi-ho.html" target="_self"><img src="../pictures/ppcs/585101-BaraGaziToph-KalaburagiHO.jpg" alt="Bara Gazi Toph" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bara Gazi Toph</p>
+					</div>
+					<div>
+						<a href="ka/585224-bonal-bo.html" target="_self"><img src="../pictures/ppcs/585224-BonalBirdSanctuary-BonalBO.jpg" alt="Bonal Bird Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bonal Bird Sanctuary</p>
+					</div>
+					<div>
+						<a href="ka/585226-kamthana-so.html" target="_self"><img src="../pictures/ppcs/585226-Shri1008ParshwanathBhagawan-KamthanaSO.jpg" alt="Shri 1008 Parshwanath Bhagawan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shri 1008 Parshwanath Bhagawan</p>
+					</div>
+					<div>
+						<a href="ka/585327-basavakalyan-so.html" target="_self"><img src="../pictures/ppcs/585327-AnubhavaMantapa-BasavakalyanSO.jpg" alt="Anubhava Mantapa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Anubhava Mantapa</p>
+					</div>
+					<div>
+						<a href="ka/585401-bidar-ho.html" target="_self"><img src="../pictures/ppcs/585401-MadrasaofMohammedGawan-BidarHO.jpg" alt="Madrasa of Mohammed Gawan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Madrasa of Mohammed Gawan</p>
+					</div>
+					<div>
+						<a href="ka/585402-guru-nanak-jhira-so.html" target="_self"><img src="../pictures/ppcs/585402-GuruNanakJhira-GuruNanakJhiraSO.jpg" alt="Guru Nanak Jhira" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Guru Nanak Jhira</p>
+					</div>
+					<div>
+						<a href="ka/586101-vijayapura-ho.html" target="_self"><img src="../pictures/ppcs/586101-GolGumbaz-VijayapuraHO.jpg" alt="Gol Gumbaz" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gol Gumbaz</p>
+					</div>
+					<div>
+						<a href="ka/587124-aihole-bo.html" target="_self"><img src="../pictures/ppcs/587124-ChalukyanRoyalEmblem-AiholeBO.jpg" alt="Chalukyan Royal Emblem" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chalukyan Royal Emblem</p>
+					</div>
+					<div>
+						<a href="ka/587201-badami-so.html" target="_self"><img src="../pictures/ppcs/587201-LordNataraja-BadamiSO.jpg" alt="Lord Nataraja" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lord Nataraja</p>
+					</div>
+					<div>
+						<a href="ka/587201-pattadakal-bo.html" target="_self"><img src="../pictures/ppcs/587201-GalaganathaTemple-PattadakalBO.jpg" alt="Galaganatha Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Galaganatha Temple</p>
+					</div>
+					<div>
+						<a href="ka/590001-belagavi-ho-pb.html" target="_self"><img src="../pictures/ppcs/590001-ClockTowerofBelagavi-BelagaviHOPB.jpg" alt="Clock Tower of Belagavi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Clock Tower of Belagavi</p>
+					</div>
+					<div>
+						<a href="ka/590016-belagavi-fort-so.html" target="_self"><img src="../pictures/ppcs/590016-KamalBasadi-BelagaviFortSO.jpg" alt="Kamal Basadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kamal Basadi</p>
+					</div>
+					<div>
+						<a href="ka/591115-kittur-so.html" target="_self"><img src="../pictures/ppcs/591115-KitturRaniChennamma-KitturSO.jpg" alt="Kittur Rani Chennamma" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kittur Rani Chennamma</p>
+					</div>
+					<div>
+						<a href="ka/591120-halashi-bo.html" target="_self"><img src="../pictures/ppcs/591120-RoyalLogoofKadamba-HalashiBO.jpg" alt="Royal Logo of Kadamba" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Royal Logo of Kadamba</p>
+					</div>
+					<div>
+						<a href="ka/591120-nandgad-so.html" target="_self"><img src="../pictures/ppcs/591120-KrantiveeraSangolliRayanna-NandgadSO.jpg" alt="Krantiveera Sangolli Rayanna" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Krantiveera Sangolli Rayanna</p>
+					</div>
+					<div>
+						<a href="ka/591126-hooli-bo.html" target="_self"><img src="../pictures/ppcs/591126-PanchalingeswaraTemple-HooliBO.jpg" alt="Panchalingeswara Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Panchalingeswara Temple</p>
+					</div>
+					<div>
+						<a href="ka/591173-yallamma-hill-so.html" target="_self"><img src="../pictures/ppcs/591173-SriRenukaYallammaDevasthan-YallammaHillSO.jpg" alt="Sri Renuka Yallamma Devasthan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Renuka Yallamma Devasthan</p>
+					</div>
+					<div>
+						<a href="ka/591302-shiroli-bo.html" target="_self"><img src="../pictures/ppcs/591302-BhimgadWildlifeSanctuary-ShiroliBO.jpg" alt="Bhimgad Wildlife Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhimgad Wildlife Sanctuary</p>
+					</div>
+					<div>
+						<a href="ka/591308-gokak-falls-so.html" target="_self"><img src="../pictures/ppcs/591308-GokakFalls-GokakFallsSO.jpg" alt="Gokak Falls" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gokak Falls</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Karnataka -->
+			
+			<!-- Start of Tamil Nadu -->
+			<div id="Tamil Nadu" class="section">
+				<h2>Tamil Nadu</h2>
+				<div class="overview-images">
+					<div>
+						<a href="tn/600001-chennai-gpo.html" target="_self"><img src="../pictures/ppcs/600001-ChennaiGeneralPostOffice-ChennaiGPO.jpg" alt="Chennai General Post Office" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chennai General Post Office</p>
+					</div>
+					<div>
+						<a href="tn/600002-anna-road-ho.html" target="_self"><img src="../pictures/ppcs/600002-AnnaRoadPostOfficeWarwickElectricTheatre-AnnaRoadHO.jpg" alt="Anna Road Post Office (Warwick Electric Theatre)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Anna Road Post Office (Warwick Electric Theatre)</p>
+					</div>
+					<div>
+						<a href="tn/600004-mylapore-ho.html" target="_self"><img src="../pictures/ppcs/600004-PunnaiLeavesandPeacock-MylaporeHO.jpg" alt="Punnai Leaves and Peacock" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Punnai Leaves and Peacock</p>
+					</div>
+					<div>
+						<a href="tn/600005-madras-university-so.html" target="_self"><img src="../pictures/ppcs/600005-UniversityofMadras-MadrasUniversitySO.jpg" alt="University of Madras" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">University of Madras</p>
+					</div>
+					<div>
+						<a href="tn/601205-pulicat-so.html" target="_self"><img src="../pictures/ppcs/601205-PulicatLighthouse-PulicatSO.jpg" alt="Pulicat Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pulicat Lighthouse</p>
+					</div>
+					<div>
+						<a href="tn/603104-mamallapuram-so.html" target="_self"><img src="../pictures/ppcs/603104-ShoreTemple-MamallapuramSO.jpg" alt="Shore Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shore Temple</p>
+					</div>
+					<div>
+						<a href="tn/603314-vedanthangal-bo.html" target="_self"><img src="../pictures/ppcs/603314-PaintedStork-VedanthangalBO.jpg" alt="Painted Stork" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Painted Stork</p>
+					</div>
+					<div>
+						<a href="tn/604202-gingee-so.html" target="_self"><img src="../pictures/ppcs/604202-GingeeFort-GingeeSO.jpg" alt="Gingee Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gingee Fort</p>
+					</div>
+					<div>
+						<a href="tn/606601-tiruvannamalai-ho.html" target="_self"><img src="../pictures/ppcs/606601-OilLamp-TiruvannamalaiHO.jpg" alt="Oil Lamp" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Oil Lamp</p>
+					</div>
+					<div>
+						<a href="tn/606603-sri-ramanasramam-so.html" target="_self"><img src="../pictures/ppcs/606603-LogoofSriRamanasramam-SriRamanasramamSO.jpg" alt="Logo of Sri Ramanasramam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of Sri Ramanasramam</p>
+					</div>
+					<div>
+						<a href="tn/607303-vadalur-so.html" target="_self"><img src="../pictures/ppcs/607303-SathyaGnanaSabha-VadalurSO.jpg" alt="Sathya Gnana Sabha" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sathya Gnana Sabha</p>
+					</div>
+					<div>
+						<a href="tn/608001-chidambaram-ho.html" target="_self"><img src="../pictures/ppcs/608001-LordNataraja-ChidambaramHO.jpg" alt="Lord Nataraja" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lord Nataraja</p>
+					</div>
+					<div>
+						<a href="tn/608102-killai-so.html" target="_self"><img src="../pictures/ppcs/608102-PichavaramMangroveForest-KillaiSO.jpg" alt="Pichavaram Mangrove Forest" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pichavaram Mangrove Forest</p>
+					</div>
+					<div>
+						<a href="tn/610001-tiruvarur-ho.html" target="_self"><img src="../pictures/ppcs/610001-ThyagarajaswamyTempleChariot-TiruvarurHO.jpg" alt="Thyagarajaswamy Temple Chariot" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thyagarajaswamy Temple Chariot</p>
+					</div>
+					<div>
+						<a href="tn/611002-nagore-so.html" target="_self"><img src="../pictures/ppcs/611002-DargahSharif-NagoreSO.jpg" alt="Dargah Sharif" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dargah Sharif</p>
+					</div>
+					<div>
+						<a href="tn/611111-vailankanni-so.html" target="_self"><img src="../pictures/ppcs/611111-ShrineBasilicaofMotherMary-VailankanniSO.jpg" alt="Shrine Basilica of Mother Mary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shrine Basilica of Mother Mary</p>
+					</div>
+					<div>
+						<a href="tn/612302-swamimalai-so.html" target="_self"><img src="../pictures/ppcs/612302-PranavaMantra&VelofLordMurugan-SwamimalaiSO.jpg" alt="Pravana Mantra &amp; Vel of Lord Murugan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pravana Mantra &amp; Vel of Lord Murugan</p>
+					</div>
+					<div>
+						<a href="tn/612702-darasuram-so.html" target="_self"><img src="../pictures/ppcs/612702-BullandElephantSculpture-DarasuramSO.jpg" alt="Bull and Elephant Sculpture" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bull and Elephant Sculpture</p>
+					</div>
+					<div>
+						<a href="tn/612901-gangaikondacholapuram-so.html" target="_self"><img src="../pictures/ppcs/612901-GreatNandi-GangaikondacholapuramSO.jpg" alt="Great Nandi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Great Nandi</p>
+					</div>
+					<div>
+						<a href="tn/613001-thanjavur-ho.html" target="_self"><img src="../pictures/ppcs/613001-BrihadeeswaraSwamyTemple-ThanjavurHO.jpg" alt="Brihadeeswara Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Brihadeeswara Swamy Temple</p>
+					</div>
+					<div>
+						<a href="tn/613102-thogur-so.html" target="_self"><img src="../pictures/ppcs/613102-Kallanai-TheGrandAnicut-ThogurSO.jpg" alt="Kallanai - The Grand Anicut" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kallanai - The Grand Anicut</p>
+					</div>
+					<div>
+						<a href="tn/613204-thiruvaiyaru-so.html" target="_self"><img src="../pictures/ppcs/613204-SaintTyagaraja-ThiruvaiyaruSO.jpg" alt="Saint Tyagaraja" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Saint Tyagaraja</p>
+					</div>
+					<div>
+						<a href="tn/614807-kodikkarai-so.html" target="_self"><img src="../pictures/ppcs/614807-Flamingo-KodikkaraiSO.jpg" alt="Flamingo" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Flamingo</p>
+					</div>
+					<div>
+						<a href="tn/620001-tiruchirappalli-pb.html" target="_self"><img src="../pictures/ppcs/620001-RockFort-TiruchirappalliPB.jpg" alt="Rock Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rock Fort</p>
+					</div>
+					<div>
+						<a href="tn/620006-srirangam-ho.html" target="_self"><img src="../pictures/ppcs/620006-AdiseshanofLordRanganatha-SrirangamHO.jpg" alt="Adiseshan of Lord Ranganatha" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Adiseshan of Lord Ranganatha</p>
+					</div>
+					<div>
+						<a href="tn/623526-rameswaram-so.html" target="_self"><img src="../pictures/ppcs/623526-SriRamanathaswamyTempleCorridor-RameswaramSO.jpg" alt="Sri Ramanathaswamy Temple Corridor" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Ramanathaswamy Temple Corridor</p>
+					</div>
+					<div>
+						<a href="tn/624101-kodaikanal-so.html" target="_self"><img src="../pictures/ppcs/624101-KodaikanalObservatory-KodaikanalSO.jpg" alt="Kodaikanal Observatory" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kodaikanal Observatory</p>
+					</div>
+					<div>
+						<a href="tn/624601-palani-ho.html" target="_self"><img src="../pictures/ppcs/624601-VelSpearandPeacockFeatherofLordMurugan-PalaniHO.jpg" alt="Vel (Spear) and Peacock Feather of Lord Murugan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vel (Spear) and Peacock Feather of Lord Murugan</p>
+					</div>
+					<div>
+						<a href="tn/625001-madurai-bazaar-so.html" target="_self"><img src="../pictures/ppcs/625001-MeenakshiAmmanTemple-MaduraiBazaarSO.jpg" alt="Meenakshi Sundareswarar Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Meenakshi Sundareswarar Temple</p>
+					</div>
+					<div>
+						<a href="tn/625001-madurai-ho.html" target="_self"><img src="../pictures/ppcs/625001-FlagofPandyaDynastywithAquariusEmblem-MaduraiHO.jpg" alt="Flag of Pandya Dynasty with Aquarius Emblem" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Flag of Pandya Dynasty with Aquarius Emblem</p>
+					</div>
+					<div>
+						<a href="tn/625005-thiruparankundram-so.html" target="_self"><img src="../pictures/ppcs/625005-RajagopuramofArulmiguSubramaniyaSwamyTemple-ThiruparankundramSO.jpg" alt="Rajagopuram of Arulmigu Subramaniya Swamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rajagopuram of Arulmigu Subramaniya Swamy Temple</p>
+					</div>
+					<div>
+						<a href="tn/625301-alagarkovil-so.html" target="_self"><img src="../pictures/ppcs/625301-LordMuruganofPazhamudircholai&Avvaiyar-AlagarkovilSO.jpg" alt="Lord Murugan of Pazhamudircholai &amp; Avvaiyar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lord Murugan of Pazhamudircholai &amp; Avvaiyar</p>
+					</div>
+					<div>
+						<a href="tn/627501-kalakad-so.html" target="_self"><img src="../pictures/ppcs/627501-LionTailedMacaque-KalakadSO.jpg" alt="Lion Tailed Macaque" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lion Tailed Macaque</p>
+					</div>
+					<div>
+						<a href="tn/627802-courtallam-so.html" target="_self"><img src="../pictures/ppcs/627802-CourtallamWaterfalls-CourtallamSO.jpg" alt="Courtallam Waterfalls" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Courtallam Waterfalls</p>
+					</div>
+					<div>
+						<a href="tn/628209-manapad-so.html" target="_self"><img src="../pictures/ppcs/628209-ManapadLighthouse-ManapadSO.jpg" alt="Manapad Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Manapad Lighthouse</p>
+					</div>
+					<div>
+						<a href="tn/628215-tiruchendur-ho.html" target="_self"><img src="../pictures/ppcs/628215-ArulmiguSubramaniyaSwamyTemple&BayofBengal-TiruchendurHO.jpg" alt="Arulmigu Subramaniya Swamy Temple &amp; Bay of Bengal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Arulmigu Subramaniya Swamy Temple &amp; Bay of Bengal</p>
+					</div>
+					<div>
+						<a href="tn/628902-ettayapuram-so.html" target="_self"><img src="../pictures/ppcs/628902-MahakaviSubramanyaBharatiyarFace-EttayapuramSO.jpg" alt="Mahakavi Subramania Bharati" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahakavi Subramania Bharati</p>
+					</div>
+					<div>
+						<a href="tn/628902-ettayapuram-so.html" target="_self"><img src="../pictures/ppcs/628902-MahakaviSubramanyaBharatiyarManimandapam-EttayapuramSO.jpg" alt="Mahakavi Subramania Bharati Manimandapam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahakavi Subramania Bharati Manimandapam</p>
+					</div>
+					<div>
+						<a href="tn/629202-muttom-so.html" target="_self"><img src="../pictures/ppcs/629202-MuttomLighthouse-MuttomSO.jpg" alt="Muttom Lighthouse" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Muttom Lighthouse</p>
+					</div>
+					<div>
+						<a href="tn/629702-kanniyakumari-so.html" target="_self"><img src="../pictures/ppcs/629702-VivekanandaRockMemorial-KanniyakumariSO.jpg" alt="Vivekananda Rock Memorial" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vivekananda Rock Memorial</p>
+					</div>
+					<div>
+						<a href="tn/631209-tiruttani-so.html" target="_self"><img src="../pictures/ppcs/631209-DeitiesofDeivanai,Murugan&Valli-TiruttaniSO.jpg" alt="Deities of Deivanai, Murugan &amp; Valli" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Deities of Deivanai, Murugan &amp; Valli</p>
+					</div>
+					<div>
+						<a href="tn/631501-kanchipuram-ho.html" target="_self"><img src="../pictures/ppcs/631501-Chakravaha-KanchipuramHO.jpg" alt="Chakravaha" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chakravaha</p>
+					</div>
+					<div>
+						<a href="tn/632004-cmc-hospital-vellore-so.html" target="_self"><img src="../pictures/ppcs/632004-LogoofCMCHospital-CMCHospitalVelloreSO.jpg" alt="Logo of CMC Hospital" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of CMC Hospital</p>
+					</div>
+					<div>
+						<a href="tn/632004-vellore-fort-so.html" target="_self"><img src="../pictures/ppcs/632004-VelloreFortwithMoat-VelloreFortSO.jpg" alt="Vellore Fort with Moat" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vellore Fort with Moat</p>
+					</div>
+					<div>
+						<a href="tn/635701-kavalur-bo.html" target="_self"><img src="../pictures/ppcs/635701-VainuBappuObservatory-KavalurBO.jpg" alt="Vainu Bappu Observatory" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vainu Bappu Observatory</p>
+					</div>
+					<div>
+						<a href="tn/636007-hasthampatti-so.html" target="_self"><img src="../pictures/ppcs/636007-GandhiCharkhaandBapu-HasthampattiSO.jpg" alt="Gandhi Charkha and Bapu" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gandhi Charkha and Bapu</p>
+					</div>
+					<div>
+						<a href="tn/637211-tiruchengodu-ho.html" target="_self"><img src="../pictures/ppcs/637211-LordArdhanareeswar-TiruchengoduHO.jpg" alt="Lord Ardhanareeswar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lord Ardhanareeswar</p>
+					</div>
+					<div>
+						<a href="tn/638301-bhavani-ho.html" target="_self"><img src="../pictures/ppcs/638301-BhavaniKoodalandRajagopuram-BhavaniHO.jpg" alt="Bhavani Koodal and Rajagopuram" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bhavani Koodal and Rajagopuram</p>
+					</div>
+					<div>
+						<a href="tn/641003-tnau-lawley-road-so.html" target="_self"><img src="../pictures/ppcs/641003-LogoofTamilNaduAgriculturalUniversity-TNAULawleyRoadSO.jpg" alt="Logo of Tamil Nadu Agricultural University" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of Tamil Nadu Agricultural University</p>
+					</div>
+					<div>
+						<a href="tn/641010-perur-coimbatore-so.html" target="_self"><img src="../pictures/ppcs/641010-PatteeswararTemple-PerurCoimbatoreSO.jpg" alt="Patteeswarar Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Patteeswarar Temple</p>
+					</div>
+					<div>
+						<a href="tn/641108-anaikatti-bo.html" target="_self"><img src="../pictures/ppcs/641108-SalimAliCentreforOrnithologyandNaturalHistorySACON-AnaikattiBO.jpg" alt="Salim Ali Centre for Ornithology and Natural History (SACON)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Salim Ali Centre for Ornithology and Natural History (SACON)</p>
+					</div>
+					<div>
+						<a href="tn/641114-ishana-vihar-bo.html" target="_self"><img src="../pictures/ppcs/641114-AdiYogi-IshanaViharBO.jpg" alt="Adi Yogi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Adi Yogi</p>
+					</div>
+					<div>
+						<a href="tn/641659-karumathampatti-so.html" target="_self"><img src="../pictures/ppcs/641659-OurLadyofHolyRosaryShrine-KarumathampattiSO.jpg" alt="Our Lady of Holy Rosary Shrine" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Our Lady of Holy Rosary Shrine</p>
+					</div>
+					<div>
+						<a href="tn/642133-top-slip-bo.html" target="_self"><img src="../pictures/ppcs/642133-NilgiriTahr-TopSlipBO.jpg" alt="Nilgiri Tahr" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nilgiri Tahr</p>
+					</div>
+					<div>
+						<a href="tn/643001-udagamandalam-ho.html" target="_self"><img src="../pictures/ppcs/643001-TodaHut-UdagamandalamHO.jpg" alt="Toda hut" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Toda hut</p>
+					</div>
+					<div>
+						<a href="tn/643102-coonoor-railway-station-so.html" target="_self"><img src="../pictures/ppcs/643102-NilgiriMountainTrain-CoonoorRailwayStationSO.jpg" alt="Nilgiri Mountain Train" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nilgiri Mountain Train</p>
+					</div>
+					<div>
+						<a href="tn/643211-mudumalai-sanctuary-bo.html" target="_self"><img src="../pictures/ppcs/643211-IndianBisonGaur-MudumalaiSanctuaryBO.jpg" alt="Indian Bison (Gaur)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Bison (Gaur)</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Tamil Nadu -->
+			
+			<!-- Start of Puducherry -->
+			<div id="Puducherry" class="section">
+				<h2>Puducherry</h2>
+				<div class="overview-images">
+					<div>
+						<a href="py/605001-pondicherry-ho-pb.html" target="_self"><img src="../pictures/ppcs/605001-AayiMandapam-PondicherryHOPB.jpg" alt="Aayi Mandapam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Aayi Mandapam</p>
+					</div>
+					<div>
+						<a href="py/605002-sri-aurobindo-ashram-so.html" target="_self"><img src="../pictures/ppcs/605002-LogoofSriAurobindoAshramandTheMother-SriAurobindoAshramSO.jpg" alt="Logo of Sri Aurobindo Ashram and The Mother" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of Sri Aurobindo Ashram and The Mother</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Puducherry -->
+			
+			<!-- Start of Kerala -->
+			<div id="Kerala" class="section">
+				<h2>Kerala</h2>
+				<div class="overview-images">
+					<div>
+						<a href="kl/670001-kannur-ho.html" target="_self"><img src="../pictures/ppcs/670001-FaceofTheyyam-KannurHO.jpg" alt="Face of Theyyam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Face of Theyyam</p>
+					</div>
+					<div>
+						<a href="kl/670662-muzhappilangad-so.html" target="_self"><img src="../pictures/ppcs/670662-MuzhappilangadBeach-MuzhappilangadSO.jpg" alt="Muzhappilangad Beach" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Muzhappilangad Beach</p>
+					</div>
+					<div>
+						<a href="kl/671124-madhur-bo.html" target="_self"><img src="../pictures/ppcs/671124-MadhurAnanteshwaraVinayakaTemple-MadhurBO.jpg" alt="Madhur Ananteshwara Vinayaka Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Madhur Ananteshwara Vinayaka Temple</p>
+					</div>
+					<div>
+						<a href="kl/671316-bekal-fort-so.html" target="_self"><img src="../pictures/ppcs/671316-BekalFort-BekalFortSO.jpg" alt="Bekal Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bekal Fort</p>
+					</div>
+					<div>
+						<a href="kl/673001-kozhikode-calicut-ho.html" target="_self"><img src="../pictures/ppcs/673001-MaskofTheyyam-KozhikodeCalicutHO.jpg" alt="Mask of Theyyam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mask of Theyyam</p>
+					</div>
+					<div>
+						<a href="kl/673015-beypore-so.html" target="_self"><img src="../pictures/ppcs/673015-UruorFatBoat-BeyporeSO.jpg" alt="Uru or Fat Boat" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Uru or Fat Boat</p>
+					</div>
+					<div>
+						<a href="kl/673302-kadalundi-so.html" target="_self"><img src="../pictures/ppcs/673302-Heron-KadalundiSO.jpg" alt="Heron" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Heron</p>
+					</div>
+					<div>
+						<a href="kl/676101-tirur-ho.html" target="_self"><img src="../pictures/ppcs/676101-ThunchathRamanujamEzhuthachan-TirurHO.jpg" alt="Thunchath Ramanujam Ezhuthachan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thunchath Ramanujam Ezhuthachan</p>
+					</div>
+					<div>
+						<a href="kl/676301-tirunavaya-so.html" target="_self"><img src="../pictures/ppcs/676301-Mamankam-TirunavayaSO.jpg" alt="Mamankam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mamankam</p>
+					</div>
+					<div>
+						<a href="kl/676503-kottakkal-so.html" target="_self"><img src="../pictures/ppcs/676503-VaidyaratnamPSWarrier-KottakkalSO.jpg" alt="Vaidyaratnam P. S. Warrier" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vaidyaratnam P. S. Warrier</p>
+					</div>
+					<div>
+						<a href="kl/678003-kalpathi-so.html" target="_self"><img src="../pictures/ppcs/678003-KalpathiRathotsavam-KalpathiSO.jpg" alt="Kalpathi Rathotsavam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kalpathi Rathotsavam</p>
+					</div>
+					<div>
+						<a href="kl/678572-kottayi-so.html" target="_self"><img src="../pictures/ppcs/678572-ChembaiVaidyanathaBhagavathar-KottayiSO.jpg" alt="Chembai Vaidyanatha Bhagavathar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chembai Vaidyanatha Bhagavathar</p>
+					</div>
+					<div>
+						<a href="kl/678581-agali-so.html" target="_self"><img src="../pictures/ppcs/678581-LionTailedMacaque-AgaliSO.jpg" alt="Lion Tailed Macaque" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lion Tailed Macaque</p>
+					</div>
+					<div>
+						<a href="kl/678651-malampuzha-dam-so.html" target="_self"><img src="../pictures/ppcs/678651-MalampuzhaDamandRopeCar-MalampuzhaDamSO.jpg" alt="Malampuzha Dam and Rope Car" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Malampuzha Dam and Rope Car</p>
+					</div>
+					<div>
+						<a href="kl/678661-parambikulam-so.html" target="_self"><img src="../pictures/ppcs/678661-IndianBisonGaur-ParambikulamSO.jpg" alt="Indian Bison (Gaur)" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Bison (Gaur)</p>
+					</div>
+					<div>
+						<a href="kl/679301-lakkidi-so.html" target="_self"><img src="../pictures/ppcs/679301-HeadGearofOttanthullal-LakkidiSO.jpg" alt="Head Gear of Ottanthullal" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Head Gear of Ottanthullal</p>
+					</div>
+					<div>
+						<a href="kl/679531-cheruthuruthy-so.html" target="_self"><img src="../pictures/ppcs/679531-VeshaminKathakali-CheruthuruthySO.jpg" alt="Vesham in Kathakali" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Vesham in Kathakali</p>
+					</div>
+					<div>
+						<a href="kl/680001-thrissur-ho.html" target="_self"><img src="../pictures/ppcs/680001-ThrissurPooramFestivalElephant-ThrissurHO.jpg" alt="Thrissur Pooram Festival Elephant" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thrissur Pooram Festival Elephant</p>
+					</div>
+					<div>
+						<a href="kl/680101-guruvayur-so.html" target="_self"><img src="../pictures/ppcs/680101-BellandFlagMastinGuruvayurSriKrishnaTemple-GuruvayurSO.jpg" alt="Bell and Flag Mast in Guruvayur Sri Krishna Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bell and Flag Mast in Guruvayur Sri Krishna Temple</p>
+					</div>
+					<div>
+						<a href="kl/680507-pavaratty-so.html" target="_self"><img src="../pictures/ppcs/680507-ShrineofStJosephChurch-PavarattySO.jpg" alt="Shrine of St. Joseph Church" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shrine of St. Joseph Church</p>
+					</div>
+					<div>
+						<a href="kl/680602-mattom-so.html" target="_self"><img src="../pictures/ppcs/680602-ShrineofOurLadyofPerpetualHelp-MattomSO.jpg" alt="Shrine of Our Lady of Perpetual Help" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shrine of Our Lady of Perpetual Help</p>
+					</div>
+					<div>
+						<a href="kl/680712-madayikonam-so.html" target="_self"><img src="../pictures/ppcs/680712-LightedCandlesinHolyCrossChurchMapranam-MadayikonamSO.jpg" alt="Lighted Candles in Holy Cross Church, Mapranam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Lighted Candles in Holy Cross Church, Mapranam</p>
+					</div>
+					<div>
+						<a href="kl/682001-kochi-ho.html" target="_self"><img src="../pictures/ppcs/682001-ChineseFishingNet-KochiHO.jpg" alt="Chinese Fishing Net" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chinese Fishing Net</p>
+					</div>
+					<div>
+						<a href="kl/682002-mattancherry-jetty-so.html" target="_self"><img src="../pictures/ppcs/682002-MagenDavidofCochinSynagogue-MattancherryJettySO.jpg" alt="Magen David of Cochin Synagogue" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Magen David of Cochin Synagogue</p>
+					</div>
+					<div>
+						<a href="kl/682011-ernakulam-ho-pb.html" target="_self"><img src="../pictures/ppcs/682011-Thookkuvilakku-ErnakulamHOPB.jpg" alt="Thookkuvilakku" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thookkuvilakku</p>
+					</div>
+					<div>
+						<a href="kl/683574-kalady-so.html" target="_self"><img src="../pictures/ppcs/683574-AdiSankaracharya-KaladySO.jpg" alt="Adi Sankaracharya" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Adi Sankaracharya</p>
+					</div>
+					<div>
+						<a href="kl/683587-malayattoor-so.html" target="_self"><img src="../pictures/ppcs/683587-StThomasChurch-MalayattoorSO.jpg" alt="St. Thomas Church" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">St. Thomas Church</p>
+					</div>
+					<div>
+						<a href="kl/685509-kumily-so.html" target="_self"><img src="../pictures/ppcs/685509-ThekkadyWildlife-AsianElephant-KumilySO.jpg" alt="Thekkady Wildlife-Asian Elephant" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Thekkady Wildlife-Asian Elephant</p>
+					</div>
+					<div>
+						<a href="kl/685602-idukki-colony-so.html" target="_self"><img src="../pictures/ppcs/685602-IdukkiDam-IdukkiColonySO.jpg" alt="Idukki Dam" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Idukki Dam</p>
+					</div>
+					<div>
+						<a href="kl/685612-munnar-so.html" target="_self"><img src="../pictures/ppcs/685612-NilgiriTahr-MunnarSO.jpg" alt="Nilgiri Tahr" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nilgiri Tahr</p>
+					</div>
+					<div>
+						<a href="kl/686009-rubber-board-so.html" target="_self"><img src="../pictures/ppcs/686009-RubberTrees-RubberBoardSO.jpg" alt="Rubber Trees" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rubber Trees</p>
+					</div>
+					<div>
+						<a href="kl/686563-kumarakom-so.html" target="_self"><img src="../pictures/ppcs/686563-BackwatersofKerala-KumarakomSO.jpg" alt="Backwaters of Kerala" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Backwaters of Kerala</p>
+					</div>
+					<div>
+						<a href="kl/686578-bharananganam-bo.html" target="_self"><img src="../pictures/ppcs/686578-SaintAlphonsa-BharananganamBO.jpg" alt="Saint Alphonsa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Saint Alphonsa</p>
+					</div>
+					<div>
+						<a href="kl/688001-alappuzha-ho.html" target="_self"><img src="../pictures/ppcs/688001-AlappuzhaBoatRace-AlappuzhaHO.jpg" alt="Alappuzha Boat Race" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Alappuzha Boat Race</p>
+					</div>
+					<div>
+						<a href="kl/689533-aranmula-so.html" target="_self"><img src="../pictures/ppcs/689533-AranmulaBoatRace-AranmulaSO.jpg" alt="Aranmula Boat Race" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Aranmula Boat Race</p>
+					</div>
+					<div data-seasonal>
+						<a href="kl/689713-sabarimalai-so.html" target="_self"><img src="../pictures/ppcs/689713-PathinettampadiHolyEighteenSteps-SabarimalaiSO.jpg" alt="Pathinettampadi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Pathinettampadi</p>
+					</div>
+					<div>
+						<a href="kl/690546-amrithapuri-so.html" target="_self"><img src="../pictures/ppcs/690546-LogoofMataAmritanandamayiMath-AmrithapuriBO.jpg" alt="Logo of Mata Amritanandamayi Math" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Logo of Mata Amritanandamayi Math</p>
+					</div>
+					<div>
+						<a href="kl/695001-thiruvananthapuram-gpo-pb.html" target="_self"><img src="../pictures/ppcs/695001-FaceMaskofKathakali-ThiruvananthapuramGPOPB.jpg" alt="Face Mask of Kathakali" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Face Mask of Kathakali</p>
+					</div>
+					<div>
+						<a href="kl/695016-thiruvananthapuram-engg-college-so.html" target="_self"><img src="../pictures/ppcs/695016-CollegeofEngineeringThiruvananthapuram-ThiruvananthapuramEnggCollegeSO.jpg" alt="College of Engineering Thiruvananthapuram" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">College of Engineering Thiruvananthapuram</p>
+					</div>
+					<div>
+						<a href="kl/695022-thiruvananthapuram-isro-so.html" target="_self"><img src="../pictures/ppcs/695022-RocketandCoconutTree-ThiruvananthapuramISROSO.jpg" alt="Rocket and Coconut Tree" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rocket and Coconut Tree</p>
+					</div>
+					<div>
+						<a href="kl/695023-thiruvananthapuram-fort-so.html" target="_self"><img src="../pictures/ppcs/695023-SreePadmanabhaswamyTemple-ThiruvananthapuramFortSO.jpg" alt="Sree Padmanabhaswamy Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sree Padmanabhaswamy Temple</p>
+					</div>
+					<div>
+						<a href="kl/695141-varkala-so.html" target="_self"><img src="../pictures/ppcs/695141-StatueofSriNarayanaGuru-VarkalaSO.jpg" alt="Statue of Sri Narayana Guru" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Statue of Sri Narayana Guru</p>
+					</div>
+					<div>
+						<a href="kl/695527-kovalam-bo.html" target="_self"><img src="../pictures/ppcs/695527-BeachCoconutTreesandWaves-KovalamBO.jpg" alt="Beach, Coconut Trees, and Waves" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Beach, Coconut Trees, and Waves</p>
+					</div>
+					<div>
+						<a href="kl/695551-ponmudi-bo.html" target="_self"><img src="../pictures/ppcs/695551-PonmudiHillResort-PonmudiBO.jpg" alt="Ponmudi Hill Resort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ponmudi Hill Resort</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Kerala -->
+			
+			<!-- Start of West Bengal -->
+			<div id="West Bengal" class="section">
+				<h2>West Bengal</h2>
+				<div class="overview-images">
+					<div>
+						<a href="wb/700001-kolkata-gpo-1.html" target="_self"><img src="../pictures/ppcs/700001-KolkataCityandFamousPlacesofKolkata-KolkataGPO.jpg" alt="Kolkata City and Famous Places of Kolkata" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kolkata City and Famous Places of Kolkata</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-2.html" target="_self"><img src="../pictures/ppcs/700001-KolkataGPODome-KolkataGPO.jpg" alt="Kolkata GPO Dome" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kolkata GPO Dome</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-3.html" target="_self"><img src="../pictures/ppcs/700001-AliporeCentralJail-KolkataGPO.jpg" alt="Alipore Central Jail" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Alipore Central Jail</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-4.html" target="_self"><img src="../pictures/ppcs/700001-DakshineswarKaliTemple-KolkataGPO.jpg" alt="Dakshineswar Kali Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dakshineswar Kali Temple</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-5.html" target="_self"><img src="../pictures/ppcs/700001-DurgaPuja-KolkataGPO.jpg" alt="Durga Puja" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Durga Puja</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-6.html" target="_self"><img src="../pictures/ppcs/700001-IndianMuseum-KolkataGPO.jpg" alt="Indian Museum" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Indian Museum</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-7.html" target="_self"><img src="../pictures/ppcs/700001-JorasankoThakurbari-KolkataGPO.jpg" alt="Jorasanko Thakurbari" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Jorasanko Thakurbari</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-8.html" target="_self"><img src="../pictures/ppcs/700001-KalighatTemple-KolkataGPO.jpg" alt="Kalighat Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kalighat Temple</p>
+					</div>
+					<div>
+						<a href="wb/700001-kolkata-gpo-9.html" target="_self"><img src="../pictures/ppcs/700001-VictoriaMemorialHall-KolkataGPO.jpg" alt="Victoria Memorial Hall" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Victoria Memorial Hall</p>
+					</div>
+					<div>
+						<a href="wb/711202-belur-math-so.html" target="_self"><img src="../pictures/ppcs/711202-BelurMath-BelurMathSO.jpg" alt="Belur Math" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Belur Math</p>
+					</div>
+					<div>
+						<a href="wb/711316-jaduberia-bo.html" target="_self"><img src="../pictures/ppcs/711316-Shuttlecock-JaduberiaBO.jpg" alt="Shuttlecock" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shuttlecock</p>
+					</div>
+					<div>
+						<a href="wb/712202-mahesh-1-so.html" target="_self"><img src="../pictures/ppcs/712202-RathyatraMahesh-Mahesh1SO.jpg" alt="Rathyatra Mahesh" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rathyatra Mahesh</p>
+					</div>
+					<div>
+						<a href="wb/721431-khejuri-bo.html" target="_self"><img src="../pictures/ppcs/721431-KhejuriBranchPostOffice-KhejuriBO.jpg" alt="Khejuri Branch Post Office" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Khejuri Branch Post Office</p>
+					</div>
+					<div>
+						<a href="wb/721507-jhargram-ho.html" target="_self"><img src="../pictures/ppcs/721507-RajbariJhargramPalace-JhargramHO.jpg" alt="Rajbari Jhargram Palace" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rajbari Jhargram Palace</p>
+					</div>
+					<div>
+						<a href="wb/721636-tamluk-ho.html" target="_self"><img src="../pictures/ppcs/721636-TamraliptaRajbari-TamlukHO.jpg" alt="Tamralipta Rajbari" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tamralipta Rajbari</p>
+					</div>
+					<div>
+						<a href="wb/722122-bishnupur-so-1.html" target="_self"><img src="../pictures/ppcs/722122-BishnupurShyamraiTemple-BishnupurSO.jpg" alt="Bishnupur Shyamrai Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bishnupur Shyamrai Temple</p>
+					</div>
+					<div>
+						<a href="wb/722122-bishnupur-so-2.html" target="_self"><img src="../pictures/ppcs/722122-BishnupurMukhyaDakghar-BishnupurSO.jpg" alt="Bishnupur Mukhya Dakghar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Bishnupur Mukhya Dakghar</p>
+					</div>
+					<div>
+						<a href="wb/731235-santiniketan-so.html" target="_self"><img src="../pictures/ppcs/731235-SinghaSadan-SantiniketanSO.jpg" alt="Singha Sadan" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Singha Sadan</p>
+					</div>
+					<div>
+						<a href="wb/734001-siliguri-ho.html" target="_self"><img src="../pictures/ppcs/734001-SevokeCoronationBridge-SiliguriHO.jpg" alt="Sevoke Bridge" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sevoke Bridge</p>
+					</div>
+					<div>
+						<a href="wb/734101-darjeeling-ho.html" target="_self"><img src="../pictures/ppcs/734101-Tea-ElixirofLife-DarjeelingHO.jpg" alt="Tea-Elixir of Life" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tea-Elixir of Life</p>
+					</div>
+					<div>
+						<a href="wb/735221-mal-ho.html" target="_self"><img src="../pictures/ppcs/735221-UnicornsofDooars-MalHO.jpg" alt="Unicorns of Dooars" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Unicorns of Dooars</p>
+					</div>
+					<div>
+						<a href="wb/736101-cooch-behar-ho.html" target="_self"><img src="../pictures/ppcs/736101-CoochBeharPalace-CoochBeharHO.jpg" alt="Cooch Behar Palace" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Cooch Behar Palace</p>
+					</div>
+					<div>
+						<a href="wb/736121-alipurduar-so.html" target="_self"><img src="../pictures/ppcs/736121-DooarsTusker-AlipurduarSO.jpg" alt="Dooars Tusker" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Dooars Tusker</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of West Bengal -->
+			
+			<!-- Start of Sikkim -->
+			<div id="Sikkim" class="section">
+				<h2>Sikkim</h2>
+				<div class="overview-images">
+					<div>
+						<a href="sk/737101-gangtok-ho-1.html" target="_self"><img src="../pictures/ppcs/737101-RedPanda-StateAnimalofSikkim-GangtokHO.jpg" alt="Red Panda-State Animal of Sikkim" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Red Panda-State Animal of Sikkim</p>
+					</div>
+					<div>
+						<a href="sk/737101-gangtok-ho-2.html" target="_self"><img src="../pictures/ppcs/737101-KhangchendzongaNationalPark-GangtokHO.jpg" alt="Khangchendzonga National Park" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Khangchendzonga National Park</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Sikkim -->
+			
+			<!-- Start of Andaman and Nicobar Islands -->
+			<div id="Andaman and Nicobar Islands" class="section">
+				<h2>Andaman and Nicobar Islands</h2>
+				<div class="overview-images">
+					<div>
+						<a href="an/744101-port-blair-ho.html" target="_self"><img src="../pictures/ppcs/744101-CellularJail-PortBlairHO.jpg" alt="Cellular Jail" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Cellular Jail</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Andaman and Nicobar Islands -->
+			
+			<!-- Start of Odisha -->
+			<div id="Odisha" class="section">
+				<h2>Odisha</h2>
+				<div class="overview-images">
+					<div>
+						<a href="od/751001-bhubaneshwar-gpo-pb.html" target="_self"><img src="../pictures/ppcs/751001-KhandagiriUdayagiriCavesDhauligiriStupa&LingrajTemple-BhubaneshwarGPOPB.jpg" alt="Khandagiri Udayagiri Caves, Dhauligiri Stupa &amp; Lingraj Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Khandagiri Udayagiri Caves, Dhauligiri Stupa &amp; Lingraj Temple</p>
+					</div>
+					<div>
+						<a href="od/751002-bhubaneswar-mdg.html" target="_self"><img src="../pictures/ppcs/751002-MukteswarTemple-BhubaneswarMDG.jpg" alt="Mukteswar Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mukteswar Temple</p>
+					</div>
+					<div>
+						<a href="od/751002-gopinathpur-bo.html" target="_self"><img src="../pictures/ppcs/751002-ShantiStupa-GopinathpurBO.jpg" alt="Shanti Stupa" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shanti Stupa</p>
+					</div>
+					<div>
+						<a href="od/751014-bjb-nagar-so.html" target="_self"><img src="../pictures/ppcs/751014-RajaraniTemple-BJBNagarSO.jpg" alt="Rajarani Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Rajarani Temple</p>
+					</div>
+					<div>
+						<a href="od/751024-chandaka-bo.html" target="_self"><img src="../pictures/ppcs/751024-ChandakaElephantReserve-ChandakaBO.jpg" alt="Chandaka Elephant Reserve" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chandaka Elephant Reserve</p>
+					</div>
+					<div>
+						<a href="od/751030-khandagiri-so.html" target="_self"><img src="../pictures/ppcs/751030-KhandagiriCavesandElephantSculpture-KhandagiriSO.jpg" alt="Khandagiri Caves and Elephant Sculpture" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Khandagiri Caves and Elephant Sculpture</p>
+					</div>
+					<div>
+						<a href="od/752001-puri-ho.html" target="_self"><img src="../pictures/ppcs/752001-SriJagannathTempleandSeaWave-PuriHO.jpg" alt="Sri Jagannath Temple and Sea Wave" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Jagannath Temple and Sea Wave</p>
+					</div>
+					<div>
+						<a href="od/752111-konark-so.html" target="_self"><img src="../pictures/ppcs/752111-StoneChariotWheeloftheSuryaTemple-KonarkSO.jpg" alt="Stone Chariot Wheel of the Surya Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Stone Chariot Wheel of the Surya Temple</p>
+					</div>
+					<div>
+						<a href="od/753001-kazibazar-so.html" target="_self"><img src="../pictures/ppcs/753001-NetajiBirthPlace-KazibazarSO.jpg" alt="Netaji Birth Place" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Netaji Birth Place</p>
+					</div>
+					<div>
+						<a href="od/753001-cuttack-gpo-pb-1.html" target="_self"><img src="../pictures/ppcs/753001-OdissiDanceandBarabatiFort-CuttackGPOPB.jpg" alt="Odissi Dance and Barabati Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Odissi Dance and Barabati Fort</p>
+					</div>
+					<div>
+						<a href="od/753001-cuttack-gpo-pb-2.html" target="_self"><img src="../pictures/ppcs/753001-BarabatiFort-CuttackGPOPB.jpg" alt="Barabati Fort" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Barabati Fort</p>
+					</div>
+					<div>
+						<a href="od/753001-cuttack-gpo-pb-3.html" target="_self"><img src="../pictures/ppcs/753001-SilverFiligree-CuttackGPOPB.jpg" alt="Silver Filigree" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Silver Filigree</p>
+					</div>
+					<div>
+						<a href="od/753002-swaraj-ashram-so.html" target="_self"><img src="../pictures/ppcs/753002-SwarajAshram-SwarajAshramSO.jpg" alt="Swaraj Ashram" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Swaraj Ashram</p>
+					</div>
+					<div>
+						<a href="od/753008-kanika-rajbati-so.html" target="_self"><img src="../pictures/ppcs/753008-CuttackChandiTemple-KanikaRajbatiSO.jpg" alt="Cuttack Chandi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Cuttack Chandi Temple</p>
+					</div>
+					<div>
+						<a href="od/754005-barang-so.html" target="_self"><img src="../pictures/ppcs/754005-NandankananZoologicalPark-BarangSO.jpg" alt="Nandankanan Zoological Park" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nandankanan Zoological Park</p>
+					</div>
+					<div>
+						<a href="od/768001-sambalpur-ho-pb.html" target="_self"><img src="../pictures/ppcs/768001-MaaSamaleswariTempleandMusicalInstruments-SambalpurHOPB.jpg" alt="Maa Samaleswari Temple and Musical Instruments" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Maa Samaleswari Temple and Musical Instruments</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Odisha -->
+			
+			<!-- Start of Assam -->
+			<div id="Assam" class="section">
+				<h2>Assam</h2>
+				<div class="overview-images">
+					<div>
+						<a href="as/781001-guwahati-gpo-1.html" target="_self"><img src="../pictures/ppcs/781001-SriKamakhyaDeviTemple-GuwahatiGPO.jpg" alt="Sri Kamakhya Devi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sri Kamakhya Devi Temple</p>
+					</div>
+					<div>
+						<a href="as/781001-guwahati-gpo-2.html" target="_self"><img src="../pictures/ppcs/781001-SaraighatBridge-GuwahatiGPO.jpg" alt="Saraighat Bridge" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Saraighat Bridge</p>
+					</div>
+					<div>
+						<a href="as/785609-kaziranga-national-park-so.html" target="_self"><img src="../pictures/ppcs/785609-OneHornedRhino-KazirangaNationalParkSO.jpg" alt="One Horned Rhino" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">One Horned Rhino</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Assam -->
+			
+			<!-- Start of Meghalaya -->
+			<div id="Meghalaya" class="section">
+				<h2>Meghalaya</h2>
+				<div class="overview-images">
+					<div>
+						<a href="ml/793001-shillong-gpo.html" target="_self"><img src="../pictures/ppcs/793001-ShillongGolfCourse-ShillongGPO.jpg" alt="Shillong Golf Course" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Shillong Golf Course</p>
+					</div>
+					<div>
+						<a href="ml/793150-jowai-so.html" target="_self"><img src="../pictures/ppcs/793150-KiangNangbahMonument-JowaiSO.jpg" alt="Kiang Nangbah Monument" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Kiang Nangbah Monument</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Meghalaya -->
+			
+			<!-- Start of Manipur -->
+			<div id="Manipur" class="section">
+				<h2>Manipur</h2>
+				<div class="overview-images">
+					<div>
+						<a href="mn/795133-moirang-so.html" target="_self"><img src="../pictures/ppcs/795133-SangaiDeer-MoirangSO.jpg" alt="Sangai Deer" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sangai Deer</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Manipur -->
+			
+			<!-- Start of Mizoram -->
+			<div id="Mizoram" class="section">
+				<h2>Mizoram</h2>
+				<div class="overview-images">
+					<div>
+						
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Mizoram -->
+			
+			<!-- Start of Tripura -->
+			<div id="Tripura" class="section">
+				<h2>Tripura</h2>
+				<div class="overview-images">
+					<div>
+						<a href="tr/799001-agartala-ho.html" target="_self"><img src="../pictures/ppcs/799001-UjjayantaPalace-AgartalaHO.jpg" alt="Ujjayanta Palace" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ujjayanta Palace</p>
+					</div>
+					<div>
+						<a href="tr/799115-melaghar-so.html" target="_self"><img src="../pictures/ppcs/799115-NeermahalPalace-MelagharSO.jpg" alt="Neermahal Palace" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Neermahal Palace</p>
+					</div>
+					<div>
+						<a href="tr/799279-gournagar-so.html" target="_self"><img src="../pictures/ppcs/799279-Unakoti-GournagarSO.jpg" alt="Unakoti" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Unakoti</p>
+					</div>
+					<div>
+						<a href="tr/799282-bhagabannagar-bo.html" target="_self"><img src="../pictures/ppcs/799282-TrimurtiRockSculpture-BhagabannagarBO.jpg" alt="Trimurti Rock Sculpture" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Trimurti Rock Sculpture</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Tripura -->
+			
+			<!-- Start of Bihar -->
+			<div id="Bihar" class="section">
+				<h2>Bihar</h2>
+				<div class="overview-images">
+					<div>
+						<a href="br/800001-patna-gpo-1.html" target="_self"><img src="../pictures/ppcs/800001-DidarganjYakshi-PatnaGPO.jpg" alt="Didarganj Yakshi" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Didarganj Yakshi</p>
+					</div>
+					<div>
+						<a href="br/800001-patna-gpo-2.html" target="_self"><img src="../pictures/ppcs/800001-GolGhar-PatnaGPO.jpg" alt="Gol Ghar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Gol Ghar</p>
+					</div>
+					<div>
+						<a href="br/800001-patna-gpo-3.html" target="_self"><img src="../pictures/ppcs/800001-PatnaGPOBuilding-PatnaGPO.jpg" alt="Patna GPO Building" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Patna GPO Building</p>
+					</div>
+					<div>
+						<a href="br/800008-patna-city-so.html" target="_self"><img src="../pictures/ppcs/800008-TakhatSriHarmandirSahibJiPatnaSahib-PatnaCitySO.jpg" alt="Takhat Sri Harmandir Sahib Ji, Patna Sahib" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Takhat Sri Harmandir Sahib Ji, Patna Sahib</p>
+					</div>
+					<div>
+						<a href="br/801303-nalanda-so.html" target="_self"><img src="../pictures/ppcs/801303-NalandaRuins-NalandaSO.jpg" alt="Nalanda Ruins" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nalanda Ruins</p>
+					</div>
+					<div>
+						<a href="br/811308-jhajha-so.html" target="_self"><img src="../pictures/ppcs/811308-NagiDamBirdSanctuary-JhajhaSO.jpg" alt="Nagi Dam Bird Sanctuary" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Nagi Dam Bird Sanctuary</p>
+					</div>
+					<div>
+						<a href="br/821115-sasaram-ho.html" target="_self"><img src="../pictures/ppcs/821115-SherShahSuriTomb-SasaramHO.jpg" alt="Sher Shah Suri Tomb" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Sher Shah Suri Tomb</p>
+					</div>
+					<div>
+						<a href="br/824202-deo-so.html" target="_self"><img src="../pictures/ppcs/824202-DeoSunTemple-DeoSO.jpg" alt="Deo Sun Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Deo Sun Temple</p>
+					</div>
+					<div>
+						<a href="br/824231-bodhgaya-so.html" target="_self"><img src="../pictures/ppcs/824231-MahabodhiTemple-BodhgayaSO.jpg" alt="Mahabodhi Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahabodhi Temple</p>
+					</div>
+					<div>
+						<a href="br/843101-bakhra-so.html" target="_self"><img src="../pictures/ppcs/843101-AshokanPillar-BakhraSO.jpg" alt="Ashokan Pillar" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Ashokan Pillar</p>
+					</div>
+					<div>
+						<a href="br/845107-valmiki-nagar-so.html" target="_self"><img src="../pictures/ppcs/845107-ValmikiTigerReserve-ValmikiNagarSO.jpg" alt="Valmiki Tiger Reserve" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Valmiki Tiger Reserve</p>
+					</div>
+					<div>
+						<a href="br/846005-postal-training-centre-so.html" target="_self"><img src="../pictures/ppcs/846005-PostalTrainingCentreDarbhanga-PostalTrainingCentreSO.jpg" alt="Postal Training Centre, Darbhanga" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Postal Training Centre, Darbhanga</p>
+					</div>
+					<div>
+						<a href="br/847122-bisfi-so.html" target="_self"><img src="../pictures/ppcs/847122-MahakaviVidyapati-BisfiSO.jpg" alt="Mahakavi Vidyapati" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Mahakavi Vidyapati</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Bihar -->
+			
+			<!-- Start of Jharkhand -->
+			<div id="Jharkhand" class="section">
+				<h2>Jharkhand</h2>
+				<div class="overview-images">
+					<div>
+						<a href="jh/814112-deoghar-ho.html" target="_self"><img src="../pictures/ppcs/814112-BaidyanathTemple-DeogharHO.jpg" alt="Baidyanath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Baidyanath Temple</p>
+					</div>
+					<div>
+						<a href="jh/814118-basukinath-dham-so.html" target="_self"><img src="../pictures/ppcs/814118-BasukinathTemple-BasukinathDhamSO.jpg" alt="Basukinath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Basukinath Temple</p>
+					</div>
+					<div>
+						<a href="jh/822101-daltonganj-ho.html" target="_self"><img src="../pictures/ppcs/822101-TigerReserve-DaltonganjHO.jpg" alt="Tiger Reserve" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Tiger Reserve</p>
+					</div>
+					<div>
+						<a href="jh/825329-shikherjee-so.html" target="_self"><img src="../pictures/ppcs/825329-ParasnathTemple-ShikherjeeSO.jpg" alt="Parasnath Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Parasnath Temple</p>
+					</div>
+					<div>
+						<a href="jh/829150-rajrappa-project-so.html" target="_self"><img src="../pictures/ppcs/829150-ChhinnamastikaTemple-RajrappaProjectSO.jpg" alt="Chhinnamastika Temple" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chhinnamastika Temple</p>
+					</div>
+					<div>
+						<a href="jh/831001-jamshedpur-ho.html" target="_self"><img src="../pictures/ppcs/831001-JamshedjiNusserwanjiTata&SteelCity-JamshedpurHO.jpg" alt="Jamshedji Nusserwanji Tata &amp; Steel City" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Jamshedji Nusserwanji Tata &amp; Steel City</p>
+					</div>
+					<div>
+						<a href="jh/833219-saraikela-so.html" target="_self"><img src="../pictures/ppcs/833219-ChhauDance-SaraikelaSO.jpg" alt="Chhau Dance" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Chhau Dance</p>
+					</div>
+					<div>
+						<a href="jh/835218-netarhat-so.html" target="_self"><img src="../pictures/ppcs/835218-QueenofChhotanagpur-NetarhatSO.jpg" alt="Queen of Chhotanagpur" class="horizontal" loading="lazy" decoding="async"></a>
+						<p class="ppc-name">Queen of Chhotanagpur</p>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</div>
+			<!-- End of Jharkhand -->
+		</template>
+
+<ppc-footer></ppc-footer>
+
+	<script>
+	(function () {
+		'use strict';
+		var PAGE = 48;
+		var REGIONS = ['North', 'Central', 'West', 'South', 'East', 'North-East', 'Islands'];
+		var REGION_OF = {
+			'Delhi': 'North', 'Haryana': 'North', 'Punjab': 'North', 'Chandigarh': 'North', 'Himachal Pradesh': 'North', 'Jammu and Kashmir': 'North', 'Ladakh': 'North', 'Uttarakhand': 'North', 'Uttar Pradesh': 'North', 'Rajasthan': 'North',
+			'Madhya Pradesh': 'Central', 'Chhattisgarh': 'Central',
+			'Gujarat': 'West', 'Maharashtra': 'West', 'Goa': 'West', 'Dadra and Nagar Haveli and Daman and Diu': 'West',
+			'Andhra Pradesh': 'South', 'Telangana': 'South', 'Karnataka': 'South', 'Kerala': 'South', 'Tamil Nadu': 'South', 'Puducherry': 'South',
+			'Bihar': 'East', 'Jharkhand': 'East', 'Odisha': 'East', 'West Bengal': 'East',
+			'Arunachal Pradesh': 'North-East', 'Assam': 'North-East', 'Manipur': 'North-East', 'Meghalaya': 'North-East', 'Mizoram': 'North-East', 'Nagaland': 'North-East', 'Sikkim': 'North-East', 'Tripura': 'North-East',
+			'Andaman and Nicobar Islands': 'Islands'
+		};
+		// Post-office type -> colour group, the same four groups as the PO Map
+		var CATS = {
+			1: { label: 'GPO / HO / PB', note: 'General and head post offices, philatelic bureaus' },
+			2: { label: 'Sub post office', note: 'SO' },
+			3: { label: 'Branch post office', note: 'BO' },
+			4: { label: 'MDG / other', note: 'Mukhya Dak Ghar, or type not known' }
+		};
+		var RANKS = ['gpo-pb', 'ho-pb', 'mdg-so', 'gpo', 'ho', 'pb', 'so', 'bo', 'mdg'];
+		var CAT1 = { 'GPO-PB': 1, 'GPO': 1, 'PB': 1, 'HO-PB': 1, 'HO': 1 };
+
+		function $(id) { return document.getElementById(id); }
+		function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+		function debounce(fn, ms) { var t; return function () { var a = arguments, c = this; clearTimeout(t); t = setTimeout(function () { fn.apply(c, a); }, ms); }; }
+		function catOf(rank) { return CAT1[rank] ? 1 : (rank === 'SO' || rank === 'MDG-SO') ? 2 : rank === 'BO' ? 3 : 4; }
+		function cap(w) { return w.charAt(0).toUpperCase() + w.slice(1); }
+
+		/** "ka/560001-bengaluru-gpo-pb-2.html" -> pincode, post office and type */
+		function fromFile(href) {
+			var st = href.split('/').pop().replace(/\.html$/, '');
+			var m = /^(\d{6})-(.*)$/.exec(st);
+			var pin = m ? m[1] : '', rest = (m ? m[2] : st).replace(/-\d+$/, ''), rank = '';
+			RANKS.some(function (r) {
+				if (rest === r || rest.slice(-(r.length + 1)) === '-' + r) { rank = r.toUpperCase(); rest = rest.slice(0, rest.length - r.length - 1); return true; }
+				return false;
+			});
+			var place = rest.split('-').filter(Boolean).map(cap).join(' ');
+			return { pin: pin, rank: rank, po: (place + ' ' + rank).trim() };
+		}
+
+		// ---- read the data sections --------------------------------------------------------
+		var STATES = [];
+		Array.prototype.forEach.call(document.getElementById('ppc-data').content.querySelectorAll('.section'), function (sec) {
+			var items = [];
+			Array.prototype.forEach.call(sec.querySelectorAll('.overview-images > div'), function (d) {
+				var a = d.querySelector('a[href]'), img = d.querySelector('img'), nm = d.querySelector('.ppc-name');
+				if (!a) return;
+				var f = fromFile(a.getAttribute('href'));
+				items.push({ sea: d.hasAttribute('data-seasonal') || /seasonal/i.test(a.getAttribute('href')), h: a.getAttribute('href'), i: img ? img.getAttribute('src') : '', n: nm ? nm.textContent.replace(/\s+/g, ' ').trim() : '', p: f.pin, k: f.rank, o: f.po });
+			});
+			STATES.push({ name: sec.id, region: REGION_OF[sec.id] || 'Other', items: items });
+		});
+		var total = STATES.reduce(function (n, s) { return n + s.items.length; }, 0);
+		var all = [];
+		STATES.forEach(function (s) { s.items.forEach(function (e) { all.push({ e: e, s: s.name, c: catOf(e.k), sea: e.sea, text: [e.n, e.o, e.p, s.name, e.k, e.sea ? 'seasonal' : ''].join(' ').toLowerCase() }); }); });
+
+		// ---- one PPC card -------------------------------------------------------------------
+		// Each card is built once and reused, so searching and filtering only show, hide and reorder cards
+		// that already exist. Pictures load lazily, so only the cards near the screen are fetched.
+		function makeCard(x) {
+			var e = x.e, t = document.createElement('template');
+			t.innerHTML = '<a class="kcard c' + x.c + '" href="' + esc(e.h) + '">' +
+				'<span class="thumb">' + (e.sea ? '<span class="sea-flag" title="Seasonal post office: open only for part of the year">&#9733; Seasonal</span>' : '') +
+				'<img loading="lazy" decoding="async" src="' + esc(e.i) + '" alt="' + esc(e.n) + '"></span>' +
+				'<span class="body"><b>' + esc(e.n) + '</b><small>' + esc(e.o) + (e.p ? ' &middot; ' + esc(e.p) : '') + '</small>' +
+				'<span class="meta"><span class="badge">' + esc(e.k || 'Other') + '</span><span class="st-name">' + esc(x.s) + '</span></span></span></a>';
+			return t.content.firstChild;
+		}
+		$('grid').addEventListener('error', function (ev) {
+			if (ev.target.tagName === 'IMG') ev.target.parentNode.classList.add('noimg');   // no scan yet
+		}, true);
+
+		// ---- the view lives in the address bar: #state=Karnataka&rank=1,2&q=temple ----------
+		var view = { state: '', q: '', cats: [1, 2, 3, 4], sea: false, shown: PAGE };
+		function stateByName(n) { return STATES.filter(function (s) { return s.name.toLowerCase() === String(n).toLowerCase(); })[0]; }
+		function readHash() {
+			var raw = decodeURIComponent(location.hash.slice(1)), p = new URLSearchParams(raw);
+			var st = p.get('state') || (raw && raw.indexOf('=') < 0 ? raw : '');   // "#Karnataka" (the old section links) still works
+			var found = st && stateByName(st);
+			view.state = found ? found.name : '';
+			view.q = p.get('q') || '';
+			var r = (p.get('rank') || '1,2,3,4').split(',').map(Number).filter(function (n) { return n >= 1 && n <= 4; });
+			view.cats = r.length ? r : [1, 2, 3, 4];
+			view.sea = p.get('seasonal') === '1';
+			view.shown = PAGE;
+		}
+		function writeHash() {
+			var p = new URLSearchParams();
+			if (view.state) p.set('state', view.state);
+			if (view.q) p.set('q', view.q);
+			if (view.cats.length < 4) p.set('rank', view.cats.join(','));
+			if (view.sea) p.set('seasonal', '1');
+			var h = p.toString();
+			history.replaceState(null, '', h ? '#' + h : location.pathname + location.search);
+			$('link').textContent = location.href;
+		}
+
+		// ---- sidebar and phone drop-down ----------------------------------------------------
+		var side = '<button class="st" data-s="" type="button"><span>All states and UTs</span><small>' + total + '</small></button>';
+		REGIONS.concat(['Other']).forEach(function (r) {
+			var sts = STATES.filter(function (s) { return s.region === r; });
+			if (!sts.length) return;
+			side += '<h3>' + esc(r) + '</h3>' + sts.map(function (s) {
+				return '<button class="st' + (s.items.length ? '' : ' off') + '" data-s="' + esc(s.name) + '" type="button"><span>' + esc(s.name) + '</span><small>' + s.items.length + '</small></button>';
+			}).join('');
+		});
+		$('side').innerHTML = side;
+		$('pick').innerHTML = '<option value="">All states and UTs (' + total + ')</option>' + STATES.map(function (s) { return '<option value="' + esc(s.name) + '">' + esc(s.name) + ' (' + s.items.length + ')</option>'; }).join('');
+
+		var userMoved = false;
+		$('side').addEventListener('click', function (e) { var b = e.target.closest('button.st'); if (!b) return; view.state = b.dataset.s; view.shown = PAGE; userMoved = true; render(); });
+		$('pick').onchange = function () { view.state = this.value; view.shown = PAGE; userMoved = true; render(); };
+		$('q').addEventListener('input', debounce(function () { view.q = this.value.trim(); view.shown = PAGE; render(); }, 150));
+		$('more').onclick = function () { view.shown += PAGE; render(true); };
+		$('cats').addEventListener('click', function (e) {
+			var b = e.target.closest('button'); if (!b || b.classList.contains('sea')) return;
+			var c = Number(b.dataset.c), i = view.cats.indexOf(c);
+			if (i >= 0) view.cats.splice(i, 1); else view.cats.push(c);
+			if (!view.cats.length) view.cats = [1, 2, 3, 4];
+			view.shown = PAGE; render();
+		});
+		$('cats').addEventListener('click', function (e) {
+			if (!e.target.closest('button.sea')) return;
+			view.sea = !view.sea; view.shown = PAGE; render();
+		});
+
+		function render(keepHash) {
+			var pool = all.filter(function (x) { return !view.state || x.s === view.state; });
+			$('cats').innerHTML = [1, 2, 3, 4].map(function (c) {
+				var n = pool.filter(function (x) { return x.c === c; }).length;
+				return '<button type="button" class="chip-btn c' + c + (n ? '' : ' off') + '" data-c="' + c + '" aria-pressed="' + (view.cats.indexOf(c) >= 0) + '" title="' + esc(CATS[c].note) + '"><span class="dot"></span>' + esc(CATS[c].label) + ' <small>' + n + '</small></button>';
+			}).join(' ');
+			var nSea = pool.filter(function (x) { return x.sea; }).length;
+			$('cats').innerHTML += '<span class="sea-sep"></span><button type="button" class="chip-btn sea' + (nSea ? '' : ' off') + '" aria-pressed="' + view.sea + '" title="Post offices that are open only for part of the year"><span class="star">&#9733;</span> Seasonal only <small>' + nSea + '</small></button>';
+			var q = view.q.toLowerCase();
+			var list = pool.filter(function (x) { return view.cats.indexOf(x.c) >= 0 && (!view.sea || x.sea) && (!q || x.text.indexOf(q) >= 0); });
+			var note = $('seaNote');
+			if (note) note.hidden = !view.sea;
+			$('title').textContent = view.state || 'All states and UTs';
+			$('sum').textContent = list.length + ' of ' + pool.length + ' PPC articles';
+			var grid = $('grid'), nodes = list.slice(0, view.shown).map(function (x) { return x.node || (x.node = makeCard(x)); });
+			grid.classList.toggle('single', !!view.state);
+			if (!nodes.length) {
+				var note = document.createElement('p');
+				note.className = 'empty-note';
+				note.textContent = pool.length ? 'Nothing matches these filters.' : 'No article for this state or UT yet.';
+				nodes = [note];
+			}
+			grid.replaceChildren.apply(grid, nodes);
+			$('more').style.display = list.length > view.shown ? '' : 'none';
+			Array.prototype.forEach.call($('side').querySelectorAll('button.st'), function (b) { b.setAttribute('aria-current', String(b.dataset.s === view.state)); });
+			$('pick').value = view.state;
+			if ($('q').value !== view.q) $('q').value = view.q;
+			if (keepHash) $('link').textContent = location.href; else writeHash();
+			if (userMoved) { userMoved = false; $('head').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+		}
+		window.addEventListener('hashchange', function () { readHash(); render(true); });
+		readHash();
+		render();
+	})();
+	</script>
+</body>
+</html>

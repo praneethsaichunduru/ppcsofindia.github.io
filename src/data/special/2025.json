@@ -1,0 +1,138 @@
+{
+  "title": "Special Cancellations - 2025",
+  "docTitle": "Special Cancellations - 2025",
+  "heads": [
+    "S. NO.",
+    "DATE OF ISSUE",
+    "SPECIAL CANCELLATION",
+    "POST OFFICE AND RANK",
+    "PINCODE",
+    "CIRCLE",
+    "IMAGE"
+  ],
+  "states": [
+    "Karnataka"
+  ],
+  "rows": [
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "1",
+        "01.01.2025",
+        "Happy New Year 2025",
+        "Bengaluru GPO-PB",
+        "560001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/01.01.2025-HappyNewYear2025-Bengaluru.jpg",
+      "alt": "Happy New Year 2025 Bengaluru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "2",
+        "01.01.2025",
+        "Happy New Year 2025",
+        "Mysuru HO-PB",
+        "570001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/01.01.2025-HappyNewYear2025-Mysuru.jpg",
+      "alt": "Happy New Year 2025 Mysuru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "3",
+        "01.01.2025",
+        "Happy New Year 2025",
+        "Mangaluru HO-PB",
+        "575001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/01.01.2025-HappyNewYear2025-Mangaluru.jpg",
+      "alt": "Happy New Year 2025 Mangaluru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "4",
+        "01.01.2025",
+        "Happy New Year 2025",
+        "Belagavi HO-PB",
+        "590001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/01.01.2025-HappyNewYear2025-Belagavi.jpg",
+      "alt": "Happy New Year 2025 Belagavi",
+      "sep": true
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "5",
+        "04.01.2025",
+        "World Braille Day",
+        "Bengaluru GPO-PB",
+        "560001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/04.01.2025-WorldBrailleDay-Bengaluru.jpg",
+      "alt": "World Braille Day Bengaluru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "6",
+        "04.01.2025",
+        "World Braille Day",
+        "Mysuru HO-PB",
+        "570001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/04.01.2025-WorldBrailleDay-Mysuru.jpg",
+      "alt": "World Braille Day Mysuru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "7",
+        "04.01.2025",
+        "World Braille Day",
+        "Mangaluru HO-PB",
+        "575001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/04.01.2025-WorldBrailleDay-Mangaluru.jpg",
+      "alt": "World Braille Day Mangaluru"
+    },
+    {
+      "cls": "Karnataka",
+      "cells": [
+        "8",
+        "04.01.2025",
+        "World Braille Day",
+        "Belagavi HO-PB",
+        "590001",
+        "Karnataka"
+      ],
+      "img": "pictures/special-cancellations/04.01.2025-WorldBrailleDay-Belagavi.jpg",
+      "alt": "World Braille Day Belagavi",
+      "sep": true
+    },
+    {
+      "cls": "Maharashtra",
+      "cells": [
+        "9",
+        "05.01.2025",
+        "Closing Day of the Exposition of the Sacred Relics of St. Francis Xavier",
+        "Velha Goa SO",
+        "403402",
+        "Maharashtra"
+      ],
+      "img": "pictures/special-cancellations/05.01.2025-ClosingDayoftheExpositionoftheSacredRelicsofSt.Francis Xavier-Velha Goa.jpg",
+      "alt": "Closing Day of the Exposition of the Sacred Relics of St. Francis Xavier Velha Goa",
+      "sep": true
+    }
+  ]
+}

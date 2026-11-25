@@ -1,0 +1,124 @@
+{
+  "docTitle": "Nilgiri Mountain Train",
+  "title": "Nilgiri Mountain Train",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/NilgiriMountainTrain.jpg",
+          "alt": "Nilgiri Mountain Train",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/643102-NilgiriMountainTrain-CoonoorRailwayStationSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Nilgiri Mountain Railway (NMR) is a historic and picturesque railway line in Tamil Nadu, India, running between Mettupalayam and Udhagamandalam (Ooty). Established in 1908, the railway was initially proposed in the mid-19th century during British rule, but construction faced several delays due to the difficult terrain. Eventually, the Swiss company, Abt and Co., provided a cogwheel-based rack railway system to overcome the steep gradients. The railway was finally completed and became operational in 1908. Recognized as a UNESCO World Heritage Site in 2005, the Nilgiri Mountain Railway remains a marvel of engineering and an enduring symbol of colonial legacy."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The train operates on a unique rack-and-pinion system, allowing it to climb steep slopes that conventional railways cannot traverse. The lower portion of the route from Mettupalayam to Coonoor uses a steam locomotive with the rack-and-pinion mechanism, while the section from Coonoor to Ooty runs on a diesel engine. Initially, the railway used coal-fired steam engines, but modern modifications have introduced oil-fired steam locomotives and diesel engines to improve efficiency. The steam locomotives, maintained at the Coonoor workshop, remain a significant attraction, with enthusiasts often traveling specifically to witness these vintage engines in operation."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "During British rule, the Nilgiri Mountain Railway primarily served as a mode of transportation for colonial officials and British residents seeking respite from the intense summer heat of the Indian plains. Ooty, known as the \"Queen of Hill Stations,\" was a preferred summer retreat, and the railway provided a comfortable and scenic route to this high-altitude destination. The train also played a crucial role in transporting essential goods, including tea, coffee, and other plantation produce from the Nilgiri Hills to the markets in the plains. In present times, the train is primarily a heritage attraction, drawing tourists from across India and abroad. The route offers breathtaking views of lush green valleys, waterfalls, tunnels, and bridges, making it a favorite among nature lovers and railway enthusiasts."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The train covers a distance of approximately 46 kilometers, taking about five hours to complete the journey. The steepest gradient on the route is 1 in 12.5, making it one of the steepest railway tracks in Asia. The average speed of the train is around 10 to 15 kilometers per hour, allowing passengers to soak in the scenic beauty of the Nilgiri Hills. Along the way, the train crosses 250 bridges, including the iconic multi-arched viaduct at Kallar, and passes through 16 tunnels. Key stations along the route include Kallar, Hillgrove, Coonoor, Wellington, Lovedale, and Ooty. The slow pace and vintage charm of the train add to its appeal, making the journey an unforgettable experience."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Despite technological advancements, the Nilgiri Mountain Railway continues to operate with its historic locomotives, preserving the heritage of India's colonial-era railways. The train service remains in high demand, particularly during peak tourist seasons, with tickets often being booked months in advance. The Indian Railways ensures the continued operation and maintenance of the line, recognizing its significance as both a historical and tourist landmark. The Nilgiri Mountain Railway stands as a testament to the ingenuity of early railway engineering and remains an irreplaceable part of India's cultural and historical landscape."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Matching Stamp"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/related-stamps/1993-04-16-mountain-locomotives-nilgiri-mountain-railway.jpg",
+          "alt": "",
+          "cls": "horizontal",
+          "credit": "Mountain Locomotives: Nilgiri Mountain Railway, 16.04.1993"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "August 10, 2019"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Coonoor Railway Station SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "The Nilgiris (dt.), Tamil Nadu - 643102."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "நீலகிரி மலை ரயில்"
+}

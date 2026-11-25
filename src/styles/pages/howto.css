@@ -1,0 +1,164 @@
+/* Numbered steps, each followed by a diagram */
+ol.steps {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 1rem 0 1.75rem;
+}
+ol.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+ol.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent, #0b5cab);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+ol.steps > li > p {
+  margin: 0 0 0.4rem;
+}
+ol.steps ul {
+  margin: 0.4rem 0 0.2rem;
+}
+
+/* Diagrams (inline SVG, drawn with the site's colours so they follow light and dark mode) */
+.diagram {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 0.6rem 0 1.5rem;
+  background: var(--surface-sunken, #eef1f5);
+  border: 1px solid var(--border, #dfe4ea);
+  border-radius: var(--radius-md, 10px);
+}
+.diagram .paper {
+  fill: var(--surface-card, #fff);
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.5;
+}
+.diagram .desk {
+  fill: var(--border-strong, #c4ccd6);
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.5;
+}
+.diagram .ln {
+  fill: none;
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.diagram .lines {
+  stroke: var(--text-muted, #64748b);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+.diagram .lines.hl {
+  stroke: var(--accent, #0b5cab);
+  stroke-width: 2.4;
+}
+.diagram .stamp {
+  fill: var(--surface-card, #fff);
+  stroke: var(--ppc-saffron, #ef7f1a);
+  stroke-width: 1.8;
+}
+.diagram .stamp.empty {
+  fill: none;
+  stroke-dasharray: 3 2;
+}
+.diagram .stamp.dashed {
+  stroke: var(--accent, #0b5cab);
+  stroke-dasharray: 3 2;
+}
+.diagram .acc {
+  fill: var(--accent, #0b5cab);
+}
+.diagram .sa {
+  fill: var(--ppc-saffron, #ef7f1a);
+}
+.diagram .gr {
+  fill: var(--ppc-green, #1a7f4b);
+}
+.diagram .box {
+  fill: #d62839;
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.5;
+}
+.diagram .slot {
+  fill: #111;
+}
+.diagram .box-t {
+  fill: #fff;
+  font-size: 10px;
+}
+.diagram .coin {
+  fill: #f6c343;
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.4;
+}
+.diagram .coin-t {
+  fill: var(--text-strong, #0d1b2a);
+  font-size: 13px;
+  font-weight: 700;
+}
+.diagram .mark {
+  fill: none;
+  stroke: #3b5bdb;
+  stroke-width: 1.5;
+}
+.diagram .arrow {
+  fill: none;
+  stroke: var(--accent, #0b5cab);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+.diagram .arrow.dash {
+  stroke-dasharray: 6 5;
+}
+.diagram .chip {
+  fill: var(--surface-card, #fff);
+  stroke: var(--border-strong, #c4ccd6);
+  stroke-width: 1.5;
+}
+.diagram .chip.on {
+  fill: var(--accent, #0b5cab);
+  stroke: var(--accent, #0b5cab);
+}
+.diagram .chip.on + .t {
+  fill: #fff;
+}
+.diagram .field {
+  fill: var(--surface-sunken, #eef1f5);
+  stroke: var(--border-strong, #c4ccd6);
+}
+.diagram .bubble {
+  fill: var(--surface-card, #fff);
+  stroke: var(--text-strong, #0d1b2a);
+  stroke-width: 1.5;
+}
+.diagram .t {
+  font: 500 11px var(--font-body, system-ui, sans-serif);
+  fill: var(--text-body, #33404f);
+}
+.diagram .t.b {
+  font-weight: 700;
+  fill: var(--text-strong, #0d1b2a);
+}
+.diagram .t.cap {
+  fill: var(--text-muted, #64748b);
+  font-size: 10px;
+}

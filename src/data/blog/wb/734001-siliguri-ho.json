@@ -1,0 +1,124 @@
+{
+  "docTitle": "Sevoke Bridge",
+  "title": "Sevoke Bridge",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/SevokeBridge.jpg",
+          "alt": "Sevoke Bridge",
+          "cls": "landscape"
+        }
+      ]
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/pictures/ppcs/734001-SevokeCoronationBridge-SiliguriHO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The Coronation Bridge, also known as the Sevoke Bridge, is a significant structure in West Bengal, India, spanning the Teesta River to connect the districts of Darjeeling and Kalimpong with the Dooars region. The foundation stone was laid in 1937 by John Anderson, the then Governor of Bengal, to commemorate the coronation of King George VI and Queen Elizabeth. The bridge was completed in 1941 at a cost of ₹6 lakh. Locally, it is referred to as \"Baghpool\" or \"Tiger Bridge\" due to the two tiger statues adorning one end of the bridge."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The primary motivation behind constructing the Coronation Bridge was to establish a reliable connection between North Bengal and the northeastern states, facilitating transportation and communication. Before its construction, traversing the Teesta River was challenging, hindering economic and strategic activities in the region. The bridge served as the sole route to the Dooars from Siliguri until the early 1960s, when another bridge over the Teesta was constructed in Jalpaiguri on NH-31D."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Designed by John Chambers, the last British executive engineer of the Darjeeling Division Public Works Department, and constructed by Messrs J.C. Gammon from Bombay, the bridge showcases remarkable engineering. Built using the Reinforced Concrete system, it features a fixed arch design. Due to the depth and strong currents of the Teesta River, obtaining support from the riverbed was unfeasible; thus, the bridge relies on a fixed arch anchored into the rock layers on either side of the river."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Over the decades, the Coronation Bridge has experienced significant wear and tear, leading to structural concerns. As a result, restrictions have been imposed, allowing only vehicles weighing up to 1 tonne to traverse the bridge. Recognizing the need for an alternative, the central government sanctioned ₹1,000 crore in 2021 for the construction of a second bridge over the Teesta at Sevoke. This new 1.3-kilometer bridge aims to run parallel to the existing railway bridge, enhancing connectivity between Darjeeling, Kalimpong, Sikkim, and the Dooars region."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "In January 2025, the West Bengal government approved the construction of this new bridge, marking progress after initial delays. The state's Public Works Department is set to prepare a Detailed Project Report, with the bridge estimated to cost ₹1,125 crore and expected to be completed within 24 months once construction begins. This development is anticipated to alleviate traffic congestion, bolster regional infrastructure, and address strategic concerns due to the area's proximity to the China border in Sikkim."
+      ]
+    },
+    {
+      "t": "h",
+      "l": 4,
+      "text": "Relevant Images"
+    },
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/inaugural-cards/734001-siliguri-ho-self.jpg",
+          "alt": "First Day postcard by Praneeth Sai",
+          "cls": "horizontal",
+          "credit": "First Day postcard by Praneeth Sai"
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "January 1, 2022"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Senior Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Siliguri HO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Darjeeling (dt.), West Bengal - 734001."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "সেভোক সেতু"
+}

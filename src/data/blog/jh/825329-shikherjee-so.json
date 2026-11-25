@@ -1,0 +1,103 @@
+{
+  "docTitle": "Parasnath Temple",
+  "title": "Parasnath Temple",
+  "body": [
+    {
+      "t": "gallery",
+      "items": [
+        {
+          "src": "/blog/blog-related-pictures/monuments/ParasnathTemple.jpg",
+          "alt": "Parasnath Temple",
+          "cls": "landscape"
+        },
+        {
+          "src": "/pictures/ppcs/825329-ParasnathTemple-ShikherjeeSO.jpg",
+          "alt": "PPC",
+          "cls": "yellowcard"
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The hill known today as Parasnath takes its popular name from Parshvanatha, the twenty-third Tirthankara of Jainism, who, according to tradition, attained moksha atop its summit roughly eight centuries before the common era. Jains know the site more formally as Shikharji or Sammed Shikhar, \"the peak of concentrated meditation,\" and the earliest textual trace of its sanctity appears in the Jnatadharmakatha, one of the twelve canonical Anga texts, which records the nineteenth Jina, Mallinatha, attaining samadhi there. The hill's standing as a pilgrimage destination tied specifically to Parshvanatha was elaborated further in the Parshvanathacarita, a biography that circulated widely from around the twelfth century onward, cementing the association that gives the hill its present name."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "Shikharji is regarded by Jains as the single holiest site of their faith, ranked above even Shatrunjaya and Girnar in Gujarat, because tradition holds that twenty of the twenty-four Tirthankaras, not just Parshvanatha, achieved final liberation from its various peaks and ridges. Each of these Tirthankaras is commemorated by a dedicated shrine, locally called a tonk or gumti, so that the hill functions as a continuous circuit of sacred stations rather than a single temple. At 1,350 metres, the main peak is the highest point south of the Himalayas in this part of the Chota Nagpur plateau, and the combination of altitude, antiquity, and the sheer density of liberation sites has made the hill a destination drawing Jain pilgrims from across India and the global diaspora, including Shvetambara and Digambara communities who both maintain temples there."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The temple complex spread across the hill was built up gradually over centuries rather than in a single building campaign, with different Jain communities and merchant patrons endowing marble shrines at intervals along the ascent and across the ridge. The oldest surviving structure, the Bageecha or Garden Temple, is reckoned at roughly three hundred years old, while the base township of Madhuban, at the foot of the hill, serves as the administrative and residential hub housing dharamshalas, dadabari shrines, and the offices that coordinate the pilgrimage. From Madhuban the ascent covers roughly nine kilometres one way to the principal tonks, making the full circuit close to the eighteen-to-twenty-seven kilometre round trip pilgrims typically describe depending on how many subsidiary shrines are visited, a route climbed on foot or by palanquin since no vehicular road reaches the summit shrines."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "A defining feature of the Shikharji pilgrimage is its overnight, pre-dawn character: devotees customarily begin the ascent in darkness so as to reach the principal tonks by sunrise, a practice bound up with the belief that completing the full circuit in a single unbroken day constitutes a particular act of austerity, undertaken even by elderly pilgrims despite the hill's steep, forested terrain. This same terrain is simultaneously sacred to the Santhal tribal community of the region, who revere the hill as the abode of Marang Buru, their supreme deity, a dual religious claim that came to a head in 2019 when the central government's notification of an eco-sensitive zone and tourism promotion around Parasnath was read by Jain organisations as a threat to the hill's ritual sanctity, prompting nationwide protests and a push to have the area's \"tourist spot\" tag withdrawn."
+      ]
+    },
+    {
+      "t": "p",
+      "c": [
+        "The dispute eventually reached the Jharkhand High Court, which in 2023 directed restrictions on alcohol, non-vegetarian food, and unrestricted tourism within the notified zone in order to preserve the hill's character as a pilgrimage site rather than a leisure destination, a ruling that has since shaped how the state forest department and local administration manage visitor access around Madhuban. The hill today falls within the Parasnath Wildlife Sanctuary, placing its ecological management under forest officials even as its religious administration is handled by Jain trusts affiliated with both Shvetambara and Digambara sects who maintain the individual tonks. Shikharji thus continues to function as a working pilgrimage circuit under shared and occasionally contested oversight, with thousands of Jain pilgrims still making the night ascent from Madhuban each year to the shrines that mark the hill's twenty sites of liberation."
+      ]
+    },
+    {
+      "t": "table",
+      "cls": "info-table",
+      "rows": [
+        [
+          {
+            "h": true,
+            "c": [
+              "Date of Introduction"
+            ]
+          },
+          {
+            "h": false,
+            "c": [
+              "December 29, 2016"
+            ]
+          }
+        ],
+        [
+          {
+            "h": true,
+            "c": [
+              "Address"
+            ],
+            "rowSpan": 3
+          },
+          {
+            "h": false,
+            "c": [
+              "Sub Postmaster,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Shikherjee SO,"
+            ]
+          }
+        ],
+        [
+          {
+            "h": false,
+            "c": [
+              "Giridih (dt.), Jharkhand - 825329."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "regional": "पारसनाथ मंदिर"
+}

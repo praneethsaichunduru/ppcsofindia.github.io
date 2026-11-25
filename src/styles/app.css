@@ -1,0 +1,12 @@
+/* The React root takes the place of <body> as the page's flex column, so the footer stays at the bottom. */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  min-width: 0;
+}
+
+/* The faint logo watermark behind every page (set from a script on the old site). */
+:root {
+  --ppc-watermark: url('/data/logo.png');
+}
